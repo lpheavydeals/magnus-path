@@ -1,0 +1,67 @@
+---
+const items = [
+  {
+    title: 'Traffic, but no sales',
+    body: 'Visitors land, browse and leave. Slow pages, weak product pages and a clumsy checkout quietly kill your conversion rate.',
+    fix: 'We rebuild for speed and conversion: Shopify/WooCommerce, UPI & COD, WhatsApp checkout nudges.',
+    href: '/ecommerce-website-development/',
+    cta: 'See how we fix this',
+  },
+  {
+    title: 'Ads that burn money',
+    body: 'High ACoS on Amazon, rising Meta costs and no clear idea which campaign actually brings profitable orders.',
+    fix: 'We restructure campaigns around profit: search-term harvesting, bid rules, creative testing, RTO-aware targeting.',
+    href: '/amazon-marketing-agency/',
+    cta: 'See how we fix this',
+  },
+  {
+    title: 'Invisible on Google & marketplaces',
+    body: 'Competitors show up for your category searches on Google, Amazon and in AI answers. You don’t.',
+    fix: 'We earn rankings with technical SEO, category-page content, listing optimisation and AI-search (GEO) readiness.',
+    href: '/ecommerce-seo/',
+    cta: 'See how we fix this',
+  },
+];
+---
+<section class="section ch">
+  <div class="wrap">
+    <div class="section-head section-head--split">
+      <div><p class="eyebrow">Key challenges we solve</p></div>
+      <h2>Three problems that stop online brands from growing.</h2>
+    </div>
+    <ol class="ch__grid">
+      {items.map((it, i) => (
+        <li class="ch__card">
+          <span class="ch__num">0{i + 1}</span>
+          <h3>{it.title}</h3>
+          <p>{it.body}</p>
+          <svg class="ch__mesh" viewBox="0 0 120 120" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1">
+              <circle cx="60" cy="60" r="48"/><ellipse cx="60" cy="60" rx="48" ry="18"/><ellipse cx="60" cy="60" rx="48" ry="34"/>
+              <ellipse cx="60" cy="60" rx="18" ry="48"/><ellipse cx="60" cy="60" rx="34" ry="48"/><line x1="12" y1="60" x2="108" y2="60"/><line x1="60" y1="12" x2="60" y2="108"/>
+            </g>
+          </svg>
+          <p class="ch__fix"><strong>Our fix:</strong> {it.fix}</p>
+          <a class="ch__link" href={it.href}>{it.cta} <span aria-hidden="true">→</span></a>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+<style>
+  .ch__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+  .ch__card { position: relative; display: grid; gap: 14px; align-content: start; padding: 28px; border-radius: var(--radius); background: var(--white); border: 1px solid var(--line); transition: background .25s ease, color .25s ease, transform .25s ease; }
+  .ch__card:hover, .ch__card:focus-within { background: var(--ink); color: var(--white); transform: translateY(-4px); }
+  .ch__num { font-family: var(--font-display); font-stretch: 118%; font-weight: 800; color: var(--accent-ink); }
+  .ch__card:hover .ch__num, .ch__card:focus-within .ch__num { color: var(--accent); }
+  .ch__card > p { color: var(--muted); }
+  .ch__card:hover > p, .ch__card:focus-within > p { color: var(--muted-on-dark); }
+  .ch__mesh { width: 110px; margin: 8px auto; color: #e7b9a3; transition: color .25s ease, transform .6s ease; }
+  .ch__card:hover .ch__mesh { color: var(--accent); transform: rotate(25deg); }
+  .ch__card .ch__fix { font-size: 15px; padding-top: 14px; border-top: 1px solid var(--line); }
+  .ch__card:hover .ch__fix { border-color: var(--line-dark); }
+  .ch__fix strong { color: inherit; }
+  .ch__link { display: inline-flex; justify-content: space-between; align-items: center; margin-top: 6px; padding: 14px 18px; border-radius: 999px; border: 1.5px solid currentColor; font-weight: 600; font-size: 14px; text-decoration: none; }
+  .ch__card:hover .ch__link { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+  @media (min-width: 900px) { .ch__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

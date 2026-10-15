@@ -1,0 +1,72 @@
+---
+const steps = [
+  { t: 'Free audit', d: 'Send your store or marketplace link. Within 24 hours we send a video + PDF audit: speed, conversion leaks, ad waste and SEO gaps.' },
+  { t: 'Growth plan', d: 'A 90-day plan with targets for revenue, ROAS and rankings — and a clear monthly fee. No surprises, no lock-in.' },
+  { t: 'Build & launch', d: 'We fix or build the store, restructure ad accounts and start SEO. Most brands are live with changes in 2–4 weeks.' },
+  { t: 'Grow & report', d: 'Weekly reports on sales, ROAS and rankings. A monthly review call where we decide the next moves together.' },
+];
+---
+<section class="section pr">
+  <div class="wrap pr__grid">
+    <div>
+      <p class="eyebrow">How it works</p>
+      <h2>From first audit to steady growth in four steps.</h2>
+      <ol class="pr__steps">
+        {steps.map((s, i) => (
+          <li><span>0{i + 1}</span><div><h3>{s.t}</h3><p>{s.d}</p></div></li>
+        ))}
+      </ol>
+      <a class="btn btn--primary" href="/free-ecommerce-audit/">Start with a free audit <span class="arrow" aria-hidden="true">↗</span></a>
+    </div>
+
+    <div class="pr__art" aria-hidden="true">
+      <div class="card card--audit">
+        <div class="card__head"><b>Store audit</b><span class="tag">Sample</span></div>
+        <div class="score"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.9" fill="none" stroke="#efe9e2" stroke-width="3.5"/><circle cx="18" cy="18" r="15.9" fill="none" stroke="#f16436" stroke-width="3.5" stroke-dasharray="58 100" stroke-linecap="round" transform="rotate(-90 18 18)"/></svg><b>58</b><small>/100</small></div>
+        <ul>
+          <li><i class="bad"></i>Mobile load time 5.8s</li>
+          <li><i class="bad"></i>No product schema</li>
+          <li><i class="warn"></i>ACoS 41% on 3 campaigns</li>
+          <li><i class="ok"></i>Checkout supports UPI & COD</li>
+        </ul>
+      </div>
+      <div class="card card--plan">
+        <div class="card__head"><b>90-day targets</b></div>
+        <div class="bar"><span>Revenue</span><div><i style="width:78%"></i></div><b>+40%</b></div>
+        <div class="bar"><span>ROAS</span><div><i style="width:64%"></i></div><b>3.5×</b></div>
+        <div class="bar"><span>Top-10 keywords</span><div><i style="width:52%"></i></div><b>25</b></div>
+      </div>
+      <span class="orb"></span>
+    </div>
+  </div>
+</section>
+<style>
+  .pr__grid { display: grid; gap: 56px; align-items: center; }
+  .pr__grid h2 { margin-top: 18px; max-width: 16ch; }
+  .pr__steps { list-style: none; margin: 36px 0; padding: 0; display: grid; gap: 22px; }
+  .pr__steps li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; }
+  .pr__steps li > span { font-size: 14px; font-weight: 600; color: var(--accent-ink); padding-top: 3px; }
+  .pr__steps h3 { font-size: 1.2rem; margin-bottom: 6px; }
+  .pr__steps p { color: var(--muted); font-size: 16px; }
+  .pr__art { position: relative; min-height: 560px; background: radial-gradient(closest-side, rgba(248,152,91,.45), transparent 75%); }
+  .card { position: absolute; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; font-size: 14px; }
+  .card__head { display: flex; justify-content: space-between; margin-bottom: 14px; }
+  .tag { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border: 1px dashed var(--line); padding: 3px 6px; border-radius: 5px; }
+  .card--audit { left: 0; top: 0; width: min(330px, 80%); }
+  .score { position: relative; width: 110px; margin: 0 auto 12px; display: grid; place-items: center; }
+  .score svg { width: 110px; }
+  .score b { position: absolute; font-family: var(--font-display); font-stretch: 115%; font-size: 1.8rem; top: 34px; }
+  .score small { position: absolute; top: 70px; color: var(--muted); }
+  .card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .card li { display: flex; gap: 10px; align-items: center; }
+  .card li i { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .bad { background: #dc2626; } .warn { background: #f59e0b; } .ok { background: #16a34a; }
+  .card--plan { right: 0; bottom: 0; width: min(350px, 84%); z-index: 2; display: grid; gap: 12px; }
+  .bar { display: grid; grid-template-columns: 110px 1fr 46px; gap: 10px; align-items: center; }
+  .bar span { color: var(--muted); }
+  .bar div { height: 8px; border-radius: 99px; background: var(--paper); overflow: hidden; }
+  .bar i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--accent-soft), var(--accent)); }
+  .bar b { text-align: right; }
+  .pr__art .orb { position: absolute; right: 12%; top: 6%; width: 90px; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, #ffd9c2 0%, #f8985b 26%, #f16436 58%, #b8380f 100%); box-shadow: inset -12px -16px 30px rgba(120,30,0,.35); }
+  @media (min-width: 980px) { .pr__grid { grid-template-columns: 1fr 1fr; gap: 72px; } }
+</style>

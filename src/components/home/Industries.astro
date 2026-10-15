@@ -1,0 +1,38 @@
+---
+const inds = [
+  { name: 'Fashion & Ethnic Wear', note: 'Tiruppur knitwear, sarees, kurtis — size guides, lookbooks, Myntra & Amazon Fashion.', href: '/industries/fashion-apparel/' },
+  { name: 'Beauty & Ayurveda', note: 'Herbal, skincare and wellness brands — repeat-purchase funnels and compliant ads.', href: '/industries/beauty-ayurveda/' },
+  { name: 'Food & FMCG', note: 'Snacks, spices, coffee and millets — quick commerce, subscriptions and gifting.', href: '/industries/food-fmcg/' },
+  { name: 'Manufacturers & Exporters', note: 'B2B websites, export SEO and LinkedIn & Google ads that bring global buyer enquiries.', href: '/b2b-digital-marketing/' },
+];
+---
+<section class="section in">
+  <div class="wrap">
+    <div class="section-head section-head--split">
+      <div><p class="eyebrow">Industries</p></div>
+      <div class="in__head">
+        <h2>Built for brands that make things people buy online.</h2>
+        <p class="lede">We go deep in a few categories instead of shallow in all — so your strategy starts from what already works in your market.</p>
+      </div>
+    </div>
+    <ul class="in__grid">
+      {inds.map((d) => (
+        <li><a href={d.href}><h3>{d.name}</h3><p>{d.note}</p><span class="in__go" aria-hidden="true">↗</span></a></li>
+      ))}
+    </ul>
+  </div>
+</section>
+<style>
+  .in { background: var(--white); }
+  .in__head { display: grid; gap: 16px; }
+  .in__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .in__grid a { position: relative; display: grid; gap: 10px; align-content: end; min-height: 220px; padding: 26px; border-radius: var(--radius); background: var(--paper); text-decoration: none; overflow: hidden; transition: transform .25s ease; }
+  .in__grid a::before { content: ''; position: absolute; right: -60px; top: -60px; width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(closest-side, rgba(241,100,54,.35), transparent); transition: transform .4s ease; }
+  .in__grid a:hover { transform: translateY(-4px); }
+  .in__grid a:hover::before { transform: scale(1.6); }
+  .in__grid p { color: var(--muted); font-size: 15px; }
+  .in__grid h3 { padding-right: 44px; }
+  .in__go { position: absolute; top: 20px; right: 22px; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--ink); color: var(--white); }
+  @media (min-width: 700px) { .in__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1080px) { .in__grid { grid-template-columns: repeat(4, 1fr); } }
+</style>

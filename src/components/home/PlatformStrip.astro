@@ -1,0 +1,22 @@
+---
+const platforms = ['Shopify', 'WooCommerce', 'Amazon', 'Flipkart', 'Myntra', 'Blinkit', 'Zepto', 'Swiggy Instamart', 'Google Ads', 'Meta Ads', 'Google Search', 'ChatGPT & AI search'];
+---
+<section class="strip" aria-label="Platforms we work on">
+  <div class="wrap strip__inner">
+    <p class="strip__label">Platforms we grow brands on</p>
+    <div class="strip__track">
+      <ul class="strip__list">{platforms.map((p) => <li>{p}</li>)}</ul>
+      <ul class="strip__list" aria-hidden="true">{platforms.map((p) => <li>{p}</li>)}</ul>
+    </div>
+  </div>
+</section>
+<style>
+  .strip { border-block: 1px solid var(--line); background: var(--white); }
+  .strip__inner { display: grid; gap: 14px; padding-block: 22px; align-items: center; }
+  .strip__label { font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+  .strip__track { display: flex; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+  .strip__list { display: flex; flex: none; gap: 44px; padding-right: 44px; margin: 0; list-style: none; animation: marquee 40s linear infinite; }
+  .strip__list li { font-family: var(--font-display); font-stretch: 112%; font-weight: 700; font-size: 1.15rem; color: var(--charcoal); opacity: .75; white-space: nowrap; }
+  @keyframes marquee { to { transform: translateX(-100%); } }
+  @media (min-width: 900px) { .strip__inner { grid-template-columns: auto 1fr; gap: 40px; } }
+</style>

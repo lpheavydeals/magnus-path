@@ -1,0 +1,88 @@
+---
+import Logo from './Logo.astro';
+import { nav, site } from '../data/site';
+---
+<header class="hdr">
+  <div class="wrap hdr__inner">
+    <a href="/" class="hdr__brand" aria-label={`${site.name} — home`}><Logo /></a>
+
+    <nav class="hdr__nav" aria-label="Main">
+      <ul>
+        {nav.map((item) => (
+          <li class:list={[{ 'has-menu': item.children }]}>
+            <a href={item.href}>{item.label}{item.children && <span class="chev" aria-hidden="true">▾</span>}</a>
+            {item.children && (
+              <div class="menu">
+                <ul>
+                  {item.children.map((c) => (
+                    <li><a href={c.href}><strong>{c.label}</strong>{c.note && <span>{c.note}</span>}</a></li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="hdr__cta">
+      <a class="hdr__phone" href={site.phoneHref}>{site.phone}</a>
+      <a class="btn btn--primary hdr__btn" href="/free-ecommerce-audit/">Free Store Audit</a>
+    </div>
+
+    <details class="mnav">
+      <summary aria-label="Open menu"><span></span><span></span><span></span></summary>
+      <div class="mnav__panel">
+        {nav.map((item) => (
+          <div class="mnav__group">
+            <a class="mnav__top" href={item.href}>{item.label}</a>
+            {item.children && (
+              <ul>{item.children.map((c) => <li><a href={c.href}>{c.label}</a></li>)}</ul>
+            )}
+          </div>
+        ))}
+        <a class="btn btn--primary" href="/free-ecommerce-audit/">Get a Free Store Audit</a>
+        <a class="mnav__phone" href={site.phoneHref}>Call {site.phone}</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<style>
+  .hdr { position: sticky; top: 0; z-index: 50; background: rgba(245, 242, 238, 0.86); backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px); border-bottom: 1px solid var(--line); }
+  .hdr__inner { display: flex; align-items: center; gap: 24px; height: 76px; }
+  .hdr__brand { display: inline-flex; text-decoration: none; }
+  .hdr__nav { margin-left: auto; display: none; }
+  .hdr__nav > ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+  .hdr__nav > ul > li { position: relative; }
+  .hdr__nav > ul > li > a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 12px; font-size: 15px; font-weight: 500; text-decoration: none; border-radius: 999px; }
+  .hdr__nav > ul > li > a:hover { background: rgba(21, 23, 26, 0.06); }
+  .chev { font-size: 0.7em; opacity: 0.6; }
+  .menu { position: absolute; top: 100%; left: -8px; padding-top: 10px; opacity: 0; visibility: hidden; transform: translateY(6px); transition: all .18s ease; }
+  .has-menu:hover .menu, .has-menu:focus-within .menu { opacity: 1; visibility: visible; transform: none; }
+  .menu ul { list-style: none; margin: 0; padding: 10px; width: 320px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .menu a { display: grid; gap: 2px; padding: 10px 12px; border-radius: 10px; text-decoration: none; }
+  .menu a:hover { background: var(--accent-tint); }
+  .menu strong { font-size: 15px; font-weight: 600; }
+  .menu span { font-size: 13px; color: var(--muted); }
+  .hdr__cta { display: none; align-items: center; gap: 16px; }
+  .hdr__phone { font-size: 15px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+  .hdr__btn { min-height: 44px; }
+
+  .mnav { margin-left: auto; }
+  .mnav summary { list-style: none; cursor: pointer; display: grid; gap: 5px; padding: 12px; }
+  .mnav summary::-webkit-details-marker { display: none; }
+  .mnav summary span { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; }
+  .mnav__panel { position: absolute; left: 0; right: 0; top: 76px; max-height: calc(100vh - 76px); overflow: auto; background: var(--paper); border-bottom: 1px solid var(--line); padding: 16px var(--gutter) 28px; display: grid; gap: 18px; }
+  .mnav__top { font-family: var(--font-display); font-stretch: 115%; font-weight: 800; font-size: 1.25rem; text-decoration: none; }
+  .mnav__group ul { list-style: none; padding: 6px 0 0; margin: 0; display: grid; gap: 6px; }
+  .mnav__group li a { color: var(--muted); text-decoration: none; font-size: 15px; }
+  .mnav__phone { text-align: center; font-weight: 600; }
+
+  @media (min-width: 1080px) {
+    .hdr__nav { display: block; }
+    .hdr__cta { display: flex; }
+    .mnav { display: none; }
+  }
+  @media (min-width: 1080px) and (max-width: 1220px) { .hdr__phone { display: none; } }
+</style>

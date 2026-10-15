@@ -1,0 +1,29 @@
+---
+interface Props { items: { q: string; a: string }[]; title?: string; eyebrow?: string; }
+const { items, title = 'Frequently asked questions', eyebrow = 'FAQ' } = Astro.props;
+---
+<section class="section faq">
+  <div class="wrap faq__grid">
+    <div><p class="eyebrow">{eyebrow}</p><h2>{title}</h2></div>
+    <div class="faq__list">
+      {items.map((f, i) => (
+        <details open={i === 0}>
+          <summary><h3>{f.q}</h3><span aria-hidden="true">+</span></summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+<style>
+  .faq__grid { display: grid; gap: 40px; }
+  .faq__list { border-top: 1px solid var(--line); }
+  details { border-bottom: 1px solid var(--line); }
+  summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 22px 0; }
+  summary::-webkit-details-marker { display: none; }
+  summary h3 { font-family: var(--font-body); font-stretch: 100%; font-weight: 600; font-size: 1.1rem; letter-spacing: 0; line-height: 1.4; }
+  summary span { flex: none; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; border: 1.5px solid var(--ink); font-size: 1.2rem; transition: transform .2s ease, background .2s ease; }
+  details[open] summary span { transform: rotate(45deg); background: var(--accent); border-color: var(--accent); }
+  details p { padding: 0 0 24px; color: var(--muted); max-width: 70ch; }
+  @media (min-width: 980px) { .faq__grid { grid-template-columns: 1fr 1.6fr; gap: 72px; } }
+</style>

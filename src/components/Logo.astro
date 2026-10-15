@@ -1,0 +1,17 @@
+---
+import mark from '../assets/mark.svg?raw';
+import wordmark from '../assets/wordmark.svg?raw';
+interface Props { variant?: 'lockup' | 'mark'; class?: string; }
+const { variant = 'lockup', class: cls = '' } = Astro.props;
+const clean = (svg: string) => svg.replace(/width="\d+" height="\d+" /, '').replace('<svg ', '<svg aria-hidden="true" focusable="false" ');
+---
+<span class:list={['logo', `logo--${variant}`, cls]}>
+  <span class="logo__mark" set:html={clean(mark)} />
+  {variant === 'lockup' && <span class="logo__word" set:html={clean(wordmark)} />}
+</span>
+<style>
+  .logo { display: inline-flex; align-items: center; gap: 10px; color: var(--accent); }
+  .logo__mark { width: 46px; flex: none; }
+  .logo__word { width: 138px; flex: none; }
+  .logo :global(svg) { width: 100%; height: auto; }
+</style>
