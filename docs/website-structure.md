@@ -35,12 +35,14 @@ Volume = monthly searches for the page's keyword cluster · KD = difficulty of t
 │   ├── /flipkart-account-management/ ............ flipkart account management         320  KD12  P1
 │   ├── /shopify-marketing/ ...................... shopify digital marketing agency     470  KD11  P2
 │   ├── /ecommerce-social-media-marketing/ ....... ecommerce social media mktg agency  600  KD29  P2
+│   ├── /meta-ads/ · /google-ads/ ................ (sections on the Ads hub until volume appears)      P2
 │   └── /quick-commerce-marketing/ ............... blinkit / zepto / instamart ads       –  KD7   P3
 │
 ├── PILLAR 3 · SEO
 │   ├── /ecommerce-seo/  (hub) ................... ecommerce seo services            3,350  KD11  P1
 │   ├── /shopify-seo/ ............................ shopify seo services                720  KD26  P2
 │   ├── /amazon-seo/ ............................. amazon seo services                 540  KD10  P2
+│   ├── /ai-search-optimization/ ................. AI search / GEO (no volume yet, early bet)       –        P3
 │   └── /seo-services/ ........................... seo agency india                 18,700  KD28  P2
 │
 ├── PRICING
@@ -52,6 +54,7 @@ Volume = monthly searches for the page's keyword cluster · KD = difficulty of t
 │   ├── /chennai/digital-marketing-agency/ ....... digital marketing agency chennai  5,400  KD17  P1
 │   ├── /chennai/seo-company/ .................... seo company in chennai            4,600  KD29  P1
 │   ├── /chennai/ecommerce-website-development/ .. ecommerce website dev. chennai      980  KD28  P1
+│   ├── /bangalore/ecommerce-website-development/  ecommerce development co. bangalore 3,300+ KD17 P2
 │   └── /coimbatore/seo-services/ ................ seo services in coimbatore          850  KD28  P3
 │
 ├── INDUSTRIES
@@ -77,11 +80,13 @@ Volume = monthly searches for the page's keyword cluster · KD = difficulty of t
 │
 ├── RESOURCES
 │   ├── /blog/  (categories: websites · ads · seo · marketplaces · export)
+│   ├── /ta/  Tamil section (seller guides in Tamil; volume not measured by Semrush) ............ P2
 │   ├── /blog/ecommerce-website-cost-in-india/ ... ecommerce website cost in india     430  KD6   P1
 │   └── /blog/how-to-find-buyers-for-export/ ..... how to find buyers for export       440  KD15  P2
 │
 └── COMPANY
-    ├── /about/ · /contact/ · /careers/ ......................................................... P1
+    ├── /about/ (team, real faces, Chennai office) · /careers/ .................................. P1
+    ├── /contact/ + Book a Call (Calendly, for overseas clients) .................................. P1
     └── /privacy-policy/ · /terms/ ............................................................... P1
 ```
 
@@ -90,6 +95,23 @@ the pillar has a home.
 
 **Launch scope (P1): 22 pages.** That is the 12 keyword pages + 3 hubs/pricing + case studies (hub + 2) +
 free audit + about + contact + careers + legal. They cover about 26,600 searches a month.
+
+## 2a. How this maps to the original structure
+
+The original brainstorm structure is kept as the **menu people see**. Under it, each item is split
+into separate keyword pages, because one page can rank for only one main keyword.
+
+| Original item | Kept as | Change, and the reason from the data |
+|---|---|---|
+| Services: E-commerce Websites (Shopify · WooCommerce · Custom) | Websites pillar | Shopify, WooCommerce and the hub get their own pages; "Custom" stays a section on the hub |
+| Services: E-commerce Ads (Amazon · Flipkart · Quick Commerce · Meta · Google) | Ads pillar | Amazon and Flipkart get pages (with volume). Meta and Google Ads stay sections on the hub: "meta ads agency india" and "google ads agency chennai" showed no measurable volume |
+| Services: E-commerce SEO (Store · Marketplace · AI Search/GEO) | SEO pillar | Store SEO = /ecommerce-seo/ + /shopify-seo/; Marketplace SEO = /amazon-seo/; GEO is a P3 early bet (no volume yet) |
+| Industries (Beauty, Fashion, Food; later Jewellery, Home, Wellness) | Industries | Kept. **Manufacturers & Exporters** added (b2b digital marketing services, 4,410/mo) |
+| Locations – India: Chennai · Coimbatore · Tiruppur · Bangalore | Locations | Chennai P1, Coimbatore P3, **Bangalore P2** ("ecommerce development company in bangalore" 2,900/mo, KD17, no local pack in results). **Tiruppur dropped as a location page** (0 searches); it is covered on the Fashion industry page |
+| Locations – Global: UK · Australia · UAE · Singapore · USA | Global | Starts as White-label SEO + SEO Outsourcing pages. Country pages wait for a US/UK/AE database check (India-database volumes for these were tiny) |
+| Case Studies · Pricing · Free Tools | Same | Unchanged |
+| Resources (Blog · Guides · Tamil section) | Resources | Blog P1, Tamil section `/ta/` P2 |
+| About / Team · Contact / Book a Call | Company | Unchanged; Book a Call added to Contact |
 
 ## 3. Navigation
 
