@@ -1,5 +1,7 @@
 # Website Structure Plan
 
+**Status: approved by the client, 15 Oct 2026.** Solar is not targeted on the website (outreach only).
+
 Blueprint for the agency website. Keyword data comes from `research/keyword-map.xlsx`
 (Semrush, India database, Oct 2026). Monthly search volumes below are each page's whole keyword
 cluster (main keyword plus related terms).
@@ -59,7 +61,7 @@ Volume = monthly searches for the page's keyword cluster · KD = difficulty of t
 │
 ├── INDUSTRIES
 │   ├── /industries/  (hub) ................................................................... P2
-│   ├── /b2b-digital-marketing/ .................. b2b digital marketing services    4,410  KD15  P2
+│   ├── /b2b-digital-marketing/ .................. b2b digital marketing services    4,410  KD15  P1
 │   ├── /industries/fashion-apparel/ ............. (sales page – Tiruppur, sarees)        –        P2
 │   ├── /industries/beauty-ayurveda/ ............. (sales page)                           –        P2
 │   └── /industries/food-fmcg/ ................... (sales page)                           –        P2
@@ -93,8 +95,8 @@ Volume = monthly searches for the page's keyword cluster · KD = difficulty of t
 \* `/performance-marketing/` is the Ads hub. Its own keyword is small, but the page is needed so
 the pillar has a home.
 
-**Launch scope (P1): 22 pages.** That is the 12 keyword pages + 3 hubs/pricing + case studies (hub + 2) +
-free audit + about + contact + careers + legal. They cover about 26,600 searches a month.
+**Launch scope (P1): 23 pages.** That is the 13 keyword pages (incl. Manufacturers & Exporters) + 3 hubs/pricing + case studies (hub + 2) +
+free audit + about + contact + careers + legal. They cover about 31,000 searches a month.
 
 ## 2a. How this maps to the original structure
 
@@ -190,10 +192,10 @@ proof → "We'll reply within 24 hours".
 | Step | Pages | Weeks |
 |---|---|---|
 | 1 | Design system + templates A–F, header/footer, home | 1–2 |
-| 2 | Shopify, E-commerce Website Dev, E-commerce SEO, Amazon Ads, Amazon Acct, Flipkart, Ads hub | 2–4 |
+| 2 | Shopify, E-commerce Website Dev, E-commerce SEO, Amazon Ads, Amazon Acct, Flipkart, Ads hub, Manufacturers & Exporters | 2–4 |
 | 3 | Chennai × 3, Pricing, E-com SEO Packages, Free Audit, Case Studies (2) | 4–6 |
 | 4 | About, Contact, Careers, legal, first blog guide, schema, sitemap, analytics → **launch** | 6–8 |
-| 5 | P2 pages: SEO Services, SEO Packages, B2B, White-label, Outsourcing, industries, tools | months 2–5 |
+| 5 | P2 pages: SEO Services, SEO Packages, Bangalore, White-label, Outsourcing, industries, tools | months 2–5 |
 | 6 | P3 pages: Coimbatore, Quick Commerce, overseas country pages | month 5+ |
 
 ## 8. First 10 blog posts (from the keyword data)
