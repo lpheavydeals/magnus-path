@@ -1,65 +1,62 @@
 ---
-const pillars = [
-  {
-    n: '01', name: 'E-commerce Websites', href: '/ecommerce-website-development/',
-    lead: 'Fast, conversion-focused stores that are easy to run.',
-    points: ['Shopify & Shopify Plus stores', 'WooCommerce & custom builds', 'UPI, COD, GST invoices, shipping integrations', 'Speed under 2 seconds, SEO-ready from day one'],
-    links: [['Shopify Development', '/shopify-development/'], ['WooCommerce Development', '/woocommerce-development/']],
-  },
-  {
-    n: '02', name: 'E-commerce Ads', href: '/performance-marketing/',
-    lead: 'Profitable ads on every channel your buyers use.',
-    points: ['Amazon Sponsored Products, Brands & Display', 'Flipkart PLA & brand ads', 'Meta & Google Shopping / Performance Max', 'Blinkit, Zepto & Instamart ads'],
-    links: [['Amazon Advertising', '/amazon-marketing-agency/'], ['Amazon Account Management', '/amazon-account-management/'], ['Flipkart Account Management', '/flipkart-account-management/']],
-  },
-  {
-    n: '03', name: 'E-commerce SEO', href: '/ecommerce-seo/',
-    lead: 'Rankings that keep bringing orders after the ad budget stops.',
-    points: ['Technical SEO & Core Web Vitals', 'Category & product page content', 'Amazon & Flipkart listing SEO', 'AI search (GEO): get cited by ChatGPT & Google AI'],
-    links: [['Shopify SEO', '/shopify-seo/'], ['Amazon SEO', '/amazon-seo/'], ['SEO Packages', '/ecommerce-seo-packages/']],
-  },
+import Icon3D from '../Icon3D.astro';
+type I = 'shopify' | 'website' | 'amazon' | 'marketplace' | 'social' | 'quick' | 'seo' | 'ai';
+const services: { icon: I; title: string; href: string; tags: string[]; line: string }[] = [
+  { icon: 'shopify', title: 'Shopify Development', href: '/shopify-development/', tags: ['Store design', 'Shopify Plus', 'Apps & integrations'], line: 'Conversion-first Shopify stores built to sell' },
+  { icon: 'website', title: 'E-commerce Website Development', href: '/ecommerce-website-development/', tags: ['WooCommerce', 'Custom builds', 'UPI · COD · GST'], line: 'Fast stores on the platform that fits your business' },
+  { icon: 'amazon', title: 'Amazon Advertising', href: '/amazon-marketing-agency/', tags: ['Sponsored Products', 'Sponsored Brands', 'DSP'], line: 'Lower ACoS, more profitable orders' },
+  { icon: 'marketplace', title: 'Amazon & Flipkart Account Management', href: '/amazon-account-management/', tags: ['Listings', 'Catalogue', 'Flipkart ads'], line: 'Marketplace growth handled end to end' },
+  { icon: 'social', title: 'Meta & Google Ads', href: '/performance-marketing/', tags: ['Meta', 'Google Shopping', 'Performance Max'], line: 'Performance marketing tracked to revenue' },
+  { icon: 'quick', title: 'Quick Commerce Ads', href: '/quick-commerce-marketing/', tags: ['Blinkit', 'Zepto', 'Instamart'], line: 'Win the 10-minute shelf in your cities' },
+  { icon: 'seo', title: 'E-commerce SEO', href: '/ecommerce-seo/', tags: ['Technical SEO', 'Category pages', 'Amazon SEO'], line: 'Rankings that bring orders without ad spend' },
+  { icon: 'ai', title: 'AI Search Optimisation', href: '/ai-search-optimization/', tags: ['ChatGPT', 'Google AI Overviews', 'GEO'], line: 'Get recommended when buyers ask AI' },
 ];
 ---
-<section class="section dark sv" id="services">
-  <div class="wrap">
-    <div class="section-head section-head--split">
-      <div><p class="eyebrow">Services</p></div>
-      <h2>Take a look at what we offer.</h2>
+<section class="section sv" id="services" data-hscroll>
+  <div class="wrap sv__head">
+    <div class="head">
+      <p class="label" data-reveal>What we do</p>
+      <h2 data-reveal>E-commerce websites, ads and SEO — <em>under one roof</em></h2>
     </div>
-    <div class="sv__list">
-      {pillars.map((p) => (
-        <article class="sv__row">
-          <div class="sv__left">
-            <span class="sv__n">{p.n}</span>
-            <h3><a href={p.href}>{p.name}</a></h3>
-            <p>{p.lead}</p>
-          </div>
-          <ul class="sv__points">{p.points.map((pt) => <li>{pt}</li>)}</ul>
-          <div class="sv__links">
-            {p.links.map(([l, h]) => <a href={h}>{l} <span aria-hidden="true">↗</span></a>)}
-            <a class="btn btn--primary" href={p.href}>Explore {p.name.replace('E-commerce ', '')} <span class="arrow" aria-hidden="true">→</span></a>
-          </div>
-        </article>
+    <p class="lede" data-reveal>Every service your online store needs to grow, run by one team that shares one goal: more profitable orders.</p>
+  </div>
+  <div class="sv__viewport">
+    <ul class="sv__track" data-hscroll-track>
+      {services.map((s) => (
+        <li class="sv__card">
+          <a href={s.href}>
+            <div class="sv__icon"><Icon3D name={s.icon} /></div>
+            <h3>{s.title}</h3>
+            <ul class="sv__tags">{s.tags.map((t) => <li>{t}</li>)}</ul>
+            <p>{s.line}</p>
+            <span class="sv__go" aria-hidden="true">→</span>
+          </a>
+        </li>
       ))}
-    </div>
+    </ul>
   </div>
 </section>
 <style>
-  .sv__list { display: grid; gap: 16px; }
-  .sv__row { display: grid; gap: 28px; padding: clamp(24px, 3vw, 40px); border-radius: var(--radius); background: var(--charcoal); border: 1px solid var(--line-dark); transition: border-color .25s ease; }
-  .sv__row:hover { border-color: var(--accent); }
-  .sv__left { display: grid; gap: 12px; align-content: start; }
-  .sv__n { font-size: 14px; font-weight: 600; color: var(--accent); }
-  .sv__left h3 { font-size: clamp(1.6rem, 2.8vw, 2.2rem); }
-  .sv__left h3 a { text-decoration: none; }
-  .sv__left h3 a:hover { color: var(--accent); }
-  .sv__left p { color: var(--muted-on-dark); }
-  .sv__points { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; align-content: start; }
-  .sv__points li { padding-left: 26px; position: relative; }
-  .sv__points li::before { content: ''; position: absolute; left: 0; top: .55em; width: 12px; height: 12px; border: 2px solid var(--accent); transform: rotate(45deg); }
-  .sv__links { display: grid; gap: 10px; align-content: start; }
-  .sv__links a:not(.btn) { color: var(--muted-on-dark); text-decoration: none; font-size: 15px; border-bottom: 1px solid var(--line-dark); padding-bottom: 10px; display: flex; justify-content: space-between; }
-  .sv__links a:not(.btn):hover { color: var(--accent); }
-  .sv__links .btn { margin-top: 8px; justify-self: start; }
-  @media (min-width: 980px) { .sv__row { grid-template-columns: 1.1fr 1.2fr 1fr; gap: 40px; } }
+  .sv { overflow: hidden; }
+  .sv__head { display: grid; gap: 10px; align-items: end; margin-bottom: clamp(36px, 5vw, 60px); }
+  .sv__head .head { margin: 0; }
+  .sv__viewport { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 0 var(--gutter) 10px; }
+  .sv__viewport::-webkit-scrollbar { display: none; }
+  .sv__track { display: flex; gap: 16px; list-style: none; margin: 0; padding: 0; width: max-content; }
+  .sv__card { width: min(78vw, 330px); scroll-snap-align: start; }
+  .sv__card > a { position: relative; display: grid; gap: 14px; align-content: start; height: 100%; padding: 26px; border-radius: var(--radius); background: #f3f1ee; text-decoration: none; transition: background .4s var(--ease), transform .4s var(--ease); }
+  .sv__card > a:hover { background: var(--accent-tint); transform: translateY(-6px); }
+  .sv__icon { width: 75%; margin: 4px auto 10px; transition: transform .6s var(--ease); }
+  .sv__card > a:hover .sv__icon { transform: translateY(-6px) rotate(-3deg) scale(1.04); }
+  .sv__card h3 { font-size: 1.45rem; }
+  .sv__tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .sv__tags li { font-size: 12.5px; padding: 5px 10px; border-radius: 999px; background: var(--white); color: var(--muted); }
+  .sv__card p { font-size: 14px; color: var(--muted); padding-top: 12px; border-top: 1px solid rgba(0,0,0,.06); }
+  .sv__go { position: absolute; top: 22px; right: 22px; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--white); transition: background .3s ease, color .3s ease, transform .4s var(--ease); }
+  .sv__card > a:hover .sv__go { background: var(--accent); color: var(--white); transform: rotate(-45deg); }
+  @media (min-width: 900px) {
+    .sv__head { grid-template-columns: 1.2fr 1fr; gap: 48px; }
+    .sv__viewport { overflow: visible; padding-left: max(var(--gutter), calc((100vw - var(--wrap)) / 2 + var(--gutter))); }
+    .sv__card { width: 360px; }
+  }
 </style>

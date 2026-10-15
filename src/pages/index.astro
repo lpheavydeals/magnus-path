@@ -2,29 +2,34 @@
 import Base from '../layouts/Base.astro';
 import Hero from '../components/home/Hero.astro';
 import PlatformStrip from '../components/home/PlatformStrip.astro';
-import StatementStats from '../components/home/StatementStats.astro';
-import Challenges from '../components/home/Challenges.astro';
 import Services from '../components/home/Services.astro';
-import Process from '../components/home/Process.astro';
 import Industries from '../components/home/Industries.astro';
-import CaseStudies from '../components/home/CaseStudies.astro';
-import FounderNote from '../components/home/FounderNote.astro';
+import WhyStatement from '../components/home/WhyStatement.astro';
+import Process from '../components/home/Process.astro';
+import CaseStack from '../components/home/CaseStack.astro';
+import Locations from '../components/home/Locations.astro';
+import Qualify from '../components/home/Qualify.astro';
+import Guides from '../components/home/Guides.astro';
 import FAQ from '../components/FAQ.astro';
 import LeadForm from '../components/LeadForm.astro';
 import { site } from '../data/site';
 
 const faqs = [
-  { q: 'What does an e-commerce marketing agency do?', a: 'An e-commerce marketing agency grows your online sales. At Magnus Path that means three things handled by one team: building or improving your store (Shopify, WooCommerce or custom), running ads on Amazon, Flipkart, Meta, Google and quick-commerce apps, and ranking your brand on Google, marketplaces and AI search through SEO.' },
-  { q: 'How much does it cost to work with Magnus Path?', a: 'Store builds start as one-time projects, and ads or SEO run on a monthly retainer. Typical retainers for growing Indian brands fall between ₹40,000 and ₹1,50,000 a month depending on channels and ad spend. You get exact pricing after the free audit — see our pricing page for starting prices.' },
-  { q: 'Do you only work with brands in Chennai?', a: 'No. We are based in Chennai and meet Tamil Nadu clients in person, but we work with brands across India and with clients in the UK, UAE, Australia and the USA remotely, with weekly video reviews.' },
+  { q: 'What does an e-commerce marketing agency do?', a: 'An e-commerce marketing agency grows your online sales. At Magnus Path one team handles three things: building or improving your store (Shopify, WooCommerce or custom), running ads on Amazon, Flipkart, Meta, Google and quick-commerce apps, and ranking your brand on Google, marketplaces and AI search through SEO.' },
+  { q: 'How much does an e-commerce marketing agency cost in India?', a: 'Store builds are one-time projects, typically from ₹60,000 for a template-based Shopify store to ₹2–5 lakh for a custom, conversion-focused build. Ads and SEO run on monthly retainers, usually ₹40,000–₹1,50,000 depending on channels and ad spend. You get exact pricing after the free audit.' },
+  { q: 'Do you only work with brands in Chennai?', a: 'No. We are based in Chennai and meet Tamil Nadu clients in person, but we work with brands across India and with businesses in the UK, UAE, Australia, Singapore and the USA through weekly video calls.' },
   { q: 'Can you manage both our Shopify store and our Amazon account?', a: 'Yes — that is our core strength. One team runs your website, marketplace accounts and ads, so pricing, stock, promotions and reporting stay consistent across every channel.' },
-  { q: 'How long does e-commerce SEO take to show results?', a: 'Technical fixes and product-page improvements usually show movement in 6–10 weeks. Category rankings for competitive keywords typically take 4–8 months. We report rankings, organic traffic and organic revenue every week so you can see the trend.' },
+  { q: 'How long does e-commerce SEO take to show results?', a: 'Technical fixes and product-page improvements usually show movement in 6–10 weeks. Rankings for competitive category keywords typically take 4–8 months. We report rankings, organic traffic and organic revenue every week.' },
+  { q: 'Do you run ads on Blinkit, Zepto and Instamart?', a: 'Yes. We set up and manage quick-commerce listings and ads for food, FMCG, beauty and wellness brands, alongside Amazon and Flipkart, so you can plan budgets across every marketplace together.' },
+  { q: 'Do you work with manufacturers and exporters?', a: 'Yes. For B2B manufacturers and exporters we build lead-generating websites, run export SEO and LinkedIn and Google ads that bring enquiries from international buyers — an alternative to relying only on IndiaMART and trade fairs.' },
   { q: 'Is there a long-term contract?', a: 'No long lock-ins. Retainers run month to month after an initial 3-month period, which is the minimum time needed to judge ads and SEO fairly.' },
 ];
 
+const services = ['Shopify development', 'E-commerce website development', 'Amazon advertising', 'Amazon account management', 'Flipkart account management', 'Meta and Google ads', 'Quick commerce ads', 'E-commerce SEO', 'AI search optimisation', 'B2B digital marketing'];
 const schema = [
   { '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${site.url}/#website`, url: site.url, name: site.name, publisher: { '@id': `${site.url}/#org` } },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+  { '@context': 'https://schema.org', '@type': 'OfferCatalog', name: 'E-commerce marketing services', provider: { '@id': `${site.url}/#org` }, itemListElement: services.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s, areaServed: 'IN' } })) },
 ];
 ---
 <Base
@@ -34,13 +39,14 @@ const schema = [
 >
   <Hero />
   <PlatformStrip />
-  <StatementStats />
-  <Challenges />
   <Services />
-  <Process />
   <Industries />
-  <CaseStudies />
-  <FounderNote />
+  <WhyStatement />
+  <Process />
+  <CaseStack />
+  <Locations />
+  <Qualify />
+  <Guides />
   <FAQ items={faqs} />
   <LeadForm />
 </Base>

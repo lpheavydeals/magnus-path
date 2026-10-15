@@ -1,88 +1,68 @@
 ---
 import Logo from './Logo.astro';
-import { nav, site } from '../data/site';
+import { nav } from '../data/site';
 ---
 <header class="hdr">
-  <div class="wrap hdr__inner">
-    <a href="/" class="hdr__brand" aria-label={`${site.name} — home`}><Logo /></a>
-
+  <div class="hdr__pill">
+    <a href="/" class="hdr__brand" aria-label="Magnus Path — home"><Logo /></a>
     <nav class="hdr__nav" aria-label="Main">
       <ul>
         {nav.map((item) => (
           <li class:list={[{ 'has-menu': item.children }]}>
-            <a href={item.href}>{item.label}{item.children && <span class="chev" aria-hidden="true">▾</span>}</a>
+            <a href={item.href}>{item.label}{item.children && <svg class="chev" viewBox="0 0 10 6" width="9" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>}</a>
             {item.children && (
-              <div class="menu">
-                <ul>
-                  {item.children.map((c) => (
-                    <li><a href={c.href}><strong>{c.label}</strong>{c.note && <span>{c.note}</span>}</a></li>
-                  ))}
-                </ul>
-              </div>
+              <div class="menu"><ul>
+                {item.children.map((c) => <li><a href={c.href}><strong>{c.label}</strong>{c.note && <span>{c.note}</span>}</a></li>)}
+              </ul></div>
             )}
           </li>
         ))}
       </ul>
     </nav>
-
-    <div class="hdr__cta">
-      <a class="hdr__phone" href={site.phoneHref}>{site.phone}</a>
-      <a class="btn btn--primary hdr__btn" href="/free-ecommerce-audit/">Free Store Audit</a>
-    </div>
-
+    <a class="btn btn--dark btn--sm hdr__cta" href="/free-ecommerce-audit/">Free Store Audit <span class="arrow" aria-hidden="true">→</span></a>
     <details class="mnav">
-      <summary aria-label="Open menu"><span></span><span></span><span></span></summary>
+      <summary aria-label="Open menu"><span></span><span></span></summary>
       <div class="mnav__panel">
         {nav.map((item) => (
           <div class="mnav__group">
             <a class="mnav__top" href={item.href}>{item.label}</a>
-            {item.children && (
-              <ul>{item.children.map((c) => <li><a href={c.href}>{c.label}</a></li>)}</ul>
-            )}
+            {item.children && <ul>{item.children.map((c) => <li><a href={c.href}>{c.label}</a></li>)}</ul>}
           </div>
         ))}
-        <a class="btn btn--primary" href="/free-ecommerce-audit/">Get a Free Store Audit</a>
-        <a class="mnav__phone" href={site.phoneHref}>Call {site.phone}</a>
+        <a class="btn btn--primary" href="/free-ecommerce-audit/">Get a Free Store Audit <span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </details>
   </div>
 </header>
-
 <style>
-  .hdr { position: sticky; top: 0; z-index: 50; background: rgba(245, 242, 238, 0.86); backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px); border-bottom: 1px solid var(--line); }
-  .hdr__inner { display: flex; align-items: center; gap: 24px; height: 76px; }
+  .hdr { position: fixed; top: 14px; left: 0; right: 0; z-index: 50; padding: 0 var(--gutter); pointer-events: none; }
+  .hdr__pill { pointer-events: auto; position: relative; max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: 18px; height: 64px; padding: 0 10px 0 22px; background: rgba(255,255,255,.88); backdrop-filter: saturate(170%) blur(16px); -webkit-backdrop-filter: saturate(170%) blur(16px); border: 1px solid rgba(18,19,22,.06); border-radius: 999px; box-shadow: 0 12px 40px -18px rgba(18,19,22,.25); }
   .hdr__brand { display: inline-flex; text-decoration: none; }
-  .hdr__nav { margin-left: auto; display: none; }
-  .hdr__nav > ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+  .hdr__brand :global(.logo__mark) { width: 38px; }
+  .hdr__brand :global(.logo__word) { width: 118px; }
+  .hdr__nav { margin: 0 auto; display: none; }
+  .hdr__nav > ul { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
   .hdr__nav > ul > li { position: relative; }
-  .hdr__nav > ul > li > a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 12px; font-size: 15px; font-weight: 500; text-decoration: none; border-radius: 999px; }
-  .hdr__nav > ul > li > a:hover { background: rgba(21, 23, 26, 0.06); }
-  .chev { font-size: 0.7em; opacity: 0.6; }
-  .menu { position: absolute; top: 100%; left: -8px; padding-top: 10px; opacity: 0; visibility: hidden; transform: translateY(6px); transition: all .18s ease; }
+  .hdr__nav > ul > li > a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 13px; font-size: 14.5px; font-weight: 500; text-decoration: none; border-radius: 999px; transition: background .2s ease; }
+  .hdr__nav > ul > li > a:hover { background: var(--accent-tint); }
+  .chev { opacity: .55; }
+  .menu { position: absolute; top: 100%; left: -10px; padding-top: 14px; opacity: 0; visibility: hidden; transform: translateY(8px); transition: all .3s var(--ease); }
   .has-menu:hover .menu, .has-menu:focus-within .menu { opacity: 1; visibility: visible; transform: none; }
-  .menu ul { list-style: none; margin: 0; padding: 10px; width: 320px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
-  .menu a { display: grid; gap: 2px; padding: 10px 12px; border-radius: 10px; text-decoration: none; }
+  .menu ul { list-style: none; margin: 0; padding: 10px; width: 330px; background: var(--white); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); }
+  .menu a { display: grid; gap: 2px; padding: 11px 14px; border-radius: 14px; text-decoration: none; }
   .menu a:hover { background: var(--accent-tint); }
   .menu strong { font-size: 15px; font-weight: 600; }
   .menu span { font-size: 13px; color: var(--muted); }
-  .hdr__cta { display: none; align-items: center; gap: 16px; }
-  .hdr__phone { font-size: 15px; font-weight: 600; text-decoration: none; white-space: nowrap; }
-  .hdr__btn { min-height: 44px; }
-
+  .hdr__cta { display: none; }
   .mnav { margin-left: auto; }
-  .mnav summary { list-style: none; cursor: pointer; display: grid; gap: 5px; padding: 12px; }
+  .mnav summary { list-style: none; cursor: pointer; display: grid; gap: 6px; padding: 14px 12px; }
   .mnav summary::-webkit-details-marker { display: none; }
-  .mnav summary span { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; }
-  .mnav__panel { position: absolute; left: 0; right: 0; top: 76px; max-height: calc(100vh - 76px); overflow: auto; background: var(--paper); border-bottom: 1px solid var(--line); padding: 16px var(--gutter) 28px; display: grid; gap: 18px; }
-  .mnav__top { font-family: var(--font-display); font-stretch: 115%; font-weight: 800; font-size: 1.25rem; text-decoration: none; }
+  .mnav summary span { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .3s var(--ease); }
+  .mnav[open] summary span:first-child { transform: translateY(4px) rotate(45deg); }
+  .mnav[open] summary span:last-child { transform: translateY(-4px) rotate(-45deg); }
+  .mnav__panel { position: absolute; left: 0; right: 0; top: 74px; max-height: calc(100vh - 110px); overflow: auto; background: var(--white); border-radius: 26px; box-shadow: var(--shadow); padding: 22px; display: grid; gap: 18px; }
+  .mnav__top { font-family: var(--font-display); font-size: 1.3rem; font-weight: 500; text-decoration: none; }
   .mnav__group ul { list-style: none; padding: 6px 0 0; margin: 0; display: grid; gap: 6px; }
   .mnav__group li a { color: var(--muted); text-decoration: none; font-size: 15px; }
-  .mnav__phone { text-align: center; font-weight: 600; }
-
-  @media (min-width: 1080px) {
-    .hdr__nav { display: block; }
-    .hdr__cta { display: flex; }
-    .mnav { display: none; }
-  }
-  @media (min-width: 1080px) and (max-width: 1220px) { .hdr__phone { display: none; } }
+  @media (min-width: 1100px) { .hdr__nav, .hdr__cta { display: flex; } .mnav { display: none; } }
 </style>

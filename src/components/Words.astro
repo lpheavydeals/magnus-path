@@ -1,0 +1,11 @@
+---
+// Splits text into words for the CSS blur reveal. Words wrapped in *asterisks* get the accent colour.
+interface Props { text: string; }
+const { text } = Astro.props;
+const words = text.split(' ');
+---
+<span class="words">{words.map((w, i) => {
+  const accent = w.startsWith('*');
+  const clean = w.replace(/\*/g, '');
+  return <><span class="w" style={`--i:${i}`}>{accent ? <em>{clean}</em> : clean}</span>{i < words.length - 1 ? ' ' : ''}</>;
+})}</span>

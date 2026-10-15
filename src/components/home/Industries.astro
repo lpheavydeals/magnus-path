@@ -1,38 +1,58 @@
 ---
 const inds = [
-  { name: 'Fashion & Ethnic Wear', note: 'Tiruppur knitwear, sarees, kurtis — size guides, lookbooks, Myntra & Amazon Fashion.', href: '/industries/fashion-apparel/' },
-  { name: 'Beauty & Ayurveda', note: 'Herbal, skincare and wellness brands — repeat-purchase funnels and compliant ads.', href: '/industries/beauty-ayurveda/' },
-  { name: 'Food & FMCG', note: 'Snacks, spices, coffee and millets — quick commerce, subscriptions and gifting.', href: '/industries/food-fmcg/' },
-  { name: 'Manufacturers & Exporters', note: 'B2B websites, export SEO and LinkedIn & Google ads that bring global buyer enquiries.', href: '/b2b-digital-marketing/' },
+  { n: '01', name: 'Fashion & Ethnic Wear', href: '/industries/fashion-apparel/', body: 'Tiruppur knitwear, sarees, kurtis and streetwear. We build size-confident product pages, run Meta and Myntra/Amazon Fashion ads, and rank category pages like “cotton kurtis online”.', tags: ['Shopify', 'Myntra', 'Meta ads', 'Lookbooks'] },
+  { n: '02', name: 'Beauty & Ayurveda', href: '/industries/beauty-ayurveda/', body: 'Herbal, skincare and wellness brands that live on repeat purchase. We build subscription-ready stores, compliant ad creative and SEO content that earns trust.', tags: ['Subscriptions', 'Amazon', 'Compliant creative', 'Reviews'] },
+  { n: '03', name: 'Food & FMCG', href: '/industries/food-fmcg/', body: 'Snacks, spices, coffee and millet brands. We launch you on Blinkit, Zepto and Instamart, grow Amazon sales and build gifting and D2C funnels.', tags: ['Quick commerce', 'Gifting', 'Amazon', 'D2C'] },
+  { n: '04', name: 'Manufacturers & Exporters', href: '/b2b-digital-marketing/', body: 'Chennai, Coimbatore and Tiruppur manufacturers. B2B websites, export SEO and LinkedIn & Google ads that bring enquiries from international buyers — beyond IndiaMART.', tags: ['B2B websites', 'Export SEO', 'LinkedIn ads', 'Lead gen'] },
 ];
 ---
-<section class="section in">
-  <div class="wrap">
-    <div class="section-head section-head--split">
-      <div><p class="eyebrow">Industries</p></div>
-      <div class="in__head">
-        <h2>Built for brands that make things people buy online.</h2>
-        <p class="lede">We go deep in a few categories instead of shallow in all — so your strategy starts from what already works in your market.</p>
-      </div>
+<section class="section ind" data-pin-list>
+  <div class="wrap ind__grid">
+    <div class="ind__left">
+      <p class="label" data-reveal>Who we work with</p>
+      <h2 class="sr-only">Industries we grow online</h2>
+      <ol class="ind__list">
+        {inds.map((d, i) => (
+          <li data-pin-item={i} class:list={[{ 'is-active': i === 0 }]}>
+            <span class="ind__n">{d.n}</span>
+            <a href={d.href}>{d.name}</a>
+          </li>
+        ))}
+      </ol>
     </div>
-    <ul class="in__grid">
-      {inds.map((d) => (
-        <li><a href={d.href}><h3>{d.name}</h3><p>{d.note}</p><span class="in__go" aria-hidden="true">↗</span></a></li>
+    <div class="ind__cards">
+      {inds.map((d, i) => (
+        <article class:list={['ind__card', { 'is-active': i === 0 }]} data-pin-card={i}>
+          <span class="ind__cn">{d.n} · Industry</span>
+          <h3>{d.name}</h3>
+          <p>{d.body}</p>
+          <ul>{d.tags.map((t) => <li>{t}</li>)}</ul>
+          <a class="btn btn--primary btn--sm" href={d.href}>Explore {d.name.split(' ')[0]} <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
       ))}
-    </ul>
+    </div>
   </div>
 </section>
 <style>
-  .in { background: var(--white); }
-  .in__head { display: grid; gap: 16px; }
-  .in__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
-  .in__grid a { position: relative; display: grid; gap: 10px; align-content: end; min-height: 220px; padding: 26px; border-radius: var(--radius); background: var(--paper); text-decoration: none; overflow: hidden; transition: transform .25s ease; }
-  .in__grid a::before { content: ''; position: absolute; right: -60px; top: -60px; width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(closest-side, rgba(241,100,54,.35), transparent); transition: transform .4s ease; }
-  .in__grid a:hover { transform: translateY(-4px); }
-  .in__grid a:hover::before { transform: scale(1.6); }
-  .in__grid p { color: var(--muted); font-size: 15px; }
-  .in__grid h3 { padding-right: 44px; }
-  .in__go { position: absolute; top: 20px; right: 22px; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--ink); color: var(--white); }
-  @media (min-width: 700px) { .in__grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 1080px) { .in__grid { grid-template-columns: repeat(4, 1fr); } }
+  .ind__grid { display: grid; gap: 40px; }
+  .ind__left { display: grid; gap: 30px; align-content: start; }
+  .ind__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .ind__list li { display: flex; align-items: baseline; gap: 14px; }
+  .ind__n { font-size: 13px; color: var(--muted); width: 22px; }
+  .ind__list a { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.035em; line-height: 1.12; font-size: clamp(1.9rem, 4.4vw, 3.6rem); text-decoration: none; color: #b9bcc1; transition: color .5s var(--ease); }
+  .ind__list li.is-active a, .ind__list a:hover { color: var(--accent); }
+  .ind__cards { display: grid; gap: 14px; }
+  .ind__card { display: grid; gap: 16px; align-content: start; padding: clamp(26px, 3vw, 36px); border-radius: var(--radius); background: var(--ink); color: var(--white); box-shadow: var(--shadow); }
+  .ind__cn { font-size: 13px; color: var(--accent-soft); }
+  .ind__card h3 { font-size: clamp(1.6rem, 2.4vw, 2rem); }
+  .ind__card p { color: var(--muted-on-dark); }
+  .ind__card ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .ind__card ul li { font-size: 13px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line-dark); color: var(--muted-on-dark); }
+  .ind__card .btn { justify-self: start; margin-top: 6px; }
+  @media (min-width: 980px) {
+    .ind__grid { grid-template-columns: 1.15fr 1fr; gap: 64px; align-items: center; min-height: 70vh; }
+    .ind__cards { display: block; position: relative; min-height: 440px; }
+    .ind__card { position: absolute; inset: 0; opacity: 0; transform: translateY(30px) scale(.97); transition: opacity .6s var(--ease), transform .6s var(--ease); pointer-events: none; }
+    .ind__card.is-active { opacity: 1; transform: none; pointer-events: auto; }
+  }
 </style>

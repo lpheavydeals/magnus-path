@@ -32,8 +32,8 @@ const cols = [
 ];
 const year = new Date().getFullYear();
 ---
-<footer class="ftr dark">
-  <div class="wrap">
+<footer class="ftr">
+  <div class="wrap"><div class="ftr__inner">
     <div class="ftr__top">
       <div class="ftr__brand">
         <Logo />
@@ -58,22 +58,23 @@ const year = new Date().getFullYear();
       <span>© {year} {site.legalName}. All rights reserved.</span>
       <span class="ftr__legal"><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a><a href={site.social.linkedin}>LinkedIn</a><a href={site.social.instagram}>Instagram</a><a href={site.social.youtube}>YouTube</a></span>
     </div>
-  </div>
+  </div></div>
 </footer>
 <style>
-  .ftr { padding: 72px 0 110px; }
+  .ftr { padding: 72px 0 120px; background: #ffe2d3; }
+  .ftr__inner { background: var(--white); border-radius: 30px; padding: clamp(28px, 4vw, 56px); box-shadow: var(--shadow); }
   .ftr__top { display: grid; gap: 48px; }
   .ftr__brand { display: grid; gap: 18px; max-width: 360px; align-content: start; }
-  .ftr__brand p { color: var(--muted-on-dark); }
-  address { font-style: normal; color: var(--muted-on-dark); font-size: 15px; line-height: 1.7; }
-  address strong { color: var(--white); }
-  .ftr a { text-decoration: none; color: var(--muted-on-dark); }
-  .ftr a:hover { color: var(--accent); }
+  .ftr__brand p { color: var(--muted); }
+  address { font-style: normal; color: var(--muted); font-size: 15px; line-height: 1.7; }
+  address strong { color: var(--ink); }
+  .ftr a { text-decoration: none; color: var(--muted); transition: color .2s ease; }
+  .ftr a:hover { color: var(--accent-ink); }
   .ftr__cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 24px; }
-  .ftr__h { font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 14px; }
-  .ftr ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 15px; }
-  .ftr__bottom { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line-dark); display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 14px; color: var(--muted-on-dark); }
+  .ftr__h { font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 0; color: var(--ink); margin-bottom: 14px; }
+  .ftr ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 14.5px; }
+  .ftr__bottom { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 14px; color: var(--muted); }
   .ftr__legal { display: flex; flex-wrap: wrap; gap: 18px; }
   @media (min-width: 760px) { .ftr__cols { grid-template-columns: repeat(3, 1fr); } }
-  @media (min-width: 1080px) { .ftr__top { grid-template-columns: 320px 1fr; } .ftr__cols { grid-template-columns: repeat(5, 1fr); } .ftr { padding-bottom: 72px; } }
+  @media (min-width: 1080px) { .ftr__top { grid-template-columns: 300px 1fr; } .ftr__cols { grid-template-columns: repeat(5, 1fr); } .ftr { padding-bottom: 72px; } }
 </style>

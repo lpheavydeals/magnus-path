@@ -1,23 +1,29 @@
 ---
 import { site } from '../data/site';
 interface Props { heading?: string; sub?: string; }
-const { heading = 'Get a free store audit', sub = 'Share your store or marketplace link. Within 24 hours you get a video walkthrough and a PDF with the fixes that will move sales fastest.' } = Astro.props;
+const { heading = 'Ready to sell more online?', sub = 'Get a free e-commerce store audit. Within 24 hours you receive a video walkthrough and a PDF with the fixes that will move your sales fastest.' } = Astro.props;
 ---
-<section class="section dark lf" id="audit">
-  <div class="lf__glow" aria-hidden="true"></div>
-  <div class="wrap lf__grid">
-    <div class="lf__copy">
-      <p class="eyebrow">Free audit · no obligation</p>
-      <h2>{heading}</h2>
-      <p class="lede">{sub}</p>
-      <ul class="lf__list">
-        <li>Speed & conversion leaks on your store</li>
-        <li>Wasted spend in your Amazon / Meta / Google ads</li>
-        <li>SEO & AI-search gaps vs your top 3 competitors</li>
+<section class="cta" id="audit">
+  <div class="cta__waves" aria-hidden="true">
+    <svg viewBox="0 0 1440 600" preserveAspectRatio="none">
+      <path class="wv wv1" d="M0 300 C 240 200 480 420 720 320 S 1200 180 1440 300 V600 H0Z" />
+      <path class="wv wv2" d="M0 360 C 300 260 520 480 760 380 S 1180 260 1440 360 V600 H0Z" />
+      <path class="wv wv3" d="M0 430 C 260 360 560 520 820 440 S 1220 360 1440 430 V600 H0Z" />
+    </svg>
+  </div>
+  <div class="wrap cta__grid">
+    <div class="cta__copy">
+      <p class="label" data-reveal>Free audit · no obligation</p>
+      <h2 data-reveal>{heading}</h2>
+      <p class="lede" data-reveal>{sub}</p>
+      <ul data-reveal>
+        <li>Speed and conversion leaks on your store</li>
+        <li>Wasted spend in Amazon, Meta and Google ads</li>
+        <li>SEO and AI-search gaps against your top 3 competitors</li>
       </ul>
-      <p class="lf__alt">Prefer to talk? <a href={site.whatsapp} rel="noopener">WhatsApp us</a> or call <a href={site.phoneHref}>{site.phone}</a></p>
+      <p class="cta__alt" data-reveal>Prefer to talk? <a href={site.whatsapp} rel="noopener">WhatsApp us</a> or call <a href={site.phoneHref}>{site.phone}</a></p>
     </div>
-    <form class="lf__form" action={site.formEndpoint} method="post">
+    <form class="cta__form" action={site.formEndpoint} method="post" data-reveal>
       <input type="hidden" name="source" value="website-audit-form" />
       <label>Your name<input name="name" autocomplete="name" required /></label>
       <label>Work email<input name="email" type="email" autocomplete="email" required /></label>
@@ -28,33 +34,35 @@ const { heading = 'Get a free store audit', sub = 'Share your store or marketpla
           <option>Just starting</option><option>Under ₹5 lakh</option><option>₹5–25 lakh</option><option>₹25 lakh – 1 crore</option><option>Above ₹1 crore</option>
         </select>
       </label>
-      <label>Store / Amazon / website link<input name="store" type="url" placeholder="https://" required /></label>
-      <label>Main need
+      <label class="full">Store, Amazon or website link<input name="store" type="url" placeholder="https://" required /></label>
+      <label class="full">What do you need most?
         <select name="service">
-          <option>Not sure — audit everything</option><option>New / better website</option><option>Amazon / Flipkart ads</option><option>Meta / Google ads</option><option>SEO & AI search</option>
+          <option>Not sure — audit everything</option><option>New or better website</option><option>Amazon / Flipkart ads</option><option>Meta / Google ads</option><option>SEO & AI search</option><option>B2B / export leads</option>
         </select>
       </label>
-      <button class="btn btn--primary" type="submit">Send my free audit request <span class="arrow" aria-hidden="true">↗</span></button>
-      <p class="lf__note">We reply within one working day. No spam, ever.</p>
+      <button class="btn btn--primary full" type="submit">Send my free audit request <span class="arrow" aria-hidden="true">→</span></button>
+      <p class="cta__note full">We reply within one working day. No spam, ever.</p>
     </form>
   </div>
 </section>
 <style>
-  .lf { position: relative; overflow: hidden; }
-  .lf__glow { position: absolute; left: -10%; bottom: -40%; width: 60vw; height: 60vw; max-width: 760px; max-height: 760px; background: radial-gradient(closest-side, rgba(241,100,54,.4), transparent 70%); pointer-events: none; }
-  .lf__grid { position: relative; display: grid; gap: 48px; align-items: start; }
-  .lf__copy { display: grid; gap: 22px; }
-  .lf__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-  .lf__list li::before { content: '✓'; color: var(--accent); font-weight: 700; margin-right: 10px; }
-  .lf__alt { color: var(--muted-on-dark); }
-  .lf__alt a { color: var(--white); }
-  .lf__form { display: grid; gap: 14px; padding: clamp(22px, 3vw, 34px); border-radius: var(--radius); background: var(--white); color: var(--ink); box-shadow: var(--shadow); }
-  .lf__form label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; }
-  .lf__form input, .lf__form select { width: 100%; min-height: 48px; padding: 0 14px; font: 400 16px var(--font-body); color: var(--ink); background: var(--paper); border: 1.5px solid var(--line); border-radius: var(--radius-sm); }
-  .lf__form input:focus, .lf__form select:focus { outline: none; border-color: var(--accent); background: var(--white); }
-  .lf__form .btn { margin-top: 6px; width: 100%; }
-  .lf__form .btn:hover { background: var(--ink); color: var(--white); }
-  .lf__note { font-size: 13px; color: var(--muted); text-align: center; }
-  @media (min-width: 680px) { .lf__form { grid-template-columns: 1fr 1fr; } .lf__form label:nth-of-type(5), .lf__form label:nth-of-type(6), .lf__form .btn, .lf__note { grid-column: 1 / -1; } }
-  @media (min-width: 980px) { .lf__grid { grid-template-columns: 1fr 1.1fr; gap: 72px; } }
+  .cta { position: relative; overflow: hidden; padding: var(--section) 0 clamp(80px, 10vw, 140px); background: linear-gradient(180deg, var(--paper) 0%, #fff4ee 40%, #ffe2d3 100%); }
+  .cta__waves { position: absolute; inset: auto 0 0 0; height: 75%; }
+  .cta__waves svg { width: 140%; max-width: none; height: 100%; margin-left: -20%; }
+  .wv { transform-origin: center; animation: wave 14s ease-in-out infinite alternate; }
+  .wv1 { fill: rgba(255, 176, 138, .35); } .wv2 { fill: rgba(241, 100, 54, .22); animation-duration: 18s; animation-direction: alternate-reverse; } .wv3 { fill: rgba(241, 100, 54, .28); animation-duration: 11s; }
+  @keyframes wave { 0% { transform: translateX(-6%) scaleY(1); } 100% { transform: translateX(6%) scaleY(1.15); } }
+  .cta__grid { position: relative; display: grid; gap: 48px; align-items: start; }
+  .cta__copy { display: grid; gap: 20px; }
+  .cta__copy ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .cta__copy li::before { content: '+'; color: var(--accent); font-weight: 600; margin-right: 12px; }
+  .cta__alt { color: var(--muted); }
+  .cta__form { display: grid; gap: 14px; padding: clamp(22px, 3vw, 34px); border-radius: 28px; background: rgba(255,255,255,.85); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,.9); box-shadow: var(--shadow); }
+  .cta__form label { display: grid; gap: 6px; font-size: 14px; font-weight: 500; }
+  .cta__form input, .cta__form select { width: 100%; min-height: 50px; padding: 0 16px; font: 400 16px var(--font-body); color: var(--ink); background: var(--white); border: 1.5px solid var(--line); border-radius: 14px; transition: border-color .2s ease; }
+  .cta__form input:focus, .cta__form select:focus { outline: none; border-color: var(--accent); }
+  .cta__form .btn { margin-top: 6px; }
+  .cta__note { font-size: 13px; color: var(--muted); text-align: center; }
+  @media (min-width: 680px) { .cta__form { grid-template-columns: 1fr 1fr; } .cta__form .full { grid-column: 1 / -1; } }
+  @media (min-width: 980px) { .cta__grid { grid-template-columns: 1fr 1.05fr; gap: 80px; } }
 </style>

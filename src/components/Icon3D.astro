@@ -1,0 +1,64 @@
+---
+// Soft "clay" 3D-style service icons drawn in SVG (white objects + orange accents).
+interface Props { name: 'shopify' | 'website' | 'amazon' | 'marketplace' | 'social' | 'quick' | 'seo' | 'ai'; }
+const { name } = Astro.props;
+---
+<svg class="i3d" viewBox="0 0 160 140" aria-hidden="true">
+  <defs>
+    <linearGradient id="cw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ece6e0"/></linearGradient>
+    <linearGradient id="cs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2dad2"/><stop offset="1" stop-color="#cfc5bb"/></linearGradient>
+    <linearGradient id="co" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb894"/><stop offset="1" stop-color="#f16436"/></linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#7a2e10" flood-opacity=".18"/></filter>
+  </defs>
+  <g filter="url(#sh)">
+  {name === 'shopify' && <>
+    <rect x="22" y="26" width="104" height="80" rx="12" fill="url(#cs)"/><rect x="22" y="20" width="104" height="80" rx="12" fill="url(#cw)"/>
+    <rect x="22" y="20" width="104" height="16" rx="8" fill="#f4efea"/><circle cx="33" cy="28" r="3" fill="#f16436"/><circle cx="43" cy="28" r="3" fill="#ffb894"/>
+    <path d="M86 58h44l-5 44H91z" fill="url(#co)"/><path d="M98 60c0-10 5-16 10-16s10 6 10 16" fill="none" stroke="#c2410c" stroke-width="4" stroke-linecap="round"/>
+    <rect x="34" y="46" width="40" height="8" rx="4" fill="#e6ddd4"/><rect x="34" y="60" width="28" height="8" rx="4" fill="#e6ddd4"/><rect x="34" y="78" width="36" height="12" rx="6" fill="url(#co)"/>
+  </>}
+  {name === 'website' && <>
+    <rect x="18" y="28" width="112" height="78" rx="12" fill="url(#cs)"/><rect x="18" y="22" width="112" height="78" rx="12" fill="url(#cw)"/>
+    <rect x="18" y="22" width="112" height="16" rx="8" fill="#f4efea"/><circle cx="29" cy="30" r="3" fill="#f16436"/>
+    <path d="M56 56l-12 12 12 12M92 56l12 12-12 12" fill="none" stroke="url(#co)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M80 52l-12 34" stroke="#ffb894" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="126" cy="100" r="16" fill="url(#co)"/><path d="M119 100l5 5 9-10" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </>}
+  {name === 'amazon' && <>
+    <rect x="20" y="30" width="110" height="80" rx="12" fill="url(#cs)"/><rect x="20" y="24" width="110" height="80" rx="12" fill="url(#cw)"/>
+    <rect x="36" y="74" width="14" height="20" rx="4" fill="#ffd2bd"/><rect x="58" y="62" width="14" height="32" rx="4" fill="#ffb894"/><rect x="80" y="50" width="14" height="44" rx="4" fill="url(#co)"/>
+    <path d="M36 62l26-16 18 8 34-22" fill="none" stroke="#f16436" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 30h12v12" fill="none" stroke="#f16436" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="124" cy="102" r="16" fill="url(#co)"/><text x="124" y="109" text-anchor="middle" font-family="Arial" font-weight="700" font-size="19" fill="#fff">₹</text>
+  </>}
+  {name === 'marketplace' && <>
+    <path d="M26 36h18l14 52h58l12-38H52" fill="none" stroke="url(#cs)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26 32h18l14 52h58l12-38H52" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="62" y="48" width="22" height="26" rx="5" fill="url(#co)"/><rect x="88" y="54" width="20" height="20" rx="5" fill="#ffb894"/>
+    <circle cx="66" cy="104" r="9" fill="url(#co)"/><circle cx="108" cy="104" r="9" fill="url(#co)"/>
+  </>}
+  {name === 'social' && <>
+    <path d="M30 60l62-30v76L30 82z" fill="url(#cw)"/><path d="M30 66l62-30v76L30 88z" fill="url(#cs)" opacity=".6"/>
+    <rect x="18" y="56" width="22" height="30" rx="8" fill="url(#co)"/><path d="M44 84l8 26h14l-6-24" fill="#e6ddd4"/>
+    <path d="M108 50c8 6 8 26 0 32M118 42c14 10 14 38 0 48" fill="none" stroke="#f16436" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="128" cy="26" r="12" fill="url(#co)"/><path d="M123 26l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+  </>}
+  {name === 'quick' && <>
+    <rect x="34" y="34" width="84" height="78" rx="14" fill="url(#cs)"/><rect x="34" y="28" width="84" height="78" rx="14" fill="url(#cw)"/>
+    <path d="M58 28c0-12 8-18 18-18s18 6 18 18" fill="none" stroke="#e2dad2" stroke-width="6" stroke-linecap="round"/>
+    <path d="M84 40L62 74h16l-6 26 24-36H80z" fill="url(#co)"/>
+    <circle cx="124" cy="36" r="14" fill="#fff"/><path d="M124 28v9l6 4" fill="none" stroke="#f16436" stroke-width="3.5" stroke-linecap="round"/>
+  </>}
+  {name === 'seo' && <>
+    <rect x="16" y="30" width="96" height="74" rx="12" fill="url(#cs)"/><rect x="16" y="24" width="96" height="74" rx="12" fill="url(#cw)"/>
+    <rect x="30" y="40" width="56" height="8" rx="4" fill="url(#co)"/><rect x="30" y="56" width="44" height="6" rx="3" fill="#e6ddd4"/><rect x="30" y="70" width="50" height="6" rx="3" fill="#e6ddd4"/>
+    <circle cx="104" cy="78" r="24" fill="#fff" stroke="url(#co)" stroke-width="9"/><path d="M121 96l17 17" stroke="#c2410c" stroke-width="11" stroke-linecap="round"/>
+    <text x="104" y="85" text-anchor="middle" font-family="Arial" font-weight="800" font-size="20" fill="#f16436">#1</text>
+  </>}
+  {name === 'ai' && <>
+    <rect x="22" y="40" width="96" height="66" rx="18" fill="url(#cs)"/><rect x="22" y="34" width="96" height="66" rx="18" fill="url(#cw)"/>
+    <path d="M44 100l-6 16 20-14" fill="url(#cw)"/>
+    <rect x="38" y="52" width="50" height="7" rx="3.5" fill="#e6ddd4"/><rect x="38" y="66" width="62" height="7" rx="3.5" fill="#e6ddd4"/><rect x="38" y="80" width="36" height="7" rx="3.5" fill="url(#co)"/>
+    <path d="M124 14l6 16 16 6-16 6-6 16-6-16-16-6 16-6z" fill="url(#co)"/><path d="M104 8l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#ffb894"/>
+  </>}
+  </g>
+</svg>
+<style>.i3d { width: 100%; height: auto; overflow: visible; }</style>

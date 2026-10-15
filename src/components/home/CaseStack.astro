@@ -1,0 +1,51 @@
+---
+// EXAMPLE CONTENT — replace with real, client-approved results before launch.
+const cases = [
+  { client: 'Chennai Ayurveda brand', type: 'Shopify rebuild · Meta ads', stats: [['3.1×', 'blended ROAS'], ['+64%', 'conversion rate']], body: 'Rebuilt product pages and checkout for mobile, then launched structured creative testing on Meta.', bg: 'linear-gradient(135deg,#2a1a12,#7a3418 60%,#f16436)' },
+  { client: 'Tiruppur apparel exporter', type: 'Amazon US · Shopify', stats: [['+58%', 'monthly orders'], ['−31%', 'ACoS']], body: 'Listing SEO and Sponsored Brands on Amazon US, plus a D2C Shopify store for repeat international buyers.', bg: 'linear-gradient(135deg,#121316,#2c2f35 55%,#5a3a2c)' },
+  { client: 'South Indian snacks brand', type: 'E-commerce SEO · Blinkit ads', stats: [['120+', 'keywords in top 10'], ['4', 'quick-commerce cities']], body: 'Category-page content and technical SEO on the D2C store, with a quick-commerce launch across four metros.', bg: 'linear-gradient(135deg,#3b1d0f,#c2410c 60%,#ffb08a)' },
+];
+---
+<section class="section cs">
+  <div class="wrap">
+    <div class="cs__head">
+      <div class="head">
+        <p class="label" data-reveal>Case studies</p>
+        <h2 data-reveal>E-commerce growth you can <em>measure</em></h2>
+      </div>
+      <a class="btn btn--ghost" href="/case-studies/" data-reveal>All case studies</a>
+    </div>
+    <ul class="cs__stack">
+      {cases.map((c, i) => (
+        <li class="cs__card" style={`--bg:${c.bg};--i:${i}`}>
+          <div class="cs__mesh" aria-hidden="true"></div>
+          <div class="cs__top"><span class="example-badge">Example</span><span>{c.type}</span></div>
+          <div class="cs__body">
+            <div>
+              <h3>{c.client}</h3>
+              <p>{c.body}</p>
+              <a class="btn btn--primary btn--sm" href="/case-studies/">Read full case study <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+            <dl class="cs__stats">{c.stats.map(([v, l]) => <div><dt>{l}</dt><dd>{v}</dd></div>)}</dl>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+<style>
+  .cs__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: clamp(36px, 5vw, 60px); }
+  .cs__head .head { margin: 0; }
+  .cs__stack { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+  .cs__card { position: relative; top: calc(100px + var(--i) * 22px); min-height: clamp(420px, 48vw, 540px); display: grid; align-content: space-between; padding: clamp(24px, 4vw, 48px); border-radius: 30px; overflow: hidden; color: var(--white); background: var(--bg); box-shadow: 0 -20px 60px -30px rgba(0,0,0,.5); }
+  .cs__mesh { position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(255,255,255,.06) 0 1px, transparent 1px 70px), repeating-linear-gradient(0deg, rgba(255,255,255,.06) 0 1px, transparent 1px 70px); mask-image: linear-gradient(120deg, transparent 30%, #000); }
+  .cs__top { position: relative; display: flex; justify-content: space-between; gap: 12px; font-size: 14px; color: rgba(255,255,255,.75); }
+  .cs__body { position: relative; display: grid; gap: 28px; align-items: end; }
+  .cs__body h3 { font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 12px; }
+  .cs__body p { color: rgba(255,255,255,.8); max-width: 46ch; margin-bottom: 20px; }
+  .cs__stats { display: flex; gap: 12px; margin: 0; flex-wrap: wrap; }
+  .cs__stats div { flex: 1; padding: 16px 18px; border-radius: 20px; background: rgba(255,255,255,.12); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,.18); min-width: 130px; }
+  .cs__stats dt { font-size: 13px; color: rgba(255,255,255,.75); }
+  .cs__stats dd { margin: 4px 0 0; font-family: var(--font-display); font-weight: 500; letter-spacing: -0.04em; font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1; }
+  @media (min-width: 900px) { .cs__card { position: sticky; } .cs__stats div { flex: none; } .cs__body { grid-template-columns: 1.3fr 1fr; } .cs__stats { justify-content: flex-end; } }
+</style>

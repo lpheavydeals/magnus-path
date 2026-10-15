@@ -1,0 +1,39 @@
+---
+const fits = [
+  'D2C brands selling on their own store and Amazon/Flipkart',
+  'Brands doing ₹5 lakh+ in monthly online sales, or launching with a real budget',
+  'Manufacturers and exporters ready to win international buyers online',
+  'Founders who want growth measured in sales and profit, not likes',
+  'Teams that can turn around product, pricing and stock decisions quickly',
+];
+---
+<section class="qa">
+  <div class="qa__panel">
+    <div class="qa__glow" aria-hidden="true"></div>
+    <div class="qa__grid">
+      <div>
+        <p class="label" data-reveal>Is Magnus Path right for you?</p>
+        <h2 data-reveal>We don't work with every brand.</h2>
+        <p class="lede" data-reveal>We take on a limited number of brands each quarter so every account gets senior attention. If this sounds like you, let's talk.</p>
+      </div>
+      <div data-reveal>
+        <h3>We work best with:</h3>
+        <ul>{fits.map((f) => <li>{f}</li>)}</ul>
+        <a class="btn btn--dark" href="/free-ecommerce-audit/">Check if we're a fit <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .qa { padding: 0 var(--gutter); }
+  .qa__panel { position: relative; max-width: 1360px; margin: 0 auto; border-radius: 32px; overflow: hidden; padding: clamp(48px, 7vw, 96px) clamp(24px, 5vw, 80px); background: linear-gradient(120deg, #fff 0%, #fff1ea 55%, #ffd9c6 100%); }
+  .qa__glow { position: absolute; right: -10%; top: -30%; width: 60%; aspect-ratio: 1; background: radial-gradient(closest-side, rgba(241,100,54,.25), transparent); }
+  .qa__grid { position: relative; display: grid; gap: 40px; max-width: var(--wrap); margin: 0 auto; }
+  .qa__grid > div { display: grid; gap: 20px; align-content: start; }
+  .qa h3 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter-spacing: 0; }
+  .qa ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .qa li { position: relative; padding-left: 30px; }
+  .qa li::before { content: ''; position: absolute; left: 0; top: .35em; width: 18px; height: 18px; border-radius: 50%; background: var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.5l2.5 2.5L13 6.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/100% no-repeat; }
+  .qa .btn { justify-self: start; margin-top: 8px; }
+  @media (min-width: 980px) { .qa__grid { grid-template-columns: 1fr 1fr; gap: 80px; } }
+</style>

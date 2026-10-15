@@ -1,0 +1,45 @@
+---
+const india = [
+  ['Digital Marketing Agency in Chennai', '/chennai/digital-marketing-agency/'],
+  ['SEO Company in Chennai', '/chennai/seo-company/'],
+  ['E-commerce Website Development in Chennai', '/chennai/ecommerce-website-development/'],
+  ['E-commerce Development in Bangalore', '/bangalore/ecommerce-website-development/'],
+  ['SEO Services in Coimbatore', '/coimbatore/seo-services/'],
+];
+const global = [
+  ['White-label SEO for agencies', '/white-label-seo/'],
+  ['Outsource SEO to India', '/seo-outsourcing-india/'],
+];
+---
+<section class="section loc">
+  <div class="wrap loc__grid">
+    <div class="head">
+      <p class="label" data-reveal>Where we work</p>
+      <h2 data-reveal>Based in Chennai. Growing brands across <em>India and abroad.</em></h2>
+      <p class="lede" data-reveal>We meet Tamil Nadu clients in person at our Chennai office and work remotely with brands in Bangalore, Mumbai and Delhi, and with businesses in the UK, UAE, Australia, Singapore and the USA.</p>
+    </div>
+    <div class="loc__cols">
+      <div data-reveal>
+        <h3>India</h3>
+        <ul>{india.map(([l, h]) => <li><a href={h}>{l}<span aria-hidden="true">↗</span></a></li>)}</ul>
+      </div>
+      <div data-reveal>
+        <h3>Global</h3>
+        <ul>{global.map(([l, h]) => <li><a href={h}>{l}<span aria-hidden="true">↗</span></a></li>)}</ul>
+        <p class="loc__flags">UK · UAE · Australia · Singapore · USA</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .loc__grid { display: grid; gap: 40px; }
+  .loc__grid .head { margin: 0; }
+  .loc__cols { display: grid; gap: 28px; }
+  .loc__cols h3 { font-size: 1rem; font-family: var(--font-body); font-weight: 600; letter-spacing: 0; color: var(--muted); margin-bottom: 10px; }
+  .loc__cols ul { list-style: none; margin: 0; padding: 0; }
+  .loc__cols a { display: flex; justify-content: space-between; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); text-decoration: none; font-size: 1.05rem; font-weight: 500; transition: color .3s ease, padding .4s var(--ease); }
+  .loc__cols a:hover { color: var(--accent-ink); padding-left: 8px; }
+  .loc__cols a span { color: var(--accent); }
+  .loc__flags { margin-top: 16px; font-size: 14px; color: var(--muted); }
+  @media (min-width: 980px) { .loc__grid { grid-template-columns: 1fr 1fr; gap: 80px; } .loc__cols { grid-template-columns: 1fr 1fr; } }
+</style>

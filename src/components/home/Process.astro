@@ -1,72 +1,56 @@
 ---
 const steps = [
-  { t: 'Free audit', d: 'Send your store or marketplace link. Within 24 hours we send a video + PDF audit: speed, conversion leaks, ad waste and SEO gaps.' },
-  { t: 'Growth plan', d: 'A 90-day plan with targets for revenue, ROAS and rankings — and a clear monthly fee. No surprises, no lock-in.' },
-  { t: 'Build & launch', d: 'We fix or build the store, restructure ad accounts and start SEO. Most brands are live with changes in 2–4 weeks.' },
-  { t: 'Grow & report', d: 'Weekly reports on sales, ROAS and rankings. A monthly review call where we decide the next moves together.' },
+  { t: 'Free store audit', d: 'Share your store or marketplace link. Within 24 hours you get a video walkthrough and PDF covering speed, conversion leaks, ad waste and SEO gaps.' },
+  { t: '90-day growth plan', d: 'Clear targets for revenue, ROAS and rankings, the channels we will use and a fixed monthly fee. No surprises.' },
+  { t: 'Build & launch', d: 'We fix or rebuild the store, restructure ad accounts and start SEO. Most brands see changes live within 2–4 weeks.' },
+  { t: 'Grow & report', d: 'Weekly sales, ROAS and ranking reports, plus a monthly review call where we agree the next moves together.' },
 ];
 ---
-<section class="section pr">
-  <div class="wrap pr__grid">
-    <div>
-      <p class="eyebrow">How it works</p>
-      <h2>From first audit to steady growth in four steps.</h2>
+<section class="pr" data-float-scope>
+  <div class="pr__panel dark">
+    <div class="pr__objs" aria-hidden="true">
+      <span class="ob ob--1" data-float="-60"></span><span class="ob ob--2" data-float="80"></span><span class="ob ob--3" data-float="-120"></span>
+      <span class="cube cube--1" data-float="100"></span><span class="cube cube--2" data-float="-70"></span>
+    </div>
+    <div class="pr__grid">
+      <div class="pr__left">
+        <p class="label">How it works</p>
+        <h2>How we grow your online sales in <em>4 steps</em></h2>
+        <a class="btn btn--primary" href="/free-ecommerce-audit/">Start with a free audit <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
       <ol class="pr__steps">
         {steps.map((s, i) => (
-          <li><span>0{i + 1}</span><div><h3>{s.t}</h3><p>{s.d}</p></div></li>
+          <li data-reveal>
+            <span class="pr__n">Step {i + 1}</span>
+            <h3>{s.t}</h3>
+            <p>{s.d}</p>
+          </li>
         ))}
       </ol>
-      <a class="btn btn--primary" href="/free-ecommerce-audit/">Start with a free audit <span class="arrow" aria-hidden="true">↗</span></a>
-    </div>
-
-    <div class="pr__art" aria-hidden="true">
-      <div class="card card--audit">
-        <div class="card__head"><b>Store audit</b><span class="tag">Sample</span></div>
-        <div class="score"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.9" fill="none" stroke="#efe9e2" stroke-width="3.5"/><circle cx="18" cy="18" r="15.9" fill="none" stroke="#f16436" stroke-width="3.5" stroke-dasharray="58 100" stroke-linecap="round" transform="rotate(-90 18 18)"/></svg><b>58</b><small>/100</small></div>
-        <ul>
-          <li><i class="bad"></i>Mobile load time 5.8s</li>
-          <li><i class="bad"></i>No product schema</li>
-          <li><i class="warn"></i>ACoS 41% on 3 campaigns</li>
-          <li><i class="ok"></i>Checkout supports UPI & COD</li>
-        </ul>
-      </div>
-      <div class="card card--plan">
-        <div class="card__head"><b>90-day targets</b></div>
-        <div class="bar"><span>Revenue</span><div><i style="width:78%"></i></div><b>+40%</b></div>
-        <div class="bar"><span>ROAS</span><div><i style="width:64%"></i></div><b>3.5×</b></div>
-        <div class="bar"><span>Top-10 keywords</span><div><i style="width:52%"></i></div><b>25</b></div>
-      </div>
-      <span class="orb"></span>
     </div>
   </div>
 </section>
 <style>
-  .pr__grid { display: grid; gap: 56px; align-items: center; }
-  .pr__grid h2 { margin-top: 18px; max-width: 16ch; }
-  .pr__steps { list-style: none; margin: 36px 0; padding: 0; display: grid; gap: 22px; }
-  .pr__steps li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; }
-  .pr__steps li > span { font-size: 14px; font-weight: 600; color: var(--accent-ink); padding-top: 3px; }
-  .pr__steps h3 { font-size: 1.2rem; margin-bottom: 6px; }
-  .pr__steps p { color: var(--muted); font-size: 16px; }
-  .pr__art { position: relative; min-height: 560px; background: radial-gradient(closest-side, rgba(248,152,91,.45), transparent 75%); }
-  .card { position: absolute; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; font-size: 14px; }
-  .card__head { display: flex; justify-content: space-between; margin-bottom: 14px; }
-  .tag { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border: 1px dashed var(--line); padding: 3px 6px; border-radius: 5px; }
-  .card--audit { left: 0; top: 0; width: min(330px, 80%); }
-  .score { position: relative; width: 110px; margin: 0 auto 12px; display: grid; place-items: center; }
-  .score svg { width: 110px; }
-  .score b { position: absolute; font-family: var(--font-display); font-stretch: 115%; font-size: 1.8rem; top: 34px; }
-  .score small { position: absolute; top: 70px; color: var(--muted); }
-  .card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-  .card li { display: flex; gap: 10px; align-items: center; }
-  .card li i { width: 10px; height: 10px; border-radius: 50%; flex: none; }
-  .bad { background: #dc2626; } .warn { background: #f59e0b; } .ok { background: #16a34a; }
-  .card--plan { right: 0; bottom: 0; width: min(350px, 84%); z-index: 2; display: grid; gap: 12px; }
-  .bar { display: grid; grid-template-columns: 110px 1fr 46px; gap: 10px; align-items: center; }
-  .bar span { color: var(--muted); }
-  .bar div { height: 8px; border-radius: 99px; background: var(--paper); overflow: hidden; }
-  .bar i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--accent-soft), var(--accent)); }
-  .bar b { text-align: right; }
-  .pr__art .orb { position: absolute; right: 12%; top: 6%; width: 90px; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, #ffd9c2 0%, #f8985b 26%, #f16436 58%, #b8380f 100%); box-shadow: inset -12px -16px 30px rgba(120,30,0,.35); }
-  @media (min-width: 980px) { .pr__grid { grid-template-columns: 1fr 1fr; gap: 72px; } }
+  .pr { padding: 0 var(--gutter); }
+  .pr__panel { position: relative; max-width: 1360px; margin: 0 auto; border-radius: 32px; overflow: hidden; padding: clamp(56px, 8vw, 110px) clamp(24px, 5vw, 80px); }
+  .pr__grid { position: relative; display: grid; gap: 48px; max-width: var(--wrap); margin: 0 auto; }
+  .pr__left { display: grid; gap: 24px; align-content: start; }
+  .pr__left .btn { justify-self: start; }
+  .pr__steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 34px; }
+  .pr__steps li { display: grid; gap: 10px; padding-left: 28px; position: relative; }
+  .pr__steps li::before { content: ''; position: absolute; left: 0; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 6px rgba(241,100,54,.2); }
+  .pr__steps li::after { content: ''; position: absolute; left: 4.5px; top: 26px; bottom: -30px; width: 1px; background: var(--line-dark); }
+  .pr__steps li:last-child::after { display: none; }
+  .pr__n { font-size: 14px; color: var(--muted-on-dark); }
+  .pr__steps h3 { font-size: clamp(1.5rem, 2.4vw, 2.1rem); }
+  .pr__steps p { color: var(--muted-on-dark); max-width: 52ch; }
+  .pr__objs span { position: absolute; }
+  @media (max-width: 899px) { .pr__objs { display: none; } }
+  .ob { border-radius: 50%; background: radial-gradient(circle at 30% 28%, #ffd2bd 0%, #ff9a6e 28%, #f16436 60%, #a8360e 100%); box-shadow: inset -10px -14px 26px rgba(90,20,0,.45); opacity: .9; }
+  .ob--1 { width: 120px; height: 120px; right: 8%; top: 8%; }
+  .ob--2 { width: 60px; height: 60px; left: 42%; bottom: 10%; }
+  .ob--3 { width: 34px; height: 34px; left: 6%; top: 60%; }
+  .cube { width: 70px; height: 70px; border-radius: 18px; background: linear-gradient(145deg, #3a3f46, #1b1d21); box-shadow: inset 2px 2px 0 rgba(255,255,255,.08), 0 20px 40px rgba(0,0,0,.4); transform: rotate(24deg); }
+  .cube--1 { right: 30%; top: 12%; } .cube--2 { left: 4%; bottom: 8%; width: 46px; height: 46px; }
+  @media (min-width: 980px) { .pr__grid { grid-template-columns: 1fr 1.1fr; gap: 80px; } .pr__left { position: sticky; top: 140px; align-self: start; } }
 </style>
