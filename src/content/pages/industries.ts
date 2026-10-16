@@ -61,24 +61,28 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Most agencies sell the same package to every brand: a few Meta campaigns, a Google Shopping feed and a monthly report. That works up to a point. But ecommerce marketing for D2C brands only becomes profitable when it reflects how people buy in your category, what stops them, and where else they could buy the same thing.',
           'A shopper buying a silk saree for a wedding thinks for days and wants to see the drape. A shopper buying a face serum wants proof it suits their skin. A shopper buying a snack wants it now, cheaply, and often from a quick-commerce app. The channels, creative, landing pages and margins are different in each case.',
+          'That is why we organise our work by industry. The fundamentals of ecommerce marketing for D2C brands stay the same: a fast store, clean tracking and ads judged on profit. What changes is the detail: which products to lead with, which objections to answer on the page, which marketplace to prioritise and when in the year to spend most heavily.',
         ],
       },
       {
         heading: 'Fashion and ethnic wear: fit, returns and visuals',
         paragraphs: [
           'Fashion is a visual, emotional purchase with a costly side effect: returns. Size guides, fabric close-ups, model measurements and honest colour photography reduce returns more than any discount. Fashion brands also have to decide how much to sell through Myntra, Ajio and Amazon Fashion versus their own store, and many ethnic-wear labels have a large audience of Indians living abroad.',
+          'For a fashion label, the order of work usually starts with product pages and size guidance, then Meta creative, then marketplace pricing. Scaling ads before returns are under control simply scales the returns.',
         ],
       },
       {
         heading: 'Beauty and Ayurveda: trust, claims and repeat orders',
         paragraphs: [
           'Beauty buyers are cautious because the product goes on their skin. Reviews, ingredient explanations and real customer photos do much of the selling. Ad platforms are also strict here: claims about curing conditions or showing exaggerated before-and-after results get ads rejected. The upside is that a good product gets reordered, so subscriptions and replenishment reminders can turn one sale into many.',
+          'The order of work here is trust first: reviews, ingredients and compliant claims, then acquisition, then retention flows that bring customers back.',
         ],
       },
       {
         heading: 'Food and FMCG: shelf life, speed and seasons',
         paragraphs: [
           'Food brands deal with licensing, labelling, shelf life and breakage before they even think about ads. Low-ticket products make delivery cost a real problem, which is why quick commerce on Blinkit, Zepto and Instamart matters so much. Festive gifting around Diwali and Pongal can make or break a year, and spices, coffee and snacks travel well to buyers abroad.',
+          'Many food brands get the strongest start with quick commerce or Amazon in a few cities, then use a D2C store for bundles, gifting and repeat buyers.',
         ],
       },
       {
@@ -106,6 +110,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Ask any agency to explain what is different about your category before they show you a proposal. They should be able to talk about returns in fashion, claims in beauty or shelf life in food without being prompted. Ask how they measure success: revenue and return on ad spend are a start, but contribution margin and repeat purchase rate tell you whether the business is actually healthier.',
           'Also ask who does the work. With us, the same Chennai team handles your website, ads and SEO, so a problem spotted in the ads gets fixed on the store, and a page that ranks on Google gets used in campaigns. Pick your industry above to see how we approach it.',
+          'Finally, ask for a 90-day plan rather than a 12-month contract. Good ecommerce marketing for D2C brands should show early signs within the first quarter: cleaner tracking, better product pages and campaigns whose costs are moving in the right direction, even before revenue grows.',
         ],
       },
     ],
@@ -179,6 +184,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Fashion is one of the largest categories in Indian e-commerce, and one of the most competitive. Buyers have endless choice on Myntra, Ajio, Amazon and Instagram, and they cannot touch the fabric before they pay. That is why ecommerce marketing for fashion brands has to solve two problems at once: getting attention in a crowded feed, and giving enough confidence that the product will fit and look as expected.',
           'Get the second part wrong and the first part becomes expensive. Every return costs you two-way shipping, handling and often a product that can no longer be sold at full price. A fashion ecommerce agency that only reports return on ad spend, without returns, is reporting a number that flatters the campaign and hides the loss.',
+          'Done well, ecommerce marketing for fashion brands treats the store, the creative and the marketplaces as one system. The same product photos, size information and offers appear everywhere, so a shopper who sees a reel on Instagram, checks the price on Myntra and finally buys on your website gets a consistent experience at every step.',
         ],
       },
       {
@@ -221,12 +227,14 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Indian families in the UK, USA, UAE, Singapore and Australia buy sarees, kurtis and festive wear online, often for weddings and festivals where local shops have limited choice. These buyers usually spend more per order and plan ahead, but they need confidence about shipping times, duties and returns.',
           'Selling clothes online from India to these markets works best with a store that shows local currency, clear delivery estimates and duties information, plus ads targeted by country and timed to Diwali, Onam, Pongal and the wedding season.',
+          'Start with one or two countries where you already get enquiries or Instagram followers, test shipping costs and delivery times, then expand once returns and duties are under control.',
         ],
       },
       {
         heading: 'Planning around the fashion calendar',
         paragraphs: [
           'Fashion sales in India follow a predictable rhythm: wedding seasons, Diwali and Navratri, Pongal and Onam in the South, and end-of-season sales. We build creative, stock and budgets around this calendar weeks in advance, so campaigns launch with enough data before the peak instead of learning during it.',
+          'A simple calendar also helps production. Knowing in June which colours and styles will lead the Diwali campaign gives weavers and factories time to make enough stock, and gives the creative team time to shoot it properly. Good ecommerce marketing for fashion brands is as much about this planning as about the ads themselves.',
         ],
       },
     ],
@@ -301,6 +309,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Beauty is personal. A shopper is putting your product on their face, hair or body, so the question in their mind is not only “will it work?” but “is it safe for me?”. That makes trust the core of ecommerce marketing for beauty brands. Discounts can win a first order, but trust is what wins the second and third.',
           'Ayurvedic and herbal brands carry an extra layer. Buyers often like the idea of traditional formulations but have seen many products make big promises. Clear sourcing, honest ingredient information and real customer experiences separate credible herbal brands from the noise.',
+          'In practice, ecommerce marketing for beauty brands rests on three things working together: ads that stay within platform policies, product pages that answer safety and suitability questions, and a retention programme that turns a first order into a routine. Weakness in any one of them makes the other two more expensive.',
         ],
       },
       {
@@ -341,6 +350,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Many beauty buyers start their search on Amazon or Nykaa, where they can compare products and read reviews in one place. As an Amazon or Nykaa seller, your listing is your product page: titles, images, A+ content and reviews decide whether you are chosen.',
           'Marketplace ads work best when the listing is already strong. We optimise listings first, then run sponsored campaigns around your hero products. Pricing stays aligned with your own store, which remains the place for subscriptions, bundles and building a direct relationship with customers.',
+          'Watch for unauthorised resellers and counterfeit listings too, which can damage your reviews and the trust you have built. Brand protection tools on the marketplaces help you keep control of your listings.',
         ],
       },
       {
@@ -353,6 +363,7 @@ export const industryPages: ServicePageData[] = [
         heading: 'Measuring beauty growth properly',
         paragraphs: [
           'Return on ad spend from a first order rarely tells the full story in beauty. We report customer acquisition cost, repeat purchase rate and revenue per customer over 90 days, by product and channel. A product that breaks even on the first order but brings customers back every month is often the one to scale.',
+          'This is also where ecommerce marketing for beauty brands differs most from other categories. A higher acquisition cost is acceptable when customers reorder, so we set targets per product based on how often it is bought again, not one blanket return-on-ad-spend number.',
         ],
       },
     ],
@@ -426,6 +437,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Food is bought often, cheaply and by habit. That is good news for repeat sales, but it makes the economics of a single order tight. Delivery cost, breakage, shelf life and the shopper’s uncertainty about taste all work against a new food brand online. Effective ecommerce marketing for food brands starts with those realities before it looks at ads.',
           'The channel mix is also different from fashion or beauty. Many snack and staple purchases now happen on quick-commerce apps, gifting and specialty products sell well on Amazon and D2C stores, and Indian food products have loyal buyers abroad. Most food brands need a plan for all three.',
+          'So ecommerce marketing for food brands is less about one hero channel and more about matching each product to the channel where its economics work. An impulse snack may belong on quick commerce, a premium coffee on Amazon and your own store, and a festive hamper on a dedicated gifting page.',
         ],
       },
       {
@@ -460,18 +472,21 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Amazon remains a strong channel for specialty and regional foods, where shoppers search by name: filter coffee, Chettinad masala, banana chips, millet snacks. Good images, A+ content and reviews matter as much as ads. Snacks brand marketing on Meta then builds the brand recognition that makes people search for you by name.',
           'Your own store is where bundles, subscriptions, gift hampers and corporate orders make the most sense, and where you collect customer data for repeat orders.',
+          'Some FMCG digital marketing agencies treat Amazon and quick commerce as separate projects. We plan them together, because the same buyer may find you on Blinkit on a weekday and order a gift pack from Amazon before a festival.',
         ],
       },
       {
         heading: 'Planning for Diwali, Pongal and gifting seasons',
         paragraphs: [
           'Festive gifting is a major season for sweets, dry fruits, coffee, spices and hampers. Corporate buyers often decide weeks before Diwali, and Pongal brings strong demand across Tamil Nadu. We plan hampers, landing pages and creative well in advance, start building audiences early and keep stock levels aligned with ad budgets so you do not pay for clicks you cannot fulfil.',
+          'Pongal is an especially strong moment for Tamil Nadu brands selling sweets, jaggery, rice and traditional snacks, both locally and to Tamil families abroad.',
         ],
       },
       {
         heading: 'Exporting spices, coffee and snacks to the diaspora',
         paragraphs: [
           'Indian families in the UK, USA, UAE, Singapore and Australia look for familiar brands and regional specialities they cannot find locally. Spices, coffee, pickles and long-shelf-life snacks travel well. A store with international shipping, local currency pricing and clear delivery times, supported by country-targeted ads, is a practical first step. Each destination has its own import rules for food, so confirm those before you launch.',
+          'Ecommerce marketing for food brands selling abroad also needs patience. Delivery times are longer, so content should set expectations clearly, and first orders are often small trial purchases. Follow-up emails with recipes and reorder offers help turn them into regular customers.',
         ],
       },
     ],
@@ -545,6 +560,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Manufacturers rarely sell through a checkout. A buyer finds a few possible suppliers, checks their capability, asks for samples and quotes, and places an order weeks or months later. B2B digital marketing services for manufacturers have to support that whole journey: being found, looking credible, making it easy to enquire, and helping sales tell serious buyers from casual ones.',
           'Digital marketing for manufacturers is also measured differently. Website traffic and clicks matter only if they lead to qualified enquiries. A month with ten enquiries from genuine importers is better than a month with a hundred from students and traders.',
+          'That is the standard we hold our B2B digital marketing services to. Every campaign, page and directory profile is judged by the number of qualified enquiries and quotes it produces, and we review those numbers with your sales team rather than in a slide deck of traffic charts.',
         ],
       },
       {
@@ -573,6 +589,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Google Ads captures buyers who are searching right now. For export enquiries, campaigns are targeted by country and product, with careful negative keywords to filter out job seekers, retail shoppers and people looking for training. Landing pages go straight to the relevant product and RFQ form.',
           'LinkedIn works differently: it reaches people by job title, industry and company size, even when they are not searching. A B2B advertising agency can use it to put your capability in front of procurement managers, sourcing heads and engineers in your target markets, which suits higher-value products with longer sales cycles.',
+          'As a digital marketing agency for B2B firms, we usually start with Google Ads and SEO for steady enquiries and add LinkedIn once the website and lead tracking can make good use of the attention. Good B2B digital marketing services build in that order.',
         ],
       },
       {
@@ -593,6 +610,7 @@ export const industryPages: ServicePageData[] = [
         heading: 'Lead qualification: from enquiry to RFQ',
         paragraphs: [
           'More leads only help if sales can tell good ones from bad. We track every enquiry by source and score it on fit: country, company type, product, quantity and timeline. Your team sees which channels bring real RFQs and orders, and we move budget accordingly.',
+          'Fast response matters as much as lead volume. Overseas buyers often contact several suppliers at once, and the one who replies first with a clear, specific answer usually gets the follow-up. We help set up auto-replies, WhatsApp routing and simple reply templates so your team responds within hours, not days.',
         ],
       },
     ],
@@ -667,6 +685,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'White label SEO services let an agency sell SEO under its own brand while a specialist partner does the work behind the scenes. The client deals only with the agency. Reports carry the agency’s logo, and the partner never contacts the client directly.',
           'For agencies that focus on web design, paid ads or social media, it is a practical way to offer SEO without building a team. For SEO agencies, it adds capacity during busy periods or for services they do not handle in-house, such as local SEO or content production.',
+          'Done well, white label SEO services improve an agency’s margins and client retention. Clients who get results from SEO tend to stay longer and buy more services. Done badly, they create risk, because the agency is accountable for work it did not do. That is why the choice of partner matters more than the price.',
         ],
       },
       {
@@ -696,12 +715,14 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Working with a team in India means work moves forward while you sleep, but only if communication is planned. Our working day on Indian Standard Time overlaps with UK mornings, most of the UAE working day and Australian afternoons. For US agencies, we schedule calls early in the morning or late in the evening IST so they fall within your business hours.',
           'Each agency gets a named account manager, a shared Slack or Teams channel and a project board showing what is done, in progress and planned. Replies come within one working day, and urgent issues faster.',
+          'We also agree how to handle client questions. You can forward them to us for a written answer in your tone, or bring us into a call as part of your team.',
         ],
       },
       {
         heading: 'White label local SEO services',
         paragraphs: [
           'Many agency clients are local businesses: clinics, trades, restaurants, law firms and multi-location retailers. Local SEO for them is about Google Business Profile, consistent citations, reviews and good location pages. We handle profile optimisation, category and service set-up, citation building and clean-up, review request strategy and location page content, and report on calls, direction requests and map rankings.',
+          'Local work is usually the quickest to show results, which makes it a good first service for agencies new to reselling SEO.',
         ],
       },
       {
@@ -709,12 +730,14 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'The biggest risk with any SEO partner is link building. Cheap packages often rely on private blog networks, link farms or paid links, which can bring short-term gains and then a penalty that damages your client and your reputation.',
           'We build links through outreach to real, relevant websites, and every link is listed in the report so you can check it. Content is edited before delivery, and an internal reviewer checks on-page changes against the brief before anything goes live.',
+          'Before a new site starts, we agree the target keywords, pages and reporting goals with you, so expectations are set once and shared by you, us and your client.',
         ],
       },
       {
         heading: 'Pricing and starting with a pilot',
         paragraphs: [
           'Our white-label SEO starts at US$350 a month per client site, with the scope agreed per site. You set your own resale price. We suggest starting with one pilot site for two or three months, so you can judge quality and communication before moving more clients over.',
+          'For agencies, the economics are straightforward. At US$350 a month per site, you can resell SEO at your usual rates with a healthy margin, without the fixed cost of salaries, tools and training. Our white label SEO services scale up and down with your client list, so you are never paying for capacity you do not use.',
         ],
       },
     ],
@@ -742,12 +765,12 @@ export const industryPages: ServicePageData[] = [
     kind: 'global',
     title: 'SEO Outsourcing India: Honest, Transparent SEO | Magnus Path',
     description: 'SEO outsourcing to India without the usual risks: clear English communication, no spammy links, transparent monthly reports. From US$500 a month. Chennai team.',
-    primaryKeyword: 'seo outsourcing india',
+    primaryKeyword: 'SEO outsourcing to India',
     navLabel: 'SEO Outsourcing to India',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
     eyebrow: 'Outsource SEO services to India',
     h1: 'SEO Outsourcing to India, *Without the Usual Risks*',
-    intro: 'Magnus Path is a Chennai-based SEO outsourcing India partner for businesses and agencies in the UK, US, Australia, UAE and Singapore that want lower costs without the quality, communication and link problems outsourcing is known for. You get a named manager, clear English updates, safe link building and reports showing every task done.',
+    intro: 'Magnus Path is a Chennai-based partner for SEO outsourcing to India, working with businesses and agencies in the UK, US, Australia, UAE and Singapore that want lower costs without the quality, communication and link problems outsourcing is known for. You get a named manager, clear English updates, safe link building and reports showing every task done.',
     icon: 'ai',
     facts: ['From US$500 a month', 'Every task reported', 'No PBNs or paid link packages'],
     headings: {
@@ -789,6 +812,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'SEO outsourcing in India has grown for simple reasons: India has a large pool of people with strong technical and English-writing skills, costs are lower than in the UK, US or Australia, and the time difference means work can progress overnight. For a small business or an agency, outsourcing SEO services can turn a project that was unaffordable at home into a realistic monthly budget.',
           'The lower cost is only useful if the work is good. Many businesses that outsource SEO services once never do it again, because the experience was poor. It helps to be honest about why.',
+          'The good news is that the problems are avoidable. SEO outsourcing to India works well when the scope is written down, the work is visible and someone is clearly accountable. The rest of this guide explains what to look for, so you can judge any provider, including us.',
         ],
       },
       {
@@ -815,7 +839,8 @@ export const industryPages: ServicePageData[] = [
       {
         heading: 'What you can outsource',
         paragraphs: [
-          'You can outsource SEO services as a complete programme, or hand over the parts your team does not have time for. Common arrangements include:',
+          'You can outsource SEO services as a complete programme, or hand over the parts your team does not have time for.',
+          'Many clients start with a technical audit and on-page work, then add content and links once they trust the process. That staged approach is often the safest way to begin SEO outsourcing with any new provider. Common arrangements include:',
         ],
         bullets: [
           'Full SEO management for one or more websites',
@@ -830,6 +855,7 @@ export const industryPages: ServicePageData[] = [
         heading: 'How to choose an SEO outsourcing company in India',
         paragraphs: [
           'Whichever SEO outsourcing company you consider, a short trial and a few direct questions will tell you most of what you need to know.',
+          'A good partner will happily answer these questions in writing. If the answers are vague, or the sales pitch focuses on rankings for keywords you have never heard of, keep looking.',
         ],
         bullets: [
           'Ask for a sample audit of your own site before signing',
@@ -843,12 +869,14 @@ export const industryPages: ServicePageData[] = [
         heading: 'Communication across time zones',
         paragraphs: [
           'Our Chennai team works on Indian Standard Time, which overlaps with UK mornings, most of the UAE and Singapore working day and Australian afternoons. For US clients, we hold calls early morning or late evening IST. Day-to-day communication runs through email, Slack or Teams, and the project board keeps everyone current without extra meetings.',
+          'We write in plain English and avoid jargon in reports, so the people paying for SEO can understand what was done without needing a translator.',
         ],
       },
       {
         heading: 'What SEO outsourcing to India costs',
         paragraphs: [
           'Our SEO outsourcing starts at US$500 a month for one website. That buys a defined monthly scope, not a vague package: technical fixes, on-page work, content and outreach-based links, with a task-level report. Very cheap offers usually cut quality on content and links, which are the parts that carry the most risk.',
+          'For comparison, Indian SEO outsourcing providers charge anywhere from a few hundred to a few thousand dollars a month, depending on scope. Compare what is delivered, not just the price: how many pages are optimised, how much content is written and edited, and how links are built. A low monthly fee with no defined deliverables often costs more in the end.',
         ],
       },
     ],
@@ -875,12 +903,12 @@ export const industryPages: ServicePageData[] = [
     kind: 'location',
     title: 'Digital Marketing Agency in Chennai for D2C Brands | Magnus Path',
     description: 'Digital marketing agency in Chennai for e-commerce and D2C brands: Google Ads, Meta and social media, SEO and websites, with Tamil ads and in-person meetings.',
-    primaryKeyword: 'digital marketing agency chennai',
+    primaryKeyword: 'digital marketing agency in Chennai',
     navLabel: 'Digital Marketing Agency in Chennai',
     breadcrumb: [],
     eyebrow: 'Digital marketing in Chennai',
     h1: 'Digital Marketing Agency in Chennai for *E-commerce and D2C Brands*',
-    intro: 'Magnus Path is a digital marketing agency Chennai brands work with to grow online sales. We specialise in e-commerce and D2C: websites, Google and Meta ads, social media and SEO, run by one team. We also help local businesses and manufacturers, create ads in Tamil and English, and meet you in person anywhere in the city.',
+    intro: 'Magnus Path is a digital marketing agency in Chennai that helps brands grow online sales. We specialise in e-commerce and D2C: websites, Google and Meta ads, social media and SEO, run by one team. We also help local businesses and manufacturers, create ads in Tamil and English, and meet you in person anywhere in the city.',
     icon: 'social',
     facts: ['Chennai team, in-person meetings', 'Tamil and English ads', 'Websites, ads and SEO'],
     headings: {
@@ -927,12 +955,13 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Chennai has many agencies offering similar services, so the list of services tells you very little. What matters is whether a digital marketing agency in Chennai can connect its work to your revenue: more orders, more enquiries, lower cost per customer. Followers and impressions are only useful if they lead there.',
           'A good digital marketing company in Chennai should understand your business model before suggesting channels. A clothing store in T. Nagar, a SaaS start-up on OMR and an engineering firm in Ambattur need very different plans, budgets and measures of success.',
+          'Location matters too. Working with a digital marketing agency in Chennai that you can meet face to face makes planning faster: we can visit your store or factory, see the product, talk to your sales staff and understand what customers actually ask. That context shapes better ads than any brief sent over email.',
         ],
       },
       {
         heading: 'Why we focus on e-commerce and D2C brands',
         paragraphs: [
-          'We are a digital marketing agency Chennai e-commerce and D2C brands can rely on for the whole funnel: the store, the ads that bring traffic, the SEO that brings free traffic and the marketplaces where many buyers start. Having one team handle all of it means problems get fixed where they start. If ads bring visitors who do not buy, we fix the product page instead of just changing the ad.',
+          'We are a digital marketing agency in Chennai that e-commerce and D2C brands rely on for the whole funnel: the store, the ads that bring traffic, the SEO that brings free traffic and the marketplaces where many buyers start. Having one team handle all of it means problems get fixed where they start. If ads bring visitors who do not buy, we fix the product page instead of just changing the ad.',
           'Tamil Nadu has a large and growing seller base. Flipkart reports about 70,000 sellers in the state (August 2026), and many local brands in fashion, food and beauty are moving from marketplaces to their own D2C stores. That is the shift we help with.',
         ],
       },
@@ -940,6 +969,7 @@ export const industryPages: ServicePageData[] = [
         heading: 'Google Ads and Meta ads for Chennai businesses',
         paragraphs: [
           'Google Ads captures people already searching for what you sell, while Meta ads on Instagram and Facebook create demand among people who match your customer profile. Most businesses need both, in a balance that depends on their product and margins.',
+          'As a Google Ads agency in Chennai, we also watch for wasted spend: broad keywords that attract job seekers, clicks from areas you do not deliver to and campaigns optimising for cheap clicks instead of sales. Cutting this waste is often the first quick win for a new account.',
         ],
         bullets: [
           'Search campaigns for high-intent keywords, with negative keywords to cut wasted clicks',
@@ -960,18 +990,21 @@ export const industryPages: ServicePageData[] = [
         heading: 'Local SEO across Chennai',
         paragraphs: [
           'For businesses with physical locations, Google Maps is often the biggest source of calls and walk-ins. Local SEO means a complete Google Business Profile with the right categories and photos, steady reviews, consistent business details across directories and location pages for each area you serve. For e-commerce brands, SEO focuses on category and product pages that rank across India, not just in Chennai.',
+          'Reviews deserve special attention. Ask every happy customer, reply to every review and keep photos current. Over time these signals help you appear in map results for searches made in your area.',
         ],
       },
       {
         heading: 'Manufacturers and B2B companies in Chennai',
         paragraphs: [
           'Chennai’s industrial belt, from Ambattur and Guindy to Sriperumbudur and Oragadam, is full of manufacturers that sell to other businesses and to buyers abroad. Their online marketing needs are different: websites with spec sheets and RFQ forms, export SEO, LinkedIn and Google Ads that bring qualified enquiries. We offer these as a dedicated B2B service.',
+          'Many of these firms already sell well through dealers and referrals. Digital channels add a steady source of new enquiries, especially from buyers outside Tamil Nadu and abroad.',
         ],
       },
       {
         heading: 'How to choose an online marketing agency in Chennai',
         paragraphs: [
           'Before signing with any online marketing agency in Chennai, ask a few direct questions. The answers will tell you more than any portfolio.',
+          'Choosing a digital marketing agency in Chennai is like hiring a senior team member. Take time over it, start with a clear three-month plan and judge the agency on the numbers you agreed at the start.',
         ],
         bullets: [
           'Who will actually work on my account, and can I meet them?',
