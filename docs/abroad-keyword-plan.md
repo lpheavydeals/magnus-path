@@ -111,3 +111,21 @@ Full data and per-keyword decisions: `research/abroad-keyword-results/uk-bulk-re
 
 Skipped: shopify agency (KD 54), ecommerce agency uk (KD 52), and three keywords with no volume.
 Technical: hreflang must support several country versions per global page (en-US + en-GB + x-default).
+
+## Proposal: United Arab Emirates (Semrush AE data received 16 Oct 2026)
+Full data: `research/abroad-keyword-results/uae-bulk-results.csv`. In the UAE, people search by **Dubai**, not "UAE",
+so this market breaks the "skip city keywords" rule: Dubai is effectively the whole commercial market. We only target
+Dubai keywords whose results do **not** show a Google Maps pack (a pack needs a local office we don't have).
+"n/a" volume means Semrush has too little data (usually under 10 searches); these are cheap, high-intent extras.
+
+| Page | Primary keyword (AE vol / KD) | Secondary |
+|---|---|---|
+| /uae/ecommerce-marketing-agency/ (existing → UAE hub) | ecommerce agency dubai (20 / 8) | ecommerce company dubai (170 / 26), ecommerce agency uae |
+| /uae/digital-marketing-agency-dubai/ | digital marketing agency dubai (4,400 / 27) | — |
+| /uae/ecommerce-website-development-dubai/ | ecommerce website development dubai (390 / 20) | ecommerce website development uae (720 / 43), shopify agency / development company / developer / experts dubai |
+| /uae/seo-services-dubai/ | seo expert dubai (1,000 / 29) | ecommerce seo dubai (140 / 6); seo agency / company dubai mentioned only |
+| /uae/performance-marketing-agency-dubai/ | performance marketing agency dubai (170 / 13) | — |
+| /uae/amazon-noon-agency/ | amazon agency uae (n/a / 17) | amazon ppc agency dubai, amazon & noon seller account management, noon ads agency |
+| /blog/how-to-sell-on-noon/ (guide) | sell on noon (260 / 27) | — |
+
+Skipped (KD > 50): seo agency dubai (59), seo company dubai (65), web design company dubai (56), website development company dubai (60).
