@@ -13,5 +13,5 @@
 8. Lead form sales ranges for US/UK pages ($ / £: under 10k, 10–50k, 50–250k, 250k+ per month). OK?
 
 ## UAE pages (planned)
-9. Dubai keywords without a Dubai office: pages will say "Chennai team serving Dubai remotely". The current UAE page also mentions meetings in Dubai for larger projects. Is that true?
+9. Dubai keywords without a Dubai office: pages will say "Chennai team serving Dubai remotely". Meetings in Dubai have been removed from the copy for now. Tell us if you do travel to Dubai for clients.
 10. UAE quotes in AED after audit (no published AED prices). OK?

@@ -11,5 +11,7 @@ import { usAmazonGeoPages } from './us-amazon-geo';
 import { ukAgencyPages } from './uk-agency';
 import { ukShopifyPages } from './uk-shopify';
 import { ukSeoAmazonPages } from './uk-seo-amazon';
+import { uaeMarketingPages } from './uae-marketing';
+import { uaeServicesPages } from './uae-services';
 
-export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages];
+export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages];
