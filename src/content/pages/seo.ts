@@ -121,6 +121,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce SEO agency for UK brands', href: '/uk/ecommerce-seo-agency/' },
       { label: 'Shopify SEO services', href: '/shopify-seo/' },
       { label: 'Amazon SEO and listing optimisation', href: '/amazon-seo/' },
       { label: 'AI search optimisation (GEO)', href: '/ai-search-optimization/' },
@@ -496,6 +497,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'AI search optimisation agency (UK)', href: '/uk/ai-search-optimisation-agency/' },
       { label: 'Generative engine optimization agency (US)', href: '/us/generative-engine-optimization-agency/' },
       { label: 'Ecommerce SEO services', href: '/ecommerce-seo/' },
       { label: 'Shopify SEO services', href: '/shopify-seo/' },

@@ -94,3 +94,18 @@ These override the India rules above where they conflict.
 - **Extra allowed related URLs:** /us/ecommerce-marketing-agency/, /us/white-label-seo/, /us/seo-outsourcing/,
   /us/white-label-web-development/, /us/shopify-seo-agency/, /us/shopify-plus-agency/, /us/hire-shopify-developer/,
   /us/amazon-ppc-agency/, /us/amazon-account-management/, /us/generative-engine-optimization-agency/
+
+## United Kingdom pages (`src/content/pages/uk-*.ts`, URLs under `/uk/`)
+Same rules as the US pages above, with these differences:
+- **Spelling and money:** British English (optimise, catalogue, colour, trainers, jumpers). GBP only; never ₹ or US$.
+  No `pricing` block on UK pages: say we quote in GBP after a free audit.
+- **Set on every UK page:** `market: 'UK'`, `kind: 'global'`, `breadcrumb: [{ label: 'United Kingdom', href: '/uk/ecommerce-marketing-agency/' }]`,
+  and `twin` where a global page covers the same service.
+- **Time zones:** IST is 4.5 hours ahead of UK summer time (BST) and 5.5 hours ahead in winter (GMT). Our working day
+  overlaps the UK morning and early afternoon; requests sent before UK lunchtime are usually handled the same day.
+- **UK details worth covering where relevant:** VAT-inclusive pricing, Shopify Markets for UK + EU/Ireland, UK GDPR and
+  cookie consent (we are not lawyers), Amazon.co.uk, Royal Mail / Evri / DPD delivery expectations, Klarna/Clearpay,
+  Black Friday and Boxing Day peaks, the ASA/CAP code limits on health claims.
+- **Extra allowed related URLs:** /uk/ecommerce-seo-agency/, /uk/shopify-agency/, /uk/shopify-developer/,
+  /uk/shopify-plus-agency/, /uk/amazon-agency/, /uk/white-label-seo/, /uk/seo-outsourcing/,
+  /uk/ai-search-optimisation-agency/, and every /us/… URL listed above.

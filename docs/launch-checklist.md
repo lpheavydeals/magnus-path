@@ -44,3 +44,8 @@
 - [ ] Time-zone promise: short overlap in the US Eastern morning, overnight turnaround
 - [ ] No Shopify Plus Partner / Amazon partner status is claimed. Update the copy if you join either programme
 - [ ] Engagement models on /us/hire-shopify-developer/ (fixed project, dedicated monthly developer, hourly bank)
+
+## Confirm terms on United Kingdom pages (`/uk/…`)
+- [ ] All UK services quoted in GBP after audit (no published GBP prices yet)
+- [ ] Engagement options on /uk/shopify-developer/ (fixed task, monthly developer, block of hours)
+- [ ] UK compliance mentions (UK GDPR, ASA/CAP, VAT) are general guidance only and reviewed by a UK adviser

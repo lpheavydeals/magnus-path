@@ -27,6 +27,6 @@ export interface ServicePageData {
   guide: { heading: string; paragraphs: string[]; bullets?: string[] }[]; // long-form SEO content, 700+ words total
   related: Link[];                    // 3–5 internal links with keyword-rich labels
   faqs: { q: string; a: string }[];   // 6–8
-  market?: 'US';                      // country-specific page: sets lang en-US, areaServed and USD offers
+  market?: 'US' | 'UK';               // country-specific page: sets lang (en-US / en-GB), areaServed and offer currency
   twin?: string;                      // slug of the global page covering the same service (hreflang pair)
 }

@@ -245,6 +245,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Amazon agency for UK sellers', href: '/uk/amazon-agency/' },
       { label: 'Amazon PPC agency for US sellers', href: '/us/amazon-ppc-agency/' },
       { label: 'Amazon account management services', href: '/amazon-account-management/' },
       { label: 'Amazon SEO and listing optimisation', href: '/amazon-seo/' },
