@@ -6,6 +6,13 @@ export const priceList = [
     { name: 'WooCommerce store', price: '₹50,000', unit: 'one-time', href: '/woocommerce-development/' },
     { name: 'Custom e-commerce development', price: '₹2,00,000', unit: 'one-time', href: '/ecommerce-website-development/' },
   ]},
+  { group: 'Business websites', rows: [
+    { name: 'Business / corporate website (5–10 pages)', price: '₹35,000', unit: 'one-time', href: '/corporate-website-development/' },
+    { name: 'Custom corporate website', price: '₹75,000–2 lakh', unit: 'one-time', href: '/corporate-website-development/' },
+    { name: 'WordPress website', price: '₹30,000', unit: 'one-time', href: '/wordpress-website-development/' },
+    { name: 'CMS / headless CMS website', price: '₹75,000', unit: 'one-time', href: '/cms-website-development/' },
+    { name: 'Website maintenance', price: '₹5,000', unit: '/ month', href: '/website-maintenance-services/' },
+  ]},
   { group: 'Ads', rows: [
     { name: 'Meta & Google ads (performance marketing)', price: '₹30,000', unit: '/ month + ad spend', href: '/performance-marketing/' },
     { name: 'Amazon advertising (PPC)', price: '₹25,000', unit: '/ month or 10–15% of ad spend', href: '/amazon-marketing-agency/' },
@@ -33,6 +40,12 @@ export const websiteTiers: Tier[] = [
   { name: 'Launch', price: '₹60,000', unit: 'one-time', for: 'New brands that need a professional Shopify store fast', features: ['Premium theme customised to your brand', 'Up to 50 products uploaded', 'UPI, cards, COD and GST invoices', 'Shiprocket / courier integration', 'Basic SEO setup and sitemap', '30 days of support'] },
   { name: 'Growth', price: '₹1,50,000', unit: 'one-time', for: 'Growing D2C brands ready to convert more visitors', features: ['Custom design for home, collection and product pages', 'Up to 300 products and migration', 'Reviews, WhatsApp and email flows', 'Speed optimisation for mobile', 'Product schema and technical SEO', 'Analytics, Meta and Google tracking'], featured: true },
   { name: 'Custom', price: '₹2,00,000+', unit: 'one-time', for: 'Large catalogues, B2B and multi-country stores', features: ['Shopify Plus, WooCommerce or headless', 'Marketplace and ERP integrations', 'B2B pricing and RFQ flows', 'Multi-currency and multi-language', 'Custom apps and automations', 'Dedicated project manager'] },
+];
+
+export const businessTiers: Tier[] = [
+  { name: 'Starter', price: '₹30,000', unit: 'one-time', for: 'Small businesses that need a clean, professional WordPress site', features: ['Up to 5 pages on WordPress', 'Mobile-first design', 'Contact form and WhatsApp button', 'Google Business Profile link-up', 'Basic on-page SEO', '30 days of support'] },
+  { name: 'Business', price: '₹35,000', unit: 'one-time', for: 'Companies that want a professional site that brings enquiries', features: ['5–10 pages, custom design', 'Services or product catalogue', 'Enquiry forms with lead tracking', 'Speed and technical SEO', 'Easy editing for your team', 'Analytics and Search Console setup'], featured: true },
+  { name: 'Corporate', price: '₹75,000+', unit: 'one-time', for: 'Manufacturers, exporters and larger organisations', features: ['Custom design and CMS', 'Product spec sheets and RFQ forms', 'Multilingual pages', 'Careers and investor sections', 'Integrations with CRM', 'Dedicated project manager'] },
 ];
 
 export const ecomSeoTiers: Tier[] = [

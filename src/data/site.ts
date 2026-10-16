@@ -35,6 +35,10 @@ export const nav: NavItem[] = [
       { label: 'E-commerce Website Development', href: '/ecommerce-website-development/', note: 'Custom & platform builds' },
       { label: 'Shopify Development', href: '/shopify-development/', note: 'Stores built to convert' },
       { label: 'WooCommerce Development', href: '/woocommerce-development/', note: 'WordPress e-commerce' },
+      { label: 'Corporate Website Development', href: '/corporate-website-development/', note: 'Professional business websites' },
+      { label: 'WordPress Website Development', href: '/wordpress-website-development/', note: 'Easy-to-edit websites' },
+      { label: 'CMS Website Development', href: '/cms-website-development/', note: 'WordPress & headless CMS' },
+      { label: 'Website Maintenance', href: '/website-maintenance-services/', note: 'Monthly care plans' },
     ],
   },
   {

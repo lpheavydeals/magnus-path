@@ -4,7 +4,7 @@ import SimpleHero from '../components/page/SimpleHero.astro';
 import Tiers from '../components/page/Tiers.astro';
 import FAQ from '../components/FAQ.astro';
 import LeadForm from '../components/LeadForm.astro';
-import { priceList, websiteTiers } from '../data/pricing';
+import { priceList, websiteTiers, businessTiers } from '../data/pricing';
 import { breadcrumbSchema, faqSchema } from '../data/schema';
 const faqs = [
   { q: 'Do your prices include GST and ad spend?', a: 'No. All prices exclude 18% GST. For ads services, the monthly fee covers our management work; your ad budget is paid directly to Amazon, Flipkart, Meta, Google or the quick-commerce platform from your own account.' },
@@ -33,6 +33,7 @@ const schema = [breadcrumbSchema([{ label: 'Pricing', href: '/pricing/' }]), faq
     </div>
   </section>
   <Tiers tiers={websiteTiers} heading="Shopify website packages" label="Website packages" note="Fixed-price packages for new and growing brands. Every package is mobile-first, SEO-ready and built for Indian payments." />
+  <Tiers tiers={businessTiers} heading="Affordable business website packages" label="Business websites" note="Professional websites for companies, manufacturers and service businesses. Prices exclude GST and domain/hosting." />
   <section class="section pl-links">
     <div class="wrap pl-links__grid">
       <a href="/ecommerce-seo-packages/" data-reveal><span class="label">SEO</span><h3>E-commerce SEO packages</h3><p>Monthly SEO plans for online stores, from ₹35,000 a month.</p><span class="go" aria-hidden="true">→</span></a>

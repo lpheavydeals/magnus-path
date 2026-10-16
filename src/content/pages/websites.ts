@@ -180,6 +180,8 @@ export const websitePages: ServicePageData[] = [
       { title: 'WooCommerce Development', href: '/woocommerce-development/', body: 'Flexible WordPress e-commerce stores with full ownership of code and data, ideal for content-heavy brands and B2B catalogues.', icon: 'website' },
       { title: 'E-commerce Website Development in Chennai', href: '/chennai/ecommerce-website-development/', body: 'In-person planning and design workshops for Chennai and Tamil Nadu brands, from silk and textiles to food and FMCG.', icon: 'marketplace' },
       { title: 'E-commerce Development for Bangalore Brands', href: '/bangalore/ecommerce-website-development/', body: 'Our Chennai team builds and supports stores for Bangalore D2C start-ups remotely, with visits when a workshop helps.', icon: 'quick' },
+      { title: 'Corporate Website Development', href: '/corporate-website-development/', body: 'Professional websites for manufacturers, exporters and service firms, with product catalogues, RFQ forms and lead tracking.', icon: 'website' },
+      { title: 'Website Maintenance Services', href: '/website-maintenance-services/', body: 'Monthly care plans for updates, backups, security checks and content changes, so your site keeps working after launch.', icon: 'seo' },
     ],
     platforms: ['Shopify', 'WooCommerce', 'Next.js', 'Medusa', 'Razorpay', 'Shiprocket', 'Unicommerce', 'Zoho Books'],
     process: [
