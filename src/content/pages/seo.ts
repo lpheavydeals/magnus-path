@@ -121,6 +121,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce SEO for Australian online stores', href: '/australia/ecommerce-seo/' },
       { label: 'Ecommerce SEO agency for UK brands', href: '/uk/ecommerce-seo-agency/' },
       { label: 'Shopify SEO services', href: '/shopify-seo/' },
       { label: 'Amazon SEO and listing optimisation', href: '/amazon-seo/' },

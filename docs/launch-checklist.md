@@ -54,3 +54,7 @@
 - [ ] All UAE services quoted in AED after audit; lead-form ranges in AED
 - [ ] No Dubai office, address or meetings promised (pages say "Chennai team serving Dubai remotely")
 - [ ] Noon details (seller registration, Fulfilled by Noon, Noon Ads, Yellow Friday) in /blog/how-to-sell-on-noon/ and /uae/amazon-noon-agency/ are current
+
+## Confirm terms on Australia pages (`/australia/…`)
+- [ ] All Australian services quoted in AUD after audit; lead-form ranges in AUD
+- [ ] Time-zone wording (our morning = east-coast afternoon)
