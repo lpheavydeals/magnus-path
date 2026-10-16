@@ -167,3 +167,11 @@ Skipped: woocommerce developer (61), business website design services (39), corp
 | /uk/woocommerce-agency/ | woocommerce agency uk (720 / 11) | woocommerce developer uk (320 / 11), woocommerce development uk (140 / 12) | /woocommerce-development/ |
 | /uk/wordpress-support/ | wordpress support uk (720 / 20) | wordpress maintenance uk (390 / 15), website maintenance services uk (720 / 42) | /website-maintenance-services/ |
 Skipped: website design agency uk (52). Business / corporate / CMS keywords are too small (10–40) and stay on the global pages.
+
+### Round 2 proposal: UAE (data received 16 Oct 2026)
+Only 3 of the 15 keywords had data.
+| Page | Primary keyword (AE vol / KD) | Secondary | Global twin |
+|---|---|---|---|
+| /uae/web-development-company/ | web development company uae (720 / 26) | website development company uae (70 / 25); corporate and business websites | /corporate-website-development/ |
+| /uae/wordpress-development-dubai/ | wordpress development company dubai (320 / 8) | — | /wordpress-website-development/ |
+Before building, check the Google results for "wordpress development company dubai": if a Maps pack shows, the page will rank only in the regular results below it.
