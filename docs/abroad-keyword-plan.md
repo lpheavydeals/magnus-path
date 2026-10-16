@@ -144,3 +144,8 @@ four markets (most KD under 20). Australian English spelling, quotes in AUD.
 
 ## Singapore
 Skipped at the client's request (16 Oct 2026).
+
+## Round 2: business websites abroad (lists prepared 16 Oct 2026)
+Lists in `research/abroad-keyword-lists/business-websites/` (15 keywords per country; `all-countries-plan.csv` shows which
+global page each keyword relates to). Same decision rules as above: build a country page only where a keyword has
+≥ 100 searches and KD ≤ 35; Dubai keywords count only if the results show no Maps pack.
