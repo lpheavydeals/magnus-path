@@ -5,5 +5,8 @@ import { industryPages } from './industries';
 import { globalPages } from './global';
 import { businessWebsitePages } from './business-websites';
 import { businessWebsitePages2 } from './business-websites-2';
+import { usAgencyPages } from './us-agency';
+import { usShopifyPages } from './us-shopify';
+import { usAmazonGeoPages } from './us-amazon-geo';
 
-export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2];
+export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages];
