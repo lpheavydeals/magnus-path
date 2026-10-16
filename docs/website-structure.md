@@ -82,7 +82,6 @@ Volume = monthly searches for the page's keyword cluster · KD = difficulty of t
 │
 ├── RESOURCES
 │   ├── /blog/  (categories: websites · ads · seo · marketplaces · export)
-│   ├── /ta/  Tamil section (seller guides in Tamil; volume not measured by Semrush) ............ P2
 │   ├── /blog/ecommerce-website-cost-in-india/ ... ecommerce website cost in india     430  KD6   P1
 │   └── /blog/how-to-find-buyers-for-export/ ..... how to find buyers for export       440  KD15  P2
 │
@@ -112,7 +111,7 @@ into separate keyword pages, because one page can rank for only one main keyword
 | Locations – India: Chennai · Coimbatore · Tiruppur · Bangalore | Locations | Chennai P1, Coimbatore P3, **Bangalore P2** ("ecommerce development company in bangalore" 2,900/mo, KD17, no local pack in results). **Tiruppur dropped as a location page** (0 searches); it is covered on the Fashion industry page |
 | Locations – Global: UK · Australia · UAE · Singapore · USA | Global | Starts as White-label SEO + SEO Outsourcing pages. Country pages wait for a US/UK/AE database check (India-database volumes for these were tiny) |
 | Case Studies · Pricing · Free Tools | Same | Unchanged |
-| Resources (Blog · Guides · Tamil section) | Resources | Blog P1, Tamil section `/ta/` P2 |
+| Resources (Blog · Guides · Tamil section) | Resources | Blog P1. Tamil section dropped at client's request (16 Oct 2026) |
 | About / Team · Contact / Book a Call | Company | Unchanged; Book a Call added to Contact |
 
 ## 3. Navigation

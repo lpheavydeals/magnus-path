@@ -106,6 +106,3 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: hidden; }
 
-/* Tamil pages */
-:root[lang="ta"] { --font-display: 'Archivo Variable', 'Noto Sans Tamil Variable', system-ui, sans-serif; --font-body: 'Inter Variable', 'Noto Sans Tamil Variable', system-ui, sans-serif; }
-:root[lang="ta"] h1, :root[lang="ta"] h2, :root[lang="ta"] h3 { letter-spacing: 0; line-height: 1.3; }
