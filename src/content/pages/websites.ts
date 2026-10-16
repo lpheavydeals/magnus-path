@@ -395,6 +395,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'WooCommerce agency for US stores', href: '/us/woocommerce-agency/' },
       { label: 'E-commerce website development company', href: '/ecommerce-website-development/' },
       { label: 'Shopify development services', href: '/shopify-development/' },
       { label: 'E-commerce SEO for WooCommerce stores', href: '/ecommerce-seo/' },

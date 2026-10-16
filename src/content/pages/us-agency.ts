@@ -47,6 +47,10 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'Hire a Shopify Developer', href: '/us/hire-shopify-developer/', body: 'Dedicated Shopify developers for themes, apps and fixes, working through your US night.', icon: 'website' },
       { title: 'Amazon PPC Agency', href: '/us/amazon-ppc-agency/', body: 'Sponsored Products, Brands and Display campaigns on Amazon.com, with budgets set by product margin.', icon: 'amazon' },
       { title: 'Amazon Account Management', href: '/us/amazon-account-management/', body: 'Listings, A+ content, inventory, FBA shipments and account health handled in Seller Central.', icon: 'marketplace' },
+      { title: 'Website Maintenance', href: '/us/website-maintenance-services/', body: 'Updates, backups, security checks and small changes for WordPress, WooCommerce and Shopify sites, on a monthly plan.', icon: 'website' },
+      { title: 'Hire a WordPress Developer', href: '/us/hire-wordpress-developer/', body: 'A dedicated or part-time WordPress developer for builds, custom themes, plugins and speed work.', icon: 'website' },
+      { title: 'WooCommerce Agency', href: '/us/woocommerce-agency/', body: 'WooCommerce store builds, migrations, payment and shipping integrations, and conversion work.', icon: 'marketplace' },
+      { title: 'White Label WordPress Development', href: '/us/white-label-wordpress-development/', body: 'WordPress builds delivered under your agency’s brand, with NDAs, Git workflow and overnight turnaround.', icon: 'website' },
       { title: 'Generative Engine Optimization', href: '/us/generative-engine-optimization-agency/', body: 'Make your brand visible in ChatGPT, Perplexity and Google AI Overviews answers.', icon: 'ai' },
     ],
     process: [
@@ -506,6 +510,7 @@ export const usAgencyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'White label WordPress development for agencies', href: '/us/white-label-wordpress-development/' },
       { label: 'White label SEO services for US agencies', href: '/us/white-label-seo/' },
       { label: 'Hire a Shopify developer', href: '/us/hire-shopify-developer/' },
       { label: 'Shopify Plus agency for US brands', href: '/us/shopify-plus-agency/' },

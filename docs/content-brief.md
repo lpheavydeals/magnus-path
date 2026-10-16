@@ -138,3 +138,8 @@ Same rules as the US/UK/UAE pages above, with these differences:
   Boxing Day, the Australian Consumer Law and Privacy Act (we are not lawyers), Google.com.au.
 - **Extra allowed related URLs:** /australia/ecommerce-marketing-agency/, /australia/ecommerce-seo/, /australia/white-label-seo/,
   /australia/seo-outsourcing/, /australia/shopify-agency/
+
+## US round 2 (business websites)
+- **Extra allowed related URLs:** /us/website-maintenance-services/, /us/hire-wordpress-developer/, /us/woocommerce-agency/,
+  /us/white-label-wordpress-development/
+- No Webflow claims: we do not offer Webflow (unconfirmed), so never mention building Webflow sites.
