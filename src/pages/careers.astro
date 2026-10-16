@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import SimpleHero from '../components/page/SimpleHero.astro';
+import { site } from '../data/site';
+import { breadcrumbSchema } from '../data/schema';
+const roles = [
+  { t: 'Shopify Developer', d: 'Build and customise Shopify themes, integrations and speed improvements.' },
+  { t: 'Performance Marketer (Amazon & Meta)', d: 'Plan, launch and optimise campaigns on Amazon, Flipkart, Meta and Google.' },
+  { t: 'SEO Specialist', d: 'Technical SEO, category-page content and link building for online stores.' },
+  { t: 'Content Writer (English & Tamil)', d: 'Write product pages, guides and ad copy for D2C brands.' },
+];
+---
+<Base title="Careers at Magnus Path | Chennai" description="Work at Magnus Path, a Chennai e-commerce growth agency. We hire Shopify developers, performance marketers, SEO specialists and content writers." schema={[breadcrumbSchema([{ label: 'Careers', href: '/careers/' }])]}>
+  <SimpleHero eyebrow="Careers" h1="Grow Brands *With Us*" intro="We are a small, hands-on team in Chennai. If you like seeing your work turn into real orders for real brands, we would like to hear from you." current="Careers" />
+  <section class="section cr">
+    <div class="wrap">
+      <div class="head"><p class="label" data-reveal>Roles we hire for</p><h2 data-reveal>Open to applications</h2></div>
+      <ul class="cr__list">{roles.map((r) => <li data-reveal><div><h3>{r.t}</h3><p>{r.d}</p></div><span>Chennai · Full-time</span></li>)}</ul>
+      <p class="cr__apply" data-reveal>Send your CV and two pieces of work you are proud of to <a href={`mailto:${site.email}`}>{site.email}</a> with the role in the subject line.</p>
+    </div>
+  </section>
+</Base>
+<style>
+  .cr__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .cr__list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 26px 0; border-bottom: 1px solid var(--line); }
+  .cr__list p { color: var(--muted); }
+  .cr__list span { font-size: 14px; color: var(--muted); }
+  .cr__apply { margin-top: 32px; font-size: 1.1rem; }
+</style>

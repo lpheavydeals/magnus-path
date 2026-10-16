@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { getCollection } from 'astro:content';
+import { breadcrumbSchema } from '../../data/schema';
+const posts = (await getCollection('blog')).sort((a, b) => +b.data.publishDate - +a.data.publishDate);
+---
+<Base title="E-commerce Growth Guides | Magnus Path Blog" description="Practical guides on e-commerce websites, Amazon and Flipkart ads, SEO and export marketing for Indian brands and manufacturers." schema={[breadcrumbSchema([{ label: 'Blog', href: '/blog/' }])]}>
+  <SimpleHero eyebrow="Guides" h1="Practical Guides to *Grow Online Sales*" intro="Straight answers on what e-commerce websites cost, which platform to choose, how to run marketplace ads and how manufacturers win export buyers online." current="Blog" />
+  <section class="section bl">
+    <div class="wrap">
+      <ul class="bl__grid">
+        {posts.map((p) => (
+          <li data-reveal><a href={`/blog/${p.id}/`}>
+            <div class="bl__art" aria-hidden="true"><span></span></div>
+            <span class="bl__meta">{p.data.category} · {p.data.readingMinutes} min read</span>
+            <h2>{p.data.title}</h2>
+            <p>{p.data.description}</p>
+          </a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <LeadForm />
+</Base>
+<style>
+  .bl { padding-top: 0; }
+  .bl__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 28px; }
+  .bl__grid a { display: grid; gap: 12px; text-decoration: none; }
+  .bl__art { aspect-ratio: 16 / 10; border-radius: var(--radius); background: linear-gradient(135deg, #fff1ea, #ffd9c6); position: relative; overflow: hidden; }
+  .bl__art span { position: absolute; width: 46%; aspect-ratio: 1; border-radius: 50%; right: -8%; bottom: -12%; background: radial-gradient(circle at 30% 28%, #ffd2bd, #f16436 60%, #a8360e); transition: transform .8s var(--ease); }
+  .bl__grid a:hover .bl__art span { transform: scale(1.15) translate(-10%, -10%); }
+  .bl__meta { font-size: 13px; color: var(--muted); }
+  .bl__grid h2 { font-size: 1.4rem; line-height: 1.25; }
+  .bl__grid a:hover h2 { color: var(--accent-ink); }
+  .bl__grid p { color: var(--muted); font-size: 15px; }
+  @media (min-width: 900px) { .bl__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

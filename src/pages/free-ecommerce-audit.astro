@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import SimpleHero from '../components/page/SimpleHero.astro';
+import FAQ from '../components/FAQ.astro';
+import LeadForm from '../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../data/schema';
+const checks = [
+  { t: 'Store speed & mobile experience', d: 'Load time on a mid-range Android phone over 4G, layout issues and the apps slowing you down.' },
+  { t: 'Conversion leaks', d: 'Product pages, cart and checkout: where buyers hesitate, what information is missing and what to fix first.' },
+  { t: 'Ad account waste', d: 'Amazon, Meta and Google campaigns: search terms, audiences and budgets that spend without bringing profitable orders.' },
+  { t: 'SEO & AI-search gaps', d: 'Technical errors, missing keywords and how you compare with your top 3 competitors on Google and AI answers.' },
+  { t: 'Marketplace listings', d: 'Titles, images, A+ content and reviews on Amazon or Flipkart, if you sell there.' },
+  { t: 'Your 90-day priority list', d: 'A short, ordered list of fixes with expected impact, so you can act on it with or without us.' },
+];
+const faqs = [
+  { q: 'Is the e-commerce store audit really free?', a: 'Yes. The audit is free and there is no obligation to hire us. We do it because it is the best way to show how we think and what we would change on your store.' },
+  { q: 'What do I receive?', a: 'A recorded video walkthrough of your store, ads and SEO, plus a PDF summary with a prioritised list of fixes. If you want, we follow up with a 30-minute call to discuss the plan.' },
+  { q: 'How long does the audit take?', a: 'We send the audit within 24 working hours of receiving your store link and the details in the form. Larger stores or audits including ad accounts can take up to 48 hours.' },
+  { q: 'Do you need access to my Shopify or ad accounts?', a: 'Not for the first audit. We review what is publicly visible. If you want us to audit ad accounts in depth, we ask for read-only access, which you can remove at any time.' },
+  { q: 'Who is the audit for?', a: 'Brands selling on their own store, Amazon, Flipkart or quick-commerce apps, and manufacturers who want more enquiries from their website. If you are just starting, we review your plan and competitors instead.' },
+];
+const schema = [breadcrumbSchema([{ label: 'Free E-commerce Audit', href: '/free-ecommerce-audit/' }]), faqSchema(faqs)];
+---
+<Base title="Free E-commerce Store Audit in 24 Hours | Magnus Path" description="Get a free e-commerce store audit: speed, conversion leaks, wasted ad spend and SEO gaps, delivered as a video walkthrough and PDF within 24 hours." schema={schema}>
+  <SimpleHero eyebrow="Free audit · no obligation" h1="Get a Free E-commerce Store Audit *in 24 Hours*" intro="Send us your store, Amazon or website link. Within 24 working hours you receive a video walkthrough and a PDF showing what is costing you sales and what to fix first. Free, with no obligation to hire us." current="Free E-commerce Audit">
+    <a class="btn btn--primary" href="#audit" style="justify-self:start">Request my audit <span class="arrow" aria-hidden="true">↓</span></a>
+  </SimpleHero>
+  <section class="section au">
+    <div class="wrap">
+      <div class="head"><p class="label" data-reveal>What we check</p><h2 data-reveal>Six areas that decide your online sales</h2></div>
+      <ul class="au__grid">{checks.map((c) => <li data-reveal><h3>{c.t}</h3><p>{c.d}</p></li>)}</ul>
+    </div>
+  </section>
+  <LeadForm heading="Request your free audit" sub="Fill in the form and we will send your audit within 24 working hours. Prefer WhatsApp? Send your store link there instead." />
+  <FAQ items={faqs} title="About the free audit" />
+</Base>
+<style>
+  .au__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+  .au__grid li { display: grid; gap: 10px; padding: 28px; border-radius: var(--radius); background: var(--white); border: 1px solid var(--line); }
+  .au__grid p { color: var(--muted); }
+  @media (min-width: 760px) { .au__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1080px) { .au__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

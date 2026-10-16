@@ -1,0 +1,38 @@
+---
+import type { Tier } from '../../data/pricing';
+interface Props { tiers: Tier[]; heading: string; label?: string; note?: string; }
+const { tiers, heading, label = 'Packages', note } = Astro.props;
+---
+<section class="section tr">
+  <div class="wrap">
+    <div class="head"><p class="label" data-reveal>{label}</p><h2 data-reveal>{heading}</h2>{note && <p class="lede" data-reveal>{note}</p>}</div>
+    <ul class="tr__grid">
+      {tiers.map((t) => (
+        <li class:list={['tr__card', { 'is-featured': t.featured }]} data-reveal>
+          {t.featured && <span class="tr__pop">Most popular</span>}
+          <h3>{t.name}</h3>
+          <p class="tr__for">{t.for}</p>
+          <p class="tr__price">{t.price}<small>{t.unit}</small></p>
+          <ul>{t.features.map((f) => <li>{f}</li>)}</ul>
+          <a class={`btn ${t.featured ? 'btn--primary' : 'btn--dark'}`} href="/free-ecommerce-audit/">Get started <span class="arrow" aria-hidden="true">→</span></a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+<style>
+  .tr__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+  .tr__card { position: relative; display: grid; gap: 14px; align-content: start; padding: 30px; border-radius: 28px; background: var(--white); border: 1px solid var(--line); }
+  .tr__card.is-featured { background: var(--ink); color: var(--white); border-color: var(--ink); box-shadow: var(--shadow); }
+  .tr__pop { position: absolute; top: 22px; right: 22px; font-size: 12px; font-weight: 600; padding: 6px 10px; border-radius: 999px; background: var(--accent); color: var(--white); }
+  .tr__card h3 { font-size: 1.6rem; }
+  .tr__for { color: var(--muted); font-size: 15px; min-height: 2.6em; }
+  .is-featured .tr__for { color: var(--muted-on-dark); }
+  .tr__price { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.04em; font-size: clamp(2.2rem, 3.6vw, 3rem); line-height: 1; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .is-featured .tr__price { border-color: var(--line-dark); color: var(--accent); }
+  .tr__price small { font: 500 14px var(--font-body); letter-spacing: 0; color: var(--muted); }
+  .tr__card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 15px; }
+  .tr__card ul li::before { content: '+'; color: var(--accent); font-weight: 700; margin-right: 10px; }
+  .tr__card .btn { justify-self: start; margin-top: 8px; }
+  @media (min-width: 980px) { .tr__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

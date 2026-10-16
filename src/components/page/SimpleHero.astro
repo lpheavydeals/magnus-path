@@ -1,0 +1,24 @@
+---
+import Words from '../Words.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import type { Link } from '../../data/types';
+interface Props { eyebrow: string; h1: string; intro: string; trail?: Link[]; current: string; }
+const { eyebrow, h1, intro, trail = [], current } = Astro.props;
+---
+<section class="sh">
+  <div class="sh__bg" aria-hidden="true"></div>
+  <span class="plus" style="left:6%;top:40%">+</span><span class="plus" style="right:10%;top:30%">+</span>
+  <div class="wrap sh__copy">
+    <Breadcrumbs trail={trail} current={current} />
+    <p class="label" data-reveal>{eyebrow}</p>
+    <h1><Words text={h1} /></h1>
+    <p class="lede" data-reveal>{intro}</p>
+    <slot />
+  </div>
+</section>
+<style>
+  .sh { position: relative; padding: clamp(120px, 14vw, 170px) 0 clamp(40px, 6vw, 72px); overflow: hidden; }
+  .sh__bg { position: absolute; inset: 0; background: radial-gradient(50% 70% at 85% 0%, #ffe2d3 0%, rgba(255,226,211,0) 70%), var(--paper); }
+  .sh__copy { position: relative; display: grid; gap: 22px; }
+  .sh h1 { font-size: clamp(2.4rem, 5.4vw, 4.6rem); max-width: 18ch; }
+</style>

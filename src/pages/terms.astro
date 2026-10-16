@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import SimpleHero from '../components/page/SimpleHero.astro';
+import Prose from '../components/page/Prose.astro';
+import { site } from '../data/site';
+---
+<Base title="Terms of Use | Magnus Path" description="Terms of use for the Magnus Path website, including content, pricing information and limitations of liability.">
+  <SimpleHero eyebrow="Legal" h1="Terms of Use" intro="Last updated: 16 October 2026. By using this website you agree to these terms." current="Terms" />
+  <Prose>
+    <h2>Website content</h2>
+    <p>Content on this website is for general information. Guides and examples describe common situations and are not a promise of specific results for your business.</p>
+    <h2>Pricing</h2>
+    <p>Prices shown are starting prices in Indian rupees (or US dollars where stated), exclude GST and, for advertising services, exclude ad spend. A written proposal or agreement sets the final scope and price for any engagement.</p>
+    <h2>Services</h2>
+    <p>Services are provided under a separate written agreement that sets out scope, timelines, fees, intellectual property and confidentiality. If those terms conflict with these terms, the agreement applies.</p>
+    <h2>Intellectual property</h2>
+    <p>The Magnus Path name, logo, design and content on this website belong to {site.legalName}. Platform names such as Shopify, Amazon, Flipkart, Google and Meta are trademarks of their owners and are used only to describe the platforms we work on.</p>
+    <h2>Limitation of liability</h2>
+    <p>We are not liable for losses arising from use of the information on this website. Search engines and ad platforms control rankings, ad approvals and costs, and they can change without notice.</p>
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of India, and courts in Chennai, Tamil Nadu have jurisdiction.</p>
+    <h2>Contact</h2>
+    <p>Questions about these terms: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+  </Prose>
+</Base>

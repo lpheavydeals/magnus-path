@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/page/Breadcrumbs.astro';
+import Prose from '../../components/page/Prose.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { getCollection, render } from 'astro:content';
+import { site } from '../../data/site';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((p) => ({ params: { slug: p.id }, props: { post: p } }));
+}
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const d = post.data;
+const url = `${site.url}/blog/${post.id}/`;
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, datePublished: d.publishDate.toISOString(), dateModified: d.publishDate.toISOString(), author: { '@type': 'Organization', name: d.author }, publisher: { '@id': `${site.url}/#org` }, mainEntityOfPage: url },
+  breadcrumbSchema([{ label: 'Blog', href: '/blog/' }, { label: d.title, href: `/blog/${post.id}/` }]),
+  faqSchema(d.faqs),
+];
+const toc = headings.filter((h) => h.depth === 2);
+---
+<Base title={d.metaTitle} description={d.description} schema={schema}>
+  <section class="ah">
+    <div class="ah__bg" aria-hidden="true"></div>
+    <div class="wrap ah__in">
+      <Breadcrumbs trail={[{ label: 'Blog', href: '/blog/' }]} current={d.category} />
+      <p class="label">{d.category} · {d.readingMinutes} min read · {d.publishDate.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+      <h1>{d.title}</h1>
+      <div class="ah__summary"><strong>Quick answer</strong><p>{d.summary}</p></div>
+    </div>
+  </section>
+  <div class="wrap art">
+    <aside class="art__toc">
+      <p class="label">In this guide</p>
+      <ol>{toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+      <a class="btn btn--primary btn--sm" href="/free-ecommerce-audit/">Free store audit <span class="arrow" aria-hidden="true">→</span></a>
+    </aside>
+    <div class="art__body"><Prose><Content /></Prose></div>
+  </div>
+  <FAQ items={d.faqs} title="Frequently asked questions" />
+  <Related links={d.related} heading="Related services" />
+  <LeadForm />
+</Base>
+<style>
+  .ah { position: relative; padding: clamp(120px, 14vw, 170px) 0 48px; overflow: hidden; }
+  .ah__bg { position: absolute; inset: 0; background: radial-gradient(50% 70% at 85% 0%, #ffe2d3 0%, rgba(255,226,211,0) 70%), var(--paper); }
+  .ah__in { position: relative; display: grid; gap: 20px; max-width: 980px; }
+  .ah h1 { font-size: clamp(2.2rem, 4.8vw, 3.8rem); }
+  .ah__summary { padding: 20px 24px; border-radius: 20px; background: var(--white); border: 1px solid var(--line); display: grid; gap: 6px; max-width: 74ch; }
+  .ah__summary strong { font-size: 13px; color: var(--accent-ink); }
+  .art { display: grid; gap: 32px; }
+  .art__toc { display: none; }
+  .art__body :global(.prose-sec .wrap) { padding: 0; }
+  @media (min-width: 1080px) {
+    .art { grid-template-columns: 260px 1fr; gap: 72px; }
+    .art__toc { display: grid; gap: 14px; align-content: start; position: sticky; top: 120px; align-self: start; }
+    .art__toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; border-left: 1px solid var(--line); }
+    .art__toc a { display: block; padding-left: 14px; font-size: 14px; color: var(--muted); text-decoration: none; }
+    .art__toc a:hover { color: var(--accent-ink); }
+    .art__toc .btn { justify-self: start; }
+  }
+</style>

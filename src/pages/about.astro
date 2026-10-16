@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import SimpleHero from '../components/page/SimpleHero.astro';
+import ProcessPanel from '../components/page/ProcessPanel.astro';
+import LeadForm from '../components/LeadForm.astro';
+import { breadcrumbSchema } from '../data/schema';
+const principles = [
+  { title: 'One team, one number', body: 'Website, ads and SEO are run by one team that shares one goal: profitable orders. No hand-offs between agencies, no finger-pointing.' },
+  { title: 'Sales over vanity metrics', body: 'We report revenue, ROAS, conversion rate and organic orders first. Likes, impressions and rankings matter only when they lead to sales.' },
+  { title: 'Show the work', body: 'Weekly reports list exactly what we changed and why. You can see every campaign, every page we edited and every result.' },
+  { title: 'Senior attention', body: 'We take on a limited number of brands at a time so the people who plan your strategy are the people doing the work.' },
+];
+const schema = [breadcrumbSchema([{ label: 'About', href: '/about/' }]), { '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About Magnus Path', url: 'https://www.magnuspath.com/about/' }];
+---
+<Base title="About Magnus Path | E-commerce Growth Agency, Chennai" description="Magnus Path is a Chennai-based e-commerce growth agency. One team builds your store, runs your ads and earns your rankings, measured in sales." schema={schema}>
+  <SimpleHero eyebrow="About us" h1="We Build the *Path* From Click to Order" intro="Magnus Path is an e-commerce growth agency based in Chennai. We started it because online brands kept telling us the same story: one agency for the website, another for ads, a freelancer for SEO, and nobody responsible for sales. So we built one team that does all three." current="About" />
+  <section class="section ab">
+    <div class="wrap ab__grid">
+      <div class="head"><p class="label" data-reveal>What we believe</p><h2 data-reveal>How we work with every brand</h2></div>
+      <ul class="ab__list">{principles.map((p) => <li data-reveal><h3>{p.title}</h3><p>{p.body}</p></li>)}</ul>
+    </div>
+  </section>
+  <section class="section ab-team">
+    <div class="wrap">
+      <div class="head"><p class="label" data-reveal>The team</p><h2 data-reveal>Developers, ad specialists and SEOs under one roof</h2><p class="lede" data-reveal>Our Chennai team includes Shopify and WooCommerce developers, performance marketers who run Amazon, Flipkart, Meta and Google campaigns, and SEO specialists who work on stores, marketplaces and AI search.</p></div>
+      <ul class="ab-team__grid">
+        {['Founder', 'Head of Growth', 'Lead Developer', 'SEO Lead'].map((r) => (
+          <li data-reveal><div class="ab-team__photo" aria-hidden="true"><span>Photo</span></div><strong>[Name]</strong><span>{r}</span></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <ProcessPanel heading="How a project with us *starts*" steps={[
+    { title: 'Free audit', body: 'We review your store, ads and SEO and send a video walkthrough within 24 hours.' },
+    { title: 'Plan and quote', body: 'A 90-day plan with targets and a fixed monthly fee or project price.' },
+    { title: 'Kick-off', body: 'Access, tracking and a shared project board. Most changes go live within 2–4 weeks.' },
+    { title: 'Weekly progress', body: 'Weekly reports and a monthly review call to decide the next moves together.' },
+  ]} />
+  <LeadForm />
+</Base>
+<style>
+  .ab__grid { display: grid; gap: 40px; }
+  .ab__grid .head { margin: 0; }
+  .ab__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+  .ab__list li { display: grid; gap: 8px; padding: 26px 0; border-bottom: 1px solid var(--line); }
+  .ab__list p { color: var(--muted); }
+  .ab-team { background: var(--white); }
+  .ab-team__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .ab-team__grid li { display: grid; gap: 4px; }
+  .ab-team__grid li > span:last-child { color: var(--muted); font-size: 15px; }
+  .ab-team__photo { aspect-ratio: 4 / 5; border-radius: var(--radius); background: linear-gradient(140deg, #fff1ea, #ffd9c6); display: grid; place-items: center; margin-bottom: 10px; color: var(--accent-ink); font-size: 13px; }
+  @media (min-width: 980px) { .ab__grid { grid-template-columns: 1fr 1.3fr; gap: 80px; } .ab-team__grid { grid-template-columns: repeat(4, 1fr); } }
+</style>

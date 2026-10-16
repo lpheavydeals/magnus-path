@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import SimpleHero from '../components/page/SimpleHero.astro';
+import LeadForm from '../components/LeadForm.astro';
+import { site } from '../data/site';
+import { breadcrumbSchema } from '../data/schema';
+const schema = [breadcrumbSchema([{ label: 'Contact', href: '/contact/' }])];
+---
+<Base title="Contact Magnus Path | E-commerce Agency in Chennai" description="Contact Magnus Path, an e-commerce marketing agency in Chennai. Call, WhatsApp, email or visit our office to discuss your store, ads or SEO." schema={schema}>
+  <SimpleHero eyebrow="Contact" h1="Let’s Talk About *Your Store*" intro="Call, WhatsApp or email us, or visit our Chennai office. We reply within one working day, and Tamil Nadu clients are welcome to meet us in person." current="Contact" />
+  <section class="section ct">
+    <div class="wrap ct__grid">
+      <div class="ct__card" data-reveal><span class="label">Phone</span><a href={site.phoneHref}>{site.phone}</a><p>{site.hours}</p></div>
+      <div class="ct__card" data-reveal><span class="label">WhatsApp</span><a href={site.whatsapp} rel="noopener">Message us on WhatsApp</a><p>Send your store link for a quick first opinion.</p></div>
+      <div class="ct__card" data-reveal><span class="label">Email</span><a href={`mailto:${site.email}`}>{site.email}</a><p>For proposals, partnerships and careers.</p></div>
+      <div class="ct__card ct__card--wide" data-reveal><span class="label">Office</span>
+        <address><strong>{site.name}</strong><br />{site.address.street}, {site.address.locality}, {site.address.region} {site.address.postalCode}, India</address>
+        <p>Meetings by appointment. Overseas clients: we work in your time zone overlap through video calls.</p>
+      </div>
+    </div>
+  </section>
+  <LeadForm heading="Or send us your details" sub="Tell us about your store and what you need. We will reply within one working day with next steps." />
+</Base>
+<style>
+  .ct { padding-top: 0; }
+  .ct__grid { display: grid; gap: 16px; }
+  .ct__card { display: grid; gap: 10px; padding: 28px; border-radius: var(--radius); background: var(--white); border: 1px solid var(--line); }
+  .ct__card a { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.02em; font-size: 1.4rem; text-decoration: none; color: var(--ink); }
+  .ct__card a:hover { color: var(--accent-ink); }
+  .ct__card p { color: var(--muted); font-size: 15px; }
+  address { font-style: normal; font-size: 1.1rem; line-height: 1.6; }
+  @media (min-width: 900px) { .ct__grid { grid-template-columns: repeat(3, 1fr); } .ct__card--wide { grid-column: 1 / -1; } }
+</style>

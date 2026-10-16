@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Page not found | Magnus Path" description="The page you were looking for could not be found.">
+  <section class="nf">
+    <div class="wrap nf__in">
+      <p class="label">404</p>
+      <h1>This path doesn’t lead <em>anywhere</em>.</h1>
+      <p class="lede">The page may have moved. Try one of these instead.</p>
+      <div class="nf__links">
+        <a class="btn btn--primary" href="/">Home <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="/pricing/">Pricing</a>
+        <a class="btn btn--ghost" href="/free-ecommerce-audit/">Free audit</a>
+      </div>
+    </div>
+  </section>
+</Base>
+<style>
+  .nf { padding: 200px 0 140px; }
+  .nf__in { display: grid; gap: 22px; justify-items: start; }
+  .nf__links { display: flex; flex-wrap: wrap; gap: 10px; }
+</style>
