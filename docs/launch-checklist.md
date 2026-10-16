@@ -17,9 +17,17 @@
 - [ ] Offers mentioned by page writers: monthly development retainer (Bangalore page), WooCommerce maintenance plans, 30 days post-launch support, travel costs agreed upfront for Bangalore visits
 - [ ] Careers roles listed on /careers/
 
+## Confirm terms added in the later pages
+- [ ] GBP / AUD / AED invoicing, a named contact per client, meetings in Dubai for larger projects (country pages)
+- [ ] "Requests before lunch handled the same day" (UK page)
+- [ ] Tamil pages: monthly report in Tamil, Tamil-speaking team, no ranking/sales promises
+- [ ] Example case-study pages (`src/data/cases.ts`, set `example: false` only with real data; they are noindexed until then)
+
 ## Review facts written by the content team
 - [ ] Platform details (Amazon DSP/Brand Registry, Flipkart ad formats, Shopify technical notes, quick-commerce onboarding) are current
 - [ ] Tools named on pages (Helium 10, Semrush, etc.) are ones the team actually uses
+- [ ] Tamil pages read naturally (native Tamil reviewer)
+- [ ] Platform facts in blog guides (Etsy tag limits, Amazon Global Selling steps, Flipkart ad formats, quick-commerce onboarding) are current
 - [ ] Privacy policy and terms reviewed by a lawyer
 
 ## Before going live

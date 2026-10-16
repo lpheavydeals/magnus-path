@@ -133,6 +133,18 @@ Store-இல் Privacy policy, Return / Refund policy, Shipping policy, Terms, 
 - Beauty, ஆயுர்வேதத்துக்கு ingredients, பயன்படுத்தும் முறை. மருத்துவ உறுதிமொழிகளைத் தவிர்க்கவும்.
 - Mobile-இல் page வேகமாகத் திறக்க வேண்டும். பெரும்பாலான வாடிக்கையாளர்கள் mobile-இல்தான் வாங்குகிறார்கள்.
 
+## படி 7: Store-க்கு வாடிக்கையாளர்களைக் கொண்டு வருவது
+
+Store தயாரானதும் வேலை முடியவில்லை, அப்போதுதான் ஆரம்பம். ஆட்களைக் கொண்டு வர சில வழிகள்:
+
+- **ஏற்கனவே உள்ள வாடிக்கையாளர்கள்**: உங்கள் கடை, wholesale buyers, WhatsApp contacts-க்கு store link அனுப்புங்கள். முதல் orders பெரும்பாலும் இங்கிருந்துதான் வரும்.
+- **Instagram மற்றும் Facebook ads**: Fashion, beauty, food போன்ற பொருட்களுக்கு Meta ads நல்ல தொடக்கம். சிறிய budget-இல் ஆரம்பித்து, எந்த product, எந்த creative வேலை செய்கிறது என்று பாருங்கள்.
+- **Google ads**: ஏற்கனவே உங்கள் வகைப் பொருளைத் தேடுபவர்களைப் பிடிக்க. Shopping ads e-commerce-க்கு ஏற்றவை.
+- **SEO**: Product மற்றும் category பக்கங்களை Google-இல் தெரிய வைப்பது. மெதுவாக வரும், ஆனால் நீண்ட காலம் இலவச traffic தரும்.
+- **WhatsApp மற்றும் email**: ஒருமுறை வாங்கியவர்களுக்கு புதிய stock, பண்டிகை offers பற்றித் தெரிவியுங்கள். Repeat orders-தான் லாபத்தை உயர்த்தும்.
+
+பொங்கல், தீபாவளி, ஆடி sale போன்ற சீசன்களுக்கு முன்கூட்டியே stock மற்றும் ads-ஐத் திட்டமிடுங்கள். கடைசி நேரத்தில் ads ஆரம்பித்தால் செலவு அதிகமாகும்.
+
 ## ஆன்லைன் ஸ்டோர் தொடங்கும்போது செய்யும் பொதுவான தவறுகள்
 
 1. **Marketing budget இல்லாமல் தொடங்குவது.** Store-க்கு மட்டும் பணம் செலவழித்து, ஆட்களைக் கொண்டு வர budget இல்லாமல் போவது மிகப் பெரிய தவறு.
@@ -144,13 +156,13 @@ Store-இல் Privacy policy, Return / Refund policy, Shipping policy, Terms, 
 
 ## Launch-க்கு முன் ஒரு சின்ன checklist
 
-- [ ] Domain இணைக்கப்பட்டுள்ளது, SSL (https) வேலை செய்கிறது
-- [ ] UPI, card, COD payment test order செய்து பார்த்தாகிவிட்டது
-- [ ] Shipping rates, pincode serviceability சரிபார்க்கப்பட்டது
-- [ ] GST invoice சரியாக generate ஆகிறது
-- [ ] Policy பக்கங்கள் அனைத்தும் உள்ளன
-- [ ] Mobile-இல் முழு வாங்கும் process-ஐ ஒருமுறை செய்து பார்த்தாகிவிட்டது
-- [ ] Google Analytics, Meta pixel இணைக்கப்பட்டுள்ளன
+- Domain இணைக்கப்பட்டுள்ளது, SSL (https) வேலை செய்கிறது
+- UPI, card, COD payment test order செய்து பார்த்தாகிவிட்டது
+- Shipping rates, pincode serviceability சரிபார்க்கப்பட்டது
+- GST invoice சரியாக generate ஆகிறது
+- Policy பக்கங்கள் அனைத்தும் உள்ளன
+- Mobile-இல் முழு வாங்கும் process-ஐ ஒருமுறை செய்து பார்த்தாகிவிட்டது
+- Google Analytics, Meta pixel இணைக்கப்பட்டுள்ளன
 
 ## உங்கள் store-ஐ இலவசமாகச் சரிபார்க்க வேண்டுமா?
 
