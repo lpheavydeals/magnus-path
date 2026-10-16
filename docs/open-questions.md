@@ -19,3 +19,7 @@
 ## Australia pages (built)
 11. Australia quotes in AUD after audit (no published AUD prices). OK?
 12. Time zone: Sydney is 4.5–5.5 hours ahead of India, so our morning is their afternoon and replies come by their evening. OK to say this?
+
+## Business websites abroad (round 2)
+13. Do you build Webflow sites? "webflow development agency" has 880 US searches at KD 27. We only build that page if you offer Webflow.
+14. Website maintenance in USD: quote after audit, or publish US plans (e.g. Basic / Business / Store like the INR plans)?

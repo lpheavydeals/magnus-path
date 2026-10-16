@@ -149,3 +149,13 @@ Skipped at the client's request (16 Oct 2026).
 Lists in `research/abroad-keyword-lists/business-websites/` (15 keywords per country; `all-countries-plan.csv` shows which
 global page each keyword relates to). Same decision rules as above: build a country page only where a keyword has
 ≥ 100 searches and KD ≤ 35; Dubai keywords count only if the results show no Maps pack.
+
+### Round 2 proposal: United States (data received 16 Oct 2026)
+| Page | Primary keyword (US vol / KD) | Secondary | Global twin |
+|---|---|---|---|
+| /us/website-maintenance-services/ | website maintenance services (4,400 / 23) | wordpress maintenance services (1,900 / 43), woocommerce maintenance (390 / 21) | /website-maintenance-services/ |
+| /us/hire-wordpress-developer/ | hire wordpress developer (1,300 / 18) | wordpress development company (2,400 / 37), wordpress developer for hire (390 / 23) | /wordpress-website-development/ |
+| /us/woocommerce-agency/ | woocommerce agency (1,300 / 31) | woocommerce development company (1,000 / 32) | /woocommerce-development/ |
+| /us/white-label-wordpress-development/ | white label wordpress development (590 / 9) | outsource wordpress development (320 / 9) | — (linked from /us/white-label-web-development/) |
+| /us/webflow-development-agency/ (only if offered) | webflow development agency (880 / 27) | — | — |
+Skipped: woocommerce developer (61), business website design services (39), corporate website design company (45), headless cms development (47).
