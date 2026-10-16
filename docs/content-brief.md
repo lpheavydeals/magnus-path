@@ -33,7 +33,11 @@ spelling (optimise, catalogue), ₹ amounts in lakh/crore. No hype words ("cutti
   /b2b-digital-marketing/, /white-label-seo/, /seo-outsourcing-india/, /chennai/digital-marketing-agency/,
   /chennai/seo-company/, /chennai/ecommerce-website-development/, /bangalore/ecommerce-website-development/,
   /coimbatore/seo-services/, /pricing/, /case-studies/, /free-ecommerce-audit/, /about/, /contact/, /blog/,
-  /blog/ecommerce-website-cost-in-india/, /blog/best-ecommerce-platform-in-india/, /blog/how-to-find-buyers-for-export/
+  /blog/ecommerce-website-cost-in-india/, /blog/best-ecommerce-platform-in-india/, /blog/how-to-find-buyers-for-export/,
+  /blog/how-to-sell-on-etsy-from-india/, /blog/how-to-sell-on-amazon-usa-from-india/, /blog/how-to-reduce-rto-cod-returns/,
+  /blog/amazon-ppc-guide-india/, /blog/flipkart-ads-guide/, /blog/how-to-sell-on-blinkit-zepto-instamart/,
+  /blog/shopify-seo-checklist/, /tools/, /tools/roas-calculator/, /tools/marketplace-profit-calculator/,
+  /uk/ecommerce-marketing-agency/, /australia/ecommerce-marketing-agency/, /uae/ecommerce-marketing-agency/, /ta/
 - Location pages: we have **one office, in Chennai**. Bangalore and Coimbatore pages must say we serve those cities
   from Chennai (remote work + visits when needed). Never imply an office there.
 
