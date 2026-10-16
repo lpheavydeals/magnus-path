@@ -175,3 +175,10 @@ Only 3 of the 15 keywords had data.
 | /uae/web-development-company/ | web development company uae (720 / 26) | website development company uae (70 / 25); corporate and business websites | /corporate-website-development/ |
 | /uae/wordpress-development-dubai/ | wordpress development company dubai (320 / 8) | — | /wordpress-website-development/ |
 Before building, check the Google results for "wordpress development company dubai": if a Maps pack shows, the page will rank only in the regular results below it.
+
+### Round 2 proposal: Australia (data received 16 Oct 2026)
+| Page | Primary keyword (AU vol / KD) | Secondary | Global twin |
+|---|---|---|---|
+| /australia/web-development-company/ | website development company australia (390 / 31) | small business / corporate / business website design australia (30–50) | /corporate-website-development/ |
+| /australia/wordpress-developer/ | wordpress developer australia (320 / 19) | wordpress development australia (90 / 12), wordpress agency australia (50), wordpress maintenance australia (90 / 28) | /wordpress-website-development/ |
+Skipped: wordpress support australia (KD 58), woocommerce agency australia and headless cms agency australia (20 searches each).
