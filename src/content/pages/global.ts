@@ -6,12 +6,12 @@ export const globalPages: ServicePageData[] = [
     kind: 'global',
     title: 'Ecommerce Marketing Agency UK for D2C Brands | Magnus Path',
     description: 'Ecommerce marketing agency for UK brands: Shopify, Amazon.co.uk, Meta and Google ads and SEO from one senior Chennai team that works in your UK hours.',
-    primaryKeyword: 'ecommerce marketing agency uk',
+    primaryKeyword: 'ecommerce marketing agency for UK brands',
     navLabel: 'E-commerce Agency for UK Brands',
     breadcrumb: [],
     eyebrow: 'For UK brands · Shopify · Amazon.co.uk · Ads · SEO',
-    h1: 'Ecommerce Marketing Agency UK Brands Can *Brief Before Lunch*',
-    intro: 'Magnus Path is an ecommerce marketing agency UK brands can hire as one remote team for Shopify, Amazon.co.uk, Meta and Google ads and e-commerce SEO. We are a Chennai team with no UK office. We work with you over video calls during your morning and early afternoon, give you senior specialists at Indian cost and can bill in GBP.',
+    h1: 'Ecommerce Marketing Agency for UK Brands, *Briefed Before Lunch*',
+    intro: 'Magnus Path is an ecommerce marketing agency for UK brands, working as one remote team for Shopify, Amazon.co.uk, Meta and Google ads and e-commerce SEO. We are a Chennai team with no UK office. We work with you over video calls during your morning and early afternoon, give you senior specialists at Indian cost and can bill in GBP.',
     icon: 'shopify',
     facts: ['IST is 4.5–5.5 hrs ahead of UK', 'Shopify, Amazon.co.uk, Meta, Google', 'GBP billing available'],
     headings: {
@@ -42,9 +42,9 @@ export const globalPages: ServicePageData[] = [
     ],
     guide: [
       {
-        heading: 'What an ecommerce marketing agency UK brands hire should cover',
+        heading: 'What an ecommerce marketing agency for UK brands should cover',
         paragraphs: [
-          'A UK direct-to-consumer brand usually sells in two or three places: its own Shopify store, Amazon.co.uk and sometimes a retailer or marketplace such as eBay. Traffic comes from Meta, Google, organic search and email. An ecommerce marketing agency UK founders can rely on should understand how those channels affect each other, because a discount on Amazon changes conversion on Shopify, and Meta ads raise branded searches on Google.',
+          'A UK direct-to-consumer brand usually sells in two or three places: its own Shopify store, Amazon.co.uk and sometimes a retailer or marketplace such as eBay. Traffic comes from Meta, Google, organic search and email. An ecommerce marketing agency for UK brands should understand how those channels affect each other, because a discount on Amazon changes conversion on Shopify, and Meta ads raise branded searches on Google.',
           'That is why we work as one team across the store, marketplace, paid ads and SEO. You get one plan, one report and one person accountable for the result, instead of four suppliers each claiming credit for the same sale.',
         ],
       },
@@ -87,7 +87,7 @@ export const globalPages: ServicePageData[] = [
         heading: 'Working with a Chennai team when you outsource ecommerce marketing',
         paragraphs: [
           'We have no office in the UK. We are a Chennai team working remotely with UK brands through video calls, a shared project board and a chat channel. India Standard Time is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so your morning and early afternoon overlap our working day. Requests sent before lunch in the UK are usually handled the same day.',
-          'We do not publish a fixed price for UK brands, because channels and ad spend vary too much. After a free audit, we quote a monthly retainer in GBP or USD, with ad spend paid directly from your own accounts. Whether you choose an ecommerce marketing agency UK-based or offshore, ask these questions before you outsource ecommerce marketing:',
+          'We do not publish a fixed price for UK brands, because channels and ad spend vary too much. After a free audit, we quote a monthly retainer in GBP or USD, with ad spend paid directly from your own accounts. Whether you choose an ecommerce marketing agency based in the UK or offshore, ask these questions before you outsource ecommerce marketing:',
         ],
         bullets: [
           'Who exactly will work on my account, and how senior are they?',
@@ -119,12 +119,12 @@ export const globalPages: ServicePageData[] = [
     kind: 'global',
     title: 'Ecommerce Marketing Agency Australia | Magnus Path',
     description: 'Ecommerce marketing agency for Australian brands: Shopify, Amazon.com.au, Meta and Google ads and SEO from a Chennai team, quoted in AUD after a free audit.',
-    primaryKeyword: 'ecommerce marketing agency australia',
+    primaryKeyword: 'ecommerce marketing agency for Australian brands',
     navLabel: 'E-commerce Agency for Australian Brands',
     breadcrumb: [],
     eyebrow: 'For Australian brands · Shopify · Amazon.com.au · Ads · SEO',
-    h1: 'Ecommerce Marketing Agency Australia: *Store, Amazon and Ads* in One Team',
-    intro: 'Magnus Path is an ecommerce marketing agency Australia-based brands can work with remotely for Shopify, Amazon.com.au, Meta and Google ads and e-commerce SEO. We are a Chennai team with no Australian office. Our working day runs through your afternoon, we meet over video calls, and we quote in AUD after a free audit.',
+    h1: 'Ecommerce Marketing Agency for Australian Brands: *Store, Amazon and Ads* in One Team',
+    intro: 'Magnus Path is an ecommerce marketing agency for Australian brands, working remotely for Shopify, Amazon.com.au, Meta and Google ads and e-commerce SEO. We are a Chennai team with no Australian office. Our working day runs through your afternoon, we meet over video calls, and we quote in AUD after a free audit.',
     icon: 'website',
     facts: ['Our morning is your afternoon', 'Shopify and Amazon.com.au', 'Quotes in AUD'],
     headings: {
@@ -157,9 +157,9 @@ export const globalPages: ServicePageData[] = [
       {
         heading: 'Why Australian brands look at offshore ecommerce teams',
         paragraphs: [
-          'Australian D2C brands often reach a point where they need specialists across Shopify, Amazon, paid ads and SEO, but cannot yet justify hiring all of them locally. Choosing an ecommerce marketing agency Australia brands can afford usually means a trade-off: a small local shop that covers one or two channels, or a larger agency with retainers sized for bigger businesses.',
+          'Australian D2C brands often reach a point where they need specialists across Shopify, Amazon, paid ads and SEO, but cannot yet justify hiring all of them locally. Choosing an ecommerce marketing agency Australian brands can afford usually means a trade-off: a small local shop that covers one or two channels, or a larger agency with retainers sized for bigger businesses.',
           'An offshore team can close that gap if it is senior, communicates well and understands Australian shoppers. The work has to feel local even when the team is not.',
-          'The best ecommerce marketing agency Australia brands can hire is the one that looks at the whole business: which products make money, which channels bring new customers, and where margin leaks after the sale. Ads, Amazon and SEO should all be judged against that, not against their own dashboards.',
+          'The right ecommerce marketing agency for Australian brands is the one that looks at the whole business: which products make money, which channels bring new customers, and where margin leaks after the sale. Ads, Amazon and SEO should all be judged against that, not against their own dashboards.',
         ],
       },
       {
@@ -207,7 +207,7 @@ export const globalPages: ServicePageData[] = [
         heading: 'Pricing, contracts and working with a Chennai team',
         paragraphs: [
           'We have no office in Australia. Magnus Path is a Chennai team working remotely with Australian brands over video calls, a shared project board and chat. We do not publish fixed prices for Australian clients, because the right scope depends on your channels and ad spend. After a free audit, we quote a monthly retainer in AUD or USD.',
-          'Whichever ecommerce marketing agency Australia founders choose, local or offshore, the same checks apply:',
+          'Whichever ecommerce marketing agency Australian founders choose, local or offshore, the same checks apply:',
         ],
         bullets: [
           'You own your Shopify, Amazon, Meta and Google accounts and all data',
@@ -239,12 +239,12 @@ export const globalPages: ServicePageData[] = [
     kind: 'global',
     title: 'Ecommerce Agency UAE: Amazon.ae, Noon, Shopify | Magnus Path',
     description: 'Ecommerce agency for UAE brands: Amazon.ae PPC, Noon seller accounts, Shopify stores in Arabic and English, and ads and SEO, from a Chennai team on your hours.',
-    primaryKeyword: 'ecommerce agency uae',
+    primaryKeyword: 'ecommerce agency for UAE brands',
     navLabel: 'E-commerce Agency for UAE Brands',
     breadcrumb: [],
     eyebrow: 'For UAE brands · Amazon.ae · Noon · Shopify · Ads · SEO',
-    h1: 'Ecommerce Agency UAE Brands Can Reach *in the Same Working Day*',
-    intro: 'Magnus Path is an ecommerce agency UAE brands can work with for Amazon.ae, Noon, Shopify, Meta and Google ads and SEO. We are a Chennai team with no office in the UAE. India is only 1.5 hours ahead of the UAE, so our working days almost fully overlap, and Dubai is a short flight away when a meeting needs to happen in person.',
+    h1: 'Ecommerce Agency for UAE Brands, *in Your Working Day*',
+    intro: 'Magnus Path is an ecommerce agency for UAE brands, working on Amazon.ae, Noon, Shopify, Meta and Google ads and SEO. We are a Chennai team with no office in the UAE. India is only 1.5 hours ahead of the UAE, so our working days almost fully overlap, and Dubai is a short flight away when a meeting needs to happen in person.',
     icon: 'amazon',
     facts: ['IST is 1.5 hrs ahead of UAE', 'Amazon.ae, Noon and Shopify', 'Short flight from Chennai'],
     headings: {
@@ -275,11 +275,11 @@ export const globalPages: ServicePageData[] = [
     ],
     guide: [
       {
-        heading: 'What an ecommerce agency UAE brands hire should handle',
+        heading: 'What an ecommerce agency for UAE brands should handle',
         paragraphs: [
-          'Most UAE e-commerce brands sell across Amazon.ae, Noon and their own website, with traffic from Instagram, Meta, Google and WhatsApp. An ecommerce agency UAE brands rely on needs to manage these together, because a price change on Noon affects Amazon, and a strong Instagram campaign raises branded searches on both marketplaces.',
+          'Most UAE e-commerce brands sell across Amazon.ae, Noon and their own website, with traffic from Instagram, Meta, Google and WhatsApp. An ecommerce agency for UAE brands needs to manage these together, because a price change on Noon affects Amazon, and a strong Instagram campaign raises branded searches on both marketplaces.',
           'Many searches for an ecommerce agency Dubai or a digital marketing agency Dubai lead to firms that do social media well but treat marketplaces as a side service. If most of your revenue comes from Amazon and Noon, the agency should start there.',
-          'A useful test is the first audit. A capable ecommerce agency UAE founders can trust will look at margin per product after marketplace fees, delivery costs and COD failures, not only at sales and ad spend. If an audit never mentions those numbers, the plan that follows will not either.',
+          'A useful test is the first audit. A capable ecommerce agency for UAE brands will look at margin per product after marketplace fees, delivery costs and COD failures, not only at sales and ad spend. If an audit never mentions those numbers, the plan that follows will not either.',
         ],
       },
       {

@@ -36,7 +36,7 @@ Learning how to sell on Amazon USA from India starts with one program: Amazon Gl
 
 Amazon Global Selling is Amazon's program for sellers who want to sell on its marketplaces outside their home country. Indian sellers use it to register on Amazon.com and manage the US store through Seller Central. Amazon also offers onboarding help, educational content and access to service providers for logistics, compliance and account setup.
 
-The program does not do the export work for you. You remain responsible for product compliance, shipping, customs and taxes. Think of it as access to the marketplace, with support around the edges.
+The program does not do the export work for you. You remain responsible for product compliance, shipping, customs and taxes. Think of it as access to the marketplace, with support around the edges. Most of the work in how to sell on Amazon USA from India sits outside the registration itself.
 
 ## Documents you need
 
@@ -142,6 +142,27 @@ Amazon Brand Registry gives you more control over your listings, access to A+ Co
 To enrol, you need a registered or pending trademark from an intellectual property office Amazon accepts. Many Indian brands selling in the US file a US trademark. Amazon has also run programs that connect sellers with vetted IP law firms to speed up access. Check Amazon's current Brand Registry requirements, and work with a trademark attorney so your mark is distinctive enough to be granted.
 
 Apply early. Trademark processes take time, and you want protection before your listing starts getting attention.
+
+## A practical launch checklist
+
+If you are still working out how to sell on Amazon USA from India, use this order of work. It avoids the most expensive mistake: shipping stock before the listing, compliance and pricing are ready.
+
+1. **Shortlist products** that suit the US market, have manageable compliance and survive a full cost calculation.
+2. **Get your documents in place:** IEC, GST, LUT, bank account and an international card.
+3. **Register through Amazon Global Selling** and complete verification.
+4. **Apply for your trademark** so Brand Registry is possible later.
+5. **Confirm compliance** for each product: testing, labels, category approvals.
+6. **Create listings** with US-ready titles, images and keywords, and get them reviewed before stock moves.
+7. **Book logistics:** forwarder, importer of record, customs broker and FBA labels.
+8. **Send a small first shipment**, often by air, to test demand and the process.
+9. **Launch Sponsored Products** as soon as stock is live, and watch search terms closely.
+10. **Reorder by sea** once you know which products sell.
+
+Expect the first months to be about learning rather than profit. Sellers who budget for that phase, and treat the first shipment as a test, usually make better decisions on the second.
+
+### Should you manage it yourself?
+
+Running a US Amazon account from India means working across time zones, managing inventory you cannot see, and handling buyer messages within Amazon's response targets. Some sellers do it in-house; others hand the day-to-day work to a team. Our [Amazon account management](/amazon-account-management/) service covers listings, inventory planning and account health if you would rather focus on product and supply.
 
 ## Next step
 

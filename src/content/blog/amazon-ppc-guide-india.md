@@ -156,7 +156,7 @@ ACoS judges campaigns. TACoS judges the business. If your TACoS falls over month
 
 ## A weekly Amazon PPC optimisation routine
 
-Consistency beats clever tricks. Follow this routine every week:
+Consistency beats clever tricks. If you take one thing from this Amazon PPC guide, make it this routine, followed every week:
 
 1. **Check spend vs budget** for each campaign. Note any that ran out early.
 2. **Harvest search terms** from auto, broad and phrase campaigns into exact.
@@ -168,6 +168,17 @@ Consistency beats clever tricks. Follow this routine every week:
 8. **Write down changes** so you can link results to actions.
 
 Monthly, step back and review the structure: are new products advertised, are old campaigns cluttered, and is the budget going where the profit is? The same discipline applies on Flipkart; see our [Flipkart ads guide](/blog/flipkart-ads-guide/).
+
+## Common beginner mistakes
+
+Most new advertisers make the same few mistakes. Avoiding them is half of any Amazon PPC guide:
+
+- **Judging too early.** A keyword with a few clicks and no sale has not failed yet. Wait for enough clicks to read the data.
+- **One giant campaign.** Many products and keywords in one ad group make it impossible to see what works.
+- **No negatives.** Without negative keywords, broad and auto campaigns keep paying for irrelevant searches.
+- **Chasing a low ACoS at any cost.** Cutting every bid can drop ACoS while total sales and organic rank fall too. Watch TACoS and total sales alongside it.
+- **Advertising out-of-stock or weak listings.** Ads cannot fix a poor listing, a bad price or missing stock.
+- **Changing everything at once.** Make a few changes, record them, and give each one time to show results.
 
 ## When to hire help
 

@@ -45,7 +45,7 @@ Common reasons for return to origin in India include:
 - The buyer bought the same item cheaper elsewhere.
 - Delivery took too long and the buyer lost interest.
 
-Most of these are intent problems, not courier problems. That is good news, because intent can be checked before you ship.
+Most of these are intent problems, not courier problems. That is good news, because intent can be checked before you ship. Any plan for how to reduce RTO in ecommerce should start there, before you spend time renegotiating courier rates.
 
 ## Why RTO hurts your margins
 
@@ -167,6 +167,26 @@ Then break it down:
 - New vs repeat customers
 
 Compare each segment against your store average. Fix the worst segments first, introduce one change at a time, and check the result over a few weeks before adding the next. Note that RTO data lags, because parcels take days to return, so judge changes on complete periods.
+
+## A 30-day plan to reduce RTO
+
+If you are not sure where to start, this sequence works for most Indian D2C stores. It puts the cheapest, highest-impact changes first.
+
+**Week 1: measure.** Export the last few months of orders with payment method, pin code, courier, product, traffic source and final status. Calculate RTO rate overall and for each segment. Identify the worst pin codes, products and campaigns.
+
+**Week 2: confirm intent.** Switch on OTP for COD orders and WhatsApp confirmation for every COD order. Decide how long you wait for confirmation and who calls unconfirmed high-value orders.
+
+**Week 3: shift the payment mix.** Introduce a prepaid incentive and, if it suits your brand, a small COD charge. Add partial prepaid for high-risk pin codes. Improve address fields at checkout.
+
+**Week 4: fix the sources.** Rebalance courier allocation by zone, update product pages that draw complaints, and pause or rework the campaigns with the highest RTO.
+
+Then repeat the measurement. Because returns take time to come back, compare full periods rather than single days.
+
+### Handling RTO parcels when they return
+
+Even with good controls, some parcels will come back. Process them quickly: inspect each one, restock sellable units, log the reason the courier gave, and raise disputes for parcels that come back damaged or with missing items. Check that the courier made genuine delivery attempts; fake "customer refused" or "customer not available" updates do happen, and your data is your evidence. Record repeat refusers so your risk rules catch them next time.
+
+Learning how to reduce RTO in ecommerce is not a one-time project. Buyer behaviour, couriers and campaigns change, so keep the weekly report running and adjust your rules as the data moves.
 
 ## Next step
 

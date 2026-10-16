@@ -38,7 +38,7 @@ Etsy buyers come looking for things they cannot find in a regular shop. They val
 
 Etsy also handles the hard parts of reaching buyers abroad. Traffic, checkout, buyer payments and basic trust signals like reviews come built in. You focus on product, photos, listings and dispatch.
 
-The trade-off is that Etsy is a crowded marketplace with fees on every sale, and you do not own the customer relationship. Treat it as a strong first channel, not your only one.
+The trade-off is that Etsy is a crowded marketplace with fees on every sale, and you do not own the customer relationship. Treat it as a strong first channel, not your only one. For most small makers, learning how to sell on Etsy from India is also a low-risk way to test which products overseas buyers actually want before investing in a website or trade fairs.
 
 ## Setting up your Etsy seller account in India
 
@@ -131,6 +131,18 @@ Photos sell on Etsy more than words do. Use every photo slot: a clean main image
 ### Description and reviews
 
 Answer buyer questions in the description: size, material, care, processing time and who pays duties. Reviews strongly affect visibility, so ship on time, communicate clearly, and follow up politely after delivery.
+
+## Common mistakes Indian Etsy sellers make
+
+Most problems for new sellers come from a short list of avoidable mistakes:
+
+- **Launching with too few listings.** A shop with three items looks untested. More listings also mean more chances to appear in search.
+- **Underpricing.** Low prices leave nothing for fees, shipping or the occasional lost parcel, and can make buyers doubt quality.
+- **Vague processing times.** If an item is made to order, say so and give a realistic dispatch date.
+- **Ignoring messages.** Overseas buyers often ask about size, colour or customisation before buying. Reply quickly, allowing for time-zone differences.
+- **Photos that hide the craft.** Dark or cluttered photos undersell handmade detail.
+
+Fix these and the basics of how to sell on Etsy from India become much easier to manage.
 
 ## When to move to your own Shopify store
 
