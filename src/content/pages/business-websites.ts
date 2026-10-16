@@ -229,6 +229,7 @@ export const businessWebsitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'WordPress agency for UK businesses', href: '/uk/wordpress-agency/' },
       { label: 'Hire a WordPress developer (US)', href: '/us/hire-wordpress-developer/' },
       { label: 'WooCommerce development for online stores', href: '/woocommerce-development/' },
       { label: 'Corporate website development', href: '/corporate-website-development/' },

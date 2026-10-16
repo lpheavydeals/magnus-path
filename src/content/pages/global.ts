@@ -44,6 +44,9 @@ export const globalPages: ServicePageData[] = [
       { title: 'White Label SEO', href: '/uk/white-label-seo/', body: 'SEO delivered under your agency’s brand: audits, on-page work, content, links and UK local SEO, quoted in GBP.', icon: 'seo' },
       { title: 'SEO Outsourcing', href: '/uk/seo-outsourcing/', body: 'An offshore SEO team for UK businesses and agencies, with a written monthly scope and task-level reports.', icon: 'seo' },
       { title: 'AI Search Optimisation', href: '/uk/ai-search-optimisation-agency/', body: 'Help your brand appear in Google AI Overviews, ChatGPT and Perplexity answers when UK shoppers ask what to buy.', icon: 'ai' },
+      { title: 'WordPress Agency', href: '/uk/wordpress-agency/', body: 'WordPress builds, custom themes and blocks, and white-label development for UK agencies.', icon: 'website' },
+      { title: 'WooCommerce Agency', href: '/uk/woocommerce-agency/', body: 'WooCommerce store builds, migrations and fixes with UK payments, VAT and delivery set up properly.', icon: 'marketplace' },
+      { title: 'WordPress Support', href: '/uk/wordpress-support/', body: 'Monthly WordPress and WooCommerce support: updates tested on staging, backups, security checks and small changes.', icon: 'website' },
     ],
     process: [
       { title: 'Free audit and video call', body: 'We review your store, Amazon account, ad accounts or agency workload, then walk you through what we found on a call booked in your UK morning.' },
