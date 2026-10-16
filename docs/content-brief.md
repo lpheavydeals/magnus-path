@@ -37,7 +37,9 @@ spelling (optimise, catalogue), ₹ amounts in lakh/crore. No hype words ("cutti
   /blog/how-to-sell-on-etsy-from-india/, /blog/how-to-sell-on-amazon-usa-from-india/, /blog/how-to-reduce-rto-cod-returns/,
   /blog/amazon-ppc-guide-india/, /blog/flipkart-ads-guide/, /blog/how-to-sell-on-blinkit-zepto-instamart/,
   /blog/shopify-seo-checklist/, /tools/, /tools/roas-calculator/, /tools/marketplace-profit-calculator/,
-  /uk/ecommerce-marketing-agency/, /australia/ecommerce-marketing-agency/, /uae/ecommerce-marketing-agency/
+  /uk/ecommerce-marketing-agency/, /australia/ecommerce-marketing-agency/, /uae/ecommerce-marketing-agency/,
+  /corporate-website-development/, /wordpress-website-development/, /cms-website-development/,
+  /website-maintenance-services/, /chennai/website-development-company/
 - Location pages: we have **one office, in Chennai**. Bangalore and Coimbatore pages must say we serve those cities
   from Chennai (remote work + visits when needed). Never imply an office there.
 
@@ -47,6 +49,10 @@ spelling (optimise, catalogue), ₹ amounts in lakh/crore. No hype words ("cutti
 | Shopify store (template-based) | ₹60,000 one-time (custom builds ₹1.5–5 lakh) |
 | WooCommerce store | ₹50,000 one-time |
 | Custom e-commerce development | ₹2,00,000 one-time |
+| Business / corporate website (5–10 pages) | ₹35,000 one-time (custom corporate sites ₹75,000–2 lakh) |
+| WordPress website | ₹30,000 one-time |
+| CMS / headless CMS website | ₹75,000 one-time |
+| Website maintenance | ₹5,000 / month (Basic), ₹12,000 / month (Business), ₹25,000 / month (Store) |
 | Performance marketing (Meta & Google ads) | ₹30,000 / month + ad spend |
 | Amazon advertising (PPC) | ₹25,000 / month or 10–15% of ad spend |
 | Amazon account management | ₹30,000 / month |
