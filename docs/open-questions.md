@@ -23,3 +23,4 @@
 ## Business websites abroad (round 2)
 13. Do you build Webflow sites? "webflow development agency" has 880 US searches at KD 27. We only build that page if you offer Webflow.
 14. Website maintenance in USD: quote after audit, or publish US plans (e.g. Basic / Business / Store like the INR plans)?
+15. Tools named on the UAE/Australia web pages: Next.js, Astro, Sanity, Strapi, Contentful (headless CMS), HubSpot, Zoho, Pipedrive (CRM). Remove any you don't work with.
