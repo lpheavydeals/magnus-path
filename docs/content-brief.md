@@ -126,3 +126,15 @@ Same rules as the US/UK pages above, with these differences:
 - **Extra allowed related URLs:** /uae/ecommerce-marketing-agency/, /uae/digital-marketing-agency-dubai/,
   /uae/ecommerce-website-development-dubai/, /uae/seo-services-dubai/, /uae/performance-marketing-agency-dubai/,
   /uae/amazon-noon-agency/, /blog/how-to-sell-on-noon/
+
+## Australia pages (`src/content/pages/au-*.ts`, URLs under `/australia/`)
+Same rules as the US/UK/UAE pages above, with these differences:
+- **Spelling and money:** Australian English (optimise, catalogue, colour). AUD only; no `pricing` block: quote in AUD after a free audit.
+- **Set on every Australia page:** `market: 'AU'`, `kind: 'global'`, `breadcrumb: [{ label: 'Australia', href: '/australia/ecommerce-marketing-agency/' }]`, and `twin` as given.
+- **Time zones:** Sydney/Melbourne are 4.5 hours ahead of India (AEST) and 5.5 hours in daylight saving (AEDT); Perth is 2.5 hours ahead.
+  Our morning is the east-coast afternoon, so calls fit their afternoon and replies arrive by their evening.
+- **Australian details worth covering where relevant:** GST-inclusive pricing (10%), Afterpay/Zip/Klarna, Australia Post,
+  Sendle and couriers, Amazon.com.au, Catch/eBay AU in passing, Click Frenzy, EOFY sales, Black Friday/Cyber Monday,
+  Boxing Day, the Australian Consumer Law and Privacy Act (we are not lawyers), Google.com.au.
+- **Extra allowed related URLs:** /australia/ecommerce-marketing-agency/, /australia/ecommerce-seo/, /australia/white-label-seo/,
+  /australia/seo-outsourcing/, /australia/shopify-agency/

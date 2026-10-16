@@ -21,8 +21,8 @@ export function getStaticPaths() {
 const { page } = Astro.props as { page: ServicePageData };
 const url = `${site.url}/${page.slug}/`;
 const plainH1 = page.h1.replace(/\*/g, '');
-const markets = { US: { lang: 'en-US', country: 'United States' }, UK: { lang: 'en-GB', country: 'United Kingdom' }, UAE: { lang: 'en-AE', country: 'United Arab Emirates' } } as const;
-const currency = page.market === 'US' ? '$' : page.market === 'UK' ? '£' : page.market === 'UAE' ? 'AED' : '₹';
+const markets = { US: { lang: 'en-US', country: 'United States' }, UK: { lang: 'en-GB', country: 'United Kingdom' }, UAE: { lang: 'en-AE', country: 'United Arab Emirates' }, AU: { lang: 'en-AU', country: 'Australia' } } as const;
+const currency = page.market === 'US' ? '$' : page.market === 'UK' ? '£' : page.market === 'UAE' ? 'AED' : page.market === 'AU' ? 'A$' : '₹';
 const lang = page.market ? markets[page.market].lang : 'en-IN';
 // hreflang: a global page and its country versions (pages whose `twin` is that global page) all point at each other
 const globalSlug = page.twin ?? page.slug;
@@ -38,7 +38,7 @@ const schema: object[] = [
     serviceType: page.primaryKeyword, description: page.description, url,
     provider: { '@id': `${site.url}/#org` },
     areaServed: page.local ? { '@type': 'City', name: page.local.city } : page.market ? { '@type': 'Country', name: markets[page.market].country } : ['IN', 'GB', 'AE', 'AU', 'US'],
-    ...(page.pricing ? { offers: { '@type': 'Offer', priceCurrency: page.pricing.from.includes('£') ? 'GBP' : page.pricing.from.includes('AED') ? 'AED' : /\$/.test(page.pricing.from) ? 'USD' : 'INR', description: `Starting from ${page.pricing.from} ${page.pricing.unit}` } } : {}),
+    ...(page.pricing ? { offers: { '@type': 'Offer', priceCurrency: page.pricing.from.includes('£') ? 'GBP' : page.pricing.from.includes('AED') ? 'AED' : page.pricing.from.includes('A$') ? 'AUD' : /\$/.test(page.pricing.from) ? 'USD' : 'INR', description: `Starting from ${page.pricing.from} ${page.pricing.unit}` } } : {}),
   },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: `${site.url}${c.href}` })) },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: page.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
