@@ -1,0 +1,40 @@
+---
+import { site } from '../../data/site';
+interface Props { city: string; areas: string[]; note: string; }
+const { city, areas, note } = Astro.props;
+---
+<section class="section lb">
+  <div class="wrap lb__grid">
+    <div class="head">
+      <p class="label" data-reveal>Serving {city}</p>
+      <h2 data-reveal>Serving brands across {city}</h2>
+      <p class="lede" data-reveal>{note}</p>
+      <ul class="lb__areas" data-reveal>{areas.map((a) => <li>{a}</li>)}</ul>
+    </div>
+    <div class="lb__card" data-reveal>
+      <div class="lb__map" aria-hidden="true">
+        <svg viewBox="0 0 300 200"><g fill="none" stroke="#f3c3ad" stroke-width="1">{Array.from({ length: 9 }, (_, i) => <path d={`M0 ${20 + i * 20} Q150 ${i * 18} 300 ${30 + i * 18}`} />)}{Array.from({ length: 9 }, (_, i) => <path d={`M${20 + i * 32} 0 Q${10 + i * 34} 100 ${30 + i * 30} 200`} />)}</g><circle cx="168" cy="96" r="26" fill="rgba(241,100,54,.18)"/><circle cx="168" cy="96" r="9" fill="#f16436"/></svg>
+      </div>
+      <address>
+        <strong>{site.name}</strong><br />
+        {site.address.street}, {site.address.locality}, {site.address.region} {site.address.postalCode}<br />
+        <a href={site.phoneHref}>{site.phone}</a> · <a href={`mailto:${site.email}`}>{site.email}</a><br />
+        {site.hours}
+      </address>
+      <a class="btn btn--dark btn--sm" href="/contact/">Visit or book a meeting <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+<style>
+  .lb__grid { display: grid; gap: 40px; align-items: center; }
+  .lb__grid .head { margin: 0; }
+  .lb__areas { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .lb__areas li { font-size: 14px; padding: 7px 13px; border-radius: 999px; background: var(--white); border: 1px solid var(--line); }
+  .lb__card { display: grid; gap: 18px; padding: 24px; border-radius: 30px; background: var(--white); border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .lb__map { border-radius: 20px; overflow: hidden; background: var(--accent-tint); }
+  .lb__map svg { width: 100%; height: auto; }
+  address { font-style: normal; color: var(--muted); line-height: 1.7; }
+  address strong { color: var(--ink); }
+  .lb__card .btn { justify-self: start; }
+  @media (min-width: 980px) { .lb__grid { grid-template-columns: 1.1fr 1fr; gap: 80px; } }
+</style>

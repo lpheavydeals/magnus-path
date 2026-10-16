@@ -1,0 +1,19 @@
+---
+import type { Link } from '../../data/types';
+interface Props { trail: Link[]; current: string; }
+const { trail, current } = Astro.props;
+---
+<nav class="bc" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    {trail.map((t) => <li><a href={t.href}>{t.label}</a></li>)}
+    <li aria-current="page">{current}</li>
+  </ol>
+</nav>
+<style>
+  .bc ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; font-size: 13.5px; color: var(--muted); }
+  .bc li + li::before { content: '/'; margin-right: 6px; opacity: .5; }
+  .bc a { text-decoration: none; }
+  .bc a:hover { color: var(--accent-ink); }
+  .bc [aria-current] { color: var(--ink); }
+</style>

@@ -1,0 +1,19 @@
+---
+import type { Link } from '../../data/types';
+interface Props { links: Link[]; heading?: string; }
+const { links, heading = 'Related services' } = Astro.props;
+---
+<section class="rl">
+  <div class="wrap">
+    <p class="label">{heading}</p>
+    <ul>{links.map((l) => <li><a href={l.href}>{l.label}<span aria-hidden="true">↗</span></a></li>)}</ul>
+  </div>
+</section>
+<style>
+  .rl { padding: clamp(40px, 6vw, 72px) 0; }
+  .rl ul { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+  .rl a { display: flex; justify-content: space-between; gap: 12px; padding: 20px 0; border-bottom: 1px solid var(--line); text-decoration: none; font-family: var(--font-display); font-weight: 500; letter-spacing: -0.02em; font-size: clamp(1.2rem, 2vw, 1.6rem); transition: color .3s ease, padding .4s var(--ease); }
+  .rl a:hover { color: var(--accent-ink); padding-left: 10px; }
+  .rl a span { color: var(--accent); }
+  @media (min-width: 900px) { .rl ul { grid-template-columns: 1fr 1fr; column-gap: 56px; } }
+</style>

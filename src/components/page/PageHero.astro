@@ -1,0 +1,53 @@
+---
+import Words from '../Words.astro';
+import Icon3D from '../Icon3D.astro';
+import PathObject from '../PathObject.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import type { IconName, Link } from '../../data/types';
+import { site } from '../../data/site';
+interface Props { eyebrow: string; h1: string; intro: string; icon?: IconName | 'path'; facts?: string[]; trail: Link[]; current: string; ctaLabel?: string; }
+const { eyebrow, h1, intro, icon = 'path', facts = [], trail, current, ctaLabel = 'Get a free store audit' } = Astro.props;
+---
+<section class="ph">
+  <div class="ph__bg" aria-hidden="true"></div>
+  <span class="plus" style="left:4%;top:42%">+</span><span class="plus" style="right:6%;top:24%">+</span>
+  <div class="wrap ph__grid">
+    <div class="ph__copy">
+      <Breadcrumbs trail={trail} current={current} />
+      <p class="label" data-reveal>{eyebrow}</p>
+      <h1><Words text={h1} /></h1>
+      <p class="lede" data-reveal>{intro}</p>
+      <div class="ph__ctas" data-reveal>
+        <a class="btn btn--primary" href="/free-ecommerce-audit/">{ctaLabel} <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href={site.whatsapp} rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="ph__art" aria-hidden="true">
+      <div class="ph__panel">
+        <div class="ph__grid-lines"></div>
+        {icon === 'path'
+          ? <PathObject class="ph__obj" layers={26} top="#2a2d33" side="#121316" />
+          : <div class="ph__icon"><Icon3D name={icon} /></div>}
+        {facts.map((f, i) => <span class={`ph__chip ph__chip--${i}`}>{i === 0 && <i class="dot"></i>}{f}</span>)}
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .ph { position: relative; padding: clamp(120px, 14vw, 170px) 0 clamp(56px, 7vw, 96px); overflow: hidden; }
+  .ph__bg { position: absolute; inset: 0; background: radial-gradient(55% 60% at 80% 10%, #ffe2d3 0%, rgba(255,226,211,0) 70%), radial-gradient(40% 50% at 0% 100%, rgba(255,176,138,.25), transparent 70%), var(--paper); }
+  .ph__grid { position: relative; display: grid; gap: 48px; align-items: center; }
+  .ph__copy { display: grid; gap: 22px; }
+  .ph h1 { font-size: clamp(2.4rem, 5.2vw, 4.4rem); max-width: 16ch; }
+  .ph__ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+  .ph__panel { position: relative; aspect-ratio: 1 / 0.9; max-width: 100%; border-radius: 32px; overflow: hidden; background: radial-gradient(70% 80% at 65% 35%, #ff9a6e 0%, #f16436 50%, #d24a1d 100%); }
+  .ph__grid-lines { position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(0,0,0,.08) 0 1px, transparent 1px 64px), repeating-linear-gradient(0deg, rgba(0,0,0,.08) 0 1px, transparent 1px 64px); mask-image: radial-gradient(ellipse 60% 60% at 55% 45%, #000, transparent); }
+  .ph__obj { position: absolute; width: 86%; left: 50%; top: 50%; transform: translate(-50%, -52%); filter: drop-shadow(0 50px 40px rgba(70,18,0,.45)); }
+  .ph__icon { position: absolute; width: 62%; left: 50%; top: 48%; transform: translate(-50%, -50%); padding: 7%; border-radius: 36px; background: rgba(255,255,255,.9); box-shadow: 0 40px 60px -30px rgba(70,18,0,.55); animation: phFloat 7s ease-in-out infinite; }
+  @keyframes phFloat { 50% { transform: translate(-50%, -54%) rotate(-2deg); } }
+  .ph__chip { position: absolute; display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,.94); font-size: 13.5px; font-weight: 500; box-shadow: 0 16px 30px -16px rgba(0,0,0,.4); white-space: nowrap; }
+  .ph__chip--0 { left: 6%; top: 8%; } .ph__chip--1 { right: 5%; top: 46%; } .ph__chip--2 { left: 8%; bottom: 8%; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34,197,94,.25); }
+  @media (min-width: 980px) { .ph__grid { grid-template-columns: 1.15fr 1fr; gap: 64px; } }
+  @media (max-width: 520px) { .ph__chip { font-size: 12px; padding: 8px 11px; } .ph__chip--1 { top: auto; bottom: 26%; } }
+</style>

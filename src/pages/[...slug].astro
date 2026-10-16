@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/page/PageHero.astro';
+import Pains from '../components/page/Pains.astro';
+import Includes from '../components/page/Includes.astro';
+import Children from '../components/page/Children.astro';
+import ProcessPanel from '../components/page/ProcessPanel.astro';
+import PricingTeaser from '../components/page/PricingTeaser.astro';
+import LocalBlock from '../components/page/LocalBlock.astro';
+import Guide from '../components/page/Guide.astro';
+import Related from '../components/page/Related.astro';
+import FAQ from '../components/FAQ.astro';
+import LeadForm from '../components/LeadForm.astro';
+import { allPages } from '../content/pages';
+import { site } from '../data/site';
+import type { ServicePageData } from '../data/types';
+
+export function getStaticPaths() {
+  return allPages.map((p) => ({ params: { slug: p.slug }, props: { page: p } }));
+}
+const { page } = Astro.props as { page: ServicePageData };
+const url = `${site.url}/${page.slug}/`;
+const plainH1 = page.h1.replace(/\*/g, '');
+const crumbs = [{ label: 'Home', href: '/' }, ...page.breadcrumb, { label: page.navLabel, href: `/${page.slug}/` }];
+
+const schema: object[] = [
+  {
+    '@context': 'https://schema.org', '@type': 'Service', name: page.primaryKeyword.replace(/\b\w/g, (c) => c.toUpperCase()),
+    serviceType: page.primaryKeyword, description: page.description, url,
+    provider: { '@id': `${site.url}/#org` },
+    areaServed: page.local ? { '@type': 'City', name: page.local.city } : ['IN', 'GB', 'AE', 'AU', 'US'],
+    ...(page.pricing ? { offers: { '@type': 'Offer', priceCurrency: 'INR', description: `Starting from ${page.pricing.from} ${page.pricing.unit}` } } : {}),
+  },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: `${site.url}${c.href}` })) },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: page.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+];
+---
+<Base title={page.title} description={page.description} schema={schema}>
+  <PageHero eyebrow={page.eyebrow} h1={page.h1} intro={page.intro} icon={page.kind === 'location' ? 'path' : page.icon} facts={page.facts} trail={page.breadcrumb} current={page.navLabel} />
+  <Pains items={page.pains} heading={page.headings.pains} />
+  {page.children && <Children items={page.children} heading={page.headings.children ?? `${page.navLabel} services`} />}
+  <Includes items={page.includes} heading={page.headings.includes} platforms={page.platforms} />
+  <ProcessPanel steps={page.process} heading={page.headings.process} />
+  {page.pricing && <PricingTeaser {...page.pricing} heading={page.headings.pricing ?? `Clear pricing for ${page.navLabel}`} />}
+  {page.local && <LocalBlock {...page.local} />}
+  <Guide sections={page.guide} title={page.headings.guide} />
+  <FAQ items={page.faqs} />
+  <Related links={page.related} />
+  <LeadForm />
+</Base>

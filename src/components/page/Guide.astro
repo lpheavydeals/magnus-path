@@ -1,0 +1,44 @@
+---
+interface Props { sections: { heading: string; paragraphs: string[]; bullets?: string[] }[]; title: string; }
+const { sections, title } = Astro.props;
+const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+---
+<section class="section gde">
+  <div class="wrap gde__grid">
+    <aside class="gde__toc">
+      <p class="label">In this guide</p>
+      <ol>{sections.map((s) => <li><a href={`#${slugify(s.heading)}`}>{s.heading}</a></li>)}</ol>
+      <a class="btn btn--primary btn--sm" href="/free-ecommerce-audit/">Get a free audit <span class="arrow" aria-hidden="true">→</span></a>
+    </aside>
+    <article class="gde__body">
+      <h2>{title}</h2>
+      {sections.map((s) => (
+        <section id={slugify(s.heading)}>
+          <h3>{s.heading}</h3>
+          {s.paragraphs.map((p) => <p>{p}</p>)}
+          {s.bullets && <ul>{s.bullets.map((b) => <li>{b}</li>)}</ul>}
+        </section>
+      ))}
+    </article>
+  </div>
+</section>
+<style>
+  .gde__grid { display: grid; gap: 40px; }
+  .gde__toc { display: none; }
+  .gde__body { max-width: 72ch; display: grid; gap: 34px; }
+  .gde__body h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); }
+  .gde__body section { display: grid; gap: 14px; scroll-margin-top: 110px; }
+  .gde__body h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
+  .gde__body p { color: #33373d; font-size: 1.05rem; line-height: 1.75; }
+  .gde__body ul { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 10px; }
+  .gde__body li { position: relative; padding-left: 26px; color: #33373d; }
+  .gde__body li::before { content: ''; position: absolute; left: 0; top: .6em; width: 10px; height: 10px; border: 2px solid var(--accent); transform: rotate(45deg); }
+  @media (min-width: 1080px) {
+    .gde__grid { grid-template-columns: 280px 1fr; gap: 80px; }
+    .gde__toc { display: grid; gap: 16px; align-content: start; position: sticky; top: 120px; align-self: start; }
+    .gde__toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; border-left: 1px solid var(--line); }
+    .gde__toc a { display: block; padding-left: 16px; font-size: 14.5px; color: var(--muted); text-decoration: none; }
+    .gde__toc a:hover { color: var(--accent-ink); }
+    .gde__toc .btn { justify-self: start; margin-top: 8px; }
+  }
+</style>
