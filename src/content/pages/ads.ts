@@ -118,6 +118,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Performance marketing agency in Dubai', href: '/uae/performance-marketing-agency-dubai/' },
       { label: 'Amazon advertising agency services', href: '/amazon-marketing-agency/' },
       { label: 'Quick commerce ads on Blinkit, Zepto and Instamart', href: '/quick-commerce-marketing/' },
       { label: 'Shopify development for high-converting stores', href: '/shopify-development/' },
@@ -245,6 +246,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Amazon and Noon agency for UAE sellers', href: '/uae/amazon-noon-agency/' },
       { label: 'Amazon agency for UK sellers', href: '/uk/amazon-agency/' },
       { label: 'Amazon PPC agency for US sellers', href: '/us/amazon-ppc-agency/' },
       { label: 'Amazon account management services', href: '/amazon-account-management/' },

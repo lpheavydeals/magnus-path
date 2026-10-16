@@ -1,10 +1,11 @@
 ---
 import { site } from '../data/site';
-interface Props { heading?: string; sub?: string; market?: 'US' | 'UK'; }
+interface Props { heading?: string; sub?: string; market?: 'US' | 'UK' | 'UAE'; }
 const salesRanges = {
   IN: ['Under ₹5 lakh', '₹5–25 lakh', '₹25 lakh – 1 crore', 'Above ₹1 crore'],
   US: ['Under $10k', '$10k–50k', '$50k–250k', 'Above $250k'],
   UK: ['Under £10k', '£10k–50k', '£50k–250k', 'Above £250k'],
+  UAE: ['Under AED 50k', 'AED 50k–200k', 'AED 200k–1M', 'Above AED 1M'],
 };
 const { market, heading = 'Ready to sell more online?', sub = 'Get a free e-commerce store audit. Within 24 hours you receive a video walkthrough and a PDF with the fixes that will move your sales fastest.' } = Astro.props;
 ---

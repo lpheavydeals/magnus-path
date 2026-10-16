@@ -624,6 +624,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'SEO expert support for Dubai businesses', href: '/uae/seo-services-dubai/' },
       { label: 'Monthly SEO packages', href: '/seo-packages/' },
       { label: 'SEO company in Chennai', href: '/chennai/seo-company/' },
       { label: 'SEO services in Coimbatore', href: '/coimbatore/seo-services/' },

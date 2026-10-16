@@ -49,3 +49,8 @@
 - [ ] All UK services quoted in GBP after audit (no published GBP prices yet)
 - [ ] Engagement options on /uk/shopify-developer/ (fixed task, monthly developer, block of hours)
 - [ ] UK compliance mentions (UK GDPR, ASA/CAP, VAT) are general guidance only and reviewed by a UK adviser
+
+## Confirm terms on UAE pages (`/uae/…`)
+- [ ] All UAE services quoted in AED after audit; lead-form ranges in AED
+- [ ] No Dubai office, address or meetings promised (pages say "Chennai team serving Dubai remotely")
+- [ ] Noon details (seller registration, Fulfilled by Noon, Noon Ads, Yellow Friday) in /blog/how-to-sell-on-noon/ and /uae/amazon-noon-agency/ are current

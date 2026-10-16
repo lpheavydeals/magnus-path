@@ -109,3 +109,20 @@ Same rules as the US pages above, with these differences:
 - **Extra allowed related URLs:** /uk/ecommerce-seo-agency/, /uk/shopify-agency/, /uk/shopify-developer/,
   /uk/shopify-plus-agency/, /uk/amazon-agency/, /uk/white-label-seo/, /uk/seo-outsourcing/,
   /uk/ai-search-optimisation-agency/, and every /us/… URL listed above.
+
+## UAE pages (`src/content/pages/uae-*.ts`, URLs under `/uae/`)
+Same rules as the US/UK pages above, with these differences:
+- **Spelling and money:** British English (the UAE business norm). AED only; no `pricing` block: quote in AED after a free audit.
+- **Set on every UAE page:** `market: 'UAE'`, `kind: 'global'`, `breadcrumb: [{ label: 'United Arab Emirates', href: '/uae/ecommerce-marketing-agency/' }]`,
+  and `twin` where given in the task.
+- **Dubai keywords:** we have no Dubai office, address or trade licence there. Say "a Chennai team serving Dubai and the
+  wider UAE remotely". Never imply a Dubai address, never say "Dubai-based". Do not promise in-person meetings.
+- **Time zones:** UAE time (GST) is 1.5 hours behind India (IST), so our working days almost fully overlap; the UAE
+  weekend is Saturday–Sunday. Same-day replies are realistic.
+- **UAE details worth covering where relevant:** Amazon.ae and Noon (Noon Ads, Noon seller account), cash on delivery
+  still common, Tabby/Tamara instalments, Arabic + English stores (RTL layouts), VAT 5%, Ramadan, Eid, White Friday and
+  Dubai Shopping Festival peaks, delivery partners (Aramex etc.), Snapchat and TikTok strength in the Gulf, UAE PDPL data
+  law (we are not lawyers). No invented market statistics.
+- **Extra allowed related URLs:** /uae/ecommerce-marketing-agency/, /uae/digital-marketing-agency-dubai/,
+  /uae/ecommerce-website-development-dubai/, /uae/seo-services-dubai/, /uae/performance-marketing-agency-dubai/,
+  /uae/amazon-noon-agency/, /blog/how-to-sell-on-noon/

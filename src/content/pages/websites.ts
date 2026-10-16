@@ -265,6 +265,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce website development in Dubai', href: '/uae/ecommerce-website-development-dubai/' },
       { label: 'Shopify development company', href: '/shopify-development/' },
       { label: 'WooCommerce development services', href: '/woocommerce-development/' },
       { label: 'E-commerce SEO services', href: '/ecommerce-seo/' },
