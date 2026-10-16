@@ -21,7 +21,7 @@ Paste each list into **Keyword Overview → Bulk analysis**, **set the database 
 | `uk-bulk.txt` | **United Kingdom (UK)** | 24 | 1: best time-zone fit, strong Shopify market |
 | `uae-bulk.txt` | **United Arab Emirates (AE)** | 24 | 1: closest, Indian-owned businesses, Amazon.ae + Noon |
 | `australia-bulk.txt` | **Australia (AU)** | 19 | 2 |
-| `singapore-bulk.txt` | **Singapore (SG)** | 10 | 3: optional |
+| `singapore-bulk.txt` | **Singapore (SG)** | 10 | Skipped (client decision) |
 
 ## Step 2: Keyword Magic Tool (discover what we have not thought of)
 
@@ -129,3 +129,18 @@ Dubai keywords whose results do **not** show a Google Maps pack (a pack needs a 
 | /blog/how-to-sell-on-noon/ (guide) | sell on noon (260 / 27) | — |
 
 Skipped (KD > 50): seo agency dubai (59), seo company dubai (65), web design company dubai (56), website development company dubai (60).
+
+## Proposal: Australia (Semrush AU data received 16 Oct 2026)
+Full data: `research/abroad-keyword-results/australia-bulk-results.csv`. Australian keywords are the easiest of all
+four markets (most KD under 20). Australian English spelling, quotes in AUD.
+
+| Page | Primary keyword (AU vol / KD) | Secondary |
+|---|---|---|
+| /australia/ecommerce-marketing-agency/ (existing → AU hub) | ecommerce agency australia (170 / 24) | ecommerce marketing agency australia (90 / 20); sections for Amazon (amazon agency australia 50 / 7) and outsourced web development |
+| /australia/ecommerce-seo/ | ecommerce seo australia (880 / 9) | ecommerce seo agency australia (30 / 27) |
+| /australia/white-label-seo/ | white label seo australia (720 / 7) | white label seo (1,600 / 10) |
+| /australia/seo-outsourcing/ | outsource seo australia (210 / 10) | seo outsourcing (390 / 28) |
+| /australia/shopify-agency/ | shopify experts australia (390 / 15) | shopify agency australia (210 / 19), shopify agency (480 / 33), shopify developer / plus agency australia (70 each) |
+
+## Singapore
+Skipped at the client's request (16 Oct 2026).
