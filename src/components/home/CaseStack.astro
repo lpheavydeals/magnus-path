@@ -1,10 +1,5 @@
 ---
-// EXAMPLE CONTENT — replace with real, client-approved results before launch.
-const cases = [
-  { client: 'Chennai Ayurveda brand', type: 'Shopify rebuild · Meta ads', stats: [['3.1×', 'blended ROAS'], ['+64%', 'conversion rate']], body: 'Rebuilt product pages and checkout for mobile, then launched structured creative testing on Meta.', bg: 'linear-gradient(135deg,#2a1a12,#7a3418 60%,#f16436)' },
-  { client: 'Tiruppur apparel exporter', type: 'Amazon US · Shopify', stats: [['+58%', 'monthly orders'], ['−31%', 'ACoS']], body: 'Listing SEO and Sponsored Brands on Amazon US, plus a D2C Shopify store for repeat international buyers.', bg: 'linear-gradient(135deg,#121316,#2c2f35 55%,#5a3a2c)' },
-  { client: 'South Indian snacks brand', type: 'E-commerce SEO · Blinkit ads', stats: [['120+', 'keywords in top 10'], ['4', 'quick-commerce cities']], body: 'Category-page content and technical SEO on the D2C store, with a quick-commerce launch across four metros.', bg: 'linear-gradient(135deg,#3b1d0f,#c2410c 60%,#ffb08a)' },
-];
+import { cases } from '../../data/cases';
 ---
 <section class="section cs">
   <div class="wrap">
@@ -19,12 +14,12 @@ const cases = [
       {cases.map((c, i) => (
         <li class="cs__card" style={`--bg:${c.bg};--i:${i}`}>
           <div class="cs__mesh" aria-hidden="true"></div>
-          <div class="cs__top"><span class="example-badge">Example</span><span>{c.type}</span></div>
+          <div class="cs__top">{c.example && <span class="example-badge">Example</span>}<span>{c.type}</span></div>
           <div class="cs__body">
             <div>
               <h3>{c.client}</h3>
-              <p>{c.body}</p>
-              <a class="btn btn--primary btn--sm" href="/case-studies/">Read full case study <span class="arrow" aria-hidden="true">→</span></a>
+              <p>{c.summary}</p>
+              <a class="btn btn--primary btn--sm" href={`/case-studies/${c.slug}/`}>Read full case study <span class="arrow" aria-hidden="true">→</span></a>
             </div>
             <dl class="cs__stats">{c.stats.map(([v, l]) => <div><dt>{l}</dt><dd>{v}</dd></div>)}</dl>
           </div>

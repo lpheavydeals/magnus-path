@@ -12,8 +12,11 @@ interface Props {
   description: string;
   schema?: object[];
   ogImage?: string;
+  lang?: string;
+  noindex?: boolean;
+  alternates?: { hreflang: string; href: string }[];
 }
-const { title, description, schema = [], ogImage = '/og-default.png' } = Astro.props;
+const { title, description, schema = [], ogImage = '/og-default.png', lang = 'en-IN', noindex = false, alternates = [] } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? site.url).href;
 
 const orgSchema = {
@@ -39,7 +42,7 @@ const orgSchema = {
 };
 ---
 <!doctype html>
-<html lang="en-IN">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <script is:inline>document.documentElement.classList.add('js')</script>
@@ -47,6 +50,8 @@ const orgSchema = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={new URL(a.href, Astro.site ?? site.url).href} />)}
     <meta name="theme-color" content="#fbfaf8" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:type" content="website" />

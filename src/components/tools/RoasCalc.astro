@@ -1,0 +1,52 @@
+---
+import './calc.css';
+// Example defaults so the first view shows a worked result.
+const d = { spend: 50000, revenue: 175000, margin: 40, orders: 140 };
+const fmt = (n: number) => '₹' + Math.round(n).toLocaleString('en-IN');
+const roas = d.revenue / d.spend, be = 1 / (d.margin / 100), profit = d.revenue * d.margin / 100 - d.spend;
+---
+<section class="section"><div class="wrap">
+  <form class="calc" id="roas" onsubmit="return false">
+    <div class="calc__in">
+      <h2>Your numbers</h2>
+      <p class="calc__note" style="color:var(--muted)">Example values are filled in. Replace them with your own campaign numbers.</p>
+      <div class="calc__row">
+        <label class="calc__field" for="r-spend">Ad spend<small>For the period you are checking</small><span class="calc__wrap"><span>₹</span><input id="r-spend" type="number" min="0" step="any" inputmode="decimal" value={d.spend} /></span></label>
+        <label class="calc__field" for="r-rev">Revenue from ads<small>Sales attributed to these ads</small><span class="calc__wrap"><span>₹</span><input id="r-rev" type="number" min="0" step="any" inputmode="decimal" value={d.revenue} /></span></label>
+        <label class="calc__field" for="r-margin">Gross margin<small>After product cost, before ads</small><span class="calc__wrap"><input id="r-margin" type="number" min="1" max="99" step="any" inputmode="decimal" value={d.margin} /><span>%</span></span></label>
+        <label class="calc__field" for="r-orders">Orders<small>Optional, for cost per order</small><span class="calc__wrap"><input id="r-orders" type="number" min="0" step="1" inputmode="numeric" value={d.orders} /></span></label>
+      </div>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="r-status" data-state={roas > be ? 'good' : 'bad'}>{roas > be ? 'Profitable after ad spend' : 'Losing money on ads'}</span>
+      <div><div class="calc__big" id="r-roas">{roas.toFixed(2)}×</div><p class="calc__biglabel">ROAS (return on ad spend)</p></div>
+      <dl class="calc__list">
+        <div><dt>ACoS</dt><dd id="r-acos">{(d.spend / d.revenue * 100).toFixed(1)}%</dd></div>
+        <div><dt>Break-even ROAS</dt><dd id="r-be">{be.toFixed(2)}×</dd></div>
+        <div><dt>Break-even ACoS</dt><dd id="r-beacos">{d.margin.toFixed(1)}%</dd></div>
+        <div><dt>Profit after ad spend</dt><dd id="r-profit">{fmt(profit)}</dd></div>
+        <div><dt>Cost per order</dt><dd id="r-cpa">{fmt(d.spend / d.orders)}</dd></div>
+      </dl>
+      <p class="calc__note">Profit after ad spend = revenue × gross margin − ad spend. It excludes fixed costs such as salaries and rent.</p>
+    </div>
+  </form>
+</div></section>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const fmt = (n: number) => (n < 0 ? '−₹' : '₹') + Math.abs(Math.round(n)).toLocaleString('en-IN');
+  function run() {
+    const spend = +$('r-spend').value || 0, rev = +$('r-rev').value || 0, m = (+$('r-margin').value || 0) / 100, orders = +$('r-orders').value || 0;
+    const roas = spend ? rev / spend : 0, be = m ? 1 / m : 0, profit = rev * m - spend;
+    $('r-roas').textContent = spend ? roas.toFixed(2) + '×' : '—';
+    $('r-acos').textContent = rev ? (spend / rev * 100).toFixed(1) + '%' : '—';
+    $('r-be').textContent = m ? be.toFixed(2) + '×' : '—';
+    $('r-beacos').textContent = (m * 100).toFixed(1) + '%';
+    $('r-profit').textContent = fmt(profit);
+    $('r-cpa').textContent = orders ? fmt(spend / orders) : '—';
+    const st = $('r-status');
+    const state = !spend || !m ? 'warn' : roas > be * 1.05 ? 'good' : roas >= be * 0.95 ? 'warn' : 'bad';
+    st.dataset.state = state;
+    st.textContent = state === 'good' ? 'Profitable after ad spend' : state === 'warn' ? (spend && m ? 'Close to break-even' : 'Enter your numbers') : 'Losing money on ads';
+  }
+  document.getElementById('roas')?.addEventListener('input', run);
+</script>

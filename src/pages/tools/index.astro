@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import Icon3D from '../../components/Icon3D.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema } from '../../data/schema';
+const tools = [
+  { t: 'ROAS & break-even ACoS calculator', d: 'Check whether your Meta, Google, Amazon or Flipkart ads actually make money.', href: '/tools/roas-calculator/', icon: 'amazon' as const },
+  { t: 'Amazon & Flipkart profit calculator', d: 'Work out payout and profit per unit after fees, GST, ads and returns.', href: '/tools/marketplace-profit-calculator/', icon: 'marketplace' as const },
+  { t: 'Free e-commerce store audit', d: 'Get a video audit of your store, ads and SEO within 24 hours.', href: '/free-ecommerce-audit/', icon: 'seo' as const },
+];
+---
+<Base title="Free E-commerce Tools & Calculators | Magnus Path" description="Free tools for Indian e-commerce sellers: ROAS and break-even ACoS calculator, Amazon and Flipkart profit calculator and a free store audit." schema={[breadcrumbSchema([{ label: 'Free Tools', href: '/tools/' }])]}>
+  <SimpleHero eyebrow="Free tools" h1="Free Tools for *E-commerce Sellers*" intro="Quick calculators to check ad profitability and marketplace margins, built for Indian D2C brands and Amazon and Flipkart sellers. They run in your browser and store nothing." current="Free Tools" />
+  <section class="section tl"><div class="wrap"><ul class="tl__grid">
+    {tools.map((t) => <li data-reveal><a href={t.href}><div class="tl__icon"><Icon3D name={t.icon} /></div><h2>{t.t}</h2><p>{t.d}</p><span class="tl__go" aria-hidden="true">→</span></a></li>)}
+  </ul></div></section>
+  <LeadForm />
+</Base>
+<style>
+  .tl { padding-top: 0; }
+  .tl__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+  .tl__grid a { position: relative; display: grid; gap: 12px; padding: 28px; border-radius: var(--radius); background: #f3f1ee; text-decoration: none; height: 100%; transition: background .4s var(--ease), transform .4s var(--ease); }
+  .tl__grid a:hover { background: var(--accent-tint); transform: translateY(-6px); }
+  .tl__icon { width: 55%; margin: 0 auto 6px; }
+  .tl__grid h2 { font-size: 1.4rem; }
+  .tl__grid p { color: var(--muted); font-size: 15px; }
+  .tl__go { position: absolute; top: 22px; right: 22px; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--white); }
+  @media (min-width: 900px) { .tl__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

@@ -68,6 +68,15 @@ export const nav: NavItem[] = [
       { label: 'Food & FMCG', href: '/industries/food-fmcg/' },
     ],
   },
-  { label: 'Case Studies', href: '/case-studies/' },
+  {
+    label: 'Resources',
+    href: '/blog/',
+    children: [
+      { label: 'Case Studies', href: '/case-studies/', note: 'Results from our work' },
+      { label: 'Guides & Blog', href: '/blog/', note: 'Websites, ads, SEO, export' },
+      { label: 'Free Tools', href: '/tools/', note: 'ROAS & profit calculators' },
+      { label: 'தமிழ் வழிகாட்டிகள்', href: '/ta/', note: 'Guides in Tamil' },
+    ],
+  },
   { label: 'Pricing', href: '/pricing/' },
 ];

@@ -1,0 +1,66 @@
+---
+import './calc.css';
+// Example values only — marketplace fees vary by category and change often.
+const d = { price: 999, gst: 12, cost: 380, referral: 15, fixed: 30, ship: 70, ads: 80, returns: 5 };
+function calc(v: typeof d) {
+  const exGst = v.price / (1 + v.gst / 100);
+  const fees = v.price * v.referral / 100 + v.fixed + v.ship;
+  const feesGst = fees * 0.18;
+  const payout = v.price - fees - feesGst;
+  const returnsCost = v.price * v.returns / 100;
+  const profit = exGst - v.cost - fees - feesGst - v.ads - returnsCost;
+  return { exGst, fees: fees + feesGst, payout, profit, margin: profit / exGst * 100, beAcos: (exGst - v.cost - fees - feesGst - returnsCost) / v.price * 100 };
+}
+const r = calc(d);
+const fmt = (n: number) => (n < 0 ? '−₹' : '₹') + Math.abs(n).toLocaleString('en-IN', { maximumFractionDigits: 0 });
+---
+<section class="section"><div class="wrap">
+  <form class="calc" id="pc" onsubmit="return false">
+    <div class="calc__in">
+      <h2>Product and fees</h2>
+      <label class="calc__field" for="p-mkt">Marketplace<span class="calc__wrap"><select id="p-mkt"><option>Amazon India</option><option>Flipkart</option><option>Other marketplace</option></select></span></label>
+      <div class="calc__row">
+        <label class="calc__field" for="p-price">Selling price<small>Including GST</small><span class="calc__wrap"><span>₹</span><input id="p-price" type="number" min="0" step="any" value={d.price} /></span></label>
+        <label class="calc__field" for="p-gst">GST rate on product<span class="calc__wrap"><select id="p-gst">{[0, 5, 12, 18, 28].map((g) => <option value={g} selected={g === d.gst}>{g}%</option>)}</select></span></label>
+        <label class="calc__field" for="p-cost">Product cost per unit<small>Manufacturing + packaging</small><span class="calc__wrap"><span>₹</span><input id="p-cost" type="number" min="0" step="any" value={d.cost} /></span></label>
+        <label class="calc__field" for="p-ref">Referral / commission fee<small>Check your category's current rate</small><span class="calc__wrap"><input id="p-ref" type="number" min="0" max="60" step="any" value={d.referral} /><span>%</span></span></label>
+        <label class="calc__field" for="p-fixed">Closing / fixed fee per order<span class="calc__wrap"><span>₹</span><input id="p-fixed" type="number" min="0" step="any" value={d.fixed} /></span></label>
+        <label class="calc__field" for="p-ship">Shipping / fulfilment fee<span class="calc__wrap"><span>₹</span><input id="p-ship" type="number" min="0" step="any" value={d.ship} /></span></label>
+        <label class="calc__field" for="p-ads">Ad cost per order<small>Ad spend ÷ orders</small><span class="calc__wrap"><span>₹</span><input id="p-ads" type="number" min="0" step="any" value={d.ads} /></span></label>
+        <label class="calc__field" for="p-ret">Returns allowance<small>Share of revenue lost to returns</small><span class="calc__wrap"><input id="p-ret" type="number" min="0" max="80" step="any" value={d.returns} /><span>%</span></span></label>
+      </div>
+      <p class="calc__note" style="color:var(--muted)">The fees filled in are examples, not current Amazon or Flipkart rates. Replace them with the fees shown for your category in Seller Central or the Flipkart Seller Hub.</p>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="p-status" data-state={r.profit > 0 ? 'good' : 'bad'}>{r.profit > 0 ? 'Profitable per unit' : 'Loss per unit'}</span>
+      <div><div class="calc__big" id="p-profit">{fmt(r.profit)}</div><p class="calc__biglabel">Profit per unit after fees, ads and returns</p></div>
+      <dl class="calc__list">
+        <div><dt>Price excluding GST</dt><dd id="p-ex">{fmt(r.exGst)}</dd></div>
+        <div><dt>Marketplace fees incl. 18% GST</dt><dd id="p-fees">{fmt(r.fees)}</dd></div>
+        <div><dt>Payout from marketplace</dt><dd id="p-pay">{fmt(r.payout)}</dd></div>
+        <div><dt>Net margin</dt><dd id="p-margin">{r.margin.toFixed(1)}%</dd></div>
+        <div><dt>Break-even ACoS</dt><dd id="p-beacos">{r.beAcos.toFixed(1)}%</dd></div>
+      </dl>
+      <p class="calc__note">Simplified estimate. GST paid on marketplace fees may be claimable as input tax credit; TCS and TDS deductions are not shown. Confirm with your accountant.</p>
+    </div>
+  </form>
+</div></section>
+<script>
+  const g = (id: string) => +((document.getElementById(id) as HTMLInputElement).value) || 0;
+  const set = (id: string, t: string) => { const el = document.getElementById(id); if (el) el.textContent = t; };
+  const fmt = (n: number) => (n < 0 ? '−₹' : '₹') + Math.abs(n).toLocaleString('en-IN', { maximumFractionDigits: 0 });
+  function run() {
+    const price = g('p-price'), gst = g('p-gst'), cost = g('p-cost'), ref = g('p-ref'), fixed = g('p-fixed'), ship = g('p-ship'), ads = g('p-ads'), ret = g('p-ret');
+    const exGst = price / (1 + gst / 100);
+    const fees = price * ref / 100 + fixed + ship, feesGst = fees * 0.18;
+    const retCost = price * ret / 100;
+    const profit = exGst - cost - fees - feesGst - ads - retCost;
+    set('p-profit', fmt(profit)); set('p-ex', fmt(exGst)); set('p-fees', fmt(fees + feesGst)); set('p-pay', fmt(price - fees - feesGst));
+    set('p-margin', exGst ? (profit / exGst * 100).toFixed(1) + '%' : '—');
+    set('p-beacos', price ? ((exGst - cost - fees - feesGst - retCost) / price * 100).toFixed(1) + '%' : '—');
+    const st = document.getElementById('p-status');
+    if (st) { st.dataset.state = profit > 0 ? 'good' : profit === 0 ? 'warn' : 'bad'; st.textContent = profit > 0 ? 'Profitable per unit' : profit === 0 ? 'Break-even' : 'Loss per unit'; }
+  }
+  document.getElementById('pc')?.addEventListener('input', run);
+  document.getElementById('pc')?.addEventListener('change', run);
+</script>

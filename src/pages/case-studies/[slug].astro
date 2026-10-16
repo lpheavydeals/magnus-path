@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/page/Breadcrumbs.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { cases, type CaseStudy } from '../../data/cases';
+import { breadcrumbSchema } from '../../data/schema';
+export function getStaticPaths() { return cases.map((c) => ({ params: { slug: c.slug }, props: { c } })); }
+const { c } = Astro.props as { c: CaseStudy };
+---
+<Base title={`${c.client}: ${c.type} | Magnus Path`} description={`${c.summary} ${c.stats.map(([v, l]) => `${v} ${l}`).join(', ')}.`} noindex={c.example} schema={[breadcrumbSchema([{ label: 'Case Studies', href: '/case-studies/' }, { label: c.client, href: `/case-studies/${c.slug}/` }])]}>
+  <section class="cd" style={`--bg:${c.bg}`}>
+    <div class="cd__mesh" aria-hidden="true"></div>
+    <div class="wrap cd__in">
+      <div class="cd__bc"><Breadcrumbs trail={[{ label: 'Case Studies', href: '/case-studies/' }]} current={c.client} /></div>
+      <p class="cd__meta">{c.example && <span class="example-badge">Example</span>} {c.industry} · {c.type}</p>
+      <h1>{c.client}</h1>
+      <p class="cd__sum">{c.summary}</p>
+      <dl class="cd__stats">{c.stats.map(([v, l]) => <div><dt>{l}</dt><dd>{v}</dd></div>)}</dl>
+    </div>
+  </section>
+  <section class="section cdb">
+    <div class="wrap cdb__grid">
+      <div data-reveal><p class="label">The challenge</p>{c.challenge.map((p) => <p>{p}</p>)}</div>
+      <div data-reveal><p class="label">What we did</p><ul>{c.did.map((p) => <li>{p}</li>)}</ul></div>
+      <div data-reveal><p class="label">Results</p><ul>{c.results.map((p) => <li>{p}</li>)}</ul></div>
+    </div>
+  </section>
+  <Related links={c.services} heading="Services used" />
+  <LeadForm heading="Want results like these?" />
+</Base>
+<style>
+  .cd { position: relative; overflow: hidden; color: var(--white); background: var(--bg); padding: clamp(130px, 15vw, 180px) 0 clamp(56px, 7vw, 90px); }
+  .cd__mesh { position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(255,255,255,.06) 0 1px, transparent 1px 70px), repeating-linear-gradient(0deg, rgba(255,255,255,.06) 0 1px, transparent 1px 70px); mask-image: linear-gradient(120deg, transparent 30%, #000); }
+  .cd__in { position: relative; display: grid; gap: 20px; }
+  .cd__bc :global(.bc ol), .cd__bc :global(.bc [aria-current]) { color: rgba(255,255,255,.8); }
+  .cd__meta { font-size: 14px; color: rgba(255,255,255,.8); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .cd h1 { font-size: clamp(2.6rem, 6vw, 5rem); }
+  .cd__sum { max-width: 56ch; font-size: 1.15rem; color: rgba(255,255,255,.88); }
+  .cd__stats { display: flex; flex-wrap: wrap; gap: 12px; margin: 10px 0 0; }
+  .cd__stats div { padding: 18px 22px; border-radius: 20px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); min-width: 160px; }
+  .cd__stats dt { font-size: 13px; color: rgba(255,255,255,.8); }
+  .cd__stats dd { margin: 4px 0 0; font-family: var(--font-display); font-weight: 500; letter-spacing: -0.04em; font-size: clamp(2.4rem, 4vw, 3.4rem); line-height: 1; }
+  .cdb__grid { display: grid; gap: 40px; }
+  .cdb__grid > div { display: grid; gap: 14px; align-content: start; }
+  .cdb__grid p:not(.label), .cdb__grid li { color: #33373d; line-height: 1.7; }
+  .cdb__grid ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+  .cdb__grid li { padding-left: 24px; position: relative; }
+  .cdb__grid li::before { content: '+'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  @media (min-width: 980px) { .cdb__grid { grid-template-columns: repeat(3, 1fr); gap: 56px; } }
+</style>

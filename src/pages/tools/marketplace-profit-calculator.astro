@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import ProfitCalc from '../../components/tools/ProfitCalc.astro';
+import Guide from '../../components/page/Guide.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'Why sellers lose money on profitable-looking products', paragraphs: ['Many Amazon and Flipkart sellers price products by adding a margin to manufacturing cost, then discover their payout is far lower than expected. Commission, closing fees, shipping or fulfilment charges, GST on those fees, ad spend and returns all come out of the selling price. On a low-priced product, they can take most of the margin.', 'Working out profit per unit before you list, and again before you scale ads, prevents selling at a loss.'] },
+  { heading: 'What this calculator includes', paragraphs: ['The calculator starts from the GST-inclusive selling price, removes GST on the product, then subtracts product cost, marketplace fees with 18% GST on those fees, ad cost per order and an allowance for returns. The result is profit per unit before fixed costs such as salaries and rent.'], bullets: ['Referral or commission fee as a percentage of the selling price', 'Closing or fixed fee per order', 'Shipping, fulfilment or weight-handling fee', 'Ad cost per order, from your ad spend divided by orders', 'Returns allowance as a share of revenue'] },
+  { heading: 'Where to find your real fees', paragraphs: ['Marketplace fees depend on category, price band, fulfilment method and shipping zone, and they change from time to time. Use the fee preview in Amazon Seller Central or the commission details in the Flipkart Seller Hub for your exact category, then enter those numbers here. The values filled in by default are examples only.'] },
+  { heading: 'Using break-even ACoS to set ad budgets', paragraphs: ['The break-even ACoS shown is the highest share of the selling price you can spend on ads before a unit stops making money. Set campaign targets below it. If break-even ACoS is very low, improve the economics first — a higher price, bundles, a cheaper fulfilment option or a lower product cost — before spending more on ads.'] },
+];
+const faqs = [
+  { q: 'How do I calculate profit on Amazon India?', a: 'Start with the selling price, remove GST on the product, then subtract product cost, Amazon referral and closing fees, shipping or FBA fees, GST on those fees, ad cost per order and expected returns. What is left is profit per unit before fixed costs.' },
+  { q: 'Are the fees in this calculator current Amazon or Flipkart rates?', a: 'No. The default values are examples. Marketplace fees vary by category and change over time, so enter the fees shown for your category in Amazon Seller Central or the Flipkart Seller Hub to get an accurate result.' },
+  { q: 'Why is GST added to marketplace fees?', a: 'Marketplaces charge GST on their fees, typically 18%. Registered sellers may be able to claim this as input tax credit, which would improve the real margin. The calculator includes it as a cost to stay conservative; check the treatment with your accountant.' },
+  { q: 'What is a good profit margin for marketplace sellers?', a: 'It depends on your category and how much you spend on ads. As a working rule, aim for enough margin after fees that your break-even ACoS leaves room to advertise. If break-even ACoS is in single digits, ads will struggle to be profitable.' },
+  { q: 'Does the calculator include TCS and TDS?', a: 'No. Tax collected at source and tax deducted at source are usually adjustable against your tax liability, so they affect cash flow more than profit. They are left out to keep the calculation simple.' },
+];
+const schema = [breadcrumbSchema([...trail, { label: 'Marketplace Profit Calculator', href: '/tools/marketplace-profit-calculator/' }]), faqSchema(faqs), { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Amazon & Flipkart Profit Calculator', url: `${site.url}/tools/marketplace-profit-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } }];
+---
+<Base title="Amazon & Flipkart Profit Calculator (India) | Magnus Path" description="Free Amazon and Flipkart profit calculator for Indian sellers: work out payout, profit per unit, margin and break-even ACoS after fees, GST, ads and returns." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="Amazon & Flipkart *Profit Calculator*" intro="See what you really earn per unit on Amazon India or Flipkart after commission, fees, GST, ads and returns, and how much you can afford to spend on ads before a sale stops making money." trail={trail} current="Marketplace Profit Calculator" />
+  <ProfitCalc />
+  <Guide sections={guide} title="How marketplace profit really works" />
+  <FAQ items={faqs} title="Profit calculator questions" />
+  <Related links={[{ label: 'Amazon account management services', href: '/amazon-account-management/' }, { label: 'Flipkart account management services', href: '/flipkart-account-management/' }, { label: 'ROAS calculator', href: '/tools/roas-calculator/' }, { label: 'Amazon advertising agency', href: '/amazon-marketing-agency/' }]} />
+  <LeadForm heading="Want your marketplace margins reviewed?" />
+</Base>

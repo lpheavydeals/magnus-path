@@ -1,0 +1,71 @@
+---
+import '@fontsource-variable/noto-sans-tamil';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/page/Breadcrumbs.astro';
+import Prose from '../../components/page/Prose.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { getCollection, render } from 'astro:content';
+import { site } from '../../data/site';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('ta');
+  return pages.map((p) => ({ params: { slug: p.id === 'index' ? undefined : p.id }, props: { page: p } }));
+}
+const { page } = Astro.props;
+const { Content } = await render(page);
+const d = page.data;
+const path = page.id === 'index' ? '/ta/' : `/ta/${page.id}/`;
+const guides = (await getCollection('ta')).filter((p) => p.data.kind === 'guide');
+const trail = page.id === 'index' ? [] : [{ label: 'தமிழ்', href: '/ta/' }];
+const schema = [
+  { '@context': 'https://schema.org', '@type': page.data.kind === 'hub' ? 'WebPage' : 'Article', headline: d.title, description: d.description, inLanguage: 'ta', url: `${site.url}${path}`, publisher: { '@id': `${site.url}/#org` } },
+  breadcrumbSchema([...trail, { label: d.title, href: path }]),
+  faqSchema(d.faqs),
+];
+const alternates = [{ hreflang: 'ta-IN', href: path }, { hreflang: 'en-IN', href: d.englishUrl }];
+---
+<Base title={d.metaTitle} description={d.description} schema={schema} lang="ta" alternates={alternates}>
+  <section class="th">
+    <div class="th__bg" aria-hidden="true"></div>
+    <div class="wrap th__in">
+      <Breadcrumbs trail={trail} current={page.id === 'index' ? 'தமிழ்' : d.title} />
+      <p class="label">{page.data.kind === 'hub' ? 'Magnus Path · தமிழ்' : 'தமிழ் வழிகாட்டி'}</p>
+      <h1>{d.title}</h1>
+      <div class="th__sum"><strong>சுருக்கமான பதில்</strong><p>{d.summary}</p></div>
+      <div class="th__ctas">
+        <a class="btn btn--primary" href="/free-ecommerce-audit/">இலவச ஸ்டோர் ஆடிட் <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href={site.whatsapp} rel="noopener">WhatsApp-ல் பேசுங்கள்</a>
+        <a class="th__en" href={d.englishUrl} hreflang="en">Read in English</a>
+      </div>
+    </div>
+  </section>
+  <Prose><Content /></Prose>
+  {page.id === 'index' && (
+    <section class="section tg"><div class="wrap">
+      <p class="label">தமிழ் வழிகாட்டிகள்</p>
+      <ul class="tg__grid">{guides.map((g) => <li><a href={`/ta/${g.id}/`}><h2>{g.data.title}</h2><p>{g.data.description}</p></a></li>)}</ul>
+    </div></section>
+  )}
+  <FAQ items={d.faqs} title="அடிக்கடி கேட்கப்படும் கேள்விகள்" />
+  <Related links={d.related} heading="தொடர்புடைய சேவைகள்" />
+  <LeadForm heading="உங்கள் ஆன்லைன் விற்பனையை அதிகரிக்க தயாரா?" sub="உங்கள் ஸ்டோர் அல்லது Amazon லிங்கை அனுப்புங்கள். 24 மணி நேரத்தில் இலவச வீடியோ ஆடிட் மற்றும் எதை முதலில் சரி செய்ய வேண்டும் என்ற பட்டியலை அனுப்புவோம்." />
+</Base>
+<style>
+  .th { position: relative; padding: clamp(120px, 14vw, 170px) 0 48px; overflow: hidden; }
+  .th__bg { position: absolute; inset: 0; background: radial-gradient(50% 70% at 85% 0%, #ffe2d3 0%, rgba(255,226,211,0) 70%), var(--paper); }
+  .th__in { position: relative; display: grid; gap: 20px; max-width: 980px; }
+  .th h1 { font-size: clamp(2rem, 4.4vw, 3.4rem); }
+  .th__sum { padding: 20px 24px; border-radius: 20px; background: var(--white); border: 1px solid var(--line); display: grid; gap: 6px; max-width: 74ch; }
+  .th__sum strong { font-size: 13px; color: var(--accent-ink); }
+  .th__ctas { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .th__en { font-size: 14px; color: var(--muted); }
+  .tg__grid { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 16px; }
+  .tg__grid a { display: grid; gap: 8px; padding: 26px; border-radius: var(--radius); background: var(--white); border: 1px solid var(--line); text-decoration: none; height: 100%; }
+  .tg__grid a:hover { border-color: var(--accent); }
+  .tg__grid h2 { font-size: 1.3rem; }
+  .tg__grid p { color: var(--muted); font-size: 15px; }
+  @media (min-width: 900px) { .tg__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

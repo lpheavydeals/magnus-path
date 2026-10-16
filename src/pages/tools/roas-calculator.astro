@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import RoasCalc from '../../components/tools/RoasCalc.astro';
+import Guide from '../../components/page/Guide.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'What is ROAS?', paragraphs: ['ROAS (return on ad spend) is the revenue your ads bring in for every rupee you spend on them. If you spend ₹10,000 and the ads bring ₹40,000 in sales, your ROAS is 4×. It is the most common way to judge Meta, Google, Amazon and Flipkart campaigns, because it connects ad spend directly to sales.'] },
+  { heading: 'ROAS vs ACoS', paragraphs: ['ACoS (advertising cost of sale) is the same relationship turned upside down: ad spend divided by ad revenue, shown as a percentage. Amazon and Flipkart sellers usually talk in ACoS, while Meta and Google advertisers usually talk in ROAS. A ROAS of 4× is the same as an ACoS of 25%.'], bullets: ['ROAS = ad revenue ÷ ad spend', 'ACoS = ad spend ÷ ad revenue × 100', 'ROAS = 100 ÷ ACoS'] },
+  { heading: 'Break-even ROAS: the number that matters', paragraphs: ['A “good” ROAS depends entirely on your margin. Break-even ROAS is 1 divided by your gross margin. With a 40% margin, you need a ROAS of 2.5× just to cover product cost and ad spend. Anything above that is profit before fixed costs; anything below loses money on every order, however good the ROAS sounds.', 'This is why a 3× ROAS can be excellent for a high-margin Ayurveda brand and a loss for a low-margin electronics seller. Always compare your ROAS to your own break-even, not to an industry average.'] },
+  { heading: 'How to improve ROAS', paragraphs: ['ROAS improves when the same spend brings more revenue or the same revenue needs less spend. In practice that means cutting search terms and audiences that spend without converting, raising average order value with bundles, improving product pages so more visitors buy, and moving budget towards the products and campaigns with the highest margin.'], bullets: ['Remove wasted search terms and add negatives weekly', 'Fix product pages before scaling budgets', 'Bundle products to lift average order value', 'Measure profit, not just ROAS, when choosing where to spend'] },
+];
+const faqs = [
+  { q: 'What is a good ROAS for e-commerce in India?', a: 'A good ROAS is any ROAS comfortably above your break-even ROAS, which is 1 divided by your gross margin. For a brand with a 40% margin, break-even is 2.5×, so 3.5× or more leaves healthy profit. There is no single good number for every category.' },
+  { q: 'How do I calculate break-even ACoS?', a: 'Break-even ACoS equals your gross margin percentage before ad spend. If your margin after product cost and marketplace fees is 30%, your break-even ACoS is 30%. Campaigns with an ACoS below that are profitable; above it, they lose money on each sale.' },
+  { q: 'Should I use ROAS or ACoS?', a: 'Use whichever your platform reports, because they describe the same thing. Amazon and Flipkart sellers usually track ACoS, while Meta and Google advertisers track ROAS. Our calculator shows both, along with the break-even version of each.' },
+  { q: 'Does this ROAS calculator include fixed costs?', a: 'No. Profit after ad spend is revenue multiplied by gross margin minus ad spend. It does not subtract fixed costs such as salaries, rent or software. Use it to judge campaigns, then check overall profitability in your accounts.' },
+  { q: 'Is my data saved?', a: 'No. The calculator runs entirely in your browser. Nothing you type is sent to us or stored anywhere.' },
+];
+const schema = [breadcrumbSchema([...trail, { label: 'ROAS Calculator', href: '/tools/roas-calculator/' }]), faqSchema(faqs), { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'ROAS & Break-even ACoS Calculator', url: `${site.url}/tools/roas-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } }];
+---
+<Base title="ROAS Calculator & Break-even ACoS Calculator | Magnus Path" description="Free ROAS calculator for e-commerce: work out ROAS, ACoS, break-even ROAS and profit after ad spend for Meta, Google, Amazon and Flipkart ads." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="ROAS Calculator With *Break-even ACoS*" intro="Enter your ad spend, revenue and margin to see your ROAS, ACoS, break-even point and real profit after ads. Works for Meta, Google, Amazon, Flipkart and quick-commerce campaigns." trail={trail} current="ROAS Calculator" />
+  <RoasCalc />
+  <Guide sections={guide} title="ROAS, ACoS and break-even explained" />
+  <FAQ items={faqs} title="ROAS calculator questions" />
+  <Related links={[{ label: 'Amazon advertising agency', href: '/amazon-marketing-agency/' }, { label: 'Performance marketing agency in India', href: '/performance-marketing/' }, { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }, { label: 'Flipkart ads management', href: '/flipkart-account-management/' }]} />
+  <LeadForm heading="Want a better ROAS?" sub="Send us your store or ad account. Within 24 hours we show you where spend is wasted and what to change first." />
+</Base>
