@@ -1,0 +1,16 @@
+Keyword,Volume,KD,Decision
+wordpress agency uk,1300,28,/uk/wordpress-agency/ (primary)
+website design agency uk,1000,52,Skip (KD>50)
+website maintenance services uk,720,42,/uk/wordpress-support/ (secondary; KD over 35)
+woocommerce agency uk,720,11,/uk/woocommerce-agency/ (primary)
+wordpress support uk,720,20,/uk/wordpress-support/ (primary)
+wordpress developer uk,590,19,/uk/wordpress-agency/ (secondary; heading + FAQ)
+wordpress maintenance uk,390,15,/uk/wordpress-support/ (secondary)
+woocommerce developer uk,320,11,/uk/woocommerce-agency/ (secondary)
+wordpress development company uk,170,21,/uk/wordpress-agency/ (secondary)
+woocommerce development uk,140,12,/uk/woocommerce-agency/ (secondary)
+business website design uk,40,22,Covered by /corporate-website-development/
+corporate website design uk,30,22,Covered by /corporate-website-development/
+cms website development uk,10,2,Covered by /cms-website-development/
+white label wordpress development uk,no data,,Covered by /uk/wordpress-agency/ (agency section)
+headless cms agency uk,no data,,Skip

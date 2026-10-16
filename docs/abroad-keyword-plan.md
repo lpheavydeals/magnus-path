@@ -159,3 +159,11 @@ global page each keyword relates to). Same decision rules as above: build a coun
 | /us/white-label-wordpress-development/ | white label wordpress development (590 / 9) | outsource wordpress development (320 / 9) | — (linked from /us/white-label-web-development/) |
 | /us/webflow-development-agency/ (only if offered) | webflow development agency (880 / 27) | — | — |
 Skipped: woocommerce developer (61), business website design services (39), corporate website design company (45), headless cms development (47).
+
+### Round 2 proposal: United Kingdom (data received 16 Oct 2026)
+| Page | Primary keyword (UK vol / KD) | Secondary | Global twin |
+|---|---|---|---|
+| /uk/wordpress-agency/ | wordpress agency uk (1,300 / 28) | wordpress developer uk (590 / 19), wordpress development company uk (170 / 21) | /wordpress-website-development/ |
+| /uk/woocommerce-agency/ | woocommerce agency uk (720 / 11) | woocommerce developer uk (320 / 11), woocommerce development uk (140 / 12) | /woocommerce-development/ |
+| /uk/wordpress-support/ | wordpress support uk (720 / 20) | wordpress maintenance uk (390 / 15), website maintenance services uk (720 / 42) | /website-maintenance-services/ |
+Skipped: website design agency uk (52). Business / corporate / CMS keywords are too small (10–40) and stay on the global pages.
