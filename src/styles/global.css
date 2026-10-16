@@ -15,8 +15,8 @@
   --line: #ece7e2;
   --line-dark: #33373d;
 
-  --font-display: 'Archivo Variable', system-ui, sans-serif;
-  --font-body: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Plus Jakarta Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Plus Jakarta Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --radius: 26px;
   --radius-sm: 14px;
@@ -38,7 +38,7 @@ img, svg { display: block; max-width: 100%; }
 a { color: inherit; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 
-h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; font-stretch: 100%; line-height: 1.05; letter-spacing: -0.035em; margin: 0; }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height: 1.08; letter-spacing: -0.03em; margin: 0; }
 h1 { font-size: clamp(2.6rem, 6.2vw, 5.4rem); }
 h2 { font-size: clamp(2.1rem, 4.6vw, 3.9rem); }
 h3 { font-size: clamp(1.25rem, 1.8vw, 1.6rem); letter-spacing: -0.02em; }

@@ -37,7 +37,7 @@ too faint as it stands, so the final revealed state must pass.
 
 ### Typography
 
-- **Display headings:** a condensed bold face such as *Oswald* or *Anton* (from B), uppercase for
+- **Font (client decision, 16 Oct 2026): Plus Jakarta Sans for everything.** Earlier option: a condensed bold face such as *Oswald* or *Anton* (from B), uppercase for
   H1/H2. Long keyword H1s ("Shopify Development Company in India") still read well condensed.
 - **Body and UI:** a clean geometric sans such as *Inter* or *Manrope* (A's feel), at 17–18px body
   size and 1.6 line height.
