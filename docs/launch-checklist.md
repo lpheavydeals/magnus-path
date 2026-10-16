@@ -22,6 +22,11 @@
 - [ ] "Requests before lunch handled the same day" (UK page)
 - [ ] Example case-study pages (`src/data/cases.ts`, set `example: false` only with real data; they are noindexed until then)
 
+## Confirm terms on business website pages
+- [ ] Business website prices (₹30,000 WordPress, ₹35,000 business site, ₹75,000+ corporate/CMS) and package contents
+- [ ] Maintenance plans: Basic ₹5,000 (weekly backups, 2 hrs changes), Business ₹12,000 (daily backups, 6 hrs), Store ₹25,000 (checkout tests, 12 hrs); 3-month initial period
+- [ ] Timelines: 3–4 weeks business site, 3–8 / 6–10 weeks corporate; training videos; 2FA and daily off-site backups (WordPress)
+
 ## Review facts written by the content team
 - [ ] Platform details (Amazon DSP/Brand Registry, Flipkart ad formats, Shopify technical notes, quick-commerce onboarding) are current
 - [ ] Tools named on pages (Helium 10, Semrush, etc.) are ones the team actually uses
