@@ -16,6 +16,6 @@
 9. Dubai keywords without a Dubai office: pages will say "Chennai team serving Dubai remotely". Meetings in Dubai have been removed from the copy for now. Tell us if you do travel to Dubai for clients.
 10. UAE quotes in AED after audit (no published AED prices). OK?
 
-## Australia pages (planned)
+## Australia pages (built)
 11. Australia quotes in AUD after audit (no published AUD prices). OK?
 12. Time zone: Sydney is 4.5–5.5 hours ahead of India, so our morning is their afternoon and replies come by their evening. OK to say this?

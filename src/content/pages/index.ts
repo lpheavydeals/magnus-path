@@ -13,5 +13,7 @@ import { ukShopifyPages } from './uk-shopify';
 import { ukSeoAmazonPages } from './uk-seo-amazon';
 import { uaeMarketingPages } from './uae-marketing';
 import { uaeServicesPages } from './uae-services';
+import { auShopifyPages } from './au-shopify';
+import { auSeoPages } from './au-seo';
 
-export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages];
+export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages];
