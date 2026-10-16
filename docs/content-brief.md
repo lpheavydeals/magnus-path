@@ -146,3 +146,7 @@ Same rules as the US/UK/UAE pages above, with these differences:
 
 ## UK round 2 (business websites)
 - **Extra allowed related URLs:** /uk/wordpress-agency/, /uk/woocommerce-agency/, /uk/wordpress-support/
+
+## UAE and Australia round 2 (business websites)
+- **Extra allowed related URLs:** /uae/web-development-company/, /uae/wordpress-development-dubai/,
+  /australia/web-development-company/, /australia/wordpress-developer/

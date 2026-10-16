@@ -108,6 +108,8 @@ export const businessWebsitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Web development company in the UAE', href: '/uae/web-development-company/' },
+      { label: 'Website development company in Australia', href: '/australia/web-development-company/' },
       { label: 'WordPress website design company', href: '/wordpress-website-development/' },
       { label: 'CMS and headless CMS web development', href: '/cms-website-development/' },
       { label: 'Website maintenance services', href: '/website-maintenance-services/' },
@@ -229,6 +231,8 @@ export const businessWebsitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'WordPress development company in Dubai', href: '/uae/wordpress-development-dubai/' },
+      { label: 'WordPress developer in Australia', href: '/australia/wordpress-developer/' },
       { label: 'WordPress agency for UK businesses', href: '/uk/wordpress-agency/' },
       { label: 'Hire a WordPress developer (US)', href: '/us/hire-wordpress-developer/' },
       { label: 'WooCommerce development for online stores', href: '/woocommerce-development/' },

@@ -172,6 +172,8 @@ export const globalPages: ServicePageData[] = [
       { title: 'White Label SEO', href: '/australia/white-label-seo/', body: 'SEO delivered under your agency’s brand: audits, on-page work, content and reporting, quoted in AUD.', icon: 'seo' },
       { title: 'SEO Outsourcing', href: '/australia/seo-outsourcing/', body: 'An offshore SEO team for Australian businesses and agencies, with a written monthly scope and task-level reports.', icon: 'ai' },
       { title: 'Shopify Agency', href: '/australia/shopify-agency/', body: 'Shopify experts for store builds, migrations, speed and Shopify Plus work, set up for GST, Afterpay and Australian shipping.', icon: 'shopify' },
+      { title: 'Web Development Company', href: '/australia/web-development-company/', body: 'Business and corporate websites for Australian companies, from small business sites to custom builds.', icon: 'website' },
+      { title: 'WordPress Developer', href: '/australia/wordpress-developer/', body: 'WordPress builds, custom blocks, fixes and monthly maintenance from developers working your afternoon.', icon: 'website' },
     ],
     process: [
       { title: 'Free audit and video call', body: 'We review your store, Amazon.com.au account, ad accounts or agency workload, then walk you through what we found on a call in your afternoon.' },
@@ -289,6 +291,8 @@ export const globalPages: ServicePageData[] = [
       { title: 'SEO Services Dubai', href: '/uae/seo-services-dubai/', body: 'Technical, on-page and local SEO for UAE businesses and online stores, with clean English and Arabic page versions.', icon: 'seo' },
       { title: 'Performance Marketing Agency Dubai', href: '/uae/performance-marketing-agency-dubai/', body: 'Meta, Google, Snapchat and TikTok ads set by margin, with tracking that stops COD refusals inflating ROAS.', icon: 'social' },
       { title: 'Amazon and Noon Agency', href: '/uae/amazon-noon-agency/', body: 'Amazon.ae and Noon listings, ads and account management, run as one plan so prices and promotions stay consistent.', icon: 'amazon' },
+      { title: 'Web Development Company', href: '/uae/web-development-company/', body: 'Corporate and business websites for UAE companies in English and Arabic, built on WordPress or a headless CMS.', icon: 'website' },
+      { title: 'WordPress Development Dubai', href: '/uae/wordpress-development-dubai/', body: 'Custom WordPress themes, bilingual RTL layouts, speed and security work for Dubai businesses.', icon: 'website' },
     ],
     platforms: ['Amazon.ae', 'Noon', 'Shopify', 'WooCommerce', 'Meta Ads', 'Google Ads', 'Snapchat Ads', 'TikTok Ads', 'GA4', 'WhatsApp Business'],
     process: [
