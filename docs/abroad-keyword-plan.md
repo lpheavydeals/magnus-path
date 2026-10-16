@@ -73,3 +73,22 @@ That is 7 seeds × 3 countries + 7 seeds for UAE = **28 exports**. If Semrush li
   page is unique content for a different market, not a translation.
 - Prices on country pages are quoted in GBP / USD / AUD / AED after the audit (no INR prices).
 - Never imply an overseas office; every page states we are a Chennai team working remotely.
+
+## Decision: United States (Semrush US data received 16 Oct 2026)
+The client approved building these pages under `/us/`. Pages that also have a global version are paired with hreflang
+(`en-US` for the US page, `x-default` for the global one), so Google shows the right page in each country.
+
+| Page | Primary keyword (US vol / KD) | Secondary keywords | Global twin |
+|---|---|---|---|
+| /us/ecommerce-marketing-agency/ (hub) | ecommerce marketing agency for US brands | links to all US pages | — |
+| /us/white-label-seo/ | white label seo services (4,400 / 20) | white label seo (8,100 / 35), white label seo agency (3,600 / 26) | /white-label-seo/ |
+| /us/seo-outsourcing/ | outsource seo (2,400 / 27) | seo outsourcing (1,600 / 21), offshore seo company (480 / 7) | /seo-outsourcing-india/ |
+| /us/shopify-seo-agency/ | shopify seo agency (3,600 / 24) | shopify seo services, shopify seo expert | /shopify-seo/ |
+| /us/shopify-plus-agency/ | shopify plus agency (1,900 / 17) | shopify plus development, migration | — |
+| /us/amazon-ppc-agency/ | amazon ppc agency (1,600 / 22) | amazon ppc management (1,600 / 23) | — |
+| /us/generative-engine-optimization-agency/ | generative engine optimization agency (1,600 / 30) | GEO agency, AI search optimization | /ai-search-optimization/ |
+| /us/hire-shopify-developer/ | hire shopify developer (1,300 / 17) | dedicated / offshore shopify developer | — |
+| /us/white-label-web-development/ | white label web development (~1,000 / 17–23) | outsource web development | — |
+| /us/amazon-account-management/ | amazon account management services (720 / 16) | amazon seller account management | /amazon-account-management/ |
+
+Skipped (KD > 40): shopify experts (59), ecommerce seo agency (45), amazon marketing agency (43), ecommerce agency (42).

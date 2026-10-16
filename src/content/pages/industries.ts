@@ -742,6 +742,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'White label SEO services for US agencies', href: '/us/white-label-seo/' },
       { label: 'SEO outsourcing to India', href: '/seo-outsourcing-india/' },
       { label: 'E-commerce SEO services', href: '/ecommerce-seo/' },
       { label: 'SEO packages and pricing', href: '/seo-packages/' },
@@ -881,6 +882,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Outsource SEO from the United States', href: '/us/seo-outsourcing/' },
       { label: 'White label SEO services for agencies', href: '/white-label-seo/' },
       { label: 'E-commerce SEO services', href: '/ecommerce-seo/' },
       { label: 'SEO services for any business', href: '/seo-services/' },

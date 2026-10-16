@@ -245,6 +245,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Amazon PPC agency for US sellers', href: '/us/amazon-ppc-agency/' },
       { label: 'Amazon account management services', href: '/amazon-account-management/' },
       { label: 'Amazon SEO and listing optimisation', href: '/amazon-seo/' },
       { label: 'Performance marketing agency for Meta and Google ads', href: '/performance-marketing/' },
@@ -366,6 +367,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Amazon account management services for US sellers', href: '/us/amazon-account-management/' },
       { label: 'Amazon advertising agency for Sponsored ads', href: '/amazon-marketing-agency/' },
       { label: 'Amazon SEO and listing optimisation services', href: '/amazon-seo/' },
       { label: 'Flipkart account management services', href: '/flipkart-account-management/' },

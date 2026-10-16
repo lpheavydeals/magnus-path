@@ -248,6 +248,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Shopify SEO agency for US brands', href: '/us/shopify-seo-agency/' },
       { label: 'Ecommerce SEO services', href: '/ecommerce-seo/' },
       { label: 'Shopify development company', href: '/shopify-development/' },
       { label: 'AI search optimisation for Shopify brands', href: '/ai-search-optimization/' },
@@ -495,6 +496,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Generative engine optimization agency (US)', href: '/us/generative-engine-optimization-agency/' },
       { label: 'Ecommerce SEO services', href: '/ecommerce-seo/' },
       { label: 'Shopify SEO services', href: '/shopify-seo/' },
       { label: 'SEO services for any business', href: '/seo-services/' },

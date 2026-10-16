@@ -21,6 +21,12 @@ export function getStaticPaths() {
 const { page } = Astro.props as { page: ServicePageData };
 const url = `${site.url}/${page.slug}/`;
 const plainH1 = page.h1.replace(/\*/g, '');
+const lang = page.market === 'US' ? 'en-US' : 'en-IN';
+// hreflang pairs: a US page and the global page it localises point at each other
+const usTwin = allPages.find((p) => p.twin === page.slug);
+const alternates = page.twin
+  ? [{ hreflang: 'en-US', href: `/${page.slug}/` }, { hreflang: 'x-default', href: `/${page.twin}/` }]
+  : usTwin ? [{ hreflang: 'en-US', href: `/${usTwin.slug}/` }, { hreflang: 'x-default', href: `/${page.slug}/` }] : [];
 const crumbs = [{ label: 'Home', href: '/' }, ...page.breadcrumb, { label: page.navLabel, href: `/${page.slug}/` }];
 
 const schema: object[] = [
@@ -28,14 +34,14 @@ const schema: object[] = [
     '@context': 'https://schema.org', '@type': 'Service', name: page.primaryKeyword.replace(/\b\w/g, (c) => c.toUpperCase()),
     serviceType: page.primaryKeyword, description: page.description, url,
     provider: { '@id': `${site.url}/#org` },
-    areaServed: page.local ? { '@type': 'City', name: page.local.city } : ['IN', 'GB', 'AE', 'AU', 'US'],
-    ...(page.pricing ? { offers: { '@type': 'Offer', priceCurrency: 'INR', description: `Starting from ${page.pricing.from} ${page.pricing.unit}` } } : {}),
+    areaServed: page.local ? { '@type': 'City', name: page.local.city } : page.market === 'US' ? { '@type': 'Country', name: 'United States' } : ['IN', 'GB', 'AE', 'AU', 'US'],
+    ...(page.pricing ? { offers: { '@type': 'Offer', priceCurrency: /US\$|\$/.test(page.pricing.from) ? 'USD' : 'INR', description: `Starting from ${page.pricing.from} ${page.pricing.unit}` } } : {}),
   },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: `${site.url}${c.href}` })) },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: page.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
 ];
 ---
-<Base title={page.title} description={page.description} schema={schema}>
+<Base title={page.title} description={page.description} schema={schema} lang={lang} alternates={alternates}>
   <PageHero eyebrow={page.eyebrow} h1={page.h1} intro={page.intro} icon={page.kind === 'location' ? 'path' : page.icon} facts={page.facts} trail={page.breadcrumb} current={page.navLabel} />
   <Pains items={page.pains} heading={page.headings.pains} />
   {page.children && <Children items={page.children} heading={page.headings.children ?? `${page.navLabel} services`} />}

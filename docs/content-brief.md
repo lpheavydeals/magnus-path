@@ -74,3 +74,23 @@ spelling (optimise, catalogue), ₹ amounts in lakh/crore. No hype words ("cutti
 - Tamil Nadu: Flipkart reports about 70,000 sellers in the state (Aug 2026); Tiruppur, Erode, Salem and Kancheepuram are major textile clusters.
 - Tamil Nadu's electronics exports rose about 78% to ~US$9.56 billion in FY24, roughly a third of India's total (KNN India).
 - Google AI Overviews reduce clicks to organic results; AI-referred shoppers convert at higher rates than organic search (Similarweb/Adobe 2026 data).
+
+## United States pages (`src/content/pages/us-*.ts`, URLs under `/us/`)
+These override the India rules above where they conflict.
+- **Audience:** US e-commerce brands, Amazon sellers and US digital agencies that want delivery capacity.
+- **Spelling and money:** US English (optimize, catalog, color). Money in USD only; never ₹.
+- **Set on every US page:** `market: 'US'`, `kind: 'global'` (the hub uses `kind: 'hub'`), `breadcrumb: [{ label: 'United States', href: '/us/ecommerce-marketing-agency/' }]`
+  (the hub itself has an empty breadcrumb). Set `twin` to the global page's slug when one exists for the same service.
+- **Honesty:** no US office, no US address or phone. Say plainly that we are a Chennai, India team working remotely.
+  No "Shopify Partner", "Shopify Plus Partner", "Amazon Ads verified partner" or similar claims. Say that we
+  work *on* Shopify Plus or Amazon Ads.
+- **Time zones:** India (IST) is 9.5 hours ahead of US Eastern in summer and 10.5 hours in winter (12.5 / 13.5 hours
+  ahead of Pacific). Say this honestly: there is a short overlap in the US Eastern morning (our evening) for calls,
+  and most work is done while the US sleeps, so the client wakes up to finished tasks. Do not promise US-hours support.
+- **Pricing:** only these USD prices may appear: white-label SEO **US$350 / month per client site**, SEO outsourcing
+  **US$500 / month**. Every other US page has no `pricing` block; say it is quoted in USD after a free audit.
+- **Primary keyword phrasing:** exactly as given in the task. Keep sentences natural; never write broken
+  exact-match phrases like "amazon ppc agency US brands hire".
+- **Extra allowed related URLs:** /us/ecommerce-marketing-agency/, /us/white-label-seo/, /us/seo-outsourcing/,
+  /us/white-label-web-development/, /us/shopify-seo-agency/, /us/shopify-plus-agency/, /us/hire-shopify-developer/,
+  /us/amazon-ppc-agency/, /us/amazon-account-management/, /us/generative-engine-optimization-agency/

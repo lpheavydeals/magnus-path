@@ -38,3 +38,9 @@
 - [ ] Submit sitemap (`/sitemap-index.xml`)
 - [ ] Google Business Profile created with identical NAP
 - [ ] Lighthouse check on home, a service page and a blog post (target 95+)
+
+## Confirm terms on United States pages (`/us/…`)
+- [ ] USD prices: white-label SEO US$350 / site / month, SEO outsourcing US$500 / month; all other US services "quoted in USD after audit"
+- [ ] Time-zone promise: short overlap in the US Eastern morning, overnight turnaround
+- [ ] No Shopify Plus Partner / Amazon partner status is claimed. Update the copy if you join either programme
+- [ ] Engagement models on /us/hire-shopify-developer/ (fixed project, dedicated monthly developer, hourly bank)
