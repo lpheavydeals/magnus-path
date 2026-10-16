@@ -1,7 +1,12 @@
 ---
 import { site } from '../data/site';
-interface Props { heading?: string; sub?: string; }
-const { heading = 'Ready to sell more online?', sub = 'Get a free e-commerce store audit. Within 24 hours you receive a video walkthrough and a PDF with the fixes that will move your sales fastest.' } = Astro.props;
+interface Props { heading?: string; sub?: string; market?: 'US' | 'UK'; }
+const salesRanges = {
+  IN: ['Under ₹5 lakh', '₹5–25 lakh', '₹25 lakh – 1 crore', 'Above ₹1 crore'],
+  US: ['Under $10k', '$10k–50k', '$50k–250k', 'Above $250k'],
+  UK: ['Under £10k', '£10k–50k', '£50k–250k', 'Above £250k'],
+};
+const { market, heading = 'Ready to sell more online?', sub = 'Get a free e-commerce store audit. Within 24 hours you receive a video walkthrough and a PDF with the fixes that will move your sales fastest.' } = Astro.props;
 ---
 <section class="cta" id="audit">
   <div class="cta__waves" aria-hidden="true">
@@ -27,11 +32,11 @@ const { heading = 'Ready to sell more online?', sub = 'Get a free e-commerce sto
       <input type="hidden" name="source" value="website-audit-form" />
       <label>Your name<input name="name" autocomplete="name" required /></label>
       <label>Work email<input name="email" type="email" autocomplete="email" required /></label>
-      <label>WhatsApp number<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required /></label>
+      <label>{market ? "Phone or WhatsApp" : "WhatsApp number"}<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required /></label>
       <label>Monthly online sales
         <select name="sales" required>
           <option value="">Select a range</option>
-          <option>Just starting</option><option>Under ₹5 lakh</option><option>₹5–25 lakh</option><option>₹25 lakh – 1 crore</option><option>Above ₹1 crore</option>
+          <option>Just starting</option>{salesRanges[market ?? 'IN'].map((r) => <option>{r}</option>)}
         </select>
       </label>
       <label class="full">Store, Amazon or website link<input name="store" type="url" placeholder="https://" required /></label>

@@ -8,5 +8,8 @@ import { businessWebsitePages2 } from './business-websites-2';
 import { usAgencyPages } from './us-agency';
 import { usShopifyPages } from './us-shopify';
 import { usAmazonGeoPages } from './us-amazon-geo';
+import { ukAgencyPages } from './uk-agency';
+import { ukShopifyPages } from './uk-shopify';
+import { ukSeoAmazonPages } from './uk-seo-amazon';
 
-export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages];
+export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages];

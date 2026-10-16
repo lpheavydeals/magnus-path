@@ -1,8 +1,8 @@
 ---
 import Icon3D from '../Icon3D.astro';
 import type { IconName } from '../../data/types';
-interface Props { items: { title: string; href: string; body: string; icon: IconName }[]; heading: string; }
-const { items, heading } = Astro.props;
+interface Props { items: { title: string; href: string; body: string; icon: IconName }[]; heading: string; currency?: string; }
+const { items, heading, currency } = Astro.props;
 ---
 <section class="section chd">
   <div class="wrap">
@@ -10,7 +10,7 @@ const { items, heading } = Astro.props;
     <ul class="chd__grid">
       {items.map((c) => (
         <li data-reveal><a href={c.href}>
-          <div class="chd__icon"><Icon3D name={c.icon} /></div>
+          <div class="chd__icon"><Icon3D name={c.icon} currency={currency} /></div>
           <h3>{c.title}</h3><p>{c.body}</p><span class="chd__go" aria-hidden="true">→</span>
         </a></li>
       ))}

@@ -22,6 +22,7 @@ const { page } = Astro.props as { page: ServicePageData };
 const url = `${site.url}/${page.slug}/`;
 const plainH1 = page.h1.replace(/\*/g, '');
 const markets = { US: { lang: 'en-US', country: 'United States' }, UK: { lang: 'en-GB', country: 'United Kingdom' } } as const;
+const currency = page.market === 'US' ? '$' : page.market === 'UK' ? '£' : '₹';
 const lang = page.market ? markets[page.market].lang : 'en-IN';
 // hreflang: a global page and its country versions (pages whose `twin` is that global page) all point at each other
 const globalSlug = page.twin ?? page.slug;
@@ -44,9 +45,9 @@ const schema: object[] = [
 ];
 ---
 <Base title={page.title} description={page.description} schema={schema} lang={lang} alternates={alternates}>
-  <PageHero eyebrow={page.eyebrow} h1={page.h1} intro={page.intro} icon={page.kind === 'location' ? 'path' : page.icon} facts={page.facts} trail={page.breadcrumb} current={page.navLabel} />
+  <PageHero eyebrow={page.eyebrow} h1={page.h1} intro={page.intro} icon={page.kind === 'location' ? 'path' : page.icon} facts={page.facts} trail={page.breadcrumb} current={page.navLabel} currency={currency} />
   <Pains items={page.pains} heading={page.headings.pains} />
-  {page.children && <Children items={page.children} heading={page.headings.children ?? `${page.navLabel} services`} />}
+  {page.children && <Children items={page.children} currency={currency} heading={page.headings.children ?? `${page.navLabel} services`} />}
   <Includes items={page.includes} heading={page.headings.includes} platforms={page.platforms} />
   <ProcessPanel steps={page.process} heading={page.headings.process} />
   {page.pricing && <PricingTeaser {...page.pricing} heading={page.headings.pricing ?? `Clear pricing for ${page.navLabel}`} />}
@@ -54,5 +55,5 @@ const schema: object[] = [
   <Guide sections={page.guide} title={page.headings.guide} />
   <FAQ items={page.faqs} />
   <Related links={page.related} />
-  <LeadForm />
+  <LeadForm market={page.market} />
 </Base>

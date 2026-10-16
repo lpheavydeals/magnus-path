@@ -5,8 +5,8 @@ import PathObject from '../PathObject.astro';
 import Breadcrumbs from './Breadcrumbs.astro';
 import type { IconName, Link } from '../../data/types';
 import { site } from '../../data/site';
-interface Props { eyebrow: string; h1: string; intro: string; icon?: IconName | 'path'; facts?: string[]; trail: Link[]; current: string; ctaLabel?: string; }
-const { eyebrow, h1, intro, icon = 'path', facts = [], trail, current, ctaLabel = 'Get a free store audit' } = Astro.props;
+interface Props { eyebrow: string; h1: string; intro: string; icon?: IconName | 'path'; facts?: string[]; trail: Link[]; current: string; ctaLabel?: string; currency?: string; }
+const { eyebrow, h1, intro, icon = 'path', facts = [], trail, current, ctaLabel = 'Get a free store audit', currency } = Astro.props;
 ---
 <section class="ph">
   <div class="ph__bg" aria-hidden="true"></div>
@@ -27,7 +27,7 @@ const { eyebrow, h1, intro, icon = 'path', facts = [], trail, current, ctaLabel 
         <div class="ph__grid-lines"></div>
         {icon === 'path'
           ? <PathObject class="ph__obj" layers={26} top="#2a2d33" side="#121316" />
-          : <div class="ph__icon"><Icon3D name={icon} /></div>}
+          : <div class="ph__icon"><Icon3D name={icon} currency={currency} /></div>}
         {facts.map((f, i) => <span class={`ph__chip ph__chip--${i}`}>{i === 0 && <i class="dot"></i>}{f}</span>)}
       </div>
     </div>
