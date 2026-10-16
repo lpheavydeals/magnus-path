@@ -18,5 +18,7 @@ import { auSeoPages } from './au-seo';
 import { usWebsitesPages } from './us-websites';
 import { usWooWpPages } from './us-woo-wp';
 import { ukWebsitesPages } from './uk-websites';
+import { uaeWebsitesPages } from './uae-websites';
+import { auWebsitesPages } from './au-websites';
 
-export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages];
+export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages, ...uaeWebsitesPages, ...auWebsitesPages];
