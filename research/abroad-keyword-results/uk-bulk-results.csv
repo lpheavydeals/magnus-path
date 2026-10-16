@@ -1,0 +1,25 @@
+Keyword,Intent,Volume,KD,CPC_USD,Decision
+ecommerce seo agency,I,5400,25,10.92,/uk/ecommerce-seo-agency/ (secondary)
+shopify agency,N,2400,54,7.02,Skip head term (KD>50); mention on /uk/shopify-agency/
+white label seo,I,2400,27,12.59,/uk/white-label-seo/ (secondary)
+ecommerce seo agency uk,I,1300,21,11.91,/uk/ecommerce-seo-agency/ (primary)
+ecommerce agency uk,"I,C",1000,52,10.43,Skip for now (KD>50); mention on UK hub
+shopify agency uk,I,1000,28,6.66,/uk/shopify-agency/ (primary)
+white label seo uk,I,880,15,0.00,/uk/white-label-seo/ (primary)
+amazon advertising agency uk,C,480,29,16.66,/uk/amazon-agency/ (secondary)
+amazon agency uk,I,480,35,16.01,/uk/amazon-agency/ (primary)
+shopify experts uk,N,480,23,11.10,/uk/shopify-agency/ (secondary)
+ecommerce marketing agency uk,I,390,19,8.21,/uk/ecommerce-marketing-agency/ (retarget existing page as UK hub)
+seo outsourcing,I,390,20,21.76,/uk/seo-outsourcing/ (primary)
+shopify developer uk,I,390,25,14.40,/uk/shopify-developer/ (primary)
+amazon ppc agency uk,C,260,9,24.96,/uk/amazon-agency/ (secondary; heading + FAQ)
+shopify plus agency uk,I,260,16,12.43,/uk/shopify-plus-agency/ (primary)
+ai search optimisation agency,I,210,16,14.35,/uk/ai-search-optimisation-agency/ (primary)
+shopify development agency uk,I,110,17,0.00,/uk/shopify-agency/ (secondary)
+white label web development uk,I,70,3,0.00,Section on UK hub
+outsource seo uk,I,50,8,0.00,/uk/seo-outsourcing/ (secondary)
+amazon account management uk,"I,T",40,24,0.00,Section on /uk/amazon-agency/
+digital marketing agency for ecommerce uk,C,10,13,0.00,Mention on UK hub
+hire shopify developer uk,N,0,18,0.00,Skip (no volume)
+offshore development uk,I,0,40,0.00,Skip (no volume)
+outsource web development uk,I,0,24,0.00,Skip (no volume)

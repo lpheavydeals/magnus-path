@@ -92,3 +92,22 @@ The client approved building these pages under `/us/`. Pages that also have a gl
 | /us/amazon-account-management/ | amazon account management services (720 / 16) | amazon seller account management | /amazon-account-management/ |
 
 Skipped (KD > 40): shopify experts (59), ecommerce seo agency (45), amazon marketing agency (43), ecommerce agency (42).
+
+## Proposal: United Kingdom (Semrush UK data received 16 Oct 2026)
+Full data and per-keyword decisions: `research/abroad-keyword-results/uk-bulk-results.csv`. UK pages use British spelling
+(optimise, catalogue) and GBP.
+
+| Page | Primary keyword (UK vol / KD) | Secondary | Global twin |
+|---|---|---|---|
+| /uk/ecommerce-marketing-agency/ (existing → UK hub) | ecommerce marketing agency uk (390 / 19) | ecommerce agency uk (1,000 / 52), white label web development uk (70 / 3) | — |
+| /uk/ecommerce-seo-agency/ | ecommerce seo agency uk (1,300 / 21) | ecommerce seo agency (5,400 / 25) | /ecommerce-seo/ |
+| /uk/shopify-agency/ | shopify agency uk (1,000 / 28) | shopify experts uk (480 / 23), shopify development agency uk (110 / 17) | /shopify-development/ |
+| /uk/shopify-developer/ | shopify developer uk (390 / 25) | — | — |
+| /uk/shopify-plus-agency/ | shopify plus agency uk (260 / 16) | — | — |
+| /uk/amazon-agency/ | amazon agency uk (480 / 35) | amazon advertising agency uk (480 / 29), amazon ppc agency uk (260 / 9), amazon account management uk (40) | /amazon-marketing-agency/ |
+| /uk/white-label-seo/ | white label seo uk (880 / 15) | white label seo (2,400 / 27) | /white-label-seo/ |
+| /uk/seo-outsourcing/ | seo outsourcing (390 / 20) | outsource seo uk (50 / 8) | /seo-outsourcing-india/ |
+| /uk/ai-search-optimisation-agency/ | ai search optimisation agency (210 / 16) | — | /ai-search-optimization/ |
+
+Skipped: shopify agency (KD 54), ecommerce agency uk (KD 52), and three keywords with no volume.
+Technical: hreflang must support several country versions per global page (en-US + en-GB + x-default).
