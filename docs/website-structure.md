@@ -217,3 +217,9 @@ proof → "We'll reply within 24 hours".
 - Partner badges held (Shopify Partner, Amazon SPN, Google Partner, Meta)
 - 2–3 client results for case studies (can be anonymised)
 - Starting prices for each service
+
+## Chennai keyword check (lists prepared 17 Oct 2026)
+`research/keyword-lists/chennai/` holds 30 Chennai keywords for Semrush (database: India). They confirm the existing Chennai
+pages and test new ones (Chennai Shopify, WordPress, Google/Meta ads, Amazon, e-commerce SEO, maintenance). Rule: a new
+Chennai page needs ≥ 100 searches and KD ≤ 35. A Maps pack in the results is fine for Chennai (we have a real office there),
+but those pages also need the Google Business Profile set up.
