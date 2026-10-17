@@ -7,4 +7,4 @@ Decided 17 Oct 2026 (client: "go as per your suggestions"):
 Closed 17 Oct 2026: 7 (UK VAT wording kept as is) and 13 (no Webflow page) — client said ignore.
 
 Still open:
-- 15. Tools named on UAE/Australia web pages (Next.js, Astro, Sanity, Strapi, Contentful, HubSpot, Zoho, Pipedrive): tell us any to remove.
+- None. (15: CRM names HubSpot, Zoho CRM and Pipedrive removed sitewide on 17 Oct 2026; headless CMS tools kept.)

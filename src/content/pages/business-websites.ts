@@ -35,7 +35,7 @@ export const businessWebsitePages: ServicePageData[] = [
       { title: 'Speed, SEO and accessibility', body: 'Optimised images, clean code, schema markup, readable contrast and keyboard-friendly navigation, so the site loads quickly, ranks for what buyers search and works for every visitor.' },
       { title: 'Analytics, lead tracking and hosting', body: 'GA4 goals, call and WhatsApp click tracking, form-to-CRM or email routing, secure hosting, SSL, backups and 30 days of support after launch.' },
     ],
-    platforms: ['WordPress', 'Webflow', 'Headless CMS', 'Astro', 'Google Analytics 4', 'Google Search Console', 'Zoho CRM', 'HubSpot', 'Cloudflare'],
+    platforms: ['WordPress', 'Webflow', 'Headless CMS', 'Astro', 'Google Analytics 4', 'Google Search Console', 'Cloudflare'],
     process: [
       { title: 'Discovery and sitemap', body: 'We meet your team, review competitors and your current site, and agree on audiences, pages, content owners and the CMS, with a fixed quote and timeline.' },
       { title: 'Content and design', body: 'We help shape the copy, then design the home page and key templates on desktop and mobile. You review real layouts with your own content.' },
@@ -89,7 +89,7 @@ export const businessWebsitePages: ServicePageData[] = [
         heading: 'SEO, analytics and lead tracking from launch day',
         paragraphs: [
           'A corporate site should be found for the products and services you sell, not only your company name. That means a page per important offering, descriptive titles, schema markup, internal links and content written in the words buyers search with. For exporters, it can also mean country or language pages.',
-          'Just as important is knowing what the site produces. We track form submissions, calls, WhatsApp clicks and brochure downloads in GA4, and route enquiries to email or a CRM such as Zoho or HubSpot. When you later run LinkedIn or Google ads, you can see which campaigns bring real enquiries.',
+          'Just as important is knowing what the site produces. We track form submissions, calls, WhatsApp clicks and brochure downloads in GA4, and route enquiries to email or your CRM. When you later run LinkedIn or Google ads, you can see which campaigns bring real enquiries.',
         ],
       },
       {

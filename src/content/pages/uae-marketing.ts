@@ -43,7 +43,7 @@ export const uaeMarketingPages: ServicePageData[] = [
       { title: 'Onboarding and tracking', body: 'Access to ad accounts and your website, tracking and WhatsApp set-up, a shared project board and a WhatsApp or Slack channel for day-to-day questions.' },
       { title: 'Run, report and review', body: 'Daily campaign management, a monthly report on leads, sales and cost per result, and a review call to agree next month’s priorities.' },
     ],
-    platforms: ['Google Ads', 'Meta Ads', 'Snapchat Ads', 'TikTok Ads', 'LinkedIn Ads', 'GA4', 'Google Tag Manager', 'Google Business Profile', 'WhatsApp Business', 'HubSpot', 'Shopify', 'WordPress'],
+    platforms: ['Google Ads', 'Meta Ads', 'Snapchat Ads', 'TikTok Ads', 'LinkedIn Ads', 'GA4', 'Google Tag Manager', 'Google Business Profile', 'WhatsApp Business', 'Shopify', 'WordPress'],
     guide: [
       {
         heading: 'What a digital marketing agency in Dubai should deliver',

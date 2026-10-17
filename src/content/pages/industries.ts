@@ -547,7 +547,7 @@ export const industryPages: ServicePageData[] = [
       { title: 'Launch SEO and campaigns', body: 'Export SEO, Google Ads and LinkedIn campaigns go live, along with updated directory profiles pointing back to your site.' },
       { title: 'Qualify and improve', body: 'Monthly reviews of enquiry quality with your sales team. We cut sources that bring poor leads and put more into those that bring orders.' },
     ],
-    platforms: ['WordPress', 'Google Ads', 'LinkedIn Ads', 'Google Search Console', 'Google Analytics 4', 'HubSpot', 'Zoho CRM', 'WhatsApp Business'],
+    platforms: ['WordPress', 'Google Ads', 'LinkedIn Ads', 'Google Search Console', 'Google Analytics 4', 'WhatsApp Business'],
     pricing: {
       from: '₹50,000',
       unit: 'per month + ad spend',

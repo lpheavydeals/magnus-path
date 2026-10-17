@@ -33,11 +33,11 @@ export const auWebsitesPages: ServicePageData[] = [
       { title: 'Small business website design', body: 'Lean sites for trades, clinics, consultants and local services: clear service pages, reviews, a quote form and click-to-call, built to load quickly on mobile data.' },
       { title: 'Corporate and business websites', body: 'Larger sites for mid-size companies with service and industry pages, case studies, careers, team profiles and approval workflows for marketing and leadership.' },
       { title: 'Local service-area pages', body: 'Genuinely useful pages for the suburbs and regions you cover, linked to your Google Business Profile, with local details rather than copies with the suburb name swapped.' },
-      { title: 'Lead forms and CRM connection', body: 'Quote and booking forms that capture job type, postcode and timing, then send each enquiry to HubSpot, Pipedrive, Zoho or your inbox with source tracking in GA4.' },
+      { title: 'Lead forms and CRM connection', body: 'Quote and booking forms that capture job type, postcode and timing, then send each enquiry to your CRM or inbox with source tracking in GA4.' },
       { title: 'Speed, accessibility and privacy basics', body: 'Mobile-first builds tested on real phones, common WCAG checks such as contrast, labels and keyboard use, plus a privacy policy page and forms that only ask for what you need.' },
       { title: 'Hosting, ownership and handover', body: 'Hosting in an Australian data centre where it suits, SSL, backups, and the domain, hosting, analytics and code all registered to your business before launch.' },
     ],
-    platforms: ['WordPress', 'Headless CMS', 'Astro', 'Next.js', 'Google Business Profile', 'GA4', 'Google Search Console', 'HubSpot', 'Pipedrive', 'Zoho CRM'],
+    platforms: ['WordPress', 'Headless CMS', 'Astro', 'Next.js', 'Google Business Profile', 'GA4', 'Google Search Console'],
     process: [
       { title: 'Free audit and call', body: 'We review your current site, Google Business Profile, speed and enquiry flow, then talk through what we found on a video call in your afternoon.' },
       { title: 'Scope and AUD quote', body: 'A written scope listing pages, suburbs, forms, CMS and integrations, with a fixed AUD quote and launch date. Nothing starts until you approve.' },
@@ -71,7 +71,7 @@ export const auWebsitesPages: ServicePageData[] = [
         heading: 'Google Business Profile, suburb pages and quote forms',
         paragraphs: [
           'For service businesses, the website and Google Business Profile work together. Link your profile to the most relevant page, keep your business name, address and phone number identical everywhere and make sure the service areas listed match what the website says.',
-          'Service-area pages help when they are genuinely local: the suburbs you cover, typical jobs in that area, photos of local work and reviews from customers nearby. Pages that only swap the suburb name rarely rank for long. Then connect your quote form to a CRM such as HubSpot, Pipedrive or Zoho, capture postcode and job type, and track each enquiry’s source in GA4 so you know which pages earn work.',
+          'Service-area pages help when they are genuinely local: the suburbs you cover, typical jobs in that area, photos of local work and reviews from customers nearby. Pages that only swap the suburb name rarely rank for long. Then connect your quote form to your CRM, capture postcode and job type, and track each enquiry’s source in GA4 so you know which pages earn work.',
         ],
       },
       {
