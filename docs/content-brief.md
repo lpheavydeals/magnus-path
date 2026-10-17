@@ -66,6 +66,9 @@ spelling (optimise, catalogue), ₹ amounts in lakh/crore. No hype words ("cutti
 | B2B digital marketing for manufacturers & exporters | ₹50,000 / month |
 | White-label SEO for agencies | US$350 / month per client site |
 | SEO outsourcing to India | US$500 / month |
+| White-label SEO (UK pages) | £275 / month per client site |
+| SEO outsourcing (UK pages) | £400 / month |
+| Website maintenance (US pages) | US$99 Basic, US$199 Business, US$349 Store per site / month |
 
 ## Allowed facts (with sources, may be cited)
 - India's digital ad spend is forecast to grow about 20% in 2026, with commerce/retail-media ads the fastest-growing segment (Pitch Madison / WPP Media 2026 reports).

@@ -1,26 +1,10 @@
-# Open questions (to settle after all countries are done)
+# Open questions
 
-## United States pages (built)
-1. USD prices: white-label SEO US$350 / site / month, SEO outsourcing US$500 / month. OK?
-2. Promise of a short overlap in the US Eastern morning plus overnight turnaround. OK?
-3. Hiring options on /us/hire-shopify-developer/: fixed project, dedicated monthly developer, bank of hours. OK?
-4. Partner status: pages say we are not a Shopify Plus Partner or Amazon Ads partner. Is this still true?
+Decided 17 Oct 2026 (client: "go as per your suggestions"):
+- 1 US prices US$350 / US$500 published · 5 UK white-label SEO £275 and outsourcing £400 published · 14 US maintenance plans US$99 / 199 / 349 published
+- 2, 8, 9, 10, 11, 12 kept as written · 3, 4 confirmed · 6 hubs approved
 
-## United Kingdom pages (built)
-5. UK prices: quote in GBP after audit (current UK page), or publish GBP starting prices for white-label SEO and outsourcing (e.g. £275 / £400)?
-6. The UK, UAE (and planned Australia) country pages were retargeted and turned into hubs with new H1s and titles. OK?
-7. /uk/amazon-agency/ FAQ says non-UK sellers usually need UK VAT registration from their first sale and Amazon collects VAT on some orders. Confirm with your accountant before launch.
-8. Lead form sales ranges for US/UK pages ($ / £: under 10k, 10–50k, 50–250k, 250k+ per month). OK?
-
-## UAE pages (built)
-9. Dubai keywords without a Dubai office: pages will say "Chennai team serving Dubai remotely". Meetings in Dubai have been removed from the copy for now. Tell us if you do travel to Dubai for clients.
-10. UAE quotes in AED after audit (no published AED prices). OK?
-
-## Australia pages (built)
-11. Australia quotes in AUD after audit (no published AUD prices). OK?
-12. Time zone: Sydney is 4.5–5.5 hours ahead of India, so our morning is their afternoon and replies come by their evening. OK to say this?
-
-## Business websites abroad (round 2)
-13. Do you build Webflow sites? "webflow development agency" has 880 US searches at KD 27. We only build that page if you offer Webflow.
-14. Website maintenance in USD: quote after audit, or publish US plans (e.g. Basic / Business / Store like the INR plans)?
-15. Tools named on the UAE/Australia web pages: Next.js, Astro, Sanity, Strapi, Contentful (headless CMS), HubSpot, Zoho, Pipedrive (CRM). Remove any you don't work with.
+Still open:
+- 7. /uk/amazon-agency/ VAT wording: check with your accountant before launch.
+- 13. Webflow: we only build /us/webflow-development-agency/ if you offer Webflow.
+- 15. Tools named on UAE/Australia web pages (Next.js, Astro, Sanity, Strapi, Contentful, HubSpot, Zoho, Pipedrive): tell us any to remove.

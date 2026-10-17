@@ -58,3 +58,4 @@
 ## Confirm terms on Australia pages (`/australia/…`)
 - [ ] All Australian services quoted in AUD after audit; lead-form ranges in AUD
 - [ ] Time-zone wording (our morning = east-coast afternoon)
+- [ ] Published abroad prices (17 Oct 2026): UK £275 white-label SEO / £400 outsourcing; US maintenance US$99 / 199 / 349 (2 / 6 / 12 hrs)
