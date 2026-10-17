@@ -174,7 +174,7 @@ export const businessWebsitePages2: ServicePageData[] = [
       { title: 'Google Business Profile and local SEO setup', body: 'Your Google Business Profile, map location, reviews link and local schema connected to the website so you show up in nearby searches.' },
       { title: 'Hosting, launch and maintenance', body: 'Domain, hosting, SSL and email setup, analytics and lead tracking at launch, then optional monthly maintenance so the site stays current.' },
     ],
-    platforms: ['WordPress', 'Astro', 'Webflow', 'Google Business Profile', 'Google Analytics 4', 'Google Search Console', 'WhatsApp Business'],
+    platforms: ['WordPress', 'Astro', 'Google Business Profile', 'Google Analytics 4', 'Google Search Console', 'WhatsApp Business'],
     local: {
       city: 'Chennai',
       areas: ['T. Nagar', 'Anna Nagar', 'Guindy', 'OMR', 'Velachery', 'Ambattur', 'Nungambakkam', 'Adyar', 'Porur', 'Tambaram'],

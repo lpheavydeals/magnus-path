@@ -145,7 +145,7 @@ Same rules as the US/UK/UAE pages above, with these differences:
 ## US round 2 (business websites)
 - **Extra allowed related URLs:** /us/website-maintenance-services/, /us/hire-wordpress-developer/, /us/woocommerce-agency/,
   /us/white-label-wordpress-development/
-- No Webflow claims: we do not offer Webflow (unconfirmed), so never mention building Webflow sites.
+- No Webflow: the client does not offer it (confirmed 17 Oct 2026). Never mention Webflow.
 
 ## UK round 2 (business websites)
 - **Extra allowed related URLs:** /uk/wordpress-agency/, /uk/woocommerce-agency/, /uk/wordpress-support/

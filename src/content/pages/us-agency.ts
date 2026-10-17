@@ -312,7 +312,7 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'Overnight delivery', body: 'Work happens during your night against the plan. The board shows what is planned, in progress and done.' },
       { title: 'Report and adjust', body: 'A monthly report listing every task, page and link, with traffic and conversions, then a call to set next month’s priorities.' },
     ],
-    platforms: ['Google Search Console', 'GA4', 'Ahrefs', 'Semrush', 'Screaming Frog', 'Looker Studio', 'WordPress', 'Shopify', 'Webflow'],
+    platforms: ['Google Search Console', 'GA4', 'Ahrefs', 'Semrush', 'Screaming Frog', 'Looker Studio', 'WordPress', 'Shopify'],
     pricing: {
       from: 'US$500',
       unit: '/ month',
