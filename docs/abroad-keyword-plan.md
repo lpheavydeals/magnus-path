@@ -182,3 +182,10 @@ Before building, check the Google results for "wordpress development company dub
 | /australia/web-development-company/ | website development company australia (390 / 31) | small business / corporate / business website design australia (30–50) | /corporate-website-development/ |
 | /australia/wordpress-developer/ | wordpress developer australia (320 / 19) | wordpress development australia (90 / 12), wordpress agency australia (50), wordpress maintenance australia (90 / 28) | /wordpress-website-development/ |
 Skipped: wordpress support australia (KD 58), woocommerce agency australia and headless cms agency australia (20 searches each).
+
+## Office cities: London and Bengaluru (lists prepared 17 Oct 2026)
+With staffed offices in London (E18) and Bengaluru, city keywords are now in scope, including Maps-pack results once each
+office has its own Google Business Profile.
+- London: `research/abroad-keyword-lists/london/` (30 keywords, UK database), incl. East London and Essex variants (E18 borders Essex).
+- Bengaluru: `research/keyword-lists/bengaluru/` (30 keywords, India database), "bangalore" and "bengaluru" spellings.
+Rule: city page needs ≥ 100 searches and KD ≤ 40 (city keywords with a local office and GBP are easier to win than the KD suggests).

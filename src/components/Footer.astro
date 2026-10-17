@@ -46,12 +46,14 @@ const year = new Date().getFullYear();
       <div class="ftr__brand">
         <Logo />
         <p>{site.tagline}</p>
-        <address>
-          <strong>{site.name}</strong><br />
-          {site.address.street}, {site.address.locality}, {site.address.region} {site.address.postalCode}, India<br />
-          <a href={site.phoneHref}>{site.phone}</a> · <a href={`mailto:${site.email}`}>{site.email}</a><br />
-          {site.hours}
-        </address>
+        {site.offices.map((o) => (
+          <address>
+            <strong>{o.label}</strong><br />
+            {o.street}, {o.locality} {o.postalCode}, {o.countryName}<br />
+            <a href={o.phoneHref}>{o.phone}</a>
+          </address>
+        ))}
+        <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
       </div>
       <div class="ftr__cols">
         {cols.map((c) => (

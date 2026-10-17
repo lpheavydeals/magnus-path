@@ -152,3 +152,13 @@ Same rules as the US/UK/UAE pages above, with these differences:
 ## UAE and Australia round 2 (business websites)
 - **Extra allowed related URLs:** /uae/web-development-company/, /uae/wordpress-development-dubai/,
   /australia/web-development-company/, /australia/wordpress-developer/
+
+## Offices (updated 17 Oct 2026, overrides every earlier "one office" / "no UK office" rule)
+Magnus Path has three **staffed offices where clients can meet the team by appointment**:
+- **Chennai** (head office and main delivery team), Tamil Nadu, India
+- **Bengaluru**, Karnataka, India
+- **London**: 16 Avondale Court, London E18 2RD, United Kingdom
+Rules: UK pages may say "our London office" and offer in-person meetings in London; delivery is still largely done by the
+Chennai team, so the time-zone wording stays (work continues after UK hours). Bengaluru pages may say "our Bengaluru office"
+and offer meetings there. There is still **no office in the US, UAE or Australia**: those pages keep the remote wording.
+Never invent a street address; use the city name only in copy (the full addresses live in `src/data/site.ts`).

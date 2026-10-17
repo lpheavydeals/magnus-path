@@ -1,7 +1,8 @@
 ---
-import { site } from '../../data/site';
+import { site, officeFor } from '../../data/site';
 interface Props { city: string; areas: string[]; note: string; }
 const { city, areas, note } = Astro.props;
+const office = officeFor(city);
 ---
 <section class="section lb">
   <div class="wrap lb__grid">
@@ -17,9 +18,9 @@ const { city, areas, note } = Astro.props;
       </div>
       <address>
         <strong>{site.name}</strong><br />
-        {site.address.street}, {site.address.locality}, {site.address.region} {site.address.postalCode}<br />
-        <a href={site.phoneHref}>{site.phone}</a> · <a href={`mailto:${site.email}`}>{site.email}</a><br />
-        {site.hours}
+        {office.street}, {office.locality}, {office.region} {office.postalCode}<br />
+        <a href={office.phoneHref}>{office.phone}</a> · <a href={`mailto:${site.email}`}>{site.email}</a><br />
+        {office.hours}
       </address>
       <a class="btn btn--dark btn--sm" href="/contact/">Visit or book a meeting <span class="arrow" aria-hidden="true">→</span></a>
     </div>

@@ -6,17 +6,19 @@ import { site } from '../data/site';
 import { breadcrumbSchema } from '../data/schema';
 const schema = [breadcrumbSchema([{ label: 'Contact', href: '/contact/' }])];
 ---
-<Base title="Contact Magnus Path | E-commerce Agency in Chennai" description="Contact Magnus Path, an e-commerce marketing agency in Chennai. Call, WhatsApp, email or visit our office to discuss your store, ads or SEO." schema={schema}>
-  <SimpleHero eyebrow="Contact" h1="Let’s Talk About *Your Store*" intro="Call, WhatsApp or email us, or visit our Chennai office. We reply within one working day, and Tamil Nadu clients are welcome to meet us in person." current="Contact" />
+<Base title="Contact Magnus Path | E-commerce Agency in Chennai" description="Contact Magnus Path: call, WhatsApp, email or visit our Chennai, Bengaluru or London office to discuss your e-commerce store, ads or SEO." schema={schema}>
+  <SimpleHero eyebrow="Contact" h1="Let’s Talk About *Your Store*" intro="Call, WhatsApp or email us, or visit one of our offices in Chennai, Bengaluru or London. We reply within one working day, and clients are welcome to meet us in person by appointment." current="Contact" />
   <section class="section ct">
     <div class="wrap ct__grid">
       <div class="ct__card" data-reveal><span class="label">Phone</span><a href={site.phoneHref}>{site.phone}</a><p>{site.hours}</p></div>
       <div class="ct__card" data-reveal><span class="label">WhatsApp</span><a href={site.whatsapp} rel="noopener">Message us on WhatsApp</a><p>Send your store link for a quick first opinion.</p></div>
       <div class="ct__card" data-reveal><span class="label">Email</span><a href={`mailto:${site.email}`}>{site.email}</a><p>For proposals, partnerships and careers.</p></div>
-      <div class="ct__card ct__card--wide" data-reveal><span class="label">Office</span>
-        <address><strong>{site.name}</strong><br />{site.address.street}, {site.address.locality}, {site.address.region} {site.address.postalCode}, India</address>
-        <p>Meetings by appointment. Overseas clients: we work in your time zone overlap through video calls.</p>
-      </div>
+      {site.offices.map((o) => (
+        <div class="ct__card" data-reveal><span class="label">{o.label}</span>
+          <address><strong>{site.name}</strong><br />{o.street}, {o.locality}, {o.region} {o.postalCode}, {o.countryName}</address>
+          <p><a href={o.phoneHref}>{o.phone}</a> · {o.hours}. Meetings by appointment.</p>
+        </div>
+      ))}
     </div>
   </section>
   <LeadForm heading="Or send us your details" sub="Tell us about your store and what you need. We will reply within one working day with next steps." />

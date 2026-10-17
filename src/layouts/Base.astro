@@ -35,6 +35,12 @@ const orgSchema = {
     postalCode: site.address.postalCode,
     addressCountry: site.address.country,
   },
+  location: site.offices.map((o) => ({
+    '@type': 'Place',
+    name: `${site.name} ${o.locality}`,
+    address: { '@type': 'PostalAddress', streetAddress: o.street, addressLocality: o.locality, addressRegion: o.region, postalCode: o.postalCode, addressCountry: o.country },
+    telephone: o.phone,
+  })),
   areaServed: ['IN', 'GB', 'AU', 'AE', 'US'],
   knowsAbout: ['E-commerce website development', 'Shopify development', 'Amazon advertising', 'Flipkart ads', 'E-commerce SEO', 'Performance marketing'],
   sameAs: Object.values(site.social).filter((u) => u !== '#'),
