@@ -10,7 +10,6 @@ export const priceList = [
     { name: 'Business / corporate website (5–10 pages)', price: '₹35,000', unit: 'one-time', href: '/corporate-website-development/' },
     { name: 'Custom corporate website', price: '₹75,000–2 lakh', unit: 'one-time', href: '/corporate-website-development/' },
     { name: 'WordPress website', price: '₹30,000', unit: 'one-time', href: '/wordpress-website-development/' },
-    { name: 'CMS / headless CMS website', price: '₹75,000', unit: 'one-time', href: '/cms-website-development/' },
     { name: 'Website maintenance', price: '₹5,000', unit: '/ month', href: '/website-maintenance-services/' },
   ]},
   { group: 'Ads', rows: [

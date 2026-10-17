@@ -111,7 +111,6 @@ export const businessWebsitePages: ServicePageData[] = [
       { label: 'Web development company in the UAE', href: '/uae/web-development-company/' },
       { label: 'Website development company in Australia', href: '/australia/web-development-company/' },
       { label: 'WordPress website design company', href: '/wordpress-website-development/' },
-      { label: 'CMS and headless CMS web development', href: '/cms-website-development/' },
       { label: 'Website maintenance services', href: '/website-maintenance-services/' },
       { label: 'B2B digital marketing for manufacturers and exporters', href: '/b2b-digital-marketing/' },
       { label: 'Website development company in Chennai', href: '/chennai/website-development-company/' },
@@ -238,7 +237,6 @@ export const businessWebsitePages: ServicePageData[] = [
       { label: 'WooCommerce development for online stores', href: '/woocommerce-development/' },
       { label: 'Corporate website development', href: '/corporate-website-development/' },
       { label: 'WordPress website maintenance services', href: '/website-maintenance-services/' },
-      { label: 'CMS web development services', href: '/cms-website-development/' },
       { label: 'SEO services for business websites', href: '/seo-services/' },
     ],
     faqs: [
@@ -250,118 +248,6 @@ export const businessWebsitePages: ServicePageData[] = [
       { q: 'Can you migrate my site from Wix or another CMS to WordPress?', a: 'Yes. We move pages, blog posts, images and metadata, rebuild the design as a WordPress theme and set up 301 redirects from every old URL. After launch we monitor Search Console for errors so your existing Google rankings and backlinks carry over to the new site.' },
       { q: 'Do you build online stores on WordPress?', a: 'Yes, using WooCommerce, which adds products, cart, checkout and payments to WordPress. Store builds involve Indian payment gateways, COD, GST and courier integrations, so they are scoped and priced separately on our WooCommerce development page rather than under a standard WordPress website.' },
       { q: 'Do you work as a WordPress developer for clients outside Chennai?', a: 'Yes. We are a Chennai-based team and work with businesses across India and in the UK, UAE, Australia, Singapore and the USA. Projects run through video calls, shared design files and a project board, and Tamil Nadu clients can meet us in person.' },
-    ],
-  },
-  {
-    slug: 'cms-website-development',
-    kind: 'service',
-    title: 'CMS Web Development Services & Headless CMS | Magnus Path',
-    description: 'CMS web development services in India: WordPress and headless CMS sites with clear content models, editor roles and multilingual support. From ₹75,000.',
-    primaryKeyword: 'cms web development services',
-    navLabel: 'CMS Website Development',
-    breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
-    eyebrow: 'CMS development · Headless CMS · Content modelling',
-    h1: 'CMS Web Development Services Built Around *How You Publish*',
-    intro: 'Magnus Path provides CMS web development services for companies that publish often, work in several languages or have many people editing one site. We help you choose between WordPress and a headless CMS, model your content properly and build fast websites your editors can update without waiting on developers.',
-    icon: 'ai',
-    facts: ['CMS sites from ₹75,000', 'WordPress or headless CMS', 'Roles and approval workflows'],
-    headings: {
-      pains: 'Signs your current CMS is holding you back',
-      includes: 'What our CMS development services include',
-      process: 'Your CMS project in *4 steps*',
-      pricing: 'CMS website development pricing',
-      guide: 'CMS web development: how to choose and build the right system',
-    },
-    pains: [
-      { title: 'Every change needs a developer', body: 'Content is hard-coded into templates or locked in a rigid page builder, so a new landing page or product update waits in a developer queue for days.' },
-      { title: 'Messy, duplicated content', body: 'The same product details live on six pages, translations drift out of sync and nobody knows which version is current, because the CMS was never modelled around your content.' },
-      { title: 'No control over who publishes what', body: 'Everyone has admin access, there is no review step and a mistaken edit goes live on the home page. Old CMS versions also bring security risks and slow pages.' },
-    ],
-    includes: [
-      { title: 'CMS selection and architecture', body: 'A clear recommendation between WordPress and a headless CMS based on your editors, channels, languages, integrations and budget, with the reasons written down.' },
-      { title: 'Content modelling', body: 'Structured content types for products, services, locations, people, case pages and articles, with fields and relationships that keep information in one place.' },
-      { title: 'Editor experience and workflows', body: 'Reusable components, live previews, roles and permissions, drafts, scheduled publishing and approval steps so the right people publish the right content.' },
-      { title: 'Multilingual and multi-site setup', body: 'Language versions with proper hreflang tags, shared and localised fields, and translation workflows for exporters, regional audiences or multi-brand companies.' },
-      { title: 'Fast front-end development', body: 'Templates built with a modern framework or lean theme, static or cached pages, optimised images and clean markup for strong Core Web Vitals.' },
-      { title: 'Migration and SEO protection', body: 'Content moved from your old CMS with scripts where possible, URL mapping and 301 redirects, metadata carried over and Search Console checks after launch.' },
-    ],
-    platforms: ['WordPress', 'Strapi', 'Sanity', 'Contentful', 'Astro', 'Next.js', 'Cloudflare'],
-    process: [
-      { title: 'Content audit and CMS choice', body: 'We review your existing content, editors, channels and integrations, then recommend a CMS and architecture with a fixed quote and timeline.' },
-      { title: 'Content model and design', body: 'We define content types and fields, design page templates and components, and test the editing experience with your team before full build.' },
-      { title: 'Build and migrate', body: 'We set up the CMS, build the front end, connect integrations and migrate content with redirects, testing speed, roles and previews along the way.' },
-      { title: 'Launch and editor training', body: 'Go-live with monitoring and analytics, followed by role-based training and documentation so every editor knows how to publish safely.' },
-    ],
-    pricing: {
-      from: '₹75,000',
-      unit: 'one-time',
-      note: 'CMS and headless CMS websites start at ₹75,000 one-time. Final cost depends on the number of content types, languages, integrations and the size of the migration. Some headless CMS platforms charge their own subscription. You get a fixed quote after scoping.',
-      items: ['CMS selection and content model', 'Custom templates and reusable components', 'Editor roles, previews and workflows', 'Content migration with 301 redirects', 'Training and 30 days of support'],
-    },
-    guide: [
-      {
-        heading: 'What a CMS is, and why the choice matters',
-        paragraphs: [
-          'A content management system (CMS) is the software your team uses to create, edit and publish website content without writing code. It stores the text, images and data, and controls who can change what. The front end, the part visitors see, either comes from the same system or is built separately and pulls content from it.',
-          'The CMS you choose shapes daily life for your marketing team for years. A good fit makes publishing quick and safe. A poor fit creates workarounds, duplicate content and constant developer requests. That is why CMS web development services should start with how your team works, not with a favourite tool.',
-        ],
-      },
-      {
-        heading: 'The main options: WordPress or a headless CMS',
-        paragraphs: [
-          'There is no single best CMS. Each of the common options suits a different kind of team and site.',
-        ],
-        bullets: [
-          'WordPress: open source, widely known and affordable. Ideal for business sites, blogs and resource hubs where one team manages one website.',
-          'Headless CMS (such as Strapi, Sanity or Contentful): content is stored as structured data and delivered through an API to a separate front end, apps or other channels. Suited to larger sites, many editors and multiple languages or brands.',
-          'Static front ends (such as Astro or Next.js): a headless CMS can feed a fast, mostly static site that loads quickly on mobile and has fewer moving parts to attack, which suits content-heavy marketing sites.',
-          'Self-hosted vs hosted: Strapi can run on your own servers, while Sanity and Contentful are hosted services with usage-based plans. Factor this into running costs.',
-        ],
-      },
-      {
-        heading: 'How to choose the right CMS for your business',
-        paragraphs: [
-          'Start with a few practical questions. How many people will edit content, and do they need approval steps? Will content appear only on the website, or also in an app, portal or kiosk? How many languages and regions do you need? What does your IT team allow for hosting and data? And what can you spend each year, not just on the build?',
-          'If one team runs one site and budgets are modest, WordPress is usually right. If you have several channels, strict workflows or a large multilingual catalogue, headless is worth the extra build effort. A capable CMS development company will show you the trade-offs in writing and recommend the simplest option that meets your needs, including custom CMS development services only when off-the-shelf tools genuinely fall short.',
-        ],
-      },
-      {
-        heading: 'Content modelling and editor workflows',
-        paragraphs: [
-          'Content modelling means defining the types of content you publish, such as products, services, locations, team members or articles, and the fields each one has. Done well, a product specification lives in one place and appears wherever it is needed. Done badly, editors copy and paste the same details across pages and they drift apart.',
-          'Workflows decide how content moves from draft to live. We set up roles such as author, editor and publisher, add previews so editors see changes before publishing, enable scheduled releases and keep version history so mistakes can be rolled back. For multilingual sites, we decide which fields are shared and which are translated, and set up hreflang so search engines serve the right language.',
-        ],
-      },
-      {
-        heading: 'Performance and SEO on a CMS website',
-        paragraphs: [
-          'A headless setup can be extremely fast because pages are often pre-built and served from a CDN. A traditional CMS can be fast too, with good hosting and caching. Either way, CMS web development services should deliver lean templates, optimised images and minimal third-party scripts.',
-          'SEO needs to be designed into the content model. Editors should be able to set titles, meta descriptions, canonical URLs, social images and structured data for each page. With headless builds, we make sure sitemaps, redirects and rendered HTML are handled properly, because these do not come built in the way they do on WordPress.',
-        ],
-      },
-      {
-        heading: 'Migrating from an old CMS without losing rankings',
-        paragraphs: [
-          'Moving from an outdated CMS, such as an old Joomla, Drupal or custom PHP system, is often the trigger for a new build. A safe migration starts with an inventory of every URL and its traffic, then maps each one to a new address. Content is moved with scripts where possible and cleaned up as it goes, so the new site does not inherit years of clutter.',
-          'We set up 301 redirects, carry over metadata, test on a staging site and watch Search Console closely after launch. Good CMS web development services treat migration as an SEO project, not just a copy-and-paste job, because lost URLs mean lost enquiries. Our CMS website development services start at ₹75,000 one-time, with the final quote depending on content types, languages, integrations and migration size.',
-        ],
-      },
-    ],
-    related: [
-      { label: 'Corporate website development', href: '/corporate-website-development/' },
-      { label: 'WordPress website design company', href: '/wordpress-website-development/' },
-      { label: 'Website maintenance and CMS support', href: '/website-maintenance-services/' },
-      { label: 'E-commerce website development', href: '/ecommerce-website-development/' },
-      { label: 'SEO services for CMS websites', href: '/seo-services/' },
-    ],
-    faqs: [
-      { q: 'What are CMS web development services?', a: 'CMS web development services cover choosing a content management system, designing how your content is structured, building the website templates and setting up editing, roles and workflows. They also include migrating content from an old system and training your team so they can publish and update the site without a developer.' },
-      { q: 'What is a headless CMS, and do I need one?', a: 'A headless CMS stores content separately from the website design and delivers it through an API, so the same content can feed a website, app or other channels. It suits larger sites with many editors, several languages or multiple channels. Most single-team business websites are well served by WordPress instead.' },
-      { q: 'How much does CMS website development cost?', a: 'Our CMS and headless CMS websites start at ₹75,000 one-time. The final price depends on the number of content types, languages, integrations and how much content needs migrating. Some headless platforms also charge a monthly or usage-based subscription, which we estimate for you during scoping.' },
-      { q: 'Which CMS is best for a business website in India?', a: 'It depends on your team and plans. WordPress suits most small and mid-sized businesses because it is affordable and widely supported. A headless CMS such as Strapi, Sanity or Contentful suits larger, multilingual or multi-channel sites with structured content and approval workflows.' },
-      { q: 'Do you offer custom CMS development services?', a: 'We build custom content models, editor components and integrations on proven CMS platforms. We rarely recommend writing a CMS from scratch, because existing systems already handle security, roles, versions and media well. Building on them keeps costs lower and means other developers can support your site in future.' },
-      { q: 'Can you migrate our website from an old CMS?', a: 'Yes. We migrate from older WordPress builds, Joomla, Drupal, Wix and custom systems. We inventory every URL, move content with scripts where possible, clean it up, set up 301 redirects and monitor Search Console after launch so your existing rankings carry over.' },
-      { q: 'Is a headless CMS good for SEO?', a: 'Yes, when it is built properly. Headless sites are often very fast, which helps rankings. But sitemaps, redirects, metadata fields and server-rendered HTML must be built in deliberately, because they do not come by default. We design these into the content model so editors control SEO for every page.' },
     ],
   },
 ];
