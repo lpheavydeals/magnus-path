@@ -6,15 +6,15 @@ export const globalPages: ServicePageData[] = [
     kind: 'hub',
     market: 'UK',
     title: 'Ecommerce Marketing Agency UK for D2C Brands | Magnus Path',
-    description: 'Ecommerce marketing for UK brands and agencies: Shopify, Amazon.co.uk, SEO, AI search and white-label builds from a Chennai team. Quoted in GBP after an audit.',
+    description: 'Ecommerce marketing for UK brands and agencies: Shopify, Amazon.co.uk, SEO, AI search and white-label builds. London office, Chennai team. GBP quotes after audit.',
     primaryKeyword: 'ecommerce marketing agency',
     navLabel: 'United Kingdom',
     breadcrumb: [],
     eyebrow: 'For UK brands and agencies · Shopify · Amazon.co.uk · SEO · White label',
     h1: 'Ecommerce Marketing Agency for the UK, *Briefed Before Lunch*',
-    intro: 'Magnus Path is an ecommerce marketing agency for UK brands and agencies, run by a senior Chennai team with no UK office. We work remotely on Shopify, Amazon.co.uk, SEO, AI search and white-label builds. Our day overlaps your morning, so requests sent before lunch are usually handled the same day.',
+    intro: 'Magnus Path is an ecommerce marketing agency for UK brands and agencies, with a London office and a senior Chennai delivery team. We work on Shopify, Amazon.co.uk, SEO, AI search and white-label builds. Our day overlaps your morning, so requests sent before lunch are usually handled the same day.',
     icon: 'shopify',
-    facts: ['IST is 4.5–5.5 hrs ahead of UK', 'For brands and agencies', 'Quoted in GBP after an audit'],
+    facts: ['IST is 4.5–5.5 hrs ahead of UK', 'London office · Chennai delivery team', 'Quoted in GBP after an audit'],
     headings: {
       pains: 'Where UK brands and agencies get stuck',
       includes: 'One Chennai team for your store, Amazon, search and agency work',
@@ -103,7 +103,7 @@ export const globalPages: ServicePageData[] = [
       {
         heading: 'Working with a Chennai team: hours, data and questions to ask',
         paragraphs: [
-          'We have no office in the UK. India Standard Time is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so your morning and early afternoon overlap our working day. Requests sent before UK lunchtime are usually handled the same day, and calls are booked inside that overlap.',
+          'We have a London office where you can meet us by appointment, while most delivery is done by our Chennai team. India Standard Time is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so your morning and early afternoon overlap our working day. Requests sent before UK lunchtime are usually handled the same day, and calls are booked inside that overlap.',
           'UK GDPR and the cookie rules mean pixels and tags should respect what shoppers agree to, so we set up a consent banner, Google Consent Mode and clean purchase events. We are not lawyers, so your privacy policy should be reviewed by a UK adviser.',
           'We do not publish fixed UK prices, because channels and ad spend vary too much. After a free audit, we quote a monthly retainer or project price in GBP, and ad spend is paid from your own accounts. Whoever comes up when you search “ecommerce marketing agency UK”, including us, ask these questions before you sign:',
         ],
@@ -123,7 +123,7 @@ export const globalPages: ServicePageData[] = [
       { label: 'Free e-commerce audit', href: '/free-ecommerce-audit/' },
     ],
     faqs: [
-      { q: 'Do you have an office in the UK?', a: 'No. Magnus Path is based in Chennai, India, and we work with UK brands and agencies remotely. Meetings happen over video calls booked in your UK morning or early afternoon, day-to-day work runs through a shared project board and chat channel, and you always have a named contact.' },
+      { q: 'Do you have an office in the UK?', a: 'Yes. We have a London office (E18) where you can meet the team by appointment; most delivery is done by our Chennai team. Other meetings happen over video calls booked in your UK morning or early afternoon, day-to-day work runs through a shared project board and chat channel, and you always have a named contact.' },
       { q: 'What are your working hours in UK time?', a: 'India Standard Time is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter. Our working day overlaps your morning and early afternoon, so requests sent before UK lunchtime are usually handled the same day. Calls are booked inside that overlap.' },
       { q: 'Do you quote and invoice in GBP?', a: 'Yes. We quote and invoice UK clients in GBP. The quote follows a free audit of your store, Amazon account, ad accounts or agency workload, so the monthly retainer or project price matches the work you actually need. Ad spend is always paid directly from your own accounts.' },
       { q: 'Do you work with UK agencies as well as brands?', a: 'Yes. UK agencies use us for white label SEO, SEO outsourcing and white label web development on Shopify and WordPress. We sign an NDA, work under your brand, deliver unbranded reports and never contact your clients. Brands use us directly for Shopify, Amazon.co.uk, SEO and AI search.' },

@@ -59,3 +59,8 @@
 - [ ] All Australian services quoted in AUD after audit; lead-form ranges in AUD
 - [ ] Time-zone wording (our morning = east-coast afternoon)
 - [ ] Published abroad prices (17 Oct 2026): UK £275 white-label SEO / £400 outsourcing; US maintenance US$99 / 199 / 349 (2 / 6 / 12 hrs)
+
+## Offices (added 17 Oct 2026)
+- [ ] Bengaluru street address and postcode; phone numbers for Chennai, Bengaluru and London (`site.offices` in `src/data/site.ts`)
+- [ ] Google Business Profile for each office, with the address exactly as on the site
+- [ ] Bangalore page: "workshops at our Bengaluru office are included in the scope" and "much of the build is done by the Chennai team" are accurate

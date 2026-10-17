@@ -10,13 +10,13 @@ export const ukSeoAmazonPages: ServicePageData[] = [
     market: 'UK',
     twin: 'ecommerce-seo',
     title: 'Ecommerce SEO Agency UK for Online Retailers | Magnus Path',
-    description: 'Ecommerce SEO agency for UK online retailers: category pages, product schema, faceted navigation, free listings and UK links, run remotely from Chennai.',
+    description: 'Ecommerce SEO agency for UK online retailers: category pages, product schema, faceted navigation, free listings and UK links. London office, Chennai team.',
     primaryKeyword: 'ecommerce SEO agency',
     navLabel: 'Ecommerce SEO Agency UK',
     breadcrumb: ukBreadcrumb,
     eyebrow: 'Google UK · Collections · Product schema · Free listings',
     h1: 'Ecommerce SEO Agency UK Retailers Use to Rank *Category Pages*',
-    intro: 'Magnus Path is an ecommerce SEO agency that helps UK online retailers grow organic sales from Google.co.uk. We fix crawling and faceted navigation, rewrite collection pages in British English, add product schema and earn links from UK publications. We are a Chennai team with no UK office, working in your morning and quoting in GBP after a free audit.',
+    intro: 'Magnus Path is an ecommerce SEO agency that helps UK online retailers grow organic sales from Google.co.uk. We fix crawling and faceted navigation, rewrite collection pages in British English, add product schema and earn links from UK publications. We have a London office and a Chennai delivery team working in your morning, and we quote in GBP after a free audit.',
     icon: 'seo',
     facts: ['British English keyword research', 'Shopify, WooCommerce and custom stores', 'Quoted in GBP after an audit'],
     headings: {
@@ -96,7 +96,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       {
         heading: 'How to choose an ecommerce SEO agency',
         paragraphs: [
-          'Whether you hire a UK firm or an offshore team, the same questions apply. A cheap retainer that only produces blog posts will not move category revenue, and an expensive one is no better if nobody touches the technical problems. Magnus Path is a Chennai team with no UK office. India is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so our day overlaps your morning and early afternoon. We quote ecommerce SEO services for UK stores in GBP after a free audit. Before you sign with any ecommerce SEO agency UK or overseas, ask:',
+          'Whether you hire a UK firm or an offshore team, the same questions apply. A cheap retainer that only produces blog posts will not move category revenue, and an expensive one is no better if nobody touches the technical problems. Magnus Path has a London office where you can meet us, while most delivery is done by our Chennai team. India is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so our day overlaps your morning and early afternoon. We quote ecommerce SEO services for UK stores in GBP after a free audit. Before you sign with any ecommerce SEO agency UK or overseas, ask:',
         ],
         bullets: [
           'Who will do the work each month, and can I speak to them?',
@@ -120,7 +120,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       { q: 'How long does ecommerce SEO take to show results?', a: 'Technical fixes and better collection pages can show movement within two to four months. Competitive categories and link building take longer, often six to twelve months. We report progress monthly and show which pages and searches are moving, so you can judge it on evidence.' },
       { q: 'What are Google Merchant Center free listings?', a: 'They are unpaid product listings that Google shows in the Shopping tab, Images and some search results, based on your Merchant Center feed. Accurate titles, GTINs, prices, delivery costs and returns information improve how often your products appear, without spending anything on ads.' },
       { q: 'How much do your ecommerce SEO services for UK stores cost?', a: 'We do not publish a fixed UK price, because catalogue size and competition vary widely. After a free audit we quote a monthly fee in GBP, listing exactly what each month includes. Large technical projects or migrations are quoted separately so the retainer stays clear.' },
-      { q: 'Do you have a UK office?', a: 'No. Magnus Path is a Chennai team working remotely with UK retailers. India is 4.5 to 5.5 hours ahead of the UK depending on the season, so our working day overlaps your morning and early afternoon. Requests sent before UK lunchtime are usually handled the same day.' },
+      { q: 'Do you have a UK office?', a: 'Yes. We have a London office (E18) where you can meet the team by appointment; most delivery is done by our Chennai team. India is 4.5 to 5.5 hours ahead of the UK depending on the season, so our working day overlaps your morning and early afternoon. Requests sent before UK lunchtime are usually handled the same day.' },
     ],
   },
 
@@ -137,7 +137,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
     breadcrumb: ukBreadcrumb,
     eyebrow: 'Amazon.co.uk · Sponsored ads · Listings · FBA',
     h1: 'Amazon Agency UK Sellers Use for *Ads and Listings*',
-    intro: 'Magnus Path is an Amazon agency for UK sellers who want one team to run their Amazon.co.uk account: Sponsored ads, listings, A+ content, Brand Store, FBA stock planning and account health support. We are a Chennai team with no UK office, working remotely in your morning and early afternoon. We quote a monthly fee in GBP after a free account audit.',
+    intro: 'Magnus Path is an Amazon agency for UK sellers who want one team to run their Amazon.co.uk account: Sponsored ads, listings, A+ content, Brand Store, FBA stock planning and account health support. You can meet us at our London office, and our Chennai team runs the account in your morning and early afternoon. We quote a monthly fee in GBP after a free account audit.',
     icon: 'amazon',
     facts: ['Amazon.co.uk ads and listings', 'Prime Day and Black Friday planning', 'Quoted in GBP after an audit'],
     headings: {
@@ -219,7 +219,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
         heading: 'Choosing an Amazon agency, UK-based or remote',
         paragraphs: [
           'A UK-based team gives you face-to-face meetings. A remote team can give you more senior attention for the same budget. Neither is automatically better; what matters is who does the daily work and how clearly they explain it.',
-          'Magnus Path is a Chennai team with no UK office, and we do not claim any special status with Amazon. India is 4.5 hours ahead of UK summer time and 5.5 hours in winter, so our day overlaps your morning and early afternoon. Whichever Amazon agency you choose, in the UK or abroad, ask who manages the account daily, how it sets ACoS targets, whether you keep full ownership of Seller Central and how it reports total sales, not just ad sales. We quote a monthly fee in GBP after a free audit.',
+          'Magnus Path has a London office where you can meet us, while our Chennai team does the daily work, and we do not claim any special status with Amazon. India is 4.5 hours ahead of UK summer time and 5.5 hours in winter, so our day overlaps your morning and early afternoon. Whichever Amazon agency you choose, in the UK or abroad, ask who manages the account daily, how it sets ACoS targets, whether you keep full ownership of Seller Central and how it reports total sales, not just ad sales. We quote a monthly fee in GBP after a free audit.',
         ],
       },
     ],
@@ -237,7 +237,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       { q: 'Do I need to register for VAT to sell on Amazon.co.uk?', a: 'Most sellers based outside the UK need UK VAT registration from their first sale, and UK-based sellers must register once they pass the VAT threshold. Amazon also collects VAT on some orders. We are not tax advisers, so please confirm your position with a UK accountant.' },
       { q: 'How do you prepare for Prime Day and Black Friday?', a: 'We plan several weeks ahead: checking stock cover, booking FBA inbound shipments early, submitting deals and coupons on time and raising budgets in the run-up as well as on the day. After each event we review search terms and new-customer sales to shape the next one.' },
       { q: 'How much does your Amazon agency service cost for UK sellers?', a: 'We quote a monthly fee in GBP after a free account audit, because the right scope depends on how many products you sell and whether you need ads only or full account management. Ad spend is billed by Amazon directly to your own account.' },
-      { q: 'Are you an Amazon partner?', a: 'We do not claim any partner status with Amazon. We are an independent Chennai team that works on Seller Central and the Amazon Ads console for UK sellers. You keep full ownership of your accounts, and we work through user permissions you can remove at any time.' },
+      { q: 'Are you an Amazon partner?', a: 'We do not claim any partner status with Amazon. We are an independent agency whose Chennai team works on Seller Central and the Amazon Ads console for UK sellers. You keep full ownership of your accounts, and we work through user permissions you can remove at any time.' },
     ],
   },
 
@@ -254,7 +254,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
     breadcrumb: ukBreadcrumb,
     eyebrow: 'GEO · AI Overviews · ChatGPT · Perplexity · Gemini',
     h1: 'AI Search Optimisation Agency With *Honest* Reporting',
-    intro: 'Magnus Path is an AI search optimisation agency helping UK brands appear accurately in ChatGPT, Perplexity, Gemini and Google AI Overviews. Nobody controls what AI tools say, so we work on what you can influence: consistent brand facts, pages worth quoting and trusted UK mentions. We are a Chennai team with no UK office, quoting in GBP after a free audit.',
+    intro: 'Magnus Path is an AI search optimisation agency helping UK brands appear accurately in ChatGPT, Perplexity, Gemini and Google AI Overviews. Nobody controls what AI tools say, so we work on what you can influence: consistent brand facts, pages worth quoting and trusted UK mentions. We have a London office and a Chennai delivery team, and we quote in GBP after a free audit.',
     icon: 'ai',
     facts: ['ChatGPT, Perplexity, Gemini, AI Overviews', 'Clear about what can be measured', 'Quoted in GBP after an audit'],
     headings: {
@@ -336,7 +336,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       {
         heading: 'Choosing a GEO agency in the UK or abroad',
         paragraphs: [
-          'Magnus Path is a Chennai team with no UK office. India is 4.5 hours ahead of UK summer time and 5.5 hours in winter, so our working day overlaps your morning and early afternoon. Whoever you choose as your AI search optimisation agency, ask what exactly they will change, how they will measure it and what they admit they cannot control. Vague answers to those three questions are a warning sign.',
+          'Magnus Path has a London office where you can meet us, while most delivery is done by our Chennai team. India is 4.5 hours ahead of UK summer time and 5.5 hours in winter, so our working day overlaps your morning and early afternoon. Whoever you choose as your AI search optimisation agency, ask what exactly they will change, how they will measure it and what they admit they cannot control. Vague answers to those three questions are a warning sign.',
         ],
       },
     ],

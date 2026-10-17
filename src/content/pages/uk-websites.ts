@@ -16,9 +16,9 @@ export const ukWebsitesPages: ServicePageData[] = [
     breadcrumb: ukBreadcrumb,
     eyebrow: 'For UK businesses and agencies · Custom themes · Gutenberg · ACF',
     h1: 'A WordPress Agency for UK Sites *Built to Last*',
-    intro: 'Magnus Path is a remote WordPress agency working with UK businesses, charities and digital agencies on custom builds. We develop lean themes with Gutenberg blocks and ACF, set up cookie consent that respects UK GDPR, check accessibility and keep pages quick. We are a Chennai team with no UK office, and we quote in GBP after a free audit.',
+    intro: 'Magnus Path is a WordPress agency working with UK businesses, charities and digital agencies on custom builds. We develop lean themes with Gutenberg blocks and ACF, set up cookie consent that respects UK GDPR, check accessibility and keep pages quick. We have a London office and a Chennai delivery team, and we quote in GBP after a free audit.',
     icon: 'website',
-    facts: ['Custom themes, Gutenberg blocks and ACF', 'Project, monthly or block of hours', 'Quoted in GBP, no UK office'],
+    facts: ['Custom themes, Gutenberg blocks and ACF', 'Project, monthly or block of hours', 'London office, quoted in GBP'],
     headings: {
       pains: 'Why UK WordPress sites become *hard work*',
       includes: 'What our WordPress developers build for UK clients',
@@ -104,8 +104,8 @@ export const ukWebsitesPages: ServicePageData[] = [
       {
         heading: 'A WordPress developer in the UK or a remote team: how the day runs',
         paragraphs: [
-          'We have no UK office. Magnus Path is a Chennai team, and India is 4.5 hours ahead of British Summer Time and 5.5 hours ahead in winter. Our working day overlaps your morning and early afternoon, so feedback sent before UK lunchtime is usually acted on the same day, and you see the changes on staging that afternoon. Calls fit that window, and the rest runs through a shared board and chat.',
-          'The trade-off is honest: you get less face-to-face time than with a local studio, and we do not cover UK evenings or weekends. In return you get a WordPress agency with a steady team, a predictable daily handoff and written notes on every change, so nothing depends on someone remembering a phone call.',
+          'We have a London office where you can meet us, but most delivery is done by our Chennai team, and India is 4.5 hours ahead of British Summer Time and 5.5 hours ahead in winter. Our working day overlaps your morning and early afternoon, so feedback sent before UK lunchtime is usually acted on the same day, and you see the changes on staging that afternoon. Calls fit that window, and the rest runs through a shared board and chat.',
+          'The trade-off is honest: you can meet us at our London office, but most contact happens online rather than face to face, and we do not cover UK evenings or weekends. In return you get a WordPress agency with a steady team, a predictable daily handoff and written notes on every change, so nothing depends on someone remembering a phone call.',
         ],
       },
     ],
@@ -118,7 +118,7 @@ export const ukWebsitesPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'Can I hire a WordPress developer in the UK through you?', a: 'You can hire one of our WordPress developers to work on your UK site, but they are based in Chennai, not the UK. You get a named developer for a project, a monthly arrangement or a block of hours, working in your UK morning and early afternoon, quoted in GBP.' },
-      { q: 'Do you have a UK office?', a: 'No. Magnus Path is a Chennai, India team that works with UK businesses and agencies remotely. We have no UK address or phone line. Calls happen over video in your morning or early afternoon, and day-to-day work runs through a shared project board and chat channel.' },
+      { q: 'Do you have a UK office?', a: 'Yes. We have a London office (E18) where you can meet the team by appointment; most delivery is done by our Chennai, India team. Other calls happen over video in your morning or early afternoon, and day-to-day work runs through a shared project board and chat channel.' },
       { q: 'What does a WordPress development company in the UK usually charge?', a: 'Prices vary widely with scope: number of templates, custom blocks, integrations, content migration and accessibility work. We do not publish fixed prices for UK projects. Instead we quote in GBP after a free audit, with a written scope so you can compare like for like with other agencies.' },
       { q: 'Do you build with Gutenberg or Elementor?', a: 'For new builds we usually recommend a custom block theme with Gutenberg blocks and ACF, because it stays lighter and easier to maintain. If your team already relies on Elementor or another builder, we can work within it and keep the templates tidy rather than forcing a full rebuild.' },
       { q: 'Can you set up cookie consent that meets UK GDPR?', a: 'We set up a consent platform, connect Google Consent Mode and test that non-essential tags wait until visitors agree. We are not lawyers, so your privacy policy, cookie list and wording should be reviewed by a UK adviser before launch.' },
@@ -138,7 +138,7 @@ export const ukWebsitesPages: ServicePageData[] = [
     breadcrumb: ukBreadcrumb,
     eyebrow: 'For UK online shops · Builds · Fixes · Migrations',
     h1: 'A WooCommerce Agency for UK Shops *That Own Their Store*',
-    intro: 'Magnus Path is a remote WooCommerce agency for UK shops that want full control of their store, data and checkout. We build and fix WooCommerce stores with VAT-inclusive prices, Klarna and Clearpay, carrier label integrations, subscriptions and trade pricing. We are a Chennai team with no UK office, and we quote in GBP after a free audit.',
+    intro: 'Magnus Path is a WooCommerce agency for UK shops that want full control of their store, data and checkout. We build and fix WooCommerce stores with VAT-inclusive prices, Klarna and Clearpay, carrier label integrations, subscriptions and trade pricing. We have a London office and a Chennai delivery team, and we quote in GBP after a free audit.',
     icon: 'website',
     facts: ['VAT-inclusive pricing set up', 'Royal Mail, DPD and Evri label links', 'Quoted in GBP after a free audit'],
     headings: {
@@ -220,7 +220,7 @@ export const ukWebsitesPages: ServicePageData[] = [
         paragraphs: [
           'Once a shop is live, most work is a stream of smaller jobs: a new shipping rule, a plugin conflict, a product option the theme does not support, a report the finance team needs. That work suits a WooCommerce developer who already knows your store, rather than a fresh agency project each time.',
           'We offer three ways to work: a fixed-price project, a monthly developer for an agreed number of days, or a block of hours you draw down as requests arrive. Whichever you choose, you get a named developer, work on staging, and code committed to a repository in your account.',
-          'We are a Chennai team with no UK office. India is 4.5 hours ahead of British Summer Time and 5.5 hours ahead in winter, so our day overlaps your morning and early afternoon. Issues raised before lunch are usually handled the same day, and calls fit that window. We do not offer UK evening or weekend cover, so we plan peak-season changes well in advance.',
+          'We have a London office where you can meet us, while most delivery is done by our Chennai team. India is 4.5 hours ahead of British Summer Time and 5.5 hours ahead in winter, so our day overlaps your morning and early afternoon. Issues raised before lunch are usually handled the same day, and calls fit that window. We do not offer UK evening or weekend cover, so we plan peak-season changes well in advance.',
         ],
       },
     ],
@@ -233,7 +233,7 @@ export const ukWebsitesPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'Can I hire a WooCommerce developer in the UK through you?', a: 'You can work with one of our WooCommerce developers on your UK store, but they are based in Chennai, not the UK. You get a named developer who learns your plugins and order flow, works during your morning and early afternoon, and is quoted in GBP.' },
-      { q: 'Do you have a UK office?', a: 'No. Magnus Path is a Chennai, India team that works with UK shops remotely. We have no UK address or phone line. India is 4.5 to 5.5 hours ahead of the UK, so calls happen in your morning or early afternoon and requests before lunch are usually handled the same day.' },
+      { q: 'Do you have a UK office?', a: 'Yes. We have a London office (E18) where you can meet the team by appointment; most delivery is done by our Chennai, India team. India is 4.5 to 5.5 hours ahead of the UK, so calls happen in your morning or early afternoon and requests before lunch are usually handled the same day.' },
       { q: 'Can you set up VAT-inclusive prices in WooCommerce?', a: 'Yes. We configure WooCommerce to show prices including VAT for consumers, set up standard, reduced and zero-rate tax classes, and show VAT-exclusive prices to trade accounts where needed. We are not tax advisers, so your accountant should confirm the rate for each product.' },
       { q: 'Which payment methods can you add for UK shoppers?', a: 'Stripe for cards, Apple Pay and Google Pay, plus PayPal, Klarna and Clearpay. We set each one up, place test orders and check refunds work. We usually suggest starting with fewer methods and adding more only when customers ask for them.' },
       { q: 'Can WooCommerce print Royal Mail or DPD labels?', a: 'Yes, through the carrier’s own tools or a plugin. Orders can flow to Royal Mail Click & Drop, DPD or Evri systems, labels print in batches and tracking numbers return to the order so customers get them automatically. The right option depends on your carrier account.' },
@@ -253,7 +253,7 @@ export const ukWebsitesPages: ServicePageData[] = [
     breadcrumb: ukBreadcrumb,
     eyebrow: 'For UK businesses, WooCommerce shops and agencies · Monthly plans',
     h1: 'WordPress Support for UK Sites, *Handled Before Lunch*',
-    intro: 'Magnus Path offers monthly WordPress support for UK businesses, WooCommerce shops and agencies. We test updates on staging, keep off-site backups, monitor uptime and security, make small changes and help clean up after malware. We are a Chennai team with no UK office, so requests sent before UK lunchtime are usually handled the same day. Plans are quoted in GBP.',
+    intro: 'Magnus Path offers monthly WordPress support for UK businesses, WooCommerce shops and agencies. We test updates on staging, keep off-site backups, monitor uptime and security, make small changes and help clean up after malware. We have a London office, and our Chennai team means requests sent before UK lunchtime are usually handled the same day. Plans are quoted in GBP.',
     icon: 'website',
     facts: ['Updates tested on staging first', 'Same-day work on requests before lunch', 'Quoted in GBP after a free audit'],
     headings: {
@@ -340,7 +340,7 @@ export const ukWebsitesPages: ServicePageData[] = [
         heading: 'Comparing website maintenance services in the UK',
         paragraphs: [
           'Website maintenance services in the UK range from automated update plugins to full care plans from a named team. Price alone tells you little. Compare what is tested, where backups are stored, how fast urgent problems are picked up and how many hours of changes are included. Ask for a sample monthly report, too: it shows whether the provider explains its work or just sends a list of plugin version numbers. Good WordPress support should leave you understanding your own site better each month.',
-          'We have no UK office. Magnus Path is a Chennai team, and India is 4.5 hours ahead of British Summer Time and 5.5 hours ahead in winter. That means we cover your morning and early afternoon, not UK evenings or weekends. Plans are quoted in GBP after a free health check.',
+          'We have a London office where you can meet us, but most delivery is done by our Chennai team, and India is 4.5 hours ahead of British Summer Time and 5.5 hours ahead in winter. That means we cover your morning and early afternoon, not UK evenings or weekends. Plans are quoted in GBP after a free health check.',
         ],
       },
     ],
@@ -353,7 +353,7 @@ export const ukWebsitesPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'What is included in WordPress maintenance in the UK?', a: 'Our WordPress maintenance plans include core, plugin and theme updates tested on staging, daily off-site backups, uptime and security monitoring, form tests, malware clean-up help and an allowance for small changes. You get a short monthly report in plain English explaining what we did and anything that needs your decision.' },
-      { q: 'Do you have a UK office?', a: 'No. Magnus Path is a Chennai, India team that supports UK websites remotely. We have no UK address or phone line. India is 4.5 to 5.5 hours ahead of the UK, so we cover your morning and early afternoon, and requests sent before lunch are usually handled the same day.' },
+      { q: 'Do you have a UK office?', a: 'Yes. We have a London office (E18) where you can meet the team by appointment; most support work is done by our Chennai, India team. India is 4.5 to 5.5 hours ahead of the UK, so we cover your morning and early afternoon, and requests sent before lunch are usually handled the same day.' },
       { q: 'How quickly do you respond to WordPress support requests?', a: 'It depends on severity. Critical problems such as a hacked site or failing checkout are started as soon as we see them during our working hours. Broken features are picked up the same working day, and normal changes are scheduled within the turnaround agreed in your plan.' },
       { q: 'Do you offer WooCommerce support?', a: 'Yes. WooCommerce support adds test orders after updates, checks on payment gateways, carrier plugins and order emails, and care with HPOS and database changes. We also schedule big updates away from Black Friday and Christmas, so risky changes do not land in your busiest weeks.' },
       { q: 'How do your website maintenance services in the UK compare on price?', a: 'We quote in GBP after a free health check, because a small brochure site and a busy WooCommerce shop need very different amounts of work. You get a written plan stating what is included, response times and change hours, so you can compare it fairly with other providers.' },

@@ -15,7 +15,7 @@ export const ukShopifyPages: ServicePageData[] = [
     breadcrumb: ukBreadcrumb,
     eyebrow: 'For UK brands · Store builds · Redesigns · Theme work',
     h1: 'Shopify Agency for UK Brands, Built for *British Shoppers*',
-    intro: 'Magnus Path is a remote Shopify agency for UK brands that brief us in their morning and review finished work on by mid-afternoon. We build and redesign Shopify stores with VAT-inclusive pricing, UK delivery options, Klarna or Clearpay and Shopify Markets for Ireland and the EU. We are a Chennai team with no UK office, and we quote in GBP after a free audit.',
+    intro: 'Magnus Path is a Shopify agency for UK brands that brief us in their morning and review finished work on by mid-afternoon. We build and redesign Shopify stores with VAT-inclusive pricing, UK delivery options, Klarna or Clearpay and Shopify Markets for Ireland and the EU. We have a London office, most build work is done by our Chennai team, and we quote in GBP after a free audit.',
     icon: 'shopify',
     facts: ['VAT-inclusive pricing set up properly', 'Markets for UK, Ireland and the EU', 'Quoted in GBP after a free audit'],
     headings: {
@@ -89,8 +89,8 @@ export const ukShopifyPages: ServicePageData[] = [
       {
         heading: 'Working with Shopify experts in Chennai from the UK',
         paragraphs: [
-          'We have no UK office. Magnus Path is a Chennai team working with UK brands over video calls, a shared project board and a chat channel. India is 4.5 hours ahead of British Summer Time and 5.5 hours ahead in winter, so our working day overlaps your morning and early afternoon. Feedback sent before lunch is usually acted on the same day.',
-          'Compared with a Shopify development agency in the UK, you get the same platform skills at a lower day rate, with less face-to-face time. If you are weighing up a UK-based Shopify agency against a remote team, ask both the same questions:',
+          'We have a London office where you can meet us by appointment, but most build work is done by our Chennai team, working with UK brands over video calls, a shared project board and a chat channel. India is 4.5 hours ahead of British Summer Time and 5.5 hours ahead in winter, so our working day overlaps your morning and early afternoon. Feedback sent before lunch is usually acted on the same day.',
+          'Compared with a Shopify development agency in the UK, you get the same platform skills at a lower day rate. You can meet us in London, but most day-to-day contact happens online. If you are weighing up a UK-based Shopify agency against a remote team, ask both the same questions:',
         ],
         bullets: [
           'Who will design and develop the store, and can I speak to them?',
@@ -108,7 +108,7 @@ export const ukShopifyPages: ServicePageData[] = [
       { label: 'Free Shopify and e-commerce audit', href: '/free-ecommerce-audit/' },
     ],
     faqs: [
-      { q: 'Are you a Shopify agency based in the UK?', a: 'No. Magnus Path is a Chennai, India team that builds and redesigns Shopify stores for UK brands remotely. We meet over video calls in your morning or early afternoon, share progress on a project board, and you have a named contact throughout the project.' },
+      { q: 'Are you a Shopify agency based in the UK?', a: 'Yes. We have a London office where you can meet the team by appointment, and most build work is done by our Chennai, India team. We meet over video calls or in London, in your morning or early afternoon, share progress on a project board, and you have a named contact throughout the project.' },
       { q: 'How much does a Shopify store build cost for a UK brand?', a: 'We quote in GBP after a free audit, because cost depends on the theme, number of templates, integrations, product migration and whether you sell to Ireland or the EU. You receive a written scope with a fixed price before any work starts. Shopify fees and paid apps are separate.' },
       { q: 'Can you set up VAT-inclusive pricing on Shopify?', a: 'Yes. We configure Shopify to show prices including VAT, set tax overrides for zero-rated or reduced-rate products where needed, and check that order confirmations and invoices show the right details. Your accountant should confirm the VAT treatment of your products.' },
       { q: 'Do you set up Shopify Markets for Ireland and the EU?', a: 'Yes. We set up euro pricing, duties and import taxes at checkout where suitable, and a localised domain or subfolder for each market. We also adjust delivery messages for cross-border transit times, so Irish and EU shoppers are not promised UK delivery speeds.' },
@@ -128,9 +128,9 @@ export const ukShopifyPages: ServicePageData[] = [
     breadcrumb: ukBreadcrumb,
     eyebrow: 'For UK brands and agencies · Fixes · Features · Speed',
     h1: 'A Shopify Developer for *Your Backlog*, Not Just Your Launch',
-    intro: 'Magnus Path gives you a Shopify developer for UK brands and agencies to brief before lunch and see progress from the same afternoon. We fix broken themes, customise sections, integrate apps and speed up slow stores, working by fixed task, monthly developer or block of hours. We are a Chennai team with no UK office, and we quote in GBP.',
+    intro: 'Magnus Path gives you a Shopify developer for UK brands and agencies to brief before lunch and see progress from the same afternoon. We fix broken themes, customise sections, integrate apps and speed up slow stores, working by fixed task, monthly developer or block of hours. We have a London office and a Chennai delivery team, and we quote in GBP.',
     icon: 'shopify',
-    facts: ['Fixed task, monthly or block of hours', 'Same-day work on requests before lunch', 'Quoted in GBP, no UK office'],
+    facts: ['Fixed task, monthly or block of hours', 'Same-day work on requests before lunch', 'London office, quoted in GBP'],
     headings: {
       pains: 'Why UK teams struggle to get *Shopify work* done',
       includes: 'What our Shopify developer handles',
@@ -214,7 +214,7 @@ export const ukShopifyPages: ServicePageData[] = [
       {
         heading: 'Working with a Chennai developer from the UK',
         paragraphs: [
-          'We have no UK office. Magnus Path is a Chennai team, and India is 4.5 hours ahead of the UK in summer and 5.5 hours in winter. Our working day overlaps your morning and early afternoon, so tasks sent before UK lunchtime are usually picked up and often previewed the same day. Larger tasks are split into steps, so you see progress daily rather than waiting a week.',
+          'We have a London office for meetings, but your developer works in our Chennai team, and India is 4.5 hours ahead of the UK in summer and 5.5 hours in winter. Our working day overlaps your morning and early afternoon, so tasks sent before UK lunchtime are usually picked up and often previewed the same day. Larger tasks are split into steps, so you see progress daily rather than waiting a week.',
           'For agencies, that overlap makes white-label development practical: your project manager briefs us in the morning and has work to show clients by mid-afternoon. Whether you hire a Shopify developer in the UK or overseas, check how they handle access, Git and handover. You should own the code, the repository and every account at all times.',
         ],
       },
@@ -327,7 +327,7 @@ export const ukShopifyPages: ServicePageData[] = [
       {
         heading: 'Choosing a Shopify Plus agency: partner status, location and hours',
         paragraphs: [
-          'Shopify lists Plus Partners on its own directory. We are not one of them. Magnus Path is an independent Chennai team that builds on Shopify Plus, with no UK office. Judge us, and any Shopify Plus agency in the UK or overseas, on the work: ask to see checkout extensions, Functions and migration plans they have built.',
+          'Shopify lists Plus Partners on its own directory. We are not one of them. Magnus Path is an independent agency that builds on Shopify Plus, with a London office and a Chennai delivery team. Judge us, and any Shopify Plus agency in the UK or overseas, on the work: ask to see checkout extensions, Functions and migration plans they have built.',
           'India is 4.5 hours ahead of British Summer Time and 5.5 hours ahead in winter. Our day overlaps your morning and early afternoon, so issues raised before lunch are usually handled the same day. We quote in GBP after a free audit, typically as a fixed price for builds and migrations and a monthly retainer for ongoing work.',
         ],
       },
@@ -346,7 +346,7 @@ export const ukShopifyPages: ServicePageData[] = [
       { q: 'Can you replace our Shopify Scripts with Functions?', a: 'Yes. We list every script you run, check which can be replaced by native discounts or settings, and rebuild the rest as Shopify Functions. We test each one against real basket scenarios, including trade customers and EU orders, before switching the old scripts off.' },
       { q: 'How long does a Magento to Shopify Plus migration take?', a: 'It depends on catalogue size, order history, custom features and integrations. A straightforward migration takes a few months from audit to launch; complex builds with ERP links take longer. We plan the cutover away from Black Friday and Christmas so launch risk does not land on your busiest weeks.' },
       { q: 'Can Shopify Plus handle our wholesale customers?', a: 'Yes. B2B on Shopify supports company accounts, VAT numbers, custom catalogues, price lists, quantity rules and payment terms, all from the same store and stock pool as retail. Trade buyers log in to see their own prices, and orders can flow to your accounting software.' },
-      { q: 'How do we work with you from the UK?', a: 'We are a Chennai team with no UK office. India is 4.5 to 5.5 hours ahead of the UK, so our day overlaps your morning and early afternoon. Calls happen in that window, work runs through a shared board and Git, and requests before lunch are usually handled same day.' },
+      { q: 'How do we work with you from the UK?', a: 'You can meet us at our London office by appointment, but most delivery is done by our Chennai team. India is 4.5 to 5.5 hours ahead of the UK, so our day overlaps your morning and early afternoon. Calls happen in that window, work runs through a shared board and Git, and requests before lunch are usually handled same day.' },
     ],
   },
 ];

@@ -127,7 +127,7 @@ export const industryPages: ServicePageData[] = [
       { q: 'Why does my industry matter when choosing an agency?', a: 'Each category has its own buying behaviour, ad policies, marketplaces and seasons. An agency that already understands those details avoids expensive mistakes, such as beauty ads rejected for claims or fashion campaigns that scale sales and returns at the same rate.' },
       { q: 'How much does D2C ecommerce marketing cost?', a: 'Our performance marketing for Meta and Google ads starts at ₹30,000 a month plus ad spend. Marketplace management, quick-commerce ads and SEO are priced separately, and B2B digital marketing for manufacturers starts at ₹50,000 a month. You get a fixed quote after a free consultation.' },
       { q: 'Should a D2C brand sell on marketplaces as well as its own website?', a: 'Usually yes. Marketplaces such as Amazon, Myntra, Nykaa and Blinkit bring buyers who already intend to purchase, while your own store gives you customer data, better margins and repeat orders. The key is keeping prices, content and stock consistent so the channels support each other.' },
-      { q: 'Do you work with brands outside Tamil Nadu?', a: 'Yes. We are based in Chennai and meet Tamil Nadu brands in person. Brands in the rest of India and in the UK, UAE, Australia, Singapore and the USA work with us remotely through video calls, shared dashboards and project boards.' },
+      { q: 'Do you work with brands outside Tamil Nadu?', a: 'Yes. Our head office is in Chennai, and brands can also meet us at our offices in Bengaluru and London. Brands elsewhere in India and in the UAE, Australia, Singapore and the USA work with us remotely through video calls, shared dashboards and project boards.' },
     ],
   },
 
@@ -953,7 +953,7 @@ export const industryPages: ServicePageData[] = [
     local: {
       city: 'Chennai',
       areas: ['T. Nagar', 'Anna Nagar', 'Adyar', 'Velachery', 'OMR', 'Nungambakkam', 'Guindy', 'Porur', 'Tambaram', 'Ambattur'],
-      note: 'Our office is in Chennai, and we meet clients in person across the city, from retailers in T. Nagar to manufacturers in Ambattur and Guindy. Clients elsewhere in Tamil Nadu, India and abroad work with us remotely.',
+      note: 'Our head office is in Chennai, and we meet clients in person across the city, from retailers in T. Nagar to manufacturers in Ambattur and Guindy. We also have offices in Bengaluru and London, and clients elsewhere work with us remotely.',
     },
     guide: [
       {
@@ -1032,7 +1032,7 @@ export const industryPages: ServicePageData[] = [
       { q: 'What does a digital marketing agency in Chennai do?', a: 'A digital marketing agency in Chennai plans and runs online channels that bring customers to a business: Google Ads, Meta and social media, SEO, websites and marketplaces. A good agency ties this work to measurable results such as orders, enquiries and cost per customer, not just reach or followers.' },
       { q: 'How much do digital marketing services in Chennai cost?', a: 'Our digital marketing with Meta and Google ads starts at ₹30,000 a month plus ad spend. SEO services start at ₹25,000 a month and e-commerce SEO at ₹35,000 a month. Websites are one-time projects. You get a fixed quote after a free consultation and audit.' },
       { q: 'Do you create ads and social media content in Tamil?', a: 'Yes. We produce ads, reels and social media content in Tamil, English or a mix, depending on your audience. Tamil creative often performs well for local businesses and for brands selling to customers across Tamil Nadu and to Tamil-speaking communities abroad.' },
-      { q: 'Can we meet your team in person in Chennai?', a: 'Yes. Our office is in Chennai, and we meet clients in person across the city, at your office, store or factory, for kick-off meetings and monthly reviews. Clients outside Chennai work with us through video calls and shared dashboards.' },
+      { q: 'Can we meet your team in person in Chennai?', a: 'Yes. Our head office is in Chennai, and we meet clients in person across the city, at your office, store or factory, for kick-off meetings and monthly reviews. Clients outside Chennai work with us through video calls and shared dashboards.' },
       { q: 'Do you work only with e-commerce brands?', a: 'E-commerce and D2C brands are our focus, but we also work with local businesses such as clinics, retailers and service firms, and with manufacturers and exporters that need B2B lead generation. The same principle applies to all: marketing measured on sales and enquiries.' },
       { q: 'Are you a Google Ads agency in Chennai?', a: 'Yes. We plan and manage Google Search, Shopping, Performance Max and YouTube campaigns for Chennai businesses and brands across India. Every campaign is set up with conversion tracking so you can see which keywords and ads bring orders, calls or enquiries.' },
       { q: 'Will I own my ad accounts and website?', a: 'Yes. Ad accounts, analytics, your website and all creative we produce belong to you. We work inside accounts in your name, so if you ever move to another agency or take marketing in-house, you keep all your data and history.' },

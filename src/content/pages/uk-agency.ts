@@ -71,7 +71,7 @@ export const ukAgencyPages: ServicePageData[] = [
       {
         heading: 'Same-day turnaround on UK time',
         paragraphs: [
-          'We are a Chennai team with no UK office. India Standard Time is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so our working day overlaps your morning and early afternoon. A brief, a new client site or client feedback sent before lunch is usually handled the same day, and calls are booked inside that overlap.',
+          'We have a London office where you can meet us by appointment, but most delivery is done by our Chennai team. India Standard Time is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so our working day overlaps your morning and early afternoon. A brief, a new client site or client feedback sent before lunch is usually handled the same day, and calls are booked inside that overlap.',
           'For UK agencies using our white label SEO service, this matters more than it sounds. When a client raises a question in a ten o’clock meeting, you can often send them an answer, written in your tone, before they finish for the day. We do not offer UK evening support, and we would rather say so up front. Urgent issues reach a named account manager on your chat channel.',
         ],
       },
@@ -183,7 +183,7 @@ export const ukAgencyPages: ServicePageData[] = [
         heading: 'In-house hire, UK freelancer or offshore SEO team',
         paragraphs: [
           'Each option has a place. An in-house specialist sits in your meetings every day and learns the business deeply, but a senior hire is a large fixed cost, and one person rarely covers technical SEO, writing and outreach equally well. A UK freelancer is flexible and local, but capacity is limited and holidays stop the work.',
-          'An offshore SEO team gives you several specialists for the cost of a modest retainer, and the work continues when one person is away. The trade-off is distance: you cannot drop by the office, so process has to carry the relationship. Many UK businesses keep strategy and approvals in-house and use outsourced SEO for delivery, which gives them control without the salary.',
+          'An offshore SEO team gives you several specialists for the cost of a modest retainer, and the work continues when one person is away. The trade-off is that the people doing the daily work are not down the corridor, so process has to carry the relationship. We have a London office for meetings, but our delivery runs from Chennai. Many UK businesses keep strategy and approvals in-house and use outsourced SEO for delivery, which gives them control without the salary.',
         ],
       },
       {
@@ -203,7 +203,7 @@ export const ukAgencyPages: ServicePageData[] = [
       {
         heading: 'How our working day lines up with the UK',
         paragraphs: [
-          'We are a Chennai team with no UK office. India Standard Time is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so our working day overlaps your morning and early afternoon. Requests sent before UK lunchtime are usually handled the same day, and calls are booked in that window.',
+          'We have a London office where you can meet us by appointment, but most delivery is done by our Chennai team. India Standard Time is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so our working day overlaps your morning and early afternoon. Requests sent before UK lunchtime are usually handled the same day, and calls are booked in that window.',
           'Day-to-day work runs through Slack, Teams or email, plus a shared project board showing what is planned, in progress and done. You should never need to chase us for a status update. If you do, the process is not working and we want to hear about it.',
         ],
       },

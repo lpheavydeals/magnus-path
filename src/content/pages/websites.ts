@@ -121,7 +121,7 @@ export const websitePages: ServicePageData[] = [
       {
         heading: 'Why work with a Chennai-based Shopify team',
         paragraphs: [
-          'We work with brands across India and abroad, and Tamil Nadu brands can meet us in person. Because the same team also runs ads and SEO, your store is built with marketing in mind: landing pages ready for campaigns, tracking that matches your ad platforms, and pages structured to rank on Google.',
+          'We work with brands across India and abroad, and clients can meet us in person at our offices in Chennai, Bengaluru and London. Because the same team also runs ads and SEO, your store is built with marketing in mind: landing pages ready for campaigns, tracking that matches your ad platforms, and pages structured to rank on Google.',
         ],
       },
     ],
@@ -141,7 +141,7 @@ export const websitePages: ServicePageData[] = [
       { q: 'Can you migrate my store from WooCommerce to Shopify?', a: 'Yes. We migrate products, collections, customers and order history where possible, set up 301 redirects from old URLs so you keep your Google rankings, and test everything before switching over.' },
       { q: 'Do your Shopify stores support UPI and Cash on Delivery?', a: 'Yes. We set up Indian payment gateways with UPI, cards and wallets, and configure COD with rules such as order limits and verification to reduce return-to-origin orders.' },
       { q: 'Will my Shopify store be SEO-friendly?', a: 'Yes. Every store launches with clean URLs, optimised titles and descriptions, product structured data, fast-loading images and a submitted sitemap. Our SEO team can continue with ongoing Shopify SEO if you want to grow organic sales.' },
-      { q: 'Do you work with brands outside Chennai?', a: 'Yes. We are based in Chennai and build Shopify stores for brands across India and in the UK, UAE, Australia and the USA, working through video calls and shared project boards.' },
+      { q: 'Do you work with brands outside Chennai?', a: 'Yes. Our head office is in Chennai, with further offices in Bengaluru and London, and we build Shopify stores for brands across India and in the UK, UAE, Australia and the USA, working through video calls and shared project boards.' },
     ],
   },
   {
@@ -182,7 +182,7 @@ export const websitePages: ServicePageData[] = [
       { title: 'Shopify Development', href: '/shopify-development/', body: 'Fast, mobile-first Shopify and Shopify Plus stores for D2C brands that want to launch quickly and grow without managing servers.', icon: 'shopify' },
       { title: 'WooCommerce Development', href: '/woocommerce-development/', body: 'Flexible WordPress e-commerce stores with full ownership of code and data, ideal for content-heavy brands and B2B catalogues.', icon: 'website' },
       { title: 'E-commerce Website Development in Chennai', href: '/chennai/ecommerce-website-development/', body: 'In-person planning and design workshops for Chennai and Tamil Nadu brands, from silk and textiles to food and FMCG.', icon: 'marketplace' },
-      { title: 'E-commerce Development for Bangalore Brands', href: '/bangalore/ecommerce-website-development/', body: 'Our Chennai team builds and supports stores for Bangalore D2C start-ups remotely, with visits when a workshop helps.', icon: 'quick' },
+      { title: 'E-commerce Development for Bangalore Brands', href: '/bangalore/ecommerce-website-development/', body: 'Shopify and custom stores for Bangalore D2C start-ups, with meetings at our Bengaluru office and our Chennai head office team on the build.', icon: 'quick' },
       { title: 'Corporate Website Development', href: '/corporate-website-development/', body: 'Professional websites for manufacturers, exporters and service firms, with product catalogues, RFQ forms and lead tracking.', icon: 'website' },
       { title: 'Website Maintenance Services', href: '/website-maintenance-services/', body: 'Monthly care plans for updates, backups, security checks and content changes, so your site keeps working after launch.', icon: 'seo' },
     ],
@@ -280,7 +280,7 @@ export const websitePages: ServicePageData[] = [
       { q: 'Can you integrate my website with Amazon and Flipkart?', a: 'Yes. We connect your store to marketplaces through inventory and order management tools so stock levels stay in sync across your website, Amazon, Flipkart and quick-commerce channels. This avoids overselling and saves your team from updating each channel by hand.' },
       { q: 'What is headless e-commerce and do I need it?', a: 'Headless e-commerce separates the storefront from the commerce back end, so the front end can be built with any framework. It helps brands that need very fast pages, unusual designs or one back end serving a website and an app. Most new brands do not need it on day one.' },
       { q: 'Is it better to hire an ecommerce developer or an agency?', a: 'A freelance developer works for small, clearly defined tasks. An agency is a better fit when the project covers design, integrations, tracking, SEO and support, because one team is responsible for the full result and you are not left without help if one person becomes unavailable.' },
-      { q: 'Do you work with brands outside Chennai and India?', a: 'Yes. Our team is based in Chennai and meets Tamil Nadu clients in person. We work remotely with brands across India and in the UK, UAE, Australia, Singapore and the USA, using video calls, shared project boards and staging sites for review.' },
+      { q: 'Do you work with brands outside Chennai and India?', a: 'Yes. Our head office is in Chennai, and we also have offices in Bengaluru and London where clients can meet us by appointment. We work remotely with brands elsewhere in India and in the UAE, Australia, Singapore and the USA, using video calls, shared project boards and staging sites for review.' },
     ],
   },
   {
@@ -450,7 +450,7 @@ export const websitePages: ServicePageData[] = [
     local: {
       city: 'Chennai',
       areas: ['T. Nagar', 'Anna Nagar', 'Nungambakkam', 'Guindy', 'OMR', 'Velachery', 'Adyar', 'Ambattur', 'Porur', 'Tambaram'],
-      note: 'Our office is in Chennai, so we meet clients across the city for workshops, reviews and training. We also travel to brands and manufacturers elsewhere in Tamil Nadu, including Kancheepuram, Tiruppur and Coimbatore, when a visit helps the project.',
+      note: 'Our head office is in Chennai, so we meet clients across the city for workshops, reviews and training. We also travel to brands and manufacturers elsewhere in Tamil Nadu, including Kancheepuram, Tiruppur and Coimbatore, when a visit helps the project.',
     },
     process: [
       { title: 'Meet and map', body: 'We visit you or you visit us. We walk through your products, current sales channels and goals, then send a written scope with a fixed quote.' },
@@ -536,32 +536,32 @@ export const websitePages: ServicePageData[] = [
       { label: 'E-commerce marketing for fashion and apparel brands', href: '/industries/fashion-apparel/' },
     ],
     faqs: [
-      { q: 'Can we meet your team in person in Chennai?', a: 'Yes. Our office is in Chennai and we meet clients for discovery workshops, design reviews and staff training, either at our office or at your shop, office or factory. We also travel to other Tamil Nadu towns such as Kancheepuram and Tiruppur when a visit helps.' },
+      { q: 'Can we meet your team in person in Chennai?', a: 'Yes. Our head office is in Chennai and we meet clients for discovery workshops, design reviews and staff training, either at our office or at your shop, office or factory. We also travel to other Tamil Nadu towns such as Kancheepuram and Tiruppur when a visit helps.' },
       { q: 'How much does ecommerce website development cost in Chennai?', a: 'Template-based Shopify stores start at ₹60,000 and custom Shopify builds usually cost ₹1.5–5 lakh. WooCommerce stores start at ₹50,000, and custom e-commerce development starts at ₹2,00,000. Platform fees, hosting and paid apps are separate. You get a fixed quote after a free consultation.' },
       { q: 'Does your team speak Tamil?', a: 'Yes. Our team works in Tamil and English. Many founders and store staff prefer to discuss requirements and learn the admin panel in Tamil, so we offer meetings, training sessions and recorded walkthroughs in whichever language your team is most comfortable with.' },
       { q: 'Are you Shopify experts in Chennai?', a: 'We build Shopify and Shopify Plus stores from our Chennai office, covering design, development, Indian payments, COD, GST, courier and marketplace integrations. Rather than relying on badges, judge us by the live stores we show you and by how clearly we scope your project.' },
       { q: 'Can you build an online store for silk sarees or textiles?', a: 'Yes. We set up catalogues that suit sarees, fabrics, garments and knitwear, with detailed attributes, size charts, high-resolution zoomable images and clear care and returns information. We also advise on product photography so items look accurate on mobile screens.' },
       { q: 'How long does e-commerce web development take in Chennai?', a: 'A Shopify or WooCommerce store on a customised theme usually takes three to five weeks. Custom designs, B2B features and marketplace or ERP integrations take longer, typically six to ten weeks. The biggest factor is how quickly product details and feedback come in.' },
-      { q: 'Do you only work with Chennai businesses?', a: 'No. Chennai and Tamil Nadu clients can meet us in person, but we also build stores remotely for brands across India, including Bangalore, and for businesses in the UK, UAE, Australia, Singapore and the USA.' },
+      { q: 'Do you only work with Chennai businesses?', a: 'No. Our head office is in Chennai, and we also have offices in Bengaluru and London where clients can meet the team by appointment. We build stores for brands across India and work remotely with businesses in the UAE, Australia, Singapore and the USA.' },
     ],
   },
   {
     slug: 'bangalore/ecommerce-website-development',
     kind: 'location',
     title: 'Ecommerce Development Company in Bangalore | Magnus Path',
-    description: 'Ecommerce development company for Bangalore D2C brands. A Chennai team building Shopify and custom stores remotely, with visits to Bangalore when needed.',
+    description: 'Ecommerce development company for Bangalore D2C brands. Meet us at our Bengaluru office; we build Shopify and custom stores with our Chennai head office.',
     primaryKeyword: 'ecommerce development company in bangalore',
     navLabel: 'E-commerce Development Bangalore',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
     eyebrow: 'E-commerce web development · Bangalore',
     h1: 'Ecommerce Development Company for *Bangalore D2C* Brands',
-    intro: 'Looking for an ecommerce development company in Bangalore? Magnus Path is a Chennai-based team that builds Shopify, WooCommerce and custom stores for Bangalore D2C brands. We work remotely through daily updates and shared staging sites, and travel to Bangalore for workshops when a project needs it. You get a focused team without paying Bangalore agency overheads.',
+    intro: 'Looking for an ecommerce development company in Bangalore? Magnus Path builds Shopify, WooCommerce and custom stores for Bangalore D2C brands. You can meet us at our Bengaluru office for workshops and reviews, while our Chennai head office team shares the build. Weekly demos and shared staging sites keep you close to the work at every step.',
     icon: 'quick',
-    facts: ['Chennai team, Bangalore clients', 'Remote-first with visits', 'Shopify stores from ₹60,000'],
+    facts: ['Bengaluru office, meetings by appointment', 'Chennai head office team on the build', 'Shopify stores from ₹60,000'],
     headings: {
       pains: 'Why Bangalore founders look beyond the usual agencies',
       includes: 'What we build for Bangalore e-commerce brands',
-      process: 'How remote delivery works, in *4 steps*',
+      process: 'How a Bangalore project runs, in *4 steps*',
       pricing: 'E-commerce development pricing for Bangalore brands',
       guide: 'Choosing an ecommerce development company in Bangalore',
     },
@@ -582,18 +582,18 @@ export const websitePages: ServicePageData[] = [
     local: {
       city: 'Bangalore',
       areas: ['Koramangala', 'HSR Layout', 'Indiranagar', 'Whitefield', 'Jayanagar', 'Electronic City', 'Bellandur', 'Marathahalli', 'JP Nagar', 'Hebbal'],
-      note: 'We do not have a Bangalore office. Our team works from Chennai and serves Bangalore brands remotely, and because the two cities are a short trip apart, we visit for kick-off workshops or key reviews when a project needs it.',
+      note: 'We have a Bengaluru office where you can meet the team by appointment for kick-off workshops, design reviews and training. It works alongside our Chennai head office, where much of the development is done, so Bangalore brands get local meetings and a full delivery team.',
     },
     process: [
-      { title: 'Video discovery call', body: 'A structured call with your founders and growth team to understand products, channels and targets, followed by a written scope and fixed quote.' },
-      { title: 'Kick-off in person if useful', body: 'For larger builds we travel to Bangalore for a workshop. Otherwise, design reviews happen over video with clickable prototypes.' },
+      { title: 'Discovery meeting', body: 'A structured session at our Bengaluru office or over video with your founders and growth team to understand products, channels and targets, followed by a written scope and fixed quote.' },
+      { title: 'Kick-off and design reviews', body: 'Meet us at our Bengaluru office for a kick-off workshop and design reviews with clickable prototypes, or join over video if that suits your team better.' },
       { title: 'Build in sprints', body: 'Weekly sprints on a shared staging site, with progress updates in Slack or WhatsApp and a demo at the end of each sprint.' },
       { title: 'Launch and iterate', body: 'We launch with tracking verified, support you for 30 days and can continue on a monthly retainer for new features and landing pages.' },
     ],
     pricing: {
       from: '₹60,000',
       unit: 'one-time',
-      note: 'Template-based Shopify stores start at ₹60,000, and custom Shopify builds usually cost ₹1.5–5 lakh. Headless and custom e-commerce development starts at ₹2,00,000, and WooCommerce stores start at ₹50,000. Travel for in-person workshops is agreed upfront.',
+      note: 'Template-based Shopify stores start at ₹60,000, and custom Shopify builds usually cost ₹1.5–5 lakh. Headless and custom e-commerce development starts at ₹2,00,000, and WooCommerce stores start at ₹50,000. Workshops at our Bengaluru office are included in the scope.',
       items: ['Discovery call and written scope', 'Mobile-first design with prototypes', 'Payments, COD, GST and courier setup', 'Tracking for Meta and Google Ads', '30 days of post-launch support'],
     },
     guide: [
@@ -609,7 +609,7 @@ export const websitePages: ServicePageData[] = [
         heading: 'Does your developer need to be in Bangalore?',
         paragraphs: [
           'Not necessarily. Most e-commerce web development happens on shared screens, staging sites and project boards, whichever city the team is in. What matters is clear communication, overlapping working hours and a team that is reachable when something breaks.',
-          'We are a Chennai team. We work with Bangalore brands remotely day to day and visit when a workshop or launch review benefits from being in the same room. Many founders find this gives them senior attention at a fairer price than a large local agency. Chennai and Bangalore share the same time zone and working culture, so there is no lag in replies.',
+          'We have a Bengaluru office where you can meet the team by appointment, alongside our Chennai head office. Kick-off workshops, design reviews and launch training can happen in the same room, while day-to-day work runs on shared staging sites and chat. Much of the development is done by our Chennai team, and both offices keep the same working hours, so there is no lag in replies.',
           'We run Bangalore projects in weekly sprints. You get a shared staging link, a short written update every week and a demo call at the end of each sprint. Questions go into a shared Slack or WhatsApp channel and are answered the same working day. Once the store is live, the same developers stay on for fixes and new features, so knowledge is never lost in a handover.',
         ],
       },
@@ -644,7 +644,7 @@ export const websitePages: ServicePageData[] = [
         heading: 'Cost of e-commerce development for Bangalore brands',
         paragraphs: [
           'Our prices are the same for Bangalore as for any other city. A template-based Shopify store starts at ₹60,000, and a custom Shopify build usually costs ₹1.5–5 lakh. Headless and custom e-commerce development starts at ₹2 lakh, and WooCommerce stores start at ₹50,000.',
-          'Running costs include the Shopify subscription or hosting, paid apps and any order management tool. Travel for in-person workshops is agreed before the project starts, so there are no surprises on the invoice.',
+          'Running costs include the Shopify subscription or hosting, paid apps and any order management tool. Everything in the scope, including workshops at our Bengaluru office, is agreed before the project starts, so there are no surprises on the invoice.',
         ],
       },
       {
@@ -669,9 +669,9 @@ export const websitePages: ServicePageData[] = [
       { label: 'E-commerce website development in Chennai', href: '/chennai/ecommerce-website-development/' },
     ],
     faqs: [
-      { q: 'Do you have an office in Bangalore?', a: 'No. Our only office is in Chennai. We serve Bangalore brands remotely through video calls, shared staging sites and Slack or WhatsApp updates, and we travel to Bangalore for kick-off workshops or important reviews when a project benefits from meeting in person.' },
+      { q: 'Do you have an office in Bangalore?', a: 'Yes. We have a Bengaluru office where you can meet the team by appointment for kick-off workshops, design reviews and training. It works alongside our Chennai head office, where much of the development is done, and day-to-day updates run through shared staging sites and Slack or WhatsApp.' },
       { q: 'How much does an ecommerce development company in Bangalore charge?', a: 'Rates vary widely across the city. With Magnus Path, template-based Shopify stores start at ₹60,000, custom Shopify builds usually cost ₹1.5–5 lakh, WooCommerce stores start at ₹50,000 and custom or headless development starts at ₹2,00,000. Each project gets a fixed quote after scoping.' },
-      { q: 'Can a Chennai team build a Shopify store for a Bangalore brand?', a: 'Yes. Store development happens on shared screens and staging sites, so location matters less than communication. We overlap fully with Bangalore working hours, give weekly demos and are a short trip away if an in-person meeting is needed.' },
+      { q: 'Who builds the store, the Bengaluru or the Chennai team?', a: 'Both offices work as one team. You meet us at our Bengaluru office for workshops and reviews, and much of the development is done by our Chennai head office team on shared staging sites. Everyone keeps the same working hours, and you get weekly demos throughout.' },
       { q: 'How do I choose the best ecommerce development company in Bangalore?', a: 'Test their live stores on your own phone, meet the people who will build your store, and ask for a written scope with a fixed price and exclusions. Check whether they understand ad tracking and marketplace integrations, and how they handle support once the store is live.' },
       { q: 'Can you connect my store to Blinkit, Zepto and Instamart?', a: 'We integrate your website with order management tools that also connect to marketplaces and quick-commerce platforms, so inventory stays consistent across channels. The exact setup depends on how you supply each platform, so we review your current operations before recommending tools.' },
       { q: 'Do you build headless Shopify stores?', a: 'Yes. We build headless storefronts in Next.js on top of Shopify or an open-source commerce back end. We recommend headless only when a brand needs it, such as for very fast pages, complex product experiences or one back end serving both a website and an app.' },

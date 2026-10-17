@@ -102,7 +102,7 @@ export const businessWebsitePages: ServicePageData[] = [
       {
         heading: 'Why work with us on your company website',
         paragraphs: [
-          'We are a Chennai team that builds websites and also runs SEO and B2B marketing, so our corporate website development is planned around the enquiries your site needs to generate, not just how it looks. Tamil Nadu businesses can meet us in person for workshops, and we work remotely with companies across India and abroad. Everything is registered in your name from day one.',
+          'We are a Chennai team that builds websites and also runs SEO and B2B marketing, so our corporate website development is planned around the enquiries your site needs to generate, not just how it looks. Clients can meet us in person for workshops at our offices in Chennai, Bengaluru and London, and we work remotely with companies elsewhere in India and abroad. Everything is registered in your name from day one.',
           'After launch, corporate website development does not stop. Products change, people join, certifications renew and new markets open. We offer maintenance plans for updates and security, and our SEO team can keep growing the traffic your new site was built to win.',
         ],
       },
@@ -247,7 +247,7 @@ export const businessWebsitePages: ServicePageData[] = [
       { q: 'Should I use Rank Math or Yoast for SEO?', a: 'Both are solid, and either works well when configured correctly. Rank Math includes more features in its free version, while Yoast is long-established and very stable. We pick based on your needs, then set up titles, schema, sitemaps and indexing rules so the plugin actually helps rankings.' },
       { q: 'Can you migrate my site from Wix or another CMS to WordPress?', a: 'Yes. We move pages, blog posts, images and metadata, rebuild the design as a WordPress theme and set up 301 redirects from every old URL. After launch we monitor Search Console for errors so your existing Google rankings and backlinks carry over to the new site.' },
       { q: 'Do you build online stores on WordPress?', a: 'Yes, using WooCommerce, which adds products, cart, checkout and payments to WordPress. Store builds involve Indian payment gateways, COD, GST and courier integrations, so they are scoped and priced separately on our WooCommerce development page rather than under a standard WordPress website.' },
-      { q: 'Do you work as a WordPress developer for clients outside Chennai?', a: 'Yes. We are a Chennai-based team and work with businesses across India and in the UK, UAE, Australia, Singapore and the USA. Projects run through video calls, shared design files and a project board, and Tamil Nadu clients can meet us in person.' },
+      { q: 'Do you work as a WordPress developer for clients outside Chennai?', a: 'Yes. We are a Chennai-based team and work with businesses across India and in the UK, UAE, Australia, Singapore and the USA. Projects run through video calls, shared design files and a project board, and clients can meet us in person at our offices in Chennai, Bengaluru and London.' },
     ],
   },
 ];

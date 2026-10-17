@@ -693,7 +693,7 @@ export const seoPages: ServicePageData[] = [
     local: {
       city: 'Chennai',
       areas: ['T. Nagar', 'Anna Nagar', 'Guindy', 'OMR', 'Velachery', 'Nungambakkam', 'Adyar', 'Porur', 'Ambattur', 'Mylapore'],
-      note: 'Our office is in Chennai, so we can meet clients across the city in person. We also work with businesses in nearby industrial areas such as Sriperumbudur, Oragadam and Chengalpattu.',
+      note: 'Our head office is in Chennai, so we can meet clients across the city in person. We also work with businesses in nearby industrial areas such as Sriperumbudur, Oragadam and Chengalpattu.',
     },
     guide: [
       {
@@ -769,12 +769,12 @@ export const seoPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'How much does an SEO company in Chennai charge?', a: 'Prices in Chennai range from a few thousand rupees for basic packages to over a lakh a month for large websites. Magnus Path’s SEO services start at ₹25,000 a month for one location, and e-commerce SEO starts at ₹35,000 a month.' },
-      { q: 'Can I meet your SEO team in person in Chennai?', a: 'Yes. Our office is in Chennai, and we are happy to meet at your office or ours for the kick-off, planning sessions and regular progress reviews. Day-to-day work and updates happen over calls, WhatsApp and shared monthly reports.' },
+      { q: 'Can I meet your SEO team in person in Chennai?', a: 'Yes. Our head office is in Chennai, and we are happy to meet at your office or ours for the kick-off, planning sessions and regular progress reviews. Day-to-day work and updates happen over calls, WhatsApp and shared monthly reports.' },
       { q: 'Do you offer Tamil-language SEO?', a: 'Yes. We research Tamil and Tanglish keywords, write Tamil pages with people who speak the language, and set up correct language tags. Tamil content works especially well for local service businesses whose customers search on mobile or by voice.' },
       { q: 'How do I get my Chennai business on Google Maps?', a: 'Create and verify a Google Business Profile, choose the right category, add your services, hours, photos and service areas, and keep your address and phone number identical across directories. Regular reviews and posts help you appear in the local map results more often.' },
       { q: 'How do I choose an SEO agency in Chennai?', a: 'Ask who will do the work, what is delivered each month, how links are built and how results are measured. A good agency explains its plan in plain language and ties reports to calls, enquiries or orders, not only keyword positions.' },
       { q: 'How long does SEO take for a Chennai business?', a: 'Google Business Profile improvements often show within a few weeks. Website rankings for competitive Chennai searches usually take three to six months to improve meaningfully, depending on your starting point, the competition in your area and how quickly changes go live.' },
-      { q: 'Do you work with businesses outside Chennai?', a: 'Yes. We work with businesses across Tamil Nadu, the rest of India and abroad. Chennai clients can meet us in person, while clients elsewhere work with us through video calls, shared reports and visits when needed.' },
+      { q: 'Do you work with businesses outside Chennai?', a: 'Yes. We work with businesses across Tamil Nadu, the rest of India and abroad. Clients can meet us in person at our offices in Chennai, Bengaluru and London, while clients elsewhere work with us through video calls, shared reports and visits when needed.' },
     ],
   },
 
@@ -828,13 +828,13 @@ export const seoPages: ServicePageData[] = [
     local: {
       city: 'Coimbatore',
       areas: ['RS Puram', 'Gandhipuram', 'Peelamedu', 'Saravanampatti', 'Singanallur', 'Race Course', 'Saibaba Colony', 'Tiruppur', 'Pollachi'],
-      note: 'We do not have an office in Coimbatore. We serve Coimbatore, Tiruppur and nearby towns from our Chennai office, working remotely day to day and visiting in person when a project needs it.',
+      note: 'We do not have an office in Coimbatore. We serve Coimbatore, Tiruppur and nearby towns from our Chennai head office, working remotely day to day and visiting in person when a project needs it.',
     },
     guide: [
       {
         heading: 'How we deliver SEO services in Coimbatore from Chennai',
         paragraphs: [
-          'We want to be clear from the start: our only office is in Chennai. We provide SEO services in Coimbatore by working remotely through video calls, shared documents and WhatsApp, and by travelling to Coimbatore or Tiruppur when a visit helps, such as at the start of a project or when we need to understand a new product line.',
+          'We want to be clear from the start: we do not have an office in Coimbatore. Our head office is in Chennai, with further offices in Bengaluru and London, and we provide SEO services in Coimbatore by working remotely through video calls, shared documents and WhatsApp, and by travelling to Coimbatore or Tiruppur when a visit helps, such as at the start of a project or when we need to understand a new product line.',
           'Day to day, you will have one named contact who handles requests, shares progress and arranges any specialist help. Reports arrive on a fixed date each month, followed by a review call at a time that suits your team, including early mornings or evenings around production schedules.',
           'SEO itself is done online, so distance does not limit the work. What matters is understanding your products and your buyers, and that is what the visits are for.',
         ],
@@ -898,7 +898,7 @@ export const seoPages: ServicePageData[] = [
       { label: 'How to find buyers for export', href: '/blog/how-to-find-buyers-for-export/' },
     ],
     faqs: [
-      { q: 'Do you have an office in Coimbatore?', a: 'No. Our only office is in Chennai. We provide SEO services in Coimbatore remotely through video calls, shared reports and WhatsApp, and we travel to Coimbatore, Tiruppur and nearby towns when a visit helps, such as at project kick-off or for a new product line.' },
+      { q: 'Do you have an office in Coimbatore?', a: 'No. Our head office is in Chennai, and our other offices are in Bengaluru and London. We provide SEO services in Coimbatore remotely through video calls, shared reports and WhatsApp, and we travel to Coimbatore, Tiruppur and nearby towns when a visit helps, such as at project kick-off or for a new product line.' },
       { q: 'How much do SEO services in Coimbatore cost?', a: 'Our SEO services for Coimbatore businesses start at ₹25,000 a month. Manufacturers and exporters who want SEO combined with LinkedIn, Google Ads and export lead generation can use our B2B digital marketing service, which starts at ₹50,000 a month.' },
       { q: 'Can SEO help a manufacturer get B2B enquiries?', a: 'Yes. Procurement teams search for suppliers online using specific product terms and specifications. Product and capability pages built around those terms, with data sheets and clear enquiry forms, help manufacturers appear on shortlists that used to depend only on dealers and trade fairs.' },
       { q: 'Do you work with Tiruppur knitwear exporters?', a: 'Yes. We help Tiruppur knitwear and garment businesses with export-focused SEO, including English content for overseas buyers, category and fabric pages, and fast-loading websites. For brands launching direct-to-consumer stores, we also offer e-commerce SEO and Shopify development.' },
