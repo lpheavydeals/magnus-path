@@ -223,3 +223,12 @@ proof → "We'll reply within 24 hours".
 pages and test new ones (Chennai Shopify, WordPress, Google/Meta ads, Amazon, e-commerce SEO, maintenance). Rule: a new
 Chennai page needs ≥ 100 searches and KD ≤ 35. A Maps pack in the results is fine for Chennai (we have a real office there),
 but those pages also need the Google Business Profile set up.
+
+## Chennai keyword results (18 Oct 2026)
+Data: `research/keyword-lists/chennai/chennai-results.csv`. Proposal:
+- NEW /chennai/social-media-marketing-agency/: social media marketing agency in chennai (480 / KD 15).
+- /chennai/digital-marketing-agency/: add "digital marketing company in chennai" (1,900 / KD 14) to title, a heading and an FAQ.
+- /chennai/website-development-company/: add "web development company in chennai" (880 / KD 20) plus web design company (1,300 / 60),
+  website designers (590 / 47), website design company (320 / 46), WordPress developer, website design cost (FAQ).
+- /chennai/seo-company/: add "seo agency in chennai" (480 / KD 16) and seo services in chennai (720 / 50).
+- /corporate-website-development/: work in "professional website development" and "professional website design company".
