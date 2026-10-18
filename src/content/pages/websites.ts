@@ -87,7 +87,7 @@ export const websitePages: ServicePageData[] = [
       {
         heading: 'How much does Shopify development cost in India?',
         paragraphs: [
-          'Shopify development costs in India depend on how much is custom. A store built on a premium theme with your branding, payments and up to 50 products typically starts around ₹60,000. A custom-designed store with conversion-focused page templates, integrations and migration usually costs between ₹1.5 lakh and ₹5 lakh.',
+          'Shopify development costs in India depend on how much is custom. A store built on a premium theme with your branding, payments and up to 50 products is the simplest project. Custom-designed page templates, a large catalogue, integrations with ERP or marketplaces, and migration from another platform each add work. We quote after a short scoping call, and the written quote lists scope, timeline and exclusions.',
           'Beyond the build, budget for the Shopify subscription, a premium theme licence if used, and paid apps. We keep the app list short, because every app adds monthly cost and slows the store down.',
         ],
       },
@@ -144,7 +144,7 @@ export const websitePages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'How long does it take to build a Shopify store?', a: 'A store on a customised premium theme typically takes 3–4 weeks. A fully custom Shopify store with integrations and migration usually takes 5–8 weeks, depending on how quickly product content and feedback come in.' },
-      { q: 'How much does Shopify development cost in India?', a: 'Template-based Shopify stores start from about ₹60,000. Custom, conversion-focused builds usually cost ₹1.5–5 lakh. Shopify’s subscription, theme licence and paid apps are separate monthly costs.' },
+      { q: 'How much does Shopify development cost in India?', a: 'It depends on scope: a premium theme or a custom design, the number of products and templates, integrations and any migration. We give a fixed written quote after a free audit or short scoping call, listing scope, timeline and exclusions. Shopify’s subscription, theme licence and paid apps are separate monthly costs.' },
       { q: 'Can you migrate my store from WooCommerce to Shopify?', a: 'Yes. We migrate products, collections, customers and order history where possible, set up 301 redirects from old URLs so you keep your Google rankings, and test everything before switching over.' },
       { q: 'Do your Shopify stores support UPI and Cash on Delivery?', a: 'Yes. We set up Indian payment gateways with UPI, cards and wallets, and configure COD with rules such as order limits and verification to reduce return-to-origin orders.' },
       { q: 'Will my Shopify store be SEO-friendly?', a: 'Yes. Every store launches with clean URLs, optimised titles and descriptions, product structured data, fast-loading images and a submitted sitemap. Our SEO team can continue with ongoing Shopify SEO if you want to grow organic sales.' },
@@ -260,7 +260,7 @@ export const websitePages: ServicePageData[] = [
       {
         heading: 'How much e-commerce website development costs in India',
         paragraphs: [
-          'Cost follows complexity. A WooCommerce store on a well-built theme starts around ₹50,000, and a template-based Shopify store around ₹60,000. A custom-designed Shopify store usually falls between ₹1.5 lakh and ₹5 lakh. Custom e-commerce development with headless front ends or deep integrations starts at about ₹2 lakh and rises with scope.',
+          'Cost follows complexity. A WooCommerce or Shopify store on a well-built theme is the most straightforward project. A custom-designed Shopify store takes more design and development time, and custom e-commerce development with headless front ends or deep integrations rises further with scope. The main drivers are the number of page templates, catalogue size, integrations, migration and who writes the content. We quote after a free audit or scoping call, with scope, timeline and exclusions in writing.',
           'A reliable ecommerce website development company will spell out the running costs too: platform subscription or hosting, paid apps or plugins, payment gateway fees and ongoing maintenance. A cheaper build with high monthly costs can end up more expensive over two years.',
         ],
       },
@@ -290,7 +290,7 @@ export const websitePages: ServicePageData[] = [
     faqs: [
       { q: 'What does an ecommerce website development company do?', a: 'It plans, designs and builds your online store, then connects the systems that make it work: payment gateways, COD, GST invoicing, courier integrations, marketplace stock sync and analytics. A good company also handles data migration, redirects from your old site and support after the store goes live.' },
       { q: 'Should I choose Shopify, WooCommerce or a custom build?', a: 'Shopify suits most D2C brands that want speed and low maintenance. WooCommerce suits brands that want full control, already use WordPress or need complex product options. Custom development is right for marketplaces, dealer portals and stores that must integrate deeply with ERPs or several sales channels.' },
-      { q: 'How much does e-commerce website development cost in India?', a: 'At Magnus Path, WooCommerce stores start at ₹50,000 and template-based Shopify stores at ₹60,000. Custom Shopify builds usually cost ₹1.5–5 lakh, and custom e-commerce development starts at ₹2,00,000. Platform fees, hosting and paid apps are separate running costs.' },
+      { q: 'How much does e-commerce website development cost in India?', a: 'Cost depends on the platform, whether the design is template-based or custom, catalogue size, integrations and migration. Custom and headless builds cost more than theme-based stores. We send a fixed written quote after a free audit or scoping call, listing scope, timeline and exclusions. Platform fees, hosting and paid apps are separate running costs.' },
       { q: 'Can you integrate my website with Amazon and Flipkart?', a: 'Yes. We connect your store to marketplaces through inventory and order management tools so stock levels stay in sync across your website, Amazon, Flipkart and quick-commerce channels. This avoids overselling and saves your team from updating each channel by hand.' },
       { q: 'What is headless e-commerce and do I need it?', a: 'Headless e-commerce separates the storefront from the commerce back end, so the front end can be built with any framework. It helps brands that need very fast pages, unusual designs or one back end serving a website and an app. Most new brands do not need it on day one.' },
       { q: 'Is it better to hire an ecommerce developer or an agency?', a: 'A freelance developer works for small, clearly defined tasks. An agency is a better fit when the project covers design, integrations, tracking, SEO and support, because one team is responsible for the full result and you are not left without help if one person becomes unavailable.' },
@@ -301,7 +301,7 @@ export const websitePages: ServicePageData[] = [
     slug: 'woocommerce-development',
     kind: 'service',
     title: 'WooCommerce Development Company in India | Magnus Path',
-    description: 'WooCommerce development company in Chennai building fast, secure WordPress e-commerce stores with UPI, COD, GST invoices and courier integrations. From ₹50,000.',
+    description: 'WooCommerce development company in Chennai building fast, secure WordPress e-commerce stores with UPI, COD, GST invoices and courier integrations. Fixed quotes.',
     primaryKeyword: 'woocommerce development company',
     navLabel: 'WooCommerce Development',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
@@ -309,7 +309,7 @@ export const websitePages: ServicePageData[] = [
     h1: 'WooCommerce Development Company for Stores *You Fully Own*',
     intro: 'Magnus Path is a WooCommerce development company that builds WordPress online stores you control completely, from code and data to hosting. We design fast, secure stores with Indian payments, COD, GST invoicing and courier integrations, and keep the plugin list lean so your store stays quick and easy to maintain.',
     icon: 'website',
-    facts: ['Stores from ₹50,000', 'No platform subscription', 'Full ownership of code and data'],
+    facts: ['Fixed written quote', 'No platform subscription', 'Full ownership of code and data'],
     headings: {
       pains: 'Where WooCommerce stores usually go wrong',
       includes: 'What our WooCommerce development covers',
@@ -391,7 +391,7 @@ export const websitePages: ServicePageData[] = [
       {
         heading: 'How much WooCommerce development costs',
         paragraphs: [
-          'A WooCommerce store on a customised theme with payments, COD, GST invoices, courier integration and up to 50 products starts at about ₹50,000. Custom design, B2B pricing rules, large catalogue migrations and ERP or marketplace integrations add to that, and we quote them after scoping.',
+          'A WooCommerce store on a customised theme with payments, COD, GST invoices, courier integration and up to 50 products is the simplest project. Custom design, B2B pricing rules, large catalogue migrations and ERP or marketplace integrations add to the scope. We quote after a short scoping call, and the written quote lists what is included, the timeline and the exclusions.',
           'Any WooCommerce development company should also help you plan for ongoing costs: managed hosting, premium plugin licences renewed each year and a maintenance plan for updates and backups. Even with these, WooCommerce is often cheaper to run than a subscription platform for stores with steady traffic.',
         ],
       },
@@ -426,7 +426,7 @@ export const websitePages: ServicePageData[] = [
       { label: 'Best e-commerce platform in India', href: '/blog/best-ecommerce-platform-in-india/' },
     ],
     faqs: [
-      { q: 'How much does WooCommerce development cost in India?', a: 'At Magnus Path, WooCommerce stores start at ₹50,000 one-time. That covers a customised theme, payment gateway, COD, GST invoicing, courier integration and up to 50 products. Custom design, B2B features and integrations are quoted after scoping. Hosting and premium plugins are paid separately.' },
+      { q: 'How much does WooCommerce development cost in India?', a: 'It depends on the design, catalogue size, B2B features, migrations and integrations with couriers, ERPs or marketplaces. A customised theme with payments, COD and GST invoicing is the simplest build. We give a fixed written quote after a free scoping call, listing scope, timeline and exclusions. Hosting and premium plugins are paid separately.' },
       { q: 'WooCommerce vs Shopify: which is better for my business?', a: 'Choose Shopify if you want low maintenance and a quick launch. Choose WooCommerce if you want full ownership, no platform subscription, strong content and SEO features, or complex pricing such as wholesale rules. Both can run a successful Indian store when built and maintained properly.' },
       { q: 'Is WooCommerce good for SEO?', a: 'Yes. Because it runs on WordPress, WooCommerce gives you full control over URLs, titles, structured data and content. With a fast theme, good hosting and an SEO plugin configured correctly, WooCommerce stores can rank very well for both product and informational searches.' },
       { q: 'Can you speed up my existing WooCommerce store?', a: 'Usually, yes. We audit hosting, theme, plugins and database, remove or replace heavy plugins, set up caching and a CDN, and compress images. Many stores become noticeably faster without a redesign, though some older themes need replacing to get good mobile performance.' },
@@ -447,7 +447,7 @@ export const websitePages: ServicePageData[] = [
     h1: 'Ecommerce Website Development Company in Chennai, *Across the Table*',
     intro: 'Magnus Path is an ecommerce website development company in Chennai that builds Shopify, WooCommerce and custom online stores for Tamil Nadu businesses. We meet you in person, speak Tamil and English, and set up the payments, couriers and marketplace links that local brands need, from Kancheepuram silk to Tiruppur knitwear.',
     icon: 'marketplace',
-    facts: ['Meet us in Chennai', 'Tamil and English team', 'Shopify stores from ₹60,000'],
+    facts: ['Meet us in Chennai', 'Tamil and English team', 'Free audit first'],
     headings: {
       pains: 'What Chennai businesses tell us about their websites',
       includes: 'E-commerce web development in Chennai, done end to end',
@@ -526,7 +526,7 @@ export const websitePages: ServicePageData[] = [
       {
         heading: 'Ecommerce website development cost in Chennai',
         paragraphs: [
-          'Prices in Chennai range from very cheap freelance stores to large agency builds. With us, a template-based Shopify store starts at ₹60,000, and a custom Shopify store usually costs between ₹1.5 lakh and ₹5 lakh. WooCommerce stores start at ₹50,000, and fully custom e-commerce development starts at ₹2 lakh.',
+          'Quotes in Chennai vary widely, from freelance template stores to large agency builds. What drives the cost is the platform, a template or custom design, catalogue size, integrations with couriers, ERPs or marketplaces, migration and content. We meet you for a free consultation, then send a fixed written quote that lists scope, timeline and exclusions.',
           'When comparing one ecommerce website development company in Chennai against another, check what each quote includes: product upload, payment and courier setup, SEO basics, training and support. A lower price often leaves these out, and they cost more to add later. Ask whether the quote is fixed or hourly, and what counts as a change request once work starts.',
         ],
       },
@@ -561,7 +561,7 @@ export const websitePages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'Can we meet your team in person in Chennai?', a: 'Yes. Our head office is in Chennai and we meet clients for discovery workshops, design reviews and staff training, either at our office or at your shop, office or factory. We also travel to other Tamil Nadu towns such as Kancheepuram and Tiruppur when a visit helps.' },
-      { q: 'How much does ecommerce website development cost in Chennai?', a: 'Template-based Shopify stores start at ₹60,000 and custom Shopify builds usually cost ₹1.5–5 lakh. WooCommerce stores start at ₹50,000, and custom e-commerce development starts at ₹2,00,000. Platform fees, hosting and paid apps are separate. You get a fixed quote after a free consultation.' },
+      { q: 'How much does ecommerce website development cost in Chennai?', a: 'It depends on the platform, whether the design is template-based or custom, the number of products, integrations and migration work. Custom and headless builds cost more than theme-based stores. You get a fixed written quote after a free consultation, listing scope, timeline and exclusions. Platform fees, hosting and paid apps are separate.' },
       { q: 'Does your team speak Tamil?', a: 'Yes. Our team works in Tamil and English. Many founders and store staff prefer to discuss requirements and learn the admin panel in Tamil, so we offer meetings, training sessions and recorded walkthroughs in whichever language your team is most comfortable with.' },
       { q: 'Are you Shopify experts in Chennai?', a: 'We build Shopify and Shopify Plus stores from our Chennai office, covering design, development, Indian payments, COD, GST, courier and marketplace integrations. Rather than relying on badges, judge us by the live stores we show you and by how clearly we scope your project.' },
       { q: 'Can you build an online store for silk sarees or textiles?', a: 'Yes. We set up catalogues that suit sarees, fabrics, garments and knitwear, with detailed attributes, size charts, high-resolution zoomable images and clear care and returns information. We also advise on product photography so items look accurate on mobile screens.' },
@@ -581,7 +581,7 @@ export const websitePages: ServicePageData[] = [
     h1: 'Ecommerce Development Company for *Bangalore D2C* Brands',
     intro: 'Looking for an ecommerce development company in Bangalore? Magnus Path builds Shopify, WooCommerce and custom stores for Bangalore D2C brands. You can meet us at our Bengaluru office for workshops and reviews, while our Chennai head office team shares the build. Weekly demos and shared staging sites keep you close to the work at every step.',
     icon: 'quick',
-    facts: ['Bengaluru office, meetings by appointment', 'Chennai head office team on the build', 'Shopify stores from ₹60,000'],
+    facts: ['Bengaluru office, meetings by appointment', 'Chennai head office team on the build', 'Fixed written quote'],
     headings: {
       pains: 'Why Bangalore founders look beyond the usual agencies',
       includes: 'What we build for Bangalore e-commerce brands',
@@ -674,7 +674,7 @@ export const websitePages: ServicePageData[] = [
       {
         heading: 'What an ecommerce website development company in Bangalore charges',
         paragraphs: [
-          'Our prices are the same for Bangalore as for any other city. A template-based Shopify store starts at ₹60,000, and a custom Shopify build usually costs ₹1.5–5 lakh. Headless and custom e-commerce development starts at ₹2 lakh, and WooCommerce stores start at ₹50,000.',
+          'We quote Bangalore projects the same way as any other city. Cost depends on the platform, a theme-based or custom design, catalogue size, integrations, migration and content. Headless and custom e-commerce development costs more than a theme-based store. After a short scoping call, you get a fixed written quote with scope, timeline and exclusions.',
           'Running costs include the Shopify subscription or hosting, paid apps and any order management tool. Everything in the scope, including workshops at our Bengaluru office, is agreed before the project starts, so there are no surprises on the invoice.',
         ],
       },
@@ -701,7 +701,7 @@ export const websitePages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'Do you have an office in Bangalore?', a: 'Yes. We have a Bengaluru office where you can meet the team by appointment for kick-off workshops, design reviews and training. It works alongside our Chennai head office, where much of the development is done, and day-to-day updates run through shared staging sites and Slack or WhatsApp.' },
-      { q: 'How much does an ecommerce development company in Bangalore charge?', a: 'Rates vary widely across the city. With Magnus Path, template-based Shopify stores start at ₹60,000, custom Shopify builds usually cost ₹1.5–5 lakh, WooCommerce stores start at ₹50,000 and custom or headless development starts at ₹2,00,000. Each project gets a fixed quote after scoping.' },
+      { q: 'How much does an ecommerce development company in Bangalore charge?', a: 'Rates vary widely across the city. The cost of a store depends on the platform, design, number of products, integrations and migration, and headless builds cost more than theme-based ones. Magnus Path gives each project a fixed written quote after a free scoping call, listing scope, timeline and exclusions.' },
       { q: 'Who builds the store, the Bengaluru or the Chennai team?', a: 'Both offices work as one team. You meet us at our Bengaluru office for workshops and reviews, and much of the development is done by our Chennai head office team on shared staging sites. Everyone keeps the same working hours, and you get weekly demos throughout.' },
       { q: 'How do I choose the best ecommerce development company in Bangalore?', a: 'Test their live stores on your own phone, meet the people who will build your store, and ask for a written scope with a fixed price and exclusions. Check whether they understand ad tracking and marketplace integrations, and how they handle support once the store is live.' },
       { q: 'Can you connect my store to Blinkit, Zepto and Instamart?', a: 'We integrate your website with order management tools that also connect to marketplaces and quick-commerce platforms, so inventory stays consistent across channels. The exact setup depends on how you supply each platform, so we review your current operations before recommending tools.' },

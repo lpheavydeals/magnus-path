@@ -6,7 +6,7 @@ export const businessWebsitePages: ServicePageData[] = [
     slug: 'corporate-website-development',
     kind: 'service',
     title: 'Corporate Website Development Company | Magnus Path',
-    description: 'Corporate website development for manufacturers, exporters, B2B firms and service businesses in India. Fast, secure, SEO-ready company websites from ₹35,000.',
+    description: 'Corporate website development for manufacturers, exporters, B2B firms and service businesses in India. Fast, secure, SEO-ready company websites, quoted in writing.',
     primaryKeyword: 'corporate website development',
     navLabel: 'Corporate Website Development',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
@@ -14,7 +14,7 @@ export const businessWebsitePages: ServicePageData[] = [
     h1: 'Corporate Website Development That *Brings in Enquiries*',
     intro: 'Magnus Path offers corporate website development for manufacturers, exporters, B2B firms, schools, hospitals and professional service businesses across Tamil Nadu and India. We plan, design and build company websites that explain what you do in seconds, load fast, rank on Google and turn visitors into tracked enquiries your sales team can follow up.',
     icon: 'website',
-    facts: ['Business sites from ₹35,000', 'Live in 3–8 weeks', 'Lead tracking built in'],
+    facts: ['Fixed written quote', 'Live in 3–8 weeks', 'Lead tracking built in'],
     headings: {
       pains: 'Why most company websites fail to win business',
       includes: 'What our corporate website development includes',
@@ -98,7 +98,7 @@ export const businessWebsitePages: ServicePageData[] = [
       {
         heading: 'What corporate website development costs in India',
         paragraphs: [
-          'A 5–10 page business website with a custom design, enquiry forms, basic SEO and analytics typically starts around ₹35,000. Custom corporate sites with large catalogues, multilingual content, investor pages or CRM integrations usually cost ₹75,000 to ₹2 lakh. Domain, hosting and premium plugins or CMS plans are separate running costs.',
+          'Cost depends mostly on scope. A 5–10 page business website with a custom design, enquiry forms, basic SEO and analytics is the simplest project. Large product catalogues, multilingual content, investor pages, CRM integrations and copywriting all add work. We quote after a short scoping call, and the written quote lists scope, timeline and exclusions. Domain, hosting and premium plugins or CMS plans are separate running costs.',
           'When comparing quotes from a corporate website design company, check who owns the domain and hosting, whether content writing is included, how many revision rounds you get and what support looks like after launch. A cheaper quote that leaves you locked out of your own site costs more in the end.',
         ],
       },
@@ -119,7 +119,7 @@ export const businessWebsitePages: ServicePageData[] = [
       { label: 'Website development company in Chennai', href: '/chennai/website-development-company/' },
     ],
     faqs: [
-      { q: 'How much does a corporate website cost in India?', a: 'A 5–10 page business website starts at about ₹35,000 one-time. Custom corporate sites with product catalogues, multilingual content, careers or investor sections usually cost ₹75,000 to ₹2 lakh. Domain, hosting and any paid plugins or CMS plans are separate running costs, which we list clearly in the quote.' },
+      { q: 'How much does a corporate website cost in India?', a: 'It depends on the number of pages, custom design, product catalogues, languages, careers or investor sections, integrations and who writes the content. We send a fixed written quote after a free scoping call, listing scope, timeline and exclusions. Domain, hosting and any paid plugins or CMS plans are separate running costs, which we list clearly in the quote.' },
       { q: 'How long does corporate website development take?', a: 'A standard 5–10 page business website usually takes 3–4 weeks. A custom corporate site with a large catalogue, several languages or CRM integrations typically takes 6–8 weeks. The biggest factor is how quickly content, photos and feedback come in from your team.' },
       { q: 'What is the difference between a business website and a corporate website?', a: 'A business website is usually a compact 5–10 page site explaining your services and capturing enquiries. A corporate website is larger, with product catalogues, multiple divisions, careers, investor or compliance pages and often several languages, and it typically has more people editing it.' },
       { q: 'Do you write the content for our company website?', a: 'We help with structure and messaging on every project, and full copywriting can be included. We interview your team, draft page copy around what buyers search for and send it for your review. Technical details such as specifications and certifications always come from you so nothing is overstated.' },
@@ -133,7 +133,7 @@ export const businessWebsitePages: ServicePageData[] = [
     slug: 'wordpress-website-development',
     kind: 'service',
     title: 'WordPress Website Design Company India | Magnus Path',
-    description: 'WordPress website design company in Chennai building fast, secure, easy-to-edit WordPress sites with custom themes, Gutenberg blocks and SEO. From ₹30,000.',
+    description: 'WordPress website design company in Chennai building fast, secure, easy-to-edit WordPress sites with custom themes, Gutenberg blocks and SEO. Fixed quotes.',
     primaryKeyword: 'wordpress website design company',
     navLabel: 'WordPress Website Development',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
@@ -141,7 +141,7 @@ export const businessWebsitePages: ServicePageData[] = [
     h1: 'WordPress Website Design Company for Sites *Your Team Can Run*',
     intro: 'Magnus Path is a WordPress website design company in Chennai that builds fast, secure WordPress sites for businesses across India and abroad. We design lean custom themes with Gutenberg blocks your team can edit, keep plugins to the essentials and set up SEO, caching and backups so the site stays quick long after launch.',
     icon: 'website',
-    facts: ['Sites from ₹30,000', 'Custom block themes', 'Easy editing for your team'],
+    facts: ['Fixed written quote', 'Custom block themes', 'Easy editing for your team'],
     headings: {
       pains: 'Why so many WordPress sites end up slow and fragile',
       includes: 'What our WordPress website design services cover',
@@ -235,7 +235,7 @@ export const businessWebsitePages: ServicePageData[] = [
         heading: 'Moving to WordPress, and what it costs',
         paragraphs: [
           'Many businesses come to WordPress from Wix, Squarespace, an outdated custom CMS or an old WordPress build that has become unmanageable. A careful migration moves pages, posts, media and metadata, maps every old URL to its new address with 301 redirects and checks Search Console after launch, so you keep the rankings you have earned.',
-          'Our WordPress website design services start at ₹30,000 one-time for a business site. Larger builds with custom blocks, multiple languages, member areas or complex migrations are quoted after scoping. If you want to sell online, we build stores on WooCommerce instead, which is covered on its own page.',
+          'We quote our WordPress website design services after a short scoping call. The main cost drivers are page count, custom blocks, multiple languages, member areas, migrations and content, and the written quote lists scope, timeline and exclusions. If you want to sell online, we build stores on WooCommerce instead, which is covered on its own page.',
         ],
       },
     ],
@@ -250,7 +250,7 @@ export const businessWebsitePages: ServicePageData[] = [
       { label: 'SEO services for business websites', href: '/seo-services/' },
     ],
     faqs: [
-      { q: 'How much does a WordPress website cost in India?', a: 'Our WordPress websites start at ₹30,000 one-time for a business site with a custom-designed theme, editable blocks, SEO plugin setup and security. Larger sites with custom functionality, multiple languages or complex migrations are quoted after scoping. Hosting, domain and any premium plugin licences are separate yearly costs.' },
+      { q: 'How much does a WordPress website cost in India?', a: 'It depends on page count, design, custom functionality, languages, migrations and content. Every build includes a custom-designed theme, editable blocks, SEO plugin setup and security. We send a fixed written quote after a free scoping call, listing scope, timeline and exclusions. Hosting, domain and any premium plugin licences are separate yearly costs.' },
       { q: 'Do you use Elementor or build custom WordPress themes?', a: 'We usually build lightweight custom block themes using Gutenberg, because they load faster and are harder for editors to break. If your team already knows Elementor and the site is small, we can build with it, keeping add-ons to a minimum and checking performance on mobile before launch.' },
       { q: 'Is WordPress secure enough for a business website?', a: 'Yes, when it is maintained properly. Most hacked WordPress sites run outdated plugins, weak passwords or poor hosting. We set up a firewall, two-factor login, limited admin roles and daily off-site backups, and we can handle monthly updates and monitoring through a website maintenance plan.' },
       { q: 'Can my team edit the WordPress site without a developer?', a: 'Yes. We build custom Gutenberg blocks and patterns for your common sections, so editors can add pages, update text and swap images without touching code. Design elements stay locked where needed, and we record short training videos covering the tasks your team does most often.' },

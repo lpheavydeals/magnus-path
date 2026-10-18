@@ -14,7 +14,7 @@ export const seoPages: ServicePageData[] = [
     h1: 'Ecommerce SEO Services That Turn Search Into *Sales*',
     intro: 'Magnus Path provides ecommerce SEO services for Shopify, WooCommerce and custom stores, plus Amazon, Flipkart and AI search. We fix the technical problems that stop Google from indexing your catalogue, then grow the category and product pages that actually take orders. Every report shows organic revenue, not just rankings.',
     icon: 'seo',
-    facts: ['Store, marketplace and AI search', 'Reports on revenue, not just rankings', 'From ₹35,000 / month'],
+    facts: ['Store, marketplace and AI search', 'Reports on revenue, not just rankings', 'Free audit first'],
     headings: {
       pains: 'Why most online stores get so little from Google',
       includes: 'What our e-commerce search engine optimisation covers',
@@ -110,7 +110,7 @@ export const seoPages: ServicePageData[] = [
         heading: 'How long ecommerce SEO takes and what it costs',
         paragraphs: [
           'Technical fixes often show results within weeks, because Google simply starts indexing pages it was ignoring. Content and authority take longer. For an established store, meaningful growth in organic orders usually appears within three to six months. A new domain in a competitive category can take longer.',
-          'Ecommerce SEO services India agencies offer range from a few thousand rupees a month for basic on-page work to several lakh for large retailers. Our ecommerce SEO starts at ₹35,000 a month, which covers technical work, category optimisation, content and links for a single store. If the price seems low anywhere, ask what is actually delivered each month.',
+          'Ecommerce SEO services India agencies offer vary widely in scope, from basic on-page work to full programmes for large retailers. We quote our ecommerce SEO services after a free audit: the cost depends on catalogue size, the state of your technical SEO, how much content and link work is needed and how competitive your categories are. Whoever you talk to, ask what is actually delivered each month.',
         ],
       },
       {
@@ -133,7 +133,7 @@ export const seoPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'What are ecommerce SEO services?', a: 'Ecommerce SEO services improve how an online store ranks in search engines. They cover technical fixes for crawling and duplicate URLs, optimisation of category and product pages, structured data, buying-guide content and link building, all aimed at growing organic orders rather than traffic alone.' },
-      { q: 'How much do ecommerce SEO services cost in India?', a: 'Prices range widely, from basic on-page packages of a few thousand rupees to several lakh a month for large retailers. Magnus Path’s ecommerce SEO starts at ₹35,000 a month for a single store, including technical work, page optimisation, content and links.' },
+      { q: 'How much do ecommerce SEO services cost in India?', a: 'It depends on catalogue size, technical problems, how much content and link work is needed and how competitive your categories are. Magnus Path quotes ecommerce SEO after a free audit, in a fixed written quote that lists the monthly scope, timeline and exclusions across technical work, page optimisation, content and links.' },
       { q: 'How long does ecommerce SEO take to show results?', a: 'Technical fixes can lift indexed pages and impressions within a few weeks. Growth in organic orders usually shows within three to six months for an established store. New domains and highly competitive categories, such as fashion or electronics, can take longer.' },
       { q: 'How do I find the best ecommerce SEO services in India?', a: 'Look for a team that reports organic revenue, not just rankings, and can explain how it handles filters, variants and out-of-stock products. Ask who will do the work, how links are built, and for a sample monthly report before you sign.' },
       { q: 'Should I hire an ecommerce SEO consultant or an agency?', a: 'A consultant suits brands with an in-house team that needs strategy and direction. An agency suits brands that need the work done as well: technical fixes, copywriting, schema and link building. We can work either way, including advising your own developers and writers.' },
@@ -147,7 +147,7 @@ export const seoPages: ServicePageData[] = [
     slug: 'shopify-seo',
     kind: 'service',
     title: 'Shopify SEO Services for Indian Brands | Magnus Path',
-    description: 'Shopify SEO services that fix duplicate URLs, canonical tags, app bloat and slow themes, then grow collection and product rankings. From ₹30,000/month.',
+    description: 'Shopify SEO services that fix duplicate URLs, canonical tags, app bloat and slow themes, then grow collection and product rankings. Free audit first.',
     primaryKeyword: 'shopify seo services',
     navLabel: 'Shopify SEO',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
@@ -155,7 +155,7 @@ export const seoPages: ServicePageData[] = [
     h1: 'Shopify SEO Services That Grow *Organic Sales*',
     intro: 'Our Shopify SEO services fix the problems Shopify creates by default, from duplicate product URLs and tag pages to slow themes weighed down by apps. Then we grow the collection and product pages that bring in orders, with structured data, useful copy and a blog that supports sales instead of sitting empty.',
     icon: 'shopify',
-    facts: ['Shopify and Shopify Plus', 'Theme-level fixes, not just meta tags', 'From ₹30,000 / month'],
+    facts: ['Shopify and Shopify Plus', 'Theme-level fixes, not just meta tags', 'Fixed written quote'],
     headings: {
       pains: 'Shopify makes selling easy. Ranking takes *more work*',
       includes: 'What our Shopify SEO agency work includes',
@@ -253,7 +253,7 @@ export const seoPages: ServicePageData[] = [
       {
         heading: 'Choosing a Shopify SEO agency or expert',
         paragraphs: [
-          'A Shopify SEO expert should be comfortable reading Liquid, not only editing meta fields in the admin. Ask any Shopify SEO agency how they would handle collection-based product URLs, app clean-up and duplicate schema. Our Shopify SEO services start at ₹30,000 a month and include theme-level fixes as well as content and links.',
+          'A Shopify SEO expert should be comfortable reading Liquid, not only editing meta fields in the admin. Ask any Shopify SEO agency how they would handle collection-based product URLs, app clean-up and duplicate schema. Our Shopify SEO services include theme-level fixes as well as content and links, and are quoted after a free audit of your store.',
           'It also helps when the same people understand how Shopify stores are built. Many SEO problems start with a theme decision made during development, such as a mega menu that links to hundreds of tag pages or a quick-view feature that hides product content from crawlers. Shopify SEO services that can read and change theme code fix the cause, not just the symptom.',
           'Finally, check how they report. Shopify’s own analytics and GA4 can show organic sessions, orders and revenue by landing page. A monthly report built on that data tells you far more than a list of keyword positions.',
         ],
@@ -271,7 +271,7 @@ export const seoPages: ServicePageData[] = [
       { q: 'What do Shopify SEO services include?', a: 'Shopify SEO services usually cover a technical audit, theme fixes for duplicate URLs and canonical tags, app and speed clean-up, structured data, collection and product page optimisation, blog content and link building. Good providers also report on organic orders and revenue, not just rankings.' },
       { q: 'Is Shopify good for SEO?', a: 'Yes, Shopify is a solid base for SEO. It handles hosting, sitemaps, canonical tags and editable meta fields. Its weak points are fixed URL prefixes, duplicate collection-based product URLs, tag pages and speed issues from apps, which all need deliberate fixes. Good Shopify SEO services handle these at theme level.' },
       { q: 'Why does my Shopify product have two URLs?', a: 'Shopify serves products at /products/name and, when reached from a collection, often at /collections/collection/products/name. A canonical tag points to the first, but internal links still go to the duplicate. A small theme edit makes collection grids link to the canonical URL.' },
-      { q: 'How much does Shopify SEO cost in India?', a: 'Magnus Path’s Shopify SEO starts at ₹30,000 a month for a single store, including theme fixes, speed work, page optimisation, content and links. Stores with multiple Shopify Markets, languages or very large catalogues are quoted after a free audit.' },
+      { q: 'How much does Shopify SEO cost in India?', a: 'Magnus Path quotes Shopify SEO after a free audit of your store. The cost depends on catalogue size, how many theme and app problems need fixing, speed work and how much content and link building you need. Multiple Shopify Markets, languages or very large catalogues add scope. The written quote lists scope, timeline and exclusions.' },
       { q: 'Do too many Shopify apps hurt SEO?', a: 'They can. Each app may load scripts and styles on every page, slowing the store on mobile, and some leave code behind after uninstalling. Slow pages hurt both rankings and conversions, so we audit every app and remove what is not needed.' },
       { q: 'Can I change Shopify URL structure for SEO?', a: 'Not fully. Shopify keeps fixed prefixes such as /products/, /collections/ and /pages/. You can change the handle after the prefix, and Shopify can create a redirect when you do. The prefixes themselves do not stop a store from ranking well.' },
       { q: 'Do you work on Shopify Plus stores?', a: 'Yes. We work on Shopify and Shopify Plus, including stores using Shopify Markets for several countries. Multi-market stores need careful hreflang, currency and subfolder setup, which we review as part of the technical audit before any content work begins.' },
@@ -291,7 +291,7 @@ export const seoPages: ServicePageData[] = [
     h1: 'Amazon SEO Services That Get Listings *Found and Bought*',
     intro: 'Our Amazon SEO services help your products show up when shoppers search on Amazon, and convince them to buy once they click. We rewrite titles and bullet points, fill backend search terms, plan images and build A+ content, using real search data from your category. We apply the same approach to Flipkart listings.',
     icon: 'amazon',
-    facts: ['Amazon.in and global marketplaces', 'Flipkart listings included', 'From ₹20,000 / month'],
+    facts: ['Amazon.in and global marketplaces', 'Flipkart listings included', 'Free listing audit first'],
     headings: {
       pains: 'Good products, buried on *page five*',
       includes: 'What our Amazon listing optimisation service covers',
@@ -397,7 +397,7 @@ export const seoPages: ServicePageData[] = [
     faqs: [
       { q: 'What are Amazon SEO services?', a: 'Amazon SEO services improve how your products rank in Amazon search and how well listings convert. The work covers keyword research, title and bullet rewrites, backend search terms, image planning, A+ content and review strategy, followed by monthly tracking of rankings, sessions and conversion rate.' },
       { q: 'How does the Amazon A9 or A10 algorithm work?', a: 'Amazon does not publish its ranking rules. In general terms, it ranks products on relevance, meaning how well the listing matches the search, and performance, meaning how often shoppers click and buy. Listings that sell well tend to climb, which is why conversion matters as much as keywords for any listing.' },
-      { q: 'How much does Amazon listing optimisation cost?', a: 'Magnus Path’s Amazon SEO and listing optimisation starts at ₹20,000 a month. How many listings we cover each month depends on catalogue size and how much image and A+ content work is needed. Flipkart listings can be added to the same plan.' },
+      { q: 'How much does Amazon listing optimisation cost?', a: 'Magnus Path quotes Amazon SEO and listing optimisation after a free listing audit. How many listings we cover each month depends on catalogue size and how much image and A+ content work is needed, and the written quote sets out that scope. Flipkart listings can be added to the same plan.' },
       { q: 'What is A+ content on Amazon?', a: 'A+ content is an enhanced product description available to brand-registered sellers. It replaces plain text with images, comparison charts and brand story modules. It is not indexed as heavily as titles and bullets, but it usually improves conversion, which supports rankings.' },
       { q: 'What should go in Amazon backend search terms?', a: 'Use synonyms, alternative spellings, regional terms written in English letters and use cases that do not fit naturally on the page. Avoid repeating words already in the title, competitor brand names and anything misleading. Stay within Amazon’s length limit and style rules.' },
       { q: 'Do you optimise Flipkart listings too?', a: 'Yes. Flipkart ranks products on similar signals: relevant titles, complete attributes, good images, sales and ratings. Because Flipkart relies heavily on structured attributes, we fill every specification field accurately alongside rewriting titles and descriptions for each product.' },
@@ -418,7 +418,7 @@ export const seoPages: ServicePageData[] = [
     h1: 'AI Search Optimization to Get Your Brand *Cited*',
     intro: 'AI search optimization, also called generative engine optimization or GEO, helps your brand appear in answers from ChatGPT, Gemini, Perplexity and Google AI Overviews. We make your content easy to quote, your brand information consistent everywhere, and your products clearly described, then measure the visits these tools actually send you.',
     icon: 'ai',
-    facts: ['ChatGPT, Gemini, Perplexity, AI Overviews', 'Built on solid SEO foundations', 'From ₹25,000 / month'],
+    facts: ['ChatGPT, Gemini, Perplexity, AI Overviews', 'Built on solid SEO foundations', 'Free audit first'],
     headings: {
       pains: 'Buyers are asking AI. Is your brand *in the answer*?',
       includes: 'What our generative engine optimization work includes',
@@ -533,7 +533,7 @@ export const seoPages: ServicePageData[] = [
       { q: 'What is ChatGPT SEO?', a: 'ChatGPT SEO, sometimes called LLM SEO, means improving the chance that ChatGPT mentions or links to your brand. When ChatGPT searches the web, it reads pages that rank and are easy to quote. Its general knowledge also reflects how consistently your brand appears across reputable sites.' },
       { q: 'Does llms.txt help with AI search?', a: 'llms.txt is a proposed file that gives AI tools a short guide to your key pages. It is still an emerging idea, not an agreed standard, and there is little public evidence that major AI tools rely on it. It is low-cost to add, but it should not be the centre of a strategy.' },
       { q: 'How do you measure traffic from AI tools?', a: 'We set up a GA4 channel that groups referrals from chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com and similar sources, with their conversions. We also run a fixed set of prompts each month to track how often your brand is cited and what is said.' },
-      { q: 'How much does AI search optimisation cost?', a: 'Magnus Path’s AI search optimisation starts at ₹25,000 a month, covering visibility checks, content rewrites, entity and schema clean-up, a reviews and mentions plan, and AI referral tracking. Sites with major technical SEO problems may need those fixed first.' },
+      { q: 'How much does AI search optimisation cost?', a: 'Magnus Path quotes AI search optimisation after a free visibility check. The cost depends on how many pages need rewriting, the state of your entity and schema data, the reviews and mentions work required and AI referral tracking. Sites with major technical SEO problems may need those fixed first, which the written quote includes.' },
     ],
   },
 
@@ -542,7 +542,7 @@ export const seoPages: ServicePageData[] = [
     slug: 'seo-services',
     kind: 'service',
     title: 'SEO Agency in India for Local & Small Business | Magnus Path',
-    description: 'SEO agency in India for local SEO, Google Business Profile, technical SEO and content that brings enquiries. Plans from ₹25,000 per month.',
+    description: 'SEO agency in India for local SEO, Google Business Profile, technical SEO and content that brings enquiries. Free audit, then a fixed quote.',
     primaryKeyword: 'seo agency in India',
     navLabel: 'SEO Services',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
@@ -550,7 +550,7 @@ export const seoPages: ServicePageData[] = [
     h1: 'SEO Agency in India That Helps You Win *Local Customers*',
     intro: 'Magnus Path is a Chennai-based SEO agency in India that businesses of every kind use for local SEO, Google Business Profile management, technical SEO and content. Clinics, schools, manufacturers, consultants and retailers come to us for the same reason: more calls, enquiries and visits from people already searching for what they offer.',
     icon: 'seo',
-    facts: ['Local, technical and content SEO', 'Google Business Profile included', 'From ₹25,000 / month'],
+    facts: ['Local, technical and content SEO', 'Google Business Profile included', 'Fixed written quote'],
     headings: {
       pains: 'Your customers search before they *call*',
       includes: 'What our local SEO services and small business SEO cover',
@@ -640,7 +640,7 @@ export const seoPages: ServicePageData[] = [
         paragraphs: [
           'An SEO consultant or a seo expert from India working freelance can be a good fit if you have someone in-house to make website changes and write content. An agency suits businesses that want the whole job handled: technical fixes, writing, Google Business Profile and reporting. Ask any provider who will actually do the work, how they report, and what they will deliver in the first ninety days.',
           'Whoever you choose, insist on access. Your Google Business Profile, Search Console, analytics and website should stay in your name, with the provider added as a user. A trustworthy SEO agency in India will never hold these accounts hostage when the contract ends.',
-          'Our SEO services start at ₹25,000 a month. If you prefer a fixed scope, our SEO packages set out monthly deliverables up front.',
+          'We quote our SEO services after a free audit or a short scoping call, and the written quote lists scope, timeline and exclusions. If you prefer a fixed scope, our SEO packages set out monthly deliverables up front.',
         ],
       },
       {
@@ -663,7 +663,7 @@ export const seoPages: ServicePageData[] = [
     faqs: [
       { q: 'What does an SEO agency in India do?', a: 'An SEO agency improves how your business appears in Google and other search tools. For most businesses that means optimising the Google Business Profile, fixing technical website issues, writing clear service and location pages, publishing helpful content and reporting on calls, enquiries and traffic each month.' },
       { q: 'What are local SEO services?', a: 'Local SEO services help a business appear in map results and “near me” searches in its area. The work includes Google Business Profile optimisation, consistent business details across directories, location pages, reviews and local content. It suits clinics, shops, schools, service firms and showrooms.' },
-      { q: 'How much do SEO services cost in India?', a: 'Prices vary from a few thousand rupees for basic packages to over a lakh a month for large websites. Magnus Path’s SEO services and local SEO start at ₹25,000 a month for one location. Our SEO packages page lists fixed monthly plans.' },
+      { q: 'How much do SEO services cost in India?', a: 'Cost depends on the number of locations and pages, the state of your technical SEO, how much content is needed and how competitive your market is. Magnus Path quotes SEO services and local SEO after a free audit, in a fixed written quote listing scope, timeline and exclusions. Our SEO packages page lists fixed monthly deliverables.' },
       { q: 'Are affordable local SEO services worth it?', a: 'Yes, if the budget goes to the right things. For a small business, a complete Google Business Profile, steady reviews and a few strong service pages usually matter more than a large volume of blog posts or backlinks. Avoid packages that promise fast rankings through bulk links.' },
       { q: 'Should I hire an SEO consultant or an agency?', a: 'A consultant suits businesses with in-house staff who can make website changes and write content. An agency suits businesses that want everything handled, from technical fixes to writing and Google Business Profile management. Either way, ask who does the work and how results are reported.' },
       { q: 'How long does SEO take to show results?', a: 'Google Business Profile improvements often show within a few weeks. Website rankings for competitive services typically take three to six months to move meaningfully. Progress depends on your starting point, competition in your area and how quickly website changes can be made.' },
@@ -676,7 +676,7 @@ export const seoPages: ServicePageData[] = [
     slug: 'chennai/seo-company',
     kind: 'location',
     title: 'SEO Company in Chennai for Local & E-commerce | Magnus Path',
-    description: 'SEO company in Chennai for local businesses, manufacturers and online stores. Google Business Profile, Tamil-language SEO and technical fixes. From ₹25,000/mo.',
+    description: 'SEO company in Chennai for local businesses, manufacturers and online stores. Google Business Profile, Tamil-language SEO and technical fixes. Free audit first.',
     primaryKeyword: 'seo company in chennai',
     navLabel: 'SEO Company in Chennai',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
@@ -684,7 +684,7 @@ export const seoPages: ServicePageData[] = [
     h1: 'SEO Company in Chennai That Talks *Results, Not Jargon*',
     intro: 'Magnus Path is an SEO company in Chennai working with local businesses, manufacturers and online stores across the city. We handle Google Business Profile, technical SEO, Tamil and English content and link building from our Chennai office, and we are happy to meet you in person to plan the work and review progress.',
     icon: 'seo',
-    facts: ['Based in Chennai, meet in person', 'Tamil and English SEO', 'From ₹25,000 / month'],
+    facts: ['Based in Chennai, meet in person', 'Tamil and English SEO', 'Free audit first'],
     headings: {
       pains: 'What Chennai businesses tell us about *SEO so far*',
       includes: 'What our SEO services company in Chennai delivers',
@@ -778,7 +778,7 @@ export const seoPages: ServicePageData[] = [
       {
         heading: 'What SEO costs in Chennai',
         paragraphs: [
-          'SEO pricing in Chennai ranges from very cheap packages to large retainers. Our SEO services in Chennai start at ₹25,000 a month for one location, and e-commerce SEO starts at ₹35,000 a month. The difference between a cheap and a sensible plan is usually in what gets done: real page improvements and earned links versus automated reports and bulk directory submissions. Ask for a sample report before you decide.',
+          'SEO offers in Chennai range from very basic packages to large retainers. We quote our SEO services in Chennai after a free audit, based on the number of locations and pages, the content and links needed and how competitive your market is. The difference between a cheap and a sensible plan is usually in what gets done: real page improvements and earned links versus automated reports and bulk directory submissions. Ask for a sample report before you decide.',
         ],
       },
       {
@@ -798,7 +798,7 @@ export const seoPages: ServicePageData[] = [
       { label: 'Monthly SEO packages', href: '/seo-packages/' },
     ],
     faqs: [
-      { q: 'How much does an SEO company in Chennai charge?', a: 'Prices in Chennai range from a few thousand rupees for basic packages to over a lakh a month for large websites. Magnus Path’s SEO services start at ₹25,000 a month for one location, and e-commerce SEO starts at ₹35,000 a month.' },
+      { q: 'How much does an SEO company in Chennai charge?', a: 'It depends on the number of locations and pages, the state of your website, how much content and link work is needed and how competitive your market is. Magnus Path quotes SEO services and e-commerce SEO after a free audit or a short scoping call, with a fixed written quote listing scope, timeline and exclusions.' },
       { q: 'Can I meet your SEO team in person in Chennai?', a: 'Yes. Our head office is in Chennai, and we are happy to meet at your office or ours for the kick-off, planning sessions and regular progress reviews. Day-to-day work and updates happen over calls, WhatsApp and shared monthly reports.' },
       { q: 'Do you offer Tamil-language SEO?', a: 'Yes. We research Tamil and Tanglish keywords, write Tamil pages with people who speak the language, and set up correct language tags. Tamil content works especially well for local service businesses whose customers search on mobile or by voice.' },
       { q: 'How do I get my Chennai business on Google Maps?', a: 'Create and verify a Google Business Profile, choose the right category, add your services, hours, photos and service areas, and keep your address and phone number identical across directories. Regular reviews and posts help you appear in the local map results more often.' },
@@ -813,7 +813,7 @@ export const seoPages: ServicePageData[] = [
     slug: 'coimbatore/seo-services',
     kind: 'location',
     title: 'SEO Services in Coimbatore for Manufacturers | Magnus Path',
-    description: 'SEO services in Coimbatore for manufacturers, textile firms and local businesses. Served from our Chennai office with remote work and visits. From ₹25,000.',
+    description: 'SEO services in Coimbatore for manufacturers, textile firms and local businesses. Served from our Chennai office with remote work and visits. Free audit first.',
     primaryKeyword: 'seo services in coimbatore',
     navLabel: 'SEO Services in Coimbatore',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
@@ -821,7 +821,7 @@ export const seoPages: ServicePageData[] = [
     h1: 'SEO Services in Coimbatore for *Makers and Exporters*',
     intro: 'Magnus Path offers SEO services in Coimbatore for manufacturers, textile and knitwear firms, and local businesses. We work from our Chennai office, remotely day to day and with visits when they help. The focus is simple: product and capability pages that reach buyers in India and abroad, plus local visibility on Google.',
     icon: 'seo',
-    facts: ['Served from our Chennai office', 'B2B, export and local SEO', 'From ₹25,000 / month'],
+    facts: ['Served from our Chennai office', 'B2B, export and local SEO', 'Fixed written quote'],
     headings: {
       pains: 'Strong factories, *weak websites*',
       includes: 'What our SEO company work for Coimbatore businesses includes',
@@ -915,7 +915,7 @@ export const seoPages: ServicePageData[] = [
         heading: 'Choosing an SEO agency in Coimbatore',
         paragraphs: [
           'When comparing an SEO agency in Coimbatore with a team based elsewhere, focus on understanding rather than distance. Ask whether they have taken the time to learn your products, who will write your technical pages, how they will measure enquiries and how often they will visit if needed.',
-          'Our SEO services start at ₹25,000 a month. Manufacturers who want SEO combined with LinkedIn, Google Ads and export lead generation can use our B2B digital marketing service instead.',
+          'We quote our SEO services after a free audit or a short scoping call, with scope, timeline and exclusions in writing. Manufacturers who want SEO combined with LinkedIn, Google Ads and export lead generation can use our B2B digital marketing service instead.',
         ],
       },
       {
@@ -936,7 +936,7 @@ export const seoPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'Do you have an office in Coimbatore?', a: 'No. Our head office is in Chennai, and our other offices are in Bengaluru and London. We provide SEO services in Coimbatore remotely through video calls, shared reports and WhatsApp, and we travel to Coimbatore, Tiruppur and nearby towns when a visit helps, such as at project kick-off or for a new product line.' },
-      { q: 'How much do SEO services in Coimbatore cost?', a: 'Our SEO services for Coimbatore businesses start at ₹25,000 a month. Manufacturers and exporters who want SEO combined with LinkedIn, Google Ads and export lead generation can use our B2B digital marketing service, which starts at ₹50,000 a month.' },
+      { q: 'How much do SEO services in Coimbatore cost?', a: 'We quote SEO services for Coimbatore businesses after a free audit, based on your products, locations, export markets, content needs and competition. Manufacturers and exporters who want SEO combined with LinkedIn, Google Ads and export lead generation can use our B2B digital marketing service, which is quoted the same way.' },
       { q: 'Can SEO help a manufacturer get B2B enquiries?', a: 'Yes. Procurement teams search for suppliers online using specific product terms and specifications. Product and capability pages built around those terms, with data sheets and clear enquiry forms, help manufacturers appear on shortlists that used to depend only on dealers and trade fairs.' },
       { q: 'Do you work with Tiruppur knitwear exporters?', a: 'Yes. We help Tiruppur knitwear and garment businesses with export-focused SEO, including English content for overseas buyers, category and fabric pages, and fast-loading websites. For brands launching direct-to-consumer stores, we also offer e-commerce SEO and Shopify development.' },
       { q: 'How do I choose an SEO agency in Coimbatore?', a: 'Focus on whether the agency understands your products and buyers, not just its location. Ask who writes the technical content, what is delivered each month, how enquiries are measured and whether they will visit your plant or office when it matters.' },

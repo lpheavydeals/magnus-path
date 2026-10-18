@@ -132,7 +132,7 @@ export const industryPages: ServicePageData[] = [
       { q: 'What is ecommerce marketing for D2C brands?', a: 'It is the work of getting customers to buy directly from a brand rather than through a distributor or retailer. It usually combines a conversion-focused online store, paid ads on Meta and Google, SEO, marketplace selling and email or WhatsApp follow-up, all measured on profitable sales rather than clicks.' },
       { q: 'Which industries does Magnus Path work with?', a: 'We focus on four groups: fashion and ethnic wear, beauty and Ayurveda, food and FMCG, and manufacturers and exporters. Focusing lets us build playbooks for each category, from size guides and returns in fashion to RFQ forms and export SEO for B2B manufacturers.' },
       { q: 'Why does my industry matter when choosing an agency?', a: 'Each category has its own buying behaviour, ad policies, marketplaces and seasons. An agency that already understands those details avoids expensive mistakes, such as beauty ads rejected for claims or fashion campaigns that scale sales and returns at the same rate.' },
-      { q: 'How much does D2C ecommerce marketing cost?', a: 'Our performance marketing for Meta and Google ads starts at ₹30,000 a month plus ad spend. Marketplace management, quick-commerce ads and SEO are priced separately, and B2B digital marketing for manufacturers starts at ₹50,000 a month. You get a fixed quote after a free consultation.' },
+      { q: 'How much does D2C ecommerce marketing cost?', a: 'It depends on the channels you need, your catalogue size, creative volume and how competitive your category is. Ad spend is paid directly to Meta, Google or the marketplace from your own account, and our management fee is quoted separately. You get a fixed written quote listing scope, timeline and exclusions after a free consultation.' },
       { q: 'Should a D2C brand sell on marketplaces as well as its own website?', a: 'Usually yes. Marketplaces such as Amazon, Myntra, Nykaa and Blinkit bring buyers who already intend to purchase, while your own store gives you customer data, better margins and repeat orders. The key is keeping prices, content and stock consistent so the channels support each other.' },
       { q: 'Do you work with brands outside Tamil Nadu?', a: 'Yes. Our head office is in Chennai, and brands can also meet us at our offices in Bengaluru and London. Brands elsewhere in India and in the UAE, Australia, Singapore and the USA work with us remotely through video calls, shared dashboards and project boards.' },
     ],
@@ -255,7 +255,7 @@ export const industryPages: ServicePageData[] = [
       { label: 'E-commerce SEO for fashion stores', href: '/ecommerce-seo/' },
     ],
     faqs: [
-      { q: 'How much does ecommerce marketing for fashion brands cost?', a: 'Our performance marketing for fashion brands starts at ₹30,000 a month plus ad spend, covering Meta and Google ads with creative direction. Marketplace management and SEO are priced separately. Most growing brands start with ads and product-page fixes, then add marketplaces and SEO once tracking is reliable.' },
+      { q: 'How much does ecommerce marketing for fashion brands cost?', a: 'It depends on the channels, the number of collections and creatives each month, and whether marketplaces and SEO are included. Ad spend is paid directly to Meta and Google from your account, and our management fee is quoted separately after a free audit. Most growing brands start with ads and product-page fixes, then add marketplaces and SEO once tracking is reliable.' },
       { q: 'How can a fashion brand reduce returns from online orders?', a: 'Start with the product page. Add detailed size charts for each fit, the model’s size and height, close-up fabric photos in natural light and drape videos. Encourage exchanges over refunds, verify COD orders, and track returns by product and campaign so ads stop pushing items that come back.' },
       { q: 'Should I sell on Myntra or build my own fashion store?', a: 'Most brands benefit from both. Myntra, Ajio and Amazon Fashion bring ready buyers and reach, while your own store gives better margins, customer data and repeat orders. Keep core styles on marketplaces and use exclusive collections and early access to build your website as the main home of the brand.' },
       { q: 'How do I become a Myntra seller?', a: 'Myntra reviews brands before onboarding them. You generally need GST registration, a defined brand, a catalogue with images that meet its guidelines and the ability to fulfil orders reliably. We help prepare the catalogue, listing content and pricing, and plan Myntra ads once your products go live.' },
@@ -392,7 +392,7 @@ export const industryPages: ServicePageData[] = [
       { label: 'AI search optimisation for beauty brands', href: '/ai-search-optimization/' },
     ],
     faqs: [
-      { q: 'How much does ecommerce marketing for beauty brands cost?', a: 'Our performance marketing for beauty and Ayurveda brands starts at ₹30,000 a month plus ad spend, covering Meta and Google ads with policy-aware creative. Amazon account management starts at ₹30,000 a month. We share a fixed quote after reviewing your store, ad accounts and goals in a free consultation.' },
+      { q: 'How much does ecommerce marketing for beauty brands cost?', a: 'It depends on the channels, creative volume, catalogue size and whether Amazon account management is included. Ad spend is paid directly to Meta, Google or Amazon from your account, and our management fee is quoted separately. We share a fixed written quote after reviewing your store, ad accounts and goals in a free consultation.' },
       { q: 'Why do my skincare or Ayurveda ads keep getting rejected?', a: 'The most common reason is claims. Ads that promise to cure, treat or permanently fix a condition, or show exaggerated before-and-after images, are usually rejected. Rewriting ads around ingredients, texture, routines and customer experience, with landing pages that match, solves most rejections.' },
       { q: 'How do beauty brands get more repeat customers?', a: 'Time reminders to when a product runs out, offer subscribe-and-save on daily-use items, and build bundles around routines. Follow up after delivery with usage tips and a review request. Brands that plan retention from the first order spend less on ads to keep growing.' },
       { q: 'Should a beauty brand sell on Nykaa and Amazon?', a: 'For most brands, yes. Nykaa and Amazon are where many beauty shoppers compare products and read reviews. Being a Nykaa seller or Amazon seller adds reach, while your own website handles subscriptions, bundles and customer relationships. Keep prices consistent so you do not undercut your own store.' },
@@ -516,7 +516,7 @@ export const industryPages: ServicePageData[] = [
       { label: 'E-commerce website development', href: '/ecommerce-website-development/' },
     ],
     faqs: [
-      { q: 'How much does ecommerce marketing for food brands cost?', a: 'Quick-commerce ads on Blinkit, Zepto and Instamart start at ₹25,000 a month plus ad spend. Meta and Google performance marketing starts at ₹30,000 a month, and Amazon advertising at ₹25,000 a month or 10–15% of ad spend. We recommend channels after looking at your margins and stock.' },
+      { q: 'How much does ecommerce marketing for food brands cost?', a: 'It depends on which channels you use, from Blinkit, Zepto and Instamart ads to Meta, Google and Amazon, plus your catalogue size and cities. Ad spend is paid directly to each platform from your account, and our management fee is quoted separately. We recommend channels after looking at your margins and stock.' },
       { q: 'What do I need to sell food products online in India?', a: 'You need an FSSAI licence or registration suited to your business, with the number on your labels and listings, plus GST registration for most marketplaces. Labels should show ingredients, nutrition, allergens, dates and storage instructions. Confirm your exact requirements with a qualified food-safety advisor.' },
       { q: 'How do I become a Blinkit seller?', a: 'Brands usually join Blinkit through its brand onboarding process or through a distributor that already supplies the platform. You need your FSSAI and GST details, product information and the ability to keep stock in the cities you serve. Once live, listing quality and sponsored ads drive visibility.' },
       { q: 'Is quick commerce worth it for a small snacks brand?', a: 'It can be, if your margins allow for platform fees and ads, and you can keep stock consistent. Start in a few cities where you have demand, optimise listings, run focused sponsored campaigns and review results by city before expanding. Quick commerce suits impulse and repeat products especially well.' },
@@ -650,7 +650,7 @@ export const industryPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'What do B2B digital marketing services include?', a: 'For manufacturers and exporters, they usually include a website built for enquiries, SEO for the searches buyers make, Google Ads and LinkedIn campaigns, trade directory profiles and a system for tracking and qualifying leads. The goal is qualified RFQs and orders, not just website traffic.' },
-      { q: 'How much does B2B digital marketing cost in India?', a: 'Our B2B digital marketing for manufacturers and exporters starts at ₹50,000 a month plus ad spend. That covers export SEO, Google Ads or LinkedIn campaigns and lead reporting. Website builds or rebuilds are quoted separately after we audit your current site.' },
+      { q: 'How much does B2B digital marketing cost in India?', a: 'It depends on your export markets, product range, whether you need export SEO, Google Ads or LinkedIn campaigns, and the state of your website. Ad spend is paid directly to the platforms, and our fee is quoted after a free audit. Website builds or rebuilds are quoted separately after we audit your current site.' },
       { q: 'How can manufacturers find export buyers online?', a: 'Rank your product pages for the searches overseas buyers make, run Google Ads targeted by country and product, use LinkedIn to reach procurement roles, and keep directory profiles accurate. Combine this with trade fairs and export promotion councils, and track which sources bring real orders.' },
       { q: 'Is there an alternative to IndiaMART for getting B2B leads?', a: 'Yes. Your own website, supported by SEO, Google Ads and LinkedIn, can bring enquiries that come only to you rather than leads shared with several suppliers. Most manufacturers keep directory profiles active but reduce their dependence on them as their own channels start producing.' },
       { q: 'Does LinkedIn advertising work for manufacturers?', a: 'It works well for higher-value products with longer sales cycles, because you can target procurement, sourcing and engineering roles by industry, country and company size. It costs more per click than Google, so it suits firms whose average order value justifies reaching a precise audience.' },
@@ -664,7 +664,7 @@ export const industryPages: ServicePageData[] = [
     slug: 'white-label-seo',
     kind: 'global',
     title: 'White Label SEO Services for Agencies | Magnus Path',
-    description: 'White label SEO services for agencies in the UK, US, Australia and UAE. Unbranded reports, NDA, IST working hours that overlap yours. From US$350 per site.',
+    description: 'White label SEO services for agencies in the UK, US, Australia and UAE. Unbranded reports, NDA, IST working hours that overlap yours. Quoted per site.',
     primaryKeyword: 'white label seo services',
     navLabel: 'White-label SEO',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
@@ -672,7 +672,7 @@ export const industryPages: ServicePageData[] = [
     h1: 'White Label SEO Services Your Clients *Never See Us Behind*',
     intro: 'Magnus Path provides white label SEO services for digital agencies in the UK, US, Australia and the UAE. Our Chennai team does the audits, on-page work, content, local SEO and reporting under your brand, signs an NDA and never contacts your clients. You keep the relationship and the margin, and add SEO capacity without hiring.',
     icon: 'seo',
-    facts: ['Unbranded reports', 'NDA as standard', 'From US$350 per site'],
+    facts: ['Unbranded reports', 'NDA as standard', 'Quoted per client site'],
     headings: {
       pains: 'Why agencies struggle to deliver SEO in-house',
       includes: 'What our white label SEO agency delivers',
@@ -766,8 +766,8 @@ export const industryPages: ServicePageData[] = [
       {
         heading: 'Pricing and starting with a pilot',
         paragraphs: [
-          'Our white-label SEO starts at US$350 a month per client site, with the scope agreed per site. You set your own resale price. We suggest starting with one pilot site for two or three months, so you can judge quality and communication before moving more clients over.',
-          'For agencies, the economics are straightforward. At US$350 a month per site, you can resell SEO at your usual rates with a healthy margin, without the fixed cost of salaries, tools and training. Our white label SEO services scale up and down with your client list, so you are never paying for capacity you do not use.',
+          'Our white-label SEO is quoted per client site after a short scoping call, with the scope agreed in writing for each site. You set your own resale price. We suggest starting with one pilot site for two or three months, so you can judge quality and communication before moving more clients over.',
+          'For agencies, the economics are straightforward. With a fixed quote per site, you can resell SEO at your usual rates with a healthy margin, without the fixed cost of salaries, tools and training. Our white label SEO services scale up and down with your client list, so you are never paying for capacity you do not use.',
         ],
       },
     ],
@@ -783,7 +783,7 @@ export const industryPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'What are white label SEO services?', a: 'White label SEO services are SEO work done by a specialist partner and sold by an agency under its own brand. The partner handles audits, on-page work, content, links and reports, while the agency keeps the client relationship. Clients see only the agency’s name and branding.' },
-      { q: 'How much do your white label SEO services cost?', a: 'Our white-label SEO starts at US$350 a month per client site. Larger sites, competitive markets and extra content or link building are quoted per site. You set your own resale price to your clients, and we agree the scope for each site in writing.' },
+      { q: 'How much do your white label SEO services cost?', a: 'We quote white-label SEO per client site after a short scoping call. The cost depends on the size of the site, how competitive the market is and how much content and link building it needs. You set your own resale price to your clients, and we agree the scope, timeline and exclusions for each site in writing.' },
       { q: 'Will my clients know you are doing the work?', a: 'No. We sign a mutual NDA, deliver reports under your logo or in your template, and never contact your clients. Our agreement also states that we will not approach or work directly with any of your clients, now or in the future.' },
       { q: 'How do you handle time-zone differences with UK, US and Australian agencies?', a: 'We work on Indian Standard Time, which overlaps with UK mornings, most of the UAE day and Australian afternoons. For US agencies we hold calls early morning or late evening IST. You get a named account manager, a shared chat channel and replies within one working day.' },
       { q: 'Do you offer white label local SEO services?', a: 'Yes. We optimise Google Business Profiles, build and clean up citations, plan review requests and write location pages for single and multi-location businesses. Reports cover map rankings, calls and direction requests, all under your agency’s brand.' },
@@ -797,7 +797,7 @@ export const industryPages: ServicePageData[] = [
     slug: 'seo-outsourcing-india',
     kind: 'global',
     title: 'SEO Outsourcing India: Honest, Transparent SEO | Magnus Path',
-    description: 'SEO outsourcing to India without the usual risks: clear English communication, no spammy links, transparent monthly reports. From US$500 a month. Chennai team.',
+    description: 'SEO outsourcing to India without the usual risks: clear English communication, no spammy links, transparent monthly reports. Quoted after a free audit. Chennai team.',
     primaryKeyword: 'SEO outsourcing to India',
     navLabel: 'SEO Outsourcing to India',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
@@ -805,7 +805,7 @@ export const industryPages: ServicePageData[] = [
     h1: 'SEO Outsourcing to India, *Without the Usual Risks*',
     intro: 'Magnus Path is a Chennai-based partner for SEO outsourcing to India, working with businesses and agencies in the UK, US, Australia, UAE and Singapore that want lower costs without the quality, communication and link problems outsourcing is known for. You get a named manager, clear English updates, safe link building and reports showing every task done.',
     icon: 'ai',
-    facts: ['From US$500 a month', 'Every task reported', 'No PBNs or paid link packages'],
+    facts: ['Fixed written quote', 'Every task reported', 'No PBNs or paid link packages'],
     headings: {
       pains: 'The honest worries about outsourcing SEO',
       includes: 'What you can outsource to our SEO team',
@@ -915,7 +915,7 @@ export const industryPages: ServicePageData[] = [
       {
         heading: 'What SEO outsourcing to India costs',
         paragraphs: [
-          'Our SEO outsourcing starts at US$500 a month for one website. That buys a defined monthly scope, not a vague package: technical fixes, on-page work, content and outreach-based links, with a task-level report. Very cheap offers usually cut quality on content and links, which are the parts that carry the most risk.',
+          'Our SEO outsourcing is quoted after a free audit of the website. The quote buys a defined monthly scope, not a vague package: technical fixes, on-page work, content and outreach-based links, with a task-level report. Very cheap offers usually cut quality on content and links, which are the parts that carry the most risk.',
           'For comparison, Indian SEO outsourcing providers charge anywhere from a few hundred to a few thousand dollars a month, depending on scope. Compare what is delivered, not just the price: how many pages are optimised, how much content is written and edited, and how links are built. A low monthly fee with no defined deliverables often costs more in the end.',
         ],
       },
@@ -932,7 +932,7 @@ export const industryPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'Is SEO outsourcing to India a good idea?', a: 'It can be, if you choose carefully. India has strong technical and writing talent at lower cost, and time-zone differences let work move overnight. The risks are poor quality, weak communication and spammy links, so ask for a sample audit, a written monthly scope and a full list of links built.' },
-      { q: 'How much does it cost to outsource SEO services to India?', a: 'Our SEO outsourcing starts at US$500 a month for one website, covering a defined scope of technical, on-page, content and link work. Larger sites and competitive markets are quoted after an audit. Agencies reselling SEO can use our white-label service from US$350 per client site.' },
+      { q: 'How much does it cost to outsource SEO services to India?', a: 'We quote SEO outsourcing after a free audit, based on site size, how competitive the market is and the technical, on-page, content and link work needed. The written quote lists a defined monthly scope, timeline and exclusions. Agencies reselling SEO under their own brand can use our white-label service, quoted per client site.' },
       { q: 'How do you avoid spammy link building?', a: 'We build links only through outreach to relevant, real websites. We do not use private blog networks, link farms, bulk directory submissions or paid link packages. Every link is listed in your monthly report with its URL, so you can check each one yourself.' },
       { q: 'How will we communicate with your team?', a: 'You get a named account manager who replies within one working day, a shared Slack, Teams or email channel and a project board showing all planned and completed work. Calls are scheduled within your business hours, including early morning or late evening IST for US clients.' },
       { q: 'What should I look for in an SEO outsourcing company in India?', a: 'Look for a written monthly scope, a sample audit of your site, clear answers about link building, a named contact available in your time zone and reports that list actual work done. Avoid any company promising fixed rankings or page one in a few weeks.' },
@@ -1072,7 +1072,7 @@ export const industryPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'What does a digital marketing agency in Chennai do?', a: 'A digital marketing agency in Chennai plans and runs online channels that bring customers to a business: Google Ads, Meta and social media, SEO, websites and marketplaces. A good agency ties this work to measurable results such as orders, enquiries and cost per customer, not just reach or followers.' },
-      { q: 'How much do digital marketing services in Chennai cost?', a: 'Our digital marketing with Meta and Google ads starts at ₹30,000 a month plus ad spend. SEO services start at ₹25,000 a month and e-commerce SEO at ₹35,000 a month. Websites are one-time projects. You get a fixed quote after a free consultation and audit.' },
+      { q: 'How much do digital marketing services in Chennai cost?', a: 'It depends on the channels you need, such as Meta and Google ads, SEO or e-commerce SEO, plus your locations, products and how competitive your market is. Ad spend is paid directly to the platforms. Websites are one-time projects. You get a fixed written quote after a free consultation and audit.' },
       { q: 'Do you create ads and social media content in Tamil?', a: 'Yes. We produce ads, reels and social media content in Tamil, English or a mix, depending on your audience. Tamil creative often performs well for local businesses and for brands selling to customers across Tamil Nadu and to Tamil-speaking communities abroad.' },
       { q: 'Can we meet your team in person in Chennai?', a: 'Yes. Our head office is in Chennai, and we meet clients in person across the city, at your office, store or factory, for kick-off meetings and monthly reviews. Clients outside Chennai work with us through video calls and shared dashboards.' },
       { q: 'Do you work only with e-commerce brands?', a: 'E-commerce and D2C brands are our focus, but we also work with local businesses such as clinics, retailers and service firms, and with manufacturers and exporters that need B2B lead generation. The same principle applies to all: marketing measured on sales and enquiries.' },

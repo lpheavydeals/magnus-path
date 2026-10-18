@@ -10,7 +10,7 @@ export const ukAgencyPages: ServicePageData[] = [
     market: 'UK',
     twin: 'white-label-seo',
     title: 'White Label SEO UK for Digital Agencies | Magnus Path',
-    description: 'White label SEO for UK digital agencies: unbranded reports, NDAs, British English content and same-day handling of morning briefs. From £275 a month per site.',
+    description: 'White label SEO for UK digital agencies: unbranded reports, NDAs, British English content and same-day handling of morning briefs. Quoted in GBP per client site.',
     primaryKeyword: 'white label SEO',
     navLabel: 'White Label SEO',
     breadcrumb: [UK_HUB],
@@ -18,7 +18,7 @@ export const ukAgencyPages: ServicePageData[] = [
     h1: 'White Label SEO for UK Agencies, *Done Under Your Name*',
     intro: 'Our white label SEO service is for UK digital agencies that sell SEO but do not have the hands to deliver it. A Chennai team handles audits, on-page work, British English content, link building and local SEO under your brand. We sign an NDA, never speak to your clients, and our day overlaps your morning, so briefs move the same day.',
     icon: 'seo',
-    facts: ['NDA and unbranded reports', 'British English content', 'From £275 / month per site'],
+    facts: ['NDA and unbranded reports', 'British English content', 'Pilot site to start'],
     headings: {
       pains: 'What goes wrong when agencies deliver SEO alone',
       includes: 'What our white label SEO for agencies covers',
@@ -100,7 +100,7 @@ export const ukAgencyPages: ServicePageData[] = [
         heading: 'How to vet a white label SEO agency, and what it costs',
         paragraphs: [
           'Test any provider, including us, before you hand over a client. A serious white label SEO agency will answer these questions in writing and will not mind a pilot:',
-          'Be wary of anyone promising rankings or fixed timelines. Our white label SEO for UK agencies starts at £275 a month per client site; larger sites and competitive markets are quoted per site after a short audit, because a local trades site and a large e-commerce catalogue need very different effort. You set your own resale price, and the margin stays with your agency.',
+          'Be wary of anyone promising rankings or fixed timelines. We quote white label SEO for UK agencies in GBP per client site after a short audit, because a local trades site and a large e-commerce catalogue need very different effort. Site size, competition and the amount of content and link building drive the cost, and the written quote lists scope, timeline and exclusions. You set your own resale price, and the margin stays with your agency.',
         ],
         bullets: [
           'Can you audit one of our client sites before we sign?',
@@ -121,7 +121,7 @@ export const ukAgencyPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'What is white label SEO?', a: 'White label SEO is SEO work done by a delivery team and sold by an agency under its own brand. The team handles audits, on-page changes, content, links and reports, while the agency owns the client relationship. Clients see only the agency’s name, logo and reports, and never deal with the team directly.' },
-      { q: 'How much does white label SEO cost for a UK agency?', a: 'White label SEO starts at £275 a month per client site. Larger sites and competitive markets are quoted after a short audit, because a local service business and a large online shop need very different amounts of work. The scope for each site is agreed in writing before work begins, and you set your own resale price to your client.' },
+      { q: 'How much does white label SEO cost for a UK agency?', a: 'We quote white label SEO in GBP per client site after a short audit, because a local service business and a large online shop need very different amounts of work. The scope for each site is agreed in writing before work begins, and you set your own resale price to your client.' },
       { q: 'What is the difference between an SEO reseller and white label SEO?', a: 'An SEO reseller programme usually sells fixed packages you mark up, often through the provider’s own dashboards. White label SEO is scoped per client site, follows your processes and reports in your template. Both let you sell SEO without hiring, but white label work feels more like part of your own service.' },
       { q: 'Will my clients know you are doing the work?', a: 'No. We sign a mutual NDA, deliver reports under your logo or in your template, and never contact your clients. If a client asks a technical question, we draft the answer in your tone, or join a call as part of your team when you ask us to.' },
       { q: 'How does the time difference work with UK agencies?', a: 'India is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter. Our working day overlaps your morning and early afternoon, so briefs and feedback sent before lunch are usually handled the same day. Calls are booked inside that overlap. We do not offer UK evening support.' },
@@ -145,7 +145,7 @@ export const ukAgencyPages: ServicePageData[] = [
     h1: 'SEO Outsourcing for UK Teams That *Want to See the Work*',
     intro: 'SEO outsourcing works when you can see exactly what you are paying for. Magnus Path gives UK businesses and agencies an offshore SEO team in Chennai, India, with a named manager, a written monthly scope and reports that list every task and link. Our day overlaps your morning, and we quote in GBP after a free audit.',
     icon: 'seo',
-    facts: ['Written monthly scope', 'Every task and link reported', 'From £400 / month'],
+    facts: ['Written monthly scope', 'Every task and link reported', 'Free audit first'],
     headings: {
       pains: 'Why UK teams hesitate to outsource SEO',
       includes: 'What our offshore SEO team takes on',
@@ -241,8 +241,8 @@ export const ukAgencyPages: ServicePageData[] = [
       {
         heading: 'What SEO outsourcing costs for UK clients',
         paragraphs: [
-          'SEO outsourcing starts at £400 a month, with the exact scope set after a free audit, because a 20-page service site and a 5,000-product shop need very different effort. The quote is a defined monthly scope, not a vague package: technical fixes, on-page work, content and outreach links, with a task-level report and a monthly call. Agencies reselling SEO under their own brand should look at our white label service instead.',
-          'Compare quotes by what is delivered, not only the monthly figure: how many pages are optimised, how much content is written and edited, how links are built and who reviews the work before it goes live. A cheap retainer with nothing written down tends to cost more later, when someone has to undo the damage.',
+          'We quote SEO outsourcing in GBP after a free audit, because a 20-page service site and a 5,000-product shop need very different effort. The quote is a defined monthly scope, not a vague package: technical fixes, on-page work, content and outreach links, with a task-level report and a monthly call. Agencies reselling SEO under their own brand should look at our white label service instead.',
+          'Compare quotes by what is delivered, not only the headline fee: how many pages are optimised, how much content is written and edited, how links are built and who reviews the work before it goes live. A cheap retainer with nothing written down tends to cost more later, when someone has to undo the damage.',
         ],
       },
     ],
@@ -255,7 +255,7 @@ export const ukAgencyPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'Is SEO outsourcing a good idea for a UK business?', a: 'It is when you need specialist skills without a senior salary, and you choose a provider that shows its work. Ask for a written monthly scope, a sample audit of your own site and a full list of links built. The risks come from vague reports and hidden link schemes, not from location.' },
-      { q: 'How much does it cost to outsource SEO from the UK?', a: 'Outsourced SEO starts at £400 a month. After a free audit of your site and competitors we confirm a defined monthly scope of technical, on-page, content and link work in GBP, so you know what each month includes. Larger shops and competitive markets cost more.' },
+      { q: 'How much does it cost to outsource SEO from the UK?', a: 'It depends on the size of your site, how competitive your market is and how much technical, on-page, content and link work is needed. After a free audit of your site and competitors we quote a defined monthly scope in GBP, listing tasks, timeline and exclusions, so you know what each month includes.' },
       { q: 'Should I hire an in-house SEO or use outsourced SEO?', a: 'Hire in-house if you need someone in meetings daily and can carry a senior salary. Choose outsourced SEO if you need technical, content and link skills without that fixed cost. Many UK businesses keep strategy and approvals in-house and outsource delivery to a team whose work they can check every month.' },
       { q: 'What does an offshore SEO team do each month?', a: 'It depends on the scope we agree, but a typical month includes technical fixes, on-page changes to priority pages, new content, outreach for links and a report listing every task, page and link. The shared project board shows what is planned, in progress and done at any time.' },
       { q: 'How do your hours work with UK time?', a: 'India is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter. Our working day overlaps your morning and early afternoon, so requests sent before lunch are usually handled the same day. Calls are booked inside that overlap, and day-to-day work runs through Slack, Teams or email.' },

@@ -6,7 +6,7 @@ export const bangaloreMarketingPages: ServicePageData[] = [
     slug: 'bangalore/seo-company',
     kind: 'location',
     title: 'SEO Company in Bangalore for Startups & Brands | Magnus Path',
-    description: 'SEO company in Bangalore for startups, SaaS, D2C brands and local businesses. Technical SEO, content and Google Maps, with a Bengaluru office. From ₹25,000/mo.',
+    description: 'SEO company in Bangalore for startups, SaaS, D2C brands and local businesses. Technical SEO, content and Google Maps, with a Bengaluru office and a free audit first.',
     primaryKeyword: 'SEO company in Bangalore',
     navLabel: 'SEO Company in Bangalore',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
@@ -14,7 +14,7 @@ export const bangaloreMarketingPages: ServicePageData[] = [
     h1: 'SEO Company in Bangalore for *Startups, Brands and Local Businesses*',
     intro: 'Magnus Path is an SEO company in Bangalore for startups, SaaS and B2B tech firms, D2C brands and local businesses. We fix technical issues, write content your buyers actually search for and improve your Google Maps visibility area by area. You can meet us at our Bengaluru office, while our Chennai head office team handles much of the delivery.',
     icon: 'seo',
-    facts: ['Bengaluru office, meet by appointment', 'Technical, content and local SEO', 'From ₹25,000 / month'],
+    facts: ['Bengaluru office, meet by appointment', 'Technical, content and local SEO', 'Free audit first'],
     headings: {
       pains: 'What Bengaluru teams tell us about *SEO so far*',
       includes: 'What our SEO services in Bangalore include',
@@ -120,7 +120,7 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       {
         heading: 'What SEO costs in Bangalore, and why an office helps',
         paragraphs: [
-          'Pricing ranges from cheap packages to large retainers. Our SEO services start at ₹25,000 a month and e-commerce SEO starts at ₹35,000 a month. The real difference between offers is what gets done each month, so ask for a sample report before you sign.',
+          'SEO offers range from cheap packages to large retainers. We quote after a free audit, and the cost depends on the size of your site, how many locations you target, how competitive your keywords are and how much content and link work is needed. The written quote lists scope, timeline and exclusions. The real difference between offers is what gets done each month, so ask for a sample report before you sign.',
           'As an SEO company in Bangalore with a Bengaluru office, we can run planning workshops in person, visit your clinic or showroom for photos and understand which areas your customers come from. Our Chennai head office team does much of the hands-on delivery, so you get one connected team for SEO, websites and ads.',
         ],
       },
@@ -133,7 +133,7 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       { label: 'AI search optimisation (GEO)', href: '/ai-search-optimization/' },
     ],
     faqs: [
-      { q: 'How much does an SEO company in Bangalore charge?', a: 'Prices in Bangalore range from a few thousand rupees for basic packages to several lakh a month for large websites. Magnus Path’s SEO services start at ₹25,000 a month for one location or a small site, and e-commerce SEO starts at ₹35,000 a month. Larger sites are quoted after a free audit.' },
+      { q: 'How much does an SEO company in Bangalore charge?', a: 'It depends on your site size, the number of locations, how competitive your keywords are and how much content and link building is needed. Magnus Path quotes after a free audit, with a written quote listing the monthly scope, timeline and exclusions, so you can compare offers by the work actually delivered.' },
       { q: 'Do you have an office in Bangalore?', a: 'Yes. We have a Bengaluru office where you can meet the team by appointment for kick-off meetings, planning workshops and reviews. Much of the day-to-day delivery is done by our Chennai head office team, and updates happen over calls, WhatsApp and shared monthly reports.' },
       { q: 'What do your SEO services in Bangalore include?', a: 'Our SEO services in Bangalore cover technical SEO, content and page optimisation, Google Business Profile and local SEO, e-commerce SEO for online stores, AI search optimisation and monthly reporting on leads, calls or orders. The mix depends on your business and what the audit finds.' },
       { q: 'How do I choose an SEO agency in Bangalore?', a: 'Ask who will do the work, what is delivered each month, how links are earned and how results are measured. A good SEO agency in Bangalore explains its plan in plain language, shows sample reports and ties results to enquiries or sales, not only keyword positions.' },
@@ -156,7 +156,7 @@ export const bangaloreMarketingPages: ServicePageData[] = [
     h1: 'Digital Marketing Company in Bangalore for *D2C, Startups and B2B*',
     intro: 'Magnus Path is a digital marketing company in Bangalore that helps D2C brands, startups and B2B firms turn spend into orders and qualified leads. One team runs SEO, Meta, Google and LinkedIn ads, social media and websites. Meet us at our Bengaluru office, while our Chennai head office team handles much of the delivery.',
     icon: 'social',
-    facts: ['Bengaluru office, meet by appointment', 'Ads, SEO, social and websites', 'From ₹30,000 / month + ad spend'],
+    facts: ['Bengaluru office, meet by appointment', 'Ads, SEO, social and websites', 'Accounts stay in your name'],
     headings: {
       pains: 'Why Bengaluru teams switch *digital marketing agencies*',
       includes: 'Digital marketing services in Bangalore, run by one team',
@@ -257,9 +257,9 @@ export const bangaloreMarketingPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Pricing, and working with our Bengaluru office',
+        heading: 'How we quote, and working with our Bengaluru office',
         paragraphs: [
-          'Performance marketing with Meta and Google ads starts at ₹30,000 a month plus ad spend. SEO services start at ₹25,000 a month, and websites are quoted as one-time projects. As a digital marketing company in Bangalore with a local office, we run workshops in person and keep reviews practical. Our Chennai head office team handles much of the delivery, so ads, SEO and websites stay under one roof.',
+          'We quote after a free audit or a short scoping call. The cost depends on the channels you need, how competitive your market is, the number of pages or products, integrations and how much content is involved. For ads, ad spend is paid directly to Meta, Google or LinkedIn from your own account, and our management fee is quoted separately. Websites are quoted as one-time projects. As a digital marketing company in Bangalore with a local office, we run workshops in person and keep reviews practical. Our Chennai head office team handles much of the delivery, so ads, SEO and websites stay under one roof.',
           'If you are not sure where to start, a free audit of your ads, website and tracking is a low-risk first step. You get a written list of issues and priorities that is useful whether or not you hire us.',
         ],
       },
@@ -272,7 +272,7 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       { label: 'Free ROAS calculator', href: '/tools/roas-calculator/' },
     ],
     faqs: [
-      { q: 'How much does a digital marketing company in Bangalore charge?', a: 'Fees vary widely, from small monthly retainers to large agency contracts. Our performance marketing with Meta and Google ads starts at ₹30,000 a month plus ad spend. SEO services start at ₹25,000 a month, and websites are quoted as one-time projects after we understand the scope.' },
+      { q: 'How much does a digital marketing company in Bangalore charge?', a: 'Fees depend on the channels, your market’s competition, the size of your site or catalogue and how much content is needed. We quote after a free audit, with scope, timeline and exclusions written down. Ad spend is paid directly to the platforms from your account, and our management fee is quoted separately.' },
       { q: 'Do you have an office in Bangalore?', a: 'Yes. We have a Bengaluru office where you can meet the team by appointment for kick-off meetings, workshops and monthly reviews. Much of the campaign and build work is delivered by our Chennai head office team, with day-to-day updates over calls, WhatsApp and shared reports.' },
       { q: 'What does your digital marketing agency in Bangalore offer?', a: 'As a digital marketing agency in Bangalore, we run Meta, Google and LinkedIn ads, social media, SEO and local SEO, and build Shopify, WooCommerce and WordPress websites and landing pages. Tracking and monthly reporting on orders and leads are part of every engagement.' },
       { q: 'Are you also a social media marketing agency in Bangalore?', a: 'Yes. We plan and produce content for Instagram and LinkedIn, manage community replies and turn the best posts into paid campaigns. Social media is run alongside ads and SEO, so reports show traffic, leads and sales, not only followers and likes.' },

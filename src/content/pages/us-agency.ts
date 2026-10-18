@@ -39,7 +39,7 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'One report in USD', body: 'Revenue, ad spend and results across channels in one monthly report, followed by a call booked in your morning.' },
     ],
     children: [
-      { title: 'White Label SEO', href: '/us/white-label-seo/', body: 'SEO fulfillment for US agencies under your brand: audits, on-page, content, links and local SEO, from US$350 per site.', icon: 'seo' },
+      { title: 'White Label SEO', href: '/us/white-label-seo/', body: 'SEO fulfillment for US agencies under your brand: audits, on-page, content, links and local SEO, quoted per client site.', icon: 'seo' },
       { title: 'SEO Outsourcing', href: '/us/seo-outsourcing/', body: 'A senior offshore SEO team for US businesses and agencies, with a written monthly scope and task-level reports.', icon: 'seo' },
       { title: 'White Label Web Development', href: '/us/white-label-web-development/', body: 'Shopify, WordPress and custom builds delivered under your agency’s name, with code and accounts you own.', icon: 'website' },
       { title: 'Shopify SEO Agency', href: '/us/shopify-seo-agency/', body: 'Technical SEO, collections, product pages and content for Shopify stores selling to US shoppers.', icon: 'shopify' },
@@ -108,10 +108,10 @@ export const usAgencyPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Pricing in USD',
+        heading: 'How we quote in USD',
         paragraphs: [
-          'Two services have published starting prices: white-label SEO from US$350 a month per client site, and SEO outsourcing from US$500 a month. Everything else, including Shopify work, Amazon PPC and account management, and generative engine optimization, is quoted in USD after a free audit, because scope and ad spend vary too much for a fixed price to be honest.',
-          'Ad spend is always paid directly from your own Amazon, Google and Meta accounts. You own every account, all data and all creative.',
+          'Every service is quoted in USD after a free audit or a short scoping call, because scope and ad spend vary too much for a fixed price to be honest. The cost depends on catalog size, the number of channels, how competitive your category is, the integrations involved and how much content is needed. The written quote lists the scope, the timeline and what is excluded, so you know exactly what each month or project includes.',
+          'Ad spend is always paid directly to Amazon, Google and Meta from your own accounts, and our management fee is quoted separately. You own every account, all data and all creative.',
           'For agencies, the same rule applies to client work. Code lives in your repository, reports carry your logo, and client accounts stay in your name or your client’s. If you stop working with us, nothing is held back and nothing needs to be rebuilt.',
         ],
       },
@@ -140,7 +140,7 @@ export const usAgencyPages: ServicePageData[] = [
       { q: 'Do you have an office in the United States?', a: 'No. Magnus Path is a team based in Chennai, India, and we work with US brands and agencies remotely. Calls happen over video in your morning, day-to-day work runs through a shared project board and Slack or Teams, and every client has a named contact.' },
       { q: 'What hours do you work in US time?', a: 'India Standard Time is 9.5 hours ahead of US Eastern in summer and 10.5 hours in winter. We overlap for a short window in the Eastern morning, which is our evening. Most work happens during your night, so you wake up to finished tasks. We do not offer US-hours support.' },
       { q: 'Do you work with US agencies as well as brands?', a: 'Yes. US agencies use us for white-label SEO, SEO outsourcing and white-label web development under their own brand. We sign an NDA, deliver unbranded work and reports, and never contact the agency’s clients. Brands use us directly for Shopify, Amazon, SEO and AI search.' },
-      { q: 'How much do your services cost for US clients?', a: 'White-label SEO starts at US$350 a month per client site and SEO outsourcing at US$500 a month. Shopify, Amazon and generative engine optimization work is quoted in USD after a free audit, because scope and ad spend vary too much for a fixed price.' },
+      { q: 'How much do your services cost for US clients?', a: 'It depends on the services, your catalog size, the channels involved and how competitive your category is. We quote every service in USD after a free audit, with a written scope, timeline and exclusions. Ad spend is paid directly to the platform from your own account, and our management fee is quoted separately.' },
       { q: 'Do you have special status with Shopify or Amazon?', a: 'We do not claim any special status or badges. We work on Shopify, Shopify Plus and Amazon Ads every day, building stores and running campaigns in your own accounts. Ask us for sample work and a free audit of your store or ad account so you can judge the work directly.' },
       { q: 'Can you handle US sales tax on Shopify?', a: 'We can configure Shopify tax settings, collect sales tax in the states you choose and check that checkout totals are correct. Sales tax obligations depend on your business and where you sell, so your accountant should confirm which states you need to register and collect in.' },
       { q: 'Is it a good idea to hire an offshore ecommerce team?', a: 'It can be, if the team is experienced, writes clearly and is honest about hours. You get specialists across Shopify, Amazon and SEO for less than a comparable US hire. Check who does the work, ask for sample reports and insist on owning every account.' },
@@ -154,7 +154,7 @@ export const usAgencyPages: ServicePageData[] = [
     market: 'US',
     twin: 'white-label-seo',
     title: 'White Label SEO Services for US Agencies | Magnus Path',
-    description: 'White label SEO services for US agencies: unbranded reports, NDAs, overnight delivery from a Chennai team and ethical link building. From US$350 per site.',
+    description: 'White label SEO services for US agencies: unbranded reports, NDAs, overnight delivery from a Chennai team, ethical link building and a quote per client site.',
     primaryKeyword: 'white label seo services',
     navLabel: 'White Label SEO',
     breadcrumb: [US_HUB],
@@ -162,7 +162,7 @@ export const usAgencyPages: ServicePageData[] = [
     h1: 'White Label SEO Services for US Agencies, *Delivered Overnight*',
     intro: 'Magnus Path provides white label SEO services for US digital agencies that sell SEO but need more hands to deliver it. Our Chennai team handles audits, on-page work, content, link building and local SEO under your brand. We sign an NDA, never speak to your clients, and work through your night so tasks are ready each morning.',
     icon: 'seo',
-    facts: ['From US$350 per client site', 'NDA and unbranded reports', 'Work done during your night'],
+    facts: ['Pilot site to start', 'NDA and unbranded reports', 'Work done during your night'],
     headings: {
       pains: 'Why US agencies look for a white label SEO agency',
       includes: 'What our white label SEO for agencies includes',
@@ -262,9 +262,9 @@ export const usAgencyPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Pricing and margins',
+        heading: 'How we quote, and your margins',
         paragraphs: [
-          'Our white label SEO services start at US$350 a month per client site, with the scope agreed in writing for each site. Larger sites, competitive niches and extra content or links are quoted per site. You set your own resale price, so the margin is yours. Because there are no salaries, tool licenses or training costs on your side, capacity grows and shrinks with your client list.',
+          'Our white label SEO services are quoted in USD per client site after a short audit, with the scope agreed in writing for each site. The cost depends on the size of the site, how competitive the niche is, and how much content and link building you want each month. You set your own resale price, so the margin is yours. Because there are no salaries, tool licenses or training costs on your side, capacity grows and shrinks with your client list.',
           'We suggest starting with one pilot site for two or three months. That is long enough to judge the audit, the quality of on-page work and content, and how well we communicate, before you move more clients onto our white label SEO services.',
         ],
       },
@@ -278,7 +278,7 @@ export const usAgencyPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'What are white label SEO services?', a: 'White label SEO services are SEO work done by a fulfillment team and sold by an agency under its own brand. The team handles audits, on-page work, content, links and reports, while the agency keeps the client relationship. Clients see only the agency’s name, logo and reports.' },
-      { q: 'How much does white label SEO cost?', a: 'Our white label SEO starts at US$350 a month per client site. Larger sites, competitive markets and extra content or link building are quoted per site in USD. You set your own resale price, and the scope for each site is agreed in writing before work begins.' },
+      { q: 'How much does white label SEO cost?', a: 'We quote white label SEO per client site in USD after a short audit. The cost depends on site size, how competitive the market is and how much content and link building is in scope. You set your own resale price, and the scope for each site is agreed in writing before work begins.' },
       { q: 'Will my clients know you are doing the work?', a: 'No. We sign a mutual NDA, deliver reports under your logo or in your template, and never contact your clients. Our agreement states that we will not approach or work directly with any of your clients. If a client asks a question, we draft the answer for you.' },
       { q: 'How does the time difference affect turnaround?', a: 'India is 9.5 to 10.5 hours ahead of US Eastern. We have a short overlap in your morning for calls, and most work happens while you sleep. Briefs sent before you log off are usually done by the next morning. We do not offer US-hours support.' },
       { q: 'Do you offer local SEO for US clients?', a: 'Yes. We optimize Google Business Profiles, build and clean up citations in US directories, plan review requests and write city or service-area pages. Reports cover map rankings, calls and direction requests, all under your agency’s brand and in your report template.' },
@@ -294,7 +294,7 @@ export const usAgencyPages: ServicePageData[] = [
     market: 'US',
     twin: 'seo-outsourcing-india',
     title: 'Outsource SEO to a Senior Offshore Team | Magnus Path',
-    description: 'Outsource SEO to a senior offshore team in Chennai, India. Written monthly scope, task-level reports, ethical links and overnight delivery. From US$500 a month.',
+    description: 'Outsource SEO to a senior offshore team in Chennai, India. Written monthly scope, task-level reports, ethical links and a USD quote after a free audit.',
     primaryKeyword: 'outsource seo',
     navLabel: 'SEO Outsourcing',
     breadcrumb: [US_HUB],
@@ -302,7 +302,7 @@ export const usAgencyPages: ServicePageData[] = [
     h1: 'Outsource SEO to a *Senior Offshore Team*',
     intro: 'If you want to outsource SEO without losing control of the work, Magnus Path gives US businesses and agencies a senior offshore team in Chennai, India. You get a named manager, a written monthly scope, task-level reports and link building you can check. We work while you sleep and meet in your morning.',
     icon: 'seo',
-    facts: ['From US$500 a month', 'Written monthly scope', 'Every task and link reported'],
+    facts: ['Free audit first', 'Written monthly scope', 'Every task and link reported'],
     headings: {
       pains: 'Why outsourcing SEO has a bad reputation',
       includes: 'What our SEO outsourcing company handles',
@@ -400,7 +400,7 @@ export const usAgencyPages: ServicePageData[] = [
       {
         heading: 'What it costs to outsource SEO',
         paragraphs: [
-          'Our SEO outsourcing starts at US$500 a month for one website. That buys a defined monthly scope, not a vague package: technical fixes, on-page work, content and outreach links, with a task-level report and a monthly call. Larger sites and competitive markets are quoted in USD after an audit. If you are an agency reselling SEO under your own brand, our white label SEO service starts at US$350 per client site.',
+          'We quote SEO outsourcing in USD after a free audit of your site and competitors. The cost depends on the size of the site, how competitive your market is, and how much technical, content and link work is needed each month. The quote is a defined monthly scope, not a vague package: technical fixes, on-page work, content and outreach links, with a task-level report and a monthly call. If you are an agency reselling SEO under your own brand, our white label SEO service is quoted per client site.',
         ],
       },
     ],
@@ -413,12 +413,12 @@ export const usAgencyPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'Should I outsource SEO or hire in-house?', a: 'Hire in-house if you need someone in meetings every day and can afford a senior salary. Outsource SEO if you need specialist skills across technical work, content and links without that fixed cost. Many US businesses keep strategy in-house and outsource delivery to a team they can check.' },
-      { q: 'How much does it cost to outsource SEO?', a: 'Our SEO outsourcing starts at US$500 a month for one website, covering a defined scope of technical, on-page, content and link work. Larger sites and competitive markets are quoted in USD after an audit. Agencies reselling SEO can use our white label service from US$350 per client site.' },
+      { q: 'How much does it cost to outsource SEO?', a: 'It depends on site size, competition and how much technical, on-page, content and link work you need. We quote in USD after a free audit, as a defined monthly scope with the tasks, timeline and exclusions written down. Agencies reselling SEO can use our white label service, quoted per client site.' },
       { q: 'What should I look for in an offshore SEO company?', a: 'Look for a written monthly scope, a sample audit of your own site, clear answers on link building, a named contact with stated overlap hours and reports that list every task and link. Avoid any offshore SEO company that promises rankings or page one within weeks.' },
       { q: 'Is it safe to outsource SEO to India?', a: 'It is safe when the provider is transparent. Ask for a full list of links built, keep ownership of your accounts and content, and start with a defined scope you can measure. The risks come from hidden link schemes and vague reports, not from location.' },
       { q: 'How will we communicate across time zones?', a: 'India is 9.5 to 10.5 hours ahead of US Eastern. We book calls in your morning, which is our evening, and use Slack, Teams or email plus a shared project board. Most work happens overnight for you. We do not offer US-hours support.' },
       { q: 'How long before outsourced SEO shows results?', a: 'Technical fixes can show effects within weeks, but most sites see steady organic growth after four to six months. Timing depends on competition, site history and how much content and link work is in scope. We share realistic expectations before you sign, not after.' },
-      { q: 'Do you work with US agencies as an SEO outsourcing company?', a: 'Yes. Agencies can outsource SEO delivery to us under their own brand. We sign an NDA, send unbranded reports and never contact your clients. That service is priced per client site from US$350 a month, separate from direct SEO outsourcing.' },
+      { q: 'Do you work with US agencies as an SEO outsourcing company?', a: 'Yes. Agencies can outsource SEO delivery to us under their own brand. We sign an NDA, send unbranded reports and never contact your clients. That service is quoted per client site, separately from direct SEO outsourcing.' },
     ],
   },
 

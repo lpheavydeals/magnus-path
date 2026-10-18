@@ -48,7 +48,7 @@ export const londonCorePages: ServicePageData[] = [
       { title: 'Website Development Company', href: '/london/website-development-company/', body: 'Business websites and custom builds for London firms, scoped and quoted in GBP.', icon: 'website' },
       { title: 'Website Maintenance', href: '/london/website-maintenance/', body: 'Monthly care plans: tested updates, backups, security checks and small content changes.', icon: 'website' },
       { title: 'Amazon Agency', href: '/london/amazon-agency/', body: 'Amazon.co.uk ads, listings and account management for London brands selling on Amazon.', icon: 'amazon' },
-      { title: 'White Label SEO', href: '/london/white-label-seo/', body: 'SEO delivered under your brand for London digital agencies, from £275 a month per client site.', icon: 'seo' },
+      { title: 'White Label SEO', href: '/london/white-label-seo/', body: 'SEO delivered under your brand for London digital agencies, quoted in GBP per client site.', icon: 'seo' },
     ],
     process: [
       { title: 'Free audit', body: 'We review your store, ad accounts, Amazon account or search performance and write up what is costing you sales, in plain English.' },
@@ -118,7 +118,7 @@ export const londonCorePages: ServicePageData[] = [
       {
         heading: 'Costs, contracts and getting started',
         paragraphs: [
-          'We do not publish fixed London prices for most services, because catalogue size, ad spend and the state of your site vary too much. After a free audit we quote in GBP, as a monthly retainer or a project price, with every task written down. The one exception is white-label SEO for agencies, which starts at £275 a month per client site.',
+          'Every service is quoted in GBP after a free audit or a short scoping call, because catalogue size, the number of channels, competition in your category, integrations and the state of your site vary too much for a fixed figure. The written quote is a monthly retainer or a project price, with scope, timeline and exclusions written down. Ad spend is paid directly to Google, Meta or Amazon from your own accounts, and our management fee is quoted separately.',
           'Whichever ecommerce agency in London you choose, keep accounts and data in your own name, ask for a written scope and agree how results will be measured before work begins. A good agency will welcome those questions.',
         ],
       },
@@ -134,7 +134,7 @@ export const londonCorePages: ServicePageData[] = [
       { q: 'Do you have an office in London?', a: 'Yes. Our London office is in East London (E18), and clients can meet the team there by appointment. Most delivery is done by our Chennai team, whose day overlaps your morning and early afternoon, so requests sent before UK lunchtime are usually handled the same day. Video calls are available whenever a visit is not needed.' },
       { q: 'What does an ecommerce marketing agency in London do?', a: 'It helps online brands sell more through their own store and marketplaces. That usually covers store builds and fixes, Google and Meta ads, ecommerce SEO, Amazon.co.uk management and email or conversion work, with one plan and reporting tied to orders and revenue rather than clicks or impressions.' },
       { q: 'Which ecommerce platforms do you work on?', a: 'Mainly Shopify, Shopify Plus, WordPress and WooCommerce, plus custom builds where a project needs one. For marketplaces we work on Amazon.co.uk Seller Central. For paid traffic we use Google Ads, Merchant Center and Meta Ads, with GA4 and Search Console for measurement.' },
-      { q: 'How much does an ecommerce agency in London cost?', a: 'It depends on the services and the size of your store. We quote in GBP after a free audit, as a monthly retainer or a fixed project price, with every task written down. Ad spend is paid from your own accounts. White-label SEO for agencies starts at £275 a month per client site.' },
+      { q: 'How much does an ecommerce agency in London cost?', a: 'It depends on the services and the size of your store. We quote in GBP after a free audit, as a monthly retainer or a fixed project price, with every task written down. Ad spend is paid directly to the platforms from your own accounts, and our management fee is quoted separately.' },
       { q: 'Can I meet the team in person?', a: 'Yes. You can book a meeting at our East London office for planning sessions, workshops or reviews. It is close to Woodford and an easy trip from Stratford, Walthamstow and Ilford. Many clients mix occasional visits with video calls and a shared chat channel for everyday questions.' },
       { q: 'Do you work with London agencies as well as brands?', a: 'Yes. London digital agencies use us for white-label SEO and overflow web development on Shopify and WordPress. We sign an NDA, work under your brand, send unbranded reports and never contact your clients. Brands work with us directly on their store, ads, SEO and Amazon account.' },
       { q: 'What hours does your team work in UK time?', a: 'India Standard Time is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter. Our working day overlaps your morning and early afternoon, and requests sent before UK lunchtime are usually handled the same day. We do not offer UK evening support, and we say so up front.' },
@@ -278,7 +278,7 @@ export const londonCorePages: ServicePageData[] = [
     kind: 'location',
     market: 'UK',
     title: 'White Label SEO London for Digital Agencies | Magnus Path',
-    description: 'White label SEO in London for digital agencies: unbranded reports, NDAs, British English content and a team you can meet in E18. From £275 a month per site.',
+    description: 'White label SEO in London for digital agencies: unbranded reports, NDAs, British English content and a team you can meet in E18. Quoted per client site.',
     primaryKeyword: 'white label SEO in London',
     navLabel: 'White Label SEO',
     breadcrumb: [UK, LONDON],
@@ -286,7 +286,7 @@ export const londonCorePages: ServicePageData[] = [
     h1: 'White Label SEO in London, With a Team *You Can Meet*',
     intro: 'Magnus Path offers white label SEO in London for digital agencies that sell SEO but cannot staff it. You can meet us at our East London office, sign an NDA and agree a pilot, while our Chennai team delivers audits, on-page work, content, links and unbranded reports. Briefs sent before lunch are usually handled the same day.',
     icon: 'seo',
-    facts: ['London office in E18 · meet by appointment', 'NDA, unbranded reports, no client contact', 'From £275 / month per client site'],
+    facts: ['London office in E18 · meet by appointment', 'NDA, unbranded reports, no client contact', 'Pilot site to start'],
     headings: {
       pains: 'Why London agencies look for *SEO delivery help*',
       includes: 'What our white label SEO for London agencies includes',
@@ -375,7 +375,7 @@ export const londonCorePages: ServicePageData[] = [
       {
         heading: 'What white label SEO costs and how to vet a provider',
         paragraphs: [
-          'Our white label SEO in London starts at £275 a month per client site. Larger sites, competitive markets and extra content or links are quoted per site in GBP after a short audit, because a local trades site and a large online catalogue need very different effort. You set your resale price, and the margin stays with your agency.',
+          'We quote white label SEO in London in GBP per client site after a short audit. Site size, competition and how much content and link building you want drive the cost, because a local trades site and a large online catalogue need very different effort. You set your resale price, and the margin stays with your agency.',
           'Test any provider before you hand over a client. Ask for a pilot on one site, a sample report, a written list of how links are earned and a named account manager. Be wary of anyone promising rankings or fixed timelines. Good white-label work should survive a client asking hard questions, so check that every task in a report can be traced to a real change on the site.',
         ],
       },
@@ -390,7 +390,7 @@ export const londonCorePages: ServicePageData[] = [
     faqs: [
       { q: 'Do you have an office in London?', a: 'Yes. Our London office is in East London (E18), and agencies can meet the team there by appointment for onboarding, reviews or working sessions. Most delivery is done by our Chennai team, whose day overlaps your UK morning, so briefs sent before lunchtime are usually handled the same day.' },
       { q: 'What is white label SEO?', a: 'White label SEO is SEO work done by a delivery team and sold by an agency under its own brand. The team handles audits, on-page changes, content, links and reports, while the agency owns the client relationship. Clients see only the agency’s name and reports, and never deal with the delivery team.' },
-      { q: 'How much does white label SEO in London cost?', a: 'Our white label SEO starts at £275 a month per client site. Larger sites, competitive markets and extra content or links are quoted per site in GBP after a short audit. The scope is agreed in writing before work begins, and you set your own resale price to your client.' },
+      { q: 'How much does white label SEO in London cost?', a: 'We quote white label SEO per client site in GBP after a short audit. The cost depends on site size, how competitive the market is and how much content and link building is in scope. The scope is agreed in writing before work begins, and you set your own resale price to your client.' },
       { q: 'Will my clients know you are doing the work?', a: 'No. We sign a mutual NDA, deliver reports under your logo or in your template, and never contact your clients. If a client asks a technical question, we draft the answer in your tone, or join a call as part of your team only when you ask us to.' },
       { q: 'Can you handle SEO for ecommerce clients as well as local ones?', a: 'Yes. Alongside local SEO for trades, clinics and studios, we handle collection, product and feed work for agency clients on Shopify and WooCommerce. That includes technical fixes for duplicate filter URLs, product schema and Merchant Center free listings, all reported under your brand.' },
       { q: 'Can we start with a single client site?', a: 'Yes, and we recommend it. A pilot on one client site for two or three months lets you judge the audit, the monthly work and our communication before you move more accounts. If it works, new sites are added on the same workflow and pricing basis.' },

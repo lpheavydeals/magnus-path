@@ -6,7 +6,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
     slug: 'bangalore/website-development-company',
     kind: 'location',
     title: 'Website Designing Company in Bangalore | Magnus Path',
-    description: 'Website designing company in Bangalore for startups, SaaS, clinics and builders. Business sites from ₹35,000, WordPress from ₹30,000. Meet us in Bengaluru.',
+    description: 'Website designing company in Bangalore for startups, SaaS, clinics and builders. Business and WordPress sites with fixed written quotes. Meet us in Bengaluru.',
     primaryKeyword: 'website designing company in bangalore',
     navLabel: 'Website Development Company Bangalore',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
@@ -14,7 +14,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
     h1: 'Website Designing Company in Bangalore for *Growing Businesses*',
     intro: 'Magnus Path is a website designing company in Bangalore that plans, designs and builds business, corporate and WordPress websites. Startups, SaaS and B2B firms, D2C brands, clinics, builders and institutes get a fast, mobile-first site that explains what they do and turns visitors into enquiries. Meet us at our Bengaluru office for workshops and reviews.',
     icon: 'website',
-    facts: ['Bengaluru office, meetings by appointment', 'Business websites from ₹35,000', 'WordPress, Shopify or headless builds'],
+    facts: ['Bengaluru office, meetings by appointment', 'Fixed written quote', 'WordPress, Shopify or headless builds'],
     headings: {
       pains: 'Why many Bangalore business websites underperform',
       includes: 'Web design and development services for Bangalore businesses',
@@ -112,7 +112,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
         heading: 'Google Business Profile, maintenance and what it costs',
         paragraphs: [
           'For local searches such as "dentist near me", Google shows a map pack driven by Google Business Profile. Your profile and website should share the same name, address and phone, link to the right page and use matching service categories. Multi-branch businesses need one location page per branch.',
-          'With us, a business website of 5–10 pages starts at ₹35,000, WordPress websites start at ₹30,000 and custom corporate sites usually cost ₹75,000–2 lakh. Cost depends on page count, copywriting, photography, integrations and languages. After launch, maintenance plans start at ₹5,000 a month and cover updates, backups and security checks.',
+          'Cost depends on page count, a template or custom design, copywriting, photography, integrations and languages, and custom corporate sites cost more than a simple business site. We quote after a free discovery call, and the written quote lists scope, timeline and exclusions. After launch, monthly maintenance plans cover updates, backups and security checks.',
         ],
       },
       {
@@ -132,11 +132,11 @@ export const bangaloreServicesPages: ServicePageData[] = [
       { label: 'Website maintenance services', href: '/website-maintenance-services/' },
     ],
     faqs: [
-      { q: 'How much does a website designing company in Bangalore charge?', a: 'Prices vary widely across the city. With Magnus Path, a business website of 5–10 pages starts at ₹35,000 one-time, WordPress websites start at ₹30,000 and custom corporate websites usually cost ₹75,000–2 lakh. Hosting and domain renewals are separate, and you receive a fixed quote after a free discovery call.' },
+      { q: 'How much does a website designing company in Bangalore charge?', a: 'Prices vary widely across the city. The cost of a website depends on the number of pages, custom design, copywriting, photography, languages and integrations. Custom corporate websites cost more than a simple business site. Hosting and domain renewals are separate, and you receive a fixed written quote after a free discovery call, listing scope, timeline and exclusions.' },
       { q: 'Do you have an office in Bangalore?', a: 'Yes. We have a Bengaluru office where you can meet the team by appointment for kick-off workshops, design reviews and training. It works alongside our Chennai head office, where much of the build is done, and day-to-day updates run through shared staging sites, WhatsApp and video calls.' },
       { q: 'What should I look for in a website development company in Bangalore?', a: 'Check live sites on your own phone, meet the people who will build your site and ask for a written scope with a fixed price and exclusions. Confirm that you will own the domain and logins, and ask how they handle speed, SEO structure, lead tracking and support after launch.' },
       { q: 'Is a web design company in Bangalore better than a remote team?', a: 'Location matters less than communication. What helps is meeting in person for the kick-off and design reviews, then working on shared staging sites. With our Bengaluru office you get those meetings locally, while the wider team builds the site to the same timeline and quality.' },
-      { q: 'Are you a WordPress development company in Bangalore?', a: 'Yes. We build WordPress websites from ₹30,000 with lightweight custom themes, a short plugin list and a block editor your team can use. We also set up backups, a staging site and an update plan, and offer monthly maintenance so the site stays secure after launch.' },
+      { q: 'Are you a WordPress development company in Bangalore?', a: 'Yes. We build WordPress websites with lightweight custom themes, a short plugin list and a block editor your team can use. We also set up backups, a staging site and an update plan, and offer monthly maintenance so the site stays secure after launch.' },
       { q: 'How long does it take to build a business website?', a: 'A business website of 5–10 pages usually takes three to four weeks from the discovery workshop to launch. Corporate sites with custom features take six to ten weeks. The biggest factor is how quickly content, photos and feedback arrive, so we plan these from the first meeting.' },
       { q: 'Will my website be ready for SEO and Google Business Profile?', a: 'Yes. Every site launches with clean URLs, proper headings, schema markup, internal links, fast pages and Search Console set up. We also create or clean up your Google Business Profile and link it to the right location page, so you can appear in nearby map results.' },
       { q: 'Who owns the website after launch?', a: 'You do. The domain, hosting account, website files and all admin logins are registered in your business name and handed over at launch. If you later move to another agency or bring the work in-house, you can take the site with you without asking our permission.' },
@@ -146,7 +146,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
     slug: 'bangalore/performance-marketing-agency',
     kind: 'location',
     title: 'Performance Marketing Agency in Bangalore | Magnus Path',
-    description: 'Performance marketing agency in Bangalore for D2C and B2B brands. Google, Meta, Amazon and quick commerce ads from ₹30,000/month. Meet us in Bengaluru.',
+    description: 'Performance marketing agency in Bangalore for D2C and B2B brands. Google, Meta, Amazon and quick commerce ads, free audit first. Meet us in Bengaluru.',
     primaryKeyword: 'performance marketing agency in bangalore',
     navLabel: 'Performance Marketing Bangalore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
@@ -154,7 +154,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
     h1: 'Performance Marketing Agency in Bangalore for *D2C and B2B* Brands',
     intro: 'Magnus Path is a performance marketing agency in Bangalore that runs Google, Meta, Amazon and quick commerce ads for D2C brands and B2B companies. We set ROAS and CPA targets from your margins, fix tracking first and test creative every week, so ad spend grows only when orders and qualified leads grow with it.',
     icon: 'social',
-    facts: ['Bengaluru office, meetings by appointment', 'From ₹30,000 / month + ad spend', 'Targets set from your margins'],
+    facts: ['Bengaluru office, meetings by appointment', 'Ad accounts stay in your name', 'Targets set from your margins'],
     headings: {
       pains: 'Why ad budgets stall for many Bangalore brands',
       includes: 'Performance marketing services for Bangalore brands',
@@ -244,7 +244,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
       {
         heading: 'Reporting and choosing a performance marketing agency in Bangalore',
         paragraphs: [
-          'Good reporting is short and honest: spend, revenue or leads, contribution margin, CPA against target, what was tested and what happens next. Before you hire a performance marketing agency in Bangalore, ask to see a sample report, who will manage your account day to day and whether you will own the ad accounts. With us, you always do, and Meta and Google ads management starts at ₹30,000 a month plus ad spend.',
+          'Good reporting is short and honest: spend, revenue or leads, contribution margin, CPA against target, what was tested and what happens next. Before you hire a performance marketing agency in Bangalore, ask to see a sample report, who will manage your account day to day and whether you will own the ad accounts. With us, you always do. Ad spend is paid directly to the platforms from your account, and our management fee is quoted separately after a free audit.',
         ],
       },
     ],
@@ -256,14 +256,14 @@ export const bangaloreServicesPages: ServicePageData[] = [
       { label: 'Ecommerce website development in Bangalore', href: '/bangalore/ecommerce-website-development/' },
     ],
     faqs: [
-      { q: 'How much does a performance marketing agency in Bangalore charge?', a: 'Fees vary by agency and scope. With Magnus Path, Meta and Google ads management starts at ₹30,000 a month plus ad spend, which you pay directly to the platforms. Amazon advertising starts at ₹25,000 a month or 10–15% of ad spend, and quick commerce ads start at ₹25,000 a month.' },
+      { q: 'How much does a performance marketing agency in Bangalore charge?', a: 'Fees vary by agency and scope. Our management fee depends on the channels you run, the number of campaigns and products, how competitive your category is and how much creative and tracking work is needed. We quote it after a free audit. Ad spend is separate and paid directly to the platforms from your own account.' },
       { q: 'Do you have an office in Bangalore?', a: 'Yes. We have a Bengaluru office where you can meet the team by appointment for strategy workshops, monthly reviews and creative sessions. Campaigns are managed by a shared team with our Chennai head office on the same working hours, so you get local meetings and daily account management.' },
       { q: 'What should I ask a PPC company in Bangalore before hiring?', a: 'Ask how they set ROAS or CPA targets, how they check tracking, what they would test in the first month and who manages your account day to day. Ask for a sample report and confirm that the ad accounts stay in your name so you keep all data if you leave.' },
-      { q: 'Are you an Amazon marketing agency in Bangalore?', a: 'Yes. We run Amazon Sponsored Products, Sponsored Brands and Sponsored Display campaigns for Bangalore brands, with keyword research, bid management and listing improvements. Amazon advertising starts at ₹25,000 a month or 10–15% of ad spend, and we plan campaigns around stock and margins.' },
-      { q: 'Do you offer Amazon seller account management?', a: 'Yes. Amazon account management starts at ₹30,000 a month and covers listings, pricing, stock planning, account health, A+ content and coordination with your ads. Many Bangalore brands combine it with Amazon ads so one team looks after both sales and advertising.' },
+      { q: 'Are you an Amazon marketing agency in Bangalore?', a: 'Yes. We run Amazon Sponsored Products, Sponsored Brands and Sponsored Display campaigns for Bangalore brands, with keyword research, bid management and listing improvements. We plan campaigns around stock and margins, and quote the management fee after a free audit of your account.' },
+      { q: 'Do you offer Amazon seller account management?', a: 'Yes. Our Amazon account management covers listings, pricing, stock planning, account health, A+ content and coordination with your ads. Many Bangalore brands combine it with Amazon ads so one team looks after both sales and advertising.' },
       { q: 'Can you run ads for B2B lead generation?', a: 'Yes. For SaaS companies, service firms and manufacturers, we run Google Search, YouTube and LinkedIn campaigns with focused landing pages. We agree what a qualified lead is with your sales team and send lead stages back to the platforms so campaigns learn from leads that close.' },
       { q: 'How do you handle RTO and cash on delivery?', a: 'We look at RTO by pin code, campaign and product, then adjust targeting, offers and prepaid incentives. ROAS targets are set on delivered orders rather than placed orders, so campaigns that bring in high-RTO COD orders are cut or fixed before more budget goes in.' },
-      { q: 'Can you help launch on Blinkit, Zepto and Instamart in Bengaluru?', a: 'Yes. Bengaluru is often a launch city for quick commerce. We plan dark store coverage and availability with you, run in-app search and display ads, and track sales by city and platform. Quick commerce ads management starts at ₹25,000 a month.' },
+      { q: 'Can you help launch on Blinkit, Zepto and Instamart in Bengaluru?', a: 'Yes. Bengaluru is often a launch city for quick commerce. We plan dark store coverage and availability with you, run in-app search and display ads, and track sales by city and platform. The management fee is quoted after a free audit, separate from your ad spend.' },
     ],
   },
 ];
