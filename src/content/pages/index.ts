@@ -21,5 +21,6 @@ import { ukWebsitesPages } from './uk-websites';
 import { uaeWebsitesPages } from './uae-websites';
 import { auWebsitesPages } from './au-websites';
 import { chatgptAdsPages } from './chatgpt-ads';
+import { usChatgptAdsPages } from './us-chatgpt-ads';
 
-export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages, ...uaeWebsitesPages, ...auWebsitesPages, ...chatgptAdsPages];
+export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages, ...uaeWebsitesPages, ...auWebsitesPages, ...chatgptAdsPages, ...usChatgptAdsPages];

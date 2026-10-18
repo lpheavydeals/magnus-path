@@ -9,7 +9,7 @@ export const usChatgptAdsPages: ServicePageData[] = [
     kind: 'global',
     market: 'US',
     title: 'ChatGPT Ads Agency for US Brands and SaaS | Magnus Path',
-    description: 'ChatGPT ads agency for US e-commerce, DTC and B2B brands. We set up OpenAI Ads Manager and pixel tracking, then judge each test on cost per order. Quoted in USD.',
+    description: 'ChatGPT ads agency for US ecommerce, DTC and B2B brands. We set up OpenAI Ads Manager and pixel tracking, then judge tests on cost per order. Quoted in USD.',
     primaryKeyword: 'ChatGPT ads agency',
     navLabel: 'ChatGPT Ads',
     breadcrumb: usBreadcrumb,
@@ -33,11 +33,11 @@ export const usChatgptAdsPages: ServicePageData[] = [
       { title: 'Fit and policy review', body: 'We check your category, claims and landing pages against OpenAI’s current ad policies, and confirm your US billing entity is eligible before you spend.' },
       { title: 'Ads Manager build in your account', body: 'Campaigns, ad groups, brand details and billing set up in your own OpenAI Ads Manager, so you keep the account, data and history if we part ways.' },
       { title: 'Pixel, CAPI and GA4 wiring', body: 'OpenAI pixel via Google Tag Manager, server-side Conversions API events from Shopify or your CRM, and UTMs that separate paid ChatGPT traffic in GA4.' },
-      { title: 'Conversational ad creative', body: 'Headlines, descriptions and images written for the question a buyer was just asking, with several angles per topic so the test teaches you something.' },
+      { title: 'Conversational ad creative', body: 'Headlines, descriptions and images written for the question a buyer was just asking, with several angles per topic so each test teaches you something.' },
       { title: 'Landing page fixes', body: 'Comparison pages, product pages or demo pages that answer the likely follow-up question, show proof and pricing, and offer one clear next step.' },
       { title: 'Benchmark reporting in USD', body: 'A weekly change note and a monthly report setting ChatGPT cost per order or lead beside your Google Search, Shopping and Meta campaigns.' },
     ],
-    platforms: ['OpenAI Ads Manager', 'OpenAI pixel', 'Conversions API', 'GA4', 'Google Tag Manager', 'Shopify', 'HubSpot', 'Google Ads', 'Meta Ads'],
+    platforms: ['OpenAI Ads Manager', 'OpenAI pixel', 'Conversions API', 'GA4', 'Google Tag Manager', 'Shopify', 'Google Ads', 'Meta Ads'],
     process: [
       { title: 'Free audit and fit call', body: 'We review your products or offer, margins, tracking and current ad results, then share a test plan on a call in your Eastern morning.' },
       { title: 'USD quote and tracking first', body: 'You get a monthly fee in USD. Pixel, Conversions API and UTMs go live and are tested before any ad spends a dollar.' },
@@ -46,7 +46,7 @@ export const usChatgptAdsPages: ServicePageData[] = [
     ],
     figures: [
       { type: 'venn', caption: 'Where ChatGPT ads sit next to the search and social ads US brands already run.', after: 0, left: { title: 'Google Search ads', body: 'keyword bids, buyer types a query, strong for known demand' }, right: { title: 'ChatGPT ads', body: 'topic-matched, shown below an answer while buyers compare' }, overlap: 'Intent you can measure per order' },
-      { type: 'matrix', caption: 'A quick way to decide whether your US business should test ChatGPT advertising now.', after: 1, cols: ['Tracking not reliable', 'Tracking works today'], rows: ['Buyers research and compare', 'Quick, impulse purchase'], cells: [
+      { type: 'matrix', caption: 'A quick way to decide whether your US business should test ChatGPT advertising now.', after: 1, cols: ['Tracking not reliable', 'Tracking works today'], rows: ['Buyers research first', 'Quick, impulse purchase'], cells: [
         { title: 'Fix tracking first', body: 'Good fit, but a test without clean data teaches you nothing' },
         { title: 'Test now', body: 'Comparisons and questions lead buyers toward your product' },
         { title: 'Not yet', body: 'Put the effort into tracking and core Google and Meta ads' },
@@ -59,7 +59,7 @@ export const usChatgptAdsPages: ServicePageData[] = [
         paragraphs: [
           'As of October 2026, ChatGPT ads appear below a relevant answer, clearly labelled. Each ad shows the advertiser’s name and icon, a headline, a short description, an image and a link. OpenAI says ads do not change ChatGPT’s answer, so you are buying a spot next to the conversation, not a mention inside it.',
           'Google Search ads let you bid on the exact keywords people type. Meta lets you target audiences and interests. ChatGPT advertising works differently from both: targeting is contextual, based on the topic of the conversation, with no keyword bidding and no demographic targeting. You describe what you sell and who it helps, and the system matches ads to relevant chats.',
-          'For most US brands that makes ChatGPT ads a complement, not a replacement. Google still captures people who already know what they want. Meta still creates demand. ChatGPT ads reach people in the middle, while they are weighing options and asking follow-up questions.',
+          'For most US brands that makes ChatGPT ads a complement, not a replacement. Google still captures people who already know what they want. Meta still creates demand. ChatGPT ads reach people in the middle, while they are weighing options and asking follow-up questions. Some teams call this ChatGPT PPC, and the click-based billing makes the label fair, but the planning feels closer to contextual display than to keyword search.',
         ],
       },
       {
@@ -91,7 +91,7 @@ export const usChatgptAdsPages: ServicePageData[] = [
       {
         heading: 'Tracking ChatGPT ads: pixel, Conversions API, UTMs and GA4',
         paragraphs: [
-          'Set up measurement before the first impression. Install the OpenAI pixel, ideally through Google Tag Manager, and send orders or leads server-side through the Conversions API so fewer events are lost to browsers and ad blockers. Shopify stores and CRMs such as HubSpot can feed those server-side events.',
+          'Set up measurement before the first impression; any ChatGPT ads agency that launches without tracking is guessing. Install the OpenAI pixel, ideally through Google Tag Manager, and send orders or leads server-side through the Conversions API so fewer events are lost to browsers and ad blockers. Shopify stores and CRMs such as HubSpot can feed those server-side events.',
           'Tag every ad link with UTMs so GA4 shows paid ChatGPT traffic separately from organic ChatGPT referrals. Reporting in Ads Manager is aggregated: spend, impressions, clicks and conversions. Advertisers never see individual conversations, which is also worth telling a privacy-minded legal team.',
         ],
       },
@@ -104,7 +104,7 @@ export const usChatgptAdsPages: ServicePageData[] = [
       {
         heading: 'White-label ChatGPT ads for US agencies',
         paragraphs: [
-          'Many US agencies want to offer ChatGPT ads before they have the people to run them. We can work as your unbranded delivery team: setup, tracking, creative and weekly optimization inside each client’s Ads Manager, with reports in your template. You keep the client relationship and the strategy calls; we sign an NDA and stay out of sight.',
+          'Many US agencies want to offer ChatGPT ads before they have the people to run them, and hiring a specialist for an unproven channel is hard to justify. We can work as your unbranded delivery team: setup, tracking, creative and weekly optimization inside each client’s Ads Manager, with reports in your template. You keep the client relationship and the strategy calls; we sign an NDA and stay out of sight. Think of us as the ChatGPT ads agency behind your agency, with the same tracking and benchmark discipline we use for our own clients.',
         ],
       },
     ],
