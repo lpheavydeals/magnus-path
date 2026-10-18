@@ -19,7 +19,6 @@ export const chennaiSocialPages: ServicePageData[] = [
       pains: 'Why social media spend often goes nowhere',
       includes: 'What our social media marketing in Chennai covers',
       process: 'How we start your social media in *4 steps*',
-      pricing: 'Social media marketing pricing in Chennai',
       guide: 'Social media marketing in Chennai: a buyer’s guide for brands',
     },
     pains: [
@@ -42,12 +41,6 @@ export const chennaiSocialPages: ServicePageData[] = [
       { title: 'Review on sales', body: 'A monthly review, in person at our Chennai office or online, on orders, leads and cost per result. Budget moves to what sells.' },
     ],
     platforms: ['Meta Business Suite', 'Instagram', 'Facebook', 'YouTube', 'LinkedIn', 'WhatsApp Business', 'Canva', 'GA4'],
-    pricing: {
-      from: '₹30,000',
-      unit: '/ month + ad spend',
-      note: 'Social media marketing with Meta ads starts at ₹30,000 a month plus ad spend, which you pay directly to Meta. Content-only or ads-only scopes are quoted after a free audit, based on the number of posts, shoots and platforms.',
-      items: ['Monthly content calendar', 'Reels and carousels in Tamil and English', 'Meta ads with pixel and Conversions API checks', 'WhatsApp click-to-chat lead set-up', 'Monthly review on orders and leads'],
-    },
     local: {
       city: 'Chennai',
       areas: ['T. Nagar', 'Mylapore', 'Anna Nagar', 'Besant Nagar', 'Velachery', 'OMR', 'ECR', 'Kilpauk', 'Pallavaram', 'Perungudi'],

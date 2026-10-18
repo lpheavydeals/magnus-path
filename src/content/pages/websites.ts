@@ -19,7 +19,6 @@ export const websitePages: ServicePageData[] = [
       pains: 'Most Shopify stores look fine and still don’t sell',
       includes: 'Everything your Shopify store needs, built by one team',
       process: 'From brief to launch in *4 steps*',
-      pricing: 'Shopify development pricing',
       guide: 'Shopify development in India: what to know before you build',
     },
     pains: [
@@ -42,12 +41,6 @@ export const websitePages: ServicePageData[] = [
       { title: 'Build and integrate', body: 'We develop the theme, set up payments, shipping, taxes and apps, migrate products and test checkout on real devices and networks.' },
       { title: 'Launch and grow', body: 'We launch, submit the sitemap to Google, set up analytics and hand over. If you want, our ads and SEO team takes over from there.' },
     ],
-    pricing: {
-      from: '₹60,000',
-      unit: 'one-time',
-      note: 'Template-based stores start at ₹60,000. Custom, conversion-focused Shopify builds usually cost ₹1.5–5 lakh depending on pages, integrations and catalogue size. You get a fixed quote after a free consultation.',
-      items: ['Mobile-first design for key pages', 'Payments, COD, GST and shipping setup', 'Product upload (up to 50 SKUs)', 'Technical SEO and speed optimisation', '30 days of post-launch support'],
-    },
     figures: [
       { type: 'mindmap', caption: 'The parts of a Shopify store that a development team builds and connects.', center: 'Shopify store build', after: 1, branches: [
         { label: 'Design', items: ['Theme around your brand', 'Mobile-first product pages'] },
@@ -176,7 +169,6 @@ export const websitePages: ServicePageData[] = [
       includes: 'What we build into every e-commerce website',
       children: 'Choose your e-commerce *platform* or city',
       process: 'How an e-commerce build runs, in *4 steps*',
-      pricing: 'Custom e-commerce development pricing',
       guide: 'E-commerce website development: a buyer’s guide for Indian brands',
     },
     pains: [
@@ -207,12 +199,6 @@ export const websitePages: ServicePageData[] = [
       { title: 'Development and integrations', body: 'We build the storefront, connect payments, couriers, marketplaces and tools, move your data across and test orders end to end.' },
       { title: 'Launch, measure and improve', body: 'Go-live with tracking in place, a post-launch checklist and a month of support. Our ads and SEO teams can take the store forward from there.' },
     ],
-    pricing: {
-      from: '₹2,00,000',
-      unit: 'one-time',
-      note: 'Custom e-commerce development, including headless storefronts, B2B portals and marketplace or ERP integrations, starts at ₹2,00,000. Template-based Shopify stores start at ₹60,000 and WooCommerce stores at ₹50,000. Every project gets a fixed quote after scoping.',
-      items: ['Platform and architecture plan', 'Custom design for key templates', 'Payments, GST, COD and courier setup', 'Marketplace, ERP or API integrations', 'Tracking, technical SEO and 30 days of support'],
-    },
     figures: [
       { type: 'matrix', caption: 'Shopify, WooCommerce or custom: which build fits which business.', after: 1, cols: ['Standard D2C catalogue', 'Complex rules or B2B'], rows: ['Want low upkeep', 'Want full control'], cells: [
         { title: 'Shopify', body: 'Hosting, security and updates handled for you' },
@@ -328,7 +314,6 @@ export const websitePages: ServicePageData[] = [
       pains: 'Where WooCommerce stores usually go wrong',
       includes: 'What our WooCommerce development covers',
       process: 'Your WooCommerce store in *4 steps*',
-      pricing: 'WooCommerce development pricing',
       guide: 'WooCommerce development: a practical guide for Indian brands',
     },
     pains: [
@@ -351,12 +336,6 @@ export const websitePages: ServicePageData[] = [
       { title: 'Build, migrate and test', body: 'We develop the theme, configure payments, tax and shipping, import products and customers, and run test orders across devices.' },
       { title: 'Go live and maintain', body: 'We move the store to live hosting, set up backups and monitoring, train your team and stay on call for 30 days, with optional maintenance after.' },
     ],
-    pricing: {
-      from: '₹50,000',
-      unit: 'one-time',
-      note: 'WooCommerce stores start at ₹50,000 for a customised theme with payments, shipping and GST setup. Custom designs, B2B features, large migrations and ERP integrations are quoted separately after a free consultation. Hosting and premium plugins are billed by their providers.',
-      items: ['Customised mobile-first WooCommerce theme', 'Payment gateway, COD and GST invoicing', 'Courier integration and order emails', 'Product upload (up to 50 SKUs)', 'Speed, security and backup setup'],
-    },
     figures: [
       { type: 'mindmap', caption: 'What keeps a WooCommerce store fast, secure and easy to run.', center: 'A healthy Woo store', after: 2, branches: [
         { label: 'Build', items: ['Lightweight theme', 'Custom code over extra plugins', 'Correct tax and shipping rules'] },
@@ -473,7 +452,6 @@ export const websitePages: ServicePageData[] = [
       pains: 'What Chennai businesses tell us about their websites',
       includes: 'E-commerce web development in Chennai, done end to end',
       process: 'Working with our Chennai team in *4 steps*',
-      pricing: 'E-commerce website development pricing in Chennai',
       guide: 'E-commerce website development in Chennai: a local buyer’s guide',
     },
     pains: [
@@ -501,12 +479,6 @@ export const websitePages: ServicePageData[] = [
       { title: 'Build and connect', body: 'We develop the store, connect payments, couriers and marketplaces, upload products and run test orders from different pin codes.' },
       { title: 'Launch and train', body: 'We go live, train your team at your premises and stay available for 30 days. Ads and SEO support can follow from the same team.' },
     ],
-    pricing: {
-      from: '₹60,000',
-      unit: 'one-time',
-      note: 'Template-based Shopify stores start at ₹60,000, and custom Shopify builds usually cost ₹1.5–5 lakh. WooCommerce stores start at ₹50,000, and custom e-commerce development starts at ₹2,00,000. You get a fixed quote after a free meeting in Chennai.',
-      items: ['In-person discovery and design reviews', 'Mobile-first store design', 'Payments, COD, GST and courier setup', 'Product upload (up to 50 SKUs)', 'Staff training and 30 days of support'],
-    },
     figures: [
       { type: 'venn', caption: 'Why Tamil Nadu sellers keep marketplaces and add a store of their own.', after: 0, left: { title: 'Flipkart and Amazon', body: 'bring buyers, but the platform keeps the customer' }, right: { title: 'Your own store', body: 'repeat customers, your pricing, your data' }, overlap: 'More sales, less dependence' },
       { type: 'mindmap', caption: 'What a store needs for silk, knitwear and food products from Tamil Nadu.', center: 'What each product needs', after: 3, branches: [
@@ -614,7 +586,6 @@ export const websitePages: ServicePageData[] = [
       pains: 'Why Bangalore founders look beyond the usual agencies',
       includes: 'What we build for Bangalore e-commerce brands',
       process: 'How a Bangalore project runs, in *4 steps*',
-      pricing: 'E-commerce development pricing for Bangalore brands',
       guide: 'Choosing an ecommerce development company in Bangalore',
     },
     pains: [
@@ -642,12 +613,6 @@ export const websitePages: ServicePageData[] = [
       { title: 'Build in sprints', body: 'Weekly sprints on a shared staging site, with progress updates in Slack or WhatsApp and a demo at the end of each sprint.' },
       { title: 'Launch and iterate', body: 'We launch with tracking verified, support you for 30 days and can continue on a monthly retainer for new features and landing pages.' },
     ],
-    pricing: {
-      from: '₹60,000',
-      unit: 'one-time',
-      note: 'Template-based Shopify stores start at ₹60,000, and custom Shopify builds usually cost ₹1.5–5 lakh. Headless and custom e-commerce development starts at ₹2,00,000, and WooCommerce stores start at ₹50,000. Workshops at our Bengaluru office are included in the scope.',
-      items: ['Discovery call and written scope', 'Mobile-first design with prototypes', 'Payments, COD, GST and courier setup', 'Tracking for Meta and Google Ads', '30 days of post-launch support'],
-    },
     figures: [
       { type: 'matrix', caption: 'Shopify, headless or custom, depending on your model and your storefront.', after: 3, cols: ['Consumer brand (D2C)', 'Marketplace or B2B'], rows: ['Standard storefront works', 'Storefront is your edge'], cells: [
         { title: 'Shopify', body: 'Most Bangalore D2C brands: launch fast, no servers' },

@@ -88,7 +88,6 @@ export const nav: NavItem[] = [
       { label: 'Free Tools', href: '/tools/', note: 'ROAS & profit calculators' },
     ],
   },
-  { label: 'Pricing', href: '/pricing/' },
 ];
 
 export type Office = (typeof site.offices)[number];

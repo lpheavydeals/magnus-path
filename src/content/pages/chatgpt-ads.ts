@@ -18,7 +18,6 @@ export const chatgptAdsPages: ServicePageData[] = [
       pains: 'A new ad channel, and *very little* real know-how',
       includes: 'What our ChatGPT advertising service includes',
       process: 'How we launch ads in ChatGPT in *4 steps*',
-      pricing: 'ChatGPT ads management pricing',
       guide: 'How to advertise on ChatGPT: a practical guide for Indian brands',
     },
     pains: [
@@ -41,12 +40,6 @@ export const chatgptAdsPages: ServicePageData[] = [
       { title: 'Launch a controlled test', body: 'A small, fixed budget across a few conversation topics, ad angles and landing pages, set with clear success and stop rules.' },
       { title: 'Compare, then scale or stop', body: 'We judge results on cost per order or lead against Meta and Google, then move budget towards whichever channel is working.' },
     ],
-    pricing: {
-      from: '₹25,000',
-      unit: '/ month + ad spend',
-      note: 'ChatGPT ads management starts at ₹25,000 a month. Ad spend is separate and paid directly to OpenAI from your own account and card. We never mark it up or hold it.',
-      items: ['Eligibility and ad policy check', 'OpenAI Ads Manager account setup', 'Pixel, Conversions API and GA4 tracking', 'Ad copy and creative for conversational intent', 'Weekly optimisation of bids, budgets and ads', 'Monthly report against Meta and Google results'],
-    },
     figures: [
       { type: 'mindmap', caption: 'How a ChatGPT ads campaign fits together.', center: 'ChatGPT ads', after: 0, branches: [
         { label: 'Set up', items: ['OpenAI Ads Manager', 'Billing country check', 'Policy review'] },

@@ -13,7 +13,6 @@
 
 ## Company
 - [About](https://www.magnuspath.com/about/)
-- [Pricing](https://www.magnuspath.com/pricing/)
 - [Case Studies](https://www.magnuspath.com/case-studies/)
 - [Free E-commerce Store Audit](https://www.magnuspath.com/free-ecommerce-audit/)
 

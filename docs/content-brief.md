@@ -32,7 +32,7 @@ spelling (optimise, catalogue), ₹ amounts in lakh/crore. No hype words ("cutti
   /seo-packages/, /industries/, /industries/fashion-apparel/, /industries/beauty-ayurveda/, /industries/food-fmcg/,
   /b2b-digital-marketing/, /white-label-seo/, /seo-outsourcing-india/, /chennai/digital-marketing-agency/,
   /chennai/seo-company/, /chennai/ecommerce-website-development/, /bangalore/ecommerce-website-development/,
-  /coimbatore/seo-services/, /pricing/, /case-studies/, /free-ecommerce-audit/, /about/, /contact/, /blog/,
+  /coimbatore/seo-services/, /case-studies/, /free-ecommerce-audit/, /about/, /contact/, /blog/,
   /blog/ecommerce-website-cost-in-india/, /blog/best-ecommerce-platform-in-india/, /blog/how-to-find-buyers-for-export/,
   /blog/how-to-sell-on-etsy-from-india/, /blog/how-to-sell-on-amazon-usa-from-india/, /blog/how-to-reduce-rto-cod-returns/,
   /blog/amazon-ppc-guide-india/, /blog/flipkart-ads-guide/, /blog/how-to-sell-on-blinkit-zepto-instamart/,
@@ -43,32 +43,9 @@ spelling (optimise, catalogue), ₹ amounts in lakh/crore. No hype words ("cutti
 - Location pages: we have **one office, in Chennai**. Bangalore and Coimbatore pages must say we serve those cities
   from Chennai (remote work + visits when needed). Never imply an office there.
 
-## Draft price list (starting prices)
-| Service | Starting price |
-|---|---|
-| Shopify store (template-based) | ₹60,000 one-time (custom builds ₹1.5–5 lakh) |
-| WooCommerce store | ₹50,000 one-time |
-| Custom e-commerce development | ₹2,00,000 one-time |
-| Business / corporate website (5–10 pages) | ₹35,000 one-time (custom corporate sites ₹75,000–2 lakh) |
-| WordPress website | ₹30,000 one-time |
-| Website maintenance | ₹5,000 / month (Basic), ₹12,000 / month (Business), ₹25,000 / month (Store) |
-| Performance marketing (Meta & Google ads) | ₹30,000 / month + ad spend |
-| Amazon advertising (PPC) | ₹25,000 / month or 10–15% of ad spend |
-| Amazon account management | ₹30,000 / month |
-| Flipkart account management | ₹25,000 / month |
-| Quick commerce ads (Blinkit, Zepto, Instamart) | ₹25,000 / month |
-| ChatGPT ads management | ₹25,000 / month + ad spend |
-| E-commerce SEO | ₹35,000 / month |
-| Shopify SEO | ₹30,000 / month |
-| Amazon SEO / listing optimisation | ₹20,000 / month |
-| AI search optimisation (GEO) | ₹25,000 / month |
-| SEO services (any business) / local SEO | ₹25,000 / month |
-| B2B digital marketing for manufacturers & exporters | ₹50,000 / month |
-| White-label SEO for agencies | US$350 / month per client site |
-| SEO outsourcing to India | US$500 / month |
-| White-label SEO (UK pages) | £275 / month per client site |
-| SEO outsourcing (UK pages) | £400 / month |
-| Website maintenance (US pages) | US$99 Basic, US$199 Business, US$349 Store per site / month |
+## Prices
+**No prices anywhere on the site** (client decision, 18 Oct 2026). See `docs/no-prices-rules.md`. Every service is
+quoted after a free audit or scoping call. Older sections below that mention prices are superseded.
 
 ## Allowed facts (with sources, may be cited)
 - India's digital ad spend is forecast to grow about 20% in 2026, with commerce/retail-media ads the fastest-growing segment (Pitch Madison / WPP Media 2026 reports).

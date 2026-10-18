@@ -19,7 +19,6 @@ export const businessWebsitePages: ServicePageData[] = [
       pains: 'Why most company websites fail to win business',
       includes: 'What our corporate website development includes',
       process: 'Your company website in *4 steps*',
-      pricing: 'Business website development pricing',
       guide: 'Corporate website development: a buyer’s guide for Indian businesses',
     },
     pains: [
@@ -42,12 +41,6 @@ export const businessWebsitePages: ServicePageData[] = [
       { title: 'Build and test', body: 'We develop the site, connect forms, tracking and CRM, migrate old content, set up redirects and test on real phones, browsers and slow connections.' },
       { title: 'Launch and handover', body: 'We go live, submit the sitemap to Google, train your team on editing and hand over every login, domain and hosting account in your company’s name.' },
     ],
-    pricing: {
-      from: '₹35,000',
-      unit: 'one-time',
-      note: 'A 5–10 page business website starts at ₹35,000. Custom corporate sites with product catalogues, multilingual content, careers or investor sections usually cost ₹75,000–2 lakh. You get a fixed quote after a free consultation.',
-      items: ['5–10 page responsive business website', 'Mobile-first custom design', 'Enquiry, RFQ and WhatsApp lead capture', 'On-page SEO, speed and analytics setup', '30 days of post-launch support'],
-    },
     figures: [
       { type: 'mindmap', caption: 'The questions a buyer wants answered before they call you.', center: 'What buyers check first', after: 0, branches: [
         { label: 'What you offer', items: ['Products or services', 'Specifications and uses'] },
@@ -153,7 +146,6 @@ export const businessWebsitePages: ServicePageData[] = [
       pains: 'Why so many WordPress sites end up slow and fragile',
       includes: 'What our WordPress website design services cover',
       process: 'Your WordPress website in *4 steps*',
-      pricing: 'WordPress website development pricing',
       guide: 'WordPress website development: an honest guide before you build',
     },
     pains: [
@@ -176,12 +168,6 @@ export const businessWebsitePages: ServicePageData[] = [
       { title: 'Develop', body: 'We build the block theme and custom blocks, install only essential plugins, migrate content, set up redirects and test speed and security.' },
       { title: 'Launch and train', body: 'Go-live on tuned hosting with backups and monitoring, sitemap submitted to Google and a training session so your team can publish confidently.' },
     ],
-    pricing: {
-      from: '₹30,000',
-      unit: 'one-time',
-      note: 'WordPress websites start at ₹30,000 for a business site on a customised block theme. Larger sites with custom blocks, multilingual content or migrations are quoted after a free consultation. Online stores are built on WooCommerce and priced separately.',
-      items: ['Custom-designed WordPress theme', 'Editable Gutenberg blocks and patterns', 'Rank Math or Yoast SEO setup', 'Caching, security and backup setup', '30 days of post-launch support'],
-    },
     figures: [
       { type: 'matrix', caption: 'When a page builder is fine and when a custom block theme is the better build.', after: 1, cols: ['Small site, prototype', 'Growing business site'], rows: ['Editors change layouts', 'Editors change text only'], cells: [
         { title: 'Page builder', body: 'Quick visual layouts; accept the extra weight' },

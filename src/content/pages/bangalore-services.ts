@@ -19,7 +19,6 @@ export const bangaloreServicesPages: ServicePageData[] = [
       pains: 'Why many Bangalore business websites underperform',
       includes: 'Web design and development services for Bangalore businesses',
       process: 'How a website project with us runs, in *4 steps*',
-      pricing: 'Website design and development pricing in Bangalore',
       guide: 'Choosing a website designing company in Bangalore: a buyer’s guide',
     },
     pains: [
@@ -47,12 +46,6 @@ export const bangaloreServicesPages: ServicePageData[] = [
       { title: 'Build and connect', body: 'We build on a shared staging site, connect forms, WhatsApp, maps and analytics, and test speed and layout on real phones over mobile data.' },
       { title: 'Launch and support', body: 'We go live, train your team to edit pages and hand over every login. Monthly maintenance is available if you want us to keep the site running.' },
     ],
-    pricing: {
-      from: '₹35,000',
-      unit: 'one-time',
-      note: 'Business websites of 5–10 pages start at ₹35,000. Custom corporate websites usually cost ₹75,000–2 lakh depending on pages, features and integrations. WordPress websites start at ₹30,000, and maintenance plans start at ₹5,000 a month. Workshops at our Bengaluru office are included in the scope.',
-      items: ['5–10 page mobile-first business website', 'Page copy planned and written with you', 'Lead forms, WhatsApp and tap-to-call', 'Google Business Profile and SEO-ready structure', 'Staff training and 30 days of support'],
-    },
     figures: [
       { type: 'mindmap', caption: 'The four jobs every Bangalore business website has to do well.', center: 'Business website', after: 0, branches: [
         { label: 'Explain', items: ['Clear service pages', 'Who it is for', 'Pricing or next step'] },
@@ -166,7 +159,6 @@ export const bangaloreServicesPages: ServicePageData[] = [
       pains: 'Why ad budgets stall for many Bangalore brands',
       includes: 'Performance marketing services for Bangalore brands',
       process: 'How we run your ad accounts, in *4 steps*',
-      pricing: 'Performance marketing pricing in Bangalore',
       guide: 'Hiring a performance marketing agency in Bangalore: a practical guide',
     },
     pains: [
@@ -194,12 +186,6 @@ export const bangaloreServicesPages: ServicePageData[] = [
       { title: 'Launch and test', body: 'Campaigns go live with a weekly creative and audience testing plan. Budgets move towards what makes contribution margin, not just clicks.' },
       { title: 'Review and scale', body: 'Weekly updates and a monthly review cover spend, margin, CPA and next tests. We scale budgets only when results hold at the target.' },
     ],
-    pricing: {
-      from: '₹30,000',
-      unit: '/ month + ad spend',
-      note: 'Meta and Google ads management starts at ₹30,000 a month plus ad spend, which you pay directly to the platforms. Amazon advertising starts at ₹25,000 a month or 10–15% of ad spend, and quick commerce ads start at ₹25,000 a month. Strategy meetings at our Bengaluru office are included.',
-      items: ['Account and tracking audit', 'ROAS and CPA targets set from your margins', 'Weekly creative and audience tests', 'Conversions API and GA4 setup', 'Weekly updates and a monthly review'],
-    },
     figures: [
       { type: 'venn', caption: 'Good campaigns come from combining your business numbers with disciplined ad management.', after: 0, left: { title: 'Your business', body: 'Margins, stock, RTO rates, lead quality and sales feedback' }, right: { title: 'Our ad management', body: 'Tracking, campaign structure, creative tests and budget moves' }, overlap: 'Ad spend that grows profit' },
       { type: 'steps', caption: 'How we get tracking right before any budget is scaled.', after: 3, steps: [

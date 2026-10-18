@@ -18,7 +18,7 @@ export interface ServicePageData {
   description: string;                // meta description, 140–160 chars
   primaryKeyword: string;
   navLabel: string;                   // short page name for breadcrumbs, e.g. 'Shopify Development'
-  headings: { pains: string; includes: string; process: string; guide: string; children?: string; pricing?: string };
+  headings: { pains: string; includes: string; process: string; guide: string; children?: string };
   breadcrumb: Link[];                 // parents only (Home and the current page are added automatically)
   eyebrow: string;
   h1: string;                         // contains the primary keyword; wrap 1–3 words in *asterisks* for orange
@@ -30,7 +30,6 @@ export interface ServicePageData {
   children?: { title: string; href: string; body: string; icon: IconName }[]; // hub pages: sub-services
   process: { title: string; body: string }[];      // 4 steps
   platforms?: string[];               // tools/platforms chips
-  pricing?: { from: string; unit: string; note: string; items: string[] };
   local?: { city: string; areas: string[]; note: string };   // location pages
   guide: { heading: string; paragraphs: string[]; bullets?: string[] }[]; // long-form SEO content, 700+ words total
   related: Link[];                    // 3–5 internal links with keyword-rich labels

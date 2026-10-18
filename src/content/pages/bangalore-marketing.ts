@@ -19,7 +19,6 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       pains: 'What Bengaluru teams tell us about *SEO so far*',
       includes: 'What our SEO services in Bangalore include',
       process: 'Working with an SEO agency in Bangalore, step by step',
-      pricing: 'SEO in Bangalore: pricing',
       guide: 'SEO in Bangalore: a practical guide for founders and marketers',
     },
     pains: [
@@ -42,12 +41,6 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       { title: 'Execute', body: 'Our team ships fixes, writes and optimises pages, improves your Google Business Profile and earns relevant links and mentions.' },
       { title: 'Review and adjust', body: 'Monthly reports and regular reviews. We move effort towards the pages and areas that bring enquiries and sales.' },
     ],
-    pricing: {
-      from: '₹25,000',
-      unit: '/ month',
-      note: 'SEO services for Bangalore businesses start at ₹25,000 a month for one location or a small website. E-commerce SEO starts at ₹35,000 a month. Larger sites and multi-location businesses are quoted after a free audit.',
-      items: ['Technical SEO audit and fixes', 'Content and page optimisation', 'Google Business Profile and local SEO', 'AI search optimisation basics', 'Monthly report and review meeting'],
-    },
     local: {
       city: 'Bangalore',
       areas: ['Koramangala', 'Indiranagar', 'HSR Layout', 'Whitefield', 'Electronic City', 'Jayanagar', 'MG Road', 'Hebbal', 'Marathahalli', 'Yelahanka'],
@@ -168,7 +161,6 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       pains: 'Why Bengaluru teams switch *digital marketing agencies*',
       includes: 'Digital marketing services in Bangalore, run by one team',
       process: 'Working with a digital marketing agency in Bangalore',
-      pricing: 'Digital marketing pricing in Bangalore',
       guide: 'Digital marketing in Bangalore: a practical guide for D2C, startups and B2B',
     },
     pains: [
@@ -191,12 +183,6 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       { title: 'Build and launch', body: 'We fix tracking and landing pages, produce creative and launch campaigns across the agreed channels.' },
       { title: 'Optimise and review', body: 'Weekly optimisation and a monthly review. Budget moves to what brings profitable orders and sales-ready leads.' },
     ],
-    pricing: {
-      from: '₹30,000',
-      unit: 'per month + ad spend',
-      note: 'Performance marketing with Meta and Google ads starts at ₹30,000 a month plus ad spend. SEO services start at ₹25,000 a month and e-commerce SEO at ₹35,000 a month. Websites are quoted as one-time projects.',
-      items: ['Meta, Google and LinkedIn campaign management', 'Creative testing and ad copy', 'Conversion and lead tracking setup', 'Monthly review in Bengaluru or online', 'Reports on orders, leads and cost per result'],
-    },
     local: {
       city: 'Bangalore',
       areas: ['Koramangala', 'Indiranagar', 'HSR Layout', 'Whitefield', 'Bellandur', 'Sarjapur Road', 'JP Nagar', 'Malleshwaram', 'Electronic City', 'Rajajinagar'],

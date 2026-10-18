@@ -167,7 +167,6 @@ export const usAgencyPages: ServicePageData[] = [
       pains: 'Why US agencies look for a white label SEO agency',
       includes: 'What our white label SEO for agencies includes',
       process: 'How fulfillment starts in *4 steps*',
-      pricing: 'White label SEO pricing in USD',
       guide: 'White label SEO for US agencies: how fulfillment works and how to vet a provider',
     },
     pains: [
@@ -190,12 +189,6 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'Deliver and scale', body: 'Monthly delivery and reports for each site. Add client sites as you sell them, on the same workflow.' },
     ],
     platforms: ['Google Search Console', 'GA4', 'Ahrefs', 'Semrush', 'Screaming Frog', 'Looker Studio', 'AgencyAnalytics', 'Google Business Profile', 'Slack'],
-    pricing: {
-      from: 'US$350',
-      unit: '/ month per client site',
-      note: 'White label SEO starts at US$350 a month per client site. Larger sites, competitive markets and extra content or links are quoted per site in USD. You set your own resale price.',
-      items: ['Technical audit and prioritized fix list', 'Monthly on-page optimization', 'Content and ethical link building by scope', 'Local SEO for US clients where relevant', 'Unbranded monthly report under your logo', 'Mutual NDA and no client contact'],
-    },
     figures: [
       { type: 'matrix', caption: 'Who does what when you resell SEO under your own brand.', after: 0, cols: ['Your agency', 'Our team'], rows: ['In front of the client', 'Behind the scenes'], cells: [
         { title: 'You own it', body: 'Sales, pricing, client calls and reports with your logo' },
@@ -314,7 +307,6 @@ export const usAgencyPages: ServicePageData[] = [
       pains: 'Why outsourcing SEO has a bad reputation',
       includes: 'What our SEO outsourcing company handles',
       process: 'How to outsource SEO to us in *4 steps*',
-      pricing: 'SEO outsourcing pricing in USD',
       guide: 'Choosing an offshore SEO company: a guide for US businesses and agencies',
     },
     pains: [
@@ -337,12 +329,6 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'Report and adjust', body: 'A monthly report listing every task, page and link, with traffic and conversions, then a call to set next month’s priorities.' },
     ],
     platforms: ['Google Search Console', 'GA4', 'Ahrefs', 'Semrush', 'Screaming Frog', 'Looker Studio', 'WordPress', 'Shopify'],
-    pricing: {
-      from: 'US$500',
-      unit: '/ month',
-      note: 'SEO outsourcing starts at US$500 a month for one website, with a defined scope of technical, on-page, content and link work. Larger sites and competitive markets are quoted in USD after an audit. Agencies reselling SEO should see our white label pricing.',
-      items: ['Technical audit and monthly fixes', 'Keyword map and 90-day plan', 'On-page optimization and content', 'Outreach-based link building', 'Task-level monthly report and call'],
-    },
     figures: [
       { type: 'venn', caption: 'Partial outsourcing: keep the decisions in-house and hand over the hours.', after: 0, left: { title: 'Your in-house marketer', body: 'strategy, approvals and brand voice' }, right: { title: 'Our Chennai SEO team', body: 'technical fixes, content production and outreach' }, overlap: 'One monthly scope, in writing' },
       { type: 'matrix', caption: 'Red flags and good signs to look for in any SEO provider.', after: 5, cols: ['Red flag', 'Good sign'], rows: ['What they promise', 'What they report'], cells: [

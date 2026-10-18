@@ -19,7 +19,6 @@ export const adsPages: ServicePageData[] = [
       includes: 'What our Meta and Google ads management covers',
       process: 'How we take over your ad accounts in *4 steps*',
       children: 'Marketplace and quick-commerce ads, run by the same team',
-      pricing: 'Performance marketing pricing',
       guide: 'Performance marketing for e-commerce in India: a buyer’s guide',
     },
     pains: [
@@ -49,12 +48,6 @@ export const adsPages: ServicePageData[] = [
       { title: 'Scale what works', body: 'Budget moves to the audiences, products and ads that bring profitable orders. You get weekly updates and a monthly review call.' },
     ],
     platforms: ['Meta Ads Manager', 'Google Ads', 'Google Merchant Center', 'GA4', 'Shopify', 'Amazon Ads', 'Flipkart Ads', 'Looker Studio'],
-    pricing: {
-      from: '₹30,000',
-      unit: '/ month + ad spend',
-      note: 'Meta and Google ads management starts at ₹30,000 a month. Ad spend is paid directly to Meta and Google from your own accounts, so you always own the data. Marketplace and quick-commerce ads are priced separately.',
-      items: ['Meta (Facebook and Instagram) campaigns', 'Google Shopping, Search and Performance Max', 'Pixel, Conversions API and GA4 setup checks', 'Creative briefs and ad testing plan', 'Weekly reports and a monthly review call'],
-    },
     figures: [
       { type: 'venn', caption: 'Meta creates demand and Google captures it, so most stores need both.', after: 1, left: { title: 'Meta ads', body: 'create demand with video and offers for people not yet looking' }, right: { title: 'Google ads', body: 'capture demand with Shopping and search for people looking' }, overlap: 'Most stores need both' },
       { type: 'steps', caption: 'How to read ad results when every platform claims credit for the same orders.', after: 3, steps: [
@@ -163,7 +156,6 @@ export const adsPages: ServicePageData[] = [
       pains: 'Why Amazon ads stop paying for themselves',
       includes: 'What our Amazon PPC management includes',
       process: 'How we run your Amazon ads in *4 steps*',
-      pricing: 'Amazon advertising pricing',
       guide: 'Amazon advertising in India: how it works and what to measure',
     },
     pains: [
@@ -186,12 +178,6 @@ export const adsPages: ServicePageData[] = [
       { title: 'Optimise every week', body: 'Bid changes, search-term harvesting, negative keywords and placement adjustments, based on fresh data rather than guesswork.' },
       { title: 'Grow total sales', body: 'As organic rank improves we shift budget to new products, Sponsored Brands and new marketplaces, while watching TACoS fall.' },
     ],
-    pricing: {
-      from: '₹25,000',
-      unit: '/ month or 10–15% of ad spend',
-      note: 'Amazon advertising management starts at ₹25,000 a month or 10–15% of monthly ad spend, depending on account size. Ad spend is billed by Amazon to your account. Listing and account management are available separately.',
-      items: ['Sponsored Products, Brands and Display', 'Weekly search-term harvesting and negatives', 'Bid and budget management', 'Break-even ACoS for key products', 'Weekly ACoS and TACoS reports'],
-    },
     figures: [
       { type: 'matrix', caption: 'Reading ACoS and TACoS together shows whether Amazon ads are working.', after: 1, cols: ['ACoS above break-even', 'ACoS below break-even'], rows: ['TACoS falling', 'TACoS rising'], cells: [
         { title: 'Buying rank', body: 'Ad orders lose money, but organic sales are growing' },
@@ -306,7 +292,6 @@ export const adsPages: ServicePageData[] = [
       pains: 'Selling on Amazon takes more time than most teams expect',
       includes: 'What our Amazon seller account management covers',
       process: 'How we take over your Seller Central in *4 steps*',
-      pricing: 'Amazon account management pricing',
       guide: 'Amazon account management in India: what good looks like',
     },
     pains: [
@@ -329,12 +314,6 @@ export const adsPages: ServicePageData[] = [
       { title: 'Run the account', body: 'Daily health checks, weekly inventory and pricing reviews, and ongoing listing improvements, tracked on a shared task board.' },
       { title: 'Grow and expand', body: 'With the basics stable, we add new products, plan sale events, coordinate ads and prepare for Global Selling if you want to export.' },
     ],
-    pricing: {
-      from: '₹30,000',
-      unit: '/ month',
-      note: 'Amazon account management starts at ₹30,000 a month for one marketplace. The final fee depends on catalogue size, number of marketplaces and how much listing work is needed. Amazon advertising management is available as an add-on.',
-      items: ['Daily account health monitoring', 'Listing creation and optimisation', 'Inventory and FBA planning', 'Brand Registry and A+ Content support', 'Monthly performance report and review call'],
-    },
     figures: [
       { type: 'mindmap', caption: 'The four areas of work in running an Amazon Seller Central account.', center: 'Seller Central upkeep', after: 0, branches: [
         { label: 'Catalogue', items: ['Listings and variations', 'Images and A+ Content'] },
@@ -441,7 +420,6 @@ export const adsPages: ServicePageData[] = [
       pains: 'Why Flipkart sales stall for many sellers',
       includes: 'What our Flipkart seller account management includes',
       process: 'How we run your Flipkart store in *4 steps*',
-      pricing: 'Flipkart account management pricing',
       guide: 'Flipkart account management and ads: a practical guide',
     },
     pains: [
@@ -464,12 +442,6 @@ export const adsPages: ServicePageData[] = [
       { title: 'Ads and pricing', body: 'We restructure Flipkart Ads around your best products, set bids against target returns and keep pricing competitive each week.' },
       { title: 'Ongoing management', body: 'Daily Seller Hub checks, weekly reports and early planning for sale events, with a monthly review call to set next steps.' },
     ],
-    pricing: {
-      from: '₹25,000',
-      unit: '/ month',
-      note: 'Flipkart account management starts at ₹25,000 a month, including Flipkart Ads management. Ad spend is paid to Flipkart from your seller account. The final fee depends on catalogue size and the volume of listing work.',
-      items: ['Daily Seller Hub monitoring', 'Listing creation and optimisation', 'Flipkart PLA and display ads management', 'Pricing, inventory and returns tracking', 'Monthly report and review call'],
-    },
     figures: [
       { type: 'matrix', caption: 'Which Flipkart products to promote with PLA ads, and which to fix first.', after: 2, cols: ['Weak ratings or price', 'Good ratings and price'], rows: ['Healthy stock', 'Low stock'], cells: [
         { title: 'Fix first', body: 'Improve the listing or price before paying for clicks' },
@@ -577,7 +549,6 @@ export const adsPages: ServicePageData[] = [
       pains: 'Quick commerce moves fast. Most brands can’t keep up',
       includes: 'What our quick commerce advertising service includes',
       process: 'How we launch you on quick commerce in *4 steps*',
-      pricing: 'Quick commerce ads pricing',
       guide: 'Quick commerce advertising in India: how to sell on Blinkit, Zepto and Instamart',
     },
     pains: [
@@ -600,12 +571,6 @@ export const adsPages: ServicePageData[] = [
       { title: 'Launch ads', body: 'Search and display campaigns go live on your hero products, with budgets set city by city and matched to stock availability.' },
       { title: 'Optimise and expand', body: 'Weekly reviews move budget to the products and cities that sell. Once results are steady, we plan new cities and platforms.' },
     ],
-    pricing: {
-      from: '₹25,000',
-      unit: '/ month',
-      note: 'Quick commerce ads management starts at ₹25,000 a month across Blinkit, Zepto and Instamart. Ad spend is paid to the platforms directly. Platform commissions, margins and any onboarding terms are agreed between you and each platform.',
-      items: ['Onboarding and catalogue support', 'Blinkit, Zepto and Instamart ads', 'City-level budget planning', 'Content and pricing review', 'Weekly cross-platform reports'],
-    },
     figures: [
       { type: 'matrix', caption: 'Which products fit Blinkit, Zepto and Instamart, and which struggle.', after: 1, cols: ['Bought now and then', 'Frequent or impulse'], rows: ['Small and simple', 'Bulky or needs explaining'], cells: [
         { title: 'Possible', body: 'Gifting angle or small packs can still work' },

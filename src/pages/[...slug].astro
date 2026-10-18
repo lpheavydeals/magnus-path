@@ -5,7 +5,6 @@ import Pains from '../components/page/Pains.astro';
 import Includes from '../components/page/Includes.astro';
 import Children from '../components/page/Children.astro';
 import ProcessPanel from '../components/page/ProcessPanel.astro';
-import PricingTeaser from '../components/page/PricingTeaser.astro';
 import LocalBlock from '../components/page/LocalBlock.astro';
 import Guide from '../components/page/Guide.astro';
 import Related from '../components/page/Related.astro';
@@ -42,7 +41,6 @@ const schema: object[] = [
     // City pages are provided by the nearest office's LocalBusiness node (see Base.astro)
     provider: { '@id': page.local ? `${site.url}/#office-${officeFor(page.local.city).id}` : `${site.url}/#org` },
     areaServed: page.local ? { '@type': 'City', name: page.local.city } : page.market ? { '@type': 'Country', name: markets[page.market].country } : ['IN', 'GB', 'AE', 'AU', 'US'],
-    ...(page.pricing ? { offers: { '@type': 'Offer', priceCurrency: page.pricing.from.includes('£') ? 'GBP' : page.pricing.from.includes('AED') ? 'AED' : page.pricing.from.includes('A$') ? 'AUD' : /\$/.test(page.pricing.from) ? 'USD' : 'INR', description: `Starting from ${page.pricing.from} ${page.pricing.unit}` } } : {}),
   },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: `${site.url}${c.href}` })) },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: page.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
@@ -55,7 +53,6 @@ const schema: object[] = [
   {page.children && <Children items={page.children} currency={currency} heading={page.headings.children ?? `${page.navLabel} services`} />}
   <Includes items={page.includes} heading={page.headings.includes} platforms={page.platforms} />
   <ProcessPanel steps={page.process} heading={page.headings.process} />
-  {page.pricing && <PricingTeaser {...page.pricing} heading={page.headings.pricing ?? `Clear pricing for ${page.navLabel}`} />}
   {page.local && <LocalBlock {...page.local} />}
   <Guide sections={page.guide} title={page.headings.guide} figures={figs.slice(1)} start={2} />
   <FAQ items={page.faqs} />

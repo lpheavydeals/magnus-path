@@ -19,7 +19,6 @@ export const businessWebsitePages2: ServicePageData[] = [
       pains: 'Websites rarely fail all at once. They wear down quietly.',
       includes: 'What our website maintenance plans cover',
       process: 'How monthly website support works in *4 steps*',
-      pricing: 'Website maintenance packages and pricing',
       guide: 'Website maintenance services: a practical guide for business owners',
     },
     pains: [
@@ -42,12 +41,6 @@ export const businessWebsitePages2: ServicePageData[] = [
       { title: 'Monthly maintenance', body: 'Updates, backups, monitoring, scans and content changes run on a fixed schedule. You send requests by email or WhatsApp and we reply within one working day.' },
       { title: 'Report and review', body: 'Each month you get a short report on updates, uptime, speed, security and changes made, with recommendations for the next month.' },
     ],
-    pricing: {
-      from: '₹5,000',
-      unit: '/ month',
-      note: 'Basic costs ₹5,000 a month for small business websites, Business costs ₹12,000 a month for sites that change often or generate leads, and Store costs ₹25,000 a month for Shopify and WooCommerce stores. Hosting, domain and paid licences are billed separately at cost.',
-      items: ['Core, theme and plugin or app updates', 'Off-site backups and uptime monitoring', 'Security scans and SSL/domain renewal tracking', 'Monthly content-change hours (by plan)', 'Form tests, broken-link checks and a monthly report'],
-    },
     figures: [
       { type: 'mindmap', caption: 'What a complete website maintenance plan covers each month.', center: 'Website maintenance', after: 0, branches: [
         { label: 'Updates', items: ['Core, theme and plugins', 'Tested before going live'] },
@@ -172,7 +165,6 @@ export const businessWebsitePages2: ServicePageData[] = [
       pains: 'Why many Chennai business websites stop bringing in enquiries',
       includes: 'Web design and development services for Chennai businesses',
       process: 'How a website project with us runs, in *4 steps*',
-      pricing: 'Website development pricing in Chennai',
       guide: 'Choosing a web design company in Chennai: a guide for business owners',
     },
     pains: [
@@ -200,12 +192,6 @@ export const businessWebsitePages2: ServicePageData[] = [
       { title: 'Build and connect', body: 'We build the site, connect forms, WhatsApp, maps and your Google Business Profile, set up analytics and test on real phones.' },
       { title: 'Launch and look after', body: 'We go live, train your team to edit pages and hand over all logins. Monthly maintenance plans are available if you want us to keep it running.' },
     ],
-    pricing: {
-      from: '₹35,000',
-      unit: 'one-time',
-      note: 'Business websites of 5–10 pages start at ₹35,000. Custom corporate websites usually cost ₹75,000–2 lakh depending on pages, features and integrations. WordPress websites start at ₹30,000. Maintenance plans start at ₹5,000 a month. You get a fixed quote after a free meeting.',
-      items: ['5–10 page mobile-first business website', 'Page copy in English, Tamil or both', 'Enquiry forms, WhatsApp and tap-to-call', 'Google Business Profile and basic local SEO', 'Staff training and 30 days of support'],
-    },
     figures: [
       { type: 'mindmap', caption: 'Chennai businesses need different pages depending on how their buyers decide.', center: 'Pages by industry', after: 1, branches: [
         { label: 'Manufacturers', items: ['Capability pages', 'Downloadable catalogues', 'RFQ form'] },

@@ -20,7 +20,6 @@ export const industryPages: ServicePageData[] = [
       includes: 'What every industry programme includes',
       children: 'Choose your *industry*',
       process: 'How we build an industry plan in *4 steps*',
-      pricing: 'Starting price for D2C marketing',
       guide: 'Ecommerce marketing for D2C brands: why your category changes the plan',
     },
     pains: [
@@ -49,12 +48,6 @@ export const industryPages: ServicePageData[] = [
       { title: 'Review and scale', body: 'Weekly optimisation and a monthly review. Budget moves to what earns a profit, and we cut what does not.' },
     ],
     platforms: ['Shopify', 'WooCommerce', 'Meta Ads', 'Google Ads', 'Amazon', 'Flipkart', 'Myntra', 'Nykaa', 'Blinkit', 'LinkedIn'],
-    pricing: {
-      from: '₹30,000',
-      unit: 'per month + ad spend',
-      note: 'Performance marketing (Meta and Google ads) starts at ₹30,000 a month plus your ad spend. Marketplace, quick-commerce and SEO retainers are priced separately, and B2B programmes for manufacturers start at ₹50,000 a month.',
-      items: ['Meta and Google campaign management', 'Creative direction and testing', 'Conversion tracking setup', 'Weekly optimisation', 'Monthly report and planning call'],
-    },
     figures: [
       { type: 'mindmap', caption: 'Same foundations, different detail in each category we work with.', center: 'What changes by category', after: 0, branches: [
         { label: 'Fashion', items: ['Fit and size guides', 'Returns', 'Marketplace pricing'] },
@@ -163,7 +156,6 @@ export const industryPages: ServicePageData[] = [
       pains: 'Why fashion brands spend more on ads and keep less',
       includes: 'What a fashion ecommerce agency should handle for you',
       process: 'Our fashion growth plan in *4 steps*',
-      pricing: 'Fashion marketing pricing',
       guide: 'Ecommerce marketing for fashion brands: a practical guide',
     },
     pains: [
@@ -186,12 +178,6 @@ export const industryPages: ServicePageData[] = [
       { title: 'Scale what stays sold', body: 'Weekly optimisation and a monthly review of net revenue after returns. Budget follows products and audiences that keep their orders.' },
     ],
     platforms: ['Shopify', 'WooCommerce', 'Meta Ads', 'Google Shopping', 'Myntra', 'Ajio', 'Amazon Fashion', 'Flipkart', 'Shiprocket', 'WhatsApp'],
-    pricing: {
-      from: '₹30,000',
-      unit: 'per month + ad spend',
-      note: 'Performance marketing for fashion brands starts at ₹30,000 a month plus ad spend and covers Meta and Google ads with creative direction. Marketplace management, SEO and store builds are quoted separately.',
-      items: ['Meta and Google campaign management', 'Monthly creative brief and testing plan', 'Google Shopping feed set-up', 'Returns-aware reporting', 'Monthly planning call'],
-    },
     figures: [
       { type: 'mindmap', caption: 'Where most fashion returns start, and what fixes each one.', center: 'Fewer returns', after: 1, branches: [
         { label: 'Fit', items: ['Size charts in cm and inches', 'Model height and size'] },
@@ -297,7 +283,6 @@ export const industryPages: ServicePageData[] = [
       pains: 'Where beauty and Ayurveda brands lose money online',
       includes: 'Skincare brand digital marketing, handled end to end',
       process: 'Our beauty growth plan in *4 steps*',
-      pricing: 'Beauty brand marketing pricing',
       guide: 'Ecommerce marketing for beauty brands: what actually works',
     },
     pains: [
@@ -320,12 +305,6 @@ export const industryPages: ServicePageData[] = [
       { title: 'Grow lifetime value', body: 'Monthly reviews of acquisition cost, repeat rate and value per customer. Budget follows products that bring customers back.' },
     ],
     platforms: ['Shopify', 'Meta Ads', 'Google Ads', 'Amazon', 'Nykaa', 'Flipkart', 'Judge.me', 'Klaviyo', 'WhatsApp'],
-    pricing: {
-      from: '₹30,000',
-      unit: 'per month + ad spend',
-      note: 'Performance marketing for beauty and Ayurveda brands starts at ₹30,000 a month plus ad spend, covering Meta and Google ads with policy-aware creative. Amazon account management starts at ₹30,000 a month and is quoted separately.',
-      items: ['Meta and Google campaign management', 'Ad copy reviewed for policy risk', 'Creative testing plan', 'Retention and refill flow advice', 'Monthly report and planning call'],
-    },
     figures: [
       { type: 'steps', caption: 'A claims check for beauty and Ayurveda ads before they go live.', after: 1, steps: [
         { title: 'Cut medical words', body: 'No cure, heal, treat or permanent results' },
@@ -440,7 +419,6 @@ export const industryPages: ServicePageData[] = [
       pains: 'Why food brands find online growth harder than expected',
       includes: 'FMCG digital marketing across every channel you sell on',
       process: 'Our food brand growth plan in *4 steps*',
-      pricing: 'Food and FMCG marketing pricing',
       guide: 'Ecommerce marketing for food brands: a practical guide',
     },
     pains: [
@@ -463,12 +441,6 @@ export const industryPages: ServicePageData[] = [
       { title: 'Scale profitable channels', body: 'Weekly optimisation and a monthly review of sales, ad cost and margin by channel and city. Budget follows the channels that earn.' },
     ],
     platforms: ['Blinkit', 'Zepto', 'Swiggy Instamart', 'Amazon', 'Flipkart', 'Shopify', 'Meta Ads', 'Google Ads', 'Shiprocket'],
-    pricing: {
-      from: '₹25,000',
-      unit: 'per month + ad spend',
-      note: 'Quick-commerce ads on Blinkit, Zepto and Instamart start at ₹25,000 a month plus ad spend. Performance marketing on Meta and Google starts at ₹30,000 a month, and Amazon advertising at ₹25,000 a month or 10–15% of ad spend.',
-      items: ['Quick-commerce listing review', 'Sponsored campaign set-up and management', 'City and dark-store level reporting', 'Festive campaign planning', 'Monthly report and planning call'],
-    },
     figures: [
       { type: 'matrix', caption: 'Shelf life decides how far a food product can travel.', after: 2, cols: ['Short shelf life', 'Long shelf life'], rows: ['Buyers in your city', 'Buyers in India or abroad'], cells: [
         { title: 'Local and quick', body: 'Fresh sweets, bakery: local delivery, quick apps' },
@@ -572,7 +544,6 @@ export const industryPages: ServicePageData[] = [
       pains: 'Why good manufacturers still struggle to find buyers online',
       includes: 'What our B2B marketing agency delivers',
       process: 'From audit to qualified enquiries in *4 steps*',
-      pricing: 'B2B digital marketing pricing',
       guide: 'B2B digital marketing services for manufacturers: a practical guide',
     },
     pains: [
@@ -595,12 +566,6 @@ export const industryPages: ServicePageData[] = [
       { title: 'Qualify and improve', body: 'Monthly reviews of enquiry quality with your sales team. We cut sources that bring poor leads and put more into those that bring orders.' },
     ],
     platforms: ['WordPress', 'Google Ads', 'LinkedIn Ads', 'Google Search Console', 'Google Analytics 4', 'WhatsApp Business'],
-    pricing: {
-      from: '₹50,000',
-      unit: 'per month + ad spend',
-      note: 'B2B digital marketing for manufacturers and exporters starts at ₹50,000 a month plus ad spend. It covers export SEO, Google Ads or LinkedIn campaigns and lead reporting. Website builds or rebuilds are quoted separately after an audit.',
-      items: ['Export keyword and buyer research', 'Ongoing SEO for product pages', 'Google Ads or LinkedIn campaign management', 'Enquiry tracking and lead qualification', 'Monthly review with your sales team'],
-    },
     figures: [
       { type: 'mindmap', caption: 'Four routes to export buyers beyond existing contacts.', center: 'Finding export buyers', after: 5, branches: [
         { label: 'Search', items: ['Export SEO pages', 'Google Ads by country'] },
@@ -712,7 +677,6 @@ export const industryPages: ServicePageData[] = [
       pains: 'Why agencies struggle to deliver SEO in-house',
       includes: 'What our white label SEO agency delivers',
       process: 'Onboarding a white-label partner in *4 steps*',
-      pricing: 'White-label SEO pricing',
       guide: 'White label SEO services: how they work and what to check',
     },
     pains: [
@@ -735,12 +699,6 @@ export const industryPages: ServicePageData[] = [
       { title: 'Deliver and scale', body: 'Monthly delivery and reports for each site, with a review call. Add client sites as you sell, without changing the process.' },
     ],
     platforms: ['Google Search Console', 'Google Analytics 4', 'Ahrefs', 'Semrush', 'Screaming Frog', 'Looker Studio', 'Google Business Profile', 'Slack'],
-    pricing: {
-      from: 'US$350',
-      unit: 'per month per client site',
-      note: 'White-label SEO starts at US$350 a month per client site. Larger sites, competitive markets and extra content or link building are quoted per site. You set your own resale price.',
-      items: ['Technical audit and fix list', 'Monthly on-page optimisation', 'Local SEO where relevant', 'Unbranded monthly report', 'NDA and no client contact'],
-    },
     figures: [
       { type: 'venn', caption: 'Who does what in a white-label SEO arrangement.', after: 0, left: { title: 'Your agency', body: 'owns the client, the brand, the pricing and the calls' }, right: { title: 'Our Chennai team', body: 'audits, content, links and reports under your logo' }, overlap: 'Client sees one agency' },
       { type: 'steps', caption: 'The checks each piece of work passes before your client sees it.', after: 5, steps: [
@@ -852,7 +810,6 @@ export const industryPages: ServicePageData[] = [
       pains: 'The honest worries about outsourcing SEO',
       includes: 'What you can outsource to our SEO team',
       process: 'How outsourcing SEO to us works in *4 steps*',
-      pricing: 'SEO outsourcing pricing',
       guide: 'SEO outsourcing in India: a buyer’s guide',
     },
     pains: [
@@ -875,12 +832,6 @@ export const industryPages: ServicePageData[] = [
       { title: 'Report and adjust', body: 'A monthly report listing every task, page and link, with traffic and rankings, followed by a call to agree the next month’s priorities.' },
     ],
     platforms: ['Google Search Console', 'Google Analytics 4', 'Ahrefs', 'Semrush', 'Screaming Frog', 'Looker Studio', 'WordPress', 'Shopify'],
-    pricing: {
-      from: 'US$500',
-      unit: 'per month',
-      note: 'SEO outsourcing starts at US$500 a month for one website, covering a defined monthly scope of technical, on-page, content and link work. Larger sites and competitive markets are quoted after an audit. Agencies reselling SEO should see our white-label pricing.',
-      items: ['Technical audit and monthly fixes', 'Keyword map and 90-day plan', 'On-page optimisation and content', 'Outreach-based link building', 'Monthly task-level report and call'],
-    },
     figures: [
       { type: 'mindmap', caption: 'The usual worries about outsourcing, and what answers each one.', center: 'Outsourcing done right', after: 2, branches: [
         { label: 'Quality', items: ['Written for your audience', 'Edited by a second person'] },
@@ -1007,7 +958,6 @@ export const industryPages: ServicePageData[] = [
       pains: 'Why Chennai businesses change digital marketing agencies',
       includes: 'Digital marketing services in Chennai, under one roof',
       process: 'Working with us in *4 steps*',
-      pricing: 'Digital marketing pricing in Chennai',
       guide: 'Choosing a digital marketing agency in Chennai: a practical guide',
     },
     pains: [
@@ -1030,12 +980,6 @@ export const industryPages: ServicePageData[] = [
       { title: 'Review and grow', body: 'Weekly optimisation and a monthly review meeting. Budget moves to what brings sales and enquiries.' },
     ],
     platforms: ['Google Ads', 'Meta Ads', 'Instagram', 'YouTube', 'Google Business Profile', 'Shopify', 'WooCommerce', 'Amazon', 'WhatsApp Business'],
-    pricing: {
-      from: '₹30,000',
-      unit: 'per month + ad spend',
-      note: 'Digital marketing with Meta and Google ads starts at ₹30,000 a month plus ad spend. SEO services start at ₹25,000 a month and e-commerce SEO at ₹35,000 a month. Websites are quoted as one-time projects.',
-      items: ['Google and Meta campaign management', 'Creative in Tamil and English', 'Conversion tracking setup', 'Monthly in-person or online review', 'Clear reporting on sales and leads'],
-    },
     local: {
       city: 'Chennai',
       areas: ['T. Nagar', 'Anna Nagar', 'Adyar', 'Velachery', 'OMR', 'Nungambakkam', 'Guindy', 'Porur', 'Tambaram', 'Ambattur'],

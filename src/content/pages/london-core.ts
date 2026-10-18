@@ -291,7 +291,6 @@ export const londonCorePages: ServicePageData[] = [
       pains: 'Why London agencies look for *SEO delivery help*',
       includes: 'What our white label SEO for London agencies includes',
       process: 'Starting white-label delivery in *4 steps*',
-      pricing: 'White label SEO pricing for London agencies',
       guide: 'White label SEO in London: how agencies choose a delivery team',
     },
     pains: [
@@ -307,12 +306,6 @@ export const londonCorePages: ServicePageData[] = [
       { title: 'Ecommerce SEO under your brand', body: 'Collection, product and feed work on Shopify and WooCommerce for agency clients who sell online.' },
       { title: 'Unbranded reports', body: 'Monthly reports in your template or under your logo, with a short summary you can paste straight into a client email.' },
     ],
-    pricing: {
-      from: '£275',
-      unit: '/ month per client site',
-      note: 'White label SEO for London agencies starts at £275 a month per client site. Larger sites, competitive markets and extra content or links are quoted per site in GBP. You set your own resale price.',
-      items: ['Technical audit and fix list', 'Monthly on-page optimisation', 'British English content and outreach links by scope', 'Local SEO for London clients where relevant', 'Unbranded monthly report', 'NDA and no client contact'],
-    },
     process: [
       { title: 'Meet in East London', body: 'A meeting at our E18 office or on video to learn how you sell, scope and report SEO, followed by a mutual NDA.' },
       { title: 'Pilot one client site', body: 'Two or three months on one site, so you can judge the audit, the work and our communication before moving more accounts.' },

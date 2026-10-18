@@ -23,7 +23,6 @@ export const ukAgencyPages: ServicePageData[] = [
       pains: 'What goes wrong when agencies deliver SEO alone',
       includes: 'What our white label SEO for agencies covers',
       process: 'Starting white-label delivery in *4 steps*',
-      pricing: 'White label SEO pricing in GBP',
       guide: 'White label SEO for UK agencies: a practical guide to reselling SEO',
     },
     pains: [
@@ -39,12 +38,6 @@ export const ukAgencyPages: ServicePageData[] = [
       { title: 'Outreach link building', body: 'Editorial links from real, relevant websites. No private blog networks, link farms or bulk paid packages, and every link listed with its URL.' },
       { title: 'Unbranded reporting', body: 'Monthly reports under your logo or in your own Looker Studio or AgencyAnalytics template, with a short summary you can paste into a client email.' },
     ],
-    pricing: {
-      from: '£275',
-      unit: '/ month per client site',
-      note: 'White label SEO for UK agencies starts at £275 a month per client site. Larger sites, competitive markets and extra content or links are quoted per site in GBP. You set your own resale price.',
-      items: ['Technical audit and prioritised fix list', 'Monthly on-page optimisation', 'British English content and ethical link building by scope', 'Local SEO for UK clients where relevant', 'Unbranded monthly report under your logo', 'NDA and no client contact'],
-    },
     process: [
       { title: 'Intro call and NDA', body: 'A video call in your morning to learn how you sell and report SEO, then a mutual NDA and, where we handle personal data, a data processing agreement.' },
       { title: 'Pilot site', body: 'One client site for two or three months, so you can judge the audit, the work and our communication before moving more accounts.' },
@@ -157,7 +150,6 @@ export const ukAgencyPages: ServicePageData[] = [
       pains: 'Why UK teams hesitate to outsource SEO',
       includes: 'What our offshore SEO team takes on',
       process: 'From audit to monthly delivery in *4 steps*',
-      pricing: 'SEO outsourcing pricing in GBP',
       guide: 'Outsourced SEO for UK businesses and agencies: a buyer’s guide',
     },
     pains: [
@@ -173,12 +165,6 @@ export const ukAgencyPages: ServicePageData[] = [
       { title: 'Local and e-commerce SEO', body: 'Google Business Profile and location pages for local firms, plus product and collection work for Shopify and WooCommerce shops.' },
       { title: 'AI search visibility', body: 'Content and structured data shaped so Google AI Overviews, ChatGPT and Perplexity can understand and quote your pages.' },
     ],
-    pricing: {
-      from: '£400',
-      unit: '/ month',
-      note: 'Outsourced SEO for UK businesses starts at £400 a month. Larger shops, competitive markets and extra content or links are quoted in GBP after a free audit.',
-      items: ['Technical SEO fixes and monitoring', 'On-page optimisation of priority pages', 'Content written in British English', 'Outreach links, every one reported', 'Task-level monthly report', 'Monthly review call in your morning'],
-    },
     process: [
       { title: 'Free audit', body: 'We review your site, competitors and Search Console data, then walk you through the findings on a video call in your UK morning.' },
       { title: 'Written scope and GBP quote', body: 'Monthly tasks, realistic timelines and a price in GBP, all in writing. Nothing is padded with work your site does not need.' },

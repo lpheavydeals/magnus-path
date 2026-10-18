@@ -21,7 +21,6 @@ export const usWebsitesPages: ServicePageData[] = [
       pains: 'Why US websites *break quietly* between redesigns',
       includes: 'What our monthly website care plans include',
       process: 'How website support starts in *4 steps*',
-      pricing: 'Website maintenance plans in USD',
       guide: 'Website maintenance services: what a US business should expect and how to compare plans',
     },
     pains: [
@@ -38,12 +37,6 @@ export const usWebsitesPages: ServicePageData[] = [
       { title: 'Form and checkout testing', body: 'Regular test submissions on contact and quote forms, plus test orders on WooCommerce or Shopify checkouts, so a silent failure is caught by us rather than a customer.' },
     ],
     platforms: ['WordPress', 'WooCommerce', 'Shopify', 'Cloudflare', 'WP-CLI', 'Git', 'UptimeRobot', 'Google Search Console', 'GA4'],
-    pricing: {
-      from: 'US$99',
-      unit: '/ month per site',
-      note: 'Three monthly plans: Basic from US$99 (weekly backups, 2 hours of changes), Business from US$199 (daily backups, 6 hours) and Store from US$349 (checkout tests, 12 hours). Larger or multi-site setups are quoted in USD after a free audit.',
-      items: ['Core, plugin and theme updates tested on staging', 'Off-site backups and restore tests', 'Uptime and security monitoring', 'Small content changes within plan hours', 'Form and checkout testing on Store plans', 'Monthly report on everything done'],
-    },
     process: [
       { title: 'Free site audit', body: 'We review your hosting, plugins or apps, backups, forms, speed and security, then walk you through the findings on a short call in your morning.' },
       { title: 'Plan and USD price', body: 'You pick a Basic, Business or Store plan, or get a custom scope with included hours and response times, priced in USD. Logins and ownership are documented so you stay in control.' },

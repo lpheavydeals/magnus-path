@@ -12,9 +12,9 @@ const { tiers, heading, label = 'Packages', note } = Astro.props;
           {t.featured && <span class="tr__pop">Most popular</span>}
           <h3>{t.name}</h3>
           <p class="tr__for">{t.for}</p>
-          <p class="tr__price">{t.price}<small>{t.unit}</small></p>
+          <p class="tr__price">Custom quote<small>after a free audit</small></p>
           <ul>{t.features.map((f) => <li>{f}</li>)}</ul>
-          <a class={`btn ${t.featured ? 'btn--primary' : 'btn--dark'}`} href="/free-ecommerce-audit/">Get started <span class="arrow" aria-hidden="true">→</span></a>
+          <a class={`btn ${t.featured ? 'btn--primary' : 'btn--dark'}`} href="/free-ecommerce-audit/">Get a quote <span class="arrow" aria-hidden="true">→</span></a>
         </li>
       ))}
     </ul>

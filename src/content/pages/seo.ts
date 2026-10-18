@@ -20,7 +20,6 @@ export const seoPages: ServicePageData[] = [
       includes: 'What our e-commerce search engine optimisation covers',
       children: 'E-commerce SEO services by *channel*',
       process: 'How we grow organic sales in *4 steps*',
-      pricing: 'Ecommerce SEO pricing',
       guide: 'Ecommerce SEO services in India: a buyer’s guide',
     },
     pains: [
@@ -49,12 +48,6 @@ export const seoPages: ServicePageData[] = [
       { title: 'Measure and grow', body: 'Monthly reports tie rankings to organic sessions, orders and revenue. We double down on what moves sales and drop what does not.' },
     ],
     platforms: ['Google Search Console', 'Google Analytics 4', 'Semrush', 'Ahrefs', 'Screaming Frog', 'PageSpeed Insights', 'Shopify', 'WooCommerce'],
-    pricing: {
-      from: '₹35,000',
-      unit: '/ month',
-      note: 'Ecommerce SEO starts at ₹35,000 a month for a single store. Very large catalogues, several languages or added marketplace work are quoted after a free audit, so you only pay for the scope you need.',
-      items: ['Technical SEO audit and monthly fixes', 'Keyword and category mapping', 'Category and product page optimisation', 'Content and link building each month', 'Monthly revenue-focused report and call'],
-    },
     figures: [
       { type: 'mindmap', caption: 'The three layers of store SEO, plus the pages where buyers decide.', center: 'Online store SEO', after: 0, branches: [
         { label: 'Technical', items: ['Filter and sort URLs', 'Canonical tags', 'Fast mobile pages'] },
@@ -167,7 +160,6 @@ export const seoPages: ServicePageData[] = [
       pains: 'Shopify makes selling easy. Ranking takes *more work*',
       includes: 'What our Shopify SEO agency work includes',
       process: 'How a Shopify SEO expert works through your store',
-      pricing: 'Shopify SEO pricing',
       guide: 'Shopify SEO explained: issues, fixes and a checklist',
     },
     pains: [
@@ -190,12 +182,6 @@ export const seoPages: ServicePageData[] = [
       { title: 'Implement in Shopify', body: 'We make the changes ourselves in a duplicate theme, test them, then publish. If you have a developer, we work alongside them.' },
       { title: 'Grow and report', body: 'Each month we add content, improve collections and build links, and report on organic sessions, orders and revenue from Shopify and GA4.' },
     ],
-    pricing: {
-      from: '₹30,000',
-      unit: '/ month',
-      note: 'Shopify SEO starts at ₹30,000 a month for one store. Stores with several Shopify Markets, languages or very large catalogues are quoted after a free audit.',
-      items: ['Full Shopify technical audit', 'Theme and canonical fixes', 'Speed and app clean-up', 'Collection and product page optimisation', 'Blog content and link building each month'],
-    },
     figures: [
       { type: 'matrix', caption: 'Which Shopify tag and filter pages to index, and which to keep out.', after: 1, cols: ['Few people search it', 'Real search demand'], rows: ['Near-copy of a collection', 'Distinct set of products'], cells: [
         { title: 'Keep out', body: 'Canonicalise or noindex through theme logic' },
@@ -310,7 +296,6 @@ export const seoPages: ServicePageData[] = [
       pains: 'Good products, buried on *page five*',
       includes: 'What our Amazon listing optimisation service covers',
       process: 'Amazon product listing optimisation in *4 steps*',
-      pricing: 'Amazon SEO pricing',
       guide: 'How Amazon SEO works: a practical guide for sellers',
     },
     pains: [
@@ -333,12 +318,6 @@ export const seoPages: ServicePageData[] = [
       { title: 'Rewrite and rebuild', body: 'We write new titles, bullets, descriptions and backend terms, brief the images and build A+ content, then upload or hand over for approval.' },
       { title: 'Track and refine', body: 'We track keyword rankings, sessions and conversion rate per listing each month, and refine content based on what the data shows.' },
     ],
-    pricing: {
-      from: '₹20,000',
-      unit: '/ month',
-      note: 'Amazon SEO and listing optimisation starts at ₹20,000 a month. The number of listings covered each month depends on catalogue size and how much image and A+ work is needed. Flipkart listings can be added to the same plan.',
-      items: ['Category keyword research', 'Title, bullet and description rewrites', 'Backend search terms', 'Image briefs and A+ content', 'Monthly ranking and conversion report'],
-    },
     figures: [
       { type: 'venn', caption: 'Amazon ranks listings that match the search and then sell.', after: 0, left: { title: 'Relevance', body: 'the words shoppers search are in your title, bullets and backend' }, right: { title: 'Performance', body: 'shoppers who see the listing click on it and buy' }, overlap: 'Higher rank, more sales, repeat' },
       { type: 'steps', caption: 'How a new listing with no sales history earns its first rankings.', after: 4, steps: [
@@ -444,7 +423,6 @@ export const seoPages: ServicePageData[] = [
       pains: 'Buyers are asking AI. Is your brand *in the answer*?',
       includes: 'What our generative engine optimization work includes',
       process: 'How we approach LLM SEO in *4 steps*',
-      pricing: 'AI search optimisation pricing',
       guide: 'Generative engine optimization (GEO): an honest guide',
     },
     pains: [
@@ -467,12 +445,6 @@ export const seoPages: ServicePageData[] = [
       { title: 'Create and earn', body: 'We rewrite key pages to be quotable, publish answer-first content and work on reviews and mentions on sites AI tools trust.' },
       { title: 'Measure and adjust', body: 'Each month we re-run the same questions, track citations and AI referrals in GA4, and adjust based on what changed.' },
     ],
-    pricing: {
-      from: '₹25,000',
-      unit: '/ month',
-      note: 'AI search optimisation starts at ₹25,000 a month. It works well only on top of sound SEO, so if your site has major technical issues we will recommend fixing those first, either within this plan or alongside our e-commerce SEO service.',
-      items: ['Monthly AI visibility checks', 'Citable content rewrites', 'Entity and schema clean-up', 'Reviews and mentions plan', 'AI referral tracking in GA4'],
-    },
     figures: [
       { type: 'mindmap', caption: 'Where AI assistants pick up what they say about your brand.', center: 'How AI tools see you', after: 4, branches: [
         { label: 'Your website', items: ['Direct answers', 'Product and brand schema'] },
@@ -583,7 +555,6 @@ export const seoPages: ServicePageData[] = [
       pains: 'Your customers search before they *call*',
       includes: 'What our local SEO services and small business SEO cover',
       process: 'How an SEO consultant from our team works with you',
-      pricing: 'SEO services pricing',
       guide: 'Choosing an SEO agency in India: what to know first',
     },
     pains: [
@@ -606,12 +577,6 @@ export const seoPages: ServicePageData[] = [
       { title: 'Build pages and content', body: 'We create or rewrite service and location pages and publish content that answers the questions your customers search.' },
       { title: 'Report and improve', body: 'Monthly reports focus on leads and visibility, and we adjust the plan based on which pages and searches bring business.' },
     ],
-    pricing: {
-      from: '₹25,000',
-      unit: '/ month',
-      note: 'SEO services and local SEO start at ₹25,000 a month for one location. Multi-location businesses and larger websites are quoted after a free review. See our SEO packages for fixed monthly plans.',
-      items: ['Google Business Profile management', 'Local citations and directory clean-up', 'Technical SEO fixes', 'Service and location page optimisation', 'Monthly content and lead-focused report'],
-    },
     figures: [
       { type: 'steps', caption: 'Setting up a Google Business Profile that wins calls.', after: 1, steps: [
         { title: 'Pick the category', body: 'Most accurate primary, then secondary ones' },
@@ -724,7 +689,6 @@ export const seoPages: ServicePageData[] = [
       pains: 'What Chennai businesses tell us about *SEO so far*',
       includes: 'What our SEO services company in Chennai delivers',
       process: 'Working with an SEO agency in Chennai, step by step',
-      pricing: 'SEO in Chennai: pricing',
       guide: 'SEO in Chennai: a practical guide for local businesses',
     },
     pains: [
@@ -747,12 +711,6 @@ export const seoPages: ServicePageData[] = [
       { title: 'Execute', body: 'We fix technical issues, optimise your Google Business Profile, build local and Tamil pages, and start earning local links and mentions.' },
       { title: 'Review together', body: 'Monthly reports and regular in-person reviews keep the work tied to calls, enquiries and sales rather than vanity numbers.' },
     ],
-    pricing: {
-      from: '₹25,000',
-      unit: '/ month',
-      note: 'SEO for Chennai businesses starts at ₹25,000 a month for one location. E-commerce SEO starts at ₹35,000 a month. Multi-branch businesses and larger websites are quoted after a free audit.',
-      items: ['Google Business Profile optimisation', 'Local and neighbourhood pages', 'Tamil and English content', 'Technical SEO fixes', 'Monthly report with in-person reviews'],
-    },
     local: {
       city: 'Chennai',
       areas: ['T. Nagar', 'Anna Nagar', 'Guindy', 'OMR', 'Velachery', 'Nungambakkam', 'Adyar', 'Porur', 'Ambattur', 'Mylapore'],
@@ -868,7 +826,6 @@ export const seoPages: ServicePageData[] = [
       pains: 'Strong factories, *weak websites*',
       includes: 'What our SEO company work for Coimbatore businesses includes',
       process: 'How we work with Coimbatore clients from Chennai',
-      pricing: 'SEO services pricing for Coimbatore',
       guide: 'SEO in Coimbatore: a guide for manufacturers and local firms',
     },
     pains: [
@@ -891,12 +848,6 @@ export const seoPages: ServicePageData[] = [
       { title: 'Build and optimise', body: 'We fix technical issues, write product and capability pages, set up local SEO and start earning links from industry sources.' },
       { title: 'Report remotely', body: 'Monthly reports and review calls keep the work on track, with further visits planned when a new product line or launch needs them.' },
     ],
-    pricing: {
-      from: '₹25,000',
-      unit: '/ month',
-      note: 'SEO services for Coimbatore businesses start at ₹25,000 a month. B2B and export-focused programmes for manufacturers are usually part of our B2B digital marketing service, which starts at ₹50,000 a month.',
-      items: ['Product and capability page optimisation', 'Local SEO and Google Business Profile', 'Technical SEO fixes', 'English and Tamil content', 'Monthly enquiry-focused report'],
-    },
     local: {
       city: 'Coimbatore',
       areas: ['RS Puram', 'Gandhipuram', 'Peelamedu', 'Saravanampatti', 'Singanallur', 'Race Course', 'Saibaba Colony', 'Tiruppur', 'Pollachi'],
