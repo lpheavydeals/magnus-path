@@ -30,6 +30,28 @@ related:
     href: "/performance-marketing/"
   - label: "Custom website development for exporters"
     href: "/ecommerce-website-development/"
+figures:
+  - type: mindmap
+    caption: "The four jobs involved in finding and closing export buyers."
+    center: "Finding export buyers"
+    branches:
+      - label: "Research"
+        items: ["Find your HS code", "Import data by country", "Rules and certifications"]
+      - label: "Be found"
+        items: ["B2B marketplaces", "Export website with RFQ form", "Export SEO"]
+      - label: "Reach out"
+        items: ["EPCs and trade fairs", "LinkedIn outreach", "Google Ads by country"]
+      - label: "Close safely"
+        items: ["Clear quote with Incoterm", "Verify the buyer", "Safe payment terms"]
+  - type: matrix
+    caption: "Which payment terms to offer, by how well you know the buyer and the order size."
+    cols: ["New buyer", "Trusted buyer"]
+    rows: ["Small order or samples", "Large order"]
+    cells:
+      - { title: "Full advance", body: "Lowest risk; the right start for samples and small orders" }
+      - { title: "Advance or D/P", body: "Partial advance, or D/P for buyers with a track record" }
+      - { title: "Confirmed LC", body: "Low risk for larger orders, if documents are correct" }
+      - { title: "Open account", body: "Only for long-standing buyers, ideally with credit insurance" }
 ---
 
 Knowing how to find buyers for export comes down to three things: choosing the right markets, being visible where importers search, and following up faster and more professionally than your competitors. For Indian manufacturers, especially in Tamil Nadu clusters like Chennai, Coimbatore, Tiruppur and Hosur, the opportunity is real. Tamil Nadu's electronics exports rose about 78% to roughly US$9.56 billion in FY24, around a third of India's total (KNN India). This guide covers every major channel, how to check buyers before you ship, and a 90-day plan you can start this week.

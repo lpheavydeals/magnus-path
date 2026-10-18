@@ -28,6 +28,20 @@ related:
     href: "/b2b-digital-marketing/"
   - label: "Ecommerce SEO services"
     href: "/ecommerce-seo/"
+figures:
+  - type: steps
+    caption: "The path from a new Etsy shop in India to steady overseas orders."
+    steps:
+      - { title: "Open the shop", body: "Indian bank account, policies, listings" }
+      - { title: "Pick products", body: "Handloom, art, brass, jewellery, supplies" }
+      - { title: "Price it fully", body: "Fees, shipping, conversion and returns" }
+      - { title: "Plan shipping", body: "IEC, invoice with HS code, safe packing" }
+      - { title: "Get found", body: "Titles, tags and photos for foreign buyers" }
+  - type: venn
+    caption: "Etsy and your own Shopify store do different jobs, and many sellers keep both."
+    left: { title: "Etsy", body: "Buyers already searching for handmade and craft items" }
+    right: { title: "Your own Shopify store", body: "Your brand, email list, wholesale and your own ads" }
+    overlap: "Repeat buyers who know your name"
 ---
 
 If you are wondering how to sell on Etsy from India, the short answer is: open a seller account with your Indian bank details, list products that suit overseas buyers, sort out export shipping, and write listings the way foreign shoppers search. Etsy is a global marketplace for handmade, vintage and craft-supply items, which makes it a natural fit for Indian artisans and small makers. This guide walks through each step, from account setup to pricing, shipping, Etsy SEO and the point where your own store makes sense.

@@ -30,6 +30,26 @@ related:
     href: "/ecommerce-website-development/"
   - label: "Website and marketing pricing"
     href: "/pricing/"
+figures:
+  - type: steps
+    caption: "The usual path as a store grows, with the setup costs this guide quotes."
+    steps:
+      - { title: "DIY template", body: "Your time, platform plan and maybe a theme" }
+      - { title: "Agency template", body: "From ₹50,000 Woo or ₹60,000 Shopify" }
+      - { title: "Custom Shopify", body: "₹1.5–5 lakh, custom design and integrations" }
+      - { title: "Custom or headless", body: "From ₹2,00,000 for complex catalogues" }
+  - type: mindmap
+    caption: "A checklist for your first-year ecommerce website budget, beyond the setup fee."
+    center: "First-year budget"
+    branches:
+      - label: "One-time"
+        items: ["Agency or developer fee", "Photos and product copy", "Premium theme licence"]
+      - label: "Running"
+        items: ["Plan or hosting, 12 months", "Paid apps, monthly fee × 12", "Domain, email, maintenance"]
+      - label: "Per sale"
+        items: ["Payment fees, around 2%", "Confirm with your gateway"]
+      - label: "Growth"
+        items: ["Ads or SEO", "Marketplace management"]
 ---
 
 The ecommerce website cost in India ranges from almost nothing for a do-it-yourself template store to several lakh rupees for a custom or headless build. Most growing brands land somewhere in the middle: a template-based store set up by an agency for ₹50,000 to ₹60,000, or a custom Shopify build for ₹1.5–5 lakh. The setup fee is only part of the bill, though. This guide breaks down one-time and recurring costs, the factors that move the price, and how to choose without overpaying.

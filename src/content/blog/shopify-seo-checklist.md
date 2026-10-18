@@ -30,6 +30,24 @@ related:
     href: "/ai-search-optimization/"
   - label: "Best ecommerce platform in India"
     href: "/blog/best-ecommerce-platform-in-india/"
+figures:
+  - type: steps
+    caption: "The Shopify SEO checklist in the order to work through it."
+    steps:
+      - { title: "Set up", body: "Search Console, sitemap, one domain" }
+      - { title: "Fix technical", body: "Canonicals, speed, apps and redirects" }
+      - { title: "Improve pages", body: "Collection copy, unique titles, own text" }
+      - { title: "Build links", body: "Blog, menus, breadcrumbs, clear anchors" }
+      - { title: "Go wider", body: "Markets, hreflang and AI-ready answers" }
+  - type: matrix
+    caption: "Where to start on Shopify SEO, by priority and effort."
+    cols: ["Lower effort", "Higher effort"]
+    rows: ["High priority", "Medium priority"]
+    cells:
+      - { title: "Do first", body: "Search Console, sitemap, domain, titles on top pages" }
+      - { title: "Plan next", body: "Collection copy and FAQs, theme links, speed and apps" }
+      - { title: "Quick wins", body: "Structured data checks, redirects and broken links" }
+      - { title: "Ongoing work", body: "Original product text, image alt text, blog content" }
 ---
 
 This Shopify SEO checklist is a practical, step-by-step list you can work through to help your store rank on Google and show up in AI answers. Shopify handles many basics for you, but it also has quirks: fixed URL prefixes, duplicate product paths and apps that slow pages down. Most stores we review have the same gaps. Work through the steps below in order, tick them off, and repeat the monthly routine at the end.

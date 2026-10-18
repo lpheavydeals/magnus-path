@@ -28,6 +28,27 @@ related:
     href: "/ecommerce-website-development/"
   - label: "Marketplace profit calculator"
     href: "/tools/marketplace-profit-calculator/"
+figures:
+  - type: mindmap
+    caption: "The four levers that reduce RTO and COD returns for Indian D2C stores."
+    center: "Cutting RTO"
+    branches:
+      - label: "Confirm"
+        items: ["OTP for COD orders", "WhatsApp confirmation", "Call high-value orders"]
+      - label: "Pay first"
+        items: ["Prepaid discount or free ship", "Partial prepaid", "Small COD handling charge"]
+      - label: "Deliver"
+        items: ["Pin-code auto-fill", "Best courier per pin code", "Tracking link on WhatsApp"]
+      - label: "Fix sources"
+        items: ["Accurate product pages", "Track RTO by campaign", "Rules for risky pin codes"]
+  - type: steps
+    caption: "A 30-day plan to reduce RTO, cheapest and highest-impact changes first."
+    steps:
+      - { title: "Week 1: measure", body: "RTO rate by pin code, product and campaign" }
+      - { title: "Week 2: confirm", body: "OTP and WhatsApp check on every COD order" }
+      - { title: "Week 3: payments", body: "Prepaid offer, partial prepaid, COD fee" }
+      - { title: "Week 4: sources", body: "Couriers by zone, product pages, campaigns" }
+      - { title: "Then repeat", body: "Compare full periods, not single days" }
 ---
 
 Knowing how to reduce RTO in ecommerce is one of the quickest ways for an Indian D2C brand to improve profit without selling a single extra unit. Every order that comes back unopened costs you forward shipping, return shipping, packaging and blocked stock, and it earns nothing. Most RTO comes from cash on delivery orders, so the fixes focus on confirming intent before dispatch, nudging buyers to prepaid and removing the reasons buyers refuse parcels. This guide explains each step and how to measure progress.

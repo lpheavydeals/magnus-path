@@ -28,6 +28,27 @@ related:
     href: "/amazon-seo/"
   - label: "Amazon PPC guide for beginners"
     href: "/blog/amazon-ppc-guide-india/"
+figures:
+  - type: mindmap
+    caption: "What it takes to sell on Amazon USA from India, at a glance."
+    center: "Amazon USA from India"
+    branches:
+      - label: "Paperwork"
+        items: ["IEC and GST", "Bank account and intl card", "Trademark for Brand Registry"]
+      - label: "Compliance"
+        items: ["FDA rules for food, cosmetics", "Safety tests for toys", "FCC for electronics"]
+      - label: "Logistics"
+        items: ["FBA or merchant fulfilled", "Freight forwarder", "Importer of record and duty"]
+      - label: "Selling"
+        items: ["US titles, inches and pounds", "Sponsored Products", "Price on full landed cost"]
+  - type: steps
+    caption: "A low-risk order for your Amazon USA launch."
+    steps:
+      - { title: "Shortlist products", body: "Manageable compliance, survives full costing" }
+      - { title: "Sort documents", body: "IEC, GST, LUT, bank account, card, trademark" }
+      - { title: "List for the US", body: "US-ready titles, images and keywords" }
+      - { title: "Ship small by air", body: "Test demand and the process first" }
+      - { title: "Reorder by sea", body: "Once you know which products sell" }
 ---
 
 Learning how to sell on Amazon USA from India starts with one program: Amazon Global Selling, which lets Indian businesses list on the US marketplace and reach American buyers. The process is well established, but it is more than a registration form. You need export documents, US-compliant products, a fulfilment and shipping plan, pricing that survives all the fees, and listings written for US shoppers. This guide covers each step in order, so you can plan before you spend money on inventory.

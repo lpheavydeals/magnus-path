@@ -30,6 +30,28 @@ related:
     href: "/blog/ecommerce-website-cost-in-india/"
   - label: "Ecommerce SEO services"
     href: "/ecommerce-seo/"
+figures:
+  - type: mindmap
+    caption: "What to weigh before you pick an ecommerce platform in India."
+    center: "Choosing a platform"
+    branches:
+      - label: "Cost"
+        items: ["Setup, apps and payment fees", "Running cost over 2–3 years", "Maintenance effort"]
+      - label: "India fit"
+        items: ["UPI, cards and COD", "Indian shipping aggregators", "Fast on mobile"]
+      - label: "Growth"
+        items: ["More products and traffic", "B2B features", "Export your data if you leave"]
+      - label: "Search"
+        items: ["Clean URLs", "Editable meta tags", "Structured data"]
+  - type: matrix
+    caption: "Which platform usually fits, by team skills and how complex your store is."
+    cols: ["Simple store", "Complex needs"]
+    rows: ["Non-technical team", "Technical help on hand"]
+    cells:
+      - { title: "Template Shopify", body: "Quick to launch, low upkeep; right for most new D2C brands" }
+      - { title: "Custom Shopify", body: "Custom sections, apps or B2B features once sales are steady" }
+      - { title: "WooCommerce", body: "Full control and WordPress content, but needs regular updates" }
+      - { title: "Magento or custom", body: "Large catalogues, complex pricing or heavy ERP integration" }
 ---
 
 The best ecommerce platform in India for most growing D2C brands is Shopify, with WooCommerce a close alternative for brands that want full control. But "best" depends on your catalogue, team, budget and sales channels. A seller who mostly sells through WhatsApp needs something different from an exporter with a thousand SKUs and B2B price lists. This guide compares the main options honestly and ends with clear recommendations by business type.

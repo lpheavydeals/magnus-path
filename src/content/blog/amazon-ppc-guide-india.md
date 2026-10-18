@@ -28,6 +28,28 @@ related:
     href: "/amazon-seo/"
   - label: "Flipkart ads guide for sellers"
     href: "/blog/flipkart-ads-guide/"
+figures:
+  - type: mindmap
+    caption: "The four parts of Amazon PPC a beginner needs to understand."
+    center: "Amazon PPC"
+    branches:
+      - label: "Campaigns"
+        items: ["Start with Sponsored Products", "Auto campaign to discover", "Manual campaign for control"]
+      - label: "Targeting"
+        items: ["Broad, phrase and exact", "Negative keywords", "Competitor ASINs"]
+      - label: "Metrics"
+        items: ["ACoS = spend ÷ ad sales", "ROAS = ad sales ÷ spend", "TACoS = spend ÷ total sales"]
+      - label: "Weekly work"
+        items: ["Harvest search terms", "Adjust bids to target ACoS", "Write down every change"]
+  - type: matrix
+    caption: "What to do with a keyword, based on its data and your break-even ACoS."
+    cols: ["ACoS below break-even", "ACoS above break-even"]
+    rows: ["Enough clicks to judge", "Only a few clicks so far"]
+    cells:
+      - { title: "Scale it", body: "Move it to exact match and raise the bid gently" }
+      - { title: "Cut or negate", body: "Lower the bid, or add it as a negative if it has no orders" }
+      - { title: "Keep watching", body: "Looks promising, but wait for more data" }
+      - { title: "Do not judge yet", body: "A few clicks without a sale is not a failure" }
 ---
 
 This Amazon PPC guide is written for Indian sellers who are new to advertising on Amazon and want a clear system rather than guesswork. Amazon PPC (pay-per-click) lets you show your products at the top of search results and on competitor product pages, and you pay only when a shopper clicks. Done well, it brings the first sales, reviews and organic rank. Done badly, it burns money quietly. Below we cover campaign types, structure, match types, negatives, bids, the key metrics and a weekly routine you can follow.

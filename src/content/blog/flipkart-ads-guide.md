@@ -30,6 +30,24 @@ related:
     href: "/tools/roas-calculator/"
   - label: "Marketplace profit calculator"
     href: "/tools/marketplace-profit-calculator/"
+figures:
+  - type: steps
+    caption: "How a sensible Flipkart ads campaign comes together, from listing to profit."
+    steps:
+      - { title: "Fix the listing", body: "Titles, images, price, reviews and stock" }
+      - { title: "Pick few products", body: "In stock, well rated, healthy margins" }
+      - { title: "Run auto first", body: "Two to three weeks to find search terms" }
+      - { title: "Move the winners", body: "Terms with orders go to manual campaigns" }
+      - { title: "Measure profit", body: "After fees, shipping, returns and RTO" }
+  - type: matrix
+    caption: "Reading Flipkart ads results with your margin, not ROAS alone."
+    cols: ["Low ROAS", "Good ROAS"]
+    rows: ["Healthy margin after fees", "Thin margin after fees"]
+    cells:
+      - { title: "Tune it", body: "Can still make money; trim weak search terms and bids" }
+      - { title: "Scale slowly", body: "Raise budgets gradually on proven products and terms" }
+      - { title: "Pause or fix", body: "Fix listing, price or targeting before spending more" }
+      - { title: "Check the maths", body: "A good ROAS can still lose money after fees and returns" }
 ---
 
 This Flipkart ads guide explains how sellers can use Flipkart's advertising tools to get more visibility and orders without burning money. Flipkart is one of India's largest marketplaces, and on busy categories your product can sit pages deep in search results even when it is a good product at a fair price. Ads are the fastest way to move it up. Used well, they bring in orders and build the sales history that helps your organic ranking. Used badly, they quietly eat your margin.

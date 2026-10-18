@@ -28,6 +28,24 @@ related:
     href: "/tools/marketplace-profit-calculator/"
   - label: "Flipkart ads guide for sellers"
     href: "/blog/flipkart-ads-guide/"
+figures:
+  - type: steps
+    caption: "How a brand gets onto quick commerce apps and grows city by city."
+    steps:
+      - { title: "Check the fit", body: "Everyday, repeat-buy products do best" }
+      - { title: "Get compliant", body: "GST, FSSAI, barcodes and proper labels" }
+      - { title: "Choose a route", body: "Apply direct or go through a distributor" }
+      - { title: "Launch small", body: "Few cities, hero products, watch stock" }
+      - { title: "Grow by city", body: "Add stock and ads where products move" }
+  - type: matrix
+    caption: "What to do next with a product in each city, based on stock and sales."
+    cols: ["Selling well", "Slow to sell"]
+    rows: ["Reliably in stock", "Often out of stock"]
+    cells:
+      - { title: "Push harder", body: "Raise stock and ads in that city, around festivals too" }
+      - { title: "Fix the content", body: "Check pack shot, title and price before more ads" }
+      - { title: "Fix supply first", body: "Stock gaps send shoppers to a competitor in seconds" }
+      - { title: "Pause and rethink", body: "Stop ads there; review the city, product or margin" }
 ---
 
 If you are wondering how to sell on Blinkit, Zepto or Swiggy Instamart, you are not alone. Quick commerce has changed how many Indian city shoppers buy groceries, snacks, personal care and everyday items, and brands of every size want a place on those apps. Getting listed is only the first step. Staying in stock across cities, pricing for a margin and staying visible on a crowded screen decide whether quick commerce becomes a real channel or an expensive experiment.

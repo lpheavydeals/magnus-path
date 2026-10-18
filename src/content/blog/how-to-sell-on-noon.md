@@ -36,6 +36,24 @@ related:
     href: "/uae/ecommerce-website-development-dubai/"
   - label: "Marketplace profit calculator"
     href: "/tools/marketplace-profit-calculator/"
+figures:
+  - type: mindmap
+    caption: "The four parts of selling on Noon in the UAE and Saudi Arabia."
+    center: "Selling on Noon"
+    branches:
+      - label: "Register"
+        items: ["Trade licence or CR", "VAT registration if needed", "Local business bank account"]
+      - label: "List"
+        items: ["Match or create listings", "English and Arabic content", "Barcodes where required"]
+      - label: "Fulfil"
+        items: ["Fulfilled by Noon", "Seller-fulfilled", "Plan for COD refusals"]
+      - label: "Grow"
+        items: ["Noon Ads with Arabic keywords", "Ramadan and Eid", "Yellow Friday"]
+  - type: venn
+    caption: "Fulfilled by Noon and seller-fulfilled suit different kinds of products."
+    left: { title: "Fulfilled by Noon", body: "Fast-moving stock; quicker delivery promise, but fees" }
+    right: { title: "Seller-fulfilled", body: "Bulky, slow or made-to-order items; you own delivery" }
+    overlap: "Many sellers mix both"
 ---
 
 If you are working out how to sell on Noon, the short version is this: register a seller account with a UAE or Saudi business, prepare clean product data in English and Arabic, price after Noon's fees, choose how you will fulfil orders, and use Noon Ads to get early visibility. Noon is one of the two main online marketplaces in the Gulf, alongside Amazon.ae and Amazon.sa, and many shoppers check both before they buy. This guide covers each step, from registration to peak sales, with honest notes on where the rules change.
