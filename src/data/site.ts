@@ -7,7 +7,7 @@ export const site = {
   url: 'https://www.magnuspath.com', // TODO: live domain
   phone: '+91 80984 25000', // Chennai head office
   phoneHref: 'tel:+918098425000',
-  whatsapp: 'https://wa.me/910000000000?text=Hi%20Magnus%20Path%2C%20I%27d%20like%20a%20free%20store%20audit', // TODO
+  whatsapp: 'https://wa.me/918098425000?text=Hi%20Magnus%20Path%2C%20I%27d%20like%20a%20free%20store%20audit',
   email: 'hello@magnuspath.com', // TODO
   address: {
     street: 'Street address', // TODO
