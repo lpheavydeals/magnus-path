@@ -214,3 +214,20 @@ Most results show a Maps pack: the Bengaluru Google Business Profile is essentia
 | /bangalore/performance-marketing-agency/ | performance marketing agency bangalore (210 / 10) | ppc company (210 / 10), Amazon agency mentions |
 | /bangalore/ecommerce-website-development/ (existing) | — | add ecommerce website development company in bangalore (210 / 38) |
 Full data: `research/keyword-lists/bengaluru/bengaluru-results.csv`.
+
+## London (Semrush UK data received 18 Oct 2026; office in London E18)
+Most results show a Maps pack: the London Google Business Profile is essential. London pages use `market: 'UK'` but no
+`twin` (the /uk/ pages target UK-wide searches; London pages target London searches).
+| Page | Primary (vol / KD) | Secondary | Total |
+|---|---|---|---|
+| /london/ecommerce-agency/ (London hub) | ecommerce agency london (1,000 / 40) | ecommerce marketing agency london (260 / 23) | 1,260 |
+| /london/ppc-agency/ | ppc agency london (2,900 / 30) | google ads agency london (1,000 / 20) | 3,900 |
+| /london/ecommerce-seo-agency/ | ecommerce seo agency london (1,000 / 32) | seo agency / company / services london (KD 51–54, long-term) | 1,000 + |
+| /london/wordpress-agency/ | wordpress agency london (1,300 / 18) | wordpress developer london (590 / 13), woocommerce agency london (320 / 9) | 2,210 |
+| /london/shopify-agency/ | shopify agency london (720 / 18) | shopify developer (390 / 10), shopify experts (210 / 18), shopify plus agency (210 / 9) | 1,530 |
+| /london/website-development-company/ | website development company london (480 / 29) | web design company london (1,600 / 47), web design east london (170 / 13) | 2,250 |
+| /london/website-maintenance/ | website maintenance london (590 / 8) | — | 590 |
+| /london/amazon-agency/ | amazon agency london (260 / 9) | amazon marketing agency london (210 / 9) | 470 |
+| /london/white-label-seo/ | white label seo london (320 / 9) | — | 320 |
+Skipped: digital marketing agency london (KD 75), web design agency london (KD 78). Phase 2 (optional): Essex pages
+(seo agency essex 1,900 / 30, web design essex 1,600 / 36).
