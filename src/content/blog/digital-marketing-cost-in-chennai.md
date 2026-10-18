@@ -168,7 +168,7 @@ Put the answers in a spreadsheet, one column per agency. Clear answers matter mo
 
 ## Timelines to plan around
 
-Different channels pay back on different clocks, and your budget should allow for that. Paid ads need a few weeks of testing before you judge them, and two to three months before you scale. Local SEO and SEO usually take several months to build steady rankings. Social media builds trust gradually. Setup work, such as tracking and landing pages, should be done in the first weeks so every later rupee of ad spend is measured.
+Different channels pay back on different clocks, and your budget should allow for that. Paid ads need a few weeks of testing before you judge them, and two to three months before you scale. Local SEO and SEO usually take several months to build steady rankings. Social media builds trust gradually. Setup work, such as tracking and landing pages, should be done in the first weeks so all later ad spend is measured.
 
 ## How we quote
 
