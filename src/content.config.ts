@@ -15,6 +15,7 @@ const blog = defineCollection({
     summary: z.string(),
     faqs: z.array(z.object({ q: z.string(), a: z.string() })),
     related: z.array(z.object({ label: z.string(), href: z.string() })),
+    figures: z.array(z.any()).optional(), // same shape as Figure in src/data/types.ts
   }),
 });
 export const collections = { blog };

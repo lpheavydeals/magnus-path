@@ -52,7 +52,7 @@ const schema: object[] = [
   <ProcessPanel steps={page.process} heading={page.headings.process} />
   {page.pricing && <PricingTeaser {...page.pricing} heading={page.headings.pricing ?? `Clear pricing for ${page.navLabel}`} />}
   {page.local && <LocalBlock {...page.local} />}
-  <Guide sections={page.guide} title={page.headings.guide} />
+  <Guide sections={page.guide} title={page.headings.guide} figures={page.figures} />
   <FAQ items={page.faqs} />
   <Related links={page.related} />
   <LeadForm market={page.market} />

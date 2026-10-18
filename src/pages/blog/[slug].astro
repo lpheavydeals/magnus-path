@@ -5,6 +5,7 @@ import Prose from '../../components/page/Prose.astro';
 import FAQ from '../../components/FAQ.astro';
 import Related from '../../components/page/Related.astro';
 import LeadForm from '../../components/LeadForm.astro';
+import SketchFigure from '../../components/figures/SketchFigure.astro';
 import { getCollection, render } from 'astro:content';
 import { site } from '../../data/site';
 import { breadcrumbSchema, faqSchema } from '../../data/schema';
@@ -40,7 +41,7 @@ const toc = headings.filter((h) => h.depth === 2);
       <ol>{toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
       <a class="btn btn--primary btn--sm" href="/free-ecommerce-audit/">Free store audit <span class="arrow" aria-hidden="true">→</span></a>
     </aside>
-    <div class="art__body"><Prose><Content /></Prose></div>
+    <div class="art__body">{d.figures?.[0] && <SketchFigure figure={d.figures[0]} n={1} />}<Prose><Content /></Prose>{d.figures?.slice(1).map((f, i) => <SketchFigure figure={f} n={i + 2} />)}</div>
   </div>
   <FAQ items={d.faqs} title="Frequently asked questions" />
   <Related links={d.related} heading="Related services" />

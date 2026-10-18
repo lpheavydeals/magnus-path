@@ -2,6 +2,14 @@ export type IconName = 'shopify' | 'website' | 'amazon' | 'marketplace' | 'socia
 
 export interface Link { label: string; href: string }
 
+/** Hand-drawn style diagrams shown inside a page's guide (real HTML text, crawlable). */
+export type Figure =
+  | { type: 'mindmap'; caption: string; center: string; branches: { label: string; items: string[] }[] }   // exactly 4 branches, 2–4 short items each
+  | { type: 'matrix'; caption: string; cols: [string, string]; rows: [string, string]; cells: { title: string; body: string }[] } // 4 cells: top-left, top-right, bottom-left, bottom-right
+  | { type: 'venn'; caption: string; left: { title: string; body: string }; right: { title: string; body: string }; overlap: string }
+  | { type: 'steps'; caption: string; steps: { title: string; body?: string }[] }; // 3–5 steps
+export type PlacedFigure = Figure & { after?: number }; // index of the guide section it follows (default 0)
+
 /** One data object = one landing page rendered by src/pages/[...slug].astro */
 export interface ServicePageData {
   slug: string;                       // e.g. 'shopify-development' or 'chennai/seo-company' (no leading/trailing slash)
@@ -27,6 +35,7 @@ export interface ServicePageData {
   guide: { heading: string; paragraphs: string[]; bullets?: string[] }[]; // long-form SEO content, 700+ words total
   related: Link[];                    // 3–5 internal links with keyword-rich labels
   faqs: { q: string; a: string }[];   // 6–8
+  figures?: PlacedFigure[];           // 1–2 diagrams placed inside the guide
   market?: 'US' | 'UK' | 'UAE' | 'AU';               // country-specific page: sets lang (en-US / en-GB), areaServed and offer currency
   twin?: string;                      // slug of the global page covering the same service (hreflang pair)
 }

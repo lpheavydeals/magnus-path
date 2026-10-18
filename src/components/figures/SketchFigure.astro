@@ -1,0 +1,168 @@
+---
+// Hand-drawn style diagram. All text is HTML (readable by search engines and screen readers);
+// the sketchy lines are inline SVG generated at build time.
+import '@fontsource/architects-daughter/latin-400.css';
+import type { Figure } from '../../data/types';
+import { rectPath, circlePath, squiggle } from '../../lib/sketch';
+interface Props { figure: Figure; n?: number }
+const { figure: fig, n } = Astro.props;
+const seed = fig.caption;
+const fills = ['#dcebe2', '#f6ddd1', '#d9e6ec', '#f7ebcc', '#ece3f3'];
+const box = (k: string) => rectPath(seed + k);
+const ring = (k: string, ...a: number[]) => circlePath(seed + k, ...a);
+const wave = (k: string) => squiggle(seed + k);
+---
+<figure class={`sk sk--${fig.type}`}>
+  {fig.type === 'mindmap' && (
+    <div class="mm">
+      <svg class="mm__arrows" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M43 44 Q36 38 27 27" /><path d="M27 27 l4 0.5 M27 27 l0.6 4" />
+        <path d="M57 44 Q64 38 73 27" /><path d="M73 27 l-4 0.5 M73 27 l-0.6 4" />
+        <path d="M43 56 Q36 62 27 73" /><path d="M27 73 l4 -0.5 M27 73 l0.6 -4" />
+        <path d="M57 56 Q64 62 73 73" /><path d="M73 73 l-4 -0.5 M73 73 l-0.6 -4" />
+      </svg>
+      <div class="mm__center">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">{ring('c', 50, 50, 47, 44).map((d, i) => <path d={d} class={i ? 'ln ln--2' : 'ln fill-peach'} />)}</svg>
+        <span>{fig.center}</span>
+      </div>
+      {fig.branches.slice(0, 4).map((b, i) => (
+        <div class={`mm__b mm__b--${i}`}>
+          <strong>{b.label}</strong>
+          <svg class="sq" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d={wave('b' + i)} /></svg>
+          <ul>{b.items.map((t) => <li>{t}</li>)}</ul>
+        </div>
+      ))}
+    </div>
+  )}
+
+  {fig.type === 'matrix' && (
+    <div class="mx">
+      <span class="mx__corner" aria-hidden="true"></span>
+      {fig.cols.map((c) => <span class="mx__col">{c}</span>)}
+      {[0, 1].map((r) => (
+        <>
+          <span class="mx__row">{fig.rows[r]}</span>
+          {[0, 1].map((c) => {
+            const cell = fig.cells[r * 2 + c];
+            return (
+              <div class="mx__cell" style={`--fill:${fills[r * 2 + c]}`}>
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">{box('m' + r + c).map((d, i) => <path d={d} class={i ? 'ln ln--2' : 'ln'} />)}</svg>
+                <strong>{cell.title}</strong>
+                <span>{cell.body}</span>
+              </div>
+            );
+          })}
+        </>
+      ))}
+    </div>
+  )}
+
+  {fig.type === 'venn' && (
+    <div class="vn">
+      <svg class="vn__h" viewBox="0 0 200 110" aria-hidden="true">
+        {ring('l', 72, 55, 52, 50).map((d, i) => <path d={d} class={i ? 'ln ln--2' : 'ln fill-peach-a'} />)}
+        {ring('r', 128, 55, 52, 50).map((d, i) => <path d={d} class={i ? 'ln ln--2' : 'ln fill-blue-a'} />)}
+      </svg>
+      <svg class="vn__v" viewBox="0 0 110 200" aria-hidden="true">
+        {ring('t', 55, 70, 50, 52).map((d, i) => <path d={d} class={i ? 'ln ln--2' : 'ln fill-peach-a'} />)}
+        {ring('u', 55, 130, 50, 52).map((d, i) => <path d={d} class={i ? 'ln ln--2' : 'ln fill-blue-a'} />)}
+      </svg>
+      <div class="vn__l"><strong>{fig.left.title}</strong><span>{fig.left.body}</span></div>
+      <div class="vn__m"><strong>{fig.overlap}</strong></div>
+      <div class="vn__r"><strong>{fig.right.title}</strong><span>{fig.right.body}</span></div>
+    </div>
+  )}
+
+  {fig.type === 'steps' && (
+    <ol class="st">
+      {fig.steps.map((s, i) => (
+        <li style={`--fill:${fills[i % fills.length]}`}>
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">{box('s' + i).map((d, k) => <path d={d} class={k ? 'ln ln--2' : 'ln'} />)}</svg>
+          <em>{String(i + 1).padStart(2, '0')}</em>
+          <strong>{s.title}</strong>
+          {s.body && <span>{s.body}</span>}
+        </li>
+      ))}
+    </ol>
+  )}
+
+  <figcaption>{n ? <b>Figure {n}</b> : null} {fig.caption}</figcaption>
+</figure>
+
+<style>
+  .sk { container-type: inline-size; --ink: #1d1d1f; --hand: 'Architects Daughter', 'Comic Sans MS', cursive; margin: 8px 0 4px; padding: clamp(18px, 3vw, 34px); background: #fff; border-radius: 22px; border: 1px solid var(--line); display: grid; gap: 18px; }
+  .sk svg .ln { fill: none; stroke: var(--ink); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+  .sk svg .ln--2 { stroke-width: 1.2; opacity: .7; }
+  .sk svg .ln.fill-peach { fill: #f6ddd1; }
+  .sk svg .ln.fill-peach-a { fill: rgba(241, 100, 54, .13); }
+  .sk svg .ln.fill-blue-a { fill: rgba(91, 143, 160, .17); }
+  .sk strong, .sk li, .sk span, .sk em { font-family: var(--hand); letter-spacing: .01em; }
+  .sk figcaption { font-size: 14.5px; color: var(--muted); }
+  .sk figcaption b { color: var(--ink); margin-right: 4px; }
+
+  /* Mind map */
+  .mm { position: relative; display: grid; gap: 22px; }
+  .mm__arrows { display: none; }
+  .mm__center { position: relative; justify-self: center; display: grid; place-items: center; min-width: 210px; min-height: 104px; padding: 20px 30px; }
+  .mm__center svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .mm__center span { position: relative; font-family: var(--hand); font-size: clamp(1.25rem, 2.4vw, 1.7rem); text-transform: uppercase; text-align: center; line-height: 1.15; }
+  .mm__b { display: grid; justify-items: center; gap: 4px; text-align: center; }
+  .mm__b strong { color: var(--accent-ink); font-size: 1.3rem; text-transform: uppercase; }
+  .mm__b .sq { width: 120px; height: 10px; }
+  .mm__b .sq path { fill: none; stroke: #5b8fa0; stroke-width: 2; vector-effect: non-scaling-stroke; }
+  .mm__b ul { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 4px; font-size: 1.02rem; }
+  @container (min-width: 480px) { .mm { grid-template-columns: 1fr 1fr; } .mm__center { grid-column: 1 / -1; } }
+  @container (min-width: 700px) {
+    .mm { grid-template-columns: 1fr minmax(220px, 300px) 1fr; grid-template-areas: 'a . b' '. c .' 'd . e'; row-gap: 6px; min-height: 440px; }
+    .mm__arrows { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
+    .mm__arrows path { fill: none; stroke: var(--ink); stroke-width: 1.8; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+    .mm__center { grid-column: 2; grid-row: 2; align-self: center; }
+    .mm__b--0 { grid-area: a; } .mm__b--1 { grid-area: b; } .mm__b--2 { grid-area: d; } .mm__b--3 { grid-area: e; }
+    .mm__b--0, .mm__b--1 { align-self: start; } .mm__b--2, .mm__b--3 { align-self: end; }
+  }
+
+  /* 2 × 2 matrix */
+  .mx { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: stretch; }
+  .mx__corner { display: none; }
+  .mx__row { grid-column: 1 / -1; margin-top: 6px; }
+  @container (min-width: 480px) {
+    .mx { grid-template-columns: minmax(80px, 120px) 1fr 1fr; }
+    .mx__corner { display: block; }
+    .mx__row { grid-column: auto; margin-top: 0; }
+  }
+  .mx__col, .mx__row { font-family: var(--hand); text-transform: uppercase; text-align: center; align-self: center; font-size: clamp(.8rem, 1.6vw, 1.05rem); line-height: 1.2; }
+  .mx__cell { position: relative; display: grid; align-content: center; justify-items: center; gap: 6px; text-align: center; min-height: 140px; padding: 18px 14px; background: var(--fill); border-radius: 6px; }
+  .mx__cell svg { position: absolute; inset: -3px; width: calc(100% + 6px); height: calc(100% + 6px); }
+  .mx__cell strong { position: relative; font-size: clamp(.95rem, 1.9vw, 1.25rem); text-transform: uppercase; }
+  .mx__cell span { position: relative; color: #4a4d52; font-size: clamp(.85rem, 1.6vw, 1rem); line-height: 1.35; }
+
+  /* Venn */
+  .vn { position: relative; display: grid; aspect-ratio: 110 / 200; max-width: 440px; width: 100%; justify-self: center; }
+  .vn > svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .vn__h { display: none; }
+  .vn > div { position: absolute; left: 50%; transform: translate(-50%, -50%); width: 66%; display: grid; gap: 6px; text-align: center; }
+  .vn strong { text-transform: uppercase; font-size: clamp(.95rem, 2vw, 1.2rem); line-height: 1.2; }
+  .vn span { color: #4a4d52; font-size: clamp(.85rem, 1.7vw, 1rem); line-height: 1.35; }
+  .vn > .vn__l { top: 27%; } .vn > .vn__m { top: 50%; width: 48%; } .vn > .vn__r { top: 73%; }
+  .vn__m strong { color: var(--accent-ink); }
+  @container (min-width: 600px) {
+    .vn { aspect-ratio: 200 / 110; max-width: 900px; }
+    .vn__v { display: none; } .vn__h { display: block; }
+    .vn > div { width: 27%; }
+    .vn > .vn__l { top: 50%; left: 25%; } .vn > .vn__m { top: 50%; left: 50%; width: 20%; } .vn > .vn__r { top: 50%; left: 75%; }
+  }
+
+  /* Steps */
+  .st { list-style: none; margin: 0 auto; padding: 0; display: grid; gap: 30px; width: 100%; max-width: 460px; }
+  .st li { position: relative; display: grid; gap: 6px; padding: 20px 18px; background: var(--fill); border-radius: 6px; text-align: center; }
+  .st li svg { position: absolute; inset: -4px; width: calc(100% + 8px); height: calc(100% + 8px); }
+  .st li > * { position: relative; }
+  .st em { font-style: normal; color: var(--accent-ink); font-size: 1rem; }
+  .st strong { font-size: 1.12rem; text-transform: uppercase; line-height: 1.2; }
+  .st span { color: #4a4d52; font-size: .98rem; line-height: 1.35; }
+  .st li:not(:last-child)::after { content: '↓'; position: absolute; left: 50%; bottom: -30px; transform: translateX(-50%); font-family: var(--hand); font-size: 1.5rem; }
+  @container (min-width: 640px) {
+    .st { grid-auto-flow: column; grid-auto-columns: 1fr; gap: 34px; max-width: none; }
+    .st li:not(:last-child)::after { content: '→'; left: auto; right: -30px; bottom: auto; top: 50%; transform: translateY(-50%); }
+  }
+</style>

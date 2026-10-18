@@ -47,6 +47,21 @@ export const chatgptAdsPages: ServicePageData[] = [
       note: 'ChatGPT ads management starts at ₹25,000 a month. Ad spend is separate and paid directly to OpenAI from your own account and card. We never mark it up or hold it.',
       items: ['Eligibility and ad policy check', 'OpenAI Ads Manager account setup', 'Pixel, Conversions API and GA4 tracking', 'Ad copy and creative for conversational intent', 'Weekly optimisation of bids, budgets and ads', 'Monthly report against Meta and Google results'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'How a ChatGPT ads campaign fits together.', center: 'ChatGPT ads', after: 0, branches: [
+        { label: 'Set up', items: ['OpenAI Ads Manager', 'Billing country check', 'Policy review'] },
+        { label: 'Track', items: ['OpenAI pixel', 'Conversions API', 'UTMs in GA4'] },
+        { label: 'Create', items: ['Headline + image', 'Conversational copy', 'Matching landing page'] },
+        { label: 'Judge', items: ['Cost per order', 'Compare with Meta, Google', 'Move budget weekly'] },
+      ] },
+      { type: 'matrix', caption: 'Who should test ChatGPT ads now, and who should wait.', after: 1, cols: ['Low margin', 'Healthy margin'], rows: ['Product people research', 'Impulse or commodity buy'], cells: [
+        { title: 'Small test', body: 'Learn cheaply, judge on cost per order' },
+        { title: 'Test now', body: 'Best fit: questions lead to your product' },
+        { title: 'Wait', body: 'Meta and Google will do better for now' },
+        { title: 'Maybe later', body: 'Revisit once targeting options grow' },
+      ] },
+      { type: 'venn', caption: 'Paid ChatGPT ads and organic AI search work best together.', after: 2, left: { title: 'ChatGPT ads', body: 'paid, labelled, below the answer, starts today' }, right: { title: 'AI search optimisation', body: 'earned, inside the answer, builds over months' }, overlap: 'Seen whenever buyers ask AI' },
+    ],
     guide: [
       {
         heading: 'What ChatGPT ads are, and how they differ from Google and from AI search optimisation',

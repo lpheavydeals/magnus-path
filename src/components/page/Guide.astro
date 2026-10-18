@@ -1,6 +1,9 @@
 ---
-interface Props { sections: { heading: string; paragraphs: string[]; bullets?: string[] }[]; title: string; }
-const { sections, title } = Astro.props;
+import SketchFigure from '../figures/SketchFigure.astro';
+import type { PlacedFigure } from '../../data/types';
+interface Props { sections: { heading: string; paragraphs: string[]; bullets?: string[] }[]; title: string; figures?: PlacedFigure[] }
+const { sections, title, figures = [] } = Astro.props;
+const numbered = figures.map((f, i) => ({ f, n: i + 1, at: Math.min(f.after ?? 0, sections.length - 1) }));
 const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 ---
 <section class="section gde">
@@ -12,12 +15,15 @@ const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').repla
     </aside>
     <article class="gde__body">
       <h2>{title}</h2>
-      {sections.map((s) => (
+      {sections.map((s, i) => (
+        <>
         <section id={slugify(s.heading)}>
           <h3>{s.heading}</h3>
           {s.paragraphs.map((p) => <p>{p}</p>)}
           {s.bullets && <ul>{s.bullets.map((b) => <li>{b}</li>)}</ul>}
         </section>
+        {numbered.filter((x) => x.at === i).map((x) => <SketchFigure figure={x.f} n={x.n} />)}
+        </>
       ))}
     </article>
   </div>
@@ -25,7 +31,8 @@ const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').repla
 <style>
   .gde__grid { display: grid; gap: 40px; }
   .gde__toc { display: none; }
-  .gde__body { max-width: 72ch; display: grid; gap: 34px; }
+  .gde__body { display: grid; gap: 34px; min-width: 0; }
+  .gde__body > h2, .gde__body > section { max-width: 72ch; }
   .gde__body h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); }
   .gde__body section { display: grid; gap: 14px; scroll-margin-top: 110px; }
   .gde__body h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
