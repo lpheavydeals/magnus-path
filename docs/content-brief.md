@@ -166,3 +166,4 @@ Never invent a street address; use the city name only in copy (the full addresse
 
 ## ChatGPT ads US (18 Oct 2026)
 - Extra allowed related URLs: /us/chatgpt-ads-agency/, /blog/how-to-advertise-on-chatgpt/, /chatgpt-ads-agency/
+- Extra allowed related URL: /uk/chatgpt-ads-agency/

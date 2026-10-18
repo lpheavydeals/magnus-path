@@ -47,6 +47,7 @@ export const globalPages: ServicePageData[] = [
       { title: 'WordPress Agency', href: '/uk/wordpress-agency/', body: 'WordPress builds, custom themes and blocks, and white-label development for UK agencies.', icon: 'website' },
       { title: 'WooCommerce Agency', href: '/uk/woocommerce-agency/', body: 'WooCommerce store builds, migrations and fixes with UK payments, VAT and delivery set up properly.', icon: 'marketplace' },
       { title: 'WordPress Support', href: '/uk/wordpress-support/', body: 'Monthly WordPress and WooCommerce support: updates tested on staging, backups, security checks and small changes.', icon: 'website' },
+      { title: 'ChatGPT Ads', href: '/uk/chatgpt-ads-agency/', body: 'Campaigns in OpenAI’s Ads Manager that place your brand below relevant ChatGPT answers, quoted in GBP.', icon: 'ai' },
     ],
     process: [
       { title: 'Free audit and video call', body: 'We review your store, Amazon account, ad accounts or agency workload, then walk you through what we found on a call booked in your UK morning.' },
