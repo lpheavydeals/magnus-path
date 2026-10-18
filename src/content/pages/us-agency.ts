@@ -60,6 +60,15 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'Overnight delivery', body: 'You send requests during your day, we work through your night, and you review finished tasks the next morning.' },
     ],
     platforms: ['Shopify', 'Shopify Plus', 'Amazon Seller Central', 'Amazon Ads', 'Google Ads', 'Meta Ads', 'GA4', 'Klaviyo', 'WordPress'],
+    figures: [
+      { type: 'mindmap', caption: 'What one remote team covers for US brands and US agencies.', after: 1, center: 'US ecommerce growth', branches: [
+        { label: 'Shopify', items: ['Builds and Shopify Plus work', 'Speed and fixes', 'Shop Pay and sales tax setup'] },
+        { label: 'Amazon.com', items: ['PPC built by product margin', 'Listings and Seller Central', 'Stock checked before ads'] },
+        { label: 'Search', items: ['Shopify and e-commerce SEO', 'Generative engine optimization'] },
+        { label: 'For agencies', items: ['White-label SEO', 'White-label web development'] },
+      ] },
+      { type: 'venn', caption: 'How the time difference turns into overnight delivery.', after: 2, left: { title: 'Your US workday', body: 'send requests and feedback, review finished work' }, right: { title: 'Our Chennai workday', body: 'build, fix and report while you sleep' }, overlap: 'Short call in your Eastern morning' },
+    ],
     guide: [
       {
         heading: 'Who this page is for',
@@ -186,6 +195,20 @@ export const usAgencyPages: ServicePageData[] = [
       note: 'White label SEO starts at US$350 a month per client site. Larger sites, competitive markets and extra content or links are quoted per site in USD. You set your own resale price.',
       items: ['Technical audit and prioritized fix list', 'Monthly on-page optimization', 'Content and ethical link building by scope', 'Local SEO for US clients where relevant', 'Unbranded monthly report under your logo', 'Mutual NDA and no client contact'],
     },
+    figures: [
+      { type: 'matrix', caption: 'Who does what when you resell SEO under your own brand.', after: 0, cols: ['Your agency', 'Our team'], rows: ['In front of the client', 'Behind the scenes'], cells: [
+        { title: 'You own it', body: 'Sales, pricing, client calls and reports with your logo' },
+        { title: 'Invisible', body: 'No client contact and no name on any report' },
+        { title: 'You approve', body: 'Audit and keyword map reviewed before work starts' },
+        { title: 'We deliver', body: 'Technical fixes, on-page work, content and outreach links' },
+      ] },
+      { type: 'mindmap', caption: 'What a monthly white label SEO program covers for each client site.', after: 4, center: 'Monthly SEO program', branches: [
+        { label: 'Technical', items: ['Site audit and fixes', 'Keyword map per site'] },
+        { label: 'On-page', items: ['Titles and page updates', 'New pages and articles'] },
+        { label: 'Links', items: ['Outreach to real sites', 'Every link listed by URL'] },
+        { label: 'Local SEO', items: ['Google Business Profile', 'US directory citations', 'Review request plans'] },
+      ] },
+    ],
     guide: [
       {
         heading: 'How white label SEO services work for a US agency',
@@ -319,6 +342,15 @@ export const usAgencyPages: ServicePageData[] = [
       note: 'SEO outsourcing starts at US$500 a month for one website, with a defined scope of technical, on-page, content and link work. Larger sites and competitive markets are quoted in USD after an audit. Agencies reselling SEO should see our white label pricing.',
       items: ['Technical audit and monthly fixes', 'Keyword map and 90-day plan', 'On-page optimization and content', 'Outreach-based link building', 'Task-level monthly report and call'],
     },
+    figures: [
+      { type: 'venn', caption: 'Partial outsourcing: keep the decisions in-house and hand over the hours.', after: 0, left: { title: 'Your in-house marketer', body: 'strategy, approvals and brand voice' }, right: { title: 'Our Chennai SEO team', body: 'technical fixes, content production and outreach' }, overlap: 'One monthly scope, in writing' },
+      { type: 'matrix', caption: 'Red flags and good signs to look for in any SEO provider.', after: 5, cols: ['Red flag', 'Good sign'], rows: ['What they promise', 'What they report'], cells: [
+        { title: 'Fixed rankings', body: 'Page one in 30 days, or lots of links for a tiny fee' },
+        { title: 'Defined scope', body: 'Fixes, content and outreach agreed each month' },
+        { title: 'Easy keywords', body: 'Rankings for low-value terms you never chose' },
+        { title: 'Real results', body: 'Traffic, leads or revenue, plus a list of work done' },
+      ] },
+    ],
     guide: [
       {
         heading: 'When it makes sense to outsource SEO',
@@ -444,6 +476,21 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'QA, launch and handover', body: 'Testing, fixes, launch support and documentation. Code, accounts and credentials stay with you.' },
     ],
     platforms: ['Shopify', 'Shopify Plus', 'WordPress', 'WooCommerce', 'Figma', 'Next.js', 'Astro', 'GitHub', 'Jira'],
+    figures: [
+      { type: 'matrix', caption: 'When to keep a build in-house and when to hand it to a white label team.', after: 1, cols: ['Platform you know well', 'Unfamiliar platform'], rows: ['Team has spare capacity', 'Projects are queuing up'], cells: [
+        { title: 'Keep in-house', body: 'Your team has the time and the skills' },
+        { title: 'Outsource it', body: 'Avoid learning on a client’s budget' },
+        { title: 'Overflow help', body: 'Hand extra projects to white label developers' },
+        { title: 'Outsource fully', body: 'Keep strategy and design, hand over the code' },
+      ] },
+      { type: 'steps', caption: 'The Shopify details we check before a client store goes live.', after: 2, steps: [
+        { title: 'Checkout', body: 'Test orders go through end to end' },
+        { title: 'Taxes', body: 'Sales tax settings match the client’s setup' },
+        { title: 'Shipping rates', body: 'Rates and zones match what actually ships' },
+        { title: 'Emails', body: 'Order and shipping notifications read right' },
+        { title: 'Analytics', body: 'Purchases recorded correctly' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What white label web development is',

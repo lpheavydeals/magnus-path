@@ -23,11 +23,20 @@ const faqs = [
   { q: 'Is my data saved?', a: 'No. The calculator runs entirely in your browser. Nothing you type is sent to us or stored anywhere.' },
 ];
 const schema = [breadcrumbSchema([...trail, { label: 'ROAS Calculator', href: '/tools/roas-calculator/' }]), faqSchema(faqs), { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'ROAS & Break-even ACoS Calculator', url: `${site.url}/tools/roas-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } }];
+const figures = [
+  { type: 'venn', caption: 'ROAS and ACoS are the same numbers, read in opposite directions.', after: 1, left: { title: 'ROAS', body: 'revenue ÷ ad spend; higher is better' }, right: { title: 'ACoS', body: 'ad spend ÷ revenue; lower is better' }, overlap: 'Both judged against your margin' },
+  { type: 'matrix', caption: 'What to do with a campaign once you know its break-even ROAS.', after: 2, cols: ['Below break-even', 'Above break-even'], rows: ['Enough data', 'Too little data'], cells: [
+    { title: 'Fix or pause', body: 'Cut wasted keywords, fix the page, lower bids' },
+    { title: 'Scale', body: 'Raise budget slowly and watch total profit' },
+    { title: 'Wait', body: 'Give it more clicks before judging' },
+    { title: 'Promising', body: 'Keep running; confirm before scaling' },
+  ] },
+];
 ---
 <Base title="ROAS Calculator & Break-even ACoS Calculator | Magnus Path" description="Free ROAS calculator for e-commerce: work out ROAS, ACoS, break-even ROAS and profit after ad spend for Meta, Google, Amazon and Flipkart ads." schema={schema}>
   <SimpleHero eyebrow="Free tool" h1="ROAS Calculator With *Break-even ACoS*" intro="Enter your ad spend, revenue and margin to see your ROAS, ACoS, break-even point and real profit after ads. Works for Meta, Google, Amazon, Flipkart and quick-commerce campaigns." trail={trail} current="ROAS Calculator" />
   <RoasCalc />
-  <Guide sections={guide} title="ROAS, ACoS and break-even explained" />
+  <Guide sections={guide} figures={figures as any} title="ROAS, ACoS and break-even explained" />
   <FAQ items={faqs} title="ROAS calculator questions" />
   <Related links={[{ label: 'Amazon advertising agency', href: '/amazon-marketing-agency/' }, { label: 'Performance marketing agency in India', href: '/performance-marketing/' }, { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }, { label: 'Flipkart ads management', href: '/flipkart-account-management/' }]} />
   <LeadForm heading="Want a better ROAS?" sub="Send us your store or ad account. Within 24 hours we show you where spend is wasted and what to change first." />

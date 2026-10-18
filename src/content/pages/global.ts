@@ -55,6 +55,15 @@ export const globalPages: ServicePageData[] = [
       { title: 'Run, report and review', body: 'Daily account management, a monthly report and a review call. Changes requested in your morning are usually done the same working day.' },
     ],
     platforms: ['Shopify', 'Shopify Plus', 'Amazon.co.uk', 'Meta Ads', 'Google Ads', 'Google Merchant Center', 'GA4', 'Klaviyo', 'WordPress'],
+    figures: [
+      { type: 'mindmap', caption: 'The UK services we run as one plan, with one report in GBP.', after: 1, center: 'UK ecommerce growth', branches: [
+        { label: 'Shopify store', items: ['Builds, fixes and speed work', 'VAT-inclusive prices', 'Klarna and Clearpay'] },
+        { label: 'Amazon.co.uk', items: ['Ads built by product margin', 'Listings and Seller Central', 'Stock checked before ads'] },
+        { label: 'Search', items: ['Ecommerce SEO for Google', 'AI search optimisation', 'British English copy'] },
+        { label: 'Meta & Google', items: ['Consent-aware tracking', 'Black Friday plans made early', 'Boxing Day budgets and stock'] },
+      ] },
+      { type: 'venn', caption: 'How our London office and Chennai team share the work for UK clients.', after: 5, left: { title: 'London office', body: 'meet us by appointment to plan and review the work' }, right: { title: 'Chennai delivery team', body: 'does most of the work, 4.5 to 5.5 hours ahead of the UK' }, overlap: 'Morning requests usually same day' },
+    ],
     guide: [
       {
         heading: 'Ecommerce agency UK or offshore: what to look for',
@@ -182,6 +191,20 @@ export const globalPages: ServicePageData[] = [
       { title: 'Run, report and review', body: 'Day-to-day management through your afternoon, a monthly report in AUD and a review call to agree the next month’s priorities.' },
     ],
     platforms: ['Shopify', 'Shopify Plus', 'Amazon.com.au', 'Meta Ads', 'Google Ads', 'Google Merchant Center', 'GA4', 'Klaviyo', 'WordPress'],
+    figures: [
+      { type: 'matrix', caption: 'Two kinds of Australian clients, and what each one keeps.', after: 0, cols: ['Australian brand', 'Australian agency'], rows: ['What our Chennai team does', 'What stays yours'], cells: [
+        { title: 'One plan', body: 'Shopify, Amazon.com.au and search run together' },
+        { title: 'Builds for you', body: 'Shopify and WordPress work under your name, under NDA' },
+        { title: 'Your accounts', body: 'Every account, theme and data set, with reports in AUD' },
+        { title: 'Your client', body: 'We never contact them, and the code stays in your name' },
+      ] },
+      { type: 'mindmap', caption: 'The local details an Australian store needs before you spend more on ads.', after: 1, center: 'Australian online store', branches: [
+        { label: 'Checkout', items: ['AUD prices including GST', 'Afterpay, Zip or Klarna', 'Delivery costs shown early'] },
+        { label: 'Shipping', items: ['Australia Post or Sendle', 'Rates match what arrives', 'Times clear before checkout'] },
+        { label: 'Sales calendar', items: ['Click Frenzy and EOFY', 'Black Friday, Cyber Monday', 'Boxing Day'] },
+        { label: 'Channels', items: ['Shopify and Amazon.com.au', 'Meta, Google and email', 'SEO and AI answers'] },
+      ] },
+    ],
     guide: [
       {
         heading: 'Choosing an ecommerce agency in Australia or offshore',
@@ -300,6 +323,15 @@ export const globalPages: ServicePageData[] = [
       { title: 'Plan and AED quote', body: 'A written scope with channels, monthly tasks and responsibilities, quoted in AED. No packages padded with work you do not need.' },
       { title: 'Onboarding', body: 'Seller Central, Noon, store and ad account access, a tracking check, a shared project board and a WhatsApp or Slack channel.' },
       { title: 'Run and review', body: 'Daily account management in your hours, a monthly report across all channels and a review call to set the next month’s priorities.' },
+    ],
+    figures: [
+      { type: 'venn', caption: 'Run Amazon.ae and Noon together so you never undercut yourself.', after: 1, left: { title: 'Amazon.ae', body: 'Sponsored ads driven by search terms and listing quality' }, right: { title: 'Noon', body: 'its own seller account, content rules and Noon Ads' }, overlap: 'One plan for price, stock, promos' },
+      { type: 'steps', caption: 'Handling a cash-on-delivery order so it turns into a paid, delivered sale.', after: 3, steps: [
+        { title: 'Order placed', body: 'Prepaid options nudged at checkout' },
+        { title: 'Confirm it', body: 'A quick check by WhatsApp or SMS' },
+        { title: 'Deliver on time', body: 'Courier updates match the promised date' },
+        { title: 'Track failures', body: 'COD refusals reported by channel' },
+      ] },
     ],
     guide: [
       {

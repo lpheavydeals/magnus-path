@@ -48,6 +48,15 @@ export const businessWebsitePages: ServicePageData[] = [
       note: 'A 5–10 page business website starts at ₹35,000. Custom corporate sites with product catalogues, multilingual content, careers or investor sections usually cost ₹75,000–2 lakh. You get a fixed quote after a free consultation.',
       items: ['5–10 page responsive business website', 'Mobile-first custom design', 'Enquiry, RFQ and WhatsApp lead capture', 'On-page SEO, speed and analytics setup', '30 days of post-launch support'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'The questions a buyer wants answered before they call you.', center: 'What buyers check first', after: 0, branches: [
+        { label: 'What you offer', items: ['Products or services', 'Specifications and uses'] },
+        { label: 'Proof', items: ['Who you already serve', 'Certifications you hold'] },
+        { label: 'Capacity', items: ['Volume you can handle', 'Locations you cover'] },
+        { label: 'Next step', items: ['How to get a quote', 'RFQ or enquiry form'] },
+      ] },
+      { type: 'venn', caption: 'SEO brings buyers in and tracking shows which pages turn them into enquiries.', after: 4, left: { title: 'SEO', body: 'a page per offering, schema and the words buyers search with' }, right: { title: 'Lead tracking', body: 'forms, calls, WhatsApp clicks and downloads in GA4' }, overlap: 'Know which pages bring enquiries' },
+    ],
     guide: [
       {
         heading: 'What a corporate website needs to do in 2026',
@@ -172,6 +181,20 @@ export const businessWebsitePages: ServicePageData[] = [
       note: 'WordPress websites start at ₹30,000 for a business site on a customised block theme. Larger sites with custom blocks, multilingual content or migrations are quoted after a free consultation. Online stores are built on WooCommerce and priced separately.',
       items: ['Custom-designed WordPress theme', 'Editable Gutenberg blocks and patterns', 'Rank Math or Yoast SEO setup', 'Caching, security and backup setup', '30 days of post-launch support'],
     },
+    figures: [
+      { type: 'matrix', caption: 'When a page builder is fine and when a custom block theme is the better build.', after: 1, cols: ['Small site, prototype', 'Growing business site'], rows: ['Editors change layouts', 'Editors change text only'], cells: [
+        { title: 'Page builder', body: 'Quick visual layouts; accept the extra weight' },
+        { title: 'Locked blocks', body: 'Custom blocks stop editors breaking the design' },
+        { title: 'Either works', body: 'Keep plugins few whichever you choose' },
+        { title: 'Custom block theme', body: 'Lean pages, design locked, text and images open' },
+      ] },
+      { type: 'steps', caption: 'How a careful move from Wix, Squarespace or an old CMS to WordPress works.', after: 6, steps: [
+        { title: 'Move content', body: 'Pages, posts, media and metadata' },
+        { title: 'Map old URLs', body: 'A 301 redirect to every new address' },
+        { title: 'Test on staging', body: 'Check pages and forms before the switch' },
+        { title: 'Watch for errors', body: 'Check Search Console after launch' },
+      ] },
+    ],
     guide: [
       {
         heading: 'When WordPress is the right choice',

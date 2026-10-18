@@ -23,11 +23,26 @@ const faqs = [
   { q: 'Does the calculator include TCS and TDS?', a: 'No. Tax collected at source and tax deducted at source are usually adjustable against your tax liability, so they affect cash flow more than profit. They are left out to keep the calculation simple.' },
 ];
 const schema = [breadcrumbSchema([...trail, { label: 'Marketplace Profit Calculator', href: '/tools/marketplace-profit-calculator/' }]), faqSchema(faqs), { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Amazon & Flipkart Profit Calculator', url: `${site.url}/tools/marketplace-profit-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } }];
+const figures = [
+  { type: 'steps', caption: 'How a marketplace sale turns into profit, step by step.', after: 1, steps: [
+    { title: 'Selling price', body: 'What the customer pays' },
+    { title: 'Remove GST', body: 'The tax is not yours' },
+    { title: 'Fees', body: 'Commission, closing and shipping' },
+    { title: 'Costs', body: 'Product, packing and returns' },
+    { title: 'Profit', body: 'What is left before ads' },
+  ] },
+  { type: 'matrix', caption: 'Using break-even ACoS to decide how hard to advertise each product.', after: 3, cols: ['Low margin', 'High margin'], rows: ['Sells well already', 'Slow seller'], cells: [
+    { title: 'Defend', body: 'Small, tight ads on your best keywords' },
+    { title: 'Push', body: 'Room to spend: grow share with ads' },
+    { title: 'Rethink', body: 'Fix price or fees before any ads' },
+    { title: 'Test', body: 'Short ad test with a strict ACoS limit' },
+  ] },
+];
 ---
 <Base title="Amazon & Flipkart Profit Calculator (India) | Magnus Path" description="Free Amazon and Flipkart profit calculator for Indian sellers: work out payout, profit per unit, margin and break-even ACoS after fees, GST, ads and returns." schema={schema}>
   <SimpleHero eyebrow="Free tool" h1="Amazon & Flipkart *Profit Calculator*" intro="See what you really earn per unit on Amazon India or Flipkart after commission, fees, GST, ads and returns, and how much you can afford to spend on ads before a sale stops making money." trail={trail} current="Marketplace Profit Calculator" />
   <ProfitCalc />
-  <Guide sections={guide} title="How marketplace profit really works" />
+  <Guide sections={guide} figures={figures as any} title="How marketplace profit really works" />
   <FAQ items={faqs} title="Profit calculator questions" />
   <Related links={[{ label: 'Amazon account management services', href: '/amazon-account-management/' }, { label: 'Flipkart account management services', href: '/flipkart-account-management/' }, { label: 'ROAS calculator', href: '/tools/roas-calculator/' }, { label: 'Amazon advertising agency', href: '/amazon-marketing-agency/' }]} />
   <LeadForm heading="Want your marketplace margins reviewed?" />

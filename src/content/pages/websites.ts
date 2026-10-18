@@ -48,6 +48,20 @@ export const websitePages: ServicePageData[] = [
       note: 'Template-based stores start at ₹60,000. Custom, conversion-focused Shopify builds usually cost ₹1.5–5 lakh depending on pages, integrations and catalogue size. You get a fixed quote after a free consultation.',
       items: ['Mobile-first design for key pages', 'Payments, COD, GST and shipping setup', 'Product upload (up to 50 SKUs)', 'Technical SEO and speed optimisation', '30 days of post-launch support'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'The parts of a Shopify store that a development team builds and connects.', center: 'Shopify store build', after: 1, branches: [
+        { label: 'Design', items: ['Theme around your brand', 'Mobile-first product pages'] },
+        { label: 'Structure', items: ['Collections and filters', 'Navigation and search'] },
+        { label: 'Checkout', items: ['UPI, cards and COD', 'GST and shipping rules'] },
+        { label: 'Growth', items: ['Speed and technical SEO', 'Analytics events for ads'] },
+      ] },
+      { type: 'matrix', caption: 'Which Shopify plan fits, based on revenue and checkout needs.', after: 2, cols: ['Standard checkout', 'Custom checkout or B2B'], rows: ['Revenue still growing', 'High, steady revenue'], cells: [
+        { title: 'Basic or Shopify', body: 'Start here, built so Plus is an easy upgrade later' },
+        { title: 'Plan for Plus', body: 'Needs are real, but the fee is a big share of sales for now' },
+        { title: 'Advanced plan', body: 'More volume with a standard checkout rarely needs Plus' },
+        { title: 'Shopify Plus', body: 'Checkout changes, Flow and wholesale now pay for the fee' },
+      ] },
+    ],
     guide: [
       {
         heading: 'Why Shopify is the default choice for Indian D2C brands',
@@ -199,6 +213,20 @@ export const websitePages: ServicePageData[] = [
       note: 'Custom e-commerce development, including headless storefronts, B2B portals and marketplace or ERP integrations, starts at ₹2,00,000. Template-based Shopify stores start at ₹60,000 and WooCommerce stores at ₹50,000. Every project gets a fixed quote after scoping.',
       items: ['Platform and architecture plan', 'Custom design for key templates', 'Payments, GST, COD and courier setup', 'Marketplace, ERP or API integrations', 'Tracking, technical SEO and 30 days of support'],
     },
+    figures: [
+      { type: 'matrix', caption: 'Shopify, WooCommerce or custom: which build fits which business.', after: 1, cols: ['Standard D2C catalogue', 'Complex rules or B2B'], rows: ['Want low upkeep', 'Want full control'], cells: [
+        { title: 'Shopify', body: 'Hosting, security and updates handled for you' },
+        { title: 'Custom build', body: 'Dealer portals, subscriptions or multi-vendor logic' },
+        { title: 'WooCommerce', body: 'Own your code and data; strong for content-heavy stores' },
+        { title: 'Woo or custom', body: 'B2B pricing and complex product options without limits' },
+      ] },
+      { type: 'steps', caption: 'A simple review rhythm for the first three months after launch.', after: 6, steps: [
+        { title: 'Viewed, not bought', body: 'Find products people look at but skip' },
+        { title: 'Checkout drop-offs', body: 'See where shoppers leave the checkout' },
+        { title: 'Search terms', body: 'Check which searches bring visitors in' },
+        { title: 'Small fixes', body: 'Tune product pages, delivery info, search' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What an ecommerce website development company should deliver',
@@ -329,6 +357,21 @@ export const websitePages: ServicePageData[] = [
       note: 'WooCommerce stores start at ₹50,000 for a customised theme with payments, shipping and GST setup. Custom designs, B2B features, large migrations and ERP integrations are quoted separately after a free consultation. Hosting and premium plugins are billed by their providers.',
       items: ['Customised mobile-first WooCommerce theme', 'Payment gateway, COD and GST invoicing', 'Courier integration and order emails', 'Product upload (up to 50 SKUs)', 'Speed, security and backup setup'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'What keeps a WooCommerce store fast, secure and easy to run.', center: 'A healthy Woo store', after: 2, branches: [
+        { label: 'Build', items: ['Lightweight theme', 'Custom code over extra plugins', 'Correct tax and shipping rules'] },
+        { label: 'Hosting', items: ['Managed WordPress hosting', 'Server caching and a CDN'] },
+        { label: 'Security', items: ['Web application firewall', 'Daily off-site backups'] },
+        { label: 'Updates', items: ['Staging copy first', 'Plugins tested before live'] },
+      ] },
+      { type: 'steps', caption: 'How we move an existing store to WooCommerce without losing rankings or customers.', after: 5, steps: [
+        { title: 'Export data', body: 'Products, variants, customers, order history' },
+        { title: 'Map every URL', body: '301 redirects from old to new addresses' },
+        { title: 'Rebuild templates', body: 'Key pages ready before the switch' },
+        { title: 'Switch the domain', body: 'Go live once redirects are complete' },
+        { title: 'Check accounts', body: 'Customers log in, see past orders, reorder' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What WooCommerce is and who it suits',
@@ -464,6 +507,15 @@ export const websitePages: ServicePageData[] = [
       note: 'Template-based Shopify stores start at ₹60,000, and custom Shopify builds usually cost ₹1.5–5 lakh. WooCommerce stores start at ₹50,000, and custom e-commerce development starts at ₹2,00,000. You get a fixed quote after a free meeting in Chennai.',
       items: ['In-person discovery and design reviews', 'Mobile-first store design', 'Payments, COD, GST and courier setup', 'Product upload (up to 50 SKUs)', 'Staff training and 30 days of support'],
     },
+    figures: [
+      { type: 'venn', caption: 'Why Tamil Nadu sellers keep marketplaces and add a store of their own.', after: 0, left: { title: 'Flipkart and Amazon', body: 'bring buyers, but the platform keeps the customer' }, right: { title: 'Your own store', body: 'repeat customers, your pricing, your data' }, overlap: 'More sales, less dependence' },
+      { type: 'mindmap', caption: 'What a store needs for silk, knitwear and food products from Tamil Nadu.', center: 'What each product needs', after: 3, branches: [
+        { label: 'Silk sarees', items: ['Large zoomable images', 'Weave, zari and blouse details'] },
+        { label: 'Knitwear', items: ['Size charts and fit notes', 'Easy returns process'] },
+        { label: 'Spices, snacks', items: ['Weight and pack-size variants', 'Shelf life and FSSAI details'] },
+        { label: 'Shipping', items: ['Packaging info for sarees', 'Couriers for perishables'] },
+      ] },
+    ],
     guide: [
       {
         heading: 'Why Chennai brands are moving to their own online stores',
@@ -596,6 +648,20 @@ export const websitePages: ServicePageData[] = [
       note: 'Template-based Shopify stores start at ₹60,000, and custom Shopify builds usually cost ₹1.5–5 lakh. Headless and custom e-commerce development starts at ₹2,00,000, and WooCommerce stores start at ₹50,000. Workshops at our Bengaluru office are included in the scope.',
       items: ['Discovery call and written scope', 'Mobile-first design with prototypes', 'Payments, COD, GST and courier setup', 'Tracking for Meta and Google Ads', '30 days of post-launch support'],
     },
+    figures: [
+      { type: 'matrix', caption: 'Shopify, headless or custom, depending on your model and your storefront.', after: 3, cols: ['Consumer brand (D2C)', 'Marketplace or B2B'], rows: ['Standard storefront works', 'Storefront is your edge'], cells: [
+        { title: 'Shopify', body: 'Most Bangalore D2C brands: launch fast, no servers' },
+        { title: 'Custom build', body: 'Multi-vendor or dealer logic no package handles' },
+        { title: 'Headless', body: 'Configurators, rich content or an app on one back end' },
+        { title: 'Fully custom', body: 'Both ends built around how the business works' },
+      ] },
+      { type: 'mindmap', caption: 'One order management system keeps stock in sync across every channel.', center: 'Order management system', after: 4, branches: [
+        { label: 'Website', items: ['Live stock levels', 'Delivery promise it can keep'] },
+        { label: 'Marketplaces', items: ['Amazon', 'Flipkart'] },
+        { label: 'Quick commerce', items: ['Blinkit', 'Zepto', 'Instamart'] },
+        { label: 'Stock sites', items: ['Bangalore dark store', 'Third-party warehouse'] },
+      ] },
+    ],
     guide: [
       {
         heading: 'Bangalore’s D2C scene and what it demands from a store',

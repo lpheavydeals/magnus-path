@@ -48,6 +48,20 @@ export const businessWebsitePages2: ServicePageData[] = [
       note: 'Basic costs ₹5,000 a month for small business websites, Business costs ₹12,000 a month for sites that change often or generate leads, and Store costs ₹25,000 a month for Shopify and WooCommerce stores. Hosting, domain and paid licences are billed separately at cost.',
       items: ['Core, theme and plugin or app updates', 'Off-site backups and uptime monitoring', 'Security scans and SSL/domain renewal tracking', 'Monthly content-change hours (by plan)', 'Form tests, broken-link checks and a monthly report'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'What a complete website maintenance plan covers each month.', center: 'Website maintenance', after: 0, branches: [
+        { label: 'Updates', items: ['Core, theme and plugins', 'Tested before going live'] },
+        { label: 'Safety', items: ['Off-site backups', 'Malware scans', 'SSL and domain renewals'] },
+        { label: 'Health', items: ['Uptime monitoring', 'Mobile speed checks', 'Broken links and form tests'] },
+        { label: 'Content', items: ['Text, images and prices', 'New pages', 'Monthly report'] },
+      ] },
+      { type: 'matrix', caption: 'When maintenance is enough, and when a site needs a rebuild instead.', after: 6, cols: ['Still fits business', 'No longer fits'], rows: ['Updates are safe', 'Abandoned theme or unsafe'], cells: [
+        { title: 'Maintain', body: 'A monthly plan keeps it healthy' },
+        { title: 'Plan a rebuild', body: 'It works, but no longer matches what you sell' },
+        { title: 'Stabilise first', body: 'Fix what you have now, then plan ahead' },
+        { title: 'Rebuild', body: 'Maintenance cannot fix this foundation' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What website maintenance services include',
@@ -192,6 +206,21 @@ export const businessWebsitePages2: ServicePageData[] = [
       note: 'Business websites of 5–10 pages start at ₹35,000. Custom corporate websites usually cost ₹75,000–2 lakh depending on pages, features and integrations. WordPress websites start at ₹30,000. Maintenance plans start at ₹5,000 a month. You get a fixed quote after a free meeting.',
       items: ['5–10 page mobile-first business website', 'Page copy in English, Tamil or both', 'Enquiry forms, WhatsApp and tap-to-call', 'Google Business Profile and basic local SEO', 'Staff training and 30 days of support'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'Chennai businesses need different pages depending on how their buyers decide.', center: 'Pages by industry', after: 1, branches: [
+        { label: 'Manufacturers', items: ['Capability pages', 'Downloadable catalogues', 'RFQ form'] },
+        { label: 'Clinics', items: ['Doctor profiles', 'Timings and map', 'Appointment requests'] },
+        { label: 'Schools', items: ['Admissions pages', 'Fee enquiry form', 'Events staff can post'] },
+        { label: 'Real estate', items: ['Floor plans', 'RERA details', 'Site visit booking'] },
+      ] },
+      { type: 'steps', caption: 'How we link your website and Google Business Profile so you show up in local results.', after: 4, steps: [
+        { title: 'Set up profile', body: 'Create or clean up Google Business Profile' },
+        { title: 'Match details', body: 'Same name, address and phone everywhere' },
+        { title: 'Add schema', body: 'Location schema and an embedded map' },
+        { title: 'Ask for reviews', body: 'Make reviewing easy for happy customers' },
+        { title: 'One page a branch', body: 'Each branch gets its own location page' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a business website needs to do for a Chennai company',

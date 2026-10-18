@@ -25,11 +25,25 @@ const faqs = [
   { q: 'Do you guarantee first-page rankings?', a: 'No honest SEO provider can guarantee rankings, because Google controls them. We commit to the work, the targets and transparent reporting, and we show progress on rankings, traffic and leads every month.' },
 ];
 const schema = [breadcrumbSchema([...trail, { label: 'SEO Packages', href: '/seo-packages/' }]), faqSchema(faqs)];
+const figures = [
+  { type: 'mindmap', caption: 'What actually decides what SEO costs for your business.', center: 'SEO cost', after: 1, branches: [
+    { label: 'Competition', items: ['Who ranks today', 'How strong their sites are'] },
+    { label: 'Site size', items: ['Pages to fix', 'Content to write'] },
+    { label: 'Area', items: ['One city', 'All of India or abroad'] },
+    { label: 'Starting point', items: ['Technical issues', 'Existing links and reviews'] },
+  ] },
+  { type: 'matrix', caption: 'Local or national SEO: pick by where your buyers are and how they search.', after: 3, cols: ['Buyers nearby', 'Buyers anywhere'], rows: ['Search with "near me"', 'Search by product or service'], cells: [
+    { title: 'Local SEO', body: 'Google Business Profile, reviews and city pages' },
+    { title: 'Local + content', body: 'Branch pages plus guides that rank across cities' },
+    { title: 'Local first', body: 'Win your city, then add service pages' },
+    { title: 'National SEO', body: 'Category pages, content and links across India' },
+  ] },
+];
 ---
 <Base title="SEO Packages India: Plans & SEO Cost | Magnus Path" description="SEO packages in India from ₹25,000/month. Compare local, national and authority SEO plans and see what SEO really costs in India, with no long lock-ins." schema={schema}>
   <SimpleHero eyebrow="SEO packages India" h1="SEO Packages in India With *Clear Monthly Pricing*" intro="Compare our SEO packages for local businesses, national brands and competitive industries, and see what SEO really costs in India. Every plan lists exactly what we deliver each month, so you know what you are paying for." trail={trail} current="SEO Packages" />
   <Tiers tiers={seoTiers} heading="Choose your SEO package" note="All plans start with a free website audit. Prices exclude GST." />
-  <Guide sections={guide} title="SEO cost in India: a straight answer" />
+  <Guide sections={guide} figures={figures as any} title="SEO cost in India: a straight answer" />
   <FAQ items={faqs} title="SEO pricing questions" />
   <Related links={[{ label: 'SEO services in India', href: '/seo-services/' }, { label: 'SEO company in Chennai', href: '/chennai/seo-company/' }, { label: 'E-commerce SEO packages', href: '/ecommerce-seo-packages/' }, { label: 'Outsource SEO to India', href: '/seo-outsourcing-india/' }]} />
   <LeadForm heading="Get your SEO quote" />

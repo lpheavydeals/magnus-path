@@ -44,6 +44,21 @@ export const usAmazonGeoPages: ServicePageData[] = [
       { title: 'Restructure', body: 'Campaigns are rebuilt or cleaned up in stages, keeping proven keywords running so sales history is not lost during the change.' },
       { title: 'Weekly optimization', body: 'Bids, negatives, placements and budgets are adjusted each week, mostly overnight in US time, with a short written note of what changed.' },
     ],
+    figures: [
+      { type: 'matrix', caption: 'Reading ACoS and TACoS together to decide what to do next.', after: 2, cols: ['ACoS below break-even', 'ACoS above break-even'], rows: ['TACoS falling', 'TACoS rising'], cells: [
+        { title: 'Scale', body: 'Profitable now, and ads are lifting organic sales' },
+        { title: 'Hold for rank', body: 'Acceptable for a launch while organic sales grow' },
+        { title: 'Watch organic', body: 'Ads pay, but organic sales are not keeping up' },
+        { title: 'Fix first', body: 'Losing money: check the listing, bids and negatives' },
+      ] },
+      { type: 'steps', caption: 'A weekly pass through the search-term report.', after: 3, steps: [
+        { title: 'Pull the report', body: 'Search terms from the last week' },
+        { title: 'Harvest winners', body: 'Terms with 2+ orders into exact match' },
+        { title: 'Add negatives', body: 'Cut clicks that never convert' },
+        { title: 'Set placements', body: 'Top of search only where it converts' },
+        { title: 'Check the hours', body: 'Daypart when hourly data shows waste' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What an Amazon PPC agency actually does each week',
@@ -161,6 +176,20 @@ export const usAmazonGeoPages: ServicePageData[] = [
       { title: 'Stabilize', body: 'The first weeks focus on clearing listing errors, open cases and inventory issues, and fixing the top product detail pages.' },
       { title: 'Run and grow', body: 'Daily checks, weekly restock and pricing reviews, and a monthly report. Most tasks are done overnight in US time, ready when your day starts.' },
     ],
+    figures: [
+      { type: 'mindmap', caption: 'The daily work inside Seller Central that account management covers.', after: 0, center: 'Your Amazon account', branches: [
+        { label: 'Listings', items: ['Titles, bullets and images', 'A+ content and Brand Store'] },
+        { label: 'Inventory', items: ['FBA restock planning', 'Reimbursement claims'] },
+        { label: 'Account health', items: ['Daily dashboard check', 'Clear plans of action'] },
+        { label: 'Brand', items: ['Brand Registry reports', 'Featured Offer (Buy Box)', 'Vine and Request a Review'] },
+      ] },
+      { type: 'matrix', caption: 'How weekly FBA planning treats each product.', after: 3, cols: ['Selling fast', 'Selling slowly'], rows: ['Low stock in FBA', 'Plenty of stock in FBA'], cells: [
+        { title: 'Restock now', body: 'Plan inbound early; stockouts cost sales and rank' },
+        { title: 'Hold restock', body: 'Check your forecast before sending more' },
+        { title: 'Healthy', body: 'Keep watching sell-through every week' },
+        { title: 'Clear it', body: 'Remove or liquidate before long-term storage fees' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What Amazon account management services cover for US sellers',
@@ -277,6 +306,15 @@ export const usAmazonGeoPages: ServicePageData[] = [
       { title: 'Plan and USD quote', body: 'A prioritized plan covering pages, entity fixes, feeds and mentions, with a monthly fee in USD and clear notes on what we cannot influence.' },
       { title: 'Fix and publish', body: 'Schema, brand facts and feeds are corrected first, then key pages are rewritten for clear answers and outreach for mentions begins.' },
       { title: 'Re-test and report', body: 'Each month we re-run the same questions, review AI referrals in GA4 and adjust priorities based on what actually changed.' },
+    ],
+    figures: [
+      { type: 'venn', caption: 'AI tools build one picture of your brand from your site and everyone else’s.', after: 2, left: { title: 'Your own pages', body: 'fact sheet, Organization and Product schema, product feeds' }, right: { title: 'Other sites about you', body: 'LinkedIn, Amazon, Crunchbase, press and reviews' }, overlap: 'The same facts everywhere' },
+      { type: 'matrix', caption: 'Good signs and warning signs when you compare GEO agencies.', after: 3, cols: ['Good sign', 'Warning sign'], rows: ['What they promise', 'How they work'], cells: [
+        { title: 'Months, not days', body: 'Results build over months and differ by AI tool' },
+        { title: 'Fixed placement', body: 'A promised spot in ChatGPT answers' },
+        { title: 'Clear tracking', body: 'AI referrals split from other traffic in GA4' },
+        { title: 'Shortcuts', body: 'Bulk AI articles or paid mentions posing as editorial' },
+      ] },
     ],
     guide: [
       {

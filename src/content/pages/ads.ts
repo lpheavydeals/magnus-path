@@ -55,6 +55,16 @@ export const adsPages: ServicePageData[] = [
       note: 'Meta and Google ads management starts at ₹30,000 a month. Ad spend is paid directly to Meta and Google from your own accounts, so you always own the data. Marketplace and quick-commerce ads are priced separately.',
       items: ['Meta (Facebook and Instagram) campaigns', 'Google Shopping, Search and Performance Max', 'Pixel, Conversions API and GA4 setup checks', 'Creative briefs and ad testing plan', 'Weekly reports and a monthly review call'],
     },
+    figures: [
+      { type: 'venn', caption: 'Meta creates demand and Google captures it, so most stores need both.', after: 1, left: { title: 'Meta ads', body: 'create demand with video and offers for people not yet looking' }, right: { title: 'Google ads', body: 'capture demand with Shopping and search for people looking' }, overlap: 'Most stores need both' },
+      { type: 'steps', caption: 'How to read ad results when every platform claims credit for the same orders.', after: 3, steps: [
+        { title: 'Total ad spend', body: 'Add up Meta, Google and marketplace spend' },
+        { title: 'Real orders', body: 'Revenue and orders from your store backend' },
+        { title: 'Subtract losses', body: 'Returns, cancellations and RTO on COD' },
+        { title: 'Set overall spend', body: 'Decide the total budget on blended numbers' },
+        { title: 'Tune each channel', body: 'Use platform data only inside each channel' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What performance marketing means for an e-commerce brand',
@@ -182,6 +192,20 @@ export const adsPages: ServicePageData[] = [
       note: 'Amazon advertising management starts at ₹25,000 a month or 10–15% of monthly ad spend, depending on account size. Ad spend is billed by Amazon to your account. Listing and account management are available separately.',
       items: ['Sponsored Products, Brands and Display', 'Weekly search-term harvesting and negatives', 'Bid and budget management', 'Break-even ACoS for key products', 'Weekly ACoS and TACoS reports'],
     },
+    figures: [
+      { type: 'matrix', caption: 'Reading ACoS and TACoS together shows whether Amazon ads are working.', after: 1, cols: ['ACoS above break-even', 'ACoS below break-even'], rows: ['TACoS falling', 'TACoS rising'], cells: [
+        { title: 'Buying rank', body: 'Ad orders lose money, but organic sales are growing' },
+        { title: 'Healthy', body: 'Profitable ad orders and organic rank improving' },
+        { title: 'Fix now', body: 'Losing money and still buying most of your sales' },
+        { title: 'Watch closely', body: 'Profitable per order, but sales lean on ads' },
+      ] },
+      { type: 'steps', caption: 'The weekly search-term routine that keeps Amazon ad spend under control.', after: 2, steps: [
+        { title: 'Open the report', body: 'See the exact words shoppers typed' },
+        { title: 'Find winners', body: 'Pick out terms that brought orders' },
+        { title: 'Move to exact', body: 'Give each its own exact-match bid' },
+        { title: 'Cut the waste', body: 'Terms with spend and no orders go negative' },
+      ] },
+    ],
     guide: [
       {
         heading: 'How Amazon ads work',
@@ -311,6 +335,20 @@ export const adsPages: ServicePageData[] = [
       note: 'Amazon account management starts at ₹30,000 a month for one marketplace. The final fee depends on catalogue size, number of marketplaces and how much listing work is needed. Amazon advertising management is available as an add-on.',
       items: ['Daily account health monitoring', 'Listing creation and optimisation', 'Inventory and FBA planning', 'Brand Registry and A+ Content support', 'Monthly performance report and review call'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'The four areas of work in running an Amazon Seller Central account.', center: 'Seller Central upkeep', after: 0, branches: [
+        { label: 'Catalogue', items: ['Listings and variations', 'Images and A+ Content'] },
+        { label: 'Operations', items: ['Inventory and FBA shipments', 'Fulfilment settings'] },
+        { label: 'Compliance', items: ['Account health checks', 'Policy notices and cases'] },
+        { label: 'Growth', items: ['Coupons, deals, sale events', 'Ads and Global Selling'] },
+      ] },
+      { type: 'matrix', caption: 'Who should run your Amazon account, by catalogue size and experience.', after: 6, cols: ['Small catalogue', 'Large catalogue'], rows: ['Real Amazon experience', 'New to Amazon'], cells: [
+        { title: 'Run it yourself', body: 'Manage it in-house until the catalogue grows' },
+        { title: 'In-house hire', body: 'A full-time marketplace executive can work well' },
+        { title: 'Start simple', body: 'Learn the basics; get help before you scale' },
+        { title: 'Outside team', body: 'Listings, ads and compliance skills one hire rarely has' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What Amazon account management covers',
@@ -432,6 +470,21 @@ export const adsPages: ServicePageData[] = [
       note: 'Flipkart account management starts at ₹25,000 a month, including Flipkart Ads management. Ad spend is paid to Flipkart from your seller account. The final fee depends on catalogue size and the volume of listing work.',
       items: ['Daily Seller Hub monitoring', 'Listing creation and optimisation', 'Flipkart PLA and display ads management', 'Pricing, inventory and returns tracking', 'Monthly report and review call'],
     },
+    figures: [
+      { type: 'matrix', caption: 'Which Flipkart products to promote with PLA ads, and which to fix first.', after: 2, cols: ['Weak ratings or price', 'Good ratings and price'], rows: ['Healthy stock', 'Low stock'], cells: [
+        { title: 'Fix first', body: 'Improve the listing or price before paying for clicks' },
+        { title: 'Promote', body: 'Best PLA candidates; raise bids where orders are cheap' },
+        { title: 'Leave out', body: 'Not ready and not stocked; keep it out of ads' },
+        { title: 'Restock first', body: 'Ads now risk stock-outs; refill, then promote' },
+      ] },
+      { type: 'steps', caption: 'Getting ready for a big Flipkart sale event, and learning from it after.', after: 3, steps: [
+        { title: 'Pick products', body: 'Decide which items to discount' },
+        { title: 'Nominate deals', body: 'Put chosen products forward for the sale' },
+        { title: 'Send stock', body: 'Move stock to fulfilment warehouses early' },
+        { title: 'Book ad budget', body: 'Reserve ad spend weeks in advance' },
+        { title: 'Review after', body: 'What sold, which ads worked, stock gaps' },
+      ] },
+    ],
     guide: [
       {
         heading: 'Why Flipkart deserves its own plan',
@@ -553,6 +606,20 @@ export const adsPages: ServicePageData[] = [
       note: 'Quick commerce ads management starts at ₹25,000 a month across Blinkit, Zepto and Instamart. Ad spend is paid to the platforms directly. Platform commissions, margins and any onboarding terms are agreed between you and each platform.',
       items: ['Onboarding and catalogue support', 'Blinkit, Zepto and Instamart ads', 'City-level budget planning', 'Content and pricing review', 'Weekly cross-platform reports'],
     },
+    figures: [
+      { type: 'matrix', caption: 'Which products fit Blinkit, Zepto and Instamart, and which struggle.', after: 1, cols: ['Bought now and then', 'Frequent or impulse'], rows: ['Small and simple', 'Bulky or needs explaining'], cells: [
+        { title: 'Possible', body: 'Gifting angle or small packs can still work' },
+        { title: 'Strong fit', body: 'Snacks, beverages, skincare, baby care, cleaning' },
+        { title: 'Poor fit', body: 'Dark stores have little shelf space for slow sellers' },
+        { title: 'Harder', body: 'Bought often, but size or explaining slows it down' },
+      ] },
+      { type: 'mindmap', caption: 'What a quick commerce shopper checks in the few seconds before adding to cart.', center: 'Winning the small screen', after: 5, branches: [
+        { label: 'Main image', items: ['Product clearly visible', 'Pack size easy to see'] },
+        { label: 'Title', items: ['Says exactly what it is', 'Readable at a glance'] },
+        { label: 'Price', items: ['Fair price per unit', 'Next to familiar brands'] },
+        { label: 'Pack size', items: ['Trial packs for first buys', 'Combo packs for order value'] },
+      ] },
+    ],
     guide: [
       {
         heading: 'What quick commerce is and why it matters for brands',

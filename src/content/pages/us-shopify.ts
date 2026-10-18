@@ -42,6 +42,21 @@ export const usShopifyPages: ServicePageData[] = [
       { title: 'Fix in a duplicate theme', body: 'We work in an unpublished copy of your theme or a GitHub branch, test changes overnight your time, and publish only after you approve.' },
       { title: 'Grow and report monthly', body: 'New collection copy, content and internal links each month, with a report on organic sessions, orders and revenue from Shopify and GA4.' },
     ],
+    figures: [
+      { type: 'matrix', caption: 'What to do with filter, sort and tag URLs on a Shopify store.', after: 2, cols: ['Little search demand', 'Real search demand'], rows: ['Filter or sort URL', 'Old tag page'], cells: [
+        { title: 'Keep out of index', body: 'Noindex or robots rules, and not a main crawl path' },
+        { title: 'New collection', body: 'Its own title, intro copy and FAQs for that search' },
+        { title: 'Canonicalize it', body: 'Point to the parent collection, drop internal links' },
+        { title: 'Keep and improve', body: 'Worth keeping as a real page with better content' },
+      ] },
+      { type: 'steps', caption: 'How we find and fix the apps that slow a store down.', after: 3, steps: [
+        { title: 'Field data', body: 'Search Console and PageSpeed, not lab only' },
+        { title: 'Map scripts', body: 'Every script matched to the app behind it' },
+        { title: 'Decide together', body: 'Keep, replace or remove each app' },
+        { title: 'Defer and move', body: 'Delay what can wait, use theme app blocks' },
+        { title: 'Fix images', body: 'Right-sized images for faster mobile pages' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a Shopify SEO agency should do for a US brand',
@@ -150,6 +165,20 @@ export const usShopifyPages: ServicePageData[] = [
       { title: 'Technical plan and USD quote', body: 'A written scope covering what to build, what to replace with native features and what to leave alone, with a fixed or phased quote in USD.' },
       { title: 'Build, migrate and test', body: 'Work happens in development stores and Git branches. You review progress each morning, and we test checkout, B2B and integrations end to end.' },
       { title: 'Launch and support', body: 'A planned cutover with redirects and monitoring, followed by a support period to fix anything that surfaces once real orders flow.' },
+    ],
+    figures: [
+      { type: 'mindmap', caption: 'The layer Shopify Plus adds on top of a normal Shopify store.', after: 0, center: 'What Plus adds', branches: [
+        { label: 'Checkout', items: ['UI extensions', 'Branding settings', 'Web pixels for tracking'] },
+        { label: 'Functions', items: ['Tiered and bundle discounts', 'Hide payment methods', 'Block carts that break rules'] },
+        { label: 'B2B & Markets', items: ['Company accounts, price lists', 'Net payment terms', 'Local currencies and duties'] },
+        { label: 'Flow', items: ['Tag wholesale orders', 'Fraud and low-stock alerts', 'Send data to your ERP or 3PL'] },
+      ] },
+      { type: 'matrix', caption: 'When a headless Hydrogen build is worth it, and when a theme is enough.', after: 4, cols: ['No in-house developers', 'Developers on staff'], rows: ['Standard catalog store', 'Content-heavy, multi-brand'], cells: [
+        { title: 'Online Store 2.0', body: 'A well-built theme on Plus is fast enough' },
+        { title: 'Still a theme', body: 'Headless adds cost without a clear need' },
+        { title: 'Not yet', body: 'Every change would need a developer you do not have' },
+        { title: 'Consider Hydrogen', body: 'A custom storefront can pay off here' },
+      ] },
     ],
     guide: [
       {
@@ -260,6 +289,15 @@ export const usShopifyPages: ServicePageData[] = [
       { title: 'Proposal and USD quote', body: 'A written plan with the engagement model, named developer, communication channel and a quote in USD. No work starts until you agree.' },
       { title: 'Access and setup', body: 'Collaborator access to your store, a GitHub repository connected to a development theme, and a shared board or Slack channel for tasks.' },
       { title: 'Daily handoff', body: 'You post tasks before you log off. We build, test in a preview theme and open a pull request, so you wake up to work ready for review.' },
+    ],
+    figures: [
+      { type: 'mindmap', caption: 'The skills to check before you hire a Shopify developer.', after: 2, center: 'Shopify developer skills', branches: [
+        { label: 'Liquid', items: ['Clean, simple templates', 'No slow nested loops'] },
+        { label: 'Sections', items: ['JSON templates', 'Pages your team can edit'] },
+        { label: 'App blocks', items: ['Theme app extensions', 'Clean installs and removals'] },
+        { label: 'Workflow', items: ['Shopify CLI and GitHub', 'A pull request per task'] },
+      ] },
+      { type: 'venn', caption: 'How a daily handoff works with a developer on the other side of the world.', after: 4, left: { title: 'Your US day', body: 'post tasks with clear acceptance criteria, review the work' }, right: { title: 'Our Chennai day', body: 'build and test, then leave a pull request and a note' }, overlap: 'Short call in your morning' },
     ],
     guide: [
       {
