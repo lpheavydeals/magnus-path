@@ -186,3 +186,6 @@ Never invent a street address; use the city name only in copy (the full addresse
 - Most London searches show a Google Maps pack: mention meeting at the London office naturally.
 - Extra allowed related URLs: /london/ecommerce-agency/, /london/ppc-agency/, /london/ecommerce-seo-agency/, /london/wordpress-agency/,
   /london/shopify-agency/, /london/website-development-company/, /london/website-maintenance/, /london/amazon-agency/, /london/white-label-seo/
+
+## Chennai round 2 (18 Oct 2026)
+- Extra allowed related URL: /chennai/social-media-marketing-agency/
