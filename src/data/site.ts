@@ -66,7 +66,7 @@ export const nav: NavItem[] = [
       { label: 'E-commerce SEO', href: '/ecommerce-seo/', note: 'Rank your store on Google' },
       { label: 'Shopify SEO', href: '/shopify-seo/', note: 'Technical + content SEO' },
       { label: 'Amazon SEO', href: '/amazon-seo/', note: 'Listing optimisation' },
-      { label: 'SEO Packages', href: '/ecommerce-seo-packages/', note: 'Plans & pricing' },
+      { label: 'SEO Packages', href: '/ecommerce-seo-packages/', note: 'SEO plans' },
     ],
   },
   {

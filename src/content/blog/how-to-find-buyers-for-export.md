@@ -120,7 +120,7 @@ Export SEO means ranking your website for the searches overseas buyers make, suc
 - **Add helpful content.** Buying guides, material comparisons and specification sheets attract engineers and procurement teams.
 - **Prepare for AI answers.** Clear, factual pages with specifications and FAQs are more likely to be quoted by Google AI Overviews and AI assistants.
 
-Export SEO takes a few months to build momentum, but the leads it brings are often the best quality because buyers find you while actively searching. Our [SEO services](/seo-services/) start from ₹25,000 per month.
+Export SEO takes a few months to build momentum, but the leads it brings are often the best quality because buyers find you while actively searching. Our [SEO services](/seo-services/) start with a free audit of your current site, followed by a fixed written quote.
 
 ## Step 6: LinkedIn outreach and LinkedIn ads
 
@@ -147,7 +147,7 @@ Google Ads lets you appear the moment an importer searches for your product. It 
 - **Track every form submission and WhatsApp click** so you know which keywords bring real buyers.
 - **Schedule ads for the buyer's working hours** in their time zone.
 
-Our [Google and Meta ads management](/performance-marketing/) starts from ₹30,000 per month plus ad spend.
+Our [Google and Meta ads management](/performance-marketing/) is quoted after a free audit; ad spend is paid directly to Google or Meta from your own account, and the management fee is quoted separately.
 
 ## Step 8: Appoint distributors and agents
 
@@ -219,7 +219,7 @@ With letters of credit, every document must match the LC terms exactly, so work 
 - Approach potential distributors or agents in your best-responding market.
 - Set monthly targets for enquiries, samples and orders.
 
-Export sales cycles are often long, and first orders can take time. Consistency across these channels is what builds a reliable pipeline. If you want one team to run the website, SEO, LinkedIn and ads together, see our [B2B digital marketing for manufacturers and exporters](/b2b-digital-marketing/), which starts from ₹50,000 per month.
+Export sales cycles are often long, and first orders can take time. Consistency across these channels is what builds a reliable pipeline. If you want one team to run the website, SEO, LinkedIn and ads together, see our [B2B digital marketing for manufacturers and exporters](/b2b-digital-marketing/). We quote it after a short scoping call, with the scope, timeline and exclusions in writing.
 
 ## Next step
 

@@ -134,7 +134,7 @@ Instead of asking "what does a website cost?", work out what the store costs to 
 7. **Maintenance:** a support retainer or a budget for changes.
 8. **Marketing:** ads, SEO or marketplace management to bring buyers to the store.
 
-This view often changes the decision. A cheaper setup that needs many paid plugins and frequent developer help can cost more over a year than a slightly larger, cleaner build. A good rule: spend enough to get a fast, trustworthy, mobile-friendly store, then put the rest into getting customers.
+This view often changes how you judge the ecommerce website cost in India. A cheaper setup that needs many paid plugins and frequent developer help can cost more over a year than a slightly larger, cleaner build. A good rule: spend enough to get a fast, trustworthy, mobile-friendly store, then put the rest into getting customers.
 
 Not sure which platform fits? Our guide to the [best ecommerce platform in India](/blog/best-ecommerce-platform-in-india/) compares Shopify, WooCommerce, Magento and custom builds in detail.
 

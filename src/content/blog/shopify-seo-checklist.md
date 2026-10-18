@@ -177,7 +177,7 @@ SEO is not a one-time job. Each month:
 
 ## When to get help
 
-You can work through this Shopify SEO checklist yourself. Help is worth it when theme code needs editing, when your catalogue is too large to fix by hand, or when rankings drop without a clear reason. Our [Shopify SEO](/shopify-seo/) service starts from ₹30,000 per month, and our [Shopify development](/shopify-development/) team can handle theme fixes, speed work and migrations. For a wider view across marketplaces, see our [ecommerce SEO](/ecommerce-seo/) service.
+You can work through this Shopify SEO checklist yourself. Help is worth it when theme code needs editing, when your catalogue is too large to fix by hand, or when rankings drop without a clear reason. Our [Shopify SEO](/shopify-seo/) service starts with a free audit and a fixed written quote, and our [Shopify development](/shopify-development/) team can handle theme fixes, speed work and migrations. For a wider view across marketplaces, see our [ecommerce SEO](/ecommerce-seo/) service.
 
 ## Next step
 

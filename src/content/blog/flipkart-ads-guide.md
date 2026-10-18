@@ -176,7 +176,7 @@ Also track the wider effect. Ads can lift organic sales by improving sales veloc
 
 Many sellers manage Flipkart ads themselves for the first few months. It makes sense to bring in help when ad spend is growing but profit is not, when you sell many SKUs across categories, or when sale events take more time than your team has.
 
-Tamil Nadu alone has a large Flipkart seller base, with Flipkart reporting about 70,000 sellers in the state (Aug 2026), so competition in categories like textiles and ethnic wear is real. Our [Flipkart account management](/flipkart-account-management/) service covers listings, ads, sale planning and reporting, starting from ₹25,000 per month. If you also sell on your own store, our [performance marketing](/performance-marketing/) team can run Meta and Google ads alongside.
+Tamil Nadu alone has a large Flipkart seller base, with Flipkart reporting about 70,000 sellers in the state (Aug 2026), so competition in categories like textiles and ethnic wear is real. Our [Flipkart account management](/flipkart-account-management/) service covers listings, ads, sale planning and reporting, quoted after a free audit of your account. If you also sell on your own store, our [performance marketing](/performance-marketing/) team can run Meta and Google ads alongside.
 
 ## Next step
 

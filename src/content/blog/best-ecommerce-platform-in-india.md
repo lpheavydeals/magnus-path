@@ -12,13 +12,13 @@ faqs:
   - q: "Which is the best ecommerce platform in India for a new brand?"
     a: "For most new D2C brands, Shopify is the safest choice. It is hosted, so you do not manage servers or security, it works well with Indian payment gateways and shipping apps, and your team can run it without a developer. WooCommerce is a good alternative if you already use WordPress and want full control of your code and data."
   - q: "Shopify vs WooCommerce in India: which is better?"
-    a: "Shopify is better if you want speed to launch, low maintenance and predictable monthly costs. WooCommerce is better if you want full ownership, deep customisation and a content-heavy WordPress site. In India, setup costs are similar: template-based Shopify stores start from ₹60,000 and WooCommerce stores from ₹50,000 with an agency. Running costs and upkeep effort differ more than setup."
+    a: "Shopify is better if you want speed to launch, low maintenance and predictable monthly costs. WooCommerce is better if you want full ownership, deep customisation and a content-heavy WordPress site. In India, agency setup effort for a template-based store is similar on both. Running costs and upkeep effort differ more than setup, so compare plans, hosting, apps and maintenance."
   - q: "Dukaan vs Shopify: which should a small business choose?"
     a: "Indian mobile-first store builders like Dukaan are quick to set up and simple for very small sellers who mainly share links on WhatsApp and Instagram. Shopify offers a larger app ecosystem, more design flexibility and an easier path to scale. Check each platform's current plans and features before deciding, and think about where your business will be in two years."
   - q: "What is the best ecommerce platform for small business in India?"
     a: "It depends on your size and goals. A seller testing a few products can start on an Indian store builder or a basic Shopify plan. A small brand planning to run ads and grow should choose Shopify or WooCommerce, which give more control over design, SEO and integrations. Avoid platforms that make it hard to export your data later."
   - q: "When should I choose Magento or a custom ecommerce platform?"
-    a: "Choose Magento/Adobe Commerce or a custom build when you have a very large or complex catalogue, B2B price lists, multiple warehouses, deep ERP integration or workflows that hosted platforms cannot handle well. These options need a development budget and ongoing technical support. Custom e-commerce development with an agency starts from ₹2,00,000 one-time."
+    a: "Choose Magento/Adobe Commerce or a custom build when you have a very large or complex catalogue, B2B price lists, multiple warehouses, deep ERP integration or workflows that hosted platforms cannot handle well. These options need a larger development budget, a longer timeline and ongoing technical support, so scope them carefully before you commit."
   - q: "Can I switch ecommerce platforms later?"
     a: "Yes, but migration takes planning. Products, customers and orders can usually be moved, but designs and apps need rebuilding, and every old URL needs a redirect to protect your search rankings. Choosing a platform that fits your next two to three years of growth saves you a costly move later."
 related:
@@ -96,7 +96,7 @@ Magento (open source) and Adobe Commerce (the paid enterprise version) are built
 A custom build is made around your business. Headless means the shopping front end is separate from the commerce back end (which can be Shopify or another engine), giving full design freedom and speed.
 
 **Strengths:** complete flexibility, fits unusual workflows, can integrate tightly with ERP and internal systems.
-**Watch-outs:** higher cost, longer timelines and ongoing developer dependency. Custom e-commerce development starts from ₹2,00,000 one-time.
+**Watch-outs:** higher cost, longer timelines and ongoing developer dependency. Scope it in writing, and launch in phases where you can.
 
 ### Indian SaaS store builders (Dukaan and similar)
 
@@ -111,7 +111,7 @@ Several Indian platforms, Dukaan among them, let small sellers create a store fr
 |---|---|---|---|---|---|
 | Hosting | Included | You arrange | You arrange (or Adobe cloud) | You arrange | Included |
 | Ease of use | High | Medium | Low | Depends on build | High |
-| Setup with an agency | From ₹60,000 (custom ₹1.5–5 lakh) | From ₹50,000 | Project-based, usually high | From ₹2,00,000 | Often DIY |
+| Setup effort with an agency | Low to medium (higher for custom) | Low to medium | High, project-based | High, project-based | Often DIY |
 | Maintenance effort | Low | Medium to high | High | High | Low |
 | Customisation | Good, with apps and code | Very high | Very high | Unlimited | Limited |
 | Large catalogues | Good | Good with strong hosting | Excellent | Excellent | Varies |

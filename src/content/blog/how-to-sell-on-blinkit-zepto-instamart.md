@@ -183,7 +183,7 @@ This approach gives you real data before you commit large stock and ad budgets.
 
 ## When to get help
 
-Many founders handle their first quick commerce listing themselves. Help becomes useful when you are live in several cities, when ad spend is rising but sales are not, or when stock-outs and expiry losses keep repeating. Our [quick commerce marketing](/quick-commerce-marketing/) service covers ads, content and reporting across Blinkit, Zepto and Instamart, starting from ₹25,000 per month. Food brands can also see how we approach the category on our [food and FMCG](/industries/food-fmcg/) page.
+Many founders handle their first quick commerce listing themselves. Help becomes useful when you are live in several cities, when ad spend is rising but sales are not, or when stock-outs and expiry losses keep repeating. Our [quick commerce marketing](/quick-commerce-marketing/) service covers ads, content and reporting across Blinkit, Zepto and Instamart, quoted after a free audit of your listings and ads. Food brands can also see how we approach the category on our [food and FMCG](/industries/food-fmcg/) page.
 
 ## Next step
 

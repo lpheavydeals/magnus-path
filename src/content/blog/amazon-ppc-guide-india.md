@@ -211,7 +211,7 @@ Many sellers run Amazon PPC themselves at first. Consider outside help when:
 - ACoS keeps rising and you are not sure why.
 - You are launching in a new category or a new marketplace.
 
-Our [Amazon marketing agency](/amazon-marketing-agency/) service manages Sponsored Products, Sponsored Brands and Sponsored Display campaigns, starting from ₹25,000 per month or 10–15% of ad spend. If you also need catalogue, inventory and account health support, see [Amazon account management](/amazon-account-management/).
+Our [Amazon marketing agency](/amazon-marketing-agency/) service manages Sponsored Products, Sponsored Brands and Sponsored Display campaigns. We quote the management fee after a free audit of your account, and your ad spend stays in your own Amazon Ads account. If you also need catalogue, inventory and account health support, see [Amazon account management](/amazon-account-management/).
 
 ## Next step
 
