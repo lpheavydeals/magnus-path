@@ -40,6 +40,7 @@ export const adsPages: ServicePageData[] = [
       { title: 'Amazon Account Management', href: '/amazon-account-management/', body: 'Listings, inventory, account health, Brand Registry and Global Selling handled end to end in Seller Central.', icon: 'marketplace' },
       { title: 'Flipkart Account Management', href: '/flipkart-account-management/', body: 'Catalogue, pricing, Flipkart Ads and seller ratings managed so your products win more of the buy box.', icon: 'marketplace' },
       { title: 'Quick Commerce Ads', href: '/quick-commerce-marketing/', body: 'Listing support and ads on Blinkit, Zepto and Swiggy Instamart, planned city by city for food, FMCG and beauty brands.', icon: 'quick' },
+      { title: 'ChatGPT Ads', href: '/chatgpt-ads-agency/', body: 'Campaigns in OpenAI’s Ads Manager that place your brand below relevant ChatGPT answers, with pixel tracking and spend judged on orders.', icon: 'ai' },
     ],
     process: [
       { title: 'Account and tracking audit', body: 'We review your ad accounts, pixel and Conversions API setup, product feed and last few months of orders to find wasted spend and broken tracking.' },

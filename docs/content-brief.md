@@ -39,7 +39,7 @@ spelling (optimise, catalogue), ₹ amounts in lakh/crore. No hype words ("cutti
   /blog/shopify-seo-checklist/, /tools/, /tools/roas-calculator/, /tools/marketplace-profit-calculator/,
   /uk/ecommerce-marketing-agency/, /australia/ecommerce-marketing-agency/, /uae/ecommerce-marketing-agency/,
   /corporate-website-development/, /wordpress-website-development/,
-  /website-maintenance-services/, /chennai/website-development-company/
+  /website-maintenance-services/, /chennai/website-development-company/, /chatgpt-ads-agency/
 - Location pages: we have **one office, in Chennai**. Bangalore and Coimbatore pages must say we serve those cities
   from Chennai (remote work + visits when needed). Never imply an office there.
 
@@ -57,6 +57,7 @@ spelling (optimise, catalogue), ₹ amounts in lakh/crore. No hype words ("cutti
 | Amazon account management | ₹30,000 / month |
 | Flipkart account management | ₹25,000 / month |
 | Quick commerce ads (Blinkit, Zepto, Instamart) | ₹25,000 / month |
+| ChatGPT ads management | ₹25,000 / month + ad spend |
 | E-commerce SEO | ₹35,000 / month |
 | Shopify SEO | ₹30,000 / month |
 | Amazon SEO / listing optimisation | ₹20,000 / month |

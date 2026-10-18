@@ -18,6 +18,7 @@ export const priceList = [
     { name: 'Amazon account management', price: '₹30,000', unit: '/ month', href: '/amazon-account-management/' },
     { name: 'Flipkart account management', price: '₹25,000', unit: '/ month', href: '/flipkart-account-management/' },
     { name: 'Quick commerce ads (Blinkit, Zepto, Instamart)', price: '₹25,000', unit: '/ month', href: '/quick-commerce-marketing/' },
+    { name: 'ChatGPT ads management', price: '₹25,000', unit: '/ month + ad spend', href: '/chatgpt-ads-agency/' },
   ]},
   { group: 'SEO', rows: [
     { name: 'E-commerce SEO', price: '₹35,000', unit: '/ month', href: '/ecommerce-seo/' },
