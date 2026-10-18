@@ -48,6 +48,7 @@ export const globalPages: ServicePageData[] = [
       { title: 'WooCommerce Agency', href: '/uk/woocommerce-agency/', body: 'WooCommerce store builds, migrations and fixes with UK payments, VAT and delivery set up properly.', icon: 'marketplace' },
       { title: 'WordPress Support', href: '/uk/wordpress-support/', body: 'Monthly WordPress and WooCommerce support: updates tested on staging, backups, security checks and small changes.', icon: 'website' },
       { title: 'ChatGPT Ads', href: '/uk/chatgpt-ads-agency/', body: 'Campaigns in OpenAI’s Ads Manager that place your brand below relevant ChatGPT answers, quoted in GBP.', icon: 'ai' },
+      { title: 'London', href: '/london/ecommerce-agency/', body: 'Our London office (E18): PPC, Shopify, WordPress, SEO and Amazon services for London businesses.', icon: 'website' },
     ],
     process: [
       { title: 'Free audit and video call', body: 'We review your store, Amazon account, ad accounts or agency workload, then walk you through what we found on a call booked in your UK morning.' },

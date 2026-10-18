@@ -172,3 +172,17 @@ Never invent a street address; use the city name only in copy (the full addresse
 - Location pages (`kind: 'location'`, `local: { city: 'Bangalore', areas, note }`), Indian English, ₹ prices from the price list.
 - We have a **Bengaluru office** (meetings by appointment); much of the build/delivery is done by the Chennai head-office team; workshops at the Bengaluru office are included in project scope. Use "Bengaluru" or "Bangalore" naturally; keep the target keyword's spelling ("bangalore") in title/H1/intro.
 - Extra allowed related URLs: /bangalore/seo-company/, /bangalore/digital-marketing-agency/, /bangalore/website-development-company/, /bangalore/performance-marketing-agency/
+
+## London pages (18 Oct 2026; `src/content/pages/london-*.ts`, URLs under `/london/`)
+- Location pages: `market: 'UK'` (British English, GBP), NO `twin` (the /uk/ pages target UK-wide searches; these target
+  London searches — link to the matching /uk/ page instead). `local: { city: 'London', areas: [8–10 London areas, include
+  East London ones near E18 such as Stratford, Walthamstow, Woodford, Ilford, Canary Wharf, plus Shoreditch, Islington, the City, Camden], note }`.
+- Breadcrumb for service pages: [{ label: 'United Kingdom', href: '/uk/ecommerce-marketing-agency/' }, { label: 'London', href: '/london/ecommerce-agency/' }].
+  The London hub `/london/ecommerce-agency/` is `kind: 'hub'` with breadcrumb [{ label: 'United Kingdom', href: '/uk/ecommerce-marketing-agency/' }].
+  Service pages use `kind: 'location'`.
+- Office: London office in E18 (East London) — UK clients can meet the team by appointment; most delivery is by the
+  Chennai team; requests before UK lunchtime usually handled the same day. Never give the street address in copy.
+- Prices: only white-label SEO from £275 / month per client site; everything else quoted in GBP after a free audit (no pricing block).
+- Most London searches show a Google Maps pack: mention meeting at the London office naturally.
+- Extra allowed related URLs: /london/ecommerce-agency/, /london/ppc-agency/, /london/ecommerce-seo-agency/, /london/wordpress-agency/,
+  /london/shopify-agency/, /london/website-development-company/, /london/website-maintenance/, /london/amazon-agency/, /london/white-label-seo/

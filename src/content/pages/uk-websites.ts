@@ -124,6 +124,7 @@ export const ukWebsitesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'WordPress agency in London', href: '/london/wordpress-agency/' },
       { label: 'E-commerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
       { label: 'WordPress website development services', href: '/wordpress-website-development/' },
       { label: 'WooCommerce agency for UK online shops', href: '/uk/woocommerce-agency/' },
@@ -383,6 +384,7 @@ export const ukWebsitesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Website maintenance in London', href: '/london/website-maintenance/' },
       { label: 'E-commerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
       { label: 'Website maintenance services and care plans', href: '/website-maintenance-services/' },
       { label: 'WordPress agency for UK custom builds', href: '/uk/wordpress-agency/' },
