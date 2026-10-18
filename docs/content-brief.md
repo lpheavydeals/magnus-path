@@ -163,3 +163,6 @@ Rules: UK pages may say "our London office" and offer in-person meetings in Lond
 Chennai team, so the time-zone wording stays (work continues after UK hours). Bengaluru pages may say "our Bengaluru office"
 and offer meetings there. There is still **no office in the US, UAE or Australia**: those pages keep the remote wording.
 Never invent a street address; use the city name only in copy (the full addresses live in `src/data/site.ts`).
+
+## ChatGPT ads US (18 Oct 2026)
+- Extra allowed related URLs: /us/chatgpt-ads-agency/, /blog/how-to-advertise-on-chatgpt/, /chatgpt-ads-agency/

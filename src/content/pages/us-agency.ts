@@ -51,6 +51,7 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'Hire a WordPress Developer', href: '/us/hire-wordpress-developer/', body: 'A dedicated or part-time WordPress developer for builds, custom themes, plugins and speed work.', icon: 'website' },
       { title: 'WooCommerce Agency', href: '/us/woocommerce-agency/', body: 'WooCommerce store builds, migrations, payment and shipping integrations, and conversion work.', icon: 'marketplace' },
       { title: 'White Label WordPress Development', href: '/us/white-label-wordpress-development/', body: 'WordPress builds delivered under your agency’s brand, with NDAs, Git workflow and overnight turnaround.', icon: 'website' },
+      { title: 'ChatGPT Ads', href: '/us/chatgpt-ads-agency/', body: 'Campaigns in OpenAI’s Ads Manager that put your brand below relevant ChatGPT answers, judged on cost per order.', icon: 'ai' },
       { title: 'Generative Engine Optimization', href: '/us/generative-engine-optimization-agency/', body: 'Make your brand visible in ChatGPT, Perplexity and Google AI Overviews answers.', icon: 'ai' },
     ],
     process: [

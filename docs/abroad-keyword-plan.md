@@ -189,3 +189,10 @@ office has its own Google Business Profile.
 - London: `research/abroad-keyword-lists/london/` (30 keywords, UK database), incl. East London and Essex variants (E18 borders Essex).
 - Bengaluru: `research/keyword-lists/bengaluru/` (30 keywords, India database), "bangalore" and "bengaluru" spellings.
 Rule: city page needs ≥ 100 searches and KD ≤ 40 (city keywords with a local office and GBP are easier to win than the KD suggests).
+
+## ChatGPT ads: United States (data received 18 Oct 2026)
+Head terms are big but hard (chatgpt ads 12,100 / KD 58; chatgpt advertising 5,400 / KD 52). The winnable volume is
+informational: "openai ads" 1,300 / KD 28 and "chatgpt ads manager" 480 / KD 32. Plan:
+- /us/chatgpt-ads-agency/ (twin of /chatgpt-ads-agency/): chatgpt ads agency (50 / 14), chatgpt advertising agency (50 / 19), chatgpt ppc.
+- /blog/how-to-advertise-on-chatgpt/: openai ads, chatgpt ads manager, ads in chatgpt, advertise on chatgpt, chatgpt ads cost.
+Full data: `research/abroad-keyword-results/us-chatgpt-ads-results.csv`.
