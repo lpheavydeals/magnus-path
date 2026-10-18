@@ -131,6 +131,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Website design cost in Bangalore', href: '/blog/website-design-cost-in-bangalore/' },
       { label: 'Corporate website development', href: '/corporate-website-development/' },
       { label: 'WordPress website development services', href: '/wordpress-website-development/' },
       { label: 'Ecommerce website development in Bangalore', href: '/bangalore/ecommerce-website-development/' },
