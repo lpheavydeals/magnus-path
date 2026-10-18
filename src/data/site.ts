@@ -5,8 +5,8 @@ export const site = {
   legalName: 'Magnus Path', // TODO: registered company name
   tagline: 'E-commerce websites, ads and SEO — one growth team.',
   url: 'https://www.magnuspath.com', // TODO: live domain
-  phone: '+91 00000 00000', // TODO
-  phoneHref: 'tel:+910000000000', // TODO
+  phone: '+91 80984 25000', // Chennai head office
+  phoneHref: 'tel:+918098425000',
   whatsapp: 'https://wa.me/910000000000?text=Hi%20Magnus%20Path%2C%20I%27d%20like%20a%20free%20store%20audit', // TODO
   email: 'hello@magnuspath.com', // TODO
   address: {
@@ -20,14 +20,14 @@ export const site = {
   // Staffed offices: clients can meet the team at each one. Each must match its own Google Business Profile.
   // `open` feeds openingHoursSpecification (local time); `gbp` = Google Business Profile URL, `map` = Google Maps link.
   offices: [
-    { id: 'chennai', label: 'Chennai (head office)', street: 'Street address', locality: 'Chennai', region: 'Tamil Nadu', postalCode: '600000', country: 'IN', countryName: 'India', phone: '+91 00000 00000', phoneHref: 'tel:+910000000000', hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:30', closes: '19:00' }, gbp: '#', map: '#' }, // TODO address, phone, Google Business Profile + Maps links
-    { id: 'bengaluru', label: 'Bengaluru', street: 'Street address', locality: 'Bengaluru', region: 'Karnataka', postalCode: '560000', country: 'IN', countryName: 'India', phone: '+91 00000 00000', phoneHref: 'tel:+910000000000', hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:30', closes: '19:00' }, gbp: '#', map: '#' }, // TODO address, phone, Google Business Profile + Maps links
+    { id: 'chennai', label: 'Chennai (head office)', street: 'Street address', locality: 'Chennai', region: 'Tamil Nadu', postalCode: '600000', country: 'IN', countryName: 'India', phone: '+91 80984 25000', phoneHref: 'tel:+918098425000', hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:30', closes: '19:00' }, gbp: '#', map: '#' }, // TODO address, Google Business Profile + Maps links
+    { id: 'bengaluru', label: 'Bengaluru', street: 'Street address', locality: 'Bengaluru', region: 'Karnataka', postalCode: '560000', country: 'IN', countryName: 'India', phone: '+91 80984 25000', phoneHref: 'tel:+918098425000', hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:30', closes: '19:00' }, gbp: '#', map: '#' }, // TODO address, Google Business Profile + Maps links
     { id: 'london', label: 'London', street: '16 Avondale Court', locality: 'London', region: 'England', postalCode: 'E18 2RD', country: 'GB', countryName: 'United Kingdom', phone: '+44 0000 000000', phoneHref: 'tel:+440000000000', hours: 'Mon–Fri, 9:30 AM – 6:00 PM UK time', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:30', closes: '18:00' }, gbp: '#', map: '#' }, // TODO phone, Google Business Profile + Maps links
   ],
   formEndpoint: '#', // TODO: form handler (Web3Forms / Formspree / CRM webhook)
   social: {
     linkedin: '#', // TODO
-    instagram: '#', // TODO
+    instagram: 'https://www.instagram.com/magnus_path_marketing/',
     youtube: '#', // TODO
   },
 };
