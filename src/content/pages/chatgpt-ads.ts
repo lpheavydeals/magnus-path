@@ -84,7 +84,7 @@ export const chatgptAdsPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Setting up an OpenAI Ads Manager account and tracking',
+        heading: 'Setting up ChatGPT Ads Manager (OpenAI’s ad account) and tracking',
         paragraphs: [
           'Advertisers buy through OpenAI’s self-serve Ads Manager at ads.openai.com. Self-serve launched in the US in May 2026 and has since expanded to many more countries; reports list India among them. Eligibility depends on the country of your billing entity, so a UK or US subsidiary may follow different rules from an Indian company. Where a country is not yet open, businesses can register interest or speak to OpenAI’s sales team. The product is new and changing, so check OpenAI’s current help pages before you plan.',
           'Set up tracking before you spend. Install the OpenAI pixel on your site, ideally through Google Tag Manager, and send purchases or leads server-side through the Conversions API so fewer events are lost to browsers and ad blockers. Add UTM tags to every ad link so GA4 can show ChatGPT ad traffic separately from organic ChatGPT referrals. Reporting inside Ads Manager is aggregated: impressions, clicks, spend, CTR, CPC, CPM and conversions. Advertisers never see individual conversations.',
