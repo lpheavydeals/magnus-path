@@ -203,3 +203,14 @@ advertising agency 30 / KD 11 (with a Maps pack, where the London office helps),
 Proposal: /uk/chatgpt-ads-agency/ (twin of /chatgpt-ads-agency/), quoted in GBP, London office for meetings.
 The how-to guide already covers the UK informational searches. "openai ads" is KD 91 in the UK — skip there.
 Full data: `research/abroad-keyword-results/uk-chatgpt-ads-results.csv`.
+
+## Bengaluru (Semrush IN data received 18 Oct 2026; office in Bengaluru)
+Most results show a Maps pack: the Bengaluru Google Business Profile is essential for these pages.
+| Page | Primary (vol / KD) | Secondary |
+|---|---|---|
+| /bangalore/seo-company/ | seo company in bangalore (3,600 / 40) | seo agency (1,300 / 20), seo services (1,300 / 31), local seo |
+| /bangalore/digital-marketing-agency/ | digital marketing company in bangalore (1,900 / 30) | digital marketing agency (2,400 / 43), social media marketing agency (880 / 44) |
+| /bangalore/website-development-company/ | website designing company in bangalore (4,400 / 48) | website development company (5,400 / 55), web design company (4,400 / 58), wordpress development company (140 / 10) |
+| /bangalore/performance-marketing-agency/ | performance marketing agency bangalore (210 / 10) | ppc company (210 / 10), Amazon agency mentions |
+| /bangalore/ecommerce-website-development/ (existing) | — | add ecommerce website development company in bangalore (210 / 38) |
+Full data: `research/keyword-lists/bengaluru/bengaluru-results.csv`.
