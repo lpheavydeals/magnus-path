@@ -247,6 +247,7 @@ export const businessWebsitePages2: ServicePageData[] = [
         heading: 'WordPress, CMS or custom: choosing the right build',
         paragraphs: [
           'WordPress suits most business websites. It is widely understood, easy for staff to edit and has a large pool of developers if you ever change agencies. It does need regular updates and backups to stay secure.',
+          'If you only need a WordPress developer in Chennai to fix, speed up or extend an existing site, that is usually a smaller job than a rebuild, and we quote it separately.',
           'A headless CMS with a static front end suits corporate sites that need high speed, strong security and several editors, at a higher upfront cost. Fully custom web development makes sense only when you need portals, calculators, dealer logins or links to an ERP. If you are speaking to several website designers in Chennai, ask each one why they recommend a particular platform for your needs. A website development company in Chennai that explains the trade-offs openly is easier to work with later.',
         ],
       },
@@ -254,7 +255,7 @@ export const businessWebsitePages2: ServicePageData[] = [
         heading: 'Tamil and English content that speaks to local buyers',
         paragraphs: [
           'Chennai buyers switch easily between Tamil and English, and your website can too. A manufacturer exporting abroad will want polished English, while a clinic, school or retailer serving local families often benefits from Tamil pages or a Tamil summary on key pages.',
-          'We write the copy with you rather than leaving you to fill empty boxes. Professional website development in Chennai should include content planning, because unclear text is the most common reason a well-designed site fails to bring in enquiries.',
+          'We write the copy with you rather than leaving you to fill empty boxes. Professional website development in Chennai should include content planning, because unclear text is the most common reason a well-designed site fails to bring in enquiries. Before you hire any website design company in Chennai, ask who will write the words and in which languages.',
         ],
       },
       {
@@ -272,7 +273,7 @@ export const businessWebsitePages2: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Why meeting in person still helps',
+        heading: 'Why meeting your web development company in Chennai in person helps',
         paragraphs: [
           'Much of a website project can happen online, but the first meeting is worth having face to face. Walking through your factory floor, clinic or showroom shows us what makes your business different, and it gives us better photographs and better copy. As a website development company in Chennai, we can be at your office for the kick-off, the design review and the training session, then handle the rest over calls and WhatsApp.',
         ],
@@ -286,13 +287,13 @@ export const businessWebsitePages2: ServicePageData[] = [
       { label: 'Website development pricing', href: '/pricing/' },
     ],
     faqs: [
-      { q: 'How much does a business website cost in Chennai?', a: 'With us, a business website of 5–10 pages starts at ₹35,000 one-time, and WordPress websites start at ₹30,000. Custom corporate websites usually cost ₹75,000–2 lakh, depending on pages, features and integrations. Hosting and domain renewals are separate, and you receive a fixed quote after a free meeting.' },
+      { q: 'How much does website design cost in Chennai?', a: 'With us, a business website of 5–10 pages starts at ₹35,000 one-time, and WordPress websites start at ₹30,000. Custom corporate websites usually cost ₹75,000–2 lakh, depending on pages, features and integrations. Hosting and domain renewals are separate, and you receive a fixed quote after a free meeting.' },
       { q: 'How long does it take to build a website?', a: 'A business website of 5–10 pages usually takes three to four weeks from the first meeting to launch. Larger corporate sites with custom features take six to ten weeks. The biggest factor is how quickly content, photos and feedback come in, so we plan these early.' },
       { q: 'Can you meet us at our office in Chennai?', a: 'Yes. Our head office is in Chennai, and we meet clients at their premises for the kick-off meeting, design reviews and staff training. We regularly visit businesses in areas such as T. Nagar, Anna Nagar, Guindy, OMR, Ambattur and Porur, and plan visits further out around key project milestones.' },
       { q: 'Can my website have both Tamil and English content?', a: 'Yes. We can build a fully bilingual site with a language switch, or add Tamil versions of the pages your local customers use most. We write or edit the copy with you, so both versions say the same thing clearly and match how your customers actually speak.' },
       { q: 'Do you build websites for manufacturers and industrial companies?', a: 'Yes. For manufacturers in Ambattur, Guindy, Sriperumbudur and across Tamil Nadu, we build sites with product and capability pages, plant and machinery details, downloadable catalogues and RFQ forms that route enquiries to the right person. English content is written with export and OEM buyers in mind.' },
       { q: 'Will you set up our Google Business Profile?', a: 'Yes. Every business website includes Google Business Profile setup or clean-up, with consistent business details, the right categories, a link to the website and location schema on your contact page. This helps you appear in map results when nearby customers search for your services.' },
-      { q: 'Who owns the website and domain after launch?', a: 'You do. The domain, hosting account, website files and all admin logins are registered in your business name and handed over at launch. If you later choose another agency or bring the work in-house, you can move the site without needing our permission.' },
+      { q: 'What should I ask a web development company in Chennai before hiring?', a: 'Ask what the quote includes, which platform they recommend and why, what support follows launch and who owns the domain, hosting and logins. With us, all of these are registered in your business name and handed over at launch, so you can move the site later without needing our permission.' },
       { q: 'Do you maintain websites after launch?', a: 'Yes. Every new website includes 30 days of support. After that, monthly maintenance plans start at ₹5,000 for business websites and cover updates, backups, uptime monitoring, security scans, content changes and a monthly report. You can also manage the site yourself after our training.' },
     ],
   },

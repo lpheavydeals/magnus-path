@@ -69,6 +69,7 @@ export const businessWebsitePages: ServicePageData[] = [
         heading: 'Pages a professional business website should include',
         paragraphs: [
           'The right page list depends on your industry, but most company website development projects for manufacturers, exporters and B2B firms need a similar core. Schools, hospitals and real-estate firms swap the catalogue for courses, departments or projects, while the logic stays the same.',
+          'A professional website design company should deliver more than attractive pages. Expect a sitemap planned around your buyers, copy that states your offer plainly, forms that route enquiries to the right person, tracking from day one and a CMS your team can edit. Professional website development also means clean code, fast hosting and every login handed over in your name.',
         ],
         bullets: [
           'A home page that states what you do, for whom, and where, in one or two lines',

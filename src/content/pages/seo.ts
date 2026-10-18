@@ -801,7 +801,7 @@ export const seoPages: ServicePageData[] = [
         paragraphs: [
           'Chennai’s economy is broad, and SEO priorities follow it. Retailers in T. Nagar and Anna Nagar need local visibility and, increasingly, an online store. Clinics and hospitals need trust signals and accurate profiles. IT and services firms along OMR need content that wins enterprise buyers. Manufacturers in Guindy, Ambattur and the Sriperumbudur belt need product and capability pages that reach procurement teams in India and abroad.',
           'Each of these needs a different mix of local, technical and content work, so a one-size package rarely fits. We shape the plan around how your own buyers search.',
-          'As an e-commerce focused team, we also help Chennai brands grow online sales through Shopify SEO, marketplace SEO on Amazon and Flipkart, and AI search optimisation.',
+          'As an e-commerce focused team, we also help Chennai brands grow online sales through e-commerce SEO in Chennai and beyond: Shopify SEO, marketplace SEO on Amazon and Flipkart, and AI search optimisation.',
         ],
       },
       {
@@ -820,7 +820,7 @@ export const seoPages: ServicePageData[] = [
       {
         heading: 'What SEO costs in Chennai',
         paragraphs: [
-          'SEO pricing in Chennai ranges from very cheap packages to large retainers. Our SEO services start at ₹25,000 a month for one location, and e-commerce SEO starts at ₹35,000 a month. The difference between a cheap and a sensible plan is usually in what gets done: real page improvements and earned links versus automated reports and bulk directory submissions. Ask for a sample report before you decide.',
+          'SEO pricing in Chennai ranges from very cheap packages to large retainers. Our SEO services in Chennai start at ₹25,000 a month for one location, and e-commerce SEO starts at ₹35,000 a month. The difference between a cheap and a sensible plan is usually in what gets done: real page improvements and earned links versus automated reports and bulk directory submissions. Ask for a sample report before you decide.',
         ],
       },
       {

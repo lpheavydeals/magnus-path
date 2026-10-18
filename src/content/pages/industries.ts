@@ -993,7 +993,7 @@ export const industryPages: ServicePageData[] = [
   {
     slug: 'chennai/digital-marketing-agency',
     kind: 'location',
-    title: 'Digital Marketing Agency in Chennai for D2C Brands | Magnus Path',
+    title: 'Digital Marketing Agency & Company in Chennai | Magnus Path',
     description: 'Digital marketing agency in Chennai for e-commerce and D2C brands: Google Ads, Meta and social media, SEO and websites, with Tamil ads and in-person meetings.',
     primaryKeyword: 'digital marketing agency in Chennai',
     navLabel: 'Digital Marketing Agency in Chennai',
@@ -1053,7 +1053,7 @@ export const industryPages: ServicePageData[] = [
     ],
     guide: [
       {
-        heading: 'What a digital marketing agency in Chennai should do for you',
+        heading: 'What a digital marketing company in Chennai should do for you',
         paragraphs: [
           'Chennai has many agencies offering similar services, so the list of services tells you very little. What matters is whether a digital marketing agency in Chennai can connect its work to your revenue: more orders, more enquiries, lower cost per customer. Followers and impressions are only useful if they lead there.',
           'A good digital marketing company in Chennai should understand your business model before suggesting channels. A clothing store in T. Nagar, a SaaS start-up on OMR and an engineering firm in Ambattur need very different plans, budgets and measures of success.',
@@ -1072,6 +1072,7 @@ export const industryPages: ServicePageData[] = [
         paragraphs: [
           'Google Ads captures people already searching for what you sell, while Meta ads on Instagram and Facebook create demand among people who match your customer profile. Most businesses need both, in a balance that depends on their product and margins.',
           'As a Google Ads agency in Chennai, we also watch for wasted spend: broad keywords that attract job seekers, clicks from areas you do not deliver to and campaigns optimising for cheap clicks instead of sales. Cutting this waste is often the first quick win for a new account.',
+          'We run Google Ads and Meta (Facebook and Instagram) ads as one performance marketing plan for Chennai brands, judged on cost per order or lead rather than clicks. Budget moves each week towards the campaigns, products and areas that sell, and away from the ones that only bring traffic.',
         ],
         bullets: [
           'Search campaigns for high-intent keywords, with negative keywords to cut wasted clicks',
@@ -1122,7 +1123,7 @@ export const industryPages: ServicePageData[] = [
       { label: 'E-commerce website development in Chennai', href: '/chennai/ecommerce-website-development/' },
       { label: 'Performance marketing on Google and Meta', href: '/performance-marketing/' },
       { label: 'B2B digital marketing for manufacturers', href: '/b2b-digital-marketing/' },
-      { label: 'Free e-commerce audit', href: '/free-ecommerce-audit/' },
+      { label: 'Social media marketing agency in Chennai', href: '/chennai/social-media-marketing-agency/' },
     ],
     faqs: [
       { q: 'What does a digital marketing agency in Chennai do?', a: 'A digital marketing agency in Chennai plans and runs online channels that bring customers to a business: Google Ads, Meta and social media, SEO, websites and marketplaces. A good agency ties this work to measurable results such as orders, enquiries and cost per customer, not just reach or followers.' },
@@ -1131,6 +1132,7 @@ export const industryPages: ServicePageData[] = [
       { q: 'Can we meet your team in person in Chennai?', a: 'Yes. Our head office is in Chennai, and we meet clients in person across the city, at your office, store or factory, for kick-off meetings and monthly reviews. Clients outside Chennai work with us through video calls and shared dashboards.' },
       { q: 'Do you work only with e-commerce brands?', a: 'E-commerce and D2C brands are our focus, but we also work with local businesses such as clinics, retailers and service firms, and with manufacturers and exporters that need B2B lead generation. The same principle applies to all: marketing measured on sales and enquiries.' },
       { q: 'Are you a Google Ads agency in Chennai?', a: 'Yes. We plan and manage Google Search, Shopping, Performance Max and YouTube campaigns for Chennai businesses and brands across India. Every campaign is set up with conversion tracking so you can see which keywords and ads bring orders, calls or enquiries.' },
+      { q: 'How do I choose a digital marketing company in Chennai?', a: 'Look for a digital marketing company in Chennai that measures its work on orders, enquiries and cost per customer, tells you who will run your account and lets you own every ad account and login. Ask for a written monthly scope and a three-month plan with agreed targets before you sign.' },
       { q: 'Will I own my ad accounts and website?', a: 'Yes. Ad accounts, analytics, your website and all creative we produce belong to you. We work inside accounts in your name, so if you ever move to another agency or take marketing in-house, you keep all your data and history.' },
     ],
   },
