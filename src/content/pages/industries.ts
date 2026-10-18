@@ -55,6 +55,20 @@ export const industryPages: ServicePageData[] = [
       note: 'Performance marketing (Meta and Google ads) starts at ₹30,000 a month plus your ad spend. Marketplace, quick-commerce and SEO retainers are priced separately, and B2B programmes for manufacturers start at ₹50,000 a month.',
       items: ['Meta and Google campaign management', 'Creative direction and testing', 'Conversion tracking setup', 'Weekly optimisation', 'Monthly report and planning call'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'Same foundations, different detail in each category we work with.', center: 'What changes by category', after: 0, branches: [
+        { label: 'Fashion', items: ['Fit and size guides', 'Returns', 'Marketplace pricing'] },
+        { label: 'Beauty', items: ['Reviews and ingredients', 'Compliant claims', 'Reorders'] },
+        { label: 'Food', items: ['Shelf life', 'Quick commerce', 'Festive gifting'] },
+        { label: 'B2B', items: ['Spec sheets', 'Qualified RFQs'] },
+      ] },
+      { type: 'matrix', caption: 'Sorting agency proposals by what they know and what they measure.', after: 6, cols: ['Knows your category', 'Same package for all'], rows: ['Tracks margin and repeats', 'Measures ROAS only'], cells: [
+        { title: 'Strong fit', body: 'Ask for a 90-day plan and who does the work' },
+        { title: 'Check the detail', body: 'Good numbers, but ask about returns or claims' },
+        { title: 'Push on metrics', body: 'Ask how they will judge real profit' },
+        { title: 'Keep looking', body: 'Likely to scale spend, not profit' },
+      ] },
+    ],
     guide: [
       {
         heading: 'Why one marketing playbook does not fit every D2C brand',
@@ -178,6 +192,15 @@ export const industryPages: ServicePageData[] = [
       note: 'Performance marketing for fashion brands starts at ₹30,000 a month plus ad spend and covers Meta and Google ads with creative direction. Marketplace management, SEO and store builds are quoted separately.',
       items: ['Meta and Google campaign management', 'Monthly creative brief and testing plan', 'Google Shopping feed set-up', 'Returns-aware reporting', 'Monthly planning call'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'Where most fashion returns start, and what fixes each one.', center: 'Fewer returns', after: 1, branches: [
+        { label: 'Fit', items: ['Size charts in cm and inches', 'Model height and size'] },
+        { label: 'Fabric', items: ['Daylight close-ups', 'Drape videos for sarees'] },
+        { label: 'Exchanges', items: ['Size swaps over refunds', 'Clear terms on the page'] },
+        { label: 'COD', items: ['Verify COD orders', 'Order limits'] },
+      ] },
+      { type: 'venn', caption: 'Marketplaces and your own store do different jobs for a clothing label.', after: 3, left: { title: 'Myntra, Ajio, Amazon', body: 'reach buyers already shopping; core styles; commission' }, right: { title: 'Your own store', body: 'exclusive drops, bundles, customer data, repeat orders' }, overlap: 'Same prices, photos and sizes' },
+    ],
     guide: [
       {
         heading: 'What makes fashion ecommerce different',
@@ -303,6 +326,21 @@ export const industryPages: ServicePageData[] = [
       note: 'Performance marketing for beauty and Ayurveda brands starts at ₹30,000 a month plus ad spend, covering Meta and Google ads with policy-aware creative. Amazon account management starts at ₹30,000 a month and is quoted separately.',
       items: ['Meta and Google campaign management', 'Ad copy reviewed for policy risk', 'Creative testing plan', 'Retention and refill flow advice', 'Monthly report and planning call'],
     },
+    figures: [
+      { type: 'steps', caption: 'A claims check for beauty and Ayurveda ads before they go live.', after: 1, steps: [
+        { title: 'Cut medical words', body: 'No cure, heal, treat or permanent results' },
+        { title: 'Check the images', body: 'Realistic results, no edited before-afters' },
+        { title: 'No personal hooks', body: 'No “Struggling with acne?” openers' },
+        { title: 'Lead with use', body: 'Ingredients, texture, routine, reviews' },
+        { title: 'Match the page', body: 'Landing page wording mirrors the ad' },
+      ] },
+      { type: 'matrix', caption: 'Which beauty products to scale, judged on reorders as well as the first sale.', after: 6, cols: ['Rarely bought again', 'Bought again often'], rows: ['Thin first-order profit', 'Profitable first order'], cells: [
+        { title: 'Rethink', body: 'Fix price, pack size or bundle before scaling' },
+        { title: 'Often the one', body: 'Reorders cover a higher acquisition cost' },
+        { title: 'Steady seller', body: 'Scale on first-order return alone' },
+        { title: 'Scale first', body: 'Profitable now and brings customers back' },
+      ] },
+    ],
     guide: [
       {
         heading: 'Why beauty and Ayurveda sell on trust',
@@ -431,6 +469,15 @@ export const industryPages: ServicePageData[] = [
       note: 'Quick-commerce ads on Blinkit, Zepto and Instamart start at ₹25,000 a month plus ad spend. Performance marketing on Meta and Google starts at ₹30,000 a month, and Amazon advertising at ₹25,000 a month or 10–15% of ad spend.',
       items: ['Quick-commerce listing review', 'Sponsored campaign set-up and management', 'City and dark-store level reporting', 'Festive campaign planning', 'Monthly report and planning call'],
     },
+    figures: [
+      { type: 'matrix', caption: 'Shelf life decides how far a food product can travel.', after: 2, cols: ['Short shelf life', 'Long shelf life'], rows: ['Buyers in your city', 'Buyers in India or abroad'], cells: [
+        { title: 'Local and quick', body: 'Fresh sweets, bakery: local delivery, quick apps' },
+        { title: 'Any channel', body: 'Quick commerce, Amazon or your own store' },
+        { title: 'Avoid', body: 'Long transit and fresh stock rarely mix' },
+        { title: 'D2C and export', body: 'Spices, coffee, ghee and snacks ship well' },
+      ] },
+      { type: 'venn', caption: 'Quick commerce and Amazon reach the same food buyer at different moments.', after: 4, left: { title: 'Blinkit, Zepto, Instamart', body: 'weekday top-ups of snacks and staples, by city' }, right: { title: 'Amazon and your store', body: 'regional specialities, gift packs, bundles' }, overlap: 'One buyer, planned together' },
+    ],
     guide: [
       {
         heading: 'What makes food ecommerce different',
@@ -554,6 +601,21 @@ export const industryPages: ServicePageData[] = [
       note: 'B2B digital marketing for manufacturers and exporters starts at ₹50,000 a month plus ad spend. It covers export SEO, Google Ads or LinkedIn campaigns and lead reporting. Website builds or rebuilds are quoted separately after an audit.',
       items: ['Export keyword and buyer research', 'Ongoing SEO for product pages', 'Google Ads or LinkedIn campaign management', 'Enquiry tracking and lead qualification', 'Monthly review with your sales team'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'Four routes to export buyers beyond existing contacts.', center: 'Finding export buyers', after: 5, branches: [
+        { label: 'Search', items: ['Export SEO pages', 'Google Ads by country'] },
+        { label: 'LinkedIn', items: ['Procurement managers', 'Sourcing heads', 'Engineers'] },
+        { label: 'Visibility', items: ['Trade fairs', 'B2B directories'] },
+        { label: 'Introductions', items: ['Export promotion councils', 'Existing customers'] },
+      ] },
+      { type: 'steps', caption: 'What happens to an enquiry between the form and a quote.', after: 6, steps: [
+        { title: 'Reply fast', body: 'Auto-reply and WhatsApp routing within hours' },
+        { title: 'Score the fit', body: 'Country, company type, product, timeline' },
+        { title: 'Pass to sales', body: 'Serious buyers first, with full details' },
+        { title: 'Track the source', body: 'Which channel brought RFQs and orders' },
+        { title: 'Move budget', body: 'Towards channels that bring real orders' },
+      ] },
+    ],
     guide: [
       {
         heading: 'Why B2B marketing works differently for manufacturers',
@@ -679,6 +741,16 @@ export const industryPages: ServicePageData[] = [
       note: 'White-label SEO starts at US$350 a month per client site. Larger sites, competitive markets and extra content or link building are quoted per site. You set your own resale price.',
       items: ['Technical audit and fix list', 'Monthly on-page optimisation', 'Local SEO where relevant', 'Unbranded monthly report', 'NDA and no client contact'],
     },
+    figures: [
+      { type: 'venn', caption: 'Who does what in a white-label SEO arrangement.', after: 0, left: { title: 'Your agency', body: 'owns the client, the brand, the pricing and the calls' }, right: { title: 'Our Chennai team', body: 'audits, content, links and reports under your logo' }, overlap: 'Client sees one agency' },
+      { type: 'steps', caption: 'The checks each piece of work passes before your client sees it.', after: 5, steps: [
+        { title: 'Agree the brief', body: 'Keywords, pages and goals, set once' },
+        { title: 'Do the work', body: 'Content, on-page changes, outreach' },
+        { title: 'Second review', body: 'Edited and checked against the brief' },
+        { title: 'List every link', body: 'Each URL in the report for you to check' },
+        { title: 'Report as you', body: 'Your template, your logo, sent by you' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What white label SEO services are',
@@ -809,6 +881,20 @@ export const industryPages: ServicePageData[] = [
       note: 'SEO outsourcing starts at US$500 a month for one website, covering a defined monthly scope of technical, on-page, content and link work. Larger sites and competitive markets are quoted after an audit. Agencies reselling SEO should see our white-label pricing.',
       items: ['Technical audit and monthly fixes', 'Keyword map and 90-day plan', 'On-page optimisation and content', 'Outreach-based link building', 'Monthly task-level report and call'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'The usual worries about outsourcing, and what answers each one.', center: 'Outsourcing done right', after: 2, branches: [
+        { label: 'Quality', items: ['Written for your audience', 'Edited by a second person'] },
+        { label: 'Contact', items: ['Named account manager', 'Reply in one working day'] },
+        { label: 'Links', items: ['Outreach only', 'Every URL in the report'] },
+        { label: 'Reporting', items: ['Tasks and pages changed', 'Traffic and conversions'] },
+      ] },
+      { type: 'matrix', caption: 'Deciding which parts of SEO to hand over first.', after: 3, cols: ['Your team has time', 'Your team is stretched'], rows: ['Needs specialist skills', 'Steady monthly work'], cells: [
+        { title: 'Audit only', body: 'Technical audit; your developers implement' },
+        { title: 'Full management', body: 'Technical, on-page, content and links' },
+        { title: 'Keep in-house', body: 'Your team already covers it well' },
+        { title: 'Content first', body: 'Briefs, articles, category and landing pages' },
+      ] },
+    ],
     guide: [
       {
         heading: 'Why businesses outsource SEO to India',
@@ -955,6 +1041,16 @@ export const industryPages: ServicePageData[] = [
       areas: ['T. Nagar', 'Anna Nagar', 'Adyar', 'Velachery', 'OMR', 'Nungambakkam', 'Guindy', 'Porur', 'Tambaram', 'Ambattur'],
       note: 'Our head office is in Chennai, and we meet clients in person across the city, from retailers in T. Nagar to manufacturers in Ambattur and Guindy. We also have offices in Bengaluru and London, and clients elsewhere work with us remotely.',
     },
+    figures: [
+      { type: 'venn', caption: 'Google Ads and Meta ads do different jobs for a Chennai business.', after: 2, left: { title: 'Google Ads', body: 'catches people already searching for what you sell' }, right: { title: 'Meta ads', body: 'creates demand on Instagram and Facebook' }, overlap: 'Mix set by product and margin' },
+      { type: 'steps', caption: 'Planning a festive push on social media, weeks before the date.', after: 3, steps: [
+        { title: 'Pick the moment', body: 'Pongal, Tamil New Year, Deepavali, Aadi' },
+        { title: 'Set offers early', body: 'Agree products, offers and stock' },
+        { title: 'Make the content', body: 'Reels and carousels in Tamil or English' },
+        { title: 'Boost the best', body: 'Turn posts that work into ads' },
+        { title: 'Review orders', body: 'Judge on sales, not views' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a digital marketing agency in Chennai should do for you',

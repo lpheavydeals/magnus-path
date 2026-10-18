@@ -55,6 +55,15 @@ export const seoPages: ServicePageData[] = [
       note: 'Ecommerce SEO starts at ₹35,000 a month for a single store. Very large catalogues, several languages or added marketplace work are quoted after a free audit, so you only pay for the scope you need.',
       items: ['Technical SEO audit and monthly fixes', 'Keyword and category mapping', 'Category and product page optimisation', 'Content and link building each month', 'Monthly revenue-focused report and call'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'The three layers of store SEO, plus the pages where buyers decide.', center: 'Online store SEO', after: 0, branches: [
+        { label: 'Technical', items: ['Filter and sort URLs', 'Canonical tags', 'Fast mobile pages'] },
+        { label: 'Categories', items: ['Title that matches search', 'Intro above products', 'FAQs below'] },
+        { label: 'Products', items: ['Own descriptions', 'Product schema', 'Redirect when sold out'] },
+        { label: 'Authority', items: ['Relevant links', 'Blogs that feed categories'] },
+      ] },
+      { type: 'venn', caption: 'Paid ads and organic search planned by one team, using the same order data.', after: 6, left: { title: 'Paid ads', body: 'show which products and searches convert, starting today' }, right: { title: 'SEO', body: 'ranks those categories so you pay less for the same searches' }, overlap: 'Budget moves where it earns most' },
+    ],
     guide: [
       {
         heading: 'What ecommerce SEO services cover',
@@ -187,6 +196,21 @@ export const seoPages: ServicePageData[] = [
       note: 'Shopify SEO starts at ₹30,000 a month for one store. Stores with several Shopify Markets, languages or very large catalogues are quoted after a free audit.',
       items: ['Full Shopify technical audit', 'Theme and canonical fixes', 'Speed and app clean-up', 'Collection and product page optimisation', 'Blog content and link building each month'],
     },
+    figures: [
+      { type: 'matrix', caption: 'Which Shopify tag and filter pages to index, and which to keep out.', after: 1, cols: ['Few people search it', 'Real search demand'], rows: ['Near-copy of a collection', 'Distinct set of products'], cells: [
+        { title: 'Keep out', body: 'Canonicalise or noindex through theme logic' },
+        { title: 'Make a collection', body: 'Turn it into a proper collection with its own copy' },
+        { title: 'Leave for now', body: 'Noindex until people start searching for it' },
+        { title: 'Index it', body: 'Unique title, intro and internal links' },
+      ] },
+      { type: 'steps', caption: 'A Shopify app clean-up, in the order we do it.', after: 2, steps: [
+        { title: 'List every app', body: 'Note what each one loads, and on which pages' },
+        { title: 'Remove the unused', body: 'Uninstall apps not earning their place' },
+        { title: 'Clear old code', body: 'Delete snippets old apps left in the theme' },
+        { title: 'Lighten the pages', body: 'Compress images, lazy-load, drop sliders' },
+        { title: 'Test on a phone', body: 'Check speed and checkout on mobile' },
+      ] },
+    ],
     guide: [
       {
         heading: 'Why Shopify stores need Shopify-specific SEO',
@@ -315,6 +339,16 @@ export const seoPages: ServicePageData[] = [
       note: 'Amazon SEO and listing optimisation starts at ₹20,000 a month. The number of listings covered each month depends on catalogue size and how much image and A+ work is needed. Flipkart listings can be added to the same plan.',
       items: ['Category keyword research', 'Title, bullet and description rewrites', 'Backend search terms', 'Image briefs and A+ content', 'Monthly ranking and conversion report'],
     },
+    figures: [
+      { type: 'venn', caption: 'Amazon ranks listings that match the search and then sell.', after: 0, left: { title: 'Relevance', body: 'the words shoppers search are in your title, bullets and backend' }, right: { title: 'Performance', body: 'shoppers who see the listing click on it and buy' }, overlap: 'Higher rank, more sales, repeat' },
+      { type: 'steps', caption: 'How a new listing with no sales history earns its first rankings.', after: 4, steps: [
+        { title: 'Pick a few terms', body: 'A small set of high-intent launch keywords' },
+        { title: 'Make it convert', body: 'Images, bullets and A+ ready before ads' },
+        { title: 'Build early sales', body: 'Sponsored ads, deals or coupons' },
+        { title: 'Read search terms', body: 'See which searches bring orders' },
+        { title: 'Feed them back', body: 'Into title, bullets and backend fields' },
+      ] },
+    ],
     guide: [
       {
         heading: 'How Amazon decides which products to show',
@@ -439,6 +473,20 @@ export const seoPages: ServicePageData[] = [
       note: 'AI search optimisation starts at ₹25,000 a month. It works well only on top of sound SEO, so if your site has major technical issues we will recommend fixing those first, either within this plan or alongside our e-commerce SEO service.',
       items: ['Monthly AI visibility checks', 'Citable content rewrites', 'Entity and schema clean-up', 'Reviews and mentions plan', 'AI referral tracking in GA4'],
     },
+    figures: [
+      { type: 'mindmap', caption: 'Where AI assistants pick up what they say about your brand.', center: 'How AI tools see you', after: 4, branches: [
+        { label: 'Your website', items: ['Direct answers', 'Product and brand schema'] },
+        { label: 'Marketplaces', items: ['Amazon store', 'Ratings and reviews'] },
+        { label: 'Profiles', items: ['Google Business Profile', 'Instagram bio', 'Same facts everywhere'] },
+        { label: 'Other sites', items: ['Trade publications', 'Directories', 'Forum discussions'] },
+      ] },
+      { type: 'matrix', caption: 'Judging new AI search ideas by evidence and effort.', after: 5, cols: ['Little evidence yet', 'Clear evidence'], rows: ['Cheap and quick', 'Takes real effort'], cells: [
+        { title: 'Do, expect little', body: 'llms.txt: harmless, not a ranking lever' },
+        { title: 'Do now', body: 'Clear answers, current facts, clean schema' },
+        { title: 'Skip for now', body: 'Wait until the tools show it matters' },
+        { title: 'Plan and budget', body: 'Reviews, mentions and earned coverage' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What AI search optimization is, and what it is not',
@@ -564,6 +612,21 @@ export const seoPages: ServicePageData[] = [
       note: 'SEO services and local SEO start at ₹25,000 a month for one location. Multi-location businesses and larger websites are quoted after a free review. See our SEO packages for fixed monthly plans.',
       items: ['Google Business Profile management', 'Local citations and directory clean-up', 'Technical SEO fixes', 'Service and location page optimisation', 'Monthly content and lead-focused report'],
     },
+    figures: [
+      { type: 'steps', caption: 'Setting up a Google Business Profile that wins calls.', after: 1, steps: [
+        { title: 'Pick the category', body: 'Most accurate primary, then secondary ones' },
+        { title: 'List every service', body: 'Each with a short description' },
+        { title: 'Add real photos', body: 'Premises, team and your work' },
+        { title: 'Ask for reviews', body: 'From every happy customer; reply to all' },
+        { title: 'Match your details', body: 'Same name, address and phone everywhere' },
+      ] },
+      { type: 'matrix', caption: 'Consultant, freelancer or agency: which fits your situation.', after: 5, cols: ['Someone in-house edits', 'No one to make changes'], rows: ['You want a plan and advice', 'You want ongoing work done'], cells: [
+        { title: 'Consultant', body: 'Audit and plan; your team makes the changes' },
+        { title: 'Focused package', body: 'Profile, a few service pages and reviews first' },
+        { title: 'Freelancer', body: 'Steady help alongside your own staff' },
+        { title: 'Agency', body: 'Fixes, writing, Google profile and reports' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What an SEO agency in India does for a non-e-commerce business',
@@ -695,6 +758,15 @@ export const seoPages: ServicePageData[] = [
       areas: ['T. Nagar', 'Anna Nagar', 'Guindy', 'OMR', 'Velachery', 'Nungambakkam', 'Adyar', 'Porur', 'Ambattur', 'Mylapore'],
       note: 'Our head office is in Chennai, so we can meet clients across the city in person. We also work with businesses in nearby industrial areas such as Sriperumbudur, Oragadam and Chengalpattu.',
     },
+    figures: [
+      { type: 'venn', caption: 'How Chennai shoppers mix Tamil and English when they search.', after: 2, left: { title: 'Tamil script', body: 'typed or spoken on phones, often by voice' }, right: { title: 'English terms', body: 'product and service names people already use' }, overlap: 'Tanglish searches few target' },
+      { type: 'matrix', caption: 'What SEO looks like for different kinds of Chennai business.', after: 3, cols: ['Customers nearby', 'Buyers further away'], rows: ['Sells products', 'Sells services'], cells: [
+        { title: 'T. Nagar retail', body: 'Maps listing, store pages, then an online store' },
+        { title: 'Makers and brands', body: 'Product and capability pages, store SEO' },
+        { title: 'Clinics', body: 'Accurate profiles, reviews and trust signals' },
+        { title: 'IT firms on OMR', body: 'Content that wins enterprise buyers' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What to expect from an SEO company in Chennai',
@@ -830,6 +902,20 @@ export const seoPages: ServicePageData[] = [
       areas: ['RS Puram', 'Gandhipuram', 'Peelamedu', 'Saravanampatti', 'Singanallur', 'Race Course', 'Saibaba Colony', 'Tiruppur', 'Pollachi'],
       note: 'We do not have an office in Coimbatore. We serve Coimbatore, Tiruppur and nearby towns from our Chennai head office, working remotely day to day and visiting in person when a project needs it.',
     },
+    figures: [
+      { type: 'mindmap', caption: 'The pages a Coimbatore manufacturer needs so procurement teams find it.', center: 'Manufacturer website', after: 1, branches: [
+        { label: 'Products', items: ['One page per family', 'Specs and applications'] },
+        { label: 'Capabilities', items: ['Casting', 'Machining', 'Fabrication'] },
+        { label: 'Downloads', items: ['Data sheets', 'Catalogues'] },
+        { label: 'Enquiries', items: ['Fields sales needs', 'Industry pages to products'] },
+      ] },
+      { type: 'steps', caption: 'What the first six months usually look like.', after: 6, steps: [
+        { title: 'Month 1', body: 'Audit, site visit if useful, technical fixes' },
+        { title: 'Months 2–3', body: 'Key product pages, Google Business Profile' },
+        { title: 'Months 4–5', body: 'New content, export pages, industry links' },
+        { title: 'Month 6', body: 'See which pages bring enquiries; adjust' },
+      ] },
+    ],
     guide: [
       {
         heading: 'How we deliver SEO services in Coimbatore from Chennai',
