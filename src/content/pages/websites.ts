@@ -707,7 +707,7 @@ export const websitePages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Cost of e-commerce development for Bangalore brands',
+        heading: 'What an ecommerce website development company in Bangalore charges',
         paragraphs: [
           'Our prices are the same for Bangalore as for any other city. A template-based Shopify store starts at ₹60,000, and a custom Shopify build usually costs ₹1.5–5 lakh. Headless and custom e-commerce development starts at ₹2 lakh, and WooCommerce stores start at ₹50,000.',
           'Running costs include the Shopify subscription or hosting, paid apps and any order management tool. Everything in the scope, including workshops at our Bengaluru office, is agreed before the project starts, so there are no surprises on the invoice.',
@@ -732,7 +732,7 @@ export const websitePages: ServicePageData[] = [
       { label: 'Shopify development company', href: '/shopify-development/' },
       { label: 'Quick commerce marketing for Blinkit, Zepto and Instamart', href: '/quick-commerce-marketing/' },
       { label: 'Performance marketing for D2C brands', href: '/performance-marketing/' },
-      { label: 'E-commerce website development in Chennai', href: '/chennai/ecommerce-website-development/' },
+      { label: 'Website development company in Bangalore', href: '/bangalore/website-development-company/' },
     ],
     faqs: [
       { q: 'Do you have an office in Bangalore?', a: 'Yes. We have a Bengaluru office where you can meet the team by appointment for kick-off workshops, design reviews and training. It works alongside our Chennai head office, where much of the development is done, and day-to-day updates run through shared staging sites and Slack or WhatsApp.' },
@@ -741,6 +741,7 @@ export const websitePages: ServicePageData[] = [
       { q: 'How do I choose the best ecommerce development company in Bangalore?', a: 'Test their live stores on your own phone, meet the people who will build your store, and ask for a written scope with a fixed price and exclusions. Check whether they understand ad tracking and marketplace integrations, and how they handle support once the store is live.' },
       { q: 'Can you connect my store to Blinkit, Zepto and Instamart?', a: 'We integrate your website with order management tools that also connect to marketplaces and quick-commerce platforms, so inventory stays consistent across channels. The exact setup depends on how you supply each platform, so we review your current operations before recommending tools.' },
       { q: 'Do you build headless Shopify stores?', a: 'Yes. We build headless storefronts in Next.js on top of Shopify or an open-source commerce back end. We recommend headless only when a brand needs it, such as for very fast pages, complex product experiences or one back end serving both a website and an app.' },
+      { q: 'What should an ecommerce website development company in Bangalore deliver?', a: 'At a minimum: a mobile-first store, payments with COD and GST set up, courier and shipping rules, correct tracking for Meta and Google Ads, and staff training. You should also own every login and get a clear plan for support, fixes and new features once the store is live.' },
       { q: 'What happens after my store launches?', a: 'Every build includes 30 days of support. After that, many Bangalore clients keep us on a monthly retainer for new landing pages, features and fixes, handled by the same developers. Our ads and SEO teams can also take on growth work if you want one partner.' },
     ],
   },

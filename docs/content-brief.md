@@ -167,3 +167,8 @@ Never invent a street address; use the city name only in copy (the full addresse
 ## ChatGPT ads US (18 Oct 2026)
 - Extra allowed related URLs: /us/chatgpt-ads-agency/, /blog/how-to-advertise-on-chatgpt/, /chatgpt-ads-agency/
 - Extra allowed related URL: /uk/chatgpt-ads-agency/
+
+## Bangalore pages (18 Oct 2026)
+- Location pages (`kind: 'location'`, `local: { city: 'Bangalore', areas, note }`), Indian English, ₹ prices from the price list.
+- We have a **Bengaluru office** (meetings by appointment); much of the build/delivery is done by the Chennai head-office team; workshops at the Bengaluru office are included in project scope. Use "Bengaluru" or "Bangalore" naturally; keep the target keyword's spelling ("bangalore") in title/H1/intro.
+- Extra allowed related URLs: /bangalore/seo-company/, /bangalore/digital-marketing-agency/, /bangalore/website-development-company/, /bangalore/performance-marketing-agency/
