@@ -63,4 +63,4 @@
 ## Offices (added 17 Oct 2026)
 - [ ] Bengaluru street address and postcode; phone numbers for Chennai, Bengaluru and London (`site.offices` in `src/data/site.ts`)
 - [ ] Google Business Profile for each office, with the address exactly as on the site
-- [ ] Bangalore page: "workshops at our Bengaluru office are included in the scope" and "much of the build is done by the Chennai team" are accurate
+- [x] Bangalore page: workshops at the Bengaluru office included in scope; much of the build done by the Chennai team (confirmed 18 Oct 2026)
