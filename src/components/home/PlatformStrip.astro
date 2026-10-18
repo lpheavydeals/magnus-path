@@ -1,18 +1,57 @@
 ---
-const platforms = ['Shopify', 'WooCommerce', 'Amazon', 'Flipkart', 'Myntra', 'Blinkit', 'Zepto', 'Swiggy Instamart', 'Meta Ads', 'Google Ads', 'Google Search', 'ChatGPT & AI search'];
+// Official logos in their brand colours. A label is added where the logo itself doesn't spell out the platform name.
+import shopify from '../../assets/logos/shopify.svg';
+import woocommerce from '../../assets/logos/woocommerce.svg';
+import amazon from '../../assets/logos/amazon.svg';
+import flipkartIcon from '../../assets/logos/flipkart-icon.png';
+import flipkartWord from '../../assets/logos/flipkart-wordmark.svg';
+import myntra from '../../assets/logos/myntra.png';
+import blinkit from '../../assets/logos/blinkit.svg';
+import zepto from '../../assets/logos/zepto.svg';
+import swiggy from '../../assets/logos/swiggy.svg';
+import meta from '../../assets/logos/meta.svg';
+import googleAds from '../../assets/logos/google-ads.svg';
+import google from '../../assets/logos/google.svg';
+import openai from '../../assets/logos/openai.svg';
+
+type Logo = { src: string; h: number };
+const platforms: { name: string; logos: Logo[]; label?: string }[] = [
+  { name: 'Shopify', logos: [{ src: shopify.src, h: 32 }], label: 'Shopify' },
+  { name: 'WooCommerce', logos: [{ src: woocommerce.src, h: 25 }] },
+  { name: 'Amazon', logos: [{ src: amazon.src, h: 28 }] },
+  { name: 'Flipkart', logos: [{ src: flipkartIcon.src, h: 30 }, { src: flipkartWord.src, h: 24 }] },
+  { name: 'Myntra', logos: [{ src: myntra.src, h: 26 }], label: 'Myntra' },
+  { name: 'Blinkit', logos: [{ src: blinkit.src, h: 30 }], label: 'Blinkit' },
+  { name: 'Zepto', logos: [{ src: zepto.src, h: 26 }] },
+  { name: 'Swiggy Instamart', logos: [{ src: swiggy.src, h: 30 }], label: 'Instamart' },
+  { name: 'Meta Ads', logos: [{ src: meta.src, h: 20 }], label: 'Ads' },
+  { name: 'Google Ads', logos: [{ src: googleAds.src, h: 26 }], label: 'Google Ads' },
+  { name: 'Google Search', logos: [{ src: google.src, h: 26 }], label: 'Search' },
+  { name: 'ChatGPT & AI search', logos: [{ src: openai.src, h: 28 }], label: 'ChatGPT' },
+];
 ---
 <section class="strip" aria-label="Platforms we work on">
   <p class="strip__label">Platforms we grow brands on</p>
   <div class="strip__track">
-    <ul>{platforms.map((p) => <li>{p}</li>)}</ul>
-    <ul aria-hidden="true">{platforms.map((p) => <li>{p}</li>)}</ul>
+    {[0, 1].map((copy) => (
+      <ul aria-hidden={copy ? 'true' : undefined}>
+        {platforms.map((p) => (
+          <li title={p.name}>
+            {p.logos.map((l, i) => <img src={l.src} alt={i === 0 ? p.name : ''} style={`height:${l.h}px`} loading="lazy" decoding="async" />)}
+            {p.label && <span aria-hidden="true">{p.label}</span>}
+          </li>
+        ))}
+      </ul>
+    ))}
   </div>
 </section>
 <style>
   .strip { padding: 34px 0 10px; display: grid; gap: 20px; }
   .strip__label { text-align: center; font-size: 14px; color: var(--muted); }
   .strip__track { display: flex; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
-  .strip ul { display: flex; flex: none; gap: 56px; padding-right: 56px; margin: 0; list-style: none; animation: mq 45s linear infinite; }
-  .strip li { font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.02em; color: #9a9fa6; white-space: nowrap; }
+  .strip ul { display: flex; align-items: center; flex: none; gap: 60px; padding-right: 60px; margin: 0; list-style: none; animation: mq 50s linear infinite; }
+  .strip li { display: flex; align-items: center; gap: 9px; white-space: nowrap; }
+  .strip img { width: auto; display: block; }
+  .strip span { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; letter-spacing: -0.02em; color: #1d1d1f; }
   @keyframes mq { to { transform: translateX(-100%); } }
 </style>
