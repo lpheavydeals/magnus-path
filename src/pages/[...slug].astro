@@ -13,7 +13,7 @@ import FAQ from '../components/FAQ.astro';
 import LeadForm from '../components/LeadForm.astro';
 import FigureBand from '../components/figures/FigureBand.astro';
 import { allPages } from '../content/pages';
-import { site } from '../data/site';
+import { site, officeFor } from '../data/site';
 import type { ServicePageData } from '../data/types';
 
 export function getStaticPaths() {
@@ -39,7 +39,8 @@ const schema: object[] = [
   {
     '@context': 'https://schema.org', '@type': 'Service', name: page.primaryKeyword.replace(/\b\w/g, (c) => c.toUpperCase()),
     serviceType: page.primaryKeyword, description: page.description, url,
-    provider: { '@id': `${site.url}/#org` },
+    // City pages are provided by the nearest office's LocalBusiness node (see Base.astro)
+    provider: { '@id': page.local ? `${site.url}/#office-${officeFor(page.local.city).id}` : `${site.url}/#org` },
     areaServed: page.local ? { '@type': 'City', name: page.local.city } : page.market ? { '@type': 'Country', name: markets[page.market].country } : ['IN', 'GB', 'AE', 'AU', 'US'],
     ...(page.pricing ? { offers: { '@type': 'Offer', priceCurrency: page.pricing.from.includes('£') ? 'GBP' : page.pricing.from.includes('AED') ? 'AED' : page.pricing.from.includes('A$') ? 'AUD' : /\$/.test(page.pricing.from) ? 'USD' : 'INR', description: `Starting from ${page.pricing.from} ${page.pricing.unit}` } } : {}),
   },

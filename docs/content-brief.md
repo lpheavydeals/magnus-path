@@ -189,3 +189,6 @@ Never invent a street address; use the city name only in copy (the full addresse
 
 ## Chennai round 2 (18 Oct 2026)
 - Extra allowed related URL: /chennai/social-media-marketing-agency/
+
+## Cost guides (18 Oct 2026)
+- Extra allowed related URLs: /blog/digital-marketing-cost-in-chennai/, /blog/website-design-cost-in-bangalore/

@@ -35,16 +35,28 @@ const orgSchema = {
     postalCode: site.address.postalCode,
     addressCountry: site.address.country,
   },
-  location: site.offices.map((o) => ({
-    '@type': 'Place',
-    name: `${site.name} ${o.locality}`,
-    address: { '@type': 'PostalAddress', streetAddress: o.street, addressLocality: o.locality, addressRegion: o.region, postalCode: o.postalCode, addressCountry: o.country },
-    telephone: o.phone,
-  })),
+  location: site.offices.map((o) => ({ '@id': `${site.url}/#office-${o.id}` })),
   areaServed: ['IN', 'GB', 'AU', 'AE', 'US'],
   knowsAbout: ['E-commerce website development', 'Shopify development', 'Amazon advertising', 'Flipkart ads', 'E-commerce SEO', 'Performance marketing'],
   sameAs: Object.values(site.social).filter((u) => u !== '#'),
 };
+
+// One LocalBusiness node per staffed office, each tied to its own Google Business Profile.
+const officeSchema = site.offices.map((o) => ({
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': `${site.url}/#office-${o.id}`,
+  name: `${site.name} ${o.locality}`,
+  url: site.url,
+  image: `${site.url}/og-default.png`,
+  telephone: o.phone,
+  email: site.email,
+  address: { '@type': 'PostalAddress', streetAddress: o.street, addressLocality: o.locality, addressRegion: o.region, postalCode: o.postalCode, addressCountry: o.country },
+  openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: o.open.days, opens: o.open.opens, closes: o.open.closes }],
+  parentOrganization: { '@id': `${site.url}/#org` },
+  ...(o.map !== '#' && { hasMap: o.map }),
+  ...(o.gbp !== '#' && { sameAs: [o.gbp] }),
+}));
 ---
 <!doctype html>
 <html lang={lang}>
@@ -66,7 +78,7 @@ const orgSchema = {
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={new URL(ogImage, Astro.site ?? site.url).href} />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="application/ld+json" set:html={JSON.stringify([orgSchema, ...schema])} />
+    <script type="application/ld+json" set:html={JSON.stringify([orgSchema, ...officeSchema, ...schema])} />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>

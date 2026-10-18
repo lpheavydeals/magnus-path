@@ -18,10 +18,11 @@ export const site = {
   },
   hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST',
   // Staffed offices: clients can meet the team at each one. Each must match its own Google Business Profile.
+  // `open` feeds openingHoursSpecification (local time); `gbp` = Google Business Profile URL, `map` = Google Maps link.
   offices: [
-    { id: 'chennai', label: 'Chennai (head office)', street: 'Street address', locality: 'Chennai', region: 'Tamil Nadu', postalCode: '600000', country: 'IN', countryName: 'India', phone: '+91 00000 00000', phoneHref: 'tel:+910000000000', hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST' }, // TODO address, phone
-    { id: 'bengaluru', label: 'Bengaluru', street: 'Street address', locality: 'Bengaluru', region: 'Karnataka', postalCode: '560000', country: 'IN', countryName: 'India', phone: '+91 00000 00000', phoneHref: 'tel:+910000000000', hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST' }, // TODO address, phone
-    { id: 'london', label: 'London', street: '16 Avondale Court', locality: 'London', region: 'England', postalCode: 'E18 2RD', country: 'GB', countryName: 'United Kingdom', phone: '+44 0000 000000', phoneHref: 'tel:+440000000000', hours: 'Mon–Fri, 9:30 AM – 6:00 PM UK time' }, // TODO phone
+    { id: 'chennai', label: 'Chennai (head office)', street: 'Street address', locality: 'Chennai', region: 'Tamil Nadu', postalCode: '600000', country: 'IN', countryName: 'India', phone: '+91 00000 00000', phoneHref: 'tel:+910000000000', hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:30', closes: '19:00' }, gbp: '#', map: '#' }, // TODO address, phone, Google Business Profile + Maps links
+    { id: 'bengaluru', label: 'Bengaluru', street: 'Street address', locality: 'Bengaluru', region: 'Karnataka', postalCode: '560000', country: 'IN', countryName: 'India', phone: '+91 00000 00000', phoneHref: 'tel:+910000000000', hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:30', closes: '19:00' }, gbp: '#', map: '#' }, // TODO address, phone, Google Business Profile + Maps links
+    { id: 'london', label: 'London', street: '16 Avondale Court', locality: 'London', region: 'England', postalCode: 'E18 2RD', country: 'GB', countryName: 'United Kingdom', phone: '+44 0000 000000', phoneHref: 'tel:+440000000000', hours: 'Mon–Fri, 9:30 AM – 6:00 PM UK time', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:30', closes: '18:00' }, gbp: '#', map: '#' }, // TODO phone, Google Business Profile + Maps links
   ],
   formEndpoint: '#', // TODO: form handler (Web3Forms / Formspree / CRM webhook)
   social: {
