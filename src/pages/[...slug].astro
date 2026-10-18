@@ -11,6 +11,7 @@ import Guide from '../components/page/Guide.astro';
 import Related from '../components/page/Related.astro';
 import FAQ from '../components/FAQ.astro';
 import LeadForm from '../components/LeadForm.astro';
+import FigureBand from '../components/figures/FigureBand.astro';
 import { allPages } from '../content/pages';
 import { site } from '../data/site';
 import type { ServicePageData } from '../data/types';
@@ -23,6 +24,8 @@ const url = `${site.url}/${page.slug}/`;
 const plainH1 = page.h1.replace(/\*/g, '');
 const markets = { US: { lang: 'en-US', country: 'United States' }, UK: { lang: 'en-GB', country: 'United Kingdom' }, UAE: { lang: 'en-AE', country: 'United Arab Emirates' }, AU: { lang: 'en-AU', country: 'Australia' } } as const;
 const currency = page.market === 'US' ? '$' : page.market === 'UK' ? '£' : page.market === 'UAE' ? 'AED' : page.market === 'AU' ? 'A$' : '₹';
+// The figure tied to the earliest guide section is the most general: show it as the 2nd section of the page.
+const figs = [...(page.figures ?? [])].sort((a, b) => (a.after ?? 0) - (b.after ?? 0));
 const lang = page.market ? markets[page.market].lang : 'en-IN';
 // hreflang: a global page and its country versions (pages whose `twin` is that global page) all point at each other
 const globalSlug = page.twin ?? page.slug;
@@ -46,13 +49,14 @@ const schema: object[] = [
 ---
 <Base title={page.title} description={page.description} schema={schema} lang={lang} alternates={alternates}>
   <PageHero eyebrow={page.eyebrow} h1={page.h1} intro={page.intro} icon={page.kind === 'location' ? 'path' : page.icon} facts={page.facts} trail={page.breadcrumb} current={page.navLabel} currency={currency} />
+  {figs[0] && <FigureBand figure={figs[0]} n={1} />}
   <Pains items={page.pains} heading={page.headings.pains} />
   {page.children && <Children items={page.children} currency={currency} heading={page.headings.children ?? `${page.navLabel} services`} />}
   <Includes items={page.includes} heading={page.headings.includes} platforms={page.platforms} />
   <ProcessPanel steps={page.process} heading={page.headings.process} />
   {page.pricing && <PricingTeaser {...page.pricing} heading={page.headings.pricing ?? `Clear pricing for ${page.navLabel}`} />}
   {page.local && <LocalBlock {...page.local} />}
-  <Guide sections={page.guide} title={page.headings.guide} figures={page.figures} />
+  <Guide sections={page.guide} title={page.headings.guide} figures={figs.slice(1)} start={2} />
   <FAQ items={page.faqs} />
   <Related links={page.related} />
   <LeadForm market={page.market} />

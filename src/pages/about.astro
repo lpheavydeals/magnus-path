@@ -3,6 +3,20 @@ import Base from '../layouts/Base.astro';
 import SimpleHero from '../components/page/SimpleHero.astro';
 import ProcessPanel from '../components/page/ProcessPanel.astro';
 import LeadForm from '../components/LeadForm.astro';
+import FigureBand from '../components/figures/FigureBand.astro';
+import type { Figure } from '../data/types';
+const split: Figure = { type: 'matrix', caption: 'Who does what when you work with us: we run the work, you keep the big decisions.', cols: ['Our team', 'Your team'], rows: ['Day-to-day work', 'Big decisions'], cells: [
+  { title: 'We run it', body: 'Builds, campaigns, listings and SEO tasks, every week' },
+  { title: 'You spot-check', body: 'Weekly reports show every change we made and why' },
+  { title: 'We recommend', body: 'Budgets, offers and priorities, backed by your data' },
+  { title: 'You decide', body: 'Your brand, your prices, your final say on spend' },
+] };
+const offices: Figure = { type: 'mindmap', caption: 'Where the team works: three offices, and remote work for clients in the US, UAE and Australia.', center: 'Magnus Path', branches: [
+  { label: 'Chennai', items: ['Head office', 'Main delivery team'] },
+  { label: 'Bengaluru', items: ['Meetings and workshops', 'Karnataka brands'] },
+  { label: 'London', items: ['UK client meetings', 'Work done overnight in India'] },
+  { label: 'Remote', items: ['US, UAE, Australia', 'Video calls in your hours'] },
+] };
 import { breadcrumbSchema } from '../data/schema';
 const principles = [
   { title: 'One team, one number', body: 'Website, ads and SEO are run by one team that shares one goal: profitable orders. No hand-offs between agencies, no finger-pointing.' },
@@ -13,7 +27,8 @@ const principles = [
 const schema = [breadcrumbSchema([{ label: 'About', href: '/about/' }]), { '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About Magnus Path', url: 'https://www.magnuspath.com/about/' }];
 ---
 <Base title="About Magnus Path | E-commerce Growth Agency, Chennai" description="Magnus Path is a Chennai-based e-commerce growth agency. One team builds your store, runs your ads and earns your rankings, measured in sales." schema={schema}>
-  <SimpleHero eyebrow="About us" h1="We Build the *Path* From Click to Order" intro="Magnus Path is an e-commerce growth agency based in Chennai. We started it because online brands kept telling us the same story: one agency for the website, another for ads, a freelancer for SEO, and nobody responsible for sales. So we built one team that does all three." current="About" />
+  <SimpleHero eyebrow="About us" h1="We Build the *Path* From Click to Order" intro="Magnus Path is an e-commerce growth agency headquartered in Chennai, with offices in Bengaluru and London. We started it because online brands kept telling us the same story: one agency for the website, another for ads, a freelancer for SEO, and nobody responsible for sales. So we built one team that does all three." current="About" />
+  <FigureBand figure={split} n={1} label="How we work, at a glance" />
   <section class="section ab">
     <div class="wrap ab__grid">
       <div class="head"><p class="label" data-reveal>What we believe</p><h2 data-reveal>How we work with every brand</h2></div>
@@ -30,6 +45,7 @@ const schema = [breadcrumbSchema([{ label: 'About', href: '/about/' }]), { '@con
       </ul>
     </div>
   </section>
+  <FigureBand figure={offices} n={2} label="Our offices" />
   <ProcessPanel heading="How a project with us *starts*" steps={[
     { title: 'Free audit', body: 'We review your store, ads and SEO and send a video walkthrough within 24 hours.' },
     { title: 'Plan and quote', body: 'A 90-day plan with targets and a fixed monthly fee or project price.' },

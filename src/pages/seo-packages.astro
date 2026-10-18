@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import SimpleHero from '../components/page/SimpleHero.astro';
 import Tiers from '../components/page/Tiers.astro';
 import Guide from '../components/page/Guide.astro';
+import FigureBand from '../components/figures/FigureBand.astro';
 import FAQ from '../components/FAQ.astro';
 import Related from '../components/page/Related.astro';
 import LeadForm from '../components/LeadForm.astro';
@@ -42,8 +43,9 @@ const figures = [
 ---
 <Base title="SEO Packages India: Plans & SEO Cost | Magnus Path" description="SEO packages in India from ₹25,000/month. Compare local, national and authority SEO plans and see what SEO really costs in India, with no long lock-ins." schema={schema}>
   <SimpleHero eyebrow="SEO packages India" h1="SEO Packages in India With *Clear Monthly Pricing*" intro="Compare our SEO packages for local businesses, national brands and competitive industries, and see what SEO really costs in India. Every plan lists exactly what we deliver each month, so you know what you are paying for." trail={trail} current="SEO Packages" />
+  <FigureBand figure={figures[0] as any} n={1} />
   <Tiers tiers={seoTiers} heading="Choose your SEO package" note="All plans start with a free website audit. Prices exclude GST." />
-  <Guide sections={guide} figures={figures as any} title="SEO cost in India: a straight answer" />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="SEO cost in India: a straight answer" />
   <FAQ items={faqs} title="SEO pricing questions" />
   <Related links={[{ label: 'SEO services in India', href: '/seo-services/' }, { label: 'SEO company in Chennai', href: '/chennai/seo-company/' }, { label: 'E-commerce SEO packages', href: '/ecommerce-seo-packages/' }, { label: 'Outsource SEO to India', href: '/seo-outsourcing-india/' }]} />
   <LeadForm heading="Get your SEO quote" />

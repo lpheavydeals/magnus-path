@@ -12,6 +12,15 @@ import Qualify from '../components/home/Qualify.astro';
 import Guides from '../components/home/Guides.astro';
 import FAQ from '../components/FAQ.astro';
 import LeadForm from '../components/LeadForm.astro';
+import FigureBand from '../components/figures/FigureBand.astro';
+import type { Figure } from '../data/types';
+const homeMap: Figure = { type: 'mindmap', caption: 'One team for your store, your ads and your search rankings, in India and abroad.', center: 'Magnus Path', branches: [
+  { label: 'Websites', items: ['Shopify and WooCommerce', 'Corporate websites', 'Care and maintenance'] },
+  { label: 'Ads', items: ['Meta and Google', 'Amazon and Flipkart', 'Quick commerce, ChatGPT'] },
+  { label: 'SEO', items: ['Store and marketplace SEO', 'AI search visibility'] },
+  { label: 'Where', items: ['Chennai, Bengaluru, London', 'India, UK, US, UAE, Australia'] },
+] };
+const homeVenn: Figure = { type: 'venn', caption: 'The sweet spot: our team’s speed and specialists, plus what only you know about your customers.', left: { title: 'What we do best', body: 'speed, specialists, testing and reporting every week' }, right: { title: 'What only you know', body: 'your product, customers, margins and brand story' }, overlap: 'A brand that outsells bigger rivals' };
 import { site } from '../data/site';
 
 const faqs = [
@@ -39,9 +48,11 @@ const schema = [
 >
   <Hero />
   <PlatformStrip />
+  <FigureBand figure={homeMap} n={1} label="What we do, at a glance" />
   <Services />
   <Industries />
   <WhyStatement />
+  <FigureBand figure={homeVenn} n={2} label="Why it works" />
   <Process />
   <CaseStack />
   <Locations />

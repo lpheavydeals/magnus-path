@@ -1,9 +1,9 @@
 ---
 import SketchFigure from '../figures/SketchFigure.astro';
 import type { PlacedFigure } from '../../data/types';
-interface Props { sections: { heading: string; paragraphs: string[]; bullets?: string[] }[]; title: string; figures?: PlacedFigure[] }
-const { sections, title, figures = [] } = Astro.props;
-const numbered = figures.map((f, i) => ({ f, n: i + 1, at: Math.min(f.after ?? 0, sections.length - 1) }));
+interface Props { sections: { heading: string; paragraphs: string[]; bullets?: string[] }[]; title: string; figures?: PlacedFigure[]; start?: number }
+const { sections, title, figures = [], start = 1 } = Astro.props;
+const numbered = figures.map((f, i) => ({ f, n: i + start, at: Math.min(f.after ?? 0, sections.length - 1) }));
 const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 ---
 <section class="section gde">

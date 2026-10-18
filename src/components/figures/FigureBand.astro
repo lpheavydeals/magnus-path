@@ -1,0 +1,17 @@
+---
+// A diagram shown as its own section, right below the hero ("at a glance").
+import SketchFigure from './SketchFigure.astro';
+import type { Figure } from '../../data/types';
+interface Props { figure: Figure; n?: number; label?: string }
+const { figure, n, label = 'At a glance' } = Astro.props;
+---
+<section class="section fb">
+  <div class="wrap fb__in">
+    <p class="label" data-reveal>{label}</p>
+    <SketchFigure figure={figure} n={n} />
+  </div>
+</section>
+<style>
+  .fb { padding-top: clamp(28px, 4vw, 56px); padding-bottom: clamp(28px, 4vw, 56px); }
+  .fb__in { max-width: 1040px; display: grid; gap: 14px; }
+</style>

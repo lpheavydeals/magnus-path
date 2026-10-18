@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import SimpleHero from '../../components/page/SimpleHero.astro';
 import ProfitCalc from '../../components/tools/ProfitCalc.astro';
 import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
 import FAQ from '../../components/FAQ.astro';
 import Related from '../../components/page/Related.astro';
 import LeadForm from '../../components/LeadForm.astro';
@@ -42,7 +43,8 @@ const figures = [
 <Base title="Amazon & Flipkart Profit Calculator (India) | Magnus Path" description="Free Amazon and Flipkart profit calculator for Indian sellers: work out payout, profit per unit, margin and break-even ACoS after fees, GST, ads and returns." schema={schema}>
   <SimpleHero eyebrow="Free tool" h1="Amazon & Flipkart *Profit Calculator*" intro="See what you really earn per unit on Amazon India or Flipkart after commission, fees, GST, ads and returns, and how much you can afford to spend on ads before a sale stops making money." trail={trail} current="Marketplace Profit Calculator" />
   <ProfitCalc />
-  <Guide sections={guide} figures={figures as any} title="How marketplace profit really works" />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="How marketplace profit really works" />
   <FAQ items={faqs} title="Profit calculator questions" />
   <Related links={[{ label: 'Amazon account management services', href: '/amazon-account-management/' }, { label: 'Flipkart account management services', href: '/flipkart-account-management/' }, { label: 'ROAS calculator', href: '/tools/roas-calculator/' }, { label: 'Amazon advertising agency', href: '/amazon-marketing-agency/' }]} />
   <LeadForm heading="Want your marketplace margins reviewed?" />

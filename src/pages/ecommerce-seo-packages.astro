@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import SimpleHero from '../components/page/SimpleHero.astro';
 import Tiers from '../components/page/Tiers.astro';
 import Guide from '../components/page/Guide.astro';
+import FigureBand from '../components/figures/FigureBand.astro';
 import FAQ from '../components/FAQ.astro';
 import Related from '../components/page/Related.astro';
 import LeadForm from '../components/LeadForm.astro';
@@ -37,8 +38,9 @@ const figures = [
 ---
 <Base title="E-commerce SEO Packages & Pricing in India | Magnus Path" description="E-commerce website SEO packages from ₹35,000/month: technical SEO, category and product page optimisation, content and links for Shopify and WooCommerce stores." schema={schema}>
   <SimpleHero eyebrow="E-commerce SEO packages" h1="E-commerce Website SEO Packages *Built Around Revenue*" intro="Our e-commerce website SEO packages fix the technical problems holding your store back, optimise the category and product pages buyers search for, and build the authority that keeps you ranking. Three clear monthly plans, no long lock-ins." trail={trail} current="E-commerce SEO Packages" />
+  <FigureBand figure={figures[0] as any} n={1} />
   <Tiers tiers={ecomSeoTiers} heading="Choose your e-commerce SEO package" note="All plans include a free audit to start, keyword mapping and transparent reporting. Prices exclude GST." />
-  <Guide sections={guide} figures={figures as any} title="Choosing an e-commerce SEO package" />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="Choosing an e-commerce SEO package" />
   <FAQ items={faqs} title="E-commerce SEO package questions" />
   <Related links={[{ label: 'E-commerce SEO services', href: '/ecommerce-seo/' }, { label: 'Shopify SEO services', href: '/shopify-seo/' }, { label: 'Amazon SEO & listing optimisation', href: '/amazon-seo/' }, { label: 'SEO packages for any business', href: '/seo-packages/' }]} />
   <LeadForm heading="Find the right SEO package" />

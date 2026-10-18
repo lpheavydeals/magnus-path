@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import SimpleHero from '../../components/page/SimpleHero.astro';
 import RoasCalc from '../../components/tools/RoasCalc.astro';
 import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
 import FAQ from '../../components/FAQ.astro';
 import Related from '../../components/page/Related.astro';
 import LeadForm from '../../components/LeadForm.astro';
@@ -36,7 +37,8 @@ const figures = [
 <Base title="ROAS Calculator & Break-even ACoS Calculator | Magnus Path" description="Free ROAS calculator for e-commerce: work out ROAS, ACoS, break-even ROAS and profit after ad spend for Meta, Google, Amazon and Flipkart ads." schema={schema}>
   <SimpleHero eyebrow="Free tool" h1="ROAS Calculator With *Break-even ACoS*" intro="Enter your ad spend, revenue and margin to see your ROAS, ACoS, break-even point and real profit after ads. Works for Meta, Google, Amazon, Flipkart and quick-commerce campaigns." trail={trail} current="ROAS Calculator" />
   <RoasCalc />
-  <Guide sections={guide} figures={figures as any} title="ROAS, ACoS and break-even explained" />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="ROAS, ACoS and break-even explained" />
   <FAQ items={faqs} title="ROAS calculator questions" />
   <Related links={[{ label: 'Amazon advertising agency', href: '/amazon-marketing-agency/' }, { label: 'Performance marketing agency in India', href: '/performance-marketing/' }, { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }, { label: 'Flipkart ads management', href: '/flipkart-account-management/' }]} />
   <LeadForm heading="Want a better ROAS?" sub="Send us your store or ad account. Within 24 hours we show you where spend is wasted and what to change first." />

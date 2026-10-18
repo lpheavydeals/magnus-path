@@ -2,6 +2,8 @@
 
 Goal: help people **read and remember** the page, not add keywords. Each landing page gets **2 figures** placed inside
 its guide (`figures` field, see `Figure` in `src/data/types.ts`); each blog post gets 2 in its frontmatter (`figures:`).
+**Placement:** the figure tied to the earliest guide section is shown as the page's 2nd section, right below the hero
+("At a glance"), so make it the most general overview; the other one stays inside the guide. Homepage and About have their own.
 The look is hand-drawn (component `src/components/figures/SketchFigure.astro`); all text is real HTML.
 
 ## Pick the type that fits the idea
