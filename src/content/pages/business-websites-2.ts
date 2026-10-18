@@ -158,14 +158,14 @@ export const businessWebsitePages2: ServicePageData[] = [
   {
     slug: 'chennai/website-development-company',
     kind: 'location',
-    title: 'Website Development Company in Chennai | Magnus Path',
-    description: 'Website development company in Chennai building business, corporate and WordPress websites from ₹35,000. Tamil and English content, in-person meetings.',
+    title: 'Website & Web Development Company in Chennai | Magnus Path',
+    description: 'Website and web development company in Chennai building business, corporate and WordPress sites from ₹35,000. Tamil and English content, in-person meetings.',
     primaryKeyword: 'website development company in chennai',
     navLabel: 'Website Development Company in Chennai',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
     eyebrow: 'Web design and development · Chennai',
     h1: 'Website Development Company in Chennai for *Growing Businesses*',
-    intro: 'Magnus Path is a website development company in Chennai that designs and builds business websites, corporate sites, WordPress sites and landing pages for local firms. Manufacturers, clinics, schools, builders, consultants and retailers get a site that explains what they do, brings in enquiries and is easy to keep up to date.',
+    intro: 'Magnus Path is a website development company in Chennai that designs and builds business websites, corporate sites, WordPress sites and landing pages for local firms. As a web development company in Chennai, we give manufacturers, clinics, schools, builders, consultants and retailers a site that explains what they do, brings in enquiries and is easy to keep up to date.',
     icon: 'website',
     facts: ['Business websites from ₹35,000', 'Tamil and English content', 'Meetings at your office'],
     headings: {

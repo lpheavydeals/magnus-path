@@ -15,7 +15,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
     navLabel: 'Ecommerce SEO Agency UK',
     breadcrumb: ukBreadcrumb,
     eyebrow: 'Google UK · Collections · Product schema · Free listings',
-    h1: 'Ecommerce SEO Agency UK Retailers Use to Rank *Category Pages*',
+    h1: 'Ecommerce SEO Agency for UK Retailers Who Want *Category Pages That Rank*',
     intro: 'Magnus Path is an ecommerce SEO agency that helps UK online retailers grow organic sales from Google.co.uk. We fix crawling and faceted navigation, rewrite collection pages in British English, add product schema and earn links from UK publications. We have a London office and a Chennai delivery team working in your morning, and we quote in GBP after a free audit.',
     icon: 'seo',
     facts: ['British English keyword research', 'Shopify, WooCommerce and custom stores', 'Quoted in GBP after an audit'],
