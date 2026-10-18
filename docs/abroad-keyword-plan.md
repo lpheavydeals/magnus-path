@@ -196,3 +196,10 @@ informational: "openai ads" 1,300 / KD 28 and "chatgpt ads manager" 480 / KD 32.
 - /us/chatgpt-ads-agency/ (twin of /chatgpt-ads-agency/): chatgpt ads agency (50 / 14), chatgpt advertising agency (50 / 19), chatgpt ppc.
 - /blog/how-to-advertise-on-chatgpt/: openai ads, chatgpt ads manager, ads in chatgpt, advertise on chatgpt, chatgpt ads cost.
 Full data: `research/abroad-keyword-results/us-chatgpt-ads-results.csv`.
+
+## ChatGPT ads: United Kingdom (data received 18 Oct 2026)
+About a tenth of US volume, but the agency keywords are almost uncontested: chatgpt ads agency 50 / KD 4, chatgpt
+advertising agency 30 / KD 11 (with a Maps pack, where the London office helps), chatgpt advertising 1,000 / KD 47.
+Proposal: /uk/chatgpt-ads-agency/ (twin of /chatgpt-ads-agency/), quoted in GBP, London office for meetings.
+The how-to guide already covers the UK informational searches. "openai ads" is KD 91 in the UK — skip there.
+Full data: `research/abroad-keyword-results/uk-chatgpt-ads-results.csv`.
