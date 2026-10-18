@@ -44,6 +44,21 @@ export const auShopifyPages: ServicePageData[] = [
       { title: 'Design and build', body: 'Designs using your real products, then development in an unpublished theme and a Git repository you own, with progress shared each afternoon.' },
       { title: 'Launch and aftercare', body: 'Test orders, redirects and tracking checks before go-live, then a support period for fixes and training so your team can run the store.' },
     ],
+    figures: [
+      { type: 'mindmap', caption: 'What an Australian Shopify checkout needs so the price shown is the price paid.', center: 'Australian checkout', after: 1, branches: [
+        { label: 'Prices', items: ['GST included', 'GST checked by accountant'] },
+        { label: 'Pay now', items: ['Shopify Payments cards', 'Apple Pay, Google Pay', 'PayPal'] },
+        { label: 'Pay later', items: ['Afterpay', 'Zip or Klarna'] },
+        { label: 'Delivery', items: ['Australia Post, Sendle', 'Estimates by region', 'NZD prices for NZ'] },
+      ] },
+      { type: 'steps', caption: 'Moving to Shopify from WooCommerce, Magento, BigCommerce or Neto without losing sales.', after: 2, steps: [
+        { title: 'Map old URLs', body: 'A redirect for every product and page' },
+        { title: 'Clean product data', body: 'Fix titles, variants and images first' },
+        { title: 'Plan accounts', body: 'Customer accounts and order history' },
+        { title: 'Test orders', body: 'Each payment and shipping option' },
+        { title: 'Crawl old URLs', body: 'Check every redirect lands correctly' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What Shopify experts should handle for an Australian store',

@@ -44,6 +44,15 @@ export const uaeMarketingPages: ServicePageData[] = [
       { title: 'Run, report and review', body: 'Daily campaign management, a monthly report on leads, sales and cost per result, and a review call to agree next month’s priorities.' },
     ],
     platforms: ['Google Ads', 'Meta Ads', 'Snapchat Ads', 'TikTok Ads', 'LinkedIn Ads', 'GA4', 'Google Tag Manager', 'Google Business Profile', 'WhatsApp Business', 'Shopify', 'WordPress'],
+    figures: [
+      { type: 'matrix', caption: 'Which channels fit, depending on who you sell to and whether they are already looking.', after: 1, cols: ['Already searching', 'Not looking yet'], rows: ['Selling to consumers', 'Selling to businesses'], cells: [
+        { title: 'Google Search', body: 'Catch people who know what they need, from clinics to products' },
+        { title: 'Meta, Snap, TikTok', body: 'Build demand with phone-shot video and click-to-WhatsApp ads' },
+        { title: 'Search, B2B terms', body: 'Supplier and service searches from buyers ready to ask' },
+        { title: 'LinkedIn', body: 'Reach decision-makers by job title and company' },
+      ] },
+      { type: 'venn', caption: 'Arabic and English ads share an offer but need their own words and creative.', after: 2, left: { title: 'Arabic ads', body: 'own hook and copy, landing pages that read right to left' }, right: { title: 'English ads', body: 'for the many residents who search and scroll in English' }, overlap: 'Same offer, separate creative' },
+    ],
     guide: [
       {
         heading: 'What a digital marketing agency in Dubai should deliver',
@@ -170,6 +179,21 @@ export const uaeMarketingPages: ServicePageData[] = [
       { title: 'Test, scale and report', body: 'Weekly creative tests and budget changes, a weekly report on delivered orders and cost per order, and a monthly review call.' },
     ],
     platforms: ['Meta Ads', 'Google Ads', 'Google Merchant Center', 'Snapchat Ads', 'TikTok Ads', 'Noon Ads', 'Amazon Ads', 'GA4', 'Google Tag Manager', 'Shopify', 'Klaviyo'],
+    figures: [
+      { type: 'mindmap', caption: 'What comes out of each order before you know the most you can pay to win it.', center: 'Profit per order', after: 0, branches: [
+        { label: 'Order value', items: ['Average order value', 'Bundles for thin margins'] },
+        { label: 'Product', items: ['Product cost', 'Expected returns'] },
+        { label: 'Getting there', items: ['Delivery cost', 'COD orders refused'] },
+        { label: 'Fees and tax', items: ['Payment fees', '5% VAT'] },
+      ] },
+      { type: 'steps', caption: 'How cash-on-delivery orders are confirmed and fed back, so ad platforms learn from buyers who pay.', after: 2, steps: [
+        { title: 'Order placed', body: 'Meta and Google count it straight away' },
+        { title: 'Confirm first', body: 'WhatsApp or SMS check before dispatch' },
+        { title: 'Track by campaign', body: 'Placed, confirmed and delivered orders' },
+        { title: 'Send back', body: 'Confirmed or delivered orders as conversions' },
+        { title: 'Cut the weak spots', body: 'Pause campaigns with many refusals' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a performance marketing agency in Dubai should be judged on',

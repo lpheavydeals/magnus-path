@@ -45,6 +45,15 @@ export const auSeoPages: ServicePageData[] = [
       { title: 'Fix, write and build links', body: 'We clean up crawling, rewrite priority collections, add schema, tidy the product feed, build seasonal pages and start digital PR, working in your store or with your developer.' },
       { title: 'Report on revenue', body: 'A monthly report ties rankings to organic sessions, orders and revenue in AUD by page type, followed by a call to agree what to push next.' },
     ],
+    figures: [
+      { type: 'venn', caption: 'Product schema and your Merchant Center feed should agree with the page shoppers see.', after: 2, left: { title: 'Product schema', body: 'price, stock, brand and reviews on each product page' }, right: { title: 'Merchant Center feed', body: 'free listings in Shopping, Images and results' }, overlap: 'Same GST-inclusive AUD price' },
+      { type: 'matrix', caption: 'Where an independent store can beat Amazon.com.au and the big chains, and where it cannot.', after: 3, cols: ['One-word search', 'Specific search'], rows: ['Big retailers', 'Independent store'], cells: [
+        { title: 'They win', body: 'Huge range and authority for broad product terms' },
+        { title: 'Filtered grid', body: 'Often only a filter page with little help' },
+        { title: 'Not worth chasing', body: 'Spend effort elsewhere' },
+        { title: 'Your best chance', body: 'Focused collections, buying guides and expert advice' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What ecommerce SEO in Australia should focus on',
@@ -166,6 +175,15 @@ export const auSeoPages: ServicePageData[] = [
       { title: 'Pilot site', body: 'We start with one client site so you can judge the audit, the quality of work and our communication before moving more accounts across.' },
       { title: 'Workflow set-up', body: 'A shared project board, a Slack or Teams channel, report templates under your brand and a fixed monthly delivery calendar.' },
       { title: 'Deliver and add sites', body: 'Monthly delivery and reports for each site, with a review call. Add client sites as you sell them, without changing the process.' },
+    ],
+    figures: [
+      { type: 'venn', caption: 'How white label SEO splits the work between your agency and our team.', after: 0, left: { title: 'Your agency', body: 'client relationship, pricing, approvals and the account' }, right: { title: 'Our Chennai team', body: 'audits, pages, content, links and draft reports' }, overlap: 'Only your brand is seen' },
+      { type: 'mindmap', caption: 'A simple set of SEO packages an agency can resell and explain.', center: 'Packages to resell', after: 4, branches: [
+        { label: 'Local', items: ['Single-location businesses', 'Profile and citations'] },
+        { label: 'Growth', items: ['Service firms', 'Content and links'] },
+        { label: 'Ecommerce', items: ['Shopify or WooCommerce', 'Online stores'] },
+        { label: 'Every package', items: ['Deliverables listed', 'Plain-English report', 'Big fixes quoted apart'] },
+      ] },
     ],
     guide: [
       {
@@ -289,6 +307,20 @@ export const auSeoPages: ServicePageData[] = [
       { title: 'Scope and AUD quote', body: 'A written monthly scope listing tasks, deliverables and responsibilities, with a quote in AUD. You see exactly what each month buys.' },
       { title: 'Access and set-up', body: 'You add us as users on your own accounts. We set up a shared task board, a chat channel and a reporting template.' },
       { title: 'Deliver and review', body: 'Work through your afternoon and evening, a task-level report each month and a review call to adjust priorities.' },
+    ],
+    figures: [
+      { type: 'matrix', caption: 'Who does what when you outsource SEO: the provider works, you keep the decisions.', after: 1, cols: ['Provider', 'Your team'], rows: ['Planning', 'Doing the work'], cells: [
+        { title: 'Proposes a plan', body: 'A monthly plan built from audits and data' },
+        { title: 'Approves it', body: 'Strategy, priorities and which pages matter' },
+        { title: 'Does the work', body: 'Fixes, keyword research, drafts, listings, outreach' },
+        { title: 'Supplies facts', body: 'Product answers only you know, and content sign-off' },
+      ] },
+      { type: 'steps', caption: 'How to check a monthly SEO report in a few minutes.', after: 4, steps: [
+        { title: 'Read the work list', body: 'Each change listed with its URL' },
+        { title: 'Spot-check it', body: 'Open a few pages and links; still live?' },
+        { title: 'Look at results', body: 'Traffic to key pages, enquiries, revenue' },
+        { title: 'Rankings last', body: 'A supporting signal, not the goal' },
+      ] },
     ],
     guide: [
       {

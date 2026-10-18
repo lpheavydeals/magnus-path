@@ -44,6 +44,21 @@ export const uaeWebsitesPages: ServicePageData[] = [
       { title: 'Design and build', body: 'Designs in English and Arabic with your real content, then development on a staging site you can check at any time. Our hours almost fully overlap yours.' },
       { title: 'Launch and handover', body: 'Forms, tracking and redirects tested, the site goes live, sitemaps are submitted, your team is trained to edit and every account is handed over.' },
     ],
+    figures: [
+      { type: 'mindmap', caption: 'What a UAE company website needs to cover before design starts.', center: 'UAE company website', after: 0, branches: [
+        { label: 'Clear message', items: ['What you do and where', 'Real photos of your team'] },
+        { label: 'Content owners', items: ['Who writes the English', 'Who approves the Arabic'] },
+        { label: 'Phone first', items: ['Loads fast on mobile', 'Easy to read and tap'] },
+        { label: 'Contact', items: ['WhatsApp button', 'Forms that reach a person'] },
+      ] },
+      { type: 'steps', caption: 'What it takes to make an Arabic version work right to left, not just translated.', after: 1, steps: [
+        { title: 'Separate URLs', body: '/en/ and /ar/, linked with hreflang' },
+        { title: 'Mirror the layout', body: 'Menus, arrows, sliders, forms and tables' },
+        { title: 'Keep some LTR', body: 'Phone numbers, prices and brand names' },
+        { title: 'Arabic fonts', body: 'Readable web fonts and spacing' },
+        { title: 'Test on phones', body: 'Every template, in both directions' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a UAE business website has to do',
@@ -158,6 +173,15 @@ export const uaeWebsitesPages: ServicePageData[] = [
       { title: 'Scope and AED quote', body: 'A written scope covering templates, blocks, languages, integrations and hosting, with a fixed AED quote or a monthly or hours-based arrangement.' },
       { title: 'Design and development', body: 'Designs in both languages, then the theme, blocks and fields built on a staging site you can review throughout the project.' },
       { title: 'Launch and support', body: 'Go-live with redirects, tracking and backups in place, training for your editors, and an optional maintenance plan from the first month.' },
+    ],
+    figures: [
+      { type: 'venn', caption: 'A custom theme gives your editors safe building blocks, so new pages stay quick and consistent.', after: 1, left: { title: 'Our custom theme', body: 'lightweight code, Gutenberg blocks and ACF fields' }, right: { title: 'Your editors', body: 'fill in fields and arrange approved blocks' }, overlap: 'New pages in minutes' },
+      { type: 'mindmap', caption: 'What keeps a WordPress or WooCommerce site in the UAE fast and safe.', center: 'Fast, safe WordPress', after: 3, branches: [
+        { label: 'Speed', items: ['Server and page caching', 'Compressed images, CDN'] },
+        { label: 'Lock down', items: ['SSL and firewall', 'Two-factor login', 'Limited admin roles'] },
+        { label: 'Recover', items: ['Daily off-site backups', 'Updates tested on staging'] },
+        { label: 'Selling', items: ['AED prices with VAT', 'Cards and COD'] },
+      ] },
     ],
     guide: [
       {

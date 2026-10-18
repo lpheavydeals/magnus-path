@@ -44,6 +44,15 @@ export const auWebsitesPages: ServicePageData[] = [
       { title: 'Design and build', body: 'Mobile and desktop designs with your real content, then development on a staging site you can review, with updates waiting for you each afternoon.' },
       { title: 'Launch and handover', body: 'Redirects, forms, tracking and speed checked before go-live, then training, a support period and every login handed over in your company’s name.' },
     ],
+    figures: [
+      { type: 'matrix', caption: 'How a small business site and a mid-size corporate site differ.', after: 1, cols: ['Small business', 'Mid-size company'], rows: ['Who visits', 'Who edits'], cells: [
+        { title: 'Local customers', body: 'People ready to call or request a quote' },
+        { title: 'Many audiences', body: 'Buyers, partners, job seekers and investors' },
+        { title: 'One or two people', body: 'Simple editing across five to fifteen good pages' },
+        { title: 'Several editors', body: 'Different permissions and an approval step' },
+      ] },
+      { type: 'venn', caption: 'Your Google Business Profile and website work best when they tell the same story.', after: 3, left: { title: 'Google Business Profile', body: 'map listing, reviews and the service areas you cover' }, right: { title: 'Your website', body: 'genuine suburb pages and a quote form tracked in GA4' }, overlap: 'Same name, address and phone' },
+    ],
     guide: [
       {
         heading: 'Small business website design in Australia: what you actually need',
@@ -158,6 +167,21 @@ export const auWebsitesPages: ServicePageData[] = [
       { title: 'Pick an engagement', body: 'A written scope for a project, a monthly developer or a block of hours, quoted in AUD. Nothing starts until you approve it.' },
       { title: 'Staging, Git and review', body: 'We work on a staging copy and in Git, never straight on the live site, and you review changes before they are deployed.' },
       { title: 'Handover or ongoing care', body: 'Launch checks, notes on what changed and training if needed, then maintenance and support for as long as you want it.' },
+    ],
+    figures: [
+      { type: 'steps', caption: 'The order to fix a slow WordPress site, starting with the biggest cause.', after: 2, steps: [
+        { title: 'Better hosting', body: 'Move off cheap shared hosting' },
+        { title: 'Resize images', body: 'Start with the hero image' },
+        { title: 'Trim plugins', body: 'Remove anything unused' },
+        { title: 'Defer scripts', body: 'Stop third-party code on every page' },
+        { title: 'Check field data', body: 'Real visitors, not only a lab score' },
+      ] },
+      { type: 'mindmap', caption: 'What a WordPress maintenance plan should cover each month.', center: 'Maintenance plan', after: 3, branches: [
+        { label: 'Updates', items: ['Core, theme, plugins', 'Tested on staging first'] },
+        { label: 'Backups', items: ['Daily, off-site', 'Restore tested'] },
+        { label: 'Monitoring', items: ['Uptime', 'Security alerts'] },
+        { label: 'Support', items: ['Plain-English report', 'Time for small changes'] },
+      ] },
     ],
     guide: [
       {

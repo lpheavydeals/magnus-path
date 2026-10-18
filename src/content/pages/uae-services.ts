@@ -44,6 +44,20 @@ export const uaeServicesPages: ServicePageData[] = [
       { title: 'Design and build', body: 'Designs with your real products in English and Arabic, then development on a staging store. You review progress daily, as our hours almost fully overlap yours.' },
       { title: 'Launch and aftercare', body: 'Test orders for each payment and delivery option, redirects and tracking checks, then a support period for fixes and training for your team.' },
     ],
+    figures: [
+      { type: 'matrix', caption: 'Shopify, WooCommerce or custom: it depends on your catalogue and who runs the store.', after: 1, cols: ['No in-house developer', 'Own WordPress team'], rows: ['Standard D2C catalogue', 'Complex options or B2B'], cells: [
+        { title: 'Shopify', body: 'Hosting and updates handled; Markets for other GCC countries' },
+        { title: 'Either can work', body: 'Pick on who will run the store for the next three years' },
+        { title: 'Shopify, with care', body: 'Check app fees and checkout limits before you commit' },
+        { title: 'WooCommerce/custom', body: 'Full code ownership; custom for portals, ERP or marketplaces' },
+      ] },
+      { type: 'mindmap', caption: 'What a UAE checkout needs so shoppers see the price and payment option they expect.', center: 'UAE checkout', after: 4, branches: [
+        { label: 'Prices', items: ['AED with 5% VAT included', 'VAT checked by accountant'] },
+        { label: 'Pay now', items: ['Cards', 'Apple Pay, Google Pay'] },
+        { label: 'Pay later', items: ['Tabby', 'Tamara'] },
+        { label: 'COD', items: ['Order limits', 'Confirm before dispatch'] },
+      ] },
+    ],
     guide: [
       {
         heading: 'What ecommerce website development in Dubai should include',
@@ -161,6 +175,15 @@ export const uaeServicesPages: ServicePageData[] = [
       { title: 'Build pages and content', body: 'We create or rewrite service, category and product pages in English and Arabic, and publish content that answers what your buyers search.' },
       { title: 'Report and improve', body: 'A monthly report on enquiries, orders and visibility, with a review call during your working day to agree the next month’s priorities.' },
     ],
+    figures: [
+      { type: 'venn', caption: 'English and Arabic pages each target their own searches, joined by hreflang.', after: 1, left: { title: 'English pages', body: 'terms residents type in English, mapped to the right page' }, right: { title: 'Arabic pages', body: 'what Arabic-speaking buyers actually type, own URLs and titles' }, overlap: 'Linked with hreflang tags' },
+      { type: 'matrix', caption: 'Where you can realistically appear, with or without a Dubai address.', after: 3, cols: ['Your own Dubai address', 'No UAE address'], rows: ['Google Maps results', 'Ordinary results'], cells: [
+        { title: 'Possible', body: 'Your own verified Business Profile, which we can manage' },
+        { title: 'Not realistic', body: 'Map listings need a real local address' },
+        { title: 'Support the map', body: 'Same name, address and phone on site, profile, directories' },
+        { title: 'Main focus', body: 'Strong service pages, useful content and UAE links' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What an SEO expert in Dubai should actually do',
@@ -277,6 +300,21 @@ export const uaeServicesPages: ServicePageData[] = [
       { title: 'Plan and AED quote', body: 'A written scope covering marketplaces, campaigns, listings and monthly tasks, with a quote in AED. Ad spend stays in your own accounts.' },
       { title: 'Fix and rebuild', body: 'Listings fixed in both languages, campaigns restructured by product and intent, and prices and stock checked across both marketplaces.' },
       { title: 'Run and review', body: 'Weekly bid, search-term and stock reviews, a monthly report across Amazon.ae and Noon, and a call to set the next month’s priorities.' },
+    ],
+    figures: [
+      { type: 'mindmap', caption: 'Amazon.ae and Noon managed as one business rather than two separate accounts.', center: 'Amazon.ae and Noon', after: 0, branches: [
+        { label: 'Listings', items: ['English and Arabic', 'Images and attributes'] },
+        { label: 'Ads', items: ['Amazon Sponsored ads', 'Noon Ads', 'Targets from margin'] },
+        { label: 'Price & stock', items: ['Parity across channels', 'Stock before sales'] },
+        { label: 'Account health', items: ['Order defects', 'Safety documents'] },
+      ] },
+      { type: 'steps', caption: 'Getting ready for White Friday on Amazon.ae and Yellow Friday on Noon.', after: 3, steps: [
+        { title: 'Know your margin', body: 'Per product, after fees, delivery, returns' },
+        { title: 'Match prices', body: 'Amazon.ae, Noon and your own website' },
+        { title: 'Send stock early', body: 'Fulfilment centre stock takes time to land' },
+        { title: 'Run the sale', body: 'Ads and promotions tied to margin' },
+        { title: 'Watch stock daily', body: 'A mid-sale stock-out undoes ranking' },
+      ] },
     ],
     guide: [
       {
