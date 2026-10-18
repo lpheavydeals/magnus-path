@@ -91,7 +91,7 @@ export const usChatgptAdsPages: ServicePageData[] = [
       {
         heading: 'Tracking ChatGPT ads: pixel, Conversions API, UTMs and GA4',
         paragraphs: [
-          'Set up measurement before the first impression; any ChatGPT ads agency that launches without tracking is guessing. Install the OpenAI pixel, ideally through Google Tag Manager, and send orders or leads server-side through the Conversions API so fewer events are lost to browsers and ad blockers. Shopify stores and CRMs such as HubSpot can feed those server-side events.',
+          'Set up measurement before the first impression; any ChatGPT ads agency that launches without tracking is guessing. Install the OpenAI pixel, ideally through Google Tag Manager, and send orders or leads server-side through the Conversions API so fewer events are lost to browsers and ad blockers. Your Shopify store or CRM can feed those server-side events.',
           'Tag every ad link with UTMs so GA4 shows paid ChatGPT traffic separately from organic ChatGPT referrals. Reporting in Ads Manager is aggregated: spend, impressions, clicks and conversions. Advertisers never see individual conversations, which is also worth telling a privacy-minded legal team.',
         ],
       },
