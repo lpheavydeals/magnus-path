@@ -45,6 +45,20 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       { title: 'Fix, write and build links', body: 'We fix technical issues, rewrite key collections, add schema, clean the product feed and start digital PR, working in your store or alongside your developers.' },
       { title: 'Report on revenue', body: 'A monthly report ties rankings to organic sessions, orders and revenue in GBP, followed by a call to agree what to push next.' },
     ],
+    figures: [
+      { type: 'mindmap', caption: 'Where the work goes on an online shop, and how it is judged.', after: 0, center: 'Online shop SEO', branches: [
+        { label: 'Technical', items: ['Duplicate filter URLs', 'Product schema', 'Platform crawl issues'] },
+        { label: 'Collections', items: ['British search terms', 'Helpful intro and FAQs'] },
+        { label: 'Products', items: ['Own copy, not supplier text', 'Sizes, care and delivery'] },
+        { label: 'Reporting', items: ['Organic revenue by page', 'Orders and order value'] },
+      ] },
+      { type: 'matrix', caption: 'What to do with each filter page on a large catalogue.', after: 2, cols: ['Real search demand', 'Little search demand'], rows: ['Many products match', 'Few products match'], cells: [
+        { title: 'Landing page', body: 'Give it a title, intro and a place in the index' },
+        { title: 'Filter only', body: 'Useful to shoppers; canonical or noindex' },
+        { title: 'Index with care', body: 'Only if the page will not look thin' },
+        { title: 'Block crawling', body: 'Stops empty combinations wasting crawl time' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a UK ecommerce SEO agency should actually do',
@@ -166,6 +180,15 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       { title: 'Fix the foundations', body: 'Listings and campaign structure are cleaned up first, keeping proven keywords running so sales history is not lost.' },
       { title: 'Run and review', body: 'Weekly ad optimisation, monthly listing and stock reviews and a monthly report, with changes requested in your morning usually done the same day.' },
     ],
+    figures: [
+      { type: 'venn', caption: 'Ads and listings only pay off on Amazon.co.uk when they work together.', after: 0, left: { title: 'Sponsored ads', body: 'Bring traffic; cost more when listings are weak' }, right: { title: 'Listings and stock', body: 'Turn visits into orders and keep products live' }, overlap: 'Profitable ranking that lasts' },
+      { type: 'steps', caption: 'How we prepare an Amazon account for Prime Day, Black Friday or Boxing Day.', after: 4, steps: [
+        { title: 'Stock first', body: 'Check cover and book FBA inbound early' },
+        { title: 'Submit deals', body: 'Deals, coupons and Prime discounts on time' },
+        { title: 'Raise budgets', body: 'Lift bids in the run-up, not just on the day' },
+        { title: 'Review after', body: 'Search terms and new-customer sales' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a UK Amazon agency should cover',
@@ -282,6 +305,15 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       { title: 'Plan and GBP quote', body: 'A prioritised plan for pages, brand facts, feeds and mentions, with a monthly fee in GBP and plain notes on what we cannot influence.' },
       { title: 'Fix and publish', body: 'Schema, brand facts and feeds are corrected first, then key pages are rewritten for clear answers and outreach for UK mentions begins.' },
       { title: 'Re-test and report', body: 'Each month we re-run the same questions, review AI referrals in GA4 and adjust the plan based on what actually changed.' },
+    ],
+    figures: [
+      { type: 'mindmap', caption: 'Every public profile should repeat the same brand facts.', after: 2, center: 'One set of brand facts', branches: [
+        { label: 'Fact sheet', items: ['What you sell, for whom', 'Delivery and returns terms'] },
+        { label: 'Your website', items: ['Organisation schema', 'VAT-inclusive prices'] },
+        { label: 'Amazon.co.uk', items: ['Same product names', 'Same delivery promises'] },
+        { label: 'Other profiles', items: ['Current UK details', 'Matching description'] },
+      ] },
+      { type: 'venn', caption: 'AI tools draw on your own pages and on what UK sources say about you.', after: 4, left: { title: 'Your own pages', body: 'Clear facts, schema and answers AI tools can quote' }, right: { title: 'UK sources AI trusts', body: 'Reviews, forums, press and comparison articles' }, overlap: 'Named accurately in AI answers' },
     ],
     guide: [
       {

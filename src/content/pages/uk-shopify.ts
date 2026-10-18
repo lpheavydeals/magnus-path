@@ -44,6 +44,20 @@ export const ukShopifyPages: ServicePageData[] = [
       { title: 'Design and build', body: 'Designs using your real products, then development in an unpublished theme. You review progress each morning and send feedback before lunch.' },
       { title: 'Launch and aftercare', body: 'Test orders, redirects and tracking checks before go-live, followed by a support period for fixes and training for your team.' },
     ],
+    figures: [
+      { type: 'matrix', caption: 'New build or redesign: a quick way to decide.', after: 1, cols: ['Theme is sound', 'Old or patched theme'], rows: ['Conversion is weak', 'Store converts well'], cells: [
+        { title: 'Focused redesign', body: 'Rework home, collection, product and basket pages' },
+        { title: 'Rebuild', body: 'Move to a modern Online Store 2.0 theme' },
+        { title: 'Refine', body: 'Small improvements; no big project needed' },
+        { title: 'Plan a rebuild', body: 'Old code costs more to patch over time' },
+      ] },
+      { type: 'mindmap', caption: 'What a UK checkout needs before shoppers trust it.', after: 2, center: 'A UK checkout', branches: [
+        { label: 'VAT', items: ['VAT-inclusive prices', 'Zero-rated items set up'] },
+        { label: 'Cards, wallets', items: ['Shopify Payments', 'Apple Pay, Google Pay'] },
+        { label: 'Other options', items: ['Klarna or Clearpay', 'PayPal'] },
+        { label: 'Back office', items: ['Refund steps per method', 'Only methods people use'] },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a Shopify agency should handle for a UK store',
@@ -156,6 +170,16 @@ export const ukShopifyPages: ServicePageData[] = [
       { title: 'Choose an engagement', body: 'A fixed task with a set quote, a monthly developer, or a block of hours to draw down. All quoted in GBP, with no long tie-in.' },
       { title: 'Develop and preview', body: 'Work happens in a duplicate theme or Git branch. You get a preview link and notes on what changed, usually by your afternoon.' },
       { title: 'Publish and keep going', body: 'After you approve, we publish, check the live store and move on to the next item. Monthly clients get a short summary of completed work.' },
+    ],
+    figures: [
+      { type: 'venn', caption: 'Good tasks need a clear brief from you and clean work from the developer.', after: 4, left: { title: 'Your brief', body: 'URL, screenshot, what should happen and the deadline' }, right: { title: 'Your developer', body: 'Editable sections, built locally and previewed first' }, overlap: 'Tasks that land first time' },
+      { type: 'steps', caption: 'How we make a Shopify store quicker for real shoppers.', after: 5, steps: [
+        { title: 'Read field data', body: 'Start from Search Console, not a lab score' },
+        { title: 'List every script', body: 'Apps, widgets, pop-ups and tracking' },
+        { title: 'Agree what stays', body: 'Keep features that earn their weight' },
+        { title: 'Fix', body: 'Defer scripts, size images, clear old code' },
+        { title: 'Recheck', body: 'After big changes and before Black Friday' },
+      ] },
     ],
     guide: [
       {
@@ -275,6 +299,15 @@ export const ukShopifyPages: ServicePageData[] = [
       { title: 'Plan and GBP quote', body: 'A written plan that separates what to rebuild, what native Plus features can replace and what to drop, with a fixed or phased quote in GBP.' },
       { title: 'Build, migrate and test', body: 'Work happens in development stores and Git branches. We test checkout, B2B pricing, Markets and integrations end to end with your team.' },
       { title: 'Cutover and support', body: 'A planned launch outside your trading peaks, with redirects, monitoring and a support period to fix anything that shows up once real orders flow.' },
+    ],
+    figures: [
+      { type: 'mindmap', caption: 'What Shopify Plus adds beyond the standard plans.', after: 0, center: 'What Plus adds', branches: [
+        { label: 'Checkout', items: ['Checkout UI extensions', 'Shopify Functions'] },
+        { label: 'B2B', items: ['Trade price lists', 'Payment terms'] },
+        { label: 'Expansion', items: ['Shopify Markets', 'Expansion stores'] },
+        { label: 'Automation', items: ['Shopify Flow', 'Higher API limits'] },
+      ] },
+      { type: 'venn', caption: 'Trade buyers and consumers can share one Shopify Plus store.', after: 2, left: { title: 'Consumer shop', body: 'VAT-inclusive prices, cards and pay-later options' }, right: { title: 'Trade buyers', body: 'Own catalogue, prices excluding VAT, net terms' }, overlap: 'One catalogue, one stock pool' },
     ],
     guide: [
       {

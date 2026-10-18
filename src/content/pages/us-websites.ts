@@ -50,6 +50,21 @@ export const usWebsitesPages: ServicePageData[] = [
       { title: 'Stabilize first', body: 'We set up staging, off-site backups and monitoring, then clear urgent issues such as outdated plugins, broken forms or SSL errors before routine work starts.' },
       { title: 'Monthly care and report', body: 'Updates, checks and content changes run on a schedule, mostly while the US sleeps, with a plain-English report each month on what we did and found.' },
     ],
+    figures: [
+      { type: 'mindmap', caption: 'What a monthly website care plan should cover.', after: 0, center: 'Monthly website care', branches: [
+        { label: 'Safe', items: ['Tested updates', 'Off-site backups', 'Security scans'] },
+        { label: 'Online', items: ['Uptime alerts', 'SSL and domain checks'] },
+        { label: 'Working', items: ['Form test submissions', 'Test orders at checkout', 'Mobile speed checks'] },
+        { label: 'Up to date', items: ['Small content edits', 'Plain-English report'] },
+      ] },
+      { type: 'steps', caption: 'The safe routine for every WordPress update round.', after: 1, steps: [
+        { title: 'Back up', body: 'Fresh copy of files and database' },
+        { title: 'Copy to staging', body: 'A private clone of the live site' },
+        { title: 'Update there', body: 'Core, plugins and theme' },
+        { title: 'Check key pages', body: 'Layouts, forms and the admin screen' },
+        { title: 'Repeat on live', body: 'Same updates, with the backup ready' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What website maintenance services should include each month',
@@ -168,6 +183,15 @@ export const usWebsitesPages: ServicePageData[] = [
       { title: 'Pick a model and USD quote', body: 'We recommend a fixed project, a dedicated monthly developer or a block of hours, with scope and timeline written down and quoted in USD.' },
       { title: 'Build on Git and staging', body: 'Code lives in your repository. Work happens on branches and a staging site, with progress shared overnight your time for review.' },
       { title: 'Deploy and hand over', body: 'Approved changes are deployed with a backup in place. You get documentation, access to all code and a short walkthrough for your editors.' },
+    ],
+    figures: [
+      { type: 'matrix', caption: 'Which way to hire a WordPress developer, based on your workload.', after: 1, cols: ['Light workload', 'Heavy workload'], rows: ['One defined job', 'Ongoing requests'], cells: [
+        { title: 'Small fixed quote', body: 'A single fix or feature, scoped and priced up front' },
+        { title: 'Fixed project', body: 'New theme, migration or custom plugin on a set timeline' },
+        { title: 'Block of hours', body: 'Draw down hours for fixes and small features' },
+        { title: 'Monthly developer', body: 'One developer each month who learns your codebase' },
+      ] },
+      { type: 'venn', caption: 'Custom blocks and ACF fields together give editors freedom without breaking layouts.', after: 2, left: { title: 'Custom Gutenberg blocks', body: 'Your repeat sections, styled through theme.json' }, right: { title: 'ACF and post types', body: 'Structured fields for locations, team or case studies' }, overlap: 'Pages editors build safely' },
     ],
     guide: [
       {

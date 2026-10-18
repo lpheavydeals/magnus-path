@@ -45,6 +45,20 @@ export const usWooWpPages: ServicePageData[] = [
       { title: 'Build on staging', body: 'We work on a staging copy during your night and post progress, test orders and questions for you to review each morning.' },
       { title: 'Launch and handover', body: 'A planned go-live, live order checks, documentation and full code access. Ongoing care is available on a monthly maintenance plan.' },
     ],
+    figures: [
+      { type: 'matrix', caption: 'WooCommerce or Shopify: a quick way to see which fits your store.', after: 1, cols: ['Want platform handled', 'Want full control'], rows: ['Simple catalog, checkout', 'Custom pricing or checkout'], cells: [
+        { title: 'Shopify', body: 'Hosting, security and updates included in the plan' },
+        { title: 'Either works', body: 'WooCommerce gives ownership; budget for upkeep' },
+        { title: 'Check limits first', body: 'Shopify limits checkout changes outside Shopify Plus' },
+        { title: 'WooCommerce', body: 'Wholesale rules, subscriptions and custom checkout logic' },
+      ] },
+      { type: 'steps', caption: 'How we move a busy store to HPOS without risking orders.', after: 4, steps: [
+        { title: 'Check plugins', body: 'Confirm each one supports HPOS on staging' },
+        { title: 'Sync both modes', body: 'Old and new order storage run side by side' },
+        { title: 'Switch over', body: 'HPOS becomes the main order storage' },
+        { title: 'Speed up the rest', body: 'Object caching, a CDN and better hosting' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a WooCommerce agency should do for a US store',
@@ -166,6 +180,15 @@ export const usWooWpPages: ServicePageData[] = [
       { title: 'Build on staging', body: 'We build on your staging server or ours, committing to your repository and posting progress each morning your time.' },
       { title: 'QA against the checklist', body: 'Every page is tested against a written QA list before you see it, and your feedback is fixed overnight.' },
       { title: 'Handover under your brand', body: 'We deploy to production with you, hand over credentials and docs in your template, and stay available for launch fixes.' },
+    ],
+    figures: [
+      { type: 'venn', caption: 'How the work splits when you outsource WordPress builds.', after: 1, left: { title: 'Your agency', body: 'Strategy, design and the client relationship stay with you' }, right: { title: 'Our developers', body: 'Blocks and templates built on staging while you sleep' }, overlap: 'Sites launched under your name' },
+      { type: 'mindmap', caption: 'What every white label build is checked for before you see it.', after: 3, center: 'QA before your review', branches: [
+        { label: 'Browsers', items: ['Chrome, Safari, Firefox, Edge', 'iOS and Android phones'] },
+        { label: 'Forms', items: ['Submit and notify', 'Reach the right inbox or CRM'] },
+        { label: 'Accessibility', items: ['Alt text and heading order', 'Contrast and keyboard use'] },
+        { label: 'Launch checks', items: ['Core Web Vitals', 'Redirects and sitemap', 'No trace of our name'] },
+      ] },
     ],
     guide: [
       {

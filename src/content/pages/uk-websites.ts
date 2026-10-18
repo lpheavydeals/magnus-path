@@ -45,6 +45,20 @@ export const ukWebsitesPages: ServicePageData[] = [
       { title: 'Design, build and review', body: 'Development on a staging site and in Git. You review progress daily and send feedback before lunch for same-day changes.' },
       { title: 'Launch and training', body: 'Redirects, consent, forms and speed checked before go-live, then a recorded training session and a support period for fixes.' },
     ],
+    figures: [
+      { type: 'matrix', caption: 'Block theme or page builder: it depends on your team and your content.', after: 1, cols: ['Team knows a builder', 'Team new to editing'], rows: ['Mostly landing pages', 'Lots of repeat content'], cells: [
+        { title: 'Keep Elementor', body: 'Rebuilding in Gutenberg may not be worth the cost' },
+        { title: 'Block theme', body: 'Custom blocks from approved sections' },
+        { title: 'Talk it through', body: 'ACF suits repeat content; weigh the switch' },
+        { title: 'Blocks plus ACF', body: 'Fields for staff, branches or courses' },
+      ] },
+      { type: 'mindmap', caption: 'The consent and accessibility basics we build in from the start.', after: 2, center: 'Consent and access', branches: [
+        { label: 'Cookies', items: ['Consent platform', 'Google Consent Mode', 'Tags wait for a yes'] },
+        { label: 'Reading', items: ['Colour contrast', 'One heading structure', 'Meaningful alt text'] },
+        { label: 'Forms', items: ['Label on every field', 'Clear error messages'] },
+        { label: 'Keyboard', items: ['Menus and sliders', 'Pop-ups that close'] },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a good WordPress agency does differently',
@@ -167,6 +181,20 @@ export const ukWebsitesPages: ServicePageData[] = [
       { title: 'Build on staging', body: 'All work happens on a staging copy and in Git. We place test orders with each payment method and carrier before anything goes live.' },
       { title: 'Launch and support', body: 'A planned go-live, order and payment monitoring in the first days, and a support period with the option of a monthly plan afterwards.' },
     ],
+    figures: [
+      { type: 'steps', caption: 'From basket to doorstep without retyping a single address.', after: 2, steps: [
+        { title: 'Customer pays', body: 'Card, PayPal or Klarna and Clearpay' },
+        { title: 'Order pulled in', body: 'Click & Drop, DPD or Evri tools' },
+        { title: 'Labels in batches', body: 'Printed together, no copied addresses' },
+        { title: 'Tracking sent', body: 'Customers get the number automatically' },
+      ] },
+      { type: 'matrix', caption: 'WooCommerce or Shopify for a UK shop, depending on your team and products.', after: 4, cols: ['Small team, no servers', 'Team can manage upkeep'], rows: ['Standard products', 'Custom pricing or checkout'], cells: [
+        { title: 'Shopify', body: 'Hosting, security and updates handled for you' },
+        { title: 'Either works', body: 'Compare plan and app fees with hosting costs' },
+        { title: 'Check limits first', body: 'Make sure Shopify can do it before you commit' },
+        { title: 'WooCommerce', body: 'Custom pricing, bespoke checkout and deep content' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What a WooCommerce agency should cover for a UK shop',
@@ -281,6 +309,16 @@ export const ukWebsitesPages: ServicePageData[] = [
       { title: 'Plan and GBP quote', body: 'We agree the plan, response times, monthly change allowance and who holds which logins, then confirm the price in GBP.' },
       { title: 'Onboarding and fixes', body: 'Staging set up, off-site backups and monitoring switched on, and any urgent problems from the health check fixed first.' },
       { title: 'Monthly care and reports', body: 'Updates, checks and your requests each month, with a plain-English report on what changed and anything that needs a decision.' },
+    ],
+    figures: [
+      { type: 'steps', caption: 'What happens when a WordPress site is hacked.', after: 4, steps: [
+        { title: 'Contain', body: 'Evidence copy and a holding page' },
+        { title: 'Change logins', body: 'Every password and key' },
+        { title: 'Clean', body: 'Remove bad files and database entries' },
+        { title: 'Close the hole', body: 'Find the way in, often an old plugin' },
+        { title: 'Watch', body: 'Search Console review and closer checks' },
+      ] },
+      { type: 'venn', caption: 'How agencies resell WordPress support without adding staff.', after: 5, left: { title: 'Your agency', body: 'Sets the price and keeps the client relationship' }, right: { title: 'Our support team', body: 'Updates, monitoring and changes behind the scenes' }, overlap: 'Support under your brand' },
     ],
     guide: [
       {

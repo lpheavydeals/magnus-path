@@ -52,6 +52,20 @@ export const ukAgencyPages: ServicePageData[] = [
       { title: 'Deliver and scale', body: 'Monthly delivery and reports per site, with a review call. Add client sites as you sell them, on the same workflow and pricing basis.' },
     ],
     platforms: ['Google Search Console', 'GA4', 'Ahrefs', 'Semrush', 'Screaming Frog', 'Looker Studio', 'AgencyAnalytics', 'Google Business Profile', 'Slack', 'Microsoft Teams'],
+    figures: [
+      { type: 'matrix', caption: 'Which outsourced SEO model suits your agency’s client list.', after: 1, cols: ['SEO is a side offer', 'SEO is a core service'], rows: ['Similar local clients', 'Clients vary in size'], cells: [
+        { title: 'Reseller package', body: 'Fixed packages passed on with a mark-up can be enough' },
+        { title: 'White label', body: 'Repeatable local SEO delivered under your brand' },
+        { title: 'Freelancer', body: 'One person can cover a few varied sites' },
+        { title: 'White label agency', body: 'A team in your tools, scoped per client site' },
+      ] },
+      { type: 'mindmap', caption: 'What UK local SEO covers for agency clients such as trades and clinics.', after: 3, center: 'UK local SEO', branches: [
+        { label: 'Google profile', items: ['Categories and services', 'Review request plan'] },
+        { label: 'Citations', items: ['UK directories', 'Consistent business details'] },
+        { label: 'Location pages', items: ['One page per town', 'Written, not name-swapped'] },
+        { label: 'Reporting', items: ['Map visibility', 'Calls and direction requests'] },
+      ] },
+    ],
     guide: [
       {
         heading: 'How white label SEO works for a UK agency',
@@ -171,6 +185,15 @@ export const ukAgencyPages: ServicePageData[] = [
       { title: 'Deliver, report, adjust', body: 'Work delivered against the plan, a monthly report listing every task, page and link, and a call to agree the next month’s priorities.' },
     ],
     platforms: ['Google Search Console', 'GA4', 'Ahrefs', 'Semrush', 'Screaming Frog', 'Looker Studio', 'WordPress', 'Shopify', 'WooCommerce'],
+    figures: [
+      { type: 'venn', caption: 'Keep strategy in-house and outsource the delivery.', after: 1, left: { title: 'Your in-house team', body: 'Strategy, approvals and deep knowledge of the business' }, right: { title: 'Outsourced SEO team', body: 'Technical fixes, content and links, done every week' }, overlap: 'Control without a senior salary' },
+      { type: 'steps', caption: 'How to keep control of your accounts when you outsource search work.', after: 4, steps: [
+        { title: 'Own the accounts', body: 'Search Console, GA4 and CMS in your name' },
+        { title: 'Grant access', body: 'Add the provider as a user, not owner' },
+        { title: 'Limit data', body: 'Sign a DPA; share only what is needed' },
+        { title: 'Leave cleanly', body: 'Remove access; the content stays yours' },
+      ] },
+    ],
     guide: [
       {
         heading: 'What SEO outsourcing means for a UK business',
