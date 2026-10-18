@@ -28,5 +28,6 @@ import { bangaloreServicesPages } from './bangalore-services';
 import { londonCorePages } from './london-core';
 import { londonGrowthPages } from './london-growth';
 import { londonWebsitesPages } from './london-websites';
+import { chennaiSocialPages } from './chennai-social';
 
-export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages, ...uaeWebsitesPages, ...auWebsitesPages, ...chatgptAdsPages, ...usChatgptAdsPages, ...ukChatgptAdsPages, ...bangaloreMarketingPages, ...bangaloreServicesPages, ...londonCorePages, ...londonGrowthPages, ...londonWebsitesPages];
+export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages, ...uaeWebsitesPages, ...auWebsitesPages, ...chatgptAdsPages, ...usChatgptAdsPages, ...ukChatgptAdsPages, ...bangaloreMarketingPages, ...bangaloreServicesPages, ...londonCorePages, ...londonGrowthPages, ...londonWebsitesPages, ...chennaiSocialPages];
