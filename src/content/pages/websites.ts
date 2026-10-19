@@ -693,6 +693,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Performance marketing agency in Bangalore', href: '/bangalore/performance-marketing-agency/' },
       { label: 'E-commerce website development company', href: '/ecommerce-website-development/' },
       { label: 'Shopify development company', href: '/shopify-development/' },
       { label: 'Quick commerce marketing for Blinkit, Zepto and Instamart', href: '/quick-commerce-marketing/' },

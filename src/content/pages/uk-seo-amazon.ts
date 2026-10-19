@@ -375,6 +375,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
       { label: 'Ecommerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
       { label: 'AI search optimisation services (global)', href: '/ai-search-optimization/' },
       { label: 'Ecommerce SEO agency for UK retailers', href: '/uk/ecommerce-seo-agency/' },

@@ -117,6 +117,7 @@ export const auSeoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'WordPress developer for Australian businesses', href: '/australia/wordpress-developer/' },
       { label: 'Ecommerce marketing agency for Australian brands', href: '/australia/ecommerce-marketing-agency/' },
       { label: 'Ecommerce SEO services (global)', href: '/ecommerce-seo/' },
       { label: 'Shopify agency for Australian stores', href: '/australia/shopify-agency/' },

@@ -111,6 +111,7 @@ export const businessWebsitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Website design cost in Bangalore', href: '/blog/website-design-cost-in-bangalore/' },
       { label: 'Web development company in the UAE', href: '/uae/web-development-company/' },
       { label: 'Website development company in Australia', href: '/australia/web-development-company/' },
       { label: 'WordPress website design company', href: '/wordpress-website-development/' },
@@ -240,6 +241,7 @@ export const businessWebsitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Website design cost in Bangalore', href: '/blog/website-design-cost-in-bangalore/' },
       { label: 'WordPress development company in Dubai', href: '/uae/wordpress-development-dubai/' },
       { label: 'WordPress developer in Australia', href: '/australia/wordpress-developer/' },
       { label: 'WordPress agency for UK businesses', href: '/uk/wordpress-agency/' },

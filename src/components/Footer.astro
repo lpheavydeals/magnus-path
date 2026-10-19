@@ -71,7 +71,7 @@ const year = new Date().getFullYear();
     </div>
     <div class="ftr__bottom">
       <span>© {year} {site.legalName}. All rights reserved.</span>
-      <span class="ftr__legal"><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a>{[['LinkedIn', site.social.linkedin], ['Instagram', site.social.instagram], ['YouTube', site.social.youtube]].filter(([, u]) => u !== '#').map(([l, u]) => <a href={u} rel="me noopener" target="_blank">{l}</a>)}</span>
+      <span class="ftr__legal"><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a><a href="/sitemap/">Sitemap</a>{[['LinkedIn', site.social.linkedin], ['Instagram', site.social.instagram], ['YouTube', site.social.youtube]].filter(([, u]) => u !== '#').map(([l, u]) => <a href={u} rel="me noopener" target="_blank">{l}</a>)}</span>
     </div>
   </div></div>
 </footer>

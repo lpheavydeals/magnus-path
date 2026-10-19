@@ -11,6 +11,9 @@ import Related from '../components/page/Related.astro';
 import FAQ from '../components/FAQ.astro';
 import LeadForm from '../components/LeadForm.astro';
 import FigureBand from '../components/figures/FigureBand.astro';
+import RelatedGuides from '../components/page/RelatedGuides.astro';
+import { getCollection } from 'astro:content';
+import { guideMap } from '../data/guide-map';
 import { allPages } from '../content/pages';
 import { site, officeFor } from '../data/site';
 import type { ServicePageData } from '../data/types';
@@ -32,6 +35,14 @@ const versions = allPages.filter((p) => p.twin === globalSlug && p.market);
 const alternates = versions.length
   ? [...versions.map((v) => ({ hreflang: markets[v.market!].lang, href: `/${v.slug}/` })), { hreflang: 'x-default', href: `/${globalSlug}/` }]
   : [];
+// "Guides on this topic": guides mapped to this page, plus guides whose own related links point here (max 3)
+const posts = await getCollection('blog');
+const pageUrl = `/${page.slug}/`;
+const guides = posts
+  .filter((p) => guideMap[p.id]?.includes(page.slug) || p.data.related.some((r) => r.href === pageUrl))
+  .sort((a, b) => Number(!!guideMap[b.id]?.includes(page.slug)) - Number(!!guideMap[a.id]?.includes(page.slug)))
+  .slice(0, 3)
+  .map((p) => ({ href: `/blog/${p.id}/`, title: p.data.title, summary: p.data.summary, minutes: p.data.readingMinutes }));
 const crumbs = [{ label: 'Home', href: '/' }, ...page.breadcrumb, { label: page.navLabel, href: `/${page.slug}/` }];
 
 const schema: object[] = [
@@ -56,6 +67,7 @@ const schema: object[] = [
   {page.local && <LocalBlock {...page.local} />}
   <Guide sections={page.guide} title={page.headings.guide} figures={figs.slice(1)} start={2} />
   <FAQ items={page.faqs} />
+  {guides.length > 0 && <RelatedGuides guides={guides} />}
   <Related links={page.related} />
   <LeadForm market={page.market} />
 </Base>

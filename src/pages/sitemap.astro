@@ -1,0 +1,55 @@
+---
+// Human-readable sitemap: every indexable page, grouped the way visitors look for it.
+// Search engines use the generated /sitemap-index.xml instead.
+import Base from '../layouts/Base.astro';
+import SimpleHero from '../components/page/SimpleHero.astro';
+import { getCollection } from 'astro:content';
+import { allPages } from '../content/pages';
+import { breadcrumbSchema } from '../data/schema';
+
+type L = { label: string; href: string };
+const regions: [string, RegExp][] = [
+  ['Chennai', /^chennai\//], ['Bengaluru', /^bangalore\//], ['Coimbatore', /^coimbatore\//],
+  ['London', /^london\//], ['United Kingdom', /^uk\//], ['United States', /^us\//],
+  ['United Arab Emirates', /^uae\//], ['Australia', /^australia\//], ['Industries', /^industries(\/|$)/],
+];
+const hubs: Record<string, string> = { 'United Kingdom': 'uk/ecommerce-marketing-agency', 'United States': 'us/ecommerce-marketing-agency', 'United Arab Emirates': 'uae/ecommerce-marketing-agency', Australia: 'australia/ecommerce-marketing-agency' };
+const groups = new Map<string, L[]>([['Services', []], ...regions.map(([n]) => [n, []] as [string, L[]])]);
+for (const p of allPages) {
+  const region = regions.find(([, re]) => re.test(p.slug))?.[0] ?? (Object.entries(hubs).find(([, s]) => s === p.slug)?.[0]) ?? 'Services';
+  groups.get(region)!.push({ label: p.navLabel, href: `/${p.slug}/` });
+}
+groups.get('Services')!.push({ label: 'SEO Packages', href: '/seo-packages/' }, { label: 'E-commerce SEO Packages', href: '/ecommerce-seo-packages/' });
+const posts = (await getCollection('blog')).sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sections: { title: string; links: L[] }[] = [
+  { title: 'Company', links: [{ label: 'Home', href: '/' }, { label: 'About', href: '/about/' }, { label: 'Contact', href: '/contact/' }, { label: 'Free e-commerce audit', href: '/free-ecommerce-audit/' }, { label: 'Careers', href: '/careers/' }] },
+  ...[...groups].filter(([, l]) => l.length).map(([title, links]) => ({ title, links })),
+  { title: 'Guides', links: [{ label: 'All guides', href: '/blog/' }, ...posts.map((p) => ({ label: p.data.title, href: `/blog/${p.id}/` }))] },
+  { title: 'Free tools', links: [{ label: 'All tools', href: '/tools/' }, { label: 'ROAS calculator', href: '/tools/roas-calculator/' }, { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }] },
+  { title: 'Legal', links: [{ label: 'Privacy policy', href: '/privacy-policy/' }, { label: 'Terms of use', href: '/terms/' }] },
+];
+---
+<Base title="Sitemap | Magnus Path" description="Every page on the Magnus Path website in one place: services, city and country pages, industries, guides, free tools and company information." schema={[breadcrumbSchema([{ label: 'Sitemap', href: '/sitemap/' }])]}>
+  <SimpleHero eyebrow="Sitemap" h1="Every page, in one place" intro="Find any service, city or country page, guide or tool on our website." current="Sitemap" />
+  <section class="section sm">
+    <div class="wrap sm__grid">
+      {sections.map((s) => (
+        <nav aria-label={s.title} class="sm__col">
+          <h2>{s.title}</h2>
+          <ul>{s.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+        </nav>
+      ))}
+    </div>
+  </section>
+</Base>
+<style>
+  .sm { padding-top: 10px; }
+  .sm__grid { display: grid; gap: 40px 48px; }
+  .sm__col { break-inside: avoid; }
+  .sm h2 { font-size: 1.25rem; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .sm ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+  .sm a { text-decoration: none; color: var(--ink); font-size: 15.5px; line-height: 1.4; }
+  .sm a:hover { color: var(--accent-ink); text-decoration: underline; }
+  @media (min-width: 700px) { .sm__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1040px) { .sm__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

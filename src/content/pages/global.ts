@@ -127,6 +127,7 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
       { label: 'Shopify agency for UK brands', href: '/uk/shopify-agency/' },
       { label: 'Amazon agency for Amazon.co.uk sellers', href: '/uk/amazon-agency/' },
       { label: 'Ecommerce SEO agency for UK online shops', href: '/uk/ecommerce-seo-agency/' },
@@ -260,6 +261,8 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'WordPress developer for Australian businesses', href: '/australia/wordpress-developer/' },
+      { label: 'Web development company in Australia', href: '/australia/web-development-company/' },
       { label: 'Shopify experts and Shopify agency for Australian brands', href: '/australia/shopify-agency/' },
       { label: 'Ecommerce SEO for Australian online stores', href: '/australia/ecommerce-seo/' },
       { label: 'White label SEO for Australian agencies', href: '/australia/white-label-seo/' },

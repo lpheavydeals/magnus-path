@@ -791,6 +791,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Digital marketing cost in Chennai', href: '/blog/digital-marketing-cost-in-chennai/' },
       { label: 'SEO services for any business', href: '/seo-services/' },
       { label: 'Digital marketing agency in Chennai', href: '/chennai/digital-marketing-agency/' },
       { label: 'E-commerce website development in Chennai', href: '/chennai/ecommerce-website-development/' },
@@ -928,6 +929,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Digital marketing cost in Chennai', href: '/blog/digital-marketing-cost-in-chennai/' },
       { label: 'B2B digital marketing for manufacturers and exporters', href: '/b2b-digital-marketing/' },
       { label: 'SEO company in Chennai', href: '/chennai/seo-company/' },
       { label: 'SEO services for any business', href: '/seo-services/' },

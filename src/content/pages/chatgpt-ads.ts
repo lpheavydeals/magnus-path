@@ -112,6 +112,8 @@ export const chatgptAdsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'ChatGPT ads agency (US)', href: '/us/chatgpt-ads-agency/' },
+      { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
       { label: 'Performance marketing agency for Meta and Google ads', href: '/performance-marketing/' },
       { label: 'AI search optimisation to get cited in ChatGPT answers', href: '/ai-search-optimization/' },
       { label: 'Generative engine optimization agency for US brands', href: '/us/generative-engine-optimization-agency/' },

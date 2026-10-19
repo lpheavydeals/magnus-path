@@ -117,6 +117,7 @@ export const uaeWebsitesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Digital marketing agency in Dubai', href: '/uae/digital-marketing-agency-dubai/' },
       { label: 'E-commerce and digital agency for UAE businesses', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Corporate website development company', href: '/corporate-website-development/' },
       { label: 'WordPress development company in Dubai', href: '/uae/wordpress-development-dubai/' },

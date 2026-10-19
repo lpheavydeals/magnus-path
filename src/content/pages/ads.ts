@@ -122,6 +122,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Performance marketing agency in Bangalore', href: '/bangalore/performance-marketing-agency/' },
       { label: 'Performance marketing agency in Dubai', href: '/uae/performance-marketing-agency-dubai/' },
       { label: 'Amazon advertising agency services', href: '/amazon-marketing-agency/' },
       { label: 'Quick commerce ads on Blinkit, Zepto and Instamart', href: '/quick-commerce-marketing/' },

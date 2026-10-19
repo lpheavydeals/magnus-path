@@ -244,6 +244,7 @@ export const uaeServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Digital marketing agency in Dubai', href: '/uae/digital-marketing-agency-dubai/' },
       { label: 'E-commerce agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'SEO services for local and small businesses', href: '/seo-services/' },
       { label: 'Ecommerce website development in Dubai', href: '/uae/ecommerce-website-development-dubai/' },
@@ -376,6 +377,7 @@ export const uaeServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Digital marketing agency in Dubai', href: '/uae/digital-marketing-agency-dubai/' },
       { label: 'E-commerce agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Amazon marketing agency services', href: '/amazon-marketing-agency/' },
       { label: 'How to sell on Noon: a guide for sellers', href: '/blog/how-to-sell-on-noon/' },
