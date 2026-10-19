@@ -9,7 +9,7 @@ ratings or partner badges. Add those only once they are real (for example, Clutc
 |---|---|
 | Business name | Magnus Path |
 | Website | https://www.magnuspath.com (TODO: confirm live domain) |
-| Email | hello@magnuspath.com (TODO) |
+| Email | contact@magnuspath.com |
 | Chennai (head office) | TODO street, Chennai, Tamil Nadu, TODO PIN · +91 80984 25000 · Mon–Sat 9:30 AM–7:00 PM |
 | Bengaluru office | TODO street, Bengaluru, Karnataka, TODO PIN · +91 80984 25000 · Mon–Sat 9:30 AM–7:00 PM |
 | London office | 16 Avondale Court, London E18 2RD, United Kingdom · TODO phone · Mon–Fri 9:30 AM–6:00 PM |
