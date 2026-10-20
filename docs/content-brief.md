@@ -169,3 +169,7 @@ Never invent a street address; use the city name only in copy (the full addresse
 
 ## Cost guides (18 Oct 2026)
 - Extra allowed related URLs: /blog/digital-marketing-cost-in-chennai/, /blog/website-design-cost-in-bangalore/
+
+## Page scope (20 Oct 2026)
+Keep every page, including the non-ecommerce ones (business websites, WordPress, maintenance, white-label/outsourcing,
+general city marketing). They were added for their search volume. Do not remove or redirect them, even after a rebrand.
