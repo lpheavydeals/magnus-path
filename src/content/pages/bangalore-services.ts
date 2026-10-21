@@ -124,6 +124,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'PPC company in Bangalore', href: '/bangalore/ppc-company/' },
       { label: 'Performance marketing agency in Bangalore', href: '/bangalore/performance-marketing-agency/' },
       { label: 'Website design cost in Bangalore', href: '/blog/website-design-cost-in-bangalore/' },
       { label: 'Corporate website development', href: '/corporate-website-development/' },
@@ -250,6 +251,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'PPC company in Bangalore', href: '/bangalore/ppc-company/' },
       { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Performance marketing for e-commerce brands', href: '/performance-marketing/' },
       { label: 'Digital marketing agency in Bangalore', href: '/bangalore/digital-marketing-agency/' },

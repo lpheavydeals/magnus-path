@@ -695,6 +695,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'PPC company in Bangalore', href: '/bangalore/ppc-company/' },
       { label: 'Performance marketing agency in Bangalore', href: '/bangalore/performance-marketing-agency/' },
       { label: 'E-commerce website development company', href: '/ecommerce-website-development/' },
       { label: 'Shopify development company', href: '/shopify-development/' },
