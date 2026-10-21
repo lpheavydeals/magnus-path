@@ -214,10 +214,10 @@ export const bangaloreServicesPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Choosing a PPC company in Bangalore for D2C and B2B',
+        heading: 'Choosing a performance marketing agency in Bangalore for D2C and B2B',
         paragraphs: [
           'D2C brands usually need Meta for discovery, Google Search and Shopping for intent, and retargeting to close. B2B firms, SaaS companies and manufacturers around Peenya and Whitefield lean on Google Search, YouTube and LinkedIn, with longer sales cycles and fewer, more valuable conversions.',
-          'When you compare any PPC company in Bangalore, ask how they would split budget across these channels for your model, what they would test first and how they decide when to cut a campaign. Clear answers to those questions matter more than a long list of tools.',
+          'When you compare any performance marketing agency in Bengaluru, ask how they would split budget across these channels for your model, what they would test first and how they decide when to cut a campaign. Clear answers to those questions matter more than a long list of tools.',
         ],
       },
       {
@@ -260,7 +260,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
     faqs: [
       { q: 'How much does a performance marketing agency in Bangalore charge?', a: 'Fees vary by agency and scope. Our management fee depends on the channels you run, the number of campaigns and products, how competitive your category is and how much creative and tracking work is needed. We quote it after a free audit. Ad spend is separate and paid directly to the platforms from your own account.' },
       { q: 'Do you have an office in Bangalore?', a: 'Yes. We have a Bengaluru office where you can meet the team by appointment for strategy workshops, monthly reviews and creative sessions. Campaigns are managed by a shared team with our Chennai head office on the same working hours, so you get local meetings and daily account management.' },
-      { q: 'What should I ask a PPC company in Bangalore before hiring?', a: 'Ask how they set ROAS or CPA targets, how they check tracking, what they would test in the first month and who manages your account day to day. Ask for a sample report and confirm that the ad accounts stay in your name so you keep all data if you leave.' },
+      { q: 'What should I ask a performance marketing agency before hiring?', a: 'Ask how they set ROAS or CPA targets, how they check tracking, what they would test in the first month and who manages your account day to day. Ask for a sample report and confirm that the ad accounts stay in your name so you keep all data if you leave.' },
       { q: 'Are you an Amazon marketing agency in Bangalore?', a: 'Yes. We run Amazon Sponsored Products, Sponsored Brands and Sponsored Display campaigns for Bangalore brands, with keyword research, bid management and listing improvements. We plan campaigns around stock and margins, and quote the management fee after a free audit of your account.' },
       { q: 'Do you offer Amazon seller account management?', a: 'Yes. Our Amazon account management covers listings, pricing, stock planning, account health, A+ content and coordination with your ads. Many Bangalore brands combine it with Amazon ads so one team looks after both sales and advertising.' },
       { q: 'Can you run ads for B2B lead generation?', a: 'Yes. For SaaS companies, service firms and manufacturers, we run Google Search, YouTube and LinkedIn campaigns with focused landing pages. We agree what a qualified lead is with your sales team and send lead stages back to the platforms so campaigns learn from leads that close.' },
