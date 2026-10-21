@@ -40,6 +40,7 @@ export const globalPages: ServicePageData[] = [
       { title: 'Shopify Agency', href: '/uk/shopify-agency/', body: 'Store builds, redesigns and conversion work with VAT-inclusive pricing, UK delivery details and Shopify Markets.', icon: 'shopify' },
       { title: 'Shopify Developer', href: '/uk/shopify-developer/', body: 'Theme fixes, app set-up and custom sections from developers whose working day overlaps your UK morning.', icon: 'website' },
       { title: 'Shopify Plus Agency', href: '/uk/shopify-plus-agency/', body: 'Migrations, checkout extensibility, Shopify Markets for the UK and EU, and automation for brands on Shopify Plus.', icon: 'shopify' },
+      { title: 'Ecommerce PPC Agency', href: '/uk/ecommerce-ppc-agency/', body: 'Google Shopping, Performance Max and Search for UK online shops, with feeds tuned for margin and bids set from your profit.', icon: 'social' },
       { title: 'Amazon Agency', href: '/uk/amazon-agency/', body: 'Sponsored ads, listings, A+ content and Seller Central management for Amazon.co.uk, with budgets set by margin.', icon: 'amazon' },
       { title: 'White Label SEO', href: '/uk/white-label-seo/', body: 'SEO delivered under your agency’s brand: audits, on-page work, content, links and UK local SEO, quoted in GBP.', icon: 'seo' },
       { title: 'SEO Outsourcing', href: '/uk/seo-outsourcing/', body: 'An offshore SEO team for UK businesses and agencies, with a written monthly scope and task-level reports.', icon: 'seo' },

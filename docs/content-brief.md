@@ -173,3 +173,6 @@ Never invent a street address; use the city name only in copy (the full addresse
 ## Page scope (20 Oct 2026)
 Keep every page, including the non-ecommerce ones (business websites, WordPress, maintenance, white-label/outsourcing,
 general city marketing). They were added for their search volume. Do not remove or redirect them, even after a rebrand.
+
+## Ecommerce PPC pages (21 Oct 2026)
+- Extra allowed related URLs: /uk/ecommerce-ppc-agency/, /us/ecommerce-ppc-agency/
