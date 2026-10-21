@@ -118,6 +118,7 @@ export const ukPpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in London', href: '/london/google-ads-agency/' },
       { label: 'PPC agency in London for local businesses', href: '/london/ppc-agency/' },
       { label: 'Ecommerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
       { label: 'Amazon agency for Amazon.co.uk sellers', href: '/uk/amazon-agency/' },

@@ -133,6 +133,7 @@ export const londonGrowthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in London', href: '/london/google-ads-agency/' },
       { label: 'Ecommerce PPC agency (UK)', href: '/uk/ecommerce-ppc-agency/' },
       { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
       { label: 'E-commerce agency in London', href: '/london/ecommerce-agency/' },
@@ -273,6 +274,7 @@ export const londonGrowthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in London', href: '/london/google-ads-agency/' },
       { label: 'E-commerce agency in London', href: '/london/ecommerce-agency/' },
       { label: 'Shopify agency for UK brands', href: '/uk/shopify-agency/' },
       { label: 'Shopify Plus agency in the UK', href: '/uk/shopify-plus-agency/' },
@@ -415,6 +417,7 @@ export const londonGrowthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in London', href: '/london/google-ads-agency/' },
       { label: 'E-commerce agency in London', href: '/london/ecommerce-agency/' },
       { label: 'Amazon agency for UK sellers', href: '/uk/amazon-agency/' },
       { label: 'PPC agency in London', href: '/london/ppc-agency/' },

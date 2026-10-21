@@ -42,6 +42,7 @@ export const londonCorePages: ServicePageData[] = [
     ],
     children: [
       { title: 'PPC Agency', href: '/london/ppc-agency/', body: 'Google Ads, Shopping and Meta campaigns for London online shops, built around margin and checked tracking.', icon: 'social' },
+      { title: 'Google Ads Agency', href: '/london/google-ads-agency/', body: 'Google Shopping, Performance Max, Search and local campaigns for London shops, with feeds and bids set from your margins.', icon: 'social' },
       { title: 'Ecommerce SEO Agency', href: '/london/ecommerce-seo-agency/', body: 'Category and product page SEO, plus local search for London shops with a showroom or shop front.', icon: 'seo' },
       { title: 'Shopify Agency', href: '/london/shopify-agency/', body: 'Shopify store builds, redesigns and conversion fixes, planned with you at our London office.', icon: 'shopify' },
       { title: 'WordPress Agency', href: '/london/wordpress-agency/', body: 'WordPress and WooCommerce sites, custom themes and blocks for London businesses and agencies.', icon: 'website' },
@@ -124,6 +125,7 @@ export const londonCorePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in London', href: '/london/google-ads-agency/' },
       { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
       { label: 'Ecommerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
       { label: 'Shopify agency in London', href: '/london/shopify-agency/' },
@@ -256,6 +258,7 @@ export const londonCorePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in London', href: '/london/google-ads-agency/' },
       { label: 'Ecommerce agency in London', href: '/london/ecommerce-agency/' },
       { label: 'Ecommerce SEO agency for UK online shops', href: '/uk/ecommerce-seo-agency/' },
       { label: 'Shopify agency in London', href: '/london/shopify-agency/' },
