@@ -45,6 +45,7 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'Shopify SEO Agency', href: '/us/shopify-seo-agency/', body: 'Technical SEO, collections, product pages and content for Shopify stores selling to US shoppers.', icon: 'shopify' },
       { title: 'Shopify Plus Agency', href: '/us/shopify-plus-agency/', body: 'Builds, migrations, checkout extensibility and automation for brands that run on Shopify Plus.', icon: 'shopify' },
       { title: 'Hire a Shopify Developer', href: '/us/hire-shopify-developer/', body: 'Dedicated Shopify developers for themes, apps and fixes, working through your US night.', icon: 'website' },
+      { title: 'Ecommerce PPC Agency', href: '/us/ecommerce-ppc-agency/', body: 'Google Shopping, Performance Max and Search for US online stores, with feeds tuned for margin and bids set from your profit.', icon: 'social' },
       { title: 'Amazon PPC Agency', href: '/us/amazon-ppc-agency/', body: 'Sponsored Products, Brands and Display campaigns on Amazon.com, with budgets set by product margin.', icon: 'amazon' },
       { title: 'Amazon Account Management', href: '/us/amazon-account-management/', body: 'Listings, A+ content, inventory, FBA shipments and account health handled in Seller Central.', icon: 'marketplace' },
       { title: 'Website Maintenance', href: '/us/website-maintenance-services/', body: 'Updates, backups, security checks and small changes for WordPress, WooCommerce and Shopify sites, on a monthly plan.', icon: 'website' },
