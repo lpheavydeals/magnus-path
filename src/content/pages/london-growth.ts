@@ -133,6 +133,7 @@ export const londonGrowthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency (UK)', href: '/uk/ecommerce-ppc-agency/' },
       { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
       { label: 'E-commerce agency in London', href: '/london/ecommerce-agency/' },
       { label: 'E-commerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },

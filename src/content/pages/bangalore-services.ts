@@ -250,6 +250,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Performance marketing for e-commerce brands', href: '/performance-marketing/' },
       { label: 'Digital marketing agency in Bangalore', href: '/bangalore/digital-marketing-agency/' },
       { label: 'Amazon account management services', href: '/amazon-account-management/' },

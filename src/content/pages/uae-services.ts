@@ -118,6 +118,7 @@ export const uaeServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency in Dubai', href: '/uae/ecommerce-ppc-agency-dubai/' },
       { label: 'E-commerce agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Ecommerce website development company', href: '/ecommerce-website-development/' },
       { label: 'SEO services in Dubai for online stores', href: '/uae/seo-services-dubai/' },
@@ -244,6 +245,7 @@ export const uaeServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency in Dubai', href: '/uae/ecommerce-ppc-agency-dubai/' },
       { label: 'Digital marketing agency in Dubai', href: '/uae/digital-marketing-agency-dubai/' },
       { label: 'E-commerce agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'SEO services for local and small businesses', href: '/seo-services/' },
@@ -377,6 +379,7 @@ export const uaeServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency in Dubai', href: '/uae/ecommerce-ppc-agency-dubai/' },
       { label: 'Digital marketing agency in Dubai', href: '/uae/digital-marketing-agency-dubai/' },
       { label: 'E-commerce agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Amazon marketing agency services', href: '/amazon-marketing-agency/' },

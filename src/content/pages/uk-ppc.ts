@@ -8,6 +8,7 @@ export const ukPpcPages: ServicePageData[] = [
     slug: 'uk/ecommerce-ppc-agency',
     kind: 'global',
     market: 'UK',
+    twin: 'ecommerce-ppc-agency',
     title: 'Ecommerce PPC Agency UK: Shopping & Performance Max | Magnus Path',
     description: 'Ecommerce PPC agency for UK online shops: Google Shopping, Performance Max, Search and Microsoft Ads, with feed work and bids set by margin. Quoted in GBP.',
     primaryKeyword: 'ecommerce PPC agency',

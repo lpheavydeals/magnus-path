@@ -117,6 +117,7 @@ export const usAmazonGeoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency (US)', href: '/us/ecommerce-ppc-agency/' },
       { label: 'ChatGPT ads agency (US)', href: '/us/chatgpt-ads-agency/' },
       { label: 'E-commerce marketing agency for US brands', href: '/us/ecommerce-marketing-agency/' },
       { label: 'Amazon account management services for US sellers', href: '/us/amazon-account-management/' },

@@ -109,6 +109,7 @@ export const usShopifyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency (US)', href: '/us/ecommerce-ppc-agency/' },
       { label: 'ChatGPT ads agency (US)', href: '/us/chatgpt-ads-agency/' },
       { label: 'E-commerce marketing agency for US brands', href: '/us/ecommerce-marketing-agency/' },
       { label: 'Shopify Plus agency for US brands', href: '/us/shopify-plus-agency/' },
@@ -234,6 +235,7 @@ export const usShopifyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency (US)', href: '/us/ecommerce-ppc-agency/' },
       { label: 'E-commerce marketing agency for US brands', href: '/us/ecommerce-marketing-agency/' },
       { label: 'Shopify SEO agency for US stores', href: '/us/shopify-seo-agency/' },
       { label: 'Hire a dedicated Shopify developer', href: '/us/hire-shopify-developer/' },

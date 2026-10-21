@@ -115,6 +115,7 @@ export const ukShopifyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency (UK)', href: '/uk/ecommerce-ppc-agency/' },
       { label: 'Shopify agency in London', href: '/london/shopify-agency/' },
       { label: 'E-commerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
       { label: 'Shopify developer for UK brands and agencies', href: '/uk/shopify-developer/' },

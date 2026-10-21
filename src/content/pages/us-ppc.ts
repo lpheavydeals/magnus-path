@@ -8,6 +8,7 @@ export const usPpcPages: ServicePageData[] = [
     slug: 'us/ecommerce-ppc-agency',
     kind: 'global',
     market: 'US',
+    twin: 'ecommerce-ppc-agency',
     title: 'Ecommerce PPC Agency for US Brands: Shopping & PMax | Magnus Path',
     description: 'Ecommerce PPC agency for US online stores: Google Shopping, Performance Max, Search and Microsoft Ads run on profit, with feed fixes and USD quotes after an audit.',
     primaryKeyword: 'ecommerce PPC agency',

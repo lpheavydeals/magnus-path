@@ -122,6 +122,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Performance marketing agency in Bangalore', href: '/bangalore/performance-marketing-agency/' },
       { label: 'Performance marketing agency in Dubai', href: '/uae/performance-marketing-agency-dubai/' },
       { label: 'Amazon advertising agency services', href: '/amazon-marketing-agency/' },
@@ -258,6 +259,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Amazon and Noon agency for UAE sellers', href: '/uae/amazon-noon-agency/' },
       { label: 'Amazon agency for UK sellers', href: '/uk/amazon-agency/' },
       { label: 'Amazon PPC agency for US sellers', href: '/us/amazon-ppc-agency/' },
@@ -519,6 +521,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Amazon account management services', href: '/amazon-account-management/' },
       { label: 'Amazon advertising agency', href: '/amazon-marketing-agency/' },
       { label: 'Performance marketing for e-commerce brands', href: '/performance-marketing/' },

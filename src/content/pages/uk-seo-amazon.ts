@@ -121,6 +121,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency (UK)', href: '/uk/ecommerce-ppc-agency/' },
       { label: 'Ecommerce SEO agency in London', href: '/london/ecommerce-seo-agency/' },
       { label: 'Ecommerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
       { label: 'Ecommerce SEO services (global)', href: '/ecommerce-seo/' },
@@ -248,6 +249,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency (UK)', href: '/uk/ecommerce-ppc-agency/' },
       { label: 'Amazon agency in London', href: '/london/amazon-agency/' },
       { label: 'Ecommerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
       { label: 'Amazon marketing agency services (global)', href: '/amazon-marketing-agency/' },

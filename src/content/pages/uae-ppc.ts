@@ -8,6 +8,7 @@ export const uaePpcPages: ServicePageData[] = [
     slug: 'uae/ecommerce-ppc-agency-dubai',
     kind: 'global',
     market: 'UAE',
+    twin: 'ecommerce-ppc-agency',
     title: 'Ecommerce PPC Agency in Dubai | Google Ads for UAE Stores',
     description: 'Ecommerce PPC agency in Dubai for UAE online stores: Google Shopping, Performance Max and Search in English and Arabic, with bids set by product margin.',
     primaryKeyword: 'ecommerce PPC agency in Dubai',

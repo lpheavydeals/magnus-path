@@ -133,6 +133,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Shopify experts for Australian brands', href: '/australia/shopify-agency/' },
       { label: 'Shopify agency for UK brands', href: '/uk/shopify-agency/' },
       { label: 'Shopify Plus agency for US brands', href: '/us/shopify-plus-agency/' },

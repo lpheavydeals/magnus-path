@@ -8,6 +8,7 @@ export const auPpcPages: ServicePageData[] = [
     slug: 'australia/ecommerce-ppc-agency',
     kind: 'global',
     market: 'AU',
+    twin: 'ecommerce-ppc-agency',
     title: 'Ecommerce PPC Agency Australia: Shopping & Search | Magnus Path',
     description: 'Ecommerce PPC agency for Australian online stores: Google Shopping, Performance Max, Search and Microsoft Ads run on margin. Quoted in AUD after a free audit.',
     primaryKeyword: 'ecommerce PPC agency',
