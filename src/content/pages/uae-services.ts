@@ -245,6 +245,7 @@ export const uaeServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },
       { label: 'Ecommerce PPC agency in Dubai', href: '/uae/ecommerce-ppc-agency-dubai/' },
       { label: 'Digital marketing agency in Dubai', href: '/uae/digital-marketing-agency-dubai/' },
       { label: 'E-commerce agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },

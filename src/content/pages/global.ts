@@ -317,6 +317,7 @@ export const globalPages: ServicePageData[] = [
     ],
     children: [
       { title: 'Ecommerce PPC Agency', href: '/uae/ecommerce-ppc-agency-dubai/', body: 'Google Shopping, Performance Max and Search in English and Arabic for UAE online stores, with bids set from your margins.', icon: 'social' },
+      { title: 'Google Ads Agency', href: '/uae/google-ads-agency-dubai/', body: 'Search, Performance Max and YouTube in English and Arabic for Dubai businesses, judged by real calls, forms and WhatsApp enquiries.', icon: 'social' },
       { title: 'Digital Marketing Agency Dubai', href: '/uae/digital-marketing-agency-dubai/', body: 'SEO, Google, Meta, Snapchat, TikTok and LinkedIn campaigns in Arabic and English, with WhatsApp leads tracked to sales.', icon: 'social' },
       { title: 'Ecommerce Website Development Dubai', href: '/uae/ecommerce-website-development-dubai/', body: 'Bilingual Shopify, WooCommerce and custom stores with right-to-left layouts, AED pricing and UAE payment options.', icon: 'website' },
       { title: 'SEO Services Dubai', href: '/uae/seo-services-dubai/', body: 'Technical, on-page and local SEO for UAE businesses and online stores, with clean English and Arabic page versions.', icon: 'seo' },
@@ -394,6 +395,7 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },
       { label: 'Digital marketing agency in Dubai', href: '/uae/digital-marketing-agency-dubai/' },
       { label: 'Amazon.ae and Noon agency for UAE sellers', href: '/uae/amazon-noon-agency/' },
       { label: 'Ecommerce website development in Dubai', href: '/uae/ecommerce-website-development-dubai/' },

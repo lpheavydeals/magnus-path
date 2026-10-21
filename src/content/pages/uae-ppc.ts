@@ -123,6 +123,7 @@ export const uaePpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },
       { label: 'Performance marketing agency in Dubai for all paid channels', href: '/uae/performance-marketing-agency-dubai/' },
       { label: 'Ecommerce marketing agency for the UAE', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Amazon.ae and Noon marketplace agency', href: '/uae/amazon-noon-agency/' },
