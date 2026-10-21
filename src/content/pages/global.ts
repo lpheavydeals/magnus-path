@@ -181,6 +181,7 @@ export const globalPages: ServicePageData[] = [
       { title: 'White-label delivery for Australian agencies', body: 'SEO, Shopify and WordPress work done under your agency’s brand, with an NDA, unbranded reports and no contact with your clients.' },
     ],
     children: [
+      { title: 'Ecommerce PPC Agency', href: '/australia/ecommerce-ppc-agency/', body: 'Google Shopping, Performance Max and Search for Australian online stores, with GST-inclusive feeds and bids set from your margins.', icon: 'social' },
       { title: 'Ecommerce SEO', href: '/australia/ecommerce-seo/', body: 'Technical fixes, collection and product pages, and Australian English content for online stores competing on Google.com.au.', icon: 'seo' },
       { title: 'White Label SEO', href: '/australia/white-label-seo/', body: 'SEO delivered under your agency’s brand: audits, on-page work, content and reporting, quoted in AUD.', icon: 'seo' },
       { title: 'SEO Outsourcing', href: '/australia/seo-outsourcing/', body: 'An offshore SEO team for Australian businesses and agencies, with a written monthly scope and task-level reports.', icon: 'ai' },
@@ -315,6 +316,7 @@ export const globalPages: ServicePageData[] = [
       { title: 'COD and returns reporting', body: 'Order confirmation flows and reports that show COD failure and return rates by channel, so you can see real profit.' },
     ],
     children: [
+      { title: 'Ecommerce PPC Agency', href: '/uae/ecommerce-ppc-agency-dubai/', body: 'Google Shopping, Performance Max and Search in English and Arabic for UAE online stores, with bids set from your margins.', icon: 'social' },
       { title: 'Digital Marketing Agency Dubai', href: '/uae/digital-marketing-agency-dubai/', body: 'SEO, Google, Meta, Snapchat, TikTok and LinkedIn campaigns in Arabic and English, with WhatsApp leads tracked to sales.', icon: 'social' },
       { title: 'Ecommerce Website Development Dubai', href: '/uae/ecommerce-website-development-dubai/', body: 'Bilingual Shopify, WooCommerce and custom stores with right-to-left layouts, AED pricing and UAE payment options.', icon: 'website' },
       { title: 'SEO Services Dubai', href: '/uae/seo-services-dubai/', body: 'Technical, on-page and local SEO for UAE businesses and online stores, with clean English and Arabic page versions.', icon: 'seo' },

@@ -16,7 +16,7 @@ export const uaePpcPages: ServicePageData[] = [
     eyebrow: 'For UAE online stores · Google Shopping · Performance Max · Search · Merchant Center',
     h1: 'Ecommerce PPC Agency for Dubai and UAE Stores, *Built on Your Margins*',
     intro: 'Looking for an ecommerce PPC agency in Dubai that runs Google Ads around profit, not clicks? Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We fix your Merchant Center feed, run Shopping, Performance Max and Search in English and Arabic, and set target ROAS from each product’s margin.',
-    icon: 'seo',
+    icon: 'social',
     facts: ['Accounts stay in your name', 'English and Arabic campaigns', 'Free audit, quote in AED'],
     headings: {
       pains: 'Why Google Ads underdeliver for many UAE stores',
