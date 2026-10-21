@@ -1063,6 +1063,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Digital marketing cost in Chennai', href: '/blog/digital-marketing-cost-in-chennai/' },
       { label: 'SEO company in Chennai', href: '/chennai/seo-company/' },

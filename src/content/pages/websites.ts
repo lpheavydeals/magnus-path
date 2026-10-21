@@ -554,6 +554,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'E-commerce website development company', href: '/ecommerce-website-development/' },
       { label: 'Shopify development services', href: '/shopify-development/' },
       { label: 'Digital marketing agency in Chennai', href: '/chennai/digital-marketing-agency/' },

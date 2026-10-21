@@ -120,6 +120,7 @@ export const indiaPpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Performance marketing agency for Meta and Google ads', href: '/performance-marketing/' },
       { label: 'Amazon advertising agency for Sponsored ads', href: '/amazon-marketing-agency/' },
       { label: 'Flipkart account management and Flipkart Ads', href: '/flipkart-account-management/' },

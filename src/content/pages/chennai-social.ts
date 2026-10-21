@@ -124,6 +124,7 @@ export const chennaiSocialPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Digital marketing cost in Chennai', href: '/blog/digital-marketing-cost-in-chennai/' },
       { label: 'Digital marketing agency in Chennai', href: '/chennai/digital-marketing-agency/' },
       { label: 'Performance marketing on Meta and Google', href: '/performance-marketing/' },
