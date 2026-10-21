@@ -25,7 +25,7 @@ export const londonGrowthPages: ServicePageData[] = [
     facts: ['London office in E18, meetings by appointment', 'Google, Microsoft and Meta ads', 'Quoted in GBP after a free audit'],
     headings: {
       pains: 'Why London ad accounts *burn budget* faster',
-      includes: 'What our Google Ads agency in London manages',
+      includes: 'What our London PPC team manages',
       process: 'Working with our London PPC team in *4 steps*',
       guide: 'PPC in London: a practical guide for online shops and service businesses',
     },
@@ -91,9 +91,9 @@ export const londonGrowthPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Choosing a Google Ads agency in London',
+        heading: 'Choosing a PPC partner in London',
         paragraphs: [
-          'Google Ads is still where most London buyers start when they know what they want. A good Google Ads agency in London separates brand and non-brand campaigns, uses exact and phrase match where intent is clear, and keeps broad match on a short leash with strong negatives and good conversion data.',
+          'Google Ads is still where most London buyers start when they know what they want. A good PPC team separates brand and non-brand campaigns, uses exact and phrase match where intent is clear, and keeps broad match on a short leash with strong negatives and good conversion data.',
           'For London service businesses such as clinics, trades, solicitors or training providers, location settings matter. Target the postcodes and boroughs you actually serve, exclude areas you do not, and use call and lead form assets. A plumber in Walthamstow does not want to pay for clicks from Croydon.',
         ],
       },
@@ -143,7 +143,7 @@ export const londonGrowthPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'What does a PPC agency in London do?', a: 'It plans, builds and manages paid ads on Google, Microsoft and Meta for London businesses. That covers keyword research, campaign structure, Shopping feeds, tracking, bidding, ad copy and creative, plus regular reporting. The aim is profitable orders or qualified enquiries, not just more clicks.' },
-      { q: 'Are you a Google Ads agency in London?', a: 'Yes. We manage Google Search, Shopping, Performance Max, YouTube and Demand Gen campaigns for London online shops and service businesses. We have a London office for meetings by appointment, and our Chennai team handles most daily optimisation, so accounts are reviewed across a longer working day.' },
+      { q: 'Do you manage Google Ads as well as Microsoft and Meta?', a: 'Yes. Google Search, Shopping, Performance Max, YouTube and Demand Gen sit alongside Microsoft Advertising and Meta for London online shops and service businesses. We have a London office for meetings by appointment, and our Chennai team handles most daily optimisation, so accounts are reviewed across a longer working day.' },
       { q: 'Do you have an office in London?', a: 'Yes. Our London office is in East London (E18), and you can meet the team there by appointment for planning sessions and reviews. Most delivery is done by our Chennai team, and requests sent before UK lunchtime are usually handled the same day.' },
       { q: 'How much does PPC management cost in London?', a: 'We quote a monthly management fee in GBP after a free audit, because the right scope depends on your channels, number of campaigns, product catalogue and tracking needs. Ad spend is separate and paid directly to Google, Microsoft or Meta, so you always own the accounts.' },
       { q: 'Why are Google Ads clicks so expensive in London?', a: 'London has dense competition: national brands, local rivals and marketplaces all bid on the same searches, and many London customers are worth more over time. Tight targeting, strong negatives, good landing pages and accurate conversion data are the best ways to keep cost per sale under control.' },
