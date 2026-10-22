@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import ShippingThresholdCalc from '../../components/tools/ShippingThresholdCalc.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'What a free shipping threshold does', paragraphs: ['A free shipping threshold is the order value above which delivery is free: "Free delivery on orders over ₹999". Its job is to lift average order value. A shopper with ₹800 in the cart adds one more item to avoid paying for shipping, and the extra gross profit from that item pays for the delivery you now cover.', 'Set it too low and most orders qualify without adding anything, so you simply pay shipping for everyone. Set it too high and shoppers give up on reaching it, or abandon the cart. This free shipping threshold calculator helps you pick a starting point between the two and check whether it can pay for itself.'] },
+  { heading: 'How the calculator suggests thresholds', paragraphs: ['The suggestions start from your current average order value (AOV) and the price of a typical item, because the threshold should ask for roughly one more item, not a whole second order. You get three options, each rounded up to a clean number shoppers can remember:'], bullets: ['Gentle: AOV plus half a typical item, an easy step for most carts', 'Suggested: AOV plus one typical item, the usual starting point', 'Stretch: AOV plus one and a half items, for stores with many low-priced add-ons'] },
+  { heading: 'The extra order value needed to cover shipping', paragraphs: ['Free shipping is paid for out of gross margin, not revenue. If shipping costs ₹80 and your gross margin is 40%, an order has to grow by ₹200 (80 ÷ 0.40) before the extra profit covers its delivery. That is the "extra order value needed" figure, and AOV plus that amount is the lowest threshold that pays its own shipping.', 'This is why the same threshold can work for one store and fail for another. A beauty brand with high margins needs only a small step-up; a low-margin electronics seller needs a much bigger one. Always use your own margin after product cost, before shipping and ads.'] },
+  { heading: 'Orders that must step up to break even', paragraphs: ['A threshold has a hidden cost: orders that were already above it now ship free too. If 20% of your 1,000 monthly orders already qualify and shipping costs ₹80, you give away ₹16,000 of shipping a month. The calculator divides that by the net profit from each order that steps up to the threshold, and tells you how many orders need to step up to cover it.', 'Ask for your own figures rather than guessing: most store platforms can report how many orders fall above a given value. Compare the result with the orders below the threshold. If only a small share needs to step up, the threshold is a reasonable test. If almost all of them would need to, raise the threshold or rethink the offer.'] },
+  { heading: 'Testing your free shipping threshold', paragraphs: ['Treat any number from a free shipping threshold calculator as a hypothesis. Run it for a few weeks, ideally against your previous period or a test group, and watch average order value, conversion rate and profit after shipping together. A higher AOV with a lower conversion rate can still mean less profit.'], bullets: ['Show the threshold in the announcement bar, product page and cart', 'Add a progress message in the cart: "Add ₹200 more for free delivery"', 'Suggest low-priced add-ons that close the gap', 'Review the threshold when shipping rates, prices or margins change'] },
+];
+const faqs = [
+  { q: 'How do I calculate a free shipping threshold?', a: 'Start with your average order value and add the price of one typical item, then round up to a clean number. Check that the step-up from your AOV, multiplied by your gross margin, is larger than your shipping cost. This free shipping threshold calculator does both steps and shows three options to test.' },
+  { q: 'What is the minimum free shipping threshold that is profitable?', a: 'The lowest threshold that pays its own shipping is your AOV plus shipping cost divided by gross margin. Below that, an order that grows to the threshold adds less gross profit than the shipping you now pay. In practice, set the threshold a little above this minimum to cover orders that already qualify.' },
+  { q: 'Should the threshold be just above my average order value?', a: 'Usually, yes. A threshold slightly above AOV asks most shoppers to add one more item, which feels achievable. A threshold below AOV gives free shipping to most orders without changing behaviour. A threshold far above AOV is easy to ignore. Test, then adjust using your own order data.' },
+  { q: 'Does free shipping increase conversion rate?', a: 'It can, because unexpected delivery charges are a common reason shoppers abandon carts. But the effect varies by store, price point and market, so this calculator does not assume any change in conversion rate. Measure conversion before and after you introduce the threshold, alongside average order value and profit.' },
+  { q: 'Which numbers should I use for margin and shipping?', a: 'Use gross margin after product cost but before shipping and ads, as a percentage of order value. For shipping, use your average courier cost per order, including packaging if you want a stricter test. The values filled in are examples, not benchmarks, so replace them with your own.' },
+  { q: 'Is my data saved or sent anywhere?', a: 'No. The calculator runs entirely in your browser. Nothing you type is sent to us or stored. If you want help with order value, checkout and offers across your whole store, request the free e-commerce audit from our team.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'Free Shipping Threshold Calculator', href: '/tools/free-shipping-threshold-calculator/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Free Shipping Threshold Calculator', url: `${site.url}/tools/free-shipping-threshold-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'steps', caption: 'How a shopper below the threshold turns into a larger, free-shipping order.', after: 0, steps: [
+    { title: 'Cart below it', body: 'Shopper sees how much more is needed' },
+    { title: 'Add one item', body: 'An add-on or best seller closes the gap' },
+    { title: 'Ships free', body: 'You pay the courier for this order' },
+    { title: 'Extra margin', body: 'Profit on the added item covers shipping' },
+  ] },
+  { type: 'matrix', caption: 'Where to move the threshold after a few weeks of testing.', after: 3, cols: ['AOV went up', 'AOV flat'], rows: ['Conversion held', 'Conversion fell'], cells: [
+    { title: 'Keep it', body: 'Working; check profit after shipping each month' },
+    { title: 'Make it visible', body: 'Show it in the cart and suggest add-ons' },
+    { title: 'Check profit', body: 'Larger orders may not cover fewer orders' },
+    { title: 'Lower or drop it', body: 'Too high to reach; try the gentle option' },
+  ] },
+];
+---
+<Base title="Free Shipping Threshold Calculator | Magnus Path" description="Free shipping threshold calculator: find a threshold from your AOV, item price, shipping cost and margin, and see how many orders must step up to break even." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="Free Shipping Threshold Calculator for *Higher AOV*" intro="This free shipping threshold calculator suggests where to set your free delivery minimum. Enter your average order value, a typical item price, shipping cost and margin to see three threshold options, the extra order value needed to cover shipping and how many orders must step up to break even." trail={trail} current="Free Shipping Threshold Calculator" />
+  <ShippingThresholdCalc />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="Setting a free shipping threshold that pays for itself" />
+  <FAQ items={faqs} title="Free shipping threshold questions" />
+  <Related links={[{ label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' }, { label: 'RTO cost calculator for COD orders', href: '/tools/rto-cod-calculator/' }, { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }, { label: 'Shopify store development', href: '/shopify-development/' }, { label: 'Ecommerce website development', href: '/ecommerce-website-development/' }]} />
+  <LeadForm heading="Want a bigger average order?" sub="Request the free e-commerce audit. We review your offers, cart, bundles and checkout, and show which changes will lift order value first." />
+</Base>

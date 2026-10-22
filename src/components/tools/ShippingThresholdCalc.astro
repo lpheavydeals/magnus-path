@@ -1,0 +1,204 @@
+---
+// Free shipping threshold calculator: suggests threshold options from AOV + typical item price,
+// shows the extra order value needed to pay for shipping, and how many orders must step up to
+// the chosen threshold to break even. Runs entirely in the browser.
+import './calc.css';
+// Example defaults (labelled as examples on the page) so the first view shows a worked result.
+const d = { aov: 1200, item: 499, ship: 80, margin: 50, orders: 1000, above: 20 };
+const currencies = [
+  { v: 'INR', l: '₹ Indian rupee' },
+  { v: 'USD', l: '$ US dollar' },
+  { v: 'GBP', l: '£ British pound' },
+  { v: 'AED', l: 'AED UAE dirham' },
+  { v: 'AUD', l: 'A$ Australian dollar' },
+];
+const options = [
+  { id: 'gentle', name: 'Gentle', how: 'AOV + half an item' },
+  { id: 'suggested', name: 'Suggested', how: 'AOV + one typical item' },
+  { id: 'stretch', name: 'Stretch', how: 'AOV + one and a half items' },
+];
+---
+<section class="section"><div class="wrap">
+  <form class="calc fst" id="fst" onsubmit="return false">
+    <div class="calc__in">
+      <h2>Your numbers</h2>
+      <p class="calc__note fst__hint">Example values are filled in. Replace them with your own store's figures.</p>
+      <label class="calc__field" for="fst-cur">Currency<small>Changes the symbol only; amounts are not converted</small>
+        <span class="calc__wrap"><select id="fst-cur">{currencies.map((c) => <option value={c.v}>{c.l}</option>)}</select></span>
+      </label>
+      <div class="calc__row">
+        <label class="calc__field" for="fst-aov">Current average order value<small>Revenue ÷ orders, before shipping fees</small><span class="calc__wrap"><span class="fst-sym">₹</span><input id="fst-aov" type="number" min="0" step="any" inputmode="decimal" value={d.aov} /></span></label>
+        <label class="calc__field" for="fst-item">Typical item price<small>A popular add-on or best seller</small><span class="calc__wrap"><span class="fst-sym">₹</span><input id="fst-item" type="number" min="0" step="any" inputmode="decimal" value={d.item} /></span></label>
+        <label class="calc__field" for="fst-ship">Shipping cost per order<small>What you pay the courier for one order</small><span class="calc__wrap"><span class="fst-sym">₹</span><input id="fst-ship" type="number" min="0" step="any" inputmode="decimal" value={d.ship} /></span></label>
+        <label class="calc__field" for="fst-margin">Gross margin<small>After product cost, before shipping and ads</small><span class="calc__wrap"><input id="fst-margin" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.margin} /><span>%</span></span></label>
+      </div>
+      <fieldset class="fst__pick">
+        <legend>Threshold to test<small>Pick an option or type your own</small></legend>
+        <div class="fst__opts">
+          {options.map((o) => <label><input type="radio" name="fst-opt" value={o.id} checked={o.id === 'suggested'} /><span><strong>{o.name}</strong> <span id={`fst-o-${o.id}`}>—</span></span></label>)}
+          <label><input type="radio" name="fst-opt" value="custom" /><span><strong>My own</strong></span></label>
+        </div>
+        <label class="calc__field" for="fst-custom">Your own threshold<small>Typing here selects "My own"</small><span class="calc__wrap"><span class="fst-sym">₹</span><input id="fst-custom" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 1500" /></span></label>
+      </fieldset>
+      <div class="calc__row">
+        <label class="calc__field" for="fst-orders">Orders a month<small>All orders, for the break-even check</small><span class="calc__wrap"><input id="fst-orders" type="number" min="0" step="1" inputmode="numeric" value={d.orders} /></span></label>
+        <label class="calc__field" for="fst-above">Orders already at or above it<small>% of orders that would qualify today</small><span class="calc__wrap"><input id="fst-above" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.above} /><span>%</span></span></label>
+      </div>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="fst-status" data-state="warn">Enter your numbers</span>
+      <div><div class="calc__big" id="fst-big">—</div><p class="calc__biglabel" id="fst-biglabel">Free shipping threshold to test</p></div>
+      <table class="fst__table">
+        <caption class="sr-only">Threshold options</caption>
+        <thead><tr><th scope="col">Option</th><th scope="col">Threshold</th><th scope="col">Step-up</th><th scope="col">Net per step-up order</th></tr></thead>
+        <tbody>
+          {options.map((o) => <tr data-id={o.id}><th scope="row">{o.name}<small>{o.how}</small></th><td data-k="t">—</td><td data-k="s">—</td><td data-k="n">—</td></tr>)}
+        </tbody>
+      </table>
+      <dl class="calc__list">
+        <div><dt>Extra order value needed to pay for shipping</dt><dd id="fst-extra">—</dd></div>
+        <div><dt>Lowest threshold that pays its own shipping</dt><dd id="fst-min">—</dd></div>
+        <div><dt>Free-shipping cost on orders that already qualify</dt><dd id="fst-giveaway">—</dd></div>
+        <div><dt>Orders that must step up to break even</dt><dd id="fst-need">—</dd></div>
+        <div><dt>As a share of orders below the threshold</dt><dd id="fst-needpct">—</dd></div>
+      </dl>
+      <p class="fst__verdict" id="fst-verdict"></p>
+      <a class="btn btn--primary" href="/free-ecommerce-audit/?from=free-shipping-threshold-calculator#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+      <div class="calc__note fst__how">
+        <p><strong>How it is calculated</strong></p>
+        <p>Options are your AOV plus half, one and one and a half typical items, rounded up to a round number. Step-up = threshold − AOV.</p>
+        <p>Extra order value needed to pay for shipping = shipping cost ÷ gross margin. Net per step-up order = step-up × gross margin − shipping cost: the extra gross profit when an order grows from your AOV to the threshold, after you pay its shipping.</p>
+        <p>Break-even: orders already at or above the threshold now ship free, costing orders × that share × shipping cost a month. Orders that must step up = that cost ÷ net per step-up order.</p>
+        <p>Assumes you charge shoppers roughly your shipping cost today, so each free-shipping order costs you that amount. It does not model a change in conversion rate. Nothing you type leaves your browser.</p>
+      </div>
+    </div>
+  </form>
+</div></section>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const locales: Record<string, string> = { INR: 'en-IN', USD: 'en-US', GBP: 'en-GB', AED: 'en-AE', AUD: 'en-AU' };
+  const symbols: Record<string, string> = { INR: '₹', USD: '$', GBP: '£', AED: 'AED', AUD: 'A$' };
+  const num = (id: string) => { const v = parseFloat($(id).value); return Number.isFinite(v) && v > 0 ? v : 0; };
+  const ok = (n: number) => Number.isFinite(n);
+  let cur = 'INR';
+  function money(n: number) {
+    if (!ok(n)) return '—';
+    const small = Math.abs(n) < 100 && Math.round(n) !== n;
+    return new Intl.NumberFormat(locales[cur], { style: 'currency', currency: cur, minimumFractionDigits: small ? 2 : 0, maximumFractionDigits: small ? 2 : 0 }).format(n);
+  }
+  const signed = (n: number) => (n > 0 ? '+' : '') + money(n);
+  const count = (n: number) => (ok(n) ? Math.round(n).toLocaleString(locales[cur]) : '—');
+  const set = (id: string, t: string) => { $(id).textContent = t; };
+  // Round up to a step that suits the size of the number (e.g. 1,649 → 1,650; 1,699 → 1,700; 84 → 85).
+  function roundUp(n: number) {
+    const step = n < 100 ? 5 : n < 500 ? 10 : n < 2000 ? 50 : n < 10000 ? 100 : n < 50000 ? 500 : 1000;
+    return Math.ceil(n / step - 1e-9) * step;
+  }
+  const mult: Record<string, number> = { gentle: 0.5, suggested: 1, stretch: 1.5 };
+
+  function run() {
+    const aov = num('fst-aov'), item = num('fst-item'), ship = num('fst-ship'), m = Math.min(num('fst-margin'), 100) / 100;
+    const orders = Math.round(num('fst-orders')), above = Math.min(num('fst-above'), 100) / 100;
+    const base = aov > 0 && item > 0;
+    const th: Record<string, number> = {};
+    for (const id in mult) th[id] = base ? roundUp(aov + mult[id] * item) : NaN;
+
+    // Options and table
+    for (const id in mult) {
+      set(`fst-o-${id}`, base ? money(th[id]) : '—');
+      const row = document.querySelector<HTMLElement>(`#fst tr[data-id="${id}"]`)!;
+      const step = th[id] - aov, net = step * m - ship;
+      row.querySelector('[data-k="t"]')!.textContent = base ? money(th[id]) : '—';
+      row.querySelector('[data-k="s"]')!.textContent = base ? money(step) : '—';
+      const n = row.querySelector<HTMLElement>('[data-k="n"]')!;
+      n.textContent = base && m > 0 ? signed(net) : '—';
+      n.dataset.state = base && m > 0 ? (net > 0 ? 'good' : 'bad') : '';
+    }
+
+    // Selected threshold
+    const pick = (document.querySelector<HTMLInputElement>('#fst input[name="fst-opt"]:checked')?.value) || 'suggested';
+    const t = pick === 'custom' ? num('fst-custom') : th[pick];
+    const hasT = ok(t) && t > 0 && aov > 0;
+    set('fst-big', hasT ? money(t) : '—');
+    set('fst-biglabel', pick === 'custom' ? 'Your threshold to test' : `Free shipping threshold to test (${pick === 'gentle' ? 'gentle' : pick === 'stretch' ? 'stretch' : 'suggested'})`);
+
+    const extra = m > 0 ? ship / m : NaN;
+    set('fst-extra', m > 0 && ship > 0 ? money(extra) : '—');
+    set('fst-min', m > 0 && ship > 0 && aov > 0 ? money(roundUp(aov + extra)) : '—');
+
+    const step = hasT ? t - aov : NaN, net = step * m - ship;
+    const giveaway = orders * above * ship;
+    const ready = hasT && m > 0 && ship > 0 && orders > 0;
+    set('fst-giveaway', ready ? money(giveaway) + ' / month' : '—');
+    const st = $('fst-status'), verdict = $('fst-verdict');
+    if (!ready) {
+      set('fst-need', '—'); set('fst-needpct', '—');
+      st.dataset.state = 'warn';
+      st.textContent = 'Enter your numbers';
+      verdict.textContent = ship === 0 && aov > 0 ? 'With no shipping cost, free shipping costs you nothing at any threshold.' : '';
+      return;
+    }
+    const below = orders * (1 - above);
+    if (step <= 0) {
+      set('fst-need', '—'); set('fst-needpct', '—');
+      st.dataset.state = 'bad'; st.textContent = 'Threshold is at or below your AOV';
+      verdict.textContent = 'Most orders would qualify without adding anything, so this works like free shipping for everyone. Set the threshold above your AOV.';
+    } else if (net <= 0) {
+      set('fst-need', '—'); set('fst-needpct', '—');
+      st.dataset.state = 'bad'; st.textContent = 'Step-up orders do not cover their shipping';
+      verdict.textContent = `An order growing from your AOV to this threshold adds ${money(step * m)} of gross profit but costs ${money(ship)} to ship. Try a threshold of at least ${money(roundUp(aov + extra))}.`;
+    } else {
+      const need = giveaway / net;
+      const share = below > 0 ? need / below : NaN;
+      set('fst-need', count(Math.ceil(need)) + ' / month');
+      set('fst-needpct', ok(share) && below > 0 ? (Math.round(share * 1000) / 10).toLocaleString(locales[cur]) + '%' : '—');
+      if (!ok(share) || share > 1) {
+        st.dataset.state = 'bad'; st.textContent = 'Hard to break even at this threshold';
+        verdict.textContent = 'More orders would need to step up than there are orders below the threshold. Raise the threshold, or check the share of orders that already qualify.';
+      } else {
+        st.dataset.state = share <= 0.25 ? 'good' : 'warn';
+        st.textContent = 'Each step-up order pays for its shipping';
+        verdict.textContent = `Break-even if about ${count(Math.ceil(need))} of your ${count(below)} orders below the threshold step up each month. Every step-up order beyond that adds ${money(net)} of gross profit.`;
+      }
+    }
+  }
+
+  function setCurrency() {
+    cur = $('fst-cur').value in locales ? $('fst-cur').value : 'INR';
+    document.querySelectorAll('#fst .fst-sym').forEach((s) => { s.textContent = symbols[cur]; });
+    run();
+  }
+
+  const form = document.getElementById('fst');
+  form?.addEventListener('input', (e) => {
+    const id = (e.target as HTMLElement).id;
+    if (id === 'fst-custom') { const r = document.querySelector<HTMLInputElement>('#fst input[value="custom"]'); if (r) r.checked = true; }
+    if (id === 'fst-cur') setCurrency(); else run();
+  });
+  form?.addEventListener('change', (e) => { if ((e.target as HTMLElement).id === 'fst-cur') setCurrency(); else run(); });
+  setCurrency();
+</script>
+<style>
+  .fst__hint { color: var(--muted); }
+  .fst__pick { border: 0; margin: 0; padding: 14px 0 0; border-top: 1px solid var(--line); display: grid; gap: 12px; min-width: 0; }
+  .fst__pick legend { padding: 0; font-size: 14px; font-weight: 500; display: grid; gap: 2px; }
+  .fst__pick legend small { font-weight: 400; color: var(--muted); }
+  .fst__opts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .fst__opts label { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; font-size: 14px; cursor: pointer; background: var(--paper); font-variant-numeric: tabular-nums; }
+  .fst__opts label:has(input:checked) { border-color: var(--accent); background: var(--accent-tint, #fff1ea); }
+  .fst__opts input { accent-color: var(--accent); margin: 0; }
+  .fst__table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+  .fst__table th, .fst__table td { padding: 10px 6px; border-bottom: 1px solid var(--line-dark); text-align: right; vertical-align: top; }
+  .fst__table thead th { color: var(--muted-on-dark); font-weight: 500; font-size: 12.5px; }
+  .fst__table th[scope="row"], .fst__table thead th:first-child { text-align: left; padding-left: 0; }
+  .fst__table td:last-child, .fst__table thead th:last-child { padding-right: 0; }
+  .fst__table th[scope="row"] { font-weight: 600; }
+  .fst__table th small { display: block; font-weight: 400; color: var(--muted-on-dark); font-size: 12px; }
+  .fst__table td[data-state="good"] { color: #4ade80; } .fst__table td[data-state="bad"] { color: #f87171; }
+  .fst__verdict { font-size: 15px; line-height: 1.5; }
+  .fst__verdict:empty { display: none; }
+  .fst__how { display: grid; gap: 8px; line-height: 1.55; }
+  .fst__how strong { color: var(--white); }
+  .fst .calc__out .btn { justify-self: start; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+</style>

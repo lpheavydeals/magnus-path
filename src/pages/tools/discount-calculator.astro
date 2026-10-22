@@ -1,0 +1,66 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import DiscountCalc from '../../components/tools/DiscountCalc.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'Why a discount needs more sales than it looks', paragraphs: [
+    'A 20% discount does not cost you 20% of your profit. It comes straight out of the profit on each unit, because your product, shipping and packing costs stay the same while the price falls. If you made ₹449 on a ₹999 product (an example) and give 20% off, you now make about ₹249. You have to sell roughly 80% more units just to stand still.',
+    'This discount calculator for ecommerce shows that number before you launch the offer. Enter your normal price, your full cost per unit and how many units you sell in a normal month, then try different discounts. The tool tells you how many more sales the discount needs, the break-even units per month and what happens to profit if sales do not rise at all.',
+  ] },
+  { heading: 'The formula behind the calculator', paragraphs: [
+    'Profit per unit is price minus cost per unit. To keep the same total profit after a discount, units × old profit per unit must equal new units × new profit per unit. So the units you need are your current units multiplied by old profit per unit, divided by new profit per unit.',
+    'For a percentage discount there is a shortcut: the extra sales needed equal the discount divided by your margin minus the discount. With a 45% margin, a 20% discount needs 20 ÷ 25 = 80% more units. When the discount reaches your margin, no amount of extra sales can make up for it.',
+  ], bullets: ['Profit per unit = price − cost per unit', 'Break-even units = units now × profit per unit now ÷ profit per unit after discount', 'Extra sales needed (% discount) = discount ÷ (margin − discount)'] },
+  { heading: 'What to count as cost per unit', paragraphs: [
+    'Use every cost that grows with each extra sale: product cost, packaging, shipping you pay, payment and marketplace fees, and the average ad cost to win a sale if the extra orders will come from ads. Leave out fixed costs such as rent and salaries, because they do not change when you sell one more unit.',
+    'Enter the price excluding GST or VAT, since the tax is not your money. If your fees are a percentage of the price, they fall a little when the price falls, so the real number of extra sales you need may be slightly lower than the calculator shows. Treat the result as a cautious estimate.',
+  ] },
+  { heading: 'When a discount is worth it', paragraphs: [
+    'A discount pays when it brings sales you would not have made anyway: new customers who go on to buy again, clearing old stock that is costing you storage, or meeting a big sale event where shoppers expect offers. It costs you when it mostly goes to people who would have paid full price.',
+    'Check the table under the results. On thin margins, the extra sales needed rise very fast between 20% and 30% off. If the numbers look out of reach, the offer probably needs a different shape.',
+    'After the sale, compare what really happened with the break-even units the calculator gave you. Look at total profit for the period, not only revenue or orders, and check whether returns rose with the extra volume. Note how many buyers were new and how many came back later. That record makes the next sale decision much easier than guessing again from scratch.',
+  ] },
+  { heading: 'Better offers than a flat price cut', paragraphs: [
+    'Many stores protect their margin by giving value instead of cutting the price on every order. These offers also raise the order value, which spreads shipping and packing costs over more revenue.',
+  ], bullets: ['Spend thresholds: "₹300 off orders above ₹2,499" (example amounts)', 'Bundles and buy-two offers that move more units per order', 'A free gift that costs you less than its perceived value', 'Free shipping above a threshold instead of a discount on everything', 'Discounts limited to slow-moving stock or first orders only'] },
+];
+const faqs = [
+  { q: 'How many more sales do I need to make up for a discount?', a: 'Divide your profit per unit before the discount by your profit per unit after it, then subtract one. With ₹449 profit before and ₹249 after a 20% discount, you need about 80% more units to earn the same total profit. For percentage discounts, the shortcut is discount ÷ (margin − discount).' },
+  { q: 'What does break-even units mean in this discount calculator?', a: 'Break-even units is the number of units you must sell per month at the discounted price to earn the same profit as you do now at full price. It is rounded up to a whole unit. If the discount is larger than your profit per unit, there is no break-even point and the calculator shows a dash.' },
+  { q: 'Should I enter the price with or without GST or VAT?', a: 'Enter both price and costs excluding GST or VAT. The tax you collect is passed on to the government, so it is not part of your profit. If you include tax in the price, your margin looks bigger than it really is and the calculator will understate how many extra sales a discount needs.' },
+  { q: 'Can I calculate a flat amount off instead of a percentage?', a: 'Yes. Choose "Flat amount off" and enter the amount taken off each unit. The calculator works out the new price, profit per unit and the extra sales needed in the same way. The comparison table below the results always shows 10% to 30% percentage discounts so you can compare both kinds of offer.' },
+  { q: 'Is a discount ever better than keeping full price?', a: 'Yes, when the extra sales are real and worth more than the margin you give away. Common cases are bringing in new customers who buy again, clearing stock that ties up cash, or matching a big sale event. The calculator shows the sales lift you need, so you can judge whether that is realistic.' },
+  { q: 'Is my data saved?', a: 'No. The discount calculator runs entirely in your browser and nothing you type is sent to us or stored. The currency picker only changes how amounts are shown and does not convert between currencies. If you want help planning a sale, request the free e-commerce audit and our team will review your offers.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'Discount Calculator', href: '/tools/discount-calculator/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Discount Calculator for Ecommerce', url: `${site.url}/tools/discount-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'venn', caption: 'A discount only pays when the extra sales outweigh the profit you give away on every unit.', after: 0, left: { title: 'Profit you give away', body: 'The discount comes off every unit, including full-price buyers' }, right: { title: 'Extra sales you win', body: 'New buyers, cleared stock, bigger orders' }, overlap: 'Break-even units' },
+  { type: 'matrix', caption: 'Choosing the shape of an offer by margin and goal.', after: 3, cols: ['High margin', 'Thin margin'], rows: ['Win new customers', 'Clear old stock'], cells: [
+    { title: 'New-buyer offer', body: 'A modest % off for first orders only' },
+    { title: 'Free gift instead', body: 'Give value without cutting the price' },
+    { title: 'Targeted clearance', body: 'Discount only the slow stock, for a short time' },
+    { title: 'Bundle or buy two', body: 'Move more units per order, not a deeper cut' },
+  ] },
+];
+---
+<Base title="Discount Calculator for Ecommerce: Sales Needed | Magnus Path" description="Free discount calculator for ecommerce: see how many more sales a discount needs to keep the same profit, your break-even units and a 10% to 30% comparison." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="Discount Calculator for Ecommerce: *How Many More Sales You Need*" intro="This discount calculator for ecommerce shows how many more sales a discount needs before it pays for itself. Enter your price, cost per unit and monthly sales, pick a percentage or flat discount, and see your break-even units and new margin." trail={trail} current="Discount Calculator" />
+  <DiscountCalc />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="How discounts change profit, and how to plan a sale" />
+  <FAQ items={faqs} title="Discount calculator questions" />
+  <Related links={[{ label: 'Ecommerce profit margin calculator', href: '/tools/profit-margin-calculator/' }, { label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' }, { label: 'Amazon & Flipkart marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }, { label: 'Performance marketing agency in India', href: '/performance-marketing/' }, { label: 'Free e-commerce store audit', href: '/free-ecommerce-audit/' }]} />
+  <LeadForm heading="Planning a sale?" sub="Send us your store and your offer idea. We check whether the discount can pay for itself and suggest offers that protect your margin." />
+</Base>

@@ -1,0 +1,155 @@
+---
+// LTV:CAC calculator. Customer lifetime value (revenue and gross margin), LTV:CAC ratio, max affordable CAC
+// and payback, from AOV, margin, purchase frequency, lifespan (or repeat rate) and CAC. Runs in the browser.
+import './calc.css';
+// Example defaults so the first view shows a worked result (labelled as examples on the page).
+const d = { aov: 1500, margin: 50, freq: 1.5, years: 2, repeat: 40, cac: 800, target: 3 };
+const inr = (n: number) => '₹' + Math.round(n).toLocaleString('en-IN');
+const orders = d.freq * d.years, ltvRev = d.aov * orders, ltvGp = ltvRev * d.margin / 100, gpOrder = d.aov * d.margin / 100;
+const ratio = ltvGp / d.cac, payN = Math.max(1, Math.ceil(d.cac / gpOrder - 1e-9)), payM = (payN - 1) * 12 / d.freq;
+const currencies = [['INR', '₹ Indian rupee'], ['USD', '$ US dollar'], ['GBP', '£ British pound'], ['AED', 'AED UAE dirham'], ['AUD', 'A$ Australian dollar']];
+---
+<section class="section lc"><div class="wrap">
+  <form class="calc" id="ltvcac" onsubmit="return false">
+    <div class="calc__in">
+      <h2>Your numbers</h2>
+      <p class="calc__note" style="color:var(--muted)">Example values are filled in. Replace them with your own store's numbers.</p>
+      <label class="calc__field" for="lc-cur">Currency<small>Changes the symbol and number format only; nothing is converted</small>
+        <span class="calc__wrap"><select id="lc-cur">{currencies.map(([v, l]) => <option value={v}>{l}</option>)}</select></span>
+      </label>
+      <div class="calc__row">
+        <label class="calc__field" for="lc-aov">Average order value<small>Revenue per order, after discounts</small><span class="calc__wrap"><span class="lc__sym">₹</span><input id="lc-aov" type="number" min="0" step="any" inputmode="decimal" value={d.aov} /></span></label>
+        <label class="calc__field" for="lc-margin">Gross margin<small>After product, shipping and fees; before ads</small><span class="calc__wrap"><input id="lc-margin" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.margin} /><span>%</span></span></label>
+        <label class="calc__field" for="lc-freq">Purchases per year<small>Orders per customer in a year</small><span class="calc__wrap"><input id="lc-freq" type="number" min="0" step="any" inputmode="decimal" value={d.freq} /><span>/ yr</span></span></label>
+        <label class="calc__field" for="lc-cac">Customer acquisition cost<small>Marketing spend ÷ new customers</small><span class="calc__wrap"><span class="lc__sym">₹</span><input id="lc-cac" type="number" min="0" step="any" inputmode="decimal" value={d.cac} /></span></label>
+      </div>
+      <fieldset class="lc__mode">
+        <legend>How long do customers keep buying?</legend>
+        <div class="lc__opts">
+          <label><input type="radio" name="lc-mode" value="years" checked />I know the lifespan</label>
+          <label><input type="radio" name="lc-mode" value="repeat" />I know the repeat rate</label>
+        </div>
+      </fieldset>
+      <div class="calc__row">
+        <label class="calc__field" for="lc-years" id="lc-years-f">Customer lifespan<small>Years a typical customer keeps buying</small><span class="calc__wrap"><input id="lc-years" type="number" min="0" step="any" inputmode="decimal" value={d.years} /><span>years</span></span></label>
+        <label class="calc__field" for="lc-repeat" id="lc-repeat-f" hidden>Repeat purchase rate<small>Share of customers who order again after each order</small><span class="calc__wrap"><input id="lc-repeat" type="number" min="0" max="99" step="any" inputmode="decimal" value={d.repeat} /><span>%</span></span></label>
+        <label class="calc__field" for="lc-target">Target LTV:CAC ratio<small>Your goal; 3 is a common rule of thumb</small><span class="calc__wrap"><input id="lc-target" type="number" min="0" step="any" inputmode="decimal" value={d.target} /><span>: 1</span></span></label>
+      </div>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="lc-status" data-state={ratio >= d.target ? 'good' : ratio >= 1 ? 'warn' : 'bad'}>{ratio >= d.target ? 'At or above your target ratio' : ratio >= 1 ? 'Profitable, but below your target' : 'Customers cost more than they return'}</span>
+      <div><div class="calc__big" id="lc-ratio">{ratio.toFixed(1)} : 1</div><p class="calc__biglabel">LTV:CAC ratio (lifetime gross margin ÷ CAC)</p></div>
+      <dl class="calc__list">
+        <div><dt>Lifetime value (revenue)</dt><dd id="lc-ltvrev">{inr(ltvRev)}</dd></div>
+        <div><dt>Lifetime value (gross margin)</dt><dd id="lc-ltvgp">{inr(ltvGp)}</dd></div>
+        <div><dt>Orders per customer</dt><dd id="lc-orders">{orders.toFixed(1)}</dd></div>
+        <div><dt>Customer lifespan</dt><dd id="lc-life">{d.years.toFixed(1)} years</dd></div>
+        <div><dt>Max affordable CAC <span id="lc-tl">(at {d.target}:1)</span></dt><dd id="lc-max">{inr(ltvGp / d.target)}</dd></div>
+        <div><dt>Break-even CAC (1:1)</dt><dd id="lc-be">{inr(ltvGp)}</dd></div>
+        <div><dt>CAC paid back on</dt><dd id="lc-payo">order {payN}</dd></div>
+        <div><dt>Payback time</dt><dd id="lc-paym">{payM.toFixed(1)} months</dd></div>
+      </dl>
+      <div class="lc__formulas">
+        <h3>How it is calculated</h3>
+        <ul id="lc-f">
+          <li>Orders per customer = purchases per year × lifespan</li>
+          <li>LTV (revenue) = AOV × orders per customer</li>
+          <li>LTV (gross margin) = LTV (revenue) × gross margin %</li>
+          <li>LTV:CAC = LTV (gross margin) ÷ CAC</li>
+          <li>Max affordable CAC = LTV (gross margin) ÷ target ratio</li>
+          <li>Payback order = CAC ÷ (AOV × gross margin %), rounded up; months = (payback order − 1) × 12 ÷ purchases per year</li>
+        </ul>
+      </div>
+      <a class="btn btn--primary" href="/free-ecommerce-audit/?from=ltv-cac-calculator#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+      <p class="calc__note">Uses gross margin, not revenue, so the ratio shows what a customer is really worth. It ignores fixed costs and the time value of money. Nothing you type leaves your browser.</p>
+    </div>
+  </form>
+</div></section>
+<script>
+  const $ = <T extends HTMLElement = HTMLInputElement>(id: string) => document.getElementById(id) as T;
+  const CUR: Record<string, string> = { INR: 'en-IN', USD: 'en-US', GBP: 'en-GB', AED: 'en-AE', AUD: 'en-US' }; // en-US shows AUD as "A$"
+  const SYM: Record<string, string> = { INR: '₹', USD: '$', GBP: '£', AED: 'AED', AUD: 'A$' };
+  const ok = (n: number) => Number.isFinite(n);
+  const num = (id: string) => { const v = $(id).value.trim(); return v === '' ? NaN : Number(v); };
+  const dec = (n: number, d = 1) => (ok(n) ? (+n.toFixed(d)).toLocaleString('en-US', { maximumFractionDigits: d }) : '—');
+  let cur = 'INR';
+  const money = (n: number) => !ok(n) ? '—' : new Intl.NumberFormat(CUR[cur], { style: 'currency', currency: cur, minimumFractionDigits: 0, maximumFractionDigits: Math.abs(n) < 100 ? 2 : 0 }).format(n);
+  const set = (id: string, t: string) => { $(id).textContent = t; };
+
+  function run() {
+    cur = $<HTMLSelectElement>('lc-cur').value;
+    document.querySelectorAll('.lc__sym').forEach((s) => (s.textContent = SYM[cur]));
+    const mode = (document.querySelector('input[name="lc-mode"]:checked') as HTMLInputElement).value;
+    $('lc-years-f').hidden = mode !== 'years';
+    $('lc-repeat-f').hidden = mode !== 'repeat';
+    const aov = num('lc-aov'), mPct = num('lc-margin'), f = num('lc-freq'), cac = num('lc-cac'), target = num('lc-target');
+    const m = ok(mPct) && mPct >= 0 && mPct <= 100 ? mPct / 100 : NaN;
+    let orders = NaN, years = NaN;
+    if (mode === 'years') {
+      years = num('lc-years');
+      orders = f > 0 && years > 0 ? f * years : NaN;
+    } else {
+      const r = num('lc-repeat');
+      orders = ok(r) && r >= 0 && r < 100 ? 1 / (1 - r / 100) : NaN; // expected orders incl. the first: 1 + r + r² + … = 1 ÷ (1 − r)
+      years = f > 0 && ok(orders) ? orders / f : NaN;
+    }
+    const aovOk = aov > 0 ? aov : NaN;
+    const ltvRev = aovOk * orders, ltvGp = ltvRev * m;
+    const ratio = cac > 0 ? ltvGp / cac : NaN;
+    const maxCac = target > 0 ? ltvGp / target : NaN;
+    const gpOrder = aovOk * m;
+    const payExact = gpOrder > 0 && cac >= 0 ? cac / gpOrder : NaN;
+    const payN = ok(payExact) ? Math.max(1, Math.ceil(payExact - 1e-9)) : NaN;
+    const payM = ok(payN) && f > 0 ? (payN - 1) * 12 / f : NaN;
+    const beyond = ok(payN) && ok(orders) && payExact > orders + 1e-9;
+
+    set('lc-ratio', ok(ratio) ? dec(ratio) + ' : 1' : '—');
+    set('lc-ltvrev', money(ltvRev));
+    set('lc-ltvgp', money(ltvGp));
+    set('lc-orders', dec(orders, 2));
+    set('lc-life', ok(years) ? dec(years) + ' years' : '—');
+    set('lc-tl', target > 0 ? `(at ${dec(target)}:1)` : '');
+    set('lc-max', money(maxCac));
+    set('lc-be', money(ltvGp));
+    set('lc-payo', !ok(payN) ? '—' : beyond ? 'Not within lifetime' : `order ${payN}` + (payN > 1 ? ` (${dec(payExact, 2)} orders of margin)` : ''));
+    set('lc-paym', !ok(payM) || beyond ? '—' : payN === 1 ? 'On the first order' : dec(payM) + ' months');
+
+    const st = $('lc-status');
+    const state = !ok(ratio) ? 'warn' : ratio < 1 ? 'bad' : target > 0 && ratio < target ? 'warn' : 'good';
+    st.dataset.state = state;
+    st.textContent = !ok(ratio) ? 'Enter your numbers' : state === 'bad' ? 'Customers cost more than they return' : state === 'warn' ? 'Profitable, but below your target' : target > 0 ? 'At or above your target ratio' : 'Customers return more than they cost';
+
+    // Formulas with the visitor's own numbers substituted.
+    const pct = ok(m) ? dec(m * 100) + '%' : '—';
+    const fl = [
+      mode === 'years'
+        ? `Orders per customer = purchases per year × lifespan = ${dec(f, 2)} × ${dec(years, 2)} = ${dec(orders, 2)}`
+        : `Orders per customer = 1 ÷ (1 − repeat rate) = 1 ÷ (1 − ${dec(num('lc-repeat'))}%) = ${dec(orders, 2)}; lifespan = orders ÷ purchases per year = ${ok(years) ? dec(years) + ' years' : '—'}`,
+      `LTV (revenue) = AOV × orders per customer = ${money(aovOk)} × ${dec(orders, 2)} = ${money(ltvRev)}`,
+      `LTV (gross margin) = LTV (revenue) × gross margin = ${money(ltvRev)} × ${pct} = ${money(ltvGp)}`,
+      `LTV:CAC = LTV (gross margin) ÷ CAC = ${money(ltvGp)} ÷ ${money(cac >= 0 ? cac : NaN)} = ${ok(ratio) ? dec(ratio) + ' : 1' : '—'}`,
+      `Max affordable CAC = LTV (gross margin) ÷ target ratio = ${money(ltvGp)} ÷ ${dec(target)} = ${money(maxCac)}`,
+      `Payback = CAC ÷ margin per order = ${money(cac >= 0 ? cac : NaN)} ÷ ${money(gpOrder)} = ${dec(payExact, 2)} orders, so order ${ok(payN) ? payN : '—'}; months = (order − 1) × 12 ÷ purchases per year = ${ok(payM) ? dec(payM) : '—'}`,
+    ];
+    const ul = $('lc-f'); ul.innerHTML = '';
+    for (const t of fl) { const li = document.createElement('li'); li.textContent = t; ul.appendChild(li); }
+  }
+  $('ltvcac').addEventListener('input', run);
+  $('ltvcac').addEventListener('change', run);
+  run();
+</script>
+<style>
+  .lc__mode { border: 0; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .lc__mode legend { padding: 0; font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+  .lc__opts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .lc__opts label { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; font-size: 14px; cursor: pointer; background: var(--paper); }
+  .lc__opts label:has(input:checked) { border-color: var(--accent); background: var(--accent-tint); }
+  .lc__opts input { accent-color: var(--accent); margin: 0; }
+  .calc__field[hidden] { display: none; }
+  .lc .calc__list dt span { font-size: 13px; }
+  .lc .calc__list dd { text-align: right; }
+  .lc__formulas { border-top: 1px solid var(--line-dark); padding-top: 14px; display: grid; gap: 8px; }
+  .lc__formulas h3 { font-size: 15px; font-family: var(--font-body); font-weight: 600; color: var(--white); }
+  .lc__formulas ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 13px; line-height: 1.5; color: var(--muted-on-dark); overflow-wrap: anywhere; }
+  .lc .calc__out .btn { justify-self: start; }
+</style>

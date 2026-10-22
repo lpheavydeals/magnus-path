@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import LtvCacCalc from '../../components/tools/LtvCacCalc.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'What the LTV CAC calculator tells you', paragraphs: ['This LTV CAC calculator compares two numbers every e-commerce brand should know: how much gross margin a customer brings in over their whole relationship with you (lifetime value, or LTV) and how much you spend to win that customer in the first place (customer acquisition cost, or CAC). Divide one by the other and you get the LTV:CAC ratio, which says whether your marketing is building a business or renting sales at a loss.', 'Many stores judge ads only on the first order. That works for one-off products, but it undervalues brands whose customers come back: skincare, Ayurveda, coffee, pet food, kidswear and most consumables. A customer lifetime value calculator for ecommerce shows how much you can afford to pay for a new customer when repeat orders are counted too.'] },
+  { heading: 'How customer lifetime value is calculated', paragraphs: ['The calculator uses the simple, widely used model: lifetime value equals average order value multiplied by the number of orders a customer places over their lifetime. Orders per customer come either from purchases per year multiplied by lifespan in years, or from your repeat purchase rate. If 40% of customers order again after each order, a typical customer places 1 ÷ (1 − 0.4), or about 1.67 orders.', 'Revenue LTV is the headline figure, but it hides product cost, shipping, payment fees and returns. That is why the calculator also shows LTV on gross margin, which is the money actually left to pay for marketing and fixed costs. All ratios use the margin version.'], bullets: ['Orders per customer = purchases per year × lifespan (or 1 ÷ (1 − repeat rate))', 'LTV (revenue) = average order value × orders per customer', 'LTV (gross margin) = LTV (revenue) × gross margin %', 'LTV:CAC = LTV (gross margin) ÷ CAC'] },
+  { heading: 'Reading your LTV:CAC ratio', paragraphs: ['A ratio below 1:1 means each new customer costs more than the margin they will ever bring in. Growth from that position loses money, however good the revenue looks. Between 1:1 and your target, customers are profitable over time, but there is little room left for salaries, rent, software and mistakes. Many founders use 3:1 as a rule of thumb for a healthy ratio, which is why it is the example target, but set the target that suits your own fixed costs and cash position.', 'A very high ratio is not always good news either. It can mean you are under-investing in growth and could spend more to win customers while still staying profitable. The max affordable CAC line shows how far you could raise acquisition spend before you drop to your target ratio.'] },
+  { heading: 'Payback: how fast you get your CAC back', paragraphs: ['The ratio tells you whether a customer is worth winning; payback tells you when the cash comes back. The calculator divides CAC by the gross margin on one order to find the order on which the customer has repaid their acquisition cost, then converts that into months using purchases per year. If CAC is covered by the first order, payback is immediate.', 'Payback matters most for brands paying for ads from working capital. A ratio of 4:1 sounds excellent, but if the CAC only comes back on the fourth order, eighteen months later, you need the cash to fund that gap. Shorter payback lets you reinvest sooner and grow with less outside funding.'] },
+  { heading: 'How to improve LTV and lower CAC', paragraphs: ['There are two levers, and most brands get faster results from the first. Raise lifetime value by lifting average order value with bundles and free-shipping thresholds, getting a second order with a well-timed email or WhatsApp reminder, and making reorders easy with subscriptions or saved carts. Lower CAC by cutting ad audiences and search terms that spend without converting, improving product pages so more visitors buy, and building search traffic you do not pay for per click.', 'Measure both by cohort where you can: customers acquired in one month, tracked over the following year. That shows whether changes are really working, rather than averages that mix old loyal customers with new ones.'], bullets: ['Win the second order: it usually decides whether LTV grows', 'Use margin, not revenue, when setting CAC limits', 'Track new and returning customers separately in your ads reports', 'Review the ratio by channel, not only for the whole store'] },
+];
+const faqs = [
+  { q: 'What is a good LTV to CAC ratio for e-commerce?', a: 'Many founders use 3:1 as a rule of thumb: lifetime gross margin about three times what you pay to win a customer. Below 1:1, every new customer loses money. The right target depends on your fixed costs, cash position and how fast you want to grow, so set your own target in the calculator.' },
+  { q: 'Should LTV use revenue or gross margin?', a: 'Use gross margin when comparing LTV with CAC. Revenue LTV looks bigger, but part of it pays for products, shipping, payment fees and returns. Only the margin is available to cover marketing. This calculator shows both figures and uses the gross margin version for the ratio, max affordable CAC and payback.' },
+  { q: 'How do I calculate customer acquisition cost?', a: 'Divide your total marketing spend for a period by the number of new customers won in that period. Include ad spend, agency or freelancer fees, influencer costs and discounts given only to first-time buyers. Count new customers, not total orders, or repeat buyers will make your CAC look lower than it really is.' },
+  { q: 'What is the difference between lifespan and repeat rate?', a: 'Lifespan is how many years a typical customer keeps buying from you. Repeat rate is the share of customers who order again after each order. If you know one, the calculator works out the other using your purchases per year. New stores often know their repeat rate before they have enough history to estimate lifespan.' },
+  { q: 'How accurate is this customer lifetime value calculator?', a: 'It is as accurate as the averages you enter. It uses a simple model that ignores discounting and assumes customers behave like your average. Use it to set CAC limits and compare scenarios, then check real cohort data in Shopify, WooCommerce or your analytics as your store builds history.' },
+  { q: 'Is my data saved or sent anywhere?', a: 'No. The LTV CAC calculator runs entirely in your browser, and nothing you type is sent to us or stored. The currency picker only changes the symbol and number format; it does not convert amounts between currencies, so enter your numbers in the currency you choose.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'LTV CAC Calculator', href: '/tools/ltv-cac-calculator/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'LTV CAC Calculator', url: `${site.url}/tools/ltv-cac-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'mindmap', caption: 'The four inputs that decide what a customer is worth to your store.', after: 0, center: 'Customer value', branches: [
+    { label: 'Order value', items: ['Average basket', 'Bundles and add-ons'] },
+    { label: 'Margin', items: ['Product and shipping cost', 'Fees and returns'] },
+    { label: 'Repeat orders', items: ['Purchases per year', 'Years they keep buying'] },
+    { label: 'Acquisition', items: ['Ad spend', 'New customers won'] },
+  ] },
+  { type: 'matrix', caption: 'What to do once you know your LTV:CAC ratio and payback time.', after: 3, cols: ['Ratio below target', 'Ratio above target'], rows: ['Fast payback', 'Slow payback'], cells: [
+    { title: 'Tighten targeting', body: 'Cut wasted spend and lift order value before scaling' },
+    { title: 'Scale', body: 'Raise budgets step by step and watch the ratio' },
+    { title: 'Fix the model', body: 'Work on margin, repeat orders and CAC together' },
+    { title: 'Fund the gap', body: 'Profitable over time; plan cash for the wait' },
+  ] },
+];
+---
+<Base title="LTV CAC Calculator: Customer Lifetime Value | Magnus Path" description="Free LTV CAC calculator for e-commerce: work out customer lifetime value, LTV:CAC ratio, max affordable CAC and payback time in ₹, $, £, AED or A$." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="LTV CAC Calculator for *E-commerce Brands*" intro="This LTV CAC calculator shows what a customer is worth over their lifetime and how much you can afford to pay to win one. Enter your order value, margin, repeat purchases and acquisition cost to see LTV, your LTV:CAC ratio and how fast you earn the CAC back." trail={trail} current="LTV CAC Calculator" />
+  <LtvCacCalc />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="Customer lifetime value and CAC explained" />
+  <FAQ items={faqs} title="LTV CAC calculator questions" />
+  <Related links={[{ label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' }, { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }, { label: 'Performance marketing agency in India', href: '/performance-marketing/' }, { label: 'Free e-commerce store audit', href: '/free-ecommerce-audit/' }, { label: 'Beauty and Ayurveda e-commerce marketing', href: '/industries/beauty-ayurveda/' }]} />
+  <LeadForm heading="Want a lower CAC and more repeat orders?" sub="Send us your store and ad accounts. We show you where acquisition spend is wasted and how to win more second orders, in a free audit within 24 hours." />
+</Base>

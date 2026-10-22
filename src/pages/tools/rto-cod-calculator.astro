@@ -1,0 +1,57 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import RtoCalc from '../../components/tools/RtoCalc.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'What this RTO cost calculator measures', paragraphs: ['RTO (return to origin) happens when a courier cannot deliver a parcel and sends it back to you. Unlike a normal customer return, the buyer never receives the product, yet you still pay to ship it out and to bring it back. This RTO cost calculator adds up what those failed deliveries cost you in a month, so you can see the real size of the problem in money rather than as a percentage.', 'Enter how many orders you ship, how many are cash on delivery, and the RTO rate for COD and prepaid orders. Then enter what each returned parcel costs you. The calculator shows the number of RTO parcels, your overall RTO rate, the monthly and yearly cost, and how much RTO adds to every order that does get delivered.'] },
+  { heading: 'What one RTO parcel really costs', paragraphs: ['Most sellers think of RTO as "shipping both ways". That is the biggest part, but not the only one. The calculator counts five costs for each parcel that comes back:'], bullets: ['Forward shipping: you pay it whether or not the parcel is accepted', 'Reverse (RTO) shipping: couriers charge separately to bring the parcel back', 'Packaging: usually torn, taped or stained, so it cannot be reused', 'Damaged goods: the share of returned parcels you cannot sell again, valued at product cost', 'Ad cost (optional): the ad spend that won an order that never paid'] },
+  { heading: 'Why COD drives most RTO', paragraphs: ['A prepaid buyer has already committed money, so a refused prepaid parcel is unusual. A cash on delivery buyer can change their mind at the door at no cost to themselves. Impulse orders, fake orders, wrong phone numbers and buyers who found the item cheaper elsewhere all end up as COD returns. That is why the calculator asks for separate RTO rates for COD and prepaid orders: the gap between the two is what your payment mix is costing you.', 'Use your own courier or shipping aggregator data for both rates, measured as parcels returned to origin divided by parcels shipped, over a full month or more. RTO data lags because parcels take days to come back, so recent weeks will look better than they really are.'] },
+  { heading: 'Reading the COD share slider', paragraphs: ['The slider shows what happens if a share of your COD orders moved to prepaid. If you drag it to 10 points, a 60% COD share becomes 50%. The calculator assumes those orders now return at your prepaid RTO rate and that total orders stay the same, then shows how many RTO parcels you avoid and what that saves each month and year.', 'Treat the saving as the most you could spend to make the change. If a prepaid discount, free shipping on prepaid or partial advance payment costs less per order than the saving it brings, it pays for itself. Some buyers will not switch, so test the incentive on a portion of traffic before rolling it out.'] },
+  { heading: 'How to bring the number down', paragraphs: ['Once you know the cost, work on the causes in order of cost and effort. Our guide on how to reduce RTO and COD returns covers each step in detail; the short version:'], bullets: ['Confirm every COD order by OTP or WhatsApp before dispatch', 'Nudge buyers to prepaid with a small, clearly shown benefit', 'Make address fields complete and check pin-code serviceability at checkout', 'Set COD rules for pin codes, products and customers with high past RTO', 'Track RTO by courier, campaign and product, not only overall'] },
+  { heading: 'What the calculator leaves out', paragraphs: ['To keep the inputs short, the COD RTO calculator does not count stock blocked in transit, warehouse staff time to inspect and restock returns, COD collection fees or the revenue you lose when a sale fails. It also treats every order as the same size. Your true cost is usually higher than the figure shown, so use it as a floor, not a full profit-and-loss view. For per-order profit including marketplace fees, use the marketplace profit calculator alongside it.'] },
+];
+const faqs = [
+  { q: 'How do I calculate the cost of RTO?', a: 'Multiply the number of RTO parcels in a month by the cost of one RTO parcel. One parcel costs forward shipping, reverse shipping, packaging, the share of product that comes back damaged, and optionally the ad cost of that order. This RTO cost calculator does the sum for you and spreads it across your delivered orders.' },
+  { q: 'How do I calculate RTO rate?', a: 'Divide the parcels returned to origin by the parcels shipped in the same period and multiply by 100. Work it out separately for COD and prepaid orders, because the two usually differ a lot. Use complete periods, since returned parcels take several days to reach your warehouse and recent weeks look better than they are.' },
+  { q: 'What does RTO cost per delivered order mean?', a: 'It is your monthly RTO cost divided by the orders that were actually delivered. Your delivered orders carry the cost of the failed ones, so this figure shows how much RTO quietly reduces the profit on each successful sale. Add it to your per-order costs when you work out margin and break-even ROAS.' },
+  { q: 'Is it worth offering a discount for prepaid orders?', a: 'Often, but check the numbers. Use the slider to see the monthly saving if your COD share fell by a few points, then compare it with the cost of the incentive on every prepaid order, including buyers who would have prepaid anyway. If the saving is larger, the incentive pays for itself. Test it before rolling it out.' },
+  { q: 'Does the calculator use benchmark RTO rates?', a: 'No. The numbers filled in are examples only, not industry averages. RTO varies widely by category, price, region, courier and traffic source, so use your own shipping data. Your courier panel or shipping aggregator usually reports delivered and RTO counts that you can split by payment method.' },
+  { q: 'Is my data saved or sent anywhere?', a: 'No. The COD RTO calculator runs entirely in your browser. Nothing you type is sent to us or stored. If you would like our team to look at your checkout, COD rules and ad targeting, request the free e-commerce audit and share only what you are comfortable with.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'RTO Cost Calculator', href: '/tools/rto-cod-calculator/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'RTO Cost Calculator for COD Orders', url: `${site.url}/tools/rto-cod-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'mindmap', caption: 'Where the money goes when a parcel comes back to your warehouse.', after: 0, center: 'Cost of one RTO parcel', branches: [
+    { label: 'Shipping', items: ['Forward shipping', 'Reverse shipping'] },
+    { label: 'Materials', items: ['Packaging lost', 'Damaged stock'] },
+    { label: 'Ads', items: ['Ad spend that won the order', 'Optional in the tool'] },
+    { label: 'Not counted', items: ['Blocked stock', 'Staff time', 'COD fees and lost sale'] },
+  ] },
+  { type: 'matrix', caption: 'Which fix to try first, based on where your RTO comes from.', after: 2, cols: ['COD RTO high', 'COD RTO low'], rows: ['Prepaid RTO high', 'Prepaid RTO low'], cells: [
+    { title: 'Fix delivery', body: 'Check addresses, couriers and delivery speed first' },
+    { title: 'Check couriers', body: 'Compare delivery success by zone and partner' },
+    { title: 'Confirm COD', body: 'OTP or WhatsApp check, prepaid nudge, pin-code rules' },
+    { title: 'Keep watching', body: 'Track by campaign and product every week' },
+  ] },
+];
+---
+<Base title="RTO Cost Calculator for COD Orders (India) | Magnus Path" description="Free RTO cost calculator for COD orders: see what return-to-origin parcels cost you each month, the cost per delivered order and the saving from more prepaid." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="RTO Cost Calculator for *COD Orders*" intro="This RTO cost calculator shows what return-to-origin parcels cost your store each month. Enter your orders, COD share, RTO rates and shipping costs to see the monthly and yearly cost, the cost per delivered order and the saving if more buyers paid upfront." trail={trail} current="RTO Cost Calculator" />
+  <RtoCalc />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="RTO and COD costs explained" />
+  <FAQ items={faqs} title="RTO cost calculator questions" />
+  <Related links={[{ label: 'How to reduce RTO and COD returns', href: '/blog/how-to-reduce-rto-cod-returns/' }, { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }, { label: 'Free shipping threshold calculator', href: '/tools/free-shipping-threshold-calculator/' }, { label: 'Shopify store development in India', href: '/shopify-development/' }, { label: 'Performance marketing for ecommerce brands', href: '/performance-marketing/' }]} />
+  <LeadForm heading="Losing margin to RTO?" sub="Request the free e-commerce audit. We review your checkout, COD rules, product pages and ad targeting, and show where returns come from and what to fix first." />
+</Base>

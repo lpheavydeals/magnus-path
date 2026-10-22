@@ -1,0 +1,142 @@
+---
+// Ecommerce ad budget planner: works backwards from a revenue target to orders, sessions, ad spend,
+// implied ROAS and cost per order, then compares the plan with break-even ROAS from the margin.
+import './calc.css';
+// Example values only (labelled as examples on the page), so the first view shows a worked result.
+const d = { revenue: 1000000, aov: 1500, cr: 2, cpc: 12, cpm: 150, ctr: 1.2, margin: 45 };
+const orders = d.revenue / d.aov, sessions = orders / (d.cr / 100), spend = sessions * d.cpc;
+const roas = d.revenue / spend, be = 100 / d.margin;
+const fmt = (n: number) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: Math.abs(n) < 100 ? 2 : 0, minimumFractionDigits: Math.abs(n) < 100 ? 2 : 0 }).format(n).replace('-', '−');
+const num = (n: number) => Math.round(n).toLocaleString('en-IN');
+const state = roas > be * 1.05 ? 'good' : roas >= be * 0.95 ? 'warn' : 'bad';
+const curs = [['INR', '₹ Indian rupee'], ['USD', '$ US dollar'], ['GBP', '£ British pound'], ['AED', 'AED UAE dirham'], ['AUD', 'A$ Australian dollar']];
+---
+<section class="section"><div class="wrap">
+  <form class="calc ab" id="ab" onsubmit="return false">
+    <div class="calc__in">
+      <h2>Your target and costs</h2>
+      <p class="calc__note" style="color:var(--muted)">The numbers filled in are examples only, not benchmarks. Replace them with your own store and ad account figures.</p>
+      <label class="calc__field" for="ab-cur">Currency<small>Changes the symbol and number format only; nothing is converted</small><span class="calc__wrap"><select id="ab-cur">{curs.map(([v, l]) => <option value={v}>{l}</option>)}</select></span></label>
+      <div class="calc__row">
+        <label class="calc__field" for="ab-rev">Target monthly revenue from ads<small>Sales you want paid traffic to bring in</small><span class="calc__wrap"><span data-cur>₹</span><input id="ab-rev" type="number" min="0" step="any" inputmode="decimal" value={d.revenue} /></span></label>
+        <label class="calc__field" for="ab-aov">Average order value (AOV)<small>Revenue ÷ orders</small><span class="calc__wrap"><span data-cur>₹</span><input id="ab-aov" type="number" min="0" step="any" inputmode="decimal" value={d.aov} /></span></label>
+        <label class="calc__field" for="ab-cr">Conversion rate of ad traffic<small>Orders ÷ sessions from ads</small><span class="calc__wrap"><input id="ab-cr" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.cr} /><span>%</span></span></label>
+        <label class="calc__field" for="ab-margin">Gross margin<small>After product cost, before ads</small><span class="calc__wrap"><input id="ab-margin" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.margin} /><span>%</span></span></label>
+      </div>
+      <fieldset class="ab__mode">
+        <legend>How do you want to enter traffic cost?</legend>
+        <div class="ab__opts">
+          <label><input type="radio" name="ab-mode" value="cpc" checked />Cost per click (CPC)</label>
+          <label><input type="radio" name="ab-mode" value="cpm" />CPM + click-through rate</label>
+        </div>
+      </fieldset>
+      <div class="calc__row">
+        <label class="calc__field" for="ab-cpc" data-mode="cpc">Cost per click (CPC)<small>Average from your ad account</small><span class="calc__wrap"><span data-cur>₹</span><input id="ab-cpc" type="number" min="0" step="any" inputmode="decimal" value={d.cpc} /></span></label>
+        <label class="calc__field" for="ab-cpm" data-mode="cpm" hidden>CPM<small>Cost per 1,000 impressions</small><span class="calc__wrap"><span data-cur>₹</span><input id="ab-cpm" type="number" min="0" step="any" inputmode="decimal" value={d.cpm} /></span></label>
+        <label class="calc__field" for="ab-ctr" data-mode="cpm" hidden>Click-through rate (CTR)<small>Link clicks ÷ impressions</small><span class="calc__wrap"><input id="ab-ctr" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.ctr} /><span>%</span></span></label>
+      </div>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="ab-status" data-state={state}>{state === 'good' ? 'Plan is above break-even ROAS' : state === 'warn' ? 'Plan is close to break-even' : 'Plan is below break-even ROAS'}</span>
+      <div><div class="calc__big" id="ab-spend">{fmt(spend)}</div><p class="calc__biglabel">Monthly ad budget needed</p></div>
+      <dl class="calc__list">
+        <div><dt>Daily budget (÷ 30)</dt><dd id="ab-daily">{fmt(spend / 30)}</dd></div>
+        <div><dt>Orders needed</dt><dd id="ab-orders">{num(orders)}</dd></div>
+        <div><dt>Sessions (clicks) needed</dt><dd id="ab-sessions">{num(sessions)}</dd></div>
+        <div data-mode="cpm" hidden><dt>Impressions needed</dt><dd id="ab-impr">—</dd></div>
+        <div data-mode="cpm" hidden><dt>Effective CPC</dt><dd id="ab-ecpc">—</dd></div>
+        <div><dt>Implied ROAS</dt><dd id="ab-roas">{roas.toFixed(2)}×</dd></div>
+        <div><dt>Break-even ROAS</dt><dd id="ab-be">{be.toFixed(2)}×</dd></div>
+        <div><dt>Cost per order (CAC)</dt><dd id="ab-cac">{fmt(spend / orders)}</dd></div>
+        <div><dt>Highest CPC you can pay at break-even</dt><dd id="ab-maxcpc">{fmt(d.aov * d.cr / 100 * d.margin / 100)}</dd></div>
+        <div><dt>Gross profit after ad spend</dt><dd id="ab-profit">{fmt(d.revenue * d.margin / 100 - spend)}</dd></div>
+      </dl>
+      <div class="ab__formula calc__note">
+        <p><strong>How it is worked out</strong></p>
+        <p>Orders = revenue ÷ AOV · Sessions = orders ÷ conversion rate</p>
+        <p id="ab-f-spend">Ad budget = sessions × CPC</p>
+        <p>ROAS = revenue ÷ ad budget = AOV × CR ÷ CPC · CAC = ad budget ÷ orders</p>
+        <p>Break-even ROAS = 1 ÷ gross margin · Max CPC = AOV × CR × margin</p>
+        <p>Assumes all target revenue comes from paid traffic. Profit excludes fixed costs, shipping, fees and returns unless they are inside your margin.</p>
+      </div>
+      <a class="btn btn--primary" href="/free-ecommerce-audit/?from=ad-budget-planner#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </form>
+</div></section>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const LOCALE: Record<string, string> = { INR: 'en-IN', USD: 'en-US', GBP: 'en-GB', AED: 'en-AE', AUD: 'en-US' };
+  const SYM: Record<string, string> = { INR: '₹', USD: '$', GBP: '£', AED: 'AED', AUD: 'A$' };
+  const ok = (n: number | null): n is number => n !== null && Number.isFinite(n);
+  // Read a field: empty or negative → null; percentage fields above 100 → null.
+  const val = (id: string, pct = false) => { const raw = $(id).value.trim(); if (raw === '') return null; const n = Number(raw); return Number.isFinite(n) && n >= 0 && (!pct || n <= 100) ? n : null; };
+  const div = (a: number | null, b: number | null) => (ok(a) && ok(b) && b !== 0 ? a / b : null);
+  const mul = (a: number | null, b: number | null) => (ok(a) && ok(b) ? a * b : null);
+  let cur = 'INR';
+  const money = (n: number | null) => {
+    if (!ok(n)) return '—';
+    const small = Math.abs(n) < 100 && n !== 0;
+    return new Intl.NumberFormat(LOCALE[cur], { style: 'currency', currency: cur, minimumFractionDigits: small ? 2 : 0, maximumFractionDigits: small ? 2 : 0 }).format(n).replace('-', '−');
+  };
+  const count = (n: number | null) => (ok(n) ? Math.round(n).toLocaleString(LOCALE[cur]) : '—');
+  const set = (id: string, t: string) => { $(id).textContent = t; };
+
+  function run() {
+    cur = $('ab-cur').value;
+    document.querySelectorAll<HTMLElement>('#ab [data-cur]').forEach((s) => (s.textContent = SYM[cur]));
+    const mode = (document.querySelector('input[name="ab-mode"]:checked') as HTMLInputElement).value;
+    document.querySelectorAll<HTMLElement>('#ab [data-mode]').forEach((el) => (el.hidden = el.dataset.mode !== mode));
+    $('ab-f-spend').textContent = mode === 'cpc' ? 'Ad budget = sessions × CPC' : 'Impressions = clicks ÷ CTR · Ad budget = impressions ÷ 1,000 × CPM (effective CPC = CPM ÷ (1,000 × CTR))';
+
+    const rev = val('ab-rev'), aov = val('ab-aov'), crPct = val('ab-cr', true), mPct = val('ab-margin', true);
+    const cr = ok(crPct) ? crPct / 100 : null, m = ok(mPct) ? mPct / 100 : null;
+    let cpc: number | null, impr: number | null = null;
+    const orders = div(rev, aov), sessions = div(orders, cr);
+    if (mode === 'cpc') cpc = val('ab-cpc');
+    else {
+      const cpm = val('ab-cpm'), ctrPct = val('ab-ctr', true), ctr = ok(ctrPct) ? ctrPct / 100 : null;
+      cpc = div(cpm, mul(1000, ctr));
+      impr = div(sessions, ctr);
+    }
+    const spend = mul(sessions, cpc);
+    const roas = div(rev, spend), be = div(1, m), cac = div(spend, orders);
+    const maxCpc = mul(mul(aov, cr), m);
+    const profit = ok(rev) && ok(m) && ok(spend) ? rev * m - spend : null;
+
+    set('ab-spend', money(spend));
+    set('ab-daily', money(div(spend, 30)));
+    set('ab-orders', count(orders));
+    set('ab-sessions', count(sessions));
+    set('ab-impr', count(impr));
+    set('ab-ecpc', money(cpc));
+    set('ab-roas', ok(roas) ? roas.toFixed(2) + '×' : '—');
+    set('ab-be', ok(be) ? be.toFixed(2) + '×' : '—');
+    set('ab-cac', money(cac));
+    set('ab-maxcpc', money(maxCpc));
+    set('ab-profit', money(profit));
+
+    const st = $('ab-status');
+    let s = 'warn', t = 'Enter your numbers to see the plan';
+    if (ok(spend) && spend > 0 && ok(roas) && ok(be)) {
+      s = roas > be * 1.05 ? 'good' : roas >= be * 0.95 ? 'warn' : 'bad';
+      t = s === 'good' ? 'Plan is above break-even ROAS' : s === 'warn' ? 'Plan is close to break-even' : 'Plan is below break-even ROAS';
+    } else if (ok(spend) && spend > 0) t = 'Add your gross margin to check break-even';
+    st.dataset.state = s; st.textContent = t;
+  }
+  const form = document.getElementById('ab')!;
+  form.addEventListener('input', run);
+  form.addEventListener('change', run);
+  run();
+</script>
+<style>
+  .ab [hidden] { display: none !important; }
+  .ab__mode { border: 0; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .ab__mode legend { padding: 0 0 10px; font-size: 14px; font-weight: 500; }
+  .ab__opts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .ab__opts label { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; font-size: 14px; cursor: pointer; background: var(--paper); }
+  .ab__opts label:has(input:checked) { border-color: var(--accent); background: var(--accent-tint); }
+  .ab__opts input { accent-color: var(--accent); margin: 0; }
+  .ab__formula { display: grid; gap: 4px; line-height: 1.5; }
+  .ab__formula strong { color: var(--white); font-weight: 600; }
+  .ab .calc__out .btn { justify-self: start; }
+</style>

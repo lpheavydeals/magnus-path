@@ -1,0 +1,153 @@
+---
+// RTO & COD cost calculator: monthly cost of return-to-origin parcels, cost per delivered order,
+// and the saving if the COD share falls by X points. Runs entirely in the browser.
+import './calc.css';
+// Example defaults (labelled as examples on the page) so the first view shows a worked result.
+const d = { orders: 3000, cod: 60, rtoCod: 25, rtoPre: 4, fwd: 70, rev: 60, pack: 15, cost: 450, damage: 10, ad: 0, cut: 15 };
+const currencies = [
+  { v: 'INR', l: '₹ Indian rupee' },
+  { v: 'USD', l: '$ US dollar' },
+  { v: 'GBP', l: '£ British pound' },
+  { v: 'AED', l: 'AED UAE dirham' },
+  { v: 'AUD', l: 'A$ Australian dollar' },
+];
+---
+<section class="section"><div class="wrap">
+  <form class="calc rto" id="rto" onsubmit="return false">
+    <div class="calc__in">
+      <h2>Your numbers</h2>
+      <p class="calc__note rto__hint">Example values are filled in. Replace them with your own figures for a typical month.</p>
+      <label class="calc__field" for="rto-cur">Currency<small>Changes the symbol only; amounts are not converted</small>
+        <span class="calc__wrap"><select id="rto-cur">{currencies.map((c) => <option value={c.v}>{c.l}</option>)}</select></span>
+      </label>
+      <p class="rto__group">Orders and payment mix</p>
+      <div class="calc__row">
+        <label class="calc__field" for="rto-orders">Orders shipped a month<small>All orders handed to couriers</small><span class="calc__wrap"><input id="rto-orders" type="number" min="0" step="1" inputmode="numeric" value={d.orders} /></span></label>
+        <label class="calc__field" for="rto-cod">COD share of orders<small>Cash on delivery as % of shipped</small><span class="calc__wrap"><input id="rto-cod" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.cod} /><span>%</span></span></label>
+        <label class="calc__field" for="rto-rcod">RTO rate on COD orders<small>COD parcels returned ÷ COD shipped</small><span class="calc__wrap"><input id="rto-rcod" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.rtoCod} /><span>%</span></span></label>
+        <label class="calc__field" for="rto-rpre">RTO rate on prepaid orders<small>Prepaid parcels returned ÷ prepaid shipped</small><span class="calc__wrap"><input id="rto-rpre" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.rtoPre} /><span>%</span></span></label>
+      </div>
+      <p class="rto__group">Cost of each returned parcel</p>
+      <div class="calc__row">
+        <label class="calc__field" for="rto-fwd">Forward shipping per order<small>Paid even when the parcel comes back</small><span class="calc__wrap"><span class="rto-sym">₹</span><input id="rto-fwd" type="number" min="0" step="any" inputmode="decimal" value={d.fwd} /></span></label>
+        <label class="calc__field" for="rto-rev">Reverse (RTO) shipping per order<small>What the courier charges to bring it back</small><span class="calc__wrap"><span class="rto-sym">₹</span><input id="rto-rev" type="number" min="0" step="any" inputmode="decimal" value={d.rev} /></span></label>
+        <label class="calc__field" for="rto-pack">Packaging per order<small>Usually not reusable after a return</small><span class="calc__wrap"><span class="rto-sym">₹</span><input id="rto-pack" type="number" min="0" step="any" inputmode="decimal" value={d.pack} /></span></label>
+        <label class="calc__field" for="rto-cost">Product cost per order<small>What the goods in one parcel cost you</small><span class="calc__wrap"><span class="rto-sym">₹</span><input id="rto-cost" type="number" min="0" step="any" inputmode="decimal" value={d.cost} /></span></label>
+        <label class="calc__field" for="rto-dmg">Returned damaged or unsellable<small>% of RTO parcels you cannot resell</small><span class="calc__wrap"><input id="rto-dmg" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.damage} /><span>%</span></span></label>
+        <label class="calc__field" for="rto-ad">Ad cost per order (optional)<small>Ad spend that bought an order that never paid</small><span class="calc__wrap"><span class="rto-sym">₹</span><input id="rto-ad" type="number" min="0" step="any" inputmode="decimal" value={d.ad} /></span></label>
+      </div>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="rto-status">Enter your numbers</span>
+      <div><div class="calc__big" id="rto-month">—</div><p class="calc__biglabel">RTO cost per month</p></div>
+      <dl class="calc__list">
+        <div><dt>RTO parcels a month</dt><dd id="rto-parcels">—</dd></div>
+        <div><dt>Overall RTO rate</dt><dd id="rto-rate">—</dd></div>
+        <div><dt>Cost of one RTO parcel</dt><dd id="rto-per">—</dd></div>
+        <div><dt>RTO cost per delivered order</dt><dd id="rto-perdel">—</dd></div>
+        <div><dt>RTO cost per year</dt><dd id="rto-year">—</dd></div>
+      </dl>
+      <div class="rto__save">
+        <label class="rto__slider" for="rto-cut"><span>If your COD share fell by <strong id="rto-cutv">{d.cut} points</strong></span>
+          <input id="rto-cut" type="range" min="0" max={d.cod} step="1" value={d.cut} />
+        </label>
+        <dl class="calc__list">
+          <div><dt>New COD share</dt><dd id="rto-newcod">—</dd></div>
+          <div><dt>RTO parcels avoided a month</dt><dd id="rto-avoid">—</dd></div>
+          <div><dt>Saving per month</dt><dd id="rto-savem">—</dd></div>
+          <div><dt>Saving per year</dt><dd id="rto-savey">—</dd></div>
+        </dl>
+      </div>
+      <a class="btn btn--primary" href="/free-ecommerce-audit/?from=rto-cod-calculator#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+      <div class="calc__note rto__how">
+        <p><strong>How it is calculated</strong></p>
+        <p>RTO parcels = orders × (COD share × COD RTO rate + prepaid share × prepaid RTO rate). Overall RTO rate = RTO parcels ÷ orders shipped.</p>
+        <p>Cost of one RTO parcel = forward shipping + reverse shipping + packaging + (damaged % × product cost) + ad cost per order. Monthly RTO cost = RTO parcels × cost of one RTO parcel.</p>
+        <p>RTO cost per delivered order = monthly RTO cost ÷ (orders − RTO parcels). Saving assumes orders moving from COD to prepaid then return at your prepaid RTO rate and total orders stay the same.</p>
+        <p>Not included: blocked stock, staff time, COD collection fees and lost revenue. Nothing you type leaves your browser.</p>
+      </div>
+    </div>
+  </form>
+</div></section>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const locales: Record<string, string> = { INR: 'en-IN', USD: 'en-US', GBP: 'en-GB', AED: 'en-AE', AUD: 'en-AU' };
+  const symbols: Record<string, string> = { INR: '₹', USD: '$', GBP: '£', AED: 'AED', AUD: 'A$' };
+  const num = (id: string) => { const v = parseFloat($(id).value); return Number.isFinite(v) && v > 0 ? v : 0; };
+  const pct = (id: string) => Math.min(num(id), 100) / 100;
+  const ok = (n: number) => Number.isFinite(n);
+  let cur = 'INR';
+  function money(n: number) {
+    if (!ok(n)) return '—';
+    const small = Math.abs(n) < 100 && Math.round(n) !== n;
+    return new Intl.NumberFormat(locales[cur], { style: 'currency', currency: cur, minimumFractionDigits: small ? 2 : 0, maximumFractionDigits: small ? 2 : 0 }).format(n);
+  }
+  const count = (n: number) => (ok(n) ? Math.round(n).toLocaleString(locales[cur]) : '—');
+  const pc = (n: number) => (ok(n) ? (Math.round(n * 1000) / 10).toLocaleString(locales[cur]) + '%' : '—');
+  const set = (id: string, t: string) => { $(id).textContent = t; };
+
+  function run() {
+    const orders = Math.round(num('rto-orders'));
+    const cod = pct('rto-cod'), rc = pct('rto-rcod'), rp = pct('rto-rpre'), dmg = pct('rto-dmg');
+    const perParcel = num('rto-fwd') + num('rto-rev') + num('rto-pack') + dmg * num('rto-cost') + num('rto-ad');
+    const parcels = orders * (cod * rc + (1 - cod) * rp);
+    const monthly = parcels * perParcel;
+    const delivered = orders - parcels;
+
+    // Slider: max follows the current COD share (in whole points).
+    const slider = $('rto-cut');
+    const maxCut = Math.floor(cod * 100);
+    slider.max = String(maxCut);
+    if (+slider.value > maxCut) slider.value = String(maxCut);
+    const cut = Math.min(+slider.value || 0, cod * 100) / 100;
+    set('rto-cutv', `${Math.round(cut * 100)} point${Math.round(cut * 100) === 1 ? '' : 's'}`);
+    const newCod = Math.max(0, cod - cut);
+    const newParcels = orders * (newCod * rc + (1 - newCod) * rp);
+    const avoided = parcels - newParcels;
+    const saveM = avoided * perParcel;
+
+    const has = orders > 0;
+    set('rto-month', has ? money(monthly) : '—');
+    set('rto-parcels', has ? count(parcels) : '—');
+    set('rto-rate', has ? pc(parcels / orders) : '—');
+    set('rto-per', perParcel > 0 ? money(perParcel) : '—');
+    set('rto-perdel', has && delivered > 0 ? money(monthly / delivered) : '—');
+    set('rto-year', has ? money(monthly * 12) : '—');
+    set('rto-newcod', has ? pc(newCod) : '—');
+    set('rto-avoid', has ? count(avoided) : '—');
+    set('rto-savem', has ? money(saveM) : '—');
+    set('rto-savey', has ? money(saveM * 12) : '—');
+
+    const st = $('rto-status');
+    if (!has) { st.dataset.state = 'warn'; st.textContent = 'Enter your monthly orders'; }
+    else if (parcels <= 0) { st.dataset.state = 'good'; st.textContent = 'No RTO parcels at these rates'; }
+    else {
+      const oneIn = orders / parcels;
+      st.dataset.state = 'warn';
+      st.textContent = oneIn >= 1.05 ? `About 1 in ${Math.round(oneIn)} parcels comes back` : 'Almost every parcel comes back';
+    }
+  }
+
+  function setCurrency() {
+    cur = $('rto-cur').value in locales ? $('rto-cur').value : 'INR';
+    document.querySelectorAll('#rto .rto-sym').forEach((s) => { s.textContent = symbols[cur]; });
+    run();
+  }
+
+  const form = document.getElementById('rto');
+  form?.addEventListener('input', (e) => { if ((e.target as HTMLElement).id === 'rto-cur') setCurrency(); else run(); });
+  form?.addEventListener('change', (e) => { if ((e.target as HTMLElement).id === 'rto-cur') setCurrency(); });
+  setCurrency();
+</script>
+<style>
+  .rto__hint { color: var(--muted); }
+  .rto__group { font-size: 13px; font-weight: 600; color: var(--accent-ink); text-transform: uppercase; letter-spacing: .06em; margin-top: 6px; }
+  .rto__save { display: grid; gap: 6px; padding: 16px; border-radius: 18px; background: rgba(255,255,255,.06); border: 1px solid var(--line-dark); }
+  .rto__slider { display: grid; gap: 10px; font-size: 15px; }
+  .rto__slider strong { color: var(--accent); font-variant-numeric: tabular-nums; }
+  .rto__slider input { width: 100%; accent-color: var(--accent); min-height: 32px; }
+  .rto__save .calc__list div:last-child { border-bottom: 0; }
+  .rto__how { display: grid; gap: 8px; line-height: 1.55; }
+  .rto__how strong { color: var(--white); }
+  .rto .calc__out .btn { justify-self: start; }
+</style>

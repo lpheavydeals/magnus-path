@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import UtmBuilder from '../../components/tools/UtmBuilder.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'What a UTM builder does', paragraphs: ['A UTM builder adds short tags to the end of a link so your analytics can tell exactly where each visitor came from. Without them, a click from your WhatsApp broadcast, an Instagram bio link and an influencer story can all end up lumped together as "direct" or "referral" traffic, and you cannot tell which one actually brought sales.', 'This UTM link generator takes your page URL and five values (source, medium, campaign, term and content), encodes them correctly and gives you one clean link to paste into an ad, post, email or message. Google Analytics 4, Shopify reports and most other analytics tools read these tags automatically.'] },
+  { heading: 'The five UTM parameters explained', paragraphs: ['Only three tags are needed for most links. Source, medium and campaign tell Google Analytics where the click came from, what kind of traffic it is and which promotion it belongs to. Term and content are optional and help you compare versions inside one campaign.'], bullets: ['utm_source: the site or platform, such as google, facebook, instagram, whatsapp or newsletter', 'utm_medium: the type of traffic, such as cpc, paid_social, social or email', 'utm_campaign: your promotion or sale, such as diwali-sale-2026 or new-launch', 'utm_term: optional; the keyword or audience, mostly for paid search', 'utm_content: optional; which ad, creative or link was clicked, such as reel-v2 or bio'] },
+  { heading: 'Naming rules that keep reports clean', paragraphs: ['UTM values are case-sensitive. Google Analytics treats "Facebook", "facebook" and "FB" as three different sources, which splits your numbers across rows that should be one. That is why the builder warns you about capital letters and spaces. Pick lowercase words joined by hyphens or underscores, write them down in a shared sheet and use the same names every time.', 'Medium names matter more than most people expect, because Google Analytics uses them to sort traffic into channels. Mediums such as cpc and paid_social go into paid channels, email goes into Email and social goes into Organic Social. A made-up medium like "story" or "promo" can end up as Unassigned, so the presets in this tool use mediums Google Analytics recognises.'] },
+  { heading: 'UTM links for Indian e-commerce channels', paragraphs: ['For Meta ads, add UTMs in the URL parameters box of each ad so every campaign and creative can be told apart. For Google Ads, auto-tagging already passes click data to a linked Google Analytics property, so UTMs are optional there; many teams still add them so other tools such as Shopify reports can see the campaign. Marketplace listings on Amazon and Flipkart cannot carry your UTMs into your own store, so track those sales in the seller dashboards instead.', 'WhatsApp is where tagging pays off most for many Indian brands. Broadcasts, catalogue links, status updates and click-to-chat messages all look like direct traffic unless you tag them. Give each broadcast its own campaign name, and use utm_content to tell a status link from a broadcast link. Do the same for influencer links, with the creator\'s name in utm_content, so you can see which collaborations produce orders rather than only views.'] },
+  { heading: 'Checking that your tracking works', paragraphs: ['Before a campaign goes live, open the tagged link yourself, then look at the real-time report in Google Analytics to confirm the source, medium and campaign appear as you expect. Check that the page still loads correctly: some apps and redirects strip query strings, and links that pass through a URL shortener should be tested after shortening.', 'Once a campaign has run, compare sessions, orders and revenue by campaign and content. If sales are reported against direct traffic while your tagged links show few visits, something is losing the tags, often a redirect, a missing consent banner setting or a link copied without the full URL. Our free audit checks this tracking along with your store and ads.'] },
+];
+const faqs = [
+  { q: 'What is a UTM builder?', a: 'A UTM builder is a tool that adds tracking tags (utm_source, utm_medium, utm_campaign and optional utm_term and utm_content) to a link. When someone clicks the tagged link, Google Analytics and similar tools record where the visit came from, so you can see which ads, posts and messages bring sales.' },
+  { q: 'Which UTM parameters are required?', a: 'Google Analytics only strictly needs utm_source, but you should always set source, medium and campaign together. Without a medium, traffic may land in the wrong channel or show as Unassigned. Term and content are optional and are useful for comparing keywords, audiences, creatives or link positions within one campaign.' },
+  { q: 'Are UTM parameters case-sensitive?', a: 'Yes. Google Analytics treats "Instagram" and "instagram" as different values, which splits one source into several rows in your reports. Use lowercase for every value and join words with hyphens or underscores instead of spaces. This UTM builder warns you about capitals and spaces and can fix them in one click.' },
+  { q: 'Should I use UTMs with Google Ads auto-tagging?', a: 'Auto-tagging already sends Google Ads click details to a linked Google Analytics property, so UTMs are not required there. Many stores add them anyway so Shopify reports and other tools can read the campaign. If you use both, keep auto-tagging switched on and make sure your UTM values match your campaign names.' },
+  { q: 'Do UTM links affect SEO?', a: 'Not when used for ads, emails, social posts and messages, which is what they are for. Do not add UTM tags to internal links between pages of your own store, because that overwrites the original source of the visit and can create duplicate URLs. Your canonical tags should point to the clean page URL.' },
+  { q: 'Where are my saved links stored?', a: 'Links you copy are saved in your own browser using local storage, up to the last ten. They are never sent to us. Clearing your browser data or pressing the clear history button removes them. In a private window, or if your browser blocks storage, the builder still works but cannot save history.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'UTM Builder', href: '/tools/utm-builder/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'UTM Builder', url: `${site.url}/tools/utm-builder/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'mindmap', caption: 'The parts of one tracking link and the question each one answers.', after: 0, center: 'One tracking link', branches: [
+    { label: 'Source', items: ['Where the click came from', 'google, facebook, whatsapp'] },
+    { label: 'Medium', items: ['Type of traffic', 'cpc, paid_social, email'] },
+    { label: 'Campaign', items: ['Which sale or launch', 'diwali-sale-2026'] },
+    { label: 'Content, term', items: ['Which ad or link', 'Which keyword or audience'] },
+  ] },
+  { type: 'steps', caption: 'A simple routine that keeps every campaign link consistent.', after: 2, steps: [
+    { title: 'Agree the names', body: 'Lowercase sources and mediums in one sheet' },
+    { title: 'Build the link', body: 'Preset, campaign name, ad version' },
+    { title: 'Test it', body: 'Open it and check real-time reports' },
+    { title: 'Compare results', body: 'Orders and revenue by campaign' },
+  ] },
+];
+---
+<Base title="UTM Builder: Free UTM Link Generator for Ecommerce | Magnus Path" description="Free UTM builder and UTM link generator for e-commerce: tag links for Meta, Google, WhatsApp, Instagram, email and influencers, check case and copy in one click." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="UTM Builder for *E-commerce Campaign Links*" intro="This UTM builder turns any store link into a tracking link, so Google Analytics shows which ads, posts and messages bring sales. Pick a preset for Meta, Google, WhatsApp, Instagram, email or influencers, add your campaign name and copy the link." trail={trail} current="UTM Builder" />
+  <UtmBuilder />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="How to tag campaign links properly" />
+  <FAQ items={faqs} title="UTM builder questions" />
+  <Related links={[{ label: 'Performance marketing agency in India', href: '/performance-marketing/' }, { label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' }, { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' }, { label: 'Free e-commerce store audit', href: '/free-ecommerce-audit/' }, { label: 'E-commerce SEO services', href: '/ecommerce-seo/' }]} />
+  <LeadForm heading="Not sure your tracking is right?" sub="Send us your store and ad accounts. We check your UTMs, pixels and analytics set-up and show you which campaigns really bring sales, in a free audit within 24 hours." />
+</Base>

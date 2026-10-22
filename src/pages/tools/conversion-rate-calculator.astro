@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import ConversionCalc from '../../components/tools/ConversionCalc.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'How to use the ecommerce conversion rate calculator', paragraphs: ['Conversion rate is the share of store visits that end in an order. If 40,000 sessions bring 600 orders, your conversion rate is 1.5%. This ecommerce conversion rate calculator works that out from your sessions and orders, then shows what reaching a higher rate would add in orders, revenue and gross profit, per month and per year.', 'Enter one month of data from Shopify, WooCommerce or Google Analytics, your average order value and your gross margin. Then set a target conversion rate and an AOV increase to test. Everything updates as you type.'] },
+  { heading: 'Why small conversion gains are worth so much', paragraphs: ['Conversion rate improvements work on traffic you already have. If your ads and SEO keep bringing the same visitors, every extra order comes without extra ad spend, so most of its gross margin is profit. That is why the calculator shows the value of each +0.1 point of conversion rate: for many stores it is a surprisingly large number.', 'The maths is simple. Moving from 1.5% to 2% on 40,000 sessions adds 200 orders a month. At a ₹1,200 AOV that is ₹2,40,000 more revenue, and at a 40% margin ₹96,000 more gross profit each month. These are the example values in the tool, not a promise, but they show why conversion work often pays back faster than more traffic.'] },
+  { heading: 'Measure your conversion rate correctly', paragraphs: ['The number is only as good as its inputs. Use sessions (visits), not users, unless your platform only reports users; then compare like with like over time. Use the same date range for sessions and orders, and leave out days with tracking problems or one-off events that distort the picture.', 'Your overall rate hides big differences. Look at conversion by device, by channel and by landing page. Mobile often converts differently from desktop, and paid social traffic differently from search. A low overall rate usually has one or two clear causes once you split it.'], bullets: ['Conversion rate = orders ÷ sessions × 100', 'Same date range for both numbers', 'Split by device, channel and landing page', 'Exclude test orders and internal traffic'] },
+  { heading: 'Conversion rate and AOV: two levers, one result', paragraphs: ['Revenue per session is conversion rate multiplied by AOV, and it is the number that decides how much you can afford to pay for traffic. You can lift it by getting more visitors to buy or by getting each buyer to spend more. The calculator shows both scenarios and the combined effect, which is larger than the two added together because the extra orders are also bigger orders.', 'AOV changes are often quicker to ship: bundles, "frequently bought together", a free-shipping threshold in the cart. Watch conversion rate while you test them, because a threshold set too high or a pushy upsell can lower it.'] },
+  { heading: 'Where most stores lose conversions', paragraphs: ['Shoppers leave when a question goes unanswered or something feels risky. The common gaps are product pages with too few images or no size guide, no delivery date before checkout, hidden return policies, few or no reviews, surprise charges at the last step, forced account creation and slow pages on mobile data. Payment options matter too: UPI and cash on delivery in India, cards, wallets and pay-later options in most other markets.', 'Fix the pages that get the most traffic first, usually your best-selling product pages and the cart. One clear improvement there is worth more than many small changes spread across the store.'] },
+  { heading: 'Set a target you can actually reach', paragraphs: ['Base your target conversion rate on your own history and your best-performing segments, not on a figure from someone else\'s store. If your desktop visitors already convert well, bringing mobile closer to that rate is a realistic goal. Make one change at a time, measure it over a full week or more, and re-run the ecommerce conversion rate calculator with the new numbers.', 'If you want a second pair of eyes, our free audit reviews your product pages, checkout and tracking and lists the fixes most likely to lift conversion first.'] },
+];
+const faqs = [
+  { q: 'How do I calculate ecommerce conversion rate?', a: 'Divide orders by sessions for the same period and multiply by 100. For example, 600 orders from 40,000 sessions is a 1.5% conversion rate. Use sessions rather than users where you can, exclude test orders, and compare the same date ranges so changes over time are real and not caused by tracking.' },
+  { q: 'What is a good conversion rate for an online store?', a: 'It depends heavily on your category, price point, traffic sources and country, so a single good number is misleading. A store selling low-priced repeat items behaves very differently from one selling furniture. Compare your rate with your own past months and between your own devices and channels, and aim to improve it steadily.' },
+  { q: 'Is the extra profit in the calculator real profit?', a: 'It is extra gross profit: extra revenue multiplied by your gross margin. It assumes the same traffic and ad spend, and the same margin on the extra sales. It does not subtract fixed costs or any money you spend on the improvements themselves, so treat it as the upper value of the change.' },
+  { q: 'Should I improve conversion rate or AOV first?', a: 'Run both scenarios in the calculator and compare them. AOV changes such as bundles or a free-shipping threshold are often faster to set up, while conversion work on product pages and checkout usually has a bigger long-term effect. Many stores do both, testing one change at a time so they can see which worked.' },
+  { q: 'Why is my conversion rate different in Shopify and Google Analytics?', a: 'The two tools count sessions differently, handle consent and ad blockers differently, and may attribute orders to different dates. Pick one source and use it consistently for both sessions and orders. A difference between tools is normal; a sudden change within one tool is the thing to investigate.' },
+  { q: 'Is my data saved or sent anywhere?', a: 'No. The ecommerce conversion rate calculator runs entirely in your browser and nothing you type is sent to us or stored. The currency picker changes only the symbol and number format; it does not convert currencies, so enter your AOV in the currency you select.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'Conversion Rate Calculator', href: '/tools/conversion-rate-calculator/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Ecommerce Conversion Rate Calculator', url: `${site.url}/tools/conversion-rate-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'mindmap', caption: 'Where revenue per visit is won or lost on an online store.', after: 0, center: 'Revenue per visit', branches: [
+    { label: 'Product pages', items: ['Images and video', 'Size or spec guide', 'Delivery date'] },
+    { label: 'Trust', items: ['Reviews near the price', 'Clear return policy', 'Visible contact'] },
+    { label: 'Checkout', items: ['Guest checkout', 'Payment options', 'No surprise charges'] },
+    { label: 'Order value', items: ['Bundles', 'Free-shipping threshold', 'Cart add-ons'] },
+  ] },
+  { type: 'venn', caption: 'Conversion rate and AOV multiply together, so lifting both beats lifting either alone.', after: 3, left: { title: 'Higher conversion rate', body: 'More of the same visitors place an order' }, right: { title: 'Higher AOV', body: 'Each order is worth more to you' }, overlap: 'More revenue per session' },
+];
+---
+<Base title="Ecommerce Conversion Rate Calculator & CRO Uplift | Magnus Path" description="Free ecommerce conversion rate calculator: find your store's conversion rate and see the extra orders, revenue and profit a higher rate or bigger AOV would bring." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="Ecommerce Conversion Rate Calculator With *Profit Uplift*" intro="Use this ecommerce conversion rate calculator to find your store's current conversion rate from sessions and orders, then see the extra orders, revenue and gross profit a higher rate or a bigger average order value would bring each month and year." trail={trail} current="Conversion Rate Calculator" />
+  <ConversionCalc />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="Conversion rate: how to measure it and what it is worth" />
+  <FAQ items={faqs} title="Conversion rate calculator questions" />
+  <Related links={[{ label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' }, { label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' }, { label: 'Shopify development for faster, higher-converting stores', href: '/shopify-development/' }, { label: 'E-commerce website development', href: '/ecommerce-website-development/' }, { label: 'Free e-commerce store audit', href: '/free-ecommerce-audit/' }]} />
+  <LeadForm heading="Want more orders from the traffic you already have?" sub="Request the free audit. Our team reviews your product pages, checkout and tracking and shows you which fixes should lift your conversion rate first." />
+</Base>

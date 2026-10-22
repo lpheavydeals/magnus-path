@@ -1,0 +1,160 @@
+---
+// Ecommerce conversion rate calculator: current CR from sessions and orders, then what a higher CR,
+// a higher AOV, or both would add in orders, revenue and gross profit per month and per year.
+import './calc.css';
+// Example values only (labelled as examples on the page), so the first view shows a worked result.
+const d = { sessions: 40000, orders: 600, aov: 1200, margin: 40, target: 2, aovUp: 10 };
+const cr = d.orders / d.sessions * 100;
+const tOrders = d.sessions * d.target / 100, extraOrders = tOrders - d.orders, extraRev = extraOrders * d.aov, extraProfit = extraRev * d.margin / 100;
+const aovRev = d.orders * d.aov * d.aovUp / 100;
+const bothRev = tOrders * d.aov * (1 + d.aovUp / 100) - d.orders * d.aov;
+const fmt = (n: number) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: Math.abs(n) < 100 && n !== 0 ? 2 : 0, minimumFractionDigits: Math.abs(n) < 100 && n !== 0 ? 2 : 0 }).format(n).replace('-', '−');
+const plus = (n: number) => (n > 0 ? '+' : '') + fmt(n);
+const num = (n: number) => Math.round(n).toLocaleString('en-IN');
+const curs = [['INR', '₹ Indian rupee'], ['USD', '$ US dollar'], ['GBP', '£ British pound'], ['AED', 'AED UAE dirham'], ['AUD', 'A$ Australian dollar']];
+---
+<section class="section"><div class="wrap">
+  <form class="calc cv" id="cv" onsubmit="return false">
+    <div class="calc__in">
+      <h2>Your store numbers</h2>
+      <p class="calc__note" style="color:var(--muted)">The numbers filled in are examples only, not benchmarks. Use one month of data from Shopify, WooCommerce or Google Analytics.</p>
+      <label class="calc__field" for="cv-cur">Currency<small>Changes the symbol and number format only; nothing is converted</small><span class="calc__wrap"><select id="cv-cur">{curs.map(([v, l]) => <option value={v}>{l}</option>)}</select></span></label>
+      <div class="calc__row">
+        <label class="calc__field" for="cv-sessions">Sessions per month<small>Visits to your store</small><span class="calc__wrap"><input id="cv-sessions" type="number" min="0" step="1" inputmode="numeric" value={d.sessions} /></span></label>
+        <label class="calc__field" for="cv-orders">Orders per month<small>From those sessions</small><span class="calc__wrap"><input id="cv-orders" type="number" min="0" step="1" inputmode="numeric" value={d.orders} /></span></label>
+        <label class="calc__field" for="cv-aov">Average order value (AOV)<small>Revenue ÷ orders</small><span class="calc__wrap"><span data-cur>₹</span><input id="cv-aov" type="number" min="0" step="any" inputmode="decimal" value={d.aov} /></span></label>
+        <label class="calc__field" for="cv-margin">Gross margin<small>After product cost, before ads</small><span class="calc__wrap"><input id="cv-margin" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.margin} /><span>%</span></span></label>
+      </div>
+      <h3 class="cv__sub">Scenarios to test</h3>
+      <div class="calc__row">
+        <label class="calc__field" for="cv-target">Target conversion rate<small>The rate you want to reach</small><span class="calc__wrap"><input id="cv-target" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.target} /><span>%</span></span></label>
+        <label class="calc__field" for="cv-aovup">AOV increase<small>For example from bundles or a free-shipping threshold</small><span class="calc__wrap"><input id="cv-aovup" type="number" min="0" step="any" inputmode="decimal" value={d.aovUp} /><span>%</span></span></label>
+      </div>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="cv-status" data-state="good">Target lifts conversion by {((d.target / cr - 1) * 100).toFixed(0)}%</span>
+      <div><div class="calc__big" id="cv-cr">{cr.toFixed(2)}%</div><p class="calc__biglabel">Your current conversion rate</p></div>
+      <dl class="calc__list">
+        <div><dt>Revenue per month now</dt><dd id="cv-rev">{fmt(d.orders * d.aov)}</dd></div>
+        <div><dt>Revenue per session</dt><dd id="cv-rps">{fmt(d.orders * d.aov / d.sessions)}</dd></div>
+        <div><dt>Gross profit from each +0.1 point of conversion rate</dt><dd id="cv-step">{plus(d.sessions * 0.001 * d.aov * d.margin / 100)}/mo</dd></div>
+      </dl>
+      <h3 class="cv__h">At <span id="cv-t-label">{d.target}%</span> conversion rate</h3>
+      <dl class="calc__list">
+        <div><dt>Orders per month</dt><dd id="cv-torders">{num(tOrders)}</dd></div>
+        <div><dt>Extra orders per month</dt><dd id="cv-xorders">+{num(extraOrders)}</dd></div>
+        <div><dt>Extra revenue per month</dt><dd id="cv-xrev">{plus(extraRev)}</dd></div>
+        <div><dt>Extra gross profit per month</dt><dd id="cv-xprofit">{plus(extraProfit)}</dd></div>
+        <div><dt>Extra gross profit per year</dt><dd id="cv-xprofit-y">{plus(extraProfit * 12)}</dd></div>
+      </dl>
+      <h3 class="cv__h">If AOV rises <span id="cv-a-label">{d.aovUp}%</span></h3>
+      <dl class="calc__list">
+        <div><dt>New AOV</dt><dd id="cv-newaov">{fmt(d.aov * (1 + d.aovUp / 100))}</dd></div>
+        <div><dt>Extra revenue per month</dt><dd id="cv-arev">{plus(aovRev)}</dd></div>
+        <div><dt>Extra gross profit per year</dt><dd id="cv-aprofit-y">{plus(aovRev * d.margin / 100 * 12)}</dd></div>
+      </dl>
+      <h3 class="cv__h">Both together</h3>
+      <dl class="calc__list">
+        <div><dt>Extra revenue per month</dt><dd id="cv-brev">{plus(bothRev)}</dd></div>
+        <div><dt>Extra gross profit per year</dt><dd id="cv-bprofit-y">{plus(bothRev * d.margin / 100 * 12)}</dd></div>
+      </dl>
+      <div class="cv__formula calc__note">
+        <p><strong>How it is worked out</strong></p>
+        <p>Conversion rate = orders ÷ sessions × 100</p>
+        <p>New orders = sessions × target rate · Extra revenue = (new orders − current orders) × AOV</p>
+        <p>AOV scenario: extra revenue = current orders × AOV × increase %</p>
+        <p>Both: new orders × new AOV − current revenue · Extra gross profit = extra revenue × gross margin; per year = × 12</p>
+        <p>Assumes the same traffic and ad spend, and the same margin on the extra sales.</p>
+      </div>
+      <a class="btn btn--primary" href="/free-ecommerce-audit/?from=conversion-rate-calculator#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </form>
+</div></section>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const LOCALE: Record<string, string> = { INR: 'en-IN', USD: 'en-US', GBP: 'en-GB', AED: 'en-AE', AUD: 'en-US' };
+  const SYM: Record<string, string> = { INR: '₹', USD: '$', GBP: '£', AED: 'AED', AUD: 'A$' };
+  const ok = (n: number | null): n is number => n !== null && Number.isFinite(n);
+  // Read a field: empty or negative → null; percentage fields above 100 → null.
+  const val = (id: string, pct = false) => { const raw = $(id).value.trim(); if (raw === '') return null; const n = Number(raw); return Number.isFinite(n) && n >= 0 && (!pct || n <= 100) ? n : null; };
+  let cur = 'INR';
+  const money = (n: number | null, sign = false) => {
+    if (!ok(n)) return '—';
+    const small = Math.abs(n) < 100 && n !== 0;
+    const s = new Intl.NumberFormat(LOCALE[cur], { style: 'currency', currency: cur, minimumFractionDigits: small ? 2 : 0, maximumFractionDigits: small ? 2 : 0 }).format(n).replace('-', '−');
+    return sign && n > 0 ? '+' + s : s;
+  };
+  const count = (n: number | null, sign = false) => {
+    if (!ok(n)) return '—';
+    const r = Math.round(n);
+    return (sign && r > 0 ? '+' : r < 0 ? '−' : '') + Math.abs(r).toLocaleString(LOCALE[cur]);
+  };
+  const set = (id: string, t: string) => { $(id).textContent = t; };
+  const pct = (n: number | null) => (ok(n) ? +n.toFixed(2) + '%' : '—');
+
+  function run() {
+    cur = $('cv-cur').value;
+    document.querySelectorAll<HTMLElement>('#cv [data-cur]').forEach((s) => (s.textContent = SYM[cur]));
+    const sessions = val('cv-sessions'), orders = val('cv-orders'), aov = val('cv-aov');
+    const mPct = val('cv-margin', true), tPct = val('cv-target', true), up = val('cv-aovup');
+    const m = ok(mPct) ? mPct / 100 : null;
+    const valid = ok(sessions) && sessions > 0 && ok(orders) && orders <= sessions;
+    const cr = valid ? orders! / sessions! : null;
+    const rev = ok(orders) && ok(aov) ? orders * aov : null;
+    const rps = valid && ok(rev) ? rev / sessions! : null;
+    const profitOf = (r: number | null) => (ok(r) && ok(m) ? r * m : null);
+    const step = valid && ok(aov) && ok(m) ? sessions! * 0.001 * aov * m : null;
+
+    // Target conversion rate scenario
+    const tOrders = valid && ok(tPct) ? sessions! * tPct / 100 : null;
+    const xOrders = ok(tOrders) ? tOrders - orders! : null;
+    const xRev = ok(xOrders) && ok(aov) ? xOrders * aov : null;
+    const xProfit = profitOf(xRev);
+    // AOV scenario (same orders)
+    const newAov = ok(aov) && ok(up) ? aov * (1 + up / 100) : null;
+    const aRev = ok(rev) && ok(up) ? rev * up / 100 : null;
+    // Both together
+    const bRev = ok(tOrders) && ok(newAov) && ok(rev) ? tOrders * newAov - rev : null;
+
+    set('cv-cr', cr === null ? '—' : (cr * 100).toFixed(2) + '%');
+    set('cv-rev', money(rev));
+    set('cv-rps', money(rps));
+    set('cv-step', ok(step) ? money(step, true) + '/mo' : '—');
+    set('cv-t-label', ok(tPct) ? pct(tPct) : 'your target');
+    set('cv-a-label', ok(up) ? pct(up) : 'by your chosen %');
+    set('cv-torders', count(tOrders));
+    set('cv-xorders', count(xOrders, true));
+    set('cv-xrev', money(xRev, true));
+    set('cv-xprofit', money(xProfit, true));
+    set('cv-xprofit-y', money(ok(xProfit) ? xProfit * 12 : null, true));
+    set('cv-newaov', money(newAov));
+    set('cv-arev', money(aRev, true));
+    set('cv-aprofit-y', money(ok(profitOf(aRev)) ? profitOf(aRev)! * 12 : null, true));
+    set('cv-brev', money(bRev, true));
+    set('cv-bprofit-y', money(ok(profitOf(bRev)) ? profitOf(bRev)! * 12 : null, true));
+
+    const st = $('cv-status');
+    let s = 'warn', t = 'Enter your sessions and orders';
+    if (ok(sessions) && ok(orders) && orders > sessions) { s = 'bad'; t = 'Orders cannot be more than sessions'; }
+    else if (cr !== null && ok(tPct)) {
+      const target = tPct / 100;
+      if (cr === 0) { s = target > 0 ? 'good' : 'warn'; t = target > 0 ? 'Any conversion is a gain from zero' : 'Set a target above 0%'; }
+      else if (target > cr) { s = 'good'; t = `Target lifts conversion by ${((target / cr - 1) * 100).toFixed(0)}%`; }
+      else if (target === cr) { t = 'Target equals your current rate'; }
+      else { t = 'Target is below your current rate'; }
+    } else if (cr !== null) t = 'Add a target conversion rate';
+    st.dataset.state = s; st.textContent = t;
+  }
+  const form = document.getElementById('cv')!;
+  form.addEventListener('input', run);
+  form.addEventListener('change', run);
+  run();
+</script>
+<style>
+  .cv__sub { font-size: 1.1rem; margin-top: 4px; }
+  .cv__h { font-size: 1.05rem; color: var(--white); margin-bottom: -10px; }
+  .cv__h span { color: var(--accent); }
+  .cv__formula { display: grid; gap: 4px; line-height: 1.5; }
+  .cv__formula strong { color: var(--white); font-weight: 600; }
+  .cv .calc__out .btn { justify-self: start; }
+</style>

@@ -1,0 +1,147 @@
+---
+// Discount calculator for ecommerce: how many more units a discount needs to keep the same profit.
+// Runs entirely in the browser.
+import './calc.css';
+// Example defaults so the first view shows a worked result (not benchmarks).
+const d = { price: 999, cost: 550, units: 400, disc: 20 };
+const steps = [10, 15, 20, 25, 30];
+const fmt = (n: number) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: Math.abs(n) >= 1000 || Number.isInteger(Math.round(n * 100) / 100) ? 0 : 2, minimumFractionDigits: 0 }).format(n);
+const m = d.price - d.cost;
+const row = (pctOff: number) => { const np = d.price * (1 - pctOff / 100), nm = np - d.cost; return { np, nm, need: nm > 0 ? Math.ceil(m * d.units / nm) : NaN, more: nm > 0 ? (m / nm - 1) * 100 : NaN }; };
+const r = row(d.disc);
+const currencies = [['INR', '₹ Indian rupee'], ['USD', '$ US dollar'], ['GBP', '£ British pound'], ['AED', 'AED UAE dirham'], ['AUD', 'A$ Australian dollar']];
+---
+<section class="section"><div class="wrap">
+  <form class="calc dc" id="dc" onsubmit="return false">
+    <div class="calc__in">
+      <h2>Your product and offer</h2>
+      <p class="calc__note" style="color:var(--muted)">Example values are filled in. Replace them with your own numbers for one product or your average order.</p>
+      <label class="calc__field" for="dc-cur">Currency<small>Formatting only, no exchange-rate conversion</small><span class="calc__wrap"><select id="dc-cur">{currencies.map(([c, l]) => <option value={c}>{l}</option>)}</select></span></label>
+      <div class="calc__row">
+        <label class="calc__field" for="dc-price">Normal selling price<small>Per unit, excluding GST / VAT</small><span class="calc__wrap"><span class="dc-sym">₹</span><input id="dc-price" type="number" min="0" step="any" inputmode="decimal" value={d.price} /></span></label>
+        <label class="calc__field" for="dc-cost">Cost per unit<small>Product, shipping, packing, fees, ads</small><span class="calc__wrap"><span class="dc-sym">₹</span><input id="dc-cost" type="number" min="0" step="any" inputmode="decimal" value={d.cost} /></span></label>
+        <label class="calc__field" for="dc-units">Units sold per month<small>At the normal price</small><span class="calc__wrap"><input id="dc-units" type="number" min="0" step="1" inputmode="numeric" value={d.units} /><span>units</span></span></label>
+      </div>
+      <fieldset class="dc__type">
+        <legend>Discount type</legend>
+        <div class="dc__opts">
+          <label><input type="radio" name="dc-type" value="pct" checked /> Percentage off</label>
+          <label><input type="radio" name="dc-type" value="flat" /> Flat amount off</label>
+        </div>
+      </fieldset>
+      <label class="calc__field" for="dc-disc">Discount<small id="dc-disc-hint">% off the normal price</small><span class="calc__wrap"><span class="dc-sym" id="dc-disc-pre" hidden>₹</span><input id="dc-disc" type="number" min="0" step="any" inputmode="decimal" value={d.disc} /><span id="dc-disc-post">%</span></span></label>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="dc-status" data-state="warn">You need {r.more.toFixed(0)}% more sales</span>
+      <div><div class="calc__big" id="dc-more">+{r.more.toFixed(1)}%</div><p class="calc__biglabel">More units needed to keep the same profit</p></div>
+      <dl class="calc__list">
+        <div><dt>Price after discount</dt><dd id="dc-np">{fmt(r.np)}</dd></div>
+        <div><dt>Profit per unit: now → with discount</dt><dd id="dc-m">{fmt(m)} → {fmt(r.nm)}</dd></div>
+        <div><dt>Margin: now → with discount</dt><dd id="dc-mp">{(m / d.price * 100).toFixed(1)}% → {(r.nm / r.np * 100).toFixed(1)}%</dd></div>
+        <div><dt>Break-even units per month</dt><dd id="dc-need">{r.need.toLocaleString('en-IN')}</dd></div>
+        <div><dt>Extra units per month</dt><dd id="dc-extra">+{(r.need - d.units).toLocaleString('en-IN')}</dd></div>
+        <div><dt>Monthly profit now</dt><dd id="dc-pnow">{fmt(m * d.units)}</dd></div>
+        <div><dt>Monthly profit if sales do not rise</dt><dd id="dc-pflat">{fmt(r.nm * d.units)}</dd></div>
+      </dl>
+      <div class="dc__tablewrap">
+        <table class="dc__table">
+          <caption>Same product at common discounts</caption>
+          <thead><tr><th scope="col">Discount</th><th scope="col">Profit / unit</th><th scope="col">More units</th><th scope="col">Units / month</th></tr></thead>
+          <tbody id="dc-rows">{steps.map((s) => { const x = row(s); return <tr data-pct={s}><th scope="row">{s}%</th><td>{fmt(x.nm)}</td><td>{Number.isFinite(x.more) ? '+' + x.more.toFixed(0) + '%' : '—'}</td><td>{Number.isFinite(x.need) ? x.need.toLocaleString('en-IN') : '—'}</td></tr>; })}</tbody>
+        </table>
+      </div>
+      <a class="btn btn--primary" href="/free-ecommerce-audit/?from=discount-calculator#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+      <div class="calc__note dc__formula">
+        <p><strong>How it is worked out</strong></p>
+        <p>Profit per unit = price − cost per unit. With a discount, profit per unit = discounted price − cost per unit.</p>
+        <p>Break-even units = units now × profit per unit now ÷ profit per unit with discount (rounded up). More units needed = (profit per unit now ÷ profit per unit with discount − 1) × 100.</p>
+        <p>For a % discount this is the same as discount ÷ (margin − discount). Cost per unit is treated as fixed; fees charged as a % of price fall slightly with a discount, so the real figure can be a little lower.</p>
+      </div>
+    </div>
+  </form>
+</div></section>
+<script>
+  const LOCALE: Record<string, string> = { INR: 'en-IN', USD: 'en-US', GBP: 'en-GB', AED: 'en-AE', AUD: 'en-GB' };
+  const STEPS = [10, 15, 20, 25, 30];
+  const el = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const num = (id: string) => { const v = parseFloat(el(id).value); return Number.isFinite(v) ? v : 0; };
+  const set = (id: string, t: string) => { const e = document.getElementById(id); if (e) e.textContent = t; };
+  let cur = 'INR';
+  const fmt = (n: number) => {
+    if (!Number.isFinite(n)) return '—';
+    const r = Math.round(n * 100) / 100;
+    const frac = Math.abs(r) >= 1000 || Number.isInteger(r) ? 0 : 2;
+    return new Intl.NumberFormat(LOCALE[cur], { style: 'currency', currency: cur, minimumFractionDigits: frac, maximumFractionDigits: frac }).format(r);
+  };
+  const int = (n: number) => (Number.isFinite(n) ? Math.round(n).toLocaleString(LOCALE[cur]) : '—');
+  const symbol = () => new Intl.NumberFormat(LOCALE[cur], { style: 'currency', currency: cur }).formatToParts(0).find((p) => p.type === 'currency')?.value || cur;
+  // Units needed to keep the same profit; NaN when the discount leaves no profit per unit.
+  const scenario = (price: number, cost: number, units: number, newPrice: number) => {
+    const m = price - cost, nm = newPrice - cost;
+    const ok = m > 0 && nm > 0;
+    return { m, nm, more: ok ? (m / nm - 1) * 100 : NaN, need: ok && units > 0 ? Math.ceil(m * units / nm - 1e-9) : NaN };
+  };
+  function run() {
+    cur = el('dc-cur').value;
+    const flat = (document.querySelector('input[name="dc-type"]:checked') as HTMLInputElement | null)?.value === 'flat';
+    const price = num('dc-price'), cost = num('dc-cost'), units = Math.max(0, num('dc-units')), disc = Math.max(0, num('dc-disc'));
+    const sym = symbol();
+    document.querySelectorAll('#dc .dc-sym').forEach((s) => { s.textContent = sym; });
+    el('dc-disc-pre').hidden = !flat;
+    el('dc-disc-post').hidden = flat;
+    set('dc-disc-hint', flat ? 'Amount off the normal price, per unit' : '% off the normal price');
+    const newPrice = flat ? price - disc : price * (1 - disc / 100);
+    const s = scenario(price, cost, units, newPrice);
+    const pctOf = (a: number, b: number) => (b > 0 ? (a / b * 100).toFixed(1) + '%' : '—');
+    const st = el('dc-status');
+    if (!price) {
+      ['dc-more', 'dc-np', 'dc-m', 'dc-mp', 'dc-need', 'dc-extra', 'dc-pnow', 'dc-pflat'].forEach((id) => set(id, '—'));
+      st.dataset.state = 'warn'; st.textContent = 'Enter your selling price';
+    } else {
+      set('dc-np', newPrice > 0 ? fmt(newPrice) : '—');
+      set('dc-m', `${fmt(s.m)} → ${fmt(s.nm)}`);
+      set('dc-mp', `${pctOf(s.m, price)} → ${newPrice > 0 ? pctOf(s.nm, newPrice) : '—'}`);
+      set('dc-more', Number.isFinite(s.more) ? '+' + s.more.toFixed(1) + '%' : '—');
+      set('dc-need', int(s.need));
+      set('dc-extra', Number.isFinite(s.need) ? '+' + int(s.need - units) : '—');
+      set('dc-pnow', units ? fmt(s.m * units) : '—');
+      set('dc-pflat', units ? fmt(s.nm * units) : '—');
+      if (s.m <= 0) { st.dataset.state = 'bad'; st.textContent = 'No profit per unit even before the discount'; }
+      else if (s.nm <= 0) { st.dataset.state = 'bad'; st.textContent = 'This discount loses money on every sale'; }
+      else if (!disc) { st.dataset.state = 'good'; st.textContent = 'No discount entered'; }
+      else { st.dataset.state = s.more > 50 ? 'bad' : 'warn'; st.textContent = `You need ${Math.round(s.more)}% more sales to break even`; }
+    }
+    document.querySelectorAll<HTMLTableRowElement>('#dc-rows tr').forEach((tr, i) => {
+      const p = STEPS[i], x = scenario(price, cost, units, price * (1 - p / 100));
+      const cells = tr.querySelectorAll('td');
+      cells[0].textContent = price ? fmt(x.nm) : '—';
+      cells[1].textContent = Number.isFinite(x.more) ? '+' + x.more.toFixed(0) + '%' : '—';
+      cells[2].textContent = int(x.need);
+      tr.classList.toggle('is-current', !flat && Math.abs(disc - p) < 1e-9);
+    });
+  }
+  const form = document.getElementById('dc');
+  form?.addEventListener('input', run);
+  form?.addEventListener('change', run);
+  run();
+</script>
+<style>
+  .dc__type { border: 0; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .dc__type legend { padding: 0; margin-bottom: 8px; font-size: 14px; font-weight: 500; }
+  .dc__opts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .dc__opts label { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; font-size: 14px; cursor: pointer; background: var(--paper); }
+  .dc__opts label:has(input:checked) { border-color: var(--accent); background: var(--accent-tint, #fff1ea); }
+  .dc__opts input { accent-color: var(--accent); margin: 0; }
+  .calc__wrap span[hidden] { display: none; }
+  .calc__list dd { text-align: right; }
+  .dc__tablewrap { overflow-x: auto; }
+  .dc__table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+  .dc__table caption { text-align: left; font-weight: 600; font-size: 15px; padding-bottom: 8px; }
+  .dc__table th, .dc__table td { padding: 9px 6px; border-bottom: 1px solid var(--line-dark); text-align: right; }
+  .dc__table th:first-child { text-align: left; }
+  .dc__table thead th { color: var(--muted-on-dark); font-weight: 500; font-size: 12.5px; }
+  .dc__table tr.is-current th, .dc__table tr.is-current td { color: var(--accent); font-weight: 600; }
+  .dc__formula { display: grid; gap: 6px; }
+  .dc__formula strong { color: var(--white); }
+  .calc__out .btn { justify-self: start; }
+</style>

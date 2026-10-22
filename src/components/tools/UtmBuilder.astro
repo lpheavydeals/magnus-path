@@ -1,0 +1,234 @@
+---
+// UTM builder: page URL + utm_source/medium/campaign/term/content with channel presets, live built link,
+// lowercase/space checks, copy button (with fallback) and the last 10 links saved in this browser.
+import './calc.css';
+const presets = [
+  { id: 'meta', label: 'Meta ads', source: 'facebook', medium: 'paid_social' },
+  { id: 'google', label: 'Google Ads', source: 'google', medium: 'cpc' },
+  { id: 'whatsapp', label: 'WhatsApp', source: 'whatsapp', medium: 'social' },
+  { id: 'igbio', label: 'Instagram bio', source: 'instagram', medium: 'social', content: 'bio' },
+  { id: 'email', label: 'Email', source: 'newsletter', medium: 'email' },
+  { id: 'influencer', label: 'Influencer', source: 'instagram', medium: 'influencer' },
+];
+const fields = [
+  { id: 'source', label: 'Campaign source', key: 'utm_source', hint: 'Where the click comes from: google, facebook, newsletter', req: true, ph: 'facebook' },
+  { id: 'medium', label: 'Campaign medium', key: 'utm_medium', hint: 'The type of traffic: cpc, paid_social, email, social', req: true, ph: 'paid_social' },
+  { id: 'campaign', label: 'Campaign name', key: 'utm_campaign', hint: 'Your sale or campaign: diwali-sale-2026', req: true, ph: 'diwali-sale-2026' },
+  { id: 'term', label: 'Campaign term', key: 'utm_term', hint: 'Optional: keyword or audience', req: false, ph: 'cotton-kurta' },
+  { id: 'content', label: 'Campaign content', key: 'utm_content', hint: 'Optional: ad, creative or link version', req: false, ph: 'reel-v2' },
+];
+---
+<section class="section ub"><div class="wrap">
+  <div class="calc" id="utm">
+    <div class="ub__col">
+      <form class="calc__in" id="ub-form" novalidate onsubmit="return false">
+        <h2>Build your link</h2>
+        <p class="calc__note" style="color:var(--muted)">Pick a preset to fill source and medium, then add your campaign name. Placeholders show example values.</p>
+        <label class="calc__field" for="ub-url">Page URL<small>The product, collection or landing page you are linking to</small>
+          <span class="calc__wrap"><input id="ub-url" type="text" inputmode="url" autocomplete="url" spellcheck="false" placeholder="https://yourstore.com/products/cotton-kurta" /></span>
+        </label>
+        <fieldset class="ub__presets">
+          <legend>Presets</legend>
+          <div class="ub__chips">{presets.map((p) => <button type="button" class="ub__chip" data-preset={p.id}>{p.label}</button>)}</div>
+        </fieldset>
+        <div class="calc__row">
+          {fields.map((f) => (
+            <label class="calc__field" for={`ub-${f.id}`}>{f.label}{f.req ? ' *' : ''} <code class="ub__key">{f.key}</code><small>{f.hint}</small>
+              <span class="calc__wrap"><input id={`ub-${f.id}`} type="text" autocomplete="off" spellcheck="false" placeholder={f.ph} data-key={f.key} /></span>
+            </label>
+          ))}
+        </div>
+        <p class="calc__note" style="color:var(--muted)">* Required. Google Analytics needs source, medium and campaign to group your traffic properly.</p>
+      </form>
+      <div class="calc__in ub__hist">
+        <div class="ub__histhead">
+          <h2>Recent links</h2>
+          <button type="button" class="ub__small" id="ub-clear">Clear history</button>
+        </div>
+        <p class="calc__note" style="color:var(--muted)" id="ub-histnote">Links you copy are saved here, in this browser only (last 10).</p>
+        <ol class="ub__histlist" id="ub-hist"></ol>
+      </div>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="ub-status" data-state="warn">Enter a page URL to start</span>
+      <div>
+        <p class="calc__biglabel ub__label">Your tracking link</p>
+        <output class="ub__link" id="ub-out" for="ub-url ub-source ub-medium ub-campaign ub-term ub-content">—</output>
+      </div>
+      <div class="ub__actions">
+        <button type="button" class="btn btn--primary" id="ub-copy" disabled>Copy link</button>
+        <span class="ub__copied" id="ub-copied" role="status"></span>
+      </div>
+      <ul class="ub__warn" id="ub-warn" hidden></ul>
+      <button type="button" class="ub__small ub__small--dark" id="ub-fix" hidden>Fix: lowercase and hyphens</button>
+      <dl class="calc__list" id="ub-params">
+        {fields.map((f) => <div><dt>{f.key}</dt><dd data-key={f.key}>—</dd></div>)}
+      </dl>
+      <p class="calc__note">Values are URL-encoded for you. Existing query parameters on your page URL are kept; any old utm_ values are replaced.</p>
+      <a class="btn btn--primary" href="/free-ecommerce-audit/?from=utm-builder#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+      <p class="calc__note">Nothing you type is sent to us. Your recent links stay in this browser.</p>
+    </div>
+  </div>
+</div></section>
+<script is:inline type="application/json" id="ub-data" set:html={JSON.stringify(presets)}></script>
+<script>
+  type Preset = { id: string; label: string; source: string; medium: string; content?: string };
+  type Item = { url: string; at: number };
+  const presets = JSON.parse(document.getElementById('ub-data')!.textContent || '[]') as Preset[];
+  const $ = <T extends HTMLElement = HTMLInputElement>(id: string) => document.getElementById(id) as T;
+  const KEYS = ['source', 'medium', 'campaign', 'term', 'content'];
+  const STORE = 'mp-utm-history';
+  let built = '';
+
+  const enc = (s: string) => encodeURIComponent(s).replace(/[!'()*]/g, (c) => '%' + c.charCodeAt(0).toString(16).toUpperCase());
+  const tidy = (s: string) => s.trim().toLowerCase().replace(/\s+/g, '-').replace(/-+/g, '-');
+
+  function parseUrl(raw: string): { url: URL | null; added: boolean } {
+    let s = raw.trim();
+    if (!s) return { url: null, added: false };
+    let added = false;
+    if (!/^[a-z][a-z0-9+.-]*:\/\//i.test(s)) { s = 'https://' + s; added = true; }
+    try {
+      const u = new URL(s);
+      if (!/^https?:$/.test(u.protocol) || !u.hostname.includes('.') || /\s/.test(raw.trim())) return { url: null, added };
+      return { url: u, added };
+    } catch { return { url: null, added }; }
+  }
+
+  function build() {
+    const raw = $('ub-url').value;
+    const { url, added } = parseUrl(raw);
+    const vals: Record<string, string> = {};
+    for (const k of KEYS) vals[k] = $('ub-' + k).value.trim();
+    const warns: string[] = [];
+    let fixable = false;
+    for (const k of KEYS) {
+      const v = vals[k]; if (!v) continue;
+      if (/\s/.test(v)) { warns.push(`utm_${k} has spaces. They become %20 in the link; use hyphens instead (summer-sale).`); fixable = true; }
+      if (v !== v.toLowerCase()) { warns.push(`utm_${k} has capital letters. Google Analytics treats "Facebook" and "facebook" as different sources; use lowercase.`); fixable = true; }
+    }
+    if (added && url) warns.push('Added https:// to your page URL. Check that your store uses https.');
+    if (url && [...url.searchParams.keys()].some((k) => k.toLowerCase().startsWith('utm_'))) warns.push('Your page URL already had utm_ values. They have been replaced with the ones above.');
+    const missing = ['source', 'medium', 'campaign'].filter((k) => !vals[k]);
+
+    document.querySelectorAll<HTMLElement>('#ub-params dd').forEach((dd) => {
+      const v = vals[(dd.dataset.key || '').replace('utm_', '')];
+      dd.textContent = v ? enc(v) : '—';
+    });
+
+    const st = $('ub-status');
+    const copy = $<HTMLButtonElement>('ub-copy');
+    if (!raw.trim()) { built = ''; st.dataset.state = 'warn'; st.textContent = 'Enter a page URL to start'; }
+    else if (!url) { built = ''; st.dataset.state = 'bad'; st.textContent = 'That page URL does not look valid'; warns.unshift('Enter a full link without spaces, for example https://yourstore.com/products/cotton-kurta'); }
+    else if (missing.length) { built = ''; st.dataset.state = 'warn'; st.textContent = 'Add ' + missing.map((k) => 'utm_' + k).join(', '); }
+    else {
+      for (const k of [...url.searchParams.keys()]) if (k.toLowerCase().startsWith('utm_')) url.searchParams.delete(k);
+      const utm = KEYS.filter((k) => vals[k]).map((k) => `utm_${k}=${enc(vals[k])}`).join('&');
+      const base = url.origin + url.pathname + (url.search ? url.search + '&' : '?');
+      built = base + utm + url.hash;
+      st.dataset.state = warns.length ? 'warn' : 'good';
+      st.textContent = warns.length ? 'Link ready, with warnings' : 'Link ready';
+    }
+    $('ub-out').textContent = built || '—';
+    copy.disabled = !built;
+    const wl = $('ub-warn'); wl.innerHTML = ''; wl.hidden = !warns.length;
+    for (const w of warns) { const li = document.createElement('li'); li.textContent = w; wl.appendChild(li); }
+    $('ub-fix').hidden = !fixable;
+    $('ub-copied').textContent = '';
+  }
+
+  // History (localStorage can be blocked in private windows or by settings, so every access is guarded).
+  function load(): Item[] {
+    try { const j = JSON.parse(localStorage.getItem(STORE) || '[]'); return Array.isArray(j) ? j.filter((x) => x && typeof x.url === 'string').slice(0, 10) : []; } catch { return []; }
+  }
+  function save(items: Item[]) { try { localStorage.setItem(STORE, JSON.stringify(items.slice(0, 10))); return true; } catch { return false; } }
+  function remember(link: string) {
+    const items = [{ url: link, at: Date.now() }, ...load().filter((x) => x.url !== link)].slice(0, 10);
+    if (!save(items)) $('ub-histnote').textContent = 'This browser is blocking storage, so recent links cannot be saved.';
+    renderHist();
+  }
+  function renderHist() {
+    const items = load(); const ol = $('ub-hist'); ol.innerHTML = '';
+    $<HTMLButtonElement>('ub-clear').disabled = !items.length;
+    if (!items.length) { const li = document.createElement('li'); li.className = 'ub__empty'; li.textContent = 'No links yet. Copy a link to save it here.'; ol.appendChild(li); return; }
+    for (const it of items) {
+      const li = document.createElement('li');
+      const code = document.createElement('code'); code.textContent = it.url;
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'ub__small'; b.textContent = 'Copy';
+      b.addEventListener('click', async () => { const okd = await copyText(it.url); b.textContent = okd ? 'Copied' : 'Select and copy'; setTimeout(() => (b.textContent = 'Copy'), 1800); });
+      li.append(code, b); ol.appendChild(li);
+    }
+  }
+
+  async function copyText(text: string): Promise<boolean> {
+    try { if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); return true; } } catch { /* fall through */ }
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0'; ta.style.left = '-9999px';
+      document.body.appendChild(ta); ta.select();
+      const okd = document.execCommand('copy'); ta.remove(); return okd;
+    } catch { return false; }
+  }
+
+  $('ub-copy').addEventListener('click', async () => {
+    if (!built) return;
+    const okd = await copyText(built);
+    if (okd) $('ub-copied').textContent = 'Copied to clipboard';
+    else {
+      const r = document.createRange(); r.selectNodeContents($('ub-out'));
+      const sel = window.getSelection(); sel?.removeAllRanges(); sel?.addRange(r);
+      $('ub-copied').textContent = 'Press Ctrl+C (or ⌘+C) to copy the selected link';
+    }
+    remember(built);
+  });
+  $('ub-clear').addEventListener('click', () => {
+    try { localStorage.removeItem(STORE); } catch { /* storage blocked */ }
+    renderHist();
+  });
+  $('ub-fix').addEventListener('click', () => {
+    for (const k of KEYS) { const el = $('ub-' + k); el.value = tidy(el.value); }
+    build();
+  });
+  document.querySelectorAll<HTMLButtonElement>('.ub__chip').forEach((b) => b.addEventListener('click', () => {
+    const p = presets.find((x) => x.id === b.dataset.preset); if (!p) return;
+    $('ub-source').value = p.source; $('ub-medium').value = p.medium;
+    if (p.content !== undefined) $('ub-content').value = p.content;
+    document.querySelectorAll('.ub__chip').forEach((c) => c.setAttribute('aria-pressed', String(c === b)));
+    build();
+  }));
+  $('ub-form').addEventListener('input', () => {
+    document.querySelectorAll('.ub__chip').forEach((c) => c.setAttribute('aria-pressed', 'false'));
+    build();
+  });
+  build(); renderHist();
+</script>
+<style>
+  .ub__col { display: grid; gap: 16px; min-width: 0; }
+  .ub .calc__in, .ub .calc__out { min-width: 0; }
+  .ub__key { font-size: 12px; color: var(--accent-ink); background: var(--accent-tint); padding: 1px 6px; border-radius: 6px; font-weight: 500; }
+  .ub__presets { border: 0; margin: 0; padding: 0; }
+  .ub__presets legend { padding: 0; font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+  .ub__chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .ub__chip { padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; font: 500 14px var(--font-body); cursor: pointer; background: var(--paper); color: var(--ink); }
+  .ub__chip:hover { border-color: var(--ink); }
+  .ub__chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-tint); }
+  .ub__label { margin: 0 0 8px; }
+  .ub__link { display: block; font: 500 15px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--white); background: rgba(255,255,255,.07); border: 1px solid var(--line-dark); border-radius: 14px; padding: 14px 16px; overflow-wrap: anywhere; word-break: break-all; user-select: all; }
+  .ub__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+  .ub__actions .btn:disabled { opacity: .45; cursor: not-allowed; }
+  .ub__copied { font-size: 14px; color: #86efac; }
+  .ub__warn { margin: 0; padding: 12px 14px 12px 32px; border-radius: 14px; background: rgba(245,158,11,.14); color: #fde68a; font-size: 14px; display: grid; gap: 6px; }
+  .ub__warn[hidden], .ub__small[hidden] { display: none; }
+  .ub__small { justify-self: start; padding: 7px 12px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--white); color: var(--ink); font: 500 13px var(--font-body); cursor: pointer; white-space: nowrap; }
+  .ub__small:disabled { opacity: .5; cursor: default; }
+  .ub__small--dark { background: transparent; color: var(--white); border-color: var(--line-dark); }
+  .ub__small--dark:hover { border-color: var(--white); }
+  .ub .calc__list dt { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13.5px; }
+  .ub .calc__list dd { text-align: right; overflow-wrap: anywhere; min-width: 0; }
+  .ub .calc__out .btn--primary[href] { justify-self: start; }
+  .ub__histhead { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .ub__histlist { list-style: none; margin: 0; padding: 0; display: grid; }
+  .ub__histlist li { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+  .ub__histlist code { font-size: 13px; overflow-wrap: anywhere; word-break: break-all; color: var(--ink); }
+  .ub__histlist .ub__empty { display: block; color: var(--muted); font-size: 14px; }
+</style>

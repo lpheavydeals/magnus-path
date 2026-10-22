@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import AdBudgetCalc from '../../components/tools/AdBudgetCalc.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'How the ad budget calculator works', paragraphs: ['Most ad budgets are set the wrong way round: someone picks a number that feels affordable and hopes the sales follow. This ad budget calculator starts from the other end. You tell it the revenue you want from paid traffic each month, and it works backwards through your average order value, conversion rate and cost per click to the spend that target needs.', 'The chain is simple. Revenue divided by AOV gives the orders you need. Orders divided by conversion rate gives the sessions (ad clicks) you need. Sessions multiplied by CPC gives the ad budget. From there the calculator shows the ROAS the plan implies, the cost per order, and whether that ROAS clears your break-even point.'] },
+  { heading: 'The three numbers that move your budget most', paragraphs: ['Conversion rate, AOV and CPC each change the budget in direct proportion. Double your conversion rate and the sessions you need halve, so the budget halves too. Raise AOV by a fifth and you need a fifth fewer orders for the same revenue. Cut CPC by a quarter and the budget falls by a quarter. That is why an ecommerce ad budget planner is as much about your store as your ads.', 'Use your own numbers wherever you can. Take conversion rate from the traffic your ads actually send (paid sessions often convert differently from your store average), AOV from the last 60 to 90 days, and CPC from the campaigns you plan to scale rather than a brand-search campaign that gets cheap clicks.'], bullets: ['Conversion rate: orders ÷ sessions from paid traffic', 'AOV: revenue ÷ orders over a normal period', 'CPC: spend ÷ link clicks for the campaigns you will scale', 'Gross margin: what is left after product cost, before ads'] },
+  { heading: 'CPC or CPM: which should you enter?', paragraphs: ['Google Ads, Amazon and Flipkart report cost per click, so the CPC option fits them. Meta (Facebook and Instagram) campaigns are often judged on CPM, the cost of 1,000 impressions, together with click-through rate. Switch the calculator to CPM + CTR and it converts them for you: impressions needed are clicks divided by CTR, and the budget is impressions ÷ 1,000 × CPM.', 'Both routes give the same answer when the numbers match. A ₹150 CPM with a 1.2% CTR is the same as a ₹12.50 CPC. Use whichever your platform shows most reliably, and check the effective CPC line to compare channels on equal terms.'] },
+  { heading: 'Check the plan against break-even ROAS', paragraphs: ['A budget that hits the revenue target can still lose money. Break-even ROAS is 1 divided by your gross margin: with a 40% margin you need 2.5× just to cover product cost and ad spend. The ad budget calculator compares the ROAS your plan implies (AOV × conversion rate ÷ CPC) with that break-even and flags the result green, amber or red.', 'It also shows the highest CPC you can pay before every order becomes a loss: AOV × conversion rate × margin. If your current CPC is close to that ceiling, more budget will mostly buy more losses. Fix conversion, AOV or margin first.'] },
+  { heading: 'From a monthly number to a launch plan', paragraphs: ['The monthly figure is a target, not a switch to flip on day one. Divide it by 30 for a daily budget, then ramp towards it. Start new campaigns at a smaller share of the daily figure, give each enough clicks to judge (many stores wait for a few dozen orders per campaign before deciding), and move budget towards what reaches your target cost per order.', 'Plan for seasonality too. Festive weeks, sales and launches push CPCs up and often lift conversion at the same time, so re-run this ecommerce ad budget planner with each month\'s expected numbers rather than copying one plan across the year.'] },
+  { heading: 'When the numbers do not add up', paragraphs: ['If the plan lands below break-even, the calculator has done its job: it has shown you the problem before you spent the money. You have four levers. Lift conversion rate by improving product pages, delivery information and checkout. Raise AOV with bundles or a free-shipping threshold. Improve margin with pricing or supplier work. Lower CPC by tightening targeting and fixing low-quality ads.', 'Then run the numbers again. Our free audit looks at all four levers for your store and ad accounts, and sends a prioritised list of what to fix first.'] },
+];
+const faqs = [
+  { q: 'How do I calculate my ecommerce ad budget?', a: 'Start from your revenue target. Divide it by average order value to get orders, divide orders by your conversion rate to get sessions, then multiply sessions by your cost per click. That is the monthly ad budget. Compare the ROAS it implies with your break-even ROAS before you commit the money.' },
+  { q: 'What conversion rate and CPC should I use?', a: 'Use your own figures from the last 60 to 90 days: conversion rate from paid sessions only, and CPC from the campaigns you plan to scale. Rates vary widely by category, price, country and season, so a number copied from elsewhere can make the plan wrong by a large margin. If you have no data yet, run a small test first.' },
+  { q: 'What is break-even ROAS and why does it matter?', a: 'Break-even ROAS is the return at which ad spend exactly uses up your gross margin. It equals 1 divided by gross margin, so a 40% margin means 2.5×. Below it, each order loses money after product cost and ads. The calculator compares your plan with it automatically.' },
+  { q: 'Should I enter CPC or CPM?', a: 'Enter whichever your platform reports reliably. Google, Amazon and Flipkart show CPC directly. Meta often shows CPM and click-through rate; choose the CPM + CTR option and the calculator converts them into an effective CPC, then into sessions and spend. Both routes give the same result for the same traffic.' },
+  { q: 'Does the ad budget calculator include fixed costs?', a: 'No. Gross profit after ad spend is revenue multiplied by gross margin minus ad spend. It does not subtract salaries, rent, software or agency fees, and it only includes shipping, payment fees and returns if they are already inside your margin figure. Use it to plan campaigns, then check overall profit in your accounts.' },
+  { q: 'Is my data saved or sent anywhere?', a: 'No. The calculator runs entirely in your browser. Nothing you type is sent to us or stored. The currency picker only changes the symbol and number format; it does not convert between currencies, so enter every amount in the currency you choose.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'Ad Budget Calculator', href: '/tools/ad-budget-planner/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Ecommerce Ad Budget Calculator', url: `${site.url}/tools/ad-budget-planner/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'steps', caption: 'How the calculator turns a revenue target into a monthly ad budget.', after: 0, steps: [
+    { title: 'Revenue target', body: 'What you want ads to bring in each month' },
+    { title: 'Orders needed', body: 'Revenue ÷ average order value' },
+    { title: 'Sessions needed', body: 'Orders ÷ conversion rate' },
+    { title: 'Ad budget', body: 'Sessions × cost per click' },
+    { title: 'Profit check', body: 'Implied ROAS vs break-even ROAS' },
+  ] },
+  { type: 'matrix', caption: 'What to do next once you see where your plan lands.', after: 3, cols: ['Above break-even', 'Below break-even'], rows: ['Inputs from real data', 'Inputs are guesses'], cells: [
+    { title: 'Launch the plan', body: 'Ramp to the daily budget and track cost per order weekly' },
+    { title: 'Fix the maths', body: 'Lift AOV, margin or conversion before adding spend' },
+    { title: 'Test first', body: 'Spend a small test budget to get your real CR and CPC' },
+    { title: 'Rethink the offer', body: 'Work on pages, pricing or bundles, then test small' },
+  ] },
+];
+---
+<Base title="Ad Budget Calculator: Ecommerce Ad Budget Planner | Magnus Path" description="Free ad budget calculator for ecommerce: plan monthly ad spend from your revenue target, AOV, conversion rate and CPC, then check it against break-even ROAS." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="Ad Budget Calculator for *Ecommerce Stores*" intro="This ad budget calculator works backwards from your monthly revenue target to the orders, sessions and ad spend you need, using your AOV, conversion rate and CPC (or CPM and CTR). It then checks the plan against your break-even ROAS." trail={trail} current="Ad Budget Calculator" />
+  <AdBudgetCalc />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="How to plan an ecommerce ad budget" />
+  <FAQ items={faqs} title="Ad budget calculator questions" />
+  <Related links={[{ label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' }, { label: 'Ecommerce PPC agency', href: '/ecommerce-ppc-agency/' }, { label: 'Performance marketing agency in India', href: '/performance-marketing/' }, { label: 'Meta ads agency for online stores', href: '/meta-ads-agency/' }, { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' }]} />
+  <LeadForm heading="Want a second opinion on your ad budget?" sub="Send us your store and ad accounts. Our team checks your conversion rate, AOV and cost per click and shows you where the budget will work hardest." />
+</Base>

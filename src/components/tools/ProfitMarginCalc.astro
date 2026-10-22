@@ -1,0 +1,128 @@
+---
+// Ecommerce profit margin calculator: profit per order, margin %, break-even ad cost per order (CAC)
+// and break-even ROAS. Runs entirely in the browser.
+import './calc.css';
+// Example defaults so the first view shows a worked result (not benchmarks).
+const d = { price: 1499, tax: 18, incl: true, cost: 450, ship: 70, pack: 20, pay: 2, comm: 0, ret: 8, retCost: 150, ads: 250 };
+function calc(v: typeof d) {
+  const t = v.tax / 100;
+  const net = v.incl ? v.price / (1 + t) : v.price;          // revenue you keep, excl. tax
+  const gross = v.incl ? v.price : v.price * (1 + t);         // what the customer pays
+  const fees = gross * (v.pay + v.comm) / 100;
+  const returns = v.ret / 100 * v.retCost;
+  const contrib = net - v.cost - v.ship - v.pack - fees - returns;  // before ads = break-even CAC
+  const profit = contrib - v.ads;
+  return { net, taxAmt: gross - net, fees, returns, contrib, profit, margin: net ? profit / net * 100 : NaN, beRoas: contrib > 0 ? net / contrib : NaN };
+}
+const r = calc(d);
+const fmt = (n: number) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: Math.abs(n) >= 1000 ? 0 : 2, minimumFractionDigits: 0 }).format(n);
+const pct = (n: number) => (Number.isFinite(n) ? n.toFixed(1) + '%' : '—');
+const currencies = [['INR', '₹ Indian rupee'], ['USD', '$ US dollar'], ['GBP', '£ British pound'], ['AED', 'AED UAE dirham'], ['AUD', 'A$ Australian dollar']];
+---
+<section class="section"><div class="wrap">
+  <form class="calc pm" id="pm" onsubmit="return false">
+    <div class="calc__in">
+      <h2>Your numbers per order</h2>
+      <p class="calc__note" style="color:var(--muted)">Example values are filled in. Replace them with your own numbers for one typical order.</p>
+      <label class="calc__field" for="pm-cur">Currency<small>Formatting only, no exchange-rate conversion</small><span class="calc__wrap"><select id="pm-cur">{currencies.map(([c, l]) => <option value={c}>{l}</option>)}</select></span></label>
+      <p class="pm__group">Price and tax</p>
+      <div class="calc__row">
+        <label class="calc__field" for="pm-price">Selling price<small>Per order, after any discount</small><span class="calc__wrap"><span class="pm-sym">₹</span><input id="pm-price" type="number" min="0" step="any" inputmode="decimal" value={d.price} /></span></label>
+        <label class="calc__field" for="pm-tax">GST / VAT / sales tax rate<small>Enter 0 if you do not charge tax</small><span class="calc__wrap"><input id="pm-tax" type="number" min="0" max="50" step="any" inputmode="decimal" value={d.tax} /><span>%</span></span></label>
+      </div>
+      <label class="pm__check" for="pm-incl"><input id="pm-incl" type="checkbox" checked={d.incl} /> <span>My selling price <strong>includes</strong> tax (untick if tax is added on top at checkout)</span></label>
+      <p class="pm__group">Costs per order</p>
+      <div class="calc__row">
+        <label class="calc__field" for="pm-cost">Product cost<small>Buying or making the item(s)</small><span class="calc__wrap"><span class="pm-sym">₹</span><input id="pm-cost" type="number" min="0" step="any" inputmode="decimal" value={d.cost} /></span></label>
+        <label class="calc__field" for="pm-ship">Shipping cost<small>What you pay the courier</small><span class="calc__wrap"><span class="pm-sym">₹</span><input id="pm-ship" type="number" min="0" step="any" inputmode="decimal" value={d.ship} /></span></label>
+        <label class="calc__field" for="pm-pack">Packaging<small>Box, mailer, inserts, tape</small><span class="calc__wrap"><span class="pm-sym">₹</span><input id="pm-pack" type="number" min="0" step="any" inputmode="decimal" value={d.pack} /></span></label>
+        <label class="calc__field" for="pm-pay">Payment gateway fee<small>% of the amount the customer pays</small><span class="calc__wrap"><input id="pm-pay" type="number" min="0" max="50" step="any" inputmode="decimal" value={d.pay} /><span>%</span></span></label>
+        <label class="calc__field" for="pm-comm">Marketplace commission<small>% of the price; 0 for your own store</small><span class="calc__wrap"><input id="pm-comm" type="number" min="0" max="80" step="any" inputmode="decimal" value={d.comm} /><span>%</span></span></label>
+        <label class="calc__field" for="pm-ads">Ad cost per order<small>Ad spend ÷ orders (your CAC)</small><span class="calc__wrap"><span class="pm-sym">₹</span><input id="pm-ads" type="number" min="0" step="any" inputmode="decimal" value={d.ads} /></span></label>
+      </div>
+      <p class="pm__group">Returns</p>
+      <div class="calc__row">
+        <label class="calc__field" for="pm-ret">Return rate<small>% of orders that come back (incl. RTO)</small><span class="calc__wrap"><input id="pm-ret" type="number" min="0" max="100" step="any" inputmode="decimal" value={d.ret} /><span>%</span></span></label>
+        <label class="calc__field" for="pm-retcost">Cost per return<small>Reverse shipping, repacking, lost stock</small><span class="calc__wrap"><span class="pm-sym">₹</span><input id="pm-retcost" type="number" min="0" step="any" inputmode="decimal" value={d.retCost} /></span></label>
+      </div>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="pm-status" data-state={r.profit > 0 ? 'good' : 'bad'}>{r.profit > 0 ? 'Profitable after ads' : 'Losing money on each order'}</span>
+      <div><div class="calc__big" id="pm-profit">{fmt(r.profit)}</div><p class="calc__biglabel">Profit per order after ads</p></div>
+      <dl class="calc__list">
+        <div><dt>Profit margin</dt><dd id="pm-margin">{pct(r.margin)}</dd></div>
+        <div><dt>Revenue per order (excl. tax)</dt><dd id="pm-net">{fmt(r.net)}</dd></div>
+        <div><dt>Tax collected for the government</dt><dd id="pm-taxamt">{fmt(r.taxAmt)}</dd></div>
+        <div><dt>Gateway + marketplace fees</dt><dd id="pm-fees">{fmt(r.fees)}</dd></div>
+        <div><dt>Returns cost per order</dt><dd id="pm-rets">{fmt(r.returns)}</dd></div>
+        <div><dt>Profit before ads</dt><dd id="pm-contrib">{fmt(r.contrib)}</dd></div>
+        <div><dt>Break-even ad cost per order (CAC)</dt><dd id="pm-becac">{r.contrib > 0 ? fmt(r.contrib) : '—'}</dd></div>
+        <div><dt>Break-even ROAS</dt><dd id="pm-beroas">{Number.isFinite(r.beRoas) ? r.beRoas.toFixed(2) + '×' : '—'}</dd></div>
+      </dl>
+      <a class="btn btn--primary" href="/free-ecommerce-audit/?from=profit-margin-calculator#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+      <div class="calc__note pm__formula">
+        <p><strong>How it is worked out</strong></p>
+        <p>Revenue excl. tax = price ÷ (1 + tax rate) if your price includes tax, otherwise the price itself.</p>
+        <p>Fees = (gateway % + commission %) × amount the customer pays. Returns cost = return rate × cost per return.</p>
+        <p>Profit before ads = revenue excl. tax − product − shipping − packaging − fees − returns cost. Profit = profit before ads − ad cost per order. Margin = profit ÷ revenue excl. tax.</p>
+        <p>Break-even CAC = profit before ads. Break-even ROAS = revenue excl. tax ÷ break-even CAC. If your ad platform counts revenue including tax, multiply by (1 + tax rate). Fixed costs such as salaries and rent are not included.</p>
+      </div>
+    </div>
+  </form>
+</div></section>
+<script>
+  const LOCALE: Record<string, string> = { INR: 'en-IN', USD: 'en-US', GBP: 'en-GB', AED: 'en-AE', AUD: 'en-GB' };
+  const el = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const num = (id: string) => { const v = parseFloat(el(id).value); return Number.isFinite(v) ? v : 0; };
+  const set = (id: string, t: string) => { const e = document.getElementById(id); if (e) e.textContent = t; };
+  let cur = 'INR';
+  const fmt = (n: number) => {
+    if (!Number.isFinite(n)) return '—';
+    const r = Math.round(n * 100) / 100;
+    const frac = Math.abs(r) >= 1000 || Number.isInteger(r) ? 0 : 2;
+    return new Intl.NumberFormat(LOCALE[cur], { style: 'currency', currency: cur, minimumFractionDigits: frac, maximumFractionDigits: frac }).format(r);
+  };
+  const symbol = () => new Intl.NumberFormat(LOCALE[cur], { style: 'currency', currency: cur }).formatToParts(0).find((p) => p.type === 'currency')?.value || cur;
+  function run() {
+    cur = el('pm-cur').value;
+    const price = num('pm-price'), t = num('pm-tax') / 100, incl = el('pm-incl').checked;
+    const cost = num('pm-cost'), ship = num('pm-ship'), pack = num('pm-pack'), pay = num('pm-pay'), comm = num('pm-comm');
+    const ret = num('pm-ret'), retCost = num('pm-retcost'), ads = num('pm-ads');
+    const net = incl ? price / (1 + t) : price;
+    const gross = incl ? price : price * (1 + t);
+    const fees = gross * (pay + comm) / 100;
+    const returns = ret / 100 * retCost;
+    const contrib = net - cost - ship - pack - fees - returns;
+    const profit = contrib - ads;
+    const sym = symbol();
+    document.querySelectorAll('#pm .pm-sym').forEach((s) => { s.textContent = sym; });
+    if (!price) {
+      ['pm-profit', 'pm-margin', 'pm-net', 'pm-taxamt', 'pm-fees', 'pm-rets', 'pm-contrib', 'pm-becac', 'pm-beroas'].forEach((id) => set(id, '—'));
+      const st = el('pm-status'); st.dataset.state = 'warn'; st.textContent = 'Enter your selling price';
+      return;
+    }
+    set('pm-profit', fmt(profit));
+    set('pm-margin', net > 0 ? (profit / net * 100).toFixed(1) + '%' : '—');
+    set('pm-net', fmt(net)); set('pm-taxamt', fmt(gross - net)); set('pm-fees', fmt(fees)); set('pm-rets', fmt(returns));
+    set('pm-contrib', fmt(contrib));
+    set('pm-becac', contrib > 0 ? fmt(contrib) : '—');
+    set('pm-beroas', contrib > 0 ? (net / contrib).toFixed(2) + '×' : '—');
+    const st = el('pm-status');
+    const state = contrib <= 0 ? 'bad' : profit > 0 ? 'good' : profit === 0 ? 'warn' : 'bad';
+    st.dataset.state = state;
+    st.textContent = contrib <= 0 ? 'Losing money even before ads' : profit > 0 ? 'Profitable after ads' : profit === 0 ? 'Exactly break-even' : 'Ads cost more than the order earns';
+  }
+  const form = document.getElementById('pm');
+  form?.addEventListener('input', run);
+  form?.addEventListener('change', run);
+  run();
+</script>
+<style>
+  .pm__group { font-size: 13px; font-weight: 600; color: var(--accent-ink); text-transform: uppercase; letter-spacing: .06em; margin-top: 4px; }
+  .pm__check { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; line-height: 1.45; cursor: pointer; }
+  .pm__check input { accent-color: var(--accent); width: 18px; height: 18px; margin: 1px 0 0; flex: none; }
+  .pm__formula { display: grid; gap: 6px; }
+  .pm__formula strong { color: var(--white); }
+  .calc__out .btn { justify-self: start; }
+  .calc__list dd { text-align: right; }
+</style>

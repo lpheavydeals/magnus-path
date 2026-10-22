@@ -1,0 +1,71 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import ProfitMarginCalc from '../../components/tools/ProfitMarginCalc.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'What an ecommerce profit margin calculator should include', paragraphs: [
+    'Most stores know their product cost and selling price, so they think they know their margin. The real number is lower, because every order also pays for tax, shipping, packaging, payment fees, commission, returns and the ads that brought the customer in. An ecommerce profit margin calculator puts all of these on one line for a single order, so you can see what is actually left.',
+    'Work it out per order rather than per month. A monthly profit and loss statement mixes good and bad products, sale and full-price weeks, and paid and free traffic. Per-order numbers show you which part of the chain is eating the profit, and they give you the two limits that matter for advertising: the most you can pay to win an order, and the ROAS you need to break even.',
+  ] },
+  { heading: 'Tax is not your revenue', paragraphs: [
+    'If your prices include GST or VAT, part of every sale belongs to the government. With an 18% rate, a ₹1,499 price (an example) is only about ₹1,270 of revenue to you; the rest is tax you collect and pay over. Calculating margin on the tax-inclusive price makes every product look better than it is.',
+    'Tick the box in the calculator if your price includes tax, as it usually does for Indian, UK, UAE and Australian shoppers. Untick it if tax is added at checkout, as with US sales tax. Either way, the margin is worked out on revenue excluding tax. Payment and marketplace fees are worked out on the full amount the customer pays, because that is usually what they are charged on.',
+  ] },
+  { heading: 'The costs that hide in every order', paragraphs: [
+    'Product cost is the obvious one. The rest are small on their own and add up quickly: the courier charge, the box and mailer, the payment gateway percentage, and the commission if you sell on a marketplace. On low-priced items these fixed per-order costs can take a bigger share of the price than the product itself, which is why bundles and higher order values often improve margin more than a cheaper supplier does.',
+    'Returns deserve their own line. When an order comes back, you usually pay shipping twice, spend time repacking and sometimes cannot resell the item. For cash-on-delivery orders that are refused at the door (RTO), you pay both legs of shipping and earn nothing. The calculator spreads this across all orders: return rate × cost per return.',
+  ], bullets: ['Courier charges, including COD handling if your courier adds one', 'Packaging: box, mailer, tape, inserts and thank-you cards', 'Payment gateway and marketplace fees as a percentage of the price', 'Returns and RTO: reverse shipping, repacking and stock you cannot resell'] },
+  { heading: 'Break-even CAC and break-even ROAS', paragraphs: [
+    'Profit before ads is the most important number on the page. It is the most you can spend on ads to win one order without losing money, also called your break-even customer acquisition cost (CAC). If profit before ads is ₹690 (an example) and your ads cost ₹250 per order, you keep ₹440. If ads cost ₹800 per order, every sale loses money, however good the revenue looks.',
+    'Break-even ROAS turns the same limit into the number your ad dashboards show. It is revenue per order divided by break-even CAC. Campaigns above it are profitable on the first order; campaigns below it only make sense if customers come back and buy again. If Meta, Google or your store reports revenue including tax, multiply the break-even ROAS by (1 + tax rate) before you compare.',
+  ] },
+  { heading: 'How to improve your margin', paragraphs: [
+    'Start with the biggest line in the results, not the easiest one. For many stores that is ad cost per order or returns, not product cost. Small changes on several lines often add up to more than one hard negotiation with a supplier.',
+  ], bullets: ['Raise order value with bundles and a free-shipping threshold, so fixed costs are shared by more revenue', 'Cut RTO with COD confirmation calls or messages and a small prepaid discount', 'Move ad budget to products with the highest profit before ads, not the highest revenue', 'Compare courier and gateway rates once a year as your volumes grow', 'Fix product pages (size guides, clear photos) to reduce returns caused by wrong expectations'] },
+];
+const faqs = [
+  { q: 'How do I calculate profit margin for an ecommerce order?', a: 'Take the selling price and remove tax to get your revenue. Subtract product cost, shipping, packaging, payment and marketplace fees, your average returns cost and the ad cost per order. What is left is profit per order. Divide it by revenue excluding tax to get your profit margin as a percentage.' },
+  { q: 'What is the difference between gross margin and profit margin?', a: 'Gross margin usually subtracts only the product cost from revenue. Profit margin, as this calculator shows it, also subtracts shipping, packaging, fees, returns and ad cost for each order. Gross margin tells you about pricing and sourcing; profit per order tells you whether selling and advertising that product actually makes money.' },
+  { q: 'What is break-even ROAS and how is it worked out here?', a: 'Break-even ROAS is the return on ad spend at which ads use up all the profit an order makes. Here it is revenue per order excluding tax divided by profit before ads. Below it, each ad-driven order loses money on the first purchase. If your ad platform reports revenue including tax, multiply it by one plus your tax rate.' },
+  { q: 'Should I include GST or VAT in the selling price?', a: 'Enter the price the way you set it, then use the tick box. If shoppers see a price that already includes GST or VAT, leave it ticked and the tax is removed for you. If tax is added at checkout, untick it. Margin is always calculated on revenue excluding tax, because the tax is not yours.' },
+  { q: 'How should I enter returns and RTO?', a: 'Use the share of orders that come back, including cash-on-delivery orders refused at the door, as the return rate. For cost per return, add reverse shipping, the forward shipping you cannot recover, repacking and the value of any stock you cannot resell. The calculator spreads that cost across every order.' },
+  { q: 'Is my data saved anywhere?', a: 'No. The calculator runs entirely in your browser and nothing you type is sent to us or stored. The currency picker only changes how amounts are shown; it does not convert between currencies. If you want our team to look at your real numbers, request the free e-commerce audit.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'Profit Margin Calculator', href: '/tools/profit-margin-calculator/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Ecommerce Profit Margin Calculator', url: `${site.url}/tools/profit-margin-calculator/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, provider: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'steps', caption: 'From the price a shopper pays to the profit you keep on one order.', after: 0, steps: [
+    { title: 'Selling price', body: 'What the shopper pays' },
+    { title: 'Remove tax', body: 'GST or VAT is not your revenue' },
+    { title: 'Order costs', body: 'Product, shipping, packing, fees' },
+    { title: 'Returns', body: 'Return rate × cost per return' },
+    { title: 'Ads', body: 'What is left is your profit' },
+  ] },
+  { type: 'matrix', caption: 'What to do with a product once you know its profit before ads and its ad cost.', after: 3, cols: ['Ads below break-even', 'Ads above break-even'], rows: ['Healthy margin', 'Thin margin'], cells: [
+    { title: 'Scale', body: 'Raise budget slowly and keep checking profit per order' },
+    { title: 'Fix the ads', body: 'Cut wasted spend and improve the product page first' },
+    { title: 'Raise order value', body: 'Bundles and thresholds share the fixed costs' },
+    { title: 'Rethink it', body: 'Change price, costs or stop advertising this product' },
+  ] },
+];
+---
+<Base title="Ecommerce Profit Margin Calculator: Break-even CAC | Magnus Path" description="Free ecommerce profit margin calculator: see profit per order after tax, shipping, fees, returns and ads, plus your break-even CAC and break-even ROAS." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="Ecommerce Profit Margin Calculator With *Break-even ROAS*" intro="This ecommerce profit margin calculator shows what you really keep on each order after GST or VAT, shipping, packaging, payment and marketplace fees, returns and ad costs, plus the most you can pay for ads before an order starts losing money." trail={trail} current="Profit Margin Calculator" />
+  <ProfitMarginCalc />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="Profit per order, break-even CAC and ROAS explained" />
+  <FAQ items={faqs} title="Profit margin calculator questions" />
+  <Related links={[{ label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' }, { label: 'Amazon & Flipkart marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }, { label: 'Discount calculator for ecommerce', href: '/tools/discount-calculator/' }, { label: 'How to reduce RTO and COD returns', href: '/blog/how-to-reduce-rto-cod-returns/' }, { label: 'Performance marketing agency in India', href: '/performance-marketing/' }]} />
+  <LeadForm heading="Margins thinner than they should be?" sub="Send us your store and ad accounts. We show you which products, campaigns and costs are eating your profit per order, and what to fix first." />
+</Base>
