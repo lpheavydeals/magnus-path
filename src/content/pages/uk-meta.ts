@@ -36,7 +36,7 @@ export const ukMetaPages: ServicePageData[] = [
       { title: 'The same three ads have run since spring', body: 'Creative wears out. Frequency climbs, click costs rise and the account blames the audience, when what it really needs is a steady flow of new hooks, formats and UGC.' },
     ],
     includes: [
-      { title: 'Advantage+ shopping campaigns', body: 'Set up with your catalogue and strongest creative, with limits on spend aimed at existing customers and a simpler comparison campaign so you can see what Advantage+ really adds.' },
+      { title: 'Advantage+ sales campaigns', body: 'Set up with your catalogue and strongest creative, with limits on spend aimed at existing customers and a simpler comparison campaign so you can see what Advantage+ really adds.' },
       { title: 'Catalogue and product feed health', body: 'Weekly checks in Commerce Manager, VAT-inclusive GBP prices, stock and sale prices synced from Shopify or WooCommerce, and product sets grouped by margin, category and stock depth.' },
       { title: 'Dynamic product ads', body: 'Ads that show each visitor the items they viewed or left in the basket, with recent buyers excluded and sensible frequency limits so nobody is chased for weeks.' },
       { title: 'UGC and creative testing', body: 'Creator briefs, hook tests in the first seconds, and UGC compared with product video, static and carousel ads. One written test plan a month, with results you can learn from.' },
@@ -54,7 +54,7 @@ export const ukMetaPages: ServicePageData[] = [
     figures: [
       { type: 'mindmap', caption: 'The four parts of Meta advertising that decide whether an online shop makes money.', after: 0, center: 'Meta ads for a shop', branches: [
         { label: 'Catalogue', items: ['Clean, synced feed', 'Product sets by margin'] },
-        { label: 'Campaigns', items: ['Advantage+ shopping', 'Dynamic product ads'] },
+        { label: 'Campaigns', items: ['Advantage+ sales', 'Dynamic product ads'] },
         { label: 'Creative', items: ['UGC and creator videos', 'Monthly hook tests'] },
         { label: 'Measurement', items: ['ROAS after returns', 'Pixel plus Conversions API'] },
       ] },
@@ -94,9 +94,9 @@ export const ukMetaPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Advantage+ shopping campaigns and dynamic product ads',
+        heading: 'Advantage+ sales campaigns and dynamic product ads',
         paragraphs: [
-          'Advantage+ shopping campaigns, which Meta now groups under Advantage+ sales campaigns, let Meta choose audiences and placements for your catalogue and creative. They work well for shops with steady sales data, but they will happily spend on existing customers and people already on your site. We limit existing-customer spend where the account allows it and run a simpler comparison campaign, so you know what Advantage+ is genuinely adding.',
+          'Advantage+ sales campaigns (previously called Advantage+ shopping campaigns; Meta renames these products often) let Meta choose audiences and placements for your catalogue and creative. They work well for shops with steady sales data, but they will happily spend on existing customers and people already on your site. We limit existing-customer spend where the account allows it and run a simpler comparison campaign, so you know what Advantage+ is genuinely adding.',
           'Dynamic product ads show each person the items they viewed or left in their basket, pulled straight from the catalogue. They are usually cheap to run and often profitable, but they need exclusions for recent buyers, sensible look-back windows and frequency limits, so you are not chasing someone for weeks over a pair of trainers they already bought elsewhere.',
         ],
       },
@@ -133,7 +133,7 @@ export const ukMetaPages: ServicePageData[] = [
     faqs: [
       { q: 'What does an ecommerce Meta ads agency do?', a: 'It runs Facebook and Instagram ads for an online shop. That means catalogue and product feed health, Advantage+ and dynamic product ad campaigns, creative testing with UGC, Conversions API tracking and reporting on sales after returns. The work is judged on money kept, not likes or reach, and the ad account stays in your name.' },
       { q: 'How much does an ecommerce Meta ads agency cost?', a: 'It depends on catalogue size, how much feed and tracking work is needed, how many creative tests run each month and whether we brief creators. We quote a monthly management fee in GBP after a free audit, with the scope set out in writing. Ad spend is separate and paid directly to Meta from your own account.' },
-      { q: 'Are Advantage+ shopping campaigns worth using?', a: 'Often, once the account has steady purchase data and a healthy catalogue. They can find buyers efficiently, but they also spend on existing customers and recent visitors. We limit existing-customer spend where possible and compare results with a simpler campaign, so you can see what Advantage+ adds rather than trusting its own report.' },
+      { q: 'Are Advantage+ sales campaigns worth using?', a: 'Often, once the account has steady purchase data and a healthy catalogue. They can find buyers efficiently, but they also spend on existing customers and recent visitors. We limit existing-customer spend where possible and compare results with a simpler campaign, so you can see what Advantage+ adds rather than trusting its own report.' },
       { q: 'Why does my ROAS in Ads Manager not match my bank balance?', a: 'Ads Manager counts purchases at checkout and uses its own attribution windows. It does not subtract returns, cancelled Klarna or Clearpay orders or failed payments, and it may claim sales that other channels also claim. We reconcile Meta’s numbers with store orders net of refunds each month and set targets on that figure.' },
       { q: 'Do I need UGC to run Meta ads for my shop?', a: 'Not always, but it helps most products. Short phone-shot videos of real people using the item tend to look at home in Reels and Stories. We brief creators, test hooks and compare UGC with product video and static ads, so the account learns which style sells your range.' },
       { q: 'Will my catalogue and pixel stay in my name?', a: 'Yes. Your business portfolio, ad account, catalogue, pixel and Page belong to your business, and we work through agency access. Ad spend is billed by Meta to your own card. If you stop working with us, every asset, audience and piece of data stays with you.' },
@@ -211,7 +211,7 @@ export const ukMetaPages: ServicePageData[] = [
       {
         heading: 'Meta Business Suite set-up and account structure',
         paragraphs: [
-          'Many UK businesses discover that their Facebook Page was created by a former employee, the Instagram account is linked to someone’s personal profile, and the ad account sits inside a freelancer’s business portfolio. Untangling this comes first. We help you create or claim a business portfolio, Meta’s newer name for Business Manager, in the company’s name, then connect the Page, Instagram account, ad account, pixel and catalogue to it.',
+          'Many UK businesses discover that their Facebook Page was created by a former employee, the Instagram account is linked to someone’s personal profile, and the ad account sits inside a freelancer’s business portfolio. Untangling this comes first. We help you create or claim a business portfolio (previously Business Manager) in the company’s name, then connect the Page, Instagram account, ad account, pixel and catalogue to it.',
           'Account structure follows. Fewer campaigns with larger budgets usually learn faster than dozens of tiny ad sets, so we group by goal and audience stage rather than by placement. Clear naming, billing on a company card and two-factor sign-in for every admin are small things that save real trouble later.',
         ],
         bullets: [
@@ -281,9 +281,9 @@ export const ukMetaPages: ServicePageData[] = [
     breadcrumb: ukBreadcrumb,
     eyebrow: 'Lead ads · Instant forms · Marketplace · Local audiences',
     h1: 'Facebook Ads Agency for UK Businesses That Need *Real Leads*',
-    intro: 'Magnus Path is a Facebook ads agency for UK businesses that sell a service or serve a local area: clinics, trades, studios, tutors and showrooms. We build lead ads and instant forms, choose placements across Feed, Marketplace and Reels, and send lead outcomes back to Facebook so it finds more people who actually book. Our fee is quoted in GBP after a free audit.',
+    intro: 'Magnus Path is a Facebook ads agency for UK businesses that sell a service or serve a local area: clinics, trades, studios, tutors and showrooms. We build lead ads and instant forms, choose placements across Feed, Marketplace and Reels, and track which leads become customers so campaigns are judged on real bookings, not form fills. Our fee is quoted in GBP after a free audit.',
     icon: 'social',
-    facts: ['Lead outcomes fed back to Facebook', 'Ad comments and Page kept tidy', 'Same-day replies before UK lunch'],
+    facts: ['Leads judged on real customers', 'Ad comments and Page kept tidy', 'Same-day replies before UK lunch'],
     headings: {
       pains: 'Why Facebook leads disappoint UK service businesses',
       includes: 'What our Facebook lead generation service covers',
@@ -299,7 +299,7 @@ export const ukMetaPages: ServicePageData[] = [
       { title: 'Lead ads and instant forms', body: 'Higher intent forms with a review screen, two or three multiple-choice qualifying questions and a thank-you screen with a call button or booking link.' },
       { title: 'Placements that suit your offer', body: 'Facebook Feed, Marketplace, Reels and Stories tested with creative made for each, then budget moved towards the placements that produce booked jobs.' },
       { title: 'Local audiences', body: 'Radius targeting around your postcode or a list of towns, areas you do not cover excluded, and people living there targeted rather than visitors passing through.' },
-      { title: 'Lead quality without a CRM', body: 'A shared spreadsheet of lead outcomes uploaded to Events Manager each week, so Facebook learns which people became customers, not just who filled in a form.' },
+      { title: 'Lead quality without a CRM', body: 'A shared spreadsheet of lead outcomes, uploaded to Events Manager each week, so you can judge campaigns on real customers rather than form fills.' },
       { title: 'Fast lead alerts', body: 'Instant email notifications for new leads and a simple follow-up routine, because an enquiry called back quickly is far more likely to book.' },
       { title: 'Page and comment moderation', body: 'Comments on active ads checked, spam and abuse hidden, simple questions answered with wording you approve and complaints passed to you the same day.' },
     ],
@@ -315,7 +315,7 @@ export const ukMetaPages: ServicePageData[] = [
         { label: 'Forms', items: ['Higher intent instant forms', 'Qualifying questions'] },
         { label: 'Placements', items: ['Feed and Marketplace', 'Reels and Stories'] },
         { label: 'Audiences', items: ['Radius around postcodes', 'Areas you skip excluded'] },
-        { label: 'Lead quality', items: ['Outcomes uploaded back', 'Fast follow-up'] },
+        { label: 'Lead quality', items: ['Outcomes tracked weekly', 'Fast follow-up'] },
       ] },
       { type: 'matrix', caption: 'Which instant form type to choose for the kind of job you sell.', after: 1, cols: ['More volume form', 'Higher intent form'], rows: ['Simple, low-cost service', 'Big-ticket or booked job'], cells: [
         { title: 'Good fit', body: 'Quick forms suit taster offers and simple bookings' },
@@ -323,11 +323,11 @@ export const ukMetaPages: ServicePageData[] = [
         { title: 'Expect junk', body: 'Easy forms bring casual sign-ups; call back fast' },
         { title: 'Good fit', body: 'A review screen and questions filter out casual clicks' },
       ] },
-      { type: 'steps', caption: 'How lead outcomes travel from your spreadsheet back to Facebook each week.', after: 4, steps: [
+      { type: 'steps', caption: 'How lead outcomes move from your spreadsheet into campaign decisions each week.', after: 4, steps: [
         { title: 'Mark outcomes', body: 'Booked, sold, not interested, no answer' },
         { title: 'Export weekly', body: 'Lead ID, date and outcome' },
         { title: 'Upload', body: 'Offline events in Events Manager' },
-        { title: 'Re-optimise', body: 'Towards leads that became jobs' },
+        { title: 'Judge campaigns', body: 'On leads that became jobs' },
       ] },
     ],
     guide: [
@@ -367,8 +367,8 @@ export const ukMetaPages: ServicePageData[] = [
       {
         heading: 'Lead quality: feeding outcomes back without a CRM',
         paragraphs: [
-          'Facebook optimises towards whatever you tell it is a success. If that is any submitted form, it will find more people who submit forms, including the ones who never answer. The fix is to tell Facebook which leads became customers. You do not need a CRM for this: a shared spreadsheet with the lead ID, date and outcome is enough to start.',
-          'Each week the outcomes are uploaded as offline events in Events Manager, or sent through Conversions API if your systems can do it, so campaigns can aim at qualified leads rather than raw volume. This is where a good Facebook ads agency earns its fee. We also set up instant email alerts for new leads, because speed matters: an enquiry called back within minutes is far more likely to book than one called the next day.',
+          'Facebook optimises towards whatever you tell it is a success. If that is any submitted form, it will find more people who submit forms, including the ones who never answer. The first fix is to know which leads became customers. You do not need a CRM for this: a shared spreadsheet with the lead ID, date and outcome is enough to start.',
+          'Each week the outcomes are uploaded to Events Manager, so you can judge each campaign, form and placement on real customers rather than raw volume. An upload alone does not make Meta optimise for quality leads. That needs a supported connection, such as Conversions API or an integration with your systems, which is worth setting up once lead volume justifies it. This is where a good Facebook ads agency earns its fee. We also set up instant email alerts for new leads, because speed matters: an enquiry called back within minutes is far more likely to book than one called the next day.',
         ],
         bullets: [
           'Mark each lead: booked, sold, not interested or no answer',
@@ -392,10 +392,10 @@ export const ukMetaPages: ServicePageData[] = [
       { label: 'Ecommerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
     ],
     faqs: [
-      { q: 'What does a Facebook ads agency do for a service business?', a: 'It plans and runs Facebook campaigns that bring in enquiries: lead ads and instant forms, placements across Feed, Marketplace, Reels and Stories, local audiences and creative. A good agency also tracks which leads turn into customers, feeds that back to Facebook, and keeps your Page and ad comments in order.' },
+      { q: 'What does a Facebook ads agency do for a service business?', a: 'It plans and runs Facebook campaigns that bring in enquiries: lead ads and instant forms, placements across Feed, Marketplace, Reels and Stories, local audiences and creative. A good agency also tracks which leads turn into customers, judges campaigns on those customers, and keeps your Page and ad comments in order.' },
       { q: 'How much does a Facebook ads agency cost in the UK?', a: 'It depends on how many services and areas you advertise, how much form and tracking set-up is needed, creative volume and whether we handle comment moderation. We quote a monthly fee in GBP after a free audit, with the scope in writing. Ad spend is separate and paid straight to Meta from your own ad account.' },
-      { q: 'Why are my Facebook leads such poor quality?', a: 'Usually because the form is too easy and Facebook is optimising for any submission. Switching to a higher intent form, adding two or three qualifying questions and uploading which leads became customers all help. Fast follow-up matters too: leads called back quickly are much more likely to book.' },
-      { q: 'Do I need a CRM to track lead quality?', a: 'No. A shared spreadsheet with each lead’s ID, date and outcome is enough to start. Each week we upload the outcomes to Events Manager as offline events so Facebook can learn which people became customers. If you already use a system that can send events automatically, we can connect it instead.' },
+      { q: 'Why are my Facebook leads such poor quality?', a: 'Usually because the form is too easy and Facebook is optimising for any submission. Switching to a higher intent form, adding two or three qualifying questions and judging campaigns on which leads became customers all help. Fast follow-up matters too: leads called back quickly are much more likely to book.' },
+      { q: 'Do I need a CRM to track lead quality?', a: 'No. A shared spreadsheet with each lead’s ID, date and outcome is enough to start. Each week we upload the outcomes to Events Manager so campaigns are judged on real customers. Optimising towards converted leads needs Conversions API or an integration, which we set up once volume justifies it.' },
       { q: 'Should my ads run on Facebook Marketplace?', a: 'It depends on what you sell. Marketplace suits furniture, vehicles, home improvement and other things people already browse for there. For other offers it can bring cheap but casual enquiries. We start broad, then compare lead quality by placement and move budget towards the placements that produce booked jobs.' },
       { q: 'Can you manage comments on our ads and Page?', a: 'Yes. We monitor comments on active ads, hide spam and abusive posts, answer straightforward questions using wording you approve and pass complaints or anything sensitive to you the same day. We also suggest simple Page updates, such as opening hours and recent posts, because people check your Page before they enquire.' },
       { q: 'How quickly do you respond to UK clients?', a: 'Our Chennai team works 4.5 to 5.5 hours ahead of the UK, so our day overlaps the UK morning and early afternoon. Requests sent before UK lunchtime are usually handled the same day. If you would rather meet in person, our London office in E18 is available by appointment.' },

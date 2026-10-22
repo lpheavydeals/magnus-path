@@ -15,13 +15,13 @@ export const auMetaPages: ServicePageData[] = [
     market: 'AU',
     twin: 'ecommerce-meta-ads-agency',
     title: 'Ecommerce Meta Ads Agency Australia: Catalogue Ads | Magnus Path',
-    description: 'Ecommerce Meta ads agency for Australian online stores: Advantage+ shopping, catalogue ads, feed health and UGC creative tests. Quoted in AUD after a free audit.',
+    description: 'Ecommerce Meta ads agency for Australian online stores: Advantage+ sales campaigns, catalogue ads, feed health and UGC creative tests. AUD quote after a free audit.',
     primaryKeyword: 'ecommerce Meta ads agency',
     navLabel: 'Ecommerce Meta Ads Australia',
     breadcrumb: auBreadcrumb,
-    eyebrow: 'Advantage+ shopping · Catalogue ads · UGC creative · Shops',
+    eyebrow: 'Advantage+ sales · Catalogue ads · UGC creative · Shops',
     h1: 'Ecommerce Meta Ads That *Sell Your Catalogue* to Australians',
-    intro: 'Magnus Path is an ecommerce Meta ads agency for Australian online stores that sell from a product catalogue. We run Advantage+ shopping campaigns and catalogue ads on Facebook and Instagram, keep your product feed healthy and test UGC-style creative in planned rounds. Results are judged on ROAS after returns, not the purchase value Meta reports. We quote in AUD after a free audit.',
+    intro: 'Magnus Path is an ecommerce Meta ads agency for Australian online stores that sell from a product catalogue. We run Advantage+ sales campaigns (previously Advantage+ shopping) and catalogue ads on Facebook and Instagram, keep your product feed healthy and test UGC-style creative in planned rounds. Results are judged on ROAS after returns, not the purchase value Meta reports. We quote in AUD after a free audit.',
     icon: 'social',
     facts: ['Catalogue ads from a clean feed', 'ROAS measured after returns', 'Free audit, quoted in AUD'],
     headings: {
@@ -37,7 +37,7 @@ export const auMetaPages: ServicePageData[] = [
     ],
     includes: [
       { title: 'Catalogue and feed health', body: 'Your Meta catalogue synced from Shopify or WooCommerce, with GST-inclusive AUD prices, variants, stock and images checked weekly in Commerce Manager.' },
-      { title: 'Advantage+ shopping campaigns', body: 'Set up with your existing customers defined, so spend on new and returning buyers is reported separately and growth is not overstated.' },
+      { title: 'Advantage+ sales campaigns', body: 'Set up with your existing customers defined, so spend on new and returning buyers is reported separately and growth is not overstated.' },
       { title: 'Catalogue ads for retargeting', body: 'Product viewers and cart abandoners shown the items they looked at, with frames, delivery notes and product sets that leave out thin-margin stock.' },
       { title: 'UGC creative testing', body: 'Creator briefs, hooks and test rounds that change one thing at a time, with winners moved into your main campaigns and learnings written down.' },
       { title: 'Facebook and Instagram Shops', body: 'A shop built from the same catalogue, collections set up and products tagged in posts and Reels, with checkout on your own website.' },
@@ -54,7 +54,7 @@ export const auMetaPages: ServicePageData[] = [
     figures: [
       { type: 'mindmap', caption: 'The four parts of Meta advertising for an online store, and what each one needs.', center: 'Meta ads for a store', after: 0, branches: [
         { label: 'Catalogue', items: ['GST-inclusive AUD prices', 'Stock and variants synced', 'Product sets'] },
-        { label: 'Campaigns', items: ['Advantage+ shopping', 'Catalogue retargeting'] },
+        { label: 'Campaigns', items: ['Advantage+ sales', 'Catalogue retargeting'] },
         { label: 'Creative', items: ['UGC video', 'Catalogue frames', 'Test rounds'] },
         { label: 'Measurement', items: ['Pixel + Conversions API', 'ROAS after returns'] },
       ] },
@@ -90,9 +90,9 @@ export const auMetaPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Advantage+ shopping campaigns and catalogue ads',
+        heading: 'Advantage+ sales campaigns and catalogue ads',
         paragraphs: [
-          'Advantage+ shopping campaigns, now part of Meta’s Advantage+ sales set-up, let Meta choose audiences, placements and products from your catalogue with little manual targeting. They suit many stores, but they will happily spend on people who were going to buy anyway. Define your existing customers and report new and returning buyers separately so growth is not overstated.',
+          'Advantage+ sales campaigns, previously called Advantage+ shopping campaigns (Meta renames these products from time to time), let Meta choose audiences, placements and products from your catalogue with little manual targeting. They suit many stores, but they will happily spend on people who were going to buy anyway. Define your existing customers and report new and returning buyers separately so growth is not overstated.',
           'Catalogue ads, once called dynamic product ads, show each person the products they viewed or similar ones. We use them to bring back product viewers and cart abandoners, and for broad prospecting with product sets that leave out thin-margin or low-stock lines. A plain catalogue carousel rarely stands out, so we add frames, delivery notes or a short brand video at the start.',
         ],
       },
@@ -130,9 +130,9 @@ export const auMetaPages: ServicePageData[] = [
       { label: 'ROAS calculator for ecommerce ads', href: '/tools/roas-calculator/' },
     ],
     faqs: [
-      { q: 'What does an ecommerce Meta ads agency do?', a: 'It runs Facebook and Instagram advertising for online stores from the product catalogue. That covers catalogue and feed health, Advantage+ shopping campaigns, catalogue ads for retargeting, UGC creative testing, pixel and Conversions API tracking, and reporting on revenue after returns rather than on the purchase value Meta shows.' },
+      { q: 'What does an ecommerce Meta ads agency do?', a: 'It runs Facebook and Instagram advertising for online stores from the product catalogue. That covers catalogue and feed health, Advantage+ sales campaigns, catalogue ads for retargeting, UGC creative testing, pixel and Conversions API tracking, and reporting on revenue after returns rather than on the purchase value Meta shows.' },
       { q: 'How much does ecommerce Meta ads management cost in Australia?', a: 'We quote a monthly management fee in AUD after a free audit. It depends on catalogue size, how many campaigns you run, how much creative you need each month and how much feed and tracking work comes first. Ad spend is separate and paid directly to Meta from your own ad account.' },
-      { q: 'Are Advantage+ shopping campaigns enough on their own?', a: 'They are a strong base for many stores but rarely the whole answer. Left alone they lean towards existing customers and easy products. We pair them with catalogue retargeting, product sets that leave out thin-margin stock and steady creative testing, and we report new and returning customers separately.' },
+      { q: 'Are Advantage+ sales campaigns enough on their own?', a: 'They are a strong base for many stores but rarely the whole answer. Left alone they lean towards existing customers and easy products. We pair them with catalogue retargeting, product sets that leave out thin-margin stock and steady creative testing, and we report new and returning customers separately.' },
       { q: 'Should prices in my Meta catalogue include GST?', a: 'Yes. Australian shoppers expect to see the full price, so your catalogue should carry the same GST-inclusive AUD price as your product page. Mismatched prices confuse buyers and can get products rejected. Your accountant should confirm your GST settings; we check that the catalogue and the store agree.' },
       { q: 'Why is the ROAS in Ads Manager higher than my real results?', a: 'Meta counts purchase value at checkout and credits sales within its attribution window, including some people who would have bought anyway. It never sees refunds, returns or discount codes. We compare Ads Manager with your store orders each month and set targets on revenue after returns.' },
       { q: 'Do you make the ad creative?', a: 'We plan and test it. We write briefs for UGC creators and your team, cut footage into Reels, Stories and feed formats, and build catalogue frames. Filming is usually done by creators or your own staff, because they have the product in hand. Every ad is checked for honest claims before it runs.' },
@@ -286,9 +286,9 @@ export const auMetaPages: ServicePageData[] = [
     breadcrumb: auBreadcrumb,
     eyebrow: 'Lead ads · Instant forms · Marketplace · Local audiences',
     h1: 'Facebook Ads That Bring *Real Enquiries* to Australian Businesses',
-    intro: 'Magnus Path is a Facebook ads agency for Australian businesses that need enquiries, bookings and local customers, not just likes. We build lead ads with instant forms that filter out time-wasters, target the suburbs and regions you serve, moderate the comments and feed lead outcomes back to Facebook so it finds more people like your real buyers. We quote in AUD after a free audit.',
+    intro: 'Magnus Path is a Facebook ads agency for Australian businesses that need enquiries, bookings and local customers, not just likes. We build lead ads with instant forms that filter out time-wasters, target the suburbs and regions you serve, moderate the comments and track which leads become customers, so every campaign is judged on real sales. We quote in AUD after a free audit.',
     icon: 'social',
-    facts: ['Lead forms tuned for quality', 'Lead outcomes fed back to Meta', 'Free audit, quoted in AUD'],
+    facts: ['Lead forms tuned for quality', 'Campaigns judged on real customers', 'Free audit, quoted in AUD'],
     headings: {
       pains: 'Why Facebook leads often go nowhere',
       includes: 'What our Facebook ad management for Australian businesses covers',
@@ -304,7 +304,7 @@ export const auMetaPages: ServicePageData[] = [
       { title: 'Lead ads and instant forms', body: 'Higher-intent forms with a review step, two or three qualifying questions and a clear note on what happens next and how quickly you call back.' },
       { title: 'Feed, Marketplace and Reels', body: 'Creative made for each Facebook placement, from feed images to Marketplace listings and vertical Reels, with budget moved to whatever brings qualified leads.' },
       { title: 'Local and service-area audiences', body: 'Radius targeting around your base or a list of suburbs, postcodes and regions, with areas you do not service excluded and the location named in the ad.' },
-      { title: 'Lead quality without a CRM', body: 'A shared spreadsheet of lead outcomes uploaded to Events Manager, so Facebook learns which leads actually became customers.' },
+      { title: 'Lead quality without a CRM', body: 'A shared spreadsheet of lead outcomes, uploaded to Events Manager and matched to your ads, so you can judge each campaign on real customers.' },
       { title: 'Page and comment moderation', body: 'Keyword filters for spam and abuse, weekday checks of ad comments, and questions or complaints passed to you with a suggested reply.' },
       { title: 'Retargeting warm audiences', body: 'Video viewers, Page engagers and people who opened a form but did not finish, shown photos of finished work, answers and offers.' },
       { title: 'Reporting by qualified lead', body: 'Cost per qualified lead and cost per sale next to cost per lead, so you can see which ads bring buyers.' },
@@ -314,14 +314,14 @@ export const auMetaPages: ServicePageData[] = [
       { title: 'Free account audit', body: 'Read-only access to your ad account, Page and recent leads. We look at form settings, targeting, comments and lead follow-up, then talk it through on a call in your afternoon.' },
       { title: 'Plan and AUD quote', body: 'A written plan covering forms, audiences, placements, moderation and how lead outcomes will be tracked, with a monthly fee quoted in AUD.' },
       { title: 'Build and launch', body: 'Forms, audiences and creative built in your own ad account, lead alerts set up for your team, and campaigns launched with a test budget.' },
-      { title: 'Feed back and refine', body: 'Weekly uploads of lead outcomes, changes to forms and audiences based on lead quality, and a monthly review of cost per sale.' },
+      { title: 'Feed back and refine', body: 'Weekly updates of lead outcomes, changes to forms, audiences and budgets based on lead quality, and a monthly review of cost per sale.' },
     ],
     figures: [
       { type: 'mindmap', caption: 'The four parts of a Facebook lead campaign that decide whether enquiries turn into customers.', center: 'A Facebook lead campaign', after: 0, branches: [
         { label: 'Audience', items: ['Suburbs you serve', 'Past engagers'] },
         { label: 'Placement', items: ['Feed and Marketplace', 'Reels'] },
         { label: 'Form', items: ['Higher-intent review step', 'Qualifying questions'] },
-        { label: 'Follow-up', items: ['Call back fast', 'Upload lead outcomes'] },
+        { label: 'Follow-up', items: ['Call back fast', 'Record lead outcomes'] },
       ] },
       { type: 'matrix', caption: 'Instant form or landing page: the right choice depends on what each lead is worth to you.', after: 1, cols: ['Instant form', 'Landing page'], rows: ['Quick, lower-value jobs', 'Bigger, considered jobs'], cells: [
         { title: 'Short form', body: 'Name, phone, suburb and one question' },
@@ -329,11 +329,11 @@ export const auMetaPages: ServicePageData[] = [
         { title: 'Higher-intent form', body: 'Review step plus two or three qualifying questions' },
         { title: 'Strong choice', body: 'Room for photos, reviews and detail before they ask' },
       ] },
-      { type: 'steps', caption: 'The weekly loop that teaches Facebook which leads turn into customers, without a CRM.', after: 4, steps: [
+      { type: 'steps', caption: 'The weekly loop that shows which Facebook ads bring customers, without needing a CRM.', after: 4, steps: [
         { title: 'Download leads', body: 'Export the week’s form leads' },
         { title: 'Mark outcomes', body: 'Qualified, booked, sold or junk' },
         { title: 'Upload the sheet', body: 'Add outcomes to your Events Manager dataset' },
-        { title: 'Shift budget', body: 'Spend moves to ads that bring buyers' },
+        { title: 'Shift budget', body: 'We move spend to ads that bring buyers' },
       ] },
     ],
     guide: [
@@ -376,8 +376,8 @@ export const auMetaPages: ServicePageData[] = [
       {
         heading: 'Measuring lead quality without a CRM',
         paragraphs: [
-          'Facebook can only optimise for what it is told. If it only sees form submissions, it finds more people who submit forms. Telling it which leads became customers shifts delivery towards people who buy, and you do not need a CRM to do it: a shared spreadsheet works.',
-          'Each week your team marks every lead as qualified, booked, sold or junk. We upload those outcomes to your dataset in Events Manager, matched by lead ID or hashed contact details, and report cost per qualified lead and cost per sale beside cost per lead. Over a few weeks you see which ads, audiences and placements bring buyers.',
+          'A cheap form fill is not a customer. If you only count form submissions, the campaign that looks strongest may be the one bringing the most time-wasters. Judging campaigns on which leads became customers changes where the budget should go, and you do not need a CRM to start: a shared spreadsheet works.',
+          'Each week your team marks every lead as qualified, booked, sold or junk. We match those outcomes to the original leads, upload them to Events Manager where that helps reporting, and show cost per qualified lead and cost per sale beside cost per lead. Over a few weeks you see which ads, audiences and placements bring buyers, and we move budget accordingly. A spreadsheet upload on its own does not make Meta optimise for quality leads. Once your lead volume justifies it, optimising delivery towards converted leads needs a supported connection, such as the Conversions API or an integration with your lead system.',
           'In plain terms, the Privacy Act covers how many Australian businesses collect, use and share personal details, including sending them to an overseas platform. Your form and privacy policy should say how details are used. We are not lawyers, so confirm your obligations with your own adviser.',
         ],
       },
@@ -400,9 +400,9 @@ export const auMetaPages: ServicePageData[] = [
     faqs: [
       { q: 'What does a Facebook ads agency do for a local business?', a: 'It runs Facebook campaigns that bring enquiries, bookings and visits from the areas you serve. That covers lead ads and instant forms, local audiences, feed, Marketplace and Reels creative, comment moderation, retargeting and tracking which leads became customers, so budget follows sales rather than cheap form fills.' },
       { q: 'How much does Facebook ads management cost in Australia?', a: 'We quote a monthly management fee in AUD after a free audit. It depends on how many services and areas you advertise, how many forms and campaigns you need, how much creative and moderation is involved, and whether lead tracking needs setting up. Ad spend is separate and paid directly to Meta.' },
-      { q: 'Why are my Facebook leads such poor quality?', a: 'Usually because the form is too easy. Details are prefilled, so people submit without reading. Switching to the higher-intent form type, adding two or three qualifying questions, calling back quickly and telling Facebook which leads became customers all push quality up, even if cost per lead rises.' },
+      { q: 'Why are my Facebook leads such poor quality?', a: 'Usually because the form is too easy. Details are prefilled, so people submit without reading. Switching to the higher-intent form type, adding two or three qualifying questions, calling back quickly and judging campaigns on which leads became customers all push quality up, even if cost per lead rises.' },
       { q: 'Should I use an instant form or send people to my website?', a: 'Instant forms suit quick, lower-value jobs where speed matters. For bigger, considered purchases, a landing page with photos, reviews and detail often brings fewer but better enquiries. Many businesses run both and compare cost per qualified lead, not just cost per lead.' },
-      { q: 'Can you track lead quality if we do not have a CRM?', a: 'Yes. Your team marks each lead as qualified, booked, sold or junk in a shared spreadsheet. We upload those outcomes to Events Manager each week, matched to the original leads, so Facebook learns which people become customers and reports show cost per sale.' },
+      { q: 'Can you track lead quality if we do not have a CRM?', a: 'Yes. Your team marks each lead as qualified, booked, sold or junk in a shared spreadsheet. We match those outcomes to the original leads each week, so you can judge campaigns on real customers and see cost per sale. Optimising delivery towards converted leads needs a Conversions API connection later.' },
       { q: 'Do you moderate comments on our ads?', a: 'Yes. We set keyword filters to hide spam, scam links and abuse, check ad comments on an agreed schedule, and pass genuine questions and complaints to you with a suggested reply. We do not delete fair criticism; answering it politely in public usually does more good.' },
       { q: 'Can Facebook ads target only the suburbs we service?', a: 'Yes. Ads can target a radius around an address or a list of suburbs, postcodes and regions, and exclude areas you do not cover. Special ad categories such as housing, jobs and credit have tighter limits. Naming the area in the ad also helps people outside it scroll past.' },
     ],

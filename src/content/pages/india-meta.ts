@@ -27,7 +27,7 @@ export const indiaMetaPages: ServicePageData[] = [
       { title: 'The same three creatives, running for months', body: 'Ad fatigue sets in quietly. Without a steady flow of new UGC videos, offers and formats, costs creep up and the whole account depends on one ageing winner.' },
     ],
     includes: [
-      { title: 'Advantage+ sales campaigns', body: 'Meta’s automated shopping campaigns, earlier called Advantage+ shopping, set up with sensible budget limits for existing customers and clean purchase data, so automation works for your margins.' },
+      { title: 'Advantage+ sales campaigns', body: 'Meta’s automated shopping campaigns (Advantage+ sales campaigns, previously Advantage+ shopping), set up with sensible budget limits for existing customers and clean purchase data, so automation works for your margins.' },
       { title: 'Catalogue and product feed health', body: 'Your Shopify or WooCommerce catalogue synced to Commerce Manager, with product sets by category, margin and stock, and mismatched prices, missing images and errors fixed.' },
       { title: 'Dynamic product ads', body: 'Retargeting that shows each visitor the products they viewed or left in the cart, plus broad catalogue ads that find new shoppers for products similar to what they browse.' },
       { title: 'UGC and creative testing', body: 'A weekly testing plan for UGC-style videos, unboxings, try-ons and offer angles, with Hindi and regional-language versions written or checked by a fluent writer.' },
@@ -102,7 +102,7 @@ export const indiaMetaPages: ServicePageData[] = [
       {
         heading: 'Advantage+ sales campaigns, Shops and festive peaks',
         paragraphs: [
-          'Advantage+ sales campaigns, which Meta earlier called Advantage+ shopping campaigns, combine prospecting and retargeting in one automated campaign. They work well once the pixel, Conversions API and catalogue are reliable, and once you limit how much budget goes to people who already buy from you. With weak data, they spend quickly on whoever is easiest to convert.',
+          'Advantage+ sales campaigns (previously Advantage+ shopping campaigns; Meta renames products often) combine prospecting and retargeting in one automated campaign. They work well once the pixel, Conversions API and catalogue are reliable, and once you limit how much budget goes to people who already buy from you. With weak data, they spend quickly on whoever is easiest to convert.',
           'Shops on Facebook and Instagram let shoppers browse your products inside the apps, but in India they mostly send people to your website to buy, so treat them as a shop window rather than a checkout. Plan festive seasons early: Navratri, Diwali and the big marketplace sale weeks raise ad costs for everyone, so new creatives, offers and catalogue sale prices should be ready weeks before demand peaks.',
         ],
       },
@@ -207,7 +207,7 @@ export const indiaMetaPages: ServicePageData[] = [
       {
         heading: 'Meta Business Suite and account ownership',
         paragraphs: [
-          'Everything starts with a business portfolio, which used to be called Business Manager, inside Meta Business Suite. It should hold your Facebook page, Instagram account, WhatsApp Business number, ad accounts, pixel and catalogue, all owned by your company, with staff and agencies given only the roles they need.',
+          'Everything starts with a business portfolio (previously Business Manager) inside Meta Business Suite. It should hold your Facebook page, Instagram account, WhatsApp Business number, ad accounts, pixel and catalogue, all owned by your company, with staff and agencies given only the roles they need.',
           'A common problem in Indian businesses is a page or ad account created years ago by a former employee or freelancer on a personal profile. Fixing this first saves trouble later. The payment method, business verification and two-factor authentication should all sit with the business, not with one person.',
         ],
         bullets: [
@@ -258,7 +258,7 @@ export const indiaMetaPages: ServicePageData[] = [
       { q: 'How much does it cost to hire a Meta ads agency in India?', a: 'It depends on how many apps and placements you use, how many campaigns and languages you run, how much creative you need, and how much tracking and account clean-up is required. Ad spend is paid directly to Meta from your own account. Our management fee is quoted separately after a free audit, in a written quote.' },
       { q: 'Is the Conversions API really needed?', a: 'For most businesses that track sales or leads, yes. The pixel alone misses events blocked by browsers, phone settings and patchy connections. The Conversions API sends the same events from your server or platform, and with event IDs Meta removes duplicates. Fuller data usually helps the automation find better customers and makes reports more reliable.' },
       { q: 'Should we advertise on Instagram, Facebook or WhatsApp?', a: 'Usually a mix, run from one ad account. Instagram Reels and Stories suit discovery for visual products and younger audiences. Facebook still reaches many buyers across age groups and smaller towns. Click-to-WhatsApp ads suit products or services people want to ask about before paying. We test placements and move budget towards what brings results.' },
-      { q: 'What is a business portfolio in Meta Business Suite?', a: 'It is the company-level account, earlier called Business Manager, that owns your page, Instagram account, WhatsApp number, ad accounts, pixel and catalogue. People and agencies are added with specific roles. Keeping it in your company’s name, with verification and two-factor authentication, means you never lose access when staff or agencies change.' },
+      { q: 'What is a business portfolio in Meta Business Suite?', a: 'It is the company-level account (previously Business Manager) that owns your page, Instagram account, WhatsApp number, ad accounts, pixel and catalogue. People and agencies are added with specific roles. Keeping it in your company’s name, with verification and two-factor authentication, means you never lose access when staff or agencies change.' },
       { q: 'Do you handle replies to WhatsApp and Messenger ads?', a: 'We set up greeting messages, quick replies, chat routing and reply templates, and we track how many chats turn into sales. The replies themselves usually work better from your own team, who know the product, stock and delivery times. We help write reply scripts in English, Hindi and regional languages, checked by a fluent writer.' },
       { q: 'Can we meet your team?', a: 'Yes. Our head office and main delivery team are in Chennai, and we also have a Bengaluru office. You can meet the team at either office by appointment. Brands elsewhere in India work with us remotely through video calls, shared reports and a monthly review.' },
     ],
@@ -269,15 +269,15 @@ export const indiaMetaPages: ServicePageData[] = [
     slug: 'facebook-ads-agency',
     kind: 'service',
     title: 'Facebook Ads Agency in India | Lead Ads | Magnus Path',
-    description: 'Facebook ads agency in India for lead generation: instant forms, local audiences, Marketplace and Reels placements, and lead quality fed back to Meta.',
+    description: 'Facebook ads agency in India for lead generation: instant forms, local audiences, Marketplace and Reels placements, and leads judged on real customers.',
     primaryKeyword: 'Facebook ads agency in India',
     navLabel: 'Facebook Ads',
     breadcrumb: [{ label: 'Ads', href: '/performance-marketing/' }],
     eyebrow: 'Lead ads · Local audiences · Lead quality',
     h1: 'Facebook Ads Agency in India for *Quality Leads*',
-    intro: 'Magnus Path is a Facebook ads agency in India for businesses that need enquiries, not likes: clinics, coaching institutes, showrooms, service firms and B2B suppliers. We run lead ads with instant forms, feed, Marketplace and Reels placements, and local audiences, feed lead quality back to Meta, and keep your page and ad comments clean.',
+    intro: 'Magnus Path is a Facebook ads agency in India for businesses that need enquiries, not likes: clinics, coaching institutes, showrooms, service firms and B2B suppliers. We run lead ads with instant forms, feed, Marketplace and Reels placements, and local audiences, judge every campaign on which leads became customers, and keep your page and ad comments clean.',
     icon: 'social',
-    facts: ['Free audit first', 'Page and leads in your name', 'Lead quality fed back to Meta'],
+    facts: ['Free audit first', 'Page and leads in your name', 'Judged on real customers'],
     headings: {
       pains: 'Plenty of leads on paper. Very few real conversations.',
       includes: 'What our Facebook advertising management covers',
@@ -286,14 +286,14 @@ export const indiaMetaPages: ServicePageData[] = [
     },
     pains: [
       { title: 'Cheap leads that never answer', body: 'Short instant forms with pre-filled details bring plenty of names and numbers, but many are casual scrollers, wrong numbers or people who forgot they filled in a form.' },
-      { title: 'Facebook optimising for form fills, not customers', body: 'Meta only sees the submitted form. Without feedback on which leads became visits, quotes or sales, it keeps finding more people who simply like filling in forms.' },
+      { title: 'Campaigns judged on form fills, not customers', body: 'Meta only sees the submitted form. Without knowing which leads became visits, quotes or sales, nobody can tell which ads bring customers and which bring people who simply like filling in forms.' },
       { title: 'Unanswered comments under your ads', body: 'Questions, complaints and spam pile up under ads with no reply. That puts off the next person who scrolls past and wastes the spend that bought their attention.' },
     ],
     includes: [
       { title: 'Lead ads and instant forms', body: 'Forms built for quality: the right questions, a higher-intent review step where it helps, conditional answers and a thank-you screen that says what happens next.' },
       { title: 'Placements across Facebook', body: 'Feed, Marketplace, Reels, Stories and search placements tested on cost per qualified lead, with creative sized and written for each one.' },
       { title: 'Local and service-area audiences', body: 'Radius and pin-code targeting around your branches or service area, with interest layers kept light so Facebook can still find enough people.' },
-      { title: 'Lead quality and offline conversions', body: 'A simple sheet of reached, qualified and closed leads uploaded back to Meta through Events Manager, so campaigns learn which leads matter. No CRM needed.' },
+      { title: 'Lead quality and offline conversions', body: 'A simple sheet of reached, qualified and closed leads, uploaded to Events Manager so each campaign is judged on real customers. No CRM needed to start.' },
       { title: 'Fast lead follow-up', body: 'Instant lead alerts to your sales team by email or WhatsApp, a short call script and a follow-up routine, because leads go cold within hours.' },
       { title: 'Page and comment moderation', body: 'Hidden-word lists for spam and abuse, replies to genuine questions under your ads, and a clear route for passing complaints to your team.' },
       { title: 'Special ad category checks', body: 'Ads for housing, jobs, loans or credit set up within Meta’s special ad category rules, which limit some targeting options.' },
@@ -302,7 +302,7 @@ export const indiaMetaPages: ServicePageData[] = [
       { title: 'Free account and lead audit', body: 'We review your page, ad account, forms and the last few months of leads, including how many were reached, qualified and closed.' },
       { title: 'Lead goals and a written quote', body: 'We agree what a qualified lead means for you and a target cost per qualified lead, then send a written quote. Ad spend stays separate.' },
       { title: 'Forms, audiences and follow-up', body: 'New instant forms, local audiences and creatives go live, with lead alerts and a follow-up routine agreed with your team.' },
-      { title: 'Feed back and improve', body: 'Each week your team marks lead outcomes; we upload them to Meta, cut weak ads and forms, and move budget to what brings real customers.' },
+      { title: 'Feed back and improve', body: 'Each week your team marks lead outcomes; we upload them, compare campaigns on real customers, cut weak ads and forms, and move budget to what brings real customers.' },
     ],
     platforms: ['Meta Ads Manager', 'Instant Forms', 'Leads Center', 'Events Manager', 'Meta Business Suite', 'WhatsApp Business', 'Google Sheets'],
     figures: [
@@ -312,11 +312,11 @@ export const indiaMetaPages: ServicePageData[] = [
         { title: 'Screening forms', body: 'Higher-intent forms with qualifying questions' },
         { title: 'Website sales', body: 'Send traffic to your site and track purchases' },
       ] },
-      { type: 'steps', caption: 'How lead outcomes travel back to Meta each week, with a shared sheet and no CRM.', after: 3, steps: [
+      { type: 'steps', caption: 'How lead outcomes are recorded each week with a shared sheet, so campaigns are judged on real customers.', after: 3, steps: [
         { title: 'Export new leads', body: 'Download from Leads Center or the form' },
         { title: 'Mark the outcome', body: 'Reached, qualified, visited or sold' },
         { title: 'Upload the file', body: 'As offline events in Events Manager' },
-        { title: 'Learn from sales', body: 'Campaigns favour leads that convert' },
+        { title: 'Judge on sales', body: 'Cut campaigns whose leads never convert' },
       ] },
       { type: 'venn', caption: 'A Facebook lead only becomes a customer when the ad and the follow-up both do their job.', after: 4, left: { title: 'The ad and the form', body: 'Reach the right people and ask the right questions' }, right: { title: 'Your follow-up', body: 'Call back quickly, answer comments, book the visit' }, overlap: 'Leads that become customers' },
     ],
@@ -352,8 +352,8 @@ export const indiaMetaPages: ServicePageData[] = [
       {
         heading: 'Lead quality and offline conversions without a CRM',
         paragraphs: [
-          'Meta learns from the signal you give it. If the only signal is a submitted form, it finds more people who submit forms. If you tell it which leads were reached, qualified, visited or bought, it can look for more people like them.',
-          'You do not need a CRM for this. A shared spreadsheet where your team marks each lead’s outcome is enough. Every week the outcomes are uploaded back to Meta as offline events through Events Manager, matched on the phone number or email from the form. Over time, campaigns can optimise towards qualified leads instead of raw form fills. In plain terms, India’s Digital Personal Data Protection Act expects people to know how their details will be used, so say it on the form. We are not lawyers; take legal advice for your case.',
+          'Meta optimises for the signal it receives. If the only signal is a submitted form, it finds more people who submit forms, and its reports show cost per lead, not cost per customer. To know which campaigns actually bring business, you need to record what happened to each lead.',
+          'You do not need a CRM for this. A shared spreadsheet where your team marks each lead’s outcome is enough. Every week the outcomes are uploaded to Events Manager as offline events, matched on the phone number or email from the form, so you can compare campaigns, ads and forms on qualified leads and real customers, then move budget accordingly. A manual upload does not by itself make Meta optimise for quality. Optimising towards converted leads needs a supported connection, such as the Conversions API or an integration from your lead system, which becomes worth setting up once lead volume justifies it. In plain terms, India’s Digital Personal Data Protection Act expects people to know how their details will be used, so say it on the form. We are not lawyers; take legal advice for your case.',
         ],
       },
       {
@@ -366,7 +366,7 @@ export const indiaMetaPages: ServicePageData[] = [
       {
         heading: 'Choosing a Facebook ads agency in India',
         paragraphs: [
-          'Ask how the agency defines a qualified lead, whether it feeds lead outcomes back to Meta, who answers comments, and who owns the page, ad account and lead forms. Plan busy periods such as admissions season, Navratri, Diwali or the financial year-end ahead of time, because ad costs rise and attention drops in crowded weeks.',
+          'Ask how the agency defines a qualified lead, whether it judges campaigns on lead outcomes, who answers comments, and who owns the page, ad account and lead forms. Plan busy periods such as admissions season, Navratri, Diwali or the financial year-end ahead of time, because ad costs rise and attention drops in crowded weeks.',
           'With Magnus Path, the page, ad account and every lead stay in your name, ad spend is paid directly to Meta from your own account, and the management fee is quoted after a free audit. You can meet the team at our Chennai head office or our Bengaluru office by appointment, or work with us remotely from anywhere in India.',
         ],
       },
@@ -379,10 +379,10 @@ export const indiaMetaPages: ServicePageData[] = [
       { label: 'Performance marketing across Meta and Google ads', href: '/performance-marketing/' },
     ],
     faqs: [
-      { q: 'What does a Facebook ads agency do for lead generation?', a: 'It plans and runs Facebook campaigns that bring enquiries: lead ads with instant forms, call and WhatsApp ads, local audiences around your branches, and creative for feed, Marketplace and Reels. A good one also tracks which leads become customers, feeds that back to Meta, and helps your team follow up quickly.' },
+      { q: 'What does a Facebook ads agency do for lead generation?', a: 'It plans and runs Facebook campaigns that bring enquiries: lead ads with instant forms, call and WhatsApp ads, local audiences around your branches, and creative for feed, Marketplace and Reels. A good one also tracks which leads become customers, judges campaigns on that, and helps your team follow up quickly.' },
       { q: 'How much does Facebook ads management cost in India?', a: 'It depends on how many locations, campaigns and forms you run, how much creative you need, whether comment moderation is included, and how much tracking set-up is required. Ad spend is paid directly to Meta from your own account. Our management fee is quoted separately after a free audit, in a written quote listing scope and exclusions.' },
-      { q: 'Why are our Facebook leads poor quality?', a: 'Usually because the form is too easy and Meta is optimising for form submissions alone. Pre-filled instant forms invite casual taps. Adding a review step, one or two qualifying questions and clear next steps, then feeding lead outcomes back to Meta, normally improves quality, even if the number of leads drops.' },
-      { q: 'Do we need a CRM to upload offline conversions?', a: 'No. A shared spreadsheet where your team marks each lead as reached, qualified, visited or sold is enough. Each week the outcomes are uploaded to Meta through Events Manager, matched on the phone number or email from the original form. A CRM makes this faster later, but you do not need one to start.' },
+      { q: 'Why are our Facebook leads poor quality?', a: 'Usually because the form is too easy and Meta is optimising for form submissions alone. Pre-filled instant forms invite casual taps. Adding a review step, one or two qualifying questions and clear next steps, then judging campaigns on which leads became customers, normally improves quality, even if the number of leads drops.' },
+      { q: 'Do we need a CRM to upload offline conversions?', a: 'No. A shared spreadsheet where your team marks each lead as reached, qualified, visited or sold is enough. Each week the outcomes are uploaded to Events Manager, so campaigns are judged on real customers. To have Meta optimise towards converted leads, you later need a supported connection such as the Conversions API or an integration.' },
       { q: 'Are Facebook ads still worth it for local businesses?', a: 'For many, yes. Facebook still reaches a wide range of ages and towns across India, and radius or pin-code targeting puts ads in front of people near your branches. Feed and Marketplace placements often bring practical enquiries. Results depend on the offer, the form and how fast your team calls back.' },
       { q: 'Do you moderate comments on our ads?', a: 'Yes, when it is part of the agreed scope. We set up hidden-word filters for spam and abuse, reply to genuine questions under your ads in an agreed tone, and pass complaints to your team through a clear route. Replies in Hindi or regional languages are written or checked by a fluent writer.' },
       { q: 'Can we meet the team in person?', a: 'Yes. Our head office is in Chennai and we also have an office in Bengaluru, where you can meet the team by appointment. Businesses in other cities work with us remotely through video calls, a shared lead sheet and a monthly review of lead quality.' },

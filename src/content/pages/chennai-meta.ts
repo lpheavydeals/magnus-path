@@ -6,13 +6,13 @@ export const chennaiMetaPages: ServicePageData[] = [
     slug: 'chennai/ecommerce-meta-ads-agency',
     kind: 'location',
     title: 'Ecommerce Meta Ads Agency in Chennai | Magnus Path',
-    description: 'Ecommerce Meta ads agency in Chennai for online stores: Advantage+ shopping, catalogue ads, UGC creative tests and ROAS measured after COD and returns.',
+    description: 'Ecommerce Meta ads agency in Chennai for online stores: Advantage+ sales and catalogue ads, UGC creative tests and ROAS measured after COD and returns.',
     primaryKeyword: 'ecommerce Meta ads agency in Chennai',
     navLabel: 'Ecommerce Meta Ads Chennai',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Meta ads for online stores in Chennai',
     h1: 'Ecommerce Meta Ads Agency in Chennai for *Delivered, Paid Orders*',
-    intro: 'Magnus Path is an ecommerce Meta ads agency in Chennai for online stores on Shopify, WooCommerce or a custom site. We run Advantage+ shopping and catalogue campaigns on Facebook and Instagram, keep your product feed healthy, test UGC and studio creatives in Tamil and English, and judge spend on ROAS after COD and returns. You can meet the team at our Chennai head office.',
+    intro: 'Magnus Path is an ecommerce Meta ads agency in Chennai for online stores on Shopify, WooCommerce or a custom site. We run Advantage+ sales (previously Advantage+ shopping) and catalogue campaigns on Facebook and Instagram, keep your product feed healthy, test UGC and studio creatives in Tamil and English, and judge spend on ROAS after COD and returns. You can meet the team at our Chennai head office.',
     icon: 'social',
     facts: ['Free store ads audit first', 'ROAS judged after COD and RTO', 'Ad account stays in your name'],
     headings: {
@@ -27,7 +27,7 @@ export const chennaiMetaPages: ServicePageData[] = [
       { title: 'One creative, run until it dies', body: 'A single video carries the account for months. Frequency climbs, costs rise, and there is no pipeline of new hooks, UGC clips or offers ready to test.' },
     ],
     includes: [
-      { title: 'Advantage+ shopping campaigns, steered', body: 'Set up with a cap on spend toward existing customers, sensible exclusions and creatives grouped by product line, so results are readable and not left to defaults.' },
+      { title: 'Advantage+ sales campaigns, steered', body: 'Set up with a cap on spend toward existing customers, sensible exclusions and creatives grouped by product line, so results are readable and not left to defaults.' },
       { title: 'Catalogue and product feed health', body: 'Commerce Manager catalogue synced from your store, with correct prices, sale prices, stock, variants and images, plus product sets by category, margin and season.' },
       { title: 'Dynamic product ads for retargeting', body: 'Viewers and cart abandoners shown the exact products they looked at, with windows that match how long your customers take to decide and limits on how often they see them.' },
       { title: 'UGC and creative testing', body: 'A weekly flow of hooks, UGC-style clips, try-on videos, unboxings and static offers in Tamil and English, tested in a simple structure with a written log of what won.' },
@@ -38,10 +38,10 @@ export const chennaiMetaPages: ServicePageData[] = [
     process: [
       { title: 'Free store ads audit', body: 'We review your ad account, catalogue, pixel and Conversions API, creative history and courier data, and show where spend leaks and where sales are missed.' },
       { title: 'A true ROAS target', body: 'From your margin, COD share, RTO rate and shipping costs we work out the ROAS you actually need, and agree it with you in writing.' },
-      { title: 'Rebuild catalogue and campaigns', body: 'Feed fixes, product sets, Advantage+ shopping and catalogue retargeting rebuilt, with the first batch of new creatives ready on launch day.' },
+      { title: 'Rebuild catalogue and campaigns', body: 'Feed fixes, product sets, Advantage+ sales and catalogue retargeting rebuilt, with the first batch of new creatives ready on launch day.' },
       { title: 'Weekly tests, monthly profit review', body: 'New creatives every week, budget moved toward winners, and a monthly review of delivered-order profit, in person at our Chennai office or online.' },
     ],
-    platforms: ['Meta Ads Manager', 'Commerce Manager', 'Advantage+ shopping campaigns', 'Conversions API', 'Instagram Shopping', 'Shopify', 'WooCommerce', 'GA4'],
+    platforms: ['Meta Ads Manager', 'Commerce Manager', 'Advantage+ sales campaigns', 'Conversions API', 'Instagram Shopping', 'Shopify', 'WooCommerce', 'GA4'],
     local: {
       city: 'Chennai',
       areas: ['Mylapore', 'Kilpauk', 'Royapettah', 'Alwarpet', 'Ashok Nagar', 'Kodambakkam', 'Thiruvanmiyur', 'Perungudi', 'Tambaram'],
@@ -50,14 +50,14 @@ export const chennaiMetaPages: ServicePageData[] = [
     figures: [
       { type: 'mindmap', caption: 'The four parts of a store’s Meta ads that decide whether spend turns into delivered, paid orders.', after: 0, center: 'Meta ads for a store', branches: [
         { label: 'Catalogue', items: ['Prices and stock synced', 'Variants and clean images', 'Product sets by margin'] },
-        { label: 'Campaigns', items: ['Advantage+ shopping', 'Dynamic retargeting', 'Launch and offer tests'] },
+        { label: 'Campaigns', items: ['Advantage+ sales', 'Dynamic retargeting', 'Launch and offer tests'] },
         { label: 'Creative', items: ['UGC and try-on clips', 'Tamil and English hooks', 'New tests every week'] },
         { label: 'Profit', items: ['ROAS after COD and RTO', 'Delivered orders only', 'Festive budget plan'] },
       ] },
       { type: 'matrix', caption: 'Which Meta campaign set-up an online store should lead with, by catalogue size and purchase data.', after: 1, cols: ['Small catalogue', 'Large catalogue'], rows: ['Little purchase data', 'Steady purchase data'], cells: [
         { title: 'Hero products', body: 'A few lead products, broad audience, many creatives to build data' },
         { title: 'Catalogue + broad', body: 'Product sets by category, broad targeting, dynamic retargeting' },
-        { title: 'Advantage+ heroes', body: 'Advantage+ shopping on proven winners, new creatives weekly' },
+        { title: 'Advantage+ heroes', body: 'Advantage+ sales on proven winners, new creatives weekly' },
         { title: 'Full Advantage+', body: 'Advantage+ with the catalogue, capped spend on existing buyers' },
       ] },
       { type: 'steps', caption: 'A product catalogue check to run before catalogue ads go live, and every week after.', after: 3, steps: [
@@ -72,14 +72,14 @@ export const chennaiMetaPages: ServicePageData[] = [
       {
         heading: 'What an ecommerce Meta ads agency in Chennai should do',
         paragraphs: [
-          'Meta ads for an online store are different from Meta ads for a clinic or a showroom. The goal is a delivered, paid order, and the main tools are built around your product catalogue: Advantage+ shopping campaigns, dynamic product ads and Shops. An ecommerce Meta ads agency in Chennai should start from your catalogue, your margins and your courier data, not from interest lists and boosted posts.',
+          'Meta ads for an online store are different from Meta ads for a clinic or a showroom. The goal is a delivered, paid order, and the main tools are built around your product catalogue: Advantage+ sales campaigns, dynamic product ads and Shops. An ecommerce Meta ads agency in Chennai should start from your catalogue, your margins and your courier data, not from interest lists and boosted posts.',
           'In practice the work has four parts. The catalogue decides what Meta can show and whether prices and stock are right. Campaigns decide who sees which products. Creative decides whether anyone stops scrolling. Profit tracking decides whether the spend was worth it once COD refusals and returns come back. A weakness in any one of the four drags the others down, which is why we audit all of them before touching budgets.',
         ],
       },
       {
-        heading: 'Advantage+ shopping, catalogue ads and dynamic retargeting',
+        heading: 'Advantage+ sales campaigns, catalogue ads and dynamic retargeting',
         paragraphs: [
-          'Advantage+ shopping campaigns let Meta’s system find buyers across Facebook and Instagram with very little manual targeting. They work well once your pixel has steady purchase data, but they still need steering. Cap the share of budget that goes to existing customers, so the campaign does not take credit for people who would have bought anyway. Group creatives by product line so you can see what sells, and keep feeding it new creative.',
+          'Advantage+ sales campaigns (previously called Advantage+ shopping campaigns) let Meta’s system find buyers across Facebook and Instagram with very little manual targeting. They work well once your pixel has steady purchase data, but they still need steering. Cap the share of budget that goes to existing customers, so the campaign does not take credit for people who would have bought anyway. Group creatives by product line so you can see what sells, and keep feeding it new creative.',
           'Catalogue ads, also called dynamic product ads, show each person the products they viewed or similar ones. For most stores they are the most dependable retargeting: someone who looked at a Kanchipuram silk saree sees that saree, in stock, at the right price. Set the retargeting window to match how long your customers take to decide. A snack box is a quick purchase; a wedding saree can take weeks. For large catalogues, broad prospecting with product sets by category or margin also works well.',
         ],
       },
@@ -127,9 +127,9 @@ export const chennaiMetaPages: ServicePageData[] = [
       { label: 'Free ROAS calculator for COD-heavy stores', href: '/tools/roas-calculator/' },
     ],
     faqs: [
-      { q: 'What does an ecommerce Meta ads agency in Chennai do?', a: 'It runs Meta ads built around your online store: Advantage+ shopping and catalogue campaigns, dynamic retargeting, product feed health in Commerce Manager, creative testing with UGC in Tamil and English, and pixel plus Conversions API tracking. A good one judges results on delivered, paid orders after COD refusals and returns, not on the purchases Ads Manager shows.' },
+      { q: 'What does an ecommerce Meta ads agency in Chennai do?', a: 'It runs Meta ads built around your online store: Advantage+ sales and catalogue campaigns, dynamic retargeting, product feed health in Commerce Manager, creative testing with UGC in Tamil and English, and pixel plus Conversions API tracking. A good one judges results on delivered, paid orders after COD refusals and returns, not on the purchases Ads Manager shows.' },
       { q: 'How much does ecommerce Meta ads management cost?', a: 'It depends on your catalogue size, how many campaigns and markets you run, how many new creatives you need each month and how much tracking needs fixing. Ad spend is paid directly to Meta from your own ad account. Our management fee is quoted separately, as a fixed written quote after a free audit of your store and account.' },
-      { q: 'Should we use Advantage+ shopping or manual campaigns?', a: 'Usually both, at different stages. Advantage+ shopping works best once your pixel records steady purchases and you can supply new creatives often. Newer stores or small catalogues often start with a few manual campaigns around hero products to build data. We cap spend on existing customers so Advantage+ results are not overstated.' },
+      { q: 'Should we use Advantage+ sales campaigns or manual campaigns?', a: 'Usually both, at different stages. Advantage+ sales campaigns (previously Advantage+ shopping) work best once your pixel records steady purchases and you can supply new creatives often. Newer stores or small catalogues often start with a few manual campaigns around hero products to build data. We cap spend on existing customers so Advantage+ results are not overstated.' },
       { q: 'Why does Meta show a higher ROAS than our real sales?', a: 'Ads Manager counts an order when it is placed and credits it to an ad someone saw or clicked. COD orders refused at the door, returns and cancellations are not taken out. Duplicate pixel and server events can also double-count. We deduplicate events with order IDs and compare Meta’s numbers with delivered, paid orders every month.' },
       { q: 'Do you make UGC and ad creatives in Tamil?', a: 'Yes. We plan UGC-style clips, try-on and product videos, and static ads in Tamil, English and Tamil typed in English letters, depending on how your customers write. Tamil copy is written or checked by a fluent Tamil writer, not machine translated. We test versions side by side and keep the ones that bring delivered orders.' },
       { q: 'Will our ad account and catalogue stay in our name?', a: 'Yes. Your ad account, pixel, catalogue, Instagram account and Facebook page stay in your own business portfolio, and Meta bills ad spend to your card. We work through access you grant and can remove. If you stop working with us, every account, creative file and piece of data stays with you.' },
@@ -250,7 +250,7 @@ export const chennaiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
-      { label: 'Meta ads for online stores: catalogue and Advantage+ shopping in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
+      { label: 'Meta ads for online stores: catalogue and Advantage+ sales ads in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'Facebook lead ads and instant forms for Chennai businesses', href: '/chennai/facebook-ads-agency/' },
       { label: 'How to compare Facebook advertising firms in Chennai', href: '/chennai/facebook-advertising-agencies/' },
       { label: 'Organic social media and content marketing in Chennai', href: '/chennai/social-media-marketing-agency/' },
@@ -278,7 +278,7 @@ export const chennaiMetaPages: ServicePageData[] = [
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Facebook lead ads in Chennai',
     h1: 'Facebook Ads Agency in Chennai for *Leads Worth Calling*',
-    intro: 'Magnus Path is a Facebook ads agency in Chennai for clinics, showrooms, coaching centres, builders, interior firms and B2B suppliers that need enquiries, not likes. We build lead ads with instant forms that filter out time-wasters, target the Chennai areas you actually serve, send sales results back to Facebook from a simple sheet, and keep your ad comments clean. Meet us in Chennai.',
+    intro: 'Magnus Path is a Facebook ads agency in Chennai for clinics, showrooms, coaching centres, builders, interior firms and B2B suppliers that need enquiries, not likes. We build lead ads with instant forms that filter out time-wasters, target the Chennai areas you actually serve, track which leads become customers in a simple sheet, and keep your ad comments clean. Meet us in Chennai.',
     icon: 'social',
     facts: ['Lead forms that qualify', 'Lead quality checked weekly', 'Meet us at our Chennai office'],
     headings: {
@@ -296,7 +296,7 @@ export const chennaiMetaPages: ServicePageData[] = [
       { title: 'Lead ads and instant forms', body: 'Higher-intent forms with a review screen, conditional questions and short qualifying questions about area, budget and timeline, so enquiries arrive ready to call.' },
       { title: 'Local audiences by area', body: 'Radius and pin-code targeting around your branches, with ad copy that names the area, so you pay only to reach people who can actually visit or be served.' },
       { title: 'Feed, Marketplace and Reels placements', body: 'Ads made for the Facebook feed, Marketplace browsing and Facebook Reels, with results checked by placement and weak placements switched off.' },
-      { title: 'Lead quality and offline conversions', body: 'Every lead marked contacted, qualified, visited or sold in a shared sheet, then uploaded to Facebook so it learns which people actually buy. No extra software needed.' },
+      { title: 'Lead quality and offline conversions', body: 'Every lead marked contacted, qualified, visited or sold in a shared sheet, so campaigns are judged on real customers. Conversions API set-up once volume justifies it.' },
       { title: 'Page and comment moderation', body: 'Replies to ad comments and page messages in working hours, keyword filters for spam and abuse, and a short guide on what to answer in public.' },
       { title: 'Special ad categories handled properly', body: 'Ads for housing, jobs and credit declared in the right category from the start, with Meta’s targeting limits planned for instead of discovered at rejection.' },
       { title: 'Fast follow-up set-up', body: 'Instant lead alerts by email or WhatsApp to the person who calls back, plus a short call script, so every lead hears from you the same hour.' },
@@ -305,7 +305,7 @@ export const chennaiMetaPages: ServicePageData[] = [
       { title: 'Free Facebook ads audit', body: 'We look at your forms, targeting, placements, comments and recent leads, and show where the poor-quality ones come from.' },
       { title: 'Define a good lead', body: 'We agree what a qualified lead means for you and set up a simple shared sheet to mark each lead as contacted, qualified, visited or sold.' },
       { title: 'Forms, areas and launch', body: 'Qualifying forms, area targeting and placement-ready ads in Tamil and English go live, with lead alerts going straight to your team.' },
-      { title: 'Upload, tune, review', body: 'Sheet results go back to Facebook each week, weak forms and areas are cut, and we review cost per qualified lead with you every month.' },
+      { title: 'Track, tune, review', body: 'Sheet results are matched to campaigns each week, weak forms and areas are cut, and we review cost per qualified lead with you every month.' },
     ],
     platforms: ['Meta Ads Manager', 'Facebook Lead Ads', 'Instant Forms', 'Facebook Marketplace', 'Facebook Reels', 'Events Manager', 'Google Sheets', 'Meta Business Suite'],
     local: {
@@ -321,11 +321,11 @@ export const chennaiMetaPages: ServicePageData[] = [
         { title: 'Forms + follow-up', body: 'Interiors and B2B: detailed forms, sheet tracking, calls' },
       ] },
       { type: 'venn', caption: 'Instant forms and landing pages each have a job; the aim is leads your team wants to call.', after: 1, left: { title: 'Instant form', body: 'Fast to fill, stays inside Facebook, needs qualifying questions' }, right: { title: 'Landing page', body: 'More detail and proof, slower, filters out casual clickers' }, overlap: 'Leads worth calling back' },
-      { type: 'steps', caption: 'How lead results get back to Facebook without any extra software.', after: 3, steps: [
+      { type: 'steps', caption: 'How a simple lead sheet shows which Facebook campaigns bring real customers.', after: 3, steps: [
         { title: 'Lead arrives', body: 'Alert goes to the person who calls back' },
         { title: 'Mark the sheet', body: 'Contacted, qualified, visited or sold' },
-        { title: 'Weekly upload', body: 'Qualified and sold rows sent to Facebook' },
-        { title: 'Facebook learns', body: 'Delivery shifts toward people who buy' },
+        { title: 'Weekly match', body: 'Rows matched to forms, ads and areas' },
+        { title: 'Shift budget', body: 'Spend moves to ads that bring customers' },
       ] },
     ],
     guide: [
@@ -333,7 +333,7 @@ export const chennaiMetaPages: ServicePageData[] = [
         heading: 'What a Facebook ads agency in Chennai should do for local businesses',
         paragraphs: [
           'For a clinic, coaching centre, interior firm, builder, showroom or B2B supplier, Facebook ads are about enquiries: a form filled, a call made, a visit booked. The numbers that matter are cost per qualified lead and how many of those leads became customers. A Facebook ads agency in Chennai working for local and service businesses should be judged on those, not on reach, likes or cheap form fills.',
-          'That means four jobs. Choose the right lead format for how your customers decide. Show ads only in the areas you serve. Feed lead outcomes back to Facebook so it finds more people who buy. And look after your page and the comments under your ads, because local buyers read them before they pick up the phone.',
+          'That means four jobs. Choose the right lead format for how your customers decide. Show ads only in the areas you serve. Track which leads become customers, so campaigns are judged on sales rather than form fills. And look after your page and the comments under your ads, because local buyers read them before they pick up the phone.',
         ],
       },
       {
@@ -354,7 +354,7 @@ export const chennaiMetaPages: ServicePageData[] = [
         heading: 'Lead quality and offline conversions without a CRM',
         paragraphs: [
           'Facebook only knows that someone filled a form. It does not know who answered the phone, who booked a visit and who paid. Without that feedback it keeps finding more people who like filling forms. You do not need expensive software to fix this. A shared spreadsheet with one row per lead and a status column is enough to start, as long as your team keeps it up to date.',
-          'Once a week, export the qualified and sold rows and upload them as offline events in Events Manager, matched on the phone number or email the lead gave. Facebook can then optimise toward people who resemble your real customers. The same sheet shows which forms, areas and ads bring the leads that close, which is the report that matters most.',
+          'Once a week, match the qualified and sold rows to the form, ad and area they came from. That shows which campaigns bring real customers, which is the report that matters most, and you can also upload the results as offline events in Events Manager to see them next to your ads. A spreadsheet upload alone will not make Facebook optimise toward buyers. That needs a supported connection, such as the Conversions API for leads or an integration with your sales system, which is worth setting up once lead volume justifies it.',
         ],
         bullets: [
           'Lead ID, date, form name and ad name',
@@ -374,23 +374,23 @@ export const chennaiMetaPages: ServicePageData[] = [
         heading: 'Page and comment moderation, privacy and choosing an agency',
         paragraphs: [
           'Comments under ads are public. Unanswered questions, spam links and angry remarks all affect whether the next person enquires. Reply to genuine questions quickly, move detailed ones to WhatsApp or a call, hide spam and abuse, and use keyword filters for the obvious cases. Keep the page’s phone number, hours and reviews up to date, because people check the page before they call.',
-          'Lead forms collect personal data, so India’s Digital Personal Data Protection Act applies: tell people why you collect their details, use them only for that, and link a privacy notice in the form. We are not lawyers, so check specifics with yours. When you hire a Facebook ads agency in Chennai, ask how it defines a qualified lead, how it feeds results back to Facebook and who moderates comments. Ad spend is paid by you directly to Meta; our management fee is quoted after a free audit.',
+          'Lead forms collect personal data, so India’s Digital Personal Data Protection Act applies: tell people why you collect their details, use them only for that, and link a privacy notice in the form. We are not lawyers, so check specifics with yours. When you hire a Facebook ads agency in Chennai, ask how it defines a qualified lead, how it tracks which leads become customers and who moderates comments. Ad spend is paid by you directly to Meta; our management fee is quoted after a free audit.',
         ],
       },
     ],
     related: [
       { label: 'Meta advertising across Facebook, Instagram and WhatsApp in Chennai', href: '/chennai/meta-ads-agency/' },
-      { label: 'Meta ads for online stores: catalogue and Advantage+ shopping in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
+      { label: 'Meta ads for online stores: catalogue and Advantage+ sales ads in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'How to compare Facebook advertising firms in Chennai', href: '/chennai/facebook-advertising-agencies/' },
       { label: 'Google Ads and PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Digital marketing agency in Chennai', href: '/chennai/digital-marketing-agency/' },
       { label: 'Social media content and page management in Chennai', href: '/chennai/social-media-marketing-agency/' },
     ],
     faqs: [
-      { q: 'What does a Facebook ads agency in Chennai do for local businesses?', a: 'It plans and runs Facebook campaigns that bring enquiries: lead ads with qualifying instant forms, call and WhatsApp ads, area targeting around your branches, and placements across feed, Marketplace and Reels. A good one tracks which leads became customers, sends that back to Facebook and looks after the comments under your ads.' },
+      { q: 'What does a Facebook ads agency in Chennai do for local businesses?', a: 'It plans and runs Facebook campaigns that bring enquiries: lead ads with qualifying instant forms, call and WhatsApp ads, area targeting around your branches, and placements across feed, Marketplace and Reels. A good one tracks which leads became customers, judges campaigns on that and looks after the comments under your ads.' },
       { q: 'How much does it cost to run Facebook ads for a local business?', a: 'Cost depends on how many branches and services you advertise, how many forms and creatives you need, whether you want comment moderation, and how much lead tracking needs setting up. Ad spend is paid directly to Meta from your own account. Our management fee is quoted separately, as a fixed written quote after a free audit.' },
-      { q: 'Why are our Facebook leads poor quality?', a: 'Usually because the form is too easy, the targeting is too wide and Facebook never learns who actually bought. Switch to a higher-intent form, add two or three qualifying questions, limit ads to the areas you serve and upload qualified and sold leads back to Facebook every week. Then judge cost per qualified lead.' },
-      { q: 'Do we need a CRM to track lead quality?', a: 'No. A shared spreadsheet with one row per lead and a status column (contacted, qualified, visited, sold) is enough to start. Once a week the qualified and sold rows are uploaded to Facebook in Events Manager. If you later adopt sales software, the same process carries over without changing the ads.' },
+      { q: 'Why are our Facebook leads poor quality?', a: 'Usually because the form is too easy, the targeting is too wide and nobody checks which leads actually bought. Switch to a higher-intent form, add two or three qualifying questions, limit ads to the areas you serve and track every lead’s outcome in a sheet. Then judge campaigns on cost per qualified lead.' },
+      { q: 'Do we need a CRM to track lead quality?', a: 'Not to start. A shared spreadsheet with one row per lead and a status column (contacted, qualified, visited, sold) shows which campaigns bring real customers. To let Facebook optimise toward converted leads, you need a supported connection such as the Conversions API or an integration, which we set up once volume justifies it.' },
       { q: 'Can you target only certain areas of Chennai?', a: 'Yes. We set a radius around each branch or target pin codes and named areas, then check results by location and trim areas that bring leads who never visit. Ad copy names the area or a nearby landmark, which helps local buyers trust that you are close enough to be worth calling.' },
       { q: 'Do you reply to comments on our Facebook ads?', a: 'Yes, if you want us to. We reply to genuine questions in working hours, move detailed ones to WhatsApp or a call, hide spam and abuse, and set keyword filters. We agree with you in advance what can be answered publicly, such as timings or locations, and what should go to your team.' },
       { q: 'Can you run Facebook ads for real estate or job openings?', a: 'Yes. Ads for housing, employment and credit fall under Meta’s special ad categories, so they must be declared as such, and some targeting options like age and detailed interests are restricted. We plan the campaign around those limits from the start, using area targeting within the rules and forms that qualify enquiries.' },
@@ -524,7 +524,7 @@ export const chennaiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
-      { label: 'Meta ads for online stores: catalogue and Advantage+ shopping in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
+      { label: 'Meta ads for online stores: catalogue and Advantage+ sales ads in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'Meta advertising across Facebook, Instagram and WhatsApp in Chennai', href: '/chennai/meta-ads-agency/' },
       { label: 'Facebook lead ads for Chennai local and service businesses', href: '/chennai/facebook-ads-agency/' },
       { label: 'Digital marketing agency in Chennai', href: '/chennai/digital-marketing-agency/' },
