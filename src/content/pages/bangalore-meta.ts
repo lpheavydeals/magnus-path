@@ -302,7 +302,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
       { title: 'Lead ads and instant forms', body: 'Forms with the right mix of pre-filled and custom questions, the higher-intent setting where it helps, a clear privacy notice and a thank-you screen that sets the next step.' },
       { title: 'Placement choices on Facebook', body: 'Feed, Marketplace, Reels, Stories and in-stream video chosen and reviewed by lead quality, not left on every placement by default.' },
       { title: 'Local and service audiences', body: 'Radius and pin-code targeting around your locations, past-enquirer lists and lookalikes, built for clinics, schools, salons, gyms, realtors and home services.' },
-      { title: 'Lead quality and offline uploads', body: 'A simple sheet where your team marks each lead as contacted, qualified, won or junk, so campaigns are judged on real customers; a Conversions API link can follow once volume justifies it.' },
+      { title: 'Lead quality tracking', body: 'A simple sheet where your team marks each lead as contacted, qualified, won or junk, so campaigns are judged on real customers; a Conversions API link can follow once volume justifies it.' },
       { title: 'Page and comment moderation', body: 'Hidden-word filters, daily checks of ad comments, replies to genuine questions in your tone and a clear route for passing complaints to your team.' },
       { title: 'Fast lead delivery', body: 'Leads sent to email, WhatsApp or a Google Sheet within minutes, so your team calls while the person still remembers the ad.' },
       { title: 'Ad copy and creative for Facebook', body: 'Short videos, carousels and image ads in English and Kannada, with offers and proof that suit people choosing a local service.' },
@@ -311,7 +311,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
       { title: 'Free lead-quality audit', body: 'We review your Page, ad account, forms and a sample of recent leads with your team, and find where the poor-quality enquiries come from.' },
       { title: 'Rebuild forms and audiences', body: 'Forms get qualifying questions, targeting is tightened to the areas you serve, and a lead-outcome sheet is agreed with your sales team.' },
       { title: 'Launch and moderate', body: 'Campaigns go live on the chosen placements, comments are checked daily and new leads reach your team within minutes.' },
-      { title: 'Feed back and refine', body: 'Each week we review lead outcomes and adjust forms, audiences and creative.'.replace("'",'') if False else 'Each week we review lead outcomes from your sheet and adjust forms, audiences and creative. Monthly reviews happen at our Bengaluru office or on video.' },
+      { title: 'Feed back and refine', body: 'Each week we review lead outcomes from your sheet and adjust forms, audiences and creative. Monthly reviews happen at our Bengaluru office or on video.' },
     ],
     platforms: ['Meta Ads Manager', 'Facebook Pages', 'Instant Forms', 'Events Manager', 'Facebook Marketplace', 'Google Sheets', 'WhatsApp Business'],
     local: {
