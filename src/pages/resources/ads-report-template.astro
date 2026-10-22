@@ -1,0 +1,299 @@
+---
+// Lead magnet #14 (docs/free-tools-plan.md): monthly ecommerce ads report template.
+// Column headers, example rows and formulas mirror docs/ads-report-template-columns.md, which the coordinator
+// uses to generate /downloads/ads-report-template.xlsx and .csv. Example numbers only, not benchmarks.
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import '../../components/tools/calc.css';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+
+const slug = 'ads-report-template';
+const xlsx = `/downloads/${slug}.xlsx`;
+const csv = `/downloads/${slug}.csv`;
+const trail = [{ label: 'Resources', href: '/resources/' }];
+const current = 'Ecommerce Ads Report Template';
+
+// Example rows (same as docs/ads-report-template-columns.md): month, channel, spend, impressions, clicks, orders, revenue, new customers, gross margin
+type Row = { month: string; channel: string; spend: number; impr: number; clicks: number; orders: number; revenue: number; newc: number; gm: number; total?: boolean };
+const raw: Row[] = [
+  { month: 'Sep 2026', channel: 'Meta ads', spend: 60000, impr: 900000, clicks: 12000, orders: 150, revenue: 210000, newc: 110, gm: 0.45 },
+  { month: 'Sep 2026', channel: 'Google ads', spend: 40000, impr: 300000, clicks: 8000, orders: 120, revenue: 180000, newc: 70, gm: 0.45 },
+  { month: 'Sep 2026', channel: 'Amazon ads', spend: 30000, impr: 400000, clicks: 6000, orders: 140, revenue: 140000, newc: 90, gm: 0.30 },
+  { month: 'Oct 2026', channel: 'Meta ads', spend: 80000, impr: 1150000, clicks: 15500, orders: 210, revenue: 305000, newc: 150, gm: 0.45 },
+  { month: 'Oct 2026', channel: 'Google ads', spend: 45000, impr: 320000, clicks: 8600, orders: 140, revenue: 215000, newc: 75, gm: 0.45 },
+  { month: 'Oct 2026', channel: 'Amazon ads', spend: 35000, impr: 450000, clicks: 6800, orders: 165, revenue: 170000, newc: 100, gm: 0.30 },
+];
+const rows: Row[] = [];
+for (const m of ['Sep 2026', 'Oct 2026']) {
+  const r = raw.filter((x) => x.month === m);
+  rows.push(...r);
+  const sum = (k: keyof Row) => r.reduce((n, x) => n + (x[k] as number), 0);
+  const gp = r.reduce((n, x) => n + x.revenue * x.gm, 0);
+  rows.push({ month: m, channel: 'Total', spend: sum('spend'), impr: sum('impr'), clicks: sum('clicks'), orders: sum('orders'), revenue: sum('revenue'), newc: sum('newc'), gm: gp / sum('revenue'), total: true });
+}
+const inr = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 0 });
+const pct = (v: number, d = 1) => (v * 100).toFixed(d) + '%';
+const table = rows.map((r) => {
+  const gp = r.revenue * r.gm;
+  return { ...r, roas: (r.revenue / r.spend).toFixed(2) + 'x', aov: inr.format(r.revenue / r.orders), cac: inr.format(r.spend / r.newc), share: pct(r.newc / r.orders), gmTxt: pct(r.gm, r.total ? 1 : 0), profit: inr.format(gp - r.spend), be: (1 / r.gm).toFixed(2) + 'x' };
+});
+
+type Col = { name: string; formula?: string; what: string; read: string };
+const inputs: Col[] = [
+  { name: 'Month', what: 'The calendar month the row covers.', read: 'Pull every platform for exactly the same dates. Compare with last month, and with the same month last year if your sales are seasonal.' },
+  { name: 'Channel', what: 'One row per ad platform: Meta ads, Google ads, Amazon ads, Flipkart ads, quick-commerce ads.', read: 'Split further (prospecting and retargeting, brand and non-brand search) only when you will act on the split.' },
+  { name: 'Ad spend', what: 'What the platform charged for the month.', read: 'Take it from the platform report so the dates match. Use the same tax treatment every month (in India, the figure before GST if you claim input credit).' },
+  { name: 'Impressions', what: 'How many times your ads were shown.', read: 'Mostly useful for working out CTR. Big jumps usually mean a new audience or placement.' },
+  { name: 'Clicks', what: 'Link clicks to your store or listing.', read: 'Use link clicks, not all clicks, so likes and profile taps do not inflate the number.' },
+  { name: 'Orders', what: 'Orders the platform credits to its ads (attributed orders).', read: 'Each platform uses its own attribution window. Write it in the Notes column and keep it the same every month.' },
+  { name: 'Revenue', what: 'Sales value the platform credits to its ads.', read: 'Keep one definition (for example, excluding tax and shipping) across months and platforms.' },
+  { name: 'New customers', what: 'First-time buyers the channel brought in.', read: 'Use the platform\'s new-customer reporting where it exists (Amazon calls it new-to-brand), otherwise your store or CRM data.' },
+  { name: 'Gross margin %', what: 'What is left of revenue after product cost, shipping, packaging, payment and marketplace fees, before ads.', read: 'Marketplace channels usually have a lower margin because of fees, so give them their own figure.' },
+];
+const formulas: Col[] = [
+  { name: 'Returning-customer orders', formula: 'Orders − New customers', what: 'Orders from people who had bought before.', read: 'Normal on retargeting and brand search. A high share on prospecting means you may be paying to reach people who would have bought anyway.' },
+  { name: 'CTR', formula: 'Clicks ÷ Impressions', what: 'Click-through rate: how well the ad earns attention.', read: 'A falling CTR on the same audience often means the creative is tired and needs refreshing.' },
+  { name: 'CPC', formula: 'Ad spend ÷ Clicks', what: 'Cost per click.', read: 'Rises in busy seasons as more brands bid. Read it next to conversion rate: a higher CPC is fine if more clicks turn into orders.' },
+  { name: 'Conversion rate', formula: 'Orders ÷ Clicks', what: 'Share of clicks that become orders.', read: 'If it falls while CTR holds, look at the site, the price, delivery promises or stock before blaming the ads.' },
+  { name: 'AOV', formula: 'Revenue ÷ Orders', what: 'Average order value.', read: 'Bundles and free-shipping thresholds lift it; deep discounts lower it. Changes in AOV move ROAS without any change in the ads.' },
+  { name: 'ROAS', formula: 'Revenue ÷ Ad spend', what: 'Return on ad spend: revenue for every 1 spent on ads.', read: 'Compare it with the Break-even ROAS column, not with another brand\'s ROAS. Above break-even makes money before fixed costs; below loses it.' },
+  { name: 'ACoS', formula: 'Ad spend ÷ Revenue', what: 'Advertising cost of sale, the marketplace way of showing the same thing (1 ÷ ROAS).', read: 'Lower is better. A campaign is profitable when its ACoS is below your gross margin %.' },
+  { name: 'Cost per order', formula: 'Ad spend ÷ Orders', what: 'Ad cost for each order, new or returning.', read: 'Compare with gross profit per order (AOV × gross margin %) to see if an average order pays for its ads.' },
+  { name: 'CAC', formula: 'Ad spend ÷ New customers', what: 'Customer acquisition cost: what it costs to win one new customer.', read: 'Compare with what a customer is worth over time. A rising CAC with a steady ROAS means you are selling more to existing customers and fewer new ones.' },
+  { name: 'New-customer share', formula: 'New customers ÷ Orders', what: 'Share of orders from first-time buyers.', read: 'Shows whether a channel grows your customer base or mostly sells to people you already have.' },
+  { name: 'Gross profit', formula: 'Revenue × Gross margin %', what: 'Profit on the attributed sales before ad spend.', read: 'The money available to pay for ads, fixed costs and profit.' },
+  { name: 'Profit after ads', formula: 'Gross profit − Ad spend', what: 'What the channel earned after paying for its ads.', read: 'The best single number for ranking channels. It does not include fixed costs such as salaries, rent or software.' },
+  { name: 'Break-even ROAS', formula: '1 ÷ Gross margin %', what: 'The ROAS at which the channel neither makes nor loses money on its attributed orders.', read: 'With a 45% margin it is 2.22x; with 30% it is 3.33x. Lower margins need a higher ROAS just to break even.' },
+];
+const summary: Col[] = [
+  { name: 'MER (blended ROAS)', formula: 'Store revenue ÷ Total ad spend', what: 'Marketing efficiency ratio: all store revenue against all ad spend.', read: 'Platforms each take credit for some of the same orders. MER uses your store\'s real revenue, so it is the number to trust when channels overlap.' },
+  { name: 'Blended CAC', formula: 'Total ad spend ÷ Store new customers', what: 'Ad cost for each new customer across the whole store.', read: 'Usually lower than channel CAC because it includes customers from organic, email and word of mouth.' },
+  { name: 'Ad spend % of revenue', formula: 'Total ad spend ÷ Store revenue', what: 'How much of every sale goes to ads.', read: 'Track it month to month; it should stay well below your gross margin %.' },
+  { name: 'Store AOV', formula: 'Store revenue ÷ Store orders', what: 'Average order value across all orders, not just ad-attributed ones.', read: 'Compare with channel AOV to see whether ads bring smaller or bigger baskets than average.' },
+];
+
+const guide = [
+  { heading: 'What this ecommerce ads report template is for', paragraphs: ['Most store owners see ad results in four or five dashboards, each with its own definitions and each claiming credit for the same sales. This ecommerce ads report template puts every channel into one monthly sheet with the same columns, so you can compare Meta, Google, Amazon, Flipkart and quick-commerce ads side by side and decide where the next month\'s budget should go.', 'It is deliberately simple: nine numbers you type in per channel, and formulas that work out the rest. The Excel file has the formulas built in and works in Google Sheets too; the CSV has the same columns for any other tool.'] },
+  { heading: 'How to fill it in each month', paragraphs: ['Fill one row per channel, straight from each platform\'s report for the calendar month. Use the same attribution setting every month and write it in the Notes column. Take new customers from the platform where it reports them, or from your store data, and set a gross margin % for each channel after product cost, shipping, payment and marketplace fees.', 'Then fill the Summary sheet from your store\'s own reports: total revenue, orders and new customers. Once the habit is set it takes well under an hour, and it is the hour of the month that most improves ad decisions.'], bullets: ['ROAS = Revenue ÷ Ad spend', 'CAC = Ad spend ÷ New customers', 'AOV = Revenue ÷ Orders', 'Profit after ads = Revenue × Gross margin % − Ad spend', 'Break-even ROAS = 1 ÷ Gross margin %'] },
+  { heading: 'The numbers that matter most', paragraphs: ['ROAS is the number everyone quotes, but on its own it misleads. A channel with a lower margin needs a higher ROAS to make the same profit, which is why the template shows break-even ROAS and profit after ads next to it. Rank channels by profit after ads, then check ROAS against break-even to see how much room each one has.', 'CAC tells you what it costs to win a new customer, while cost per order includes people who would have come back anyway. If you want to grow, watch CAC and new-customer share; if you want short-term profit, watch profit after ads.'] },
+  { heading: 'Platform numbers vs store numbers', paragraphs: ['Add up the revenue each platform reports and it will often come to more than your store actually sold, because one order can be claimed by Meta, Google and an email click at the same time. That is not a mistake in your ecommerce ads report template; it is how attribution works. The Summary sheet fixes it by comparing total ad spend with your store\'s real revenue (MER) and real new customers (blended CAC).', 'Use channel rows to compare channels with each other, and the Summary sheet to judge whether advertising as a whole is paying off.'] },
+  { heading: 'Reading the example', paragraphs: ['The example rows are made-up numbers for an imaginary store, there to show how the columns work. Look at September: Amazon ads have the highest ROAS (4.67x) but the lowest profit after ads, because a 30% margin means break-even is 3.33x. Meta has the lowest ROAS but makes more profit than Amazon, because its margin is higher and it brings the largest share of new customers.', 'In October, Google ROAS rises while its CAC also rises: more of its orders came from returning customers. Neither number alone would show that. This is the kind of reading the template is built for.', 'The same logic works for any channel mix. A quick-commerce or Flipkart row with a strong ROAS but thin margin may deserve less budget than it seems; a prospecting campaign with a modest ROAS but a high new-customer share may deserve more, as long as those customers come back. Put your own margins in, and let profit after ads and CAC settle the argument rather than ROAS alone.'] },
+  { heading: 'Turning the report into decisions', paragraphs: ['Once a month, look at three things: which channel made the most profit after ads, which one brought new customers at an acceptable CAC, and whether MER moved. Then make one or two budget changes, not ten, and note them in the Notes column so next month\'s numbers can be read against them. Over a few months this ecommerce ads report template becomes the history you need to plan sale seasons and set targets for an agency or in-house team.'] },
+];
+const faqs = [
+  { q: 'What should an ecommerce ads report include?', a: 'At minimum: ad spend, revenue, orders and new customers per channel, plus the ratios worked out from them: ROAS, AOV, CAC and profit after ads, compared with your break-even ROAS. A good report also compares total ad spend with your store\'s own revenue (MER) so platform double-counting does not mislead you.' },
+  { q: 'How do you calculate ROAS and CAC?', a: 'ROAS is revenue divided by ad spend: 2,10,000 in revenue from 60,000 of spend is a ROAS of 3.5x. CAC is ad spend divided by new customers: 60,000 of spend that brought 110 new customers is a CAC of about 545. Both examples are from the sample rows in our template.' },
+  { q: 'What is the difference between ROAS and MER?', a: 'ROAS uses the revenue a single platform credits to its own ads. MER (marketing efficiency ratio) divides your store\'s total revenue by total ad spend across all channels. Because platforms often claim the same orders, the sum of channel ROAS can look better than reality; MER shows the overall picture.' },
+  { q: 'Why do my ad platforms report more sales than my store made?', a: 'Each platform counts an order as its own if the buyer saw or clicked its ad within its attribution window. One order can therefore be claimed by Meta, Google and Amazon-style ads at once. That is why the template has a Summary sheet based on store data, and why attribution settings belong in the Notes column.' },
+  { q: 'How often should I fill in the ads report?', a: 'Monthly is enough for most stores, using calendar months so every platform covers the same dates. Check day-to-day spend and results in the platforms themselves, and use this ecommerce ads report template for the monthly review where you compare channels and decide budget changes for the next month.' },
+  { q: 'Does the template work in Google Sheets?', a: 'Yes. Upload the .xlsx file to Google Drive and open it with Google Sheets; the formulas use standard functions that work in Excel, Google Sheets and LibreOffice. The CSV file has the same column headers with example values and no formulas, for importing into other tools or dashboards.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: current, href: `/resources/${slug}/` }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'Article', headline: 'Ecommerce Ads Report Template: Columns, Formulas and How to Read It', description: 'A free monthly ecommerce ads report template (Excel and CSV) with every column and formula explained: ROAS, CAC, AOV, new vs returning customers and profit after ads.', url: `${site.url}/resources/${slug}/`, mainEntityOfPage: `${site.url}/resources/${slug}/`, datePublished: '2026-10-22', dateModified: '2026-10-22', inLanguage: 'en-IN', author: { '@id': `${site.url}/#org` }, publisher: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'mindmap', caption: 'The four questions the monthly ads report answers for every channel.', after: 0, center: 'Monthly ads report', branches: [
+    { label: 'Cost', items: ['Ad spend', 'CPC and cost per order'] },
+    { label: 'Return', items: ['Revenue and ROAS', 'AOV'] },
+    { label: 'Customers', items: ['New vs returning', 'CAC'] },
+    { label: 'Profit', items: ['Gross margin %', 'Profit after ads', 'Break-even ROAS'] },
+  ] },
+  { type: 'venn', caption: 'Channel rows compare platforms; the summary sheet checks them against what your store really sold.', after: 3, left: { title: 'Ad platform reports', body: 'Spend, clicks and the orders each platform claims' }, right: { title: 'Store reports', body: 'Real revenue, orders and new customers' }, overlap: 'MER and blended CAC' },
+];
+const cta = `/free-ecommerce-audit/?from=${slug}#audit`;
+---
+<Base title="Ecommerce Ads Report Template (Excel + CSV) | Magnus Path" description="Free ecommerce ads report template in Excel and CSV: every column explained, with formulas for ROAS, CAC, AOV, new vs returning customers and profit after ads." schema={schema}>
+  <SimpleHero eyebrow="Free resource" h1="Ecommerce Ads Report Template: *Every Column Explained*" intro="This ecommerce ads report template gives you one monthly sheet for Meta, Google, Amazon, Flipkart and quick-commerce ads, with formulas for ROAS, CAC, AOV, new vs returning customers and profit after ads. Download it, then use this page to read each column." trail={trail} current={current}>
+    <div class="cl__heroact no-print">
+      <a class="btn btn--primary" href={xlsx} download>Download Excel (.xlsx) <span class="arrow" aria-hidden="true">↓</span></a>
+      <a class="btn btn--ghost" href={csv} download>Download CSV</a>
+    </div>
+    <p class="cl__printonly">Free resource from Magnus Path · {site.url.replace('https://', '')}/resources/{slug}/ · All amounts are example numbers.</p>
+  </SimpleHero>
+
+  <section class="section tp" id="template">
+    <div class="wrap tp__grid">
+      <aside class="calc__out tp__panel" aria-label="Download the template">
+        <span class="calc__status" data-state="good">Free · Excel, Google Sheets, CSV</span>
+        <h2>Get the template</h2>
+        <ul class="tp__files">
+          <li><strong>Excel (.xlsx)</strong> Channels sheet with formulas built in, a Summary sheet for store totals and a short how-to.</li>
+          <li><strong>CSV</strong> The same columns with example values, for Google Sheets, Looker Studio or any other tool.</li>
+        </ul>
+        <div class="tp__actions">
+          <a class="btn btn--primary btn--sm" href={xlsx} download>Download .xlsx <span class="arrow" aria-hidden="true">↓</span></a>
+          <a class="btn btn--sm tp__btnline" href={csv} download>Download .csv</a>
+          <button class="btn btn--sm tp__btnline" type="button" data-print>Print this guide</button>
+        </div>
+        <a class="btn btn--primary" href={cta}>Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+        <p class="calc__note">Want a second opinion on your numbers? The free audit includes a review of your ad accounts.</p>
+      </aside>
+
+      <div class="tp__main">
+        <div class="tp__block">
+          <div class="tp__head">
+            <h2>The template at a glance</h2>
+            <span class="example-badge">Example numbers</span>
+          </div>
+          <p class="tp__intro">An imaginary store, three channels, two months, amounts in ₹. The download has all 23 columns; this view shows the ones most people read first. Total rows are worked out from the sums, never by averaging the channel ratios.</p>
+          <div class="tp__scroll" role="region" aria-label="Example ads report, scrolls sideways" tabindex="0">
+            <table class="tp__table">
+              <thead><tr><th scope="col">Month</th><th scope="col">Channel</th><th scope="col">Ad spend</th><th scope="col">Revenue</th><th scope="col">Orders</th><th scope="col">New customers</th><th scope="col">ROAS</th><th scope="col">AOV</th><th scope="col">CAC</th><th scope="col">New share</th><th scope="col">Gross margin</th><th scope="col">Break-even ROAS</th><th scope="col">Profit after ads</th></tr></thead>
+              <tbody>
+                {table.map((r) => (
+                  <tr class={r.total ? 'is-total' : ''}>
+                    <td>{r.month}</td><th scope="row">{r.channel}</th><td>{inr.format(r.spend)}</td><td>{inr.format(r.revenue)}</td><td>{inr.format(r.orders)}</td><td>{inr.format(r.newc)}</td><td>{r.roas}</td><td>{r.aov}</td><td>{r.cac}</td><td>{r.share}</td><td>{r.gmTxt}</td><td>{r.be}</td><td>{r.profit}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="tp__note">Read across a row: Amazon ads have the highest ROAS in September but the lowest profit after ads, because their 30% margin pushes break-even ROAS up to 3.33x.</p>
+        </div>
+
+        <div class="tp__block">
+          <h2>Columns you fill in</h2>
+          <p class="tp__intro">Nine inputs per channel per month, taken from each ad platform's report and your own margin figures.</p>
+          <dl class="tp__cols">
+            {inputs.map((c) => (
+              <div class="tp__col"><dt>{c.name}</dt><dd><p>{c.what}</p><p class="tp__read"><b>How to read it:</b> {c.read}</p></dd></div>
+            ))}
+          </dl>
+        </div>
+
+        <div class="tp__block">
+          <h2>Columns the template works out</h2>
+          <p class="tp__intro">Each formula is written out so you can check it or rebuild it in your own sheet.</p>
+          <dl class="tp__cols">
+            {formulas.map((c) => (
+              <div class="tp__col"><dt>{c.name}<code>{c.formula}</code></dt><dd><p>{c.what}</p><p class="tp__read"><b>How to read it:</b> {c.read}</p></dd></div>
+            ))}
+          </dl>
+        </div>
+
+        <div class="tp__block">
+          <h2>The Summary sheet: store totals</h2>
+          <p class="tp__intro">One row per month. Total ad spend comes from the Channels sheet; store revenue, orders and new customers come from your Shopify, WooCommerce or store reports.</p>
+          <dl class="tp__cols">
+            {summary.map((c) => (
+              <div class="tp__col"><dt>{c.name}<code>{c.formula}</code></dt><dd><p>{c.what}</p><p class="tp__read"><b>How to read it:</b> {c.read}</p></dd></div>
+            ))}
+          </dl>
+          <p class="tp__note">Example: September store revenue of ₹7,20,000 against ₹1,30,000 of total ad spend gives an MER of 5.54x, higher than the 4.08x ROAS on ad-reported revenue, because store revenue also includes organic, email and repeat sales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="How to use a monthly ads report" />
+  <FAQ items={faqs} title="Ecommerce ads report template questions" />
+  <Related links={[
+    { label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' },
+    { label: 'Performance marketing for e-commerce', href: '/performance-marketing/' },
+    { label: 'E-commerce PPC agency', href: '/ecommerce-ppc-agency/' },
+    { label: 'Amazon PPC guide for India', href: '/blog/amazon-ppc-guide-india/' },
+    { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' },
+  ]} />
+  <LeadForm heading="Not sure your ads are making money?" sub="Request the free e-commerce audit. Our team reviews your ad accounts, tracking and store and sends a video walkthrough showing where spend is wasted, within 24 working hours." />
+</Base>
+
+<script>
+  document.querySelectorAll('[data-print]').forEach((btn) => btn.addEventListener('click', () => window.print()));
+  // Show every FAQ answer on paper, then restore the open/closed state.
+  let closed: HTMLDetailsElement[] = [];
+  window.addEventListener('beforeprint', () => { closed = Array.from(document.querySelectorAll<HTMLDetailsElement>('details:not([open])')); closed.forEach((d) => { d.open = true; }); });
+  window.addEventListener('afterprint', () => { closed.forEach((d) => { d.open = false; }); closed = []; });
+</script>
+
+<style>
+  .cl__heroact { display: flex; flex-wrap: wrap; gap: 12px; }
+  .cl__printonly { display: none; }
+  .tp { padding-top: clamp(20px, 3vw, 40px); }
+  .tp__grid { display: grid; gap: 20px; }
+  .tp__main { display: grid; gap: 20px; min-width: 0; }
+  .tp__panel { position: static; }
+  .tp__panel h2 { font-size: 1.4rem; }
+  .tp__files { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; font-size: 14.5px; color: var(--muted-on-dark); }
+  .tp__files strong { display: block; color: var(--white); font-size: 15px; }
+  .tp__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tp__btnline { background: transparent; color: var(--white); border-color: rgba(255,255,255,.3); padding-right: 18px; }
+  .tp__btnline:hover { border-color: var(--white); }
+  .tp__panel > .btn { justify-self: start; }
+  .tp__block { background: var(--white); border: 1px solid var(--line); border-radius: 28px; padding: clamp(20px, 3vw, 32px); display: grid; gap: 14px; min-width: 0; }
+  .tp__block h2 { font-size: clamp(1.3rem, 2.2vw, 1.65rem); }
+  .tp__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; }
+  .tp__head .example-badge { color: var(--accent-ink); opacity: 1; }
+  .tp__intro { color: var(--muted); font-size: 15px; }
+  .tp__note { font-size: 14.5px; padding: 12px 14px; border-radius: 14px; background: var(--accent-tint); color: #33373d; }
+  .tp__scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 16px; }
+  .tp__scroll:focus-visible { outline: 3px solid var(--accent); }
+  .tp__table { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tp__table th, .tp__table td { padding: 10px 12px; text-align: right; border-bottom: 1px solid var(--line); }
+  .tp__table thead th { background: var(--paper); font-size: 12.5px; font-weight: 600; color: var(--muted); text-align: right; vertical-align: bottom; white-space: normal; min-width: 72px; }
+  .tp__table thead th:nth-child(-n+2), .tp__table td:first-child, .tp__table tbody th { text-align: left; }
+  .tp__table tbody th { font-weight: 500; }
+  .tp__table tr.is-total { background: var(--accent-tint); font-weight: 600; }
+  .tp__table tr.is-total th { font-weight: 700; }
+  .tp__cols { margin: 0; display: grid; }
+  .tp__col { display: grid; gap: 6px; padding: 14px 0; border-top: 1px solid var(--line); }
+  .tp__col dt { font-weight: 600; font-size: 16.5px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+  .tp__col code { font: 500 13.5px/1.3 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding: 4px 9px; border-radius: 8px; background: var(--paper); border: 1px solid var(--line); color: var(--accent-ink); }
+  .tp__col dd { margin: 0; display: grid; gap: 4px; font-size: 15px; line-height: 1.6; color: #33373d; }
+  .tp__read { color: var(--muted); }
+  .tp__read b { color: var(--ink); font-weight: 600; }
+  @media (min-width: 760px) { .tp__col { grid-template-columns: 240px 1fr; gap: 20px; } .tp__col dt { align-items: flex-start; flex-direction: column; } }
+  @media (min-width: 980px) {
+    .tp__grid { grid-template-columns: minmax(0, 1fr) 320px; gap: 32px; align-items: start; }
+    .tp__panel { grid-column: 2; grid-row: 1; position: sticky; top: 100px; }
+    .tp__main { grid-column: 1; grid-row: 1; }
+  }
+
+  @media print {
+    @page { margin: 14mm 12mm; }
+    :global(html), :global(body) { background: #fff !important; color: #000 !important; font-size: 11pt; }
+    :global(.hdr), :global(.ftr), :global(.mbar), :global(.cta), :global(.skip), :global(.cursor), :global(.bc),
+    :global(.gde__toc), :global(.rl), :global(.sh__bg), :global(.plus), :global(.btn), :global(.faq summary span),
+    .tp__panel, .no-print { display: none !important; }
+    :global([data-reveal]) { opacity: 1 !important; transform: none !important; }
+    :global(.words .w) { opacity: 1 !important; filter: none !important; transform: none !important; animation: none !important; }
+    :global(.section), :global(.sh), :global(.fb) { padding: 0 0 14pt !important; }
+    :global(.wrap) { max-width: none !important; padding: 0 !important; }
+    :global(main) :global(h1), :global(main) :global(h2), :global(main) :global(h3), :global(main) :global(p), :global(main) :global(li), :global(main) :global(.lede) { color: #000 !important; }
+    :global(.sh h1) { font-size: 22pt !important; max-width: none !important; }
+    :global(.sh h1 em) { color: #000 !important; }
+    :global(a) { color: #000 !important; text-decoration: none !important; }
+    :global(h2), :global(h3), :global(summary) { break-after: avoid; page-break-after: avoid; }
+    :global(.fb) { break-inside: avoid; page-break-inside: avoid; }
+    :global(.gde), :global(.faq) { break-before: page; page-break-before: always; }
+    :global(.gde__body section), :global(.sk), :global(details) { break-inside: avoid; page-break-inside: avoid; }
+    :global(.faq details p) { padding: 0 0 10pt !important; color: #000 !important; }
+    :global(.faq summary) { padding: 8pt 0 4pt !important; }
+    .cl__printonly { display: block; font-size: 10pt; color: #000; border: 1px solid #000; padding: 6pt 8pt; }
+    .tp { padding: 0 !important; }
+    .tp__grid, .tp__main, .tp__block, .tp__cols { display: block; }
+    .tp__block { border: 0; border-radius: 0; padding: 0; margin: 0 0 16pt; background: #fff; }
+    .tp__block + .tp__block { border-top: 2px solid #000; padding-top: 10pt; break-before: page; page-break-before: always; }
+    .tp__block h2 { font-size: 15pt; margin-bottom: 4pt; }
+    .tp__intro, .tp__read, .tp__read b, .tp__col dd, .tp__note { color: #000 !important; }
+    .tp__note { background: none; border: 1px solid #000; border-radius: 0; margin-top: 6pt; }
+    .tp__head .example-badge { color: #000; }
+    .tp__scroll { overflow: visible; border: 0; border-radius: 0; }
+    .tp__table { font-size: 7.5pt; white-space: normal; }
+    .tp__table th, .tp__table td { padding: 3pt 4pt; border-bottom: 1px solid #999; color: #000; }
+    .tp__table thead th { background: none; color: #000; min-width: 0; border-bottom: 1.5px solid #000; }
+    .tp__table tr.is-total { background: none; border-top: 1.5px solid #000; }
+    .tp__col { display: grid; grid-template-columns: 34% 1fr; gap: 10pt; padding: 6pt 0; border-top: 1px solid #999; break-inside: avoid; page-break-inside: avoid; }
+    .tp__col dt { display: block; font-size: 10.5pt; }
+    .tp__col code { display: block; width: fit-content; max-width: 100%; white-space: normal; margin-top: 3pt; background: none; border: 1px solid #000; color: #000; font-size: 8.5pt; }
+    .tp__col dd { font-size: 9.5pt; }
+  }
+</style>

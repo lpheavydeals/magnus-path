@@ -129,6 +129,7 @@ export const businessWebsitePages2: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Product page checklist', href: '/resources/product-page-checklist/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'WordPress support for UK businesses', href: '/uk/wordpress-support/' },
       { label: 'Website maintenance services for US businesses', href: '/us/website-maintenance-services/' },

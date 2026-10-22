@@ -123,6 +123,8 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce glossary: terms explained', href: '/resources/ecommerce-glossary/' },
+      { label: 'Product page checklist', href: '/resources/product-page-checklist/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce SEO for Australian online stores', href: '/australia/ecommerce-seo/' },
       { label: 'Ecommerce SEO agency for UK brands', href: '/uk/ecommerce-seo-agency/' },
@@ -520,6 +522,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce glossary: terms explained', href: '/resources/ecommerce-glossary/' },
       { label: 'AI search optimisation agency (UK)', href: '/uk/ai-search-optimisation-agency/' },
       { label: 'Generative engine optimization agency (US)', href: '/us/generative-engine-optimization-agency/' },
       { label: 'Ecommerce SEO services', href: '/ecommerce-seo/' },
@@ -655,6 +658,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce glossary: terms explained', href: '/resources/ecommerce-glossary/' },
       { label: 'SEO expert support for Dubai businesses', href: '/uae/seo-services-dubai/' },
       { label: 'Monthly SEO packages', href: '/seo-packages/' },
       { label: 'SEO company in Chennai', href: '/chennai/seo-company/' },

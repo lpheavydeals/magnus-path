@@ -251,6 +251,7 @@ export const uaeMarketingPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Festive sale playbook', href: '/resources/festive-sale-playbook/' },
       { label: 'Facebook ads agency in Dubai', href: '/uae/facebook-ads-agency-dubai/' },
       { label: 'Meta ads agency in Dubai', href: '/uae/meta-ads-agency-dubai/' },
       { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },

@@ -124,6 +124,7 @@ export const usPpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ad budget planner', href: '/tools/ad-budget-planner/' },
       { label: 'Ecommerce Meta ads agency (US)', href: '/us/ecommerce-meta-ads-agency/' },
       { label: 'Amazon PPC agency for Amazon.com sellers', href: '/us/amazon-ppc-agency/' },
       { label: 'E-commerce marketing agency for US brands', href: '/us/ecommerce-marketing-agency/' },

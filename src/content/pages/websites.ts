@@ -133,6 +133,8 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Product page checklist', href: '/resources/product-page-checklist/' },
+      { label: 'Ecommerce launch checklist', href: '/resources/ecommerce-launch-checklist/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
@@ -283,6 +285,9 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Product page checklist', href: '/resources/product-page-checklist/' },
+      { label: 'Ecommerce launch checklist', href: '/resources/ecommerce-launch-checklist/' },
+      { label: 'Conversion rate calculator', href: '/tools/conversion-rate-calculator/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce website development in Dubai', href: '/uae/ecommerce-website-development-dubai/' },
       { label: 'Shopify development company', href: '/shopify-development/' },
@@ -421,6 +426,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce launch checklist', href: '/resources/ecommerce-launch-checklist/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'WooCommerce agency for UK shops', href: '/uk/woocommerce-agency/' },
       { label: 'WooCommerce agency for US stores', href: '/us/woocommerce-agency/' },
@@ -558,6 +564,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce launch checklist', href: '/resources/ecommerce-launch-checklist/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce Meta ads agency in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
@@ -701,6 +708,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce launch checklist', href: '/resources/ecommerce-launch-checklist/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce Meta ads agency in Bangalore', href: '/bangalore/ecommerce-meta-ads-agency/' },
       { label: 'PPC company in Bangalore', href: '/bangalore/ppc-company/' },

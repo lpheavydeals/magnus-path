@@ -20,6 +20,8 @@ faqs:
   - q: "Which courier is best for reducing return to origin in India?"
     a: "There is no single best courier. Performance varies by region, pin code and product type. Use a shipping aggregator or your own data to compare delivery success, first-attempt delivery and RTO by courier and zone, then route orders to the courier that performs best for each area. Review the allocation regularly, because performance changes."
 related:
+  - label: "RTO and COD cost calculator"
+    href: "/tools/rto-cod-calculator/"
   - label: "Performance marketing for ecommerce brands"
     href: "/performance-marketing/"
   - label: "Shopify store development in India"

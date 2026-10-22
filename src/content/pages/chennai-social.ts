@@ -124,6 +124,7 @@ export const chennaiSocialPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Festive sale playbook', href: '/resources/festive-sale-playbook/' },
       { label: 'Facebook ads agency in Chennai', href: '/chennai/facebook-ads-agency/' },
       { label: 'Meta ads agency in Chennai', href: '/chennai/meta-ads-agency/' },
       { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },

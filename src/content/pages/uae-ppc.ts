@@ -123,6 +123,7 @@ export const uaePpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ad budget planner', href: '/tools/ad-budget-planner/' },
       { label: 'Ecommerce Meta ads agency in Dubai', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
       { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },
       { label: 'Performance marketing agency in Dubai for all paid channels', href: '/uae/performance-marketing-agency-dubai/' },

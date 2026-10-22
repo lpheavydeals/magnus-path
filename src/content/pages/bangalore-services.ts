@@ -252,6 +252,7 @@ export const bangaloreServicesPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ad budget planner', href: '/tools/ad-budget-planner/' },
       { label: 'Facebook ads agency in Bangalore', href: '/bangalore/facebook-ads-agency/' },
       { label: 'Meta ads agency in Bangalore', href: '/bangalore/meta-ads-agency/' },
       { label: 'Google Ads agency in Bangalore', href: '/bangalore/google-ads-agency/' },

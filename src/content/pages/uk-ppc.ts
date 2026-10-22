@@ -118,6 +118,7 @@ export const ukPpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ad budget planner', href: '/tools/ad-budget-planner/' },
       { label: 'Ecommerce Meta ads agency (UK)', href: '/uk/ecommerce-meta-ads-agency/' },
       { label: 'Google Ads agency in London', href: '/london/google-ads-agency/' },
       { label: 'PPC agency in London for local businesses', href: '/london/ppc-agency/' },

@@ -122,6 +122,10 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Festive sale playbook', href: '/resources/festive-sale-playbook/' },
+      { label: 'Ecommerce ads report template', href: '/resources/ads-report-template/' },
+      { label: 'LTV and CAC calculator', href: '/tools/ltv-cac-calculator/' },
+      { label: 'Free ad budget planner', href: '/tools/ad-budget-planner/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Facebook advertising agencies in India', href: '/facebook-advertising-agencies/' },
@@ -264,6 +268,8 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce glossary: terms explained', href: '/resources/ecommerce-glossary/' },
+      { label: 'Ecommerce profit margin calculator', href: '/tools/profit-margin-calculator/' },
       { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Amazon and Noon agency for UAE sellers', href: '/uae/amazon-noon-agency/' },
       { label: 'Amazon agency for UK sellers', href: '/uk/amazon-agency/' },
@@ -526,6 +532,8 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
+      { label: 'Ecommerce profit margin calculator', href: '/tools/profit-margin-calculator/' },
       { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Amazon account management services', href: '/amazon-account-management/' },
       { label: 'Amazon advertising agency', href: '/amazon-marketing-agency/' },
@@ -653,6 +661,8 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
+      { label: 'Discount calculator', href: '/tools/discount-calculator/' },
       { label: 'Performance marketing agency for e-commerce', href: '/performance-marketing/' },
       { label: 'Digital marketing for food and FMCG brands', href: '/industries/food-fmcg/' },
       { label: 'Marketing for beauty and Ayurveda brands', href: '/industries/beauty-ayurveda/' },

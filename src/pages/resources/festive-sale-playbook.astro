@@ -1,0 +1,390 @@
+---
+// Lead magnet #13 (docs/free-tools-plan.md): 6-week festive sale playbook, week by week, tasks tagged by area
+// (offers, stock, creatives, ads, site, CRM), plus market variations (Diwali, Black Friday, Ramadan/Eid, EOFY).
+// Interactive ticks saved in localStorage (per page key); print stylesheet; PDF made by the coordinator.
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import '../../components/tools/calc.css';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+
+const slug = 'festive-sale-playbook';
+const pdf = `/downloads/${slug}.pdf`;
+const trail = [{ label: 'Resources', href: '/resources/' }];
+const current = 'Festive Sale Playbook';
+
+type Item = { id: string; title: string; detail: string; india?: string; intl?: string; checker?: string; tag?: string };
+type Stage = { id: string; title: string; intro: string; items: Item[] };
+const stages: Stage[] = [
+  { id: 'w6', title: '6 weeks before: plan', intro: 'Decide what the sale is for, what you will offer and what you can afford to spend.', items: [
+    { id: 'a1', tag: 'Offers', title: 'Set the sale goal and choose the offer', detail: 'Revenue, new customers or clearing stock: pick one main goal. Then choose the offer type (percentage off, bundle, gift with purchase, spend-more-save-more) and check what it does to your margin per order.' },
+    { id: 'a2', tag: 'Stock', title: 'Forecast demand and order stock', detail: 'Use your last big sale and your current sales rate as a guide. Allow for manufacturing or import lead times, and order packaging and inserts at the same time.' },
+    { id: 'a3', tag: 'Ads', title: 'Set the ad budget and the numbers to judge it by', detail: 'Total budget, how it is split across weeks, and your break-even ROAS at the sale margin. A deeper discount means a lower margin, so the ROAS you need to break even goes up.' },
+    { id: 'a4', tag: 'Site', title: 'Schedule site changes and set a freeze date', detail: 'Plan any theme, app or checkout changes for the next three weeks, and agree no major changes in the final two weeks before the sale.' },
+    { id: 'a5', tag: 'CRM', title: 'Plan the message calendar', detail: 'Dates for every email, WhatsApp and SMS send, and the segments: past buyers, best customers, subscribers who never bought, and recent buyers to leave out.' },
+    { id: 'a6', tag: 'Creatives', title: 'Brief the shoot and the creators', detail: 'A shot list with every size you need, and creator agreements with posting dates, usage rights and their own tracked codes.' },
+  ] },
+  { id: 'w5', title: '5 weeks before: build', intro: 'Create the content, the terms and the capacity the sale will need.', items: [
+    { id: 'b1', tag: 'Creatives', title: 'Shoot product and festive content', detail: 'Product shots on sale-ready backgrounds, short videos, gift-set and bundle images, and creator content for ads.' },
+    { id: 'b2', tag: 'Offers', title: 'Write the offer terms', detail: 'Start and end dates with times and time zone, exclusions, limits per customer, whether codes stack, and how returns work for sale items.', india: 'If you discount from MRP, show the MRP and selling price clearly.', intl: 'UK and Australian rules expect "was" prices to be genuine prices you actually charged, not inflated for the sale.' },
+    { id: 'b3', tag: 'Stock', title: 'Plan packing and courier capacity', detail: 'Extra packing help, daily pickup slots agreed with couriers, and enough boxes, tape and inserts for your highest-volume days.' },
+    { id: 'b4', tag: 'Site', title: 'Build the sale collection and gift guides', detail: 'A sale landing page or collection, gift guides by budget or recipient, and bundles set up as real products with their own stock.' },
+    { id: 'b5', tag: 'Ads', title: 'Start building warm audiences', detail: 'Video and engagement campaigns now give you bigger retargeting pools when the sale starts, while ad costs are usually lower than at the peak.' },
+    { id: 'b6', tag: 'CRM', title: 'Open an early-access sign-up', detail: 'Offer early access or a reminder to people who sign up by email or WhatsApp, and promote it on the site, in ads and on social.' },
+  ] },
+  { id: 'w4', title: '4 weeks before: prepare', intro: 'Set everything up in draft so the last weeks are for testing, not building.', items: [
+    { id: 'c1', tag: 'Ads', title: 'Build sale campaigns and feeds in draft', detail: 'Sale ad sets or campaigns ready to switch on, and sale prices with start and end dates in your Merchant Center feed so Shopping ads show the right price.' },
+    { id: 'c2', tag: 'Site', title: 'Check speed on the sale pages', detail: 'Test the home page, sale collection and top product pages on mobile, and remove apps or scripts you no longer use before traffic rises.' },
+    { id: 'c3', tag: 'Offers', title: 'Test every discount rule', detail: 'Codes, automatic discounts, bundles, free-shipping thresholds and how they combine with each payment method, on mobile and desktop.' },
+    { id: 'c4', tag: 'Creatives', title: 'Edit ad variations for every placement', detail: 'Offer-first, product-first and creator-led versions, with hooks in the first seconds of each video and sizes for feed, stories and reels.' },
+    { id: 'c5', tag: 'CRM', title: 'Write and approve message templates', detail: 'Emails designed and tested on phones. WhatsApp message templates submitted early, because they need approval before you can send them.' },
+    { id: 'c6', tag: 'Stock', title: 'Send stock to marketplace warehouses', detail: 'If you sell on Amazon, Flipkart, Noon or others, meet their inbound cut-off dates for the sale period; they are announced by each marketplace.' },
+  ] },
+  { id: 'w3', title: '3 weeks before: warm up', intro: 'Test creatives, tease the sale and lock in marketplace deals.', items: [
+    { id: 'd1', tag: 'Ads', title: 'Test creatives and raise prospecting budgets gradually', detail: 'Find your winning ads now, while there is time to learn. Budget rises in steps rather than one jump give the platforms time to adjust.' },
+    { id: 'd2', tag: 'CRM', title: 'Tease the sale', detail: 'A "coming soon" send, gift guides, and a reminder to join early access. Do not reveal the full offer yet if you want sign-ups.' },
+    { id: 'd3', tag: 'Site', title: 'Add the announcement bar and a sale FAQ', detail: 'A countdown or bar with the real start date, and a short FAQ on delivery cut-offs, returns, payment options and how codes work.' },
+    { id: 'd4', tag: 'Offers', title: 'Confirm marketplace deals', detail: 'Submit deals for marketplace sale events by their deadlines, and check that marketplace prices and site prices tell a consistent story.' },
+    { id: 'd5', tag: 'Stock', title: 'Count and sync stock across channels', detail: 'A physical count of your top products, stock synced between site and marketplaces, and low-stock alerts switched on.' },
+  ] },
+  { id: 'w2', title: '2 weeks before: final checks', intro: 'Freeze the site, schedule everything and test the full journey.', items: [
+    { id: 'e1', tag: 'Ads', title: 'Load the winning ads with start and end dates', detail: 'Schedule sale ads to switch on and off by themselves, pause weak ads, and set budget caps so a mistake cannot overspend overnight.' },
+    { id: 'e2', tag: 'Site', title: 'Walk through the sale journey on a phone', detail: 'Ad click to product, cart, discount and payment, on Android and iPhone, using every payment method.', india: 'Test UPI, cards and COD, including your COD limits and confirmation messages.', intl: 'Test cards, Apple Pay, Google Pay, PayPal and pay-later options such as Klarna, Clearpay, Afterpay, Zip, Tabby or Tamara.' },
+    { id: 'e3', tag: 'CRM', title: 'Schedule every send and test it', detail: 'Emails and WhatsApp messages scheduled, recent buyers and unsubscribes excluded, and test sends checked on a phone.' },
+    { id: 'e4', tag: 'Offers', title: 'Prepare a back-up lever', detail: 'A second-phase offer or bundle ready in case sales are slow, and a rule for what happens when a best seller is about to sell out.' },
+    { id: 'e5', tag: 'Stock', title: 'Publish delivery cut-off dates', detail: 'Agree with couriers the last order date for delivery before the festival or holiday, and show it on the site and in messages.', intl: 'In the UK, carriers publish last posting dates before Christmas; build your cut-off around them.' },
+  ] },
+  { id: 'w1', title: 'Sale week: launch', intro: 'Open early access, switch on the sale and set up daily monitoring.', items: [
+    { id: 'f1', tag: 'CRM', title: 'Send early access to subscribers and best customers', detail: 'Your list gets first access, often a day or two before the public sale. It rewards sign-ups and spreads orders over more days.' },
+    { id: 'f2', tag: 'Ads', title: 'Increase retargeting and brand search', detail: 'Raise retargeting budgets and make sure your brand name searches are covered, so competitors do not take shoppers who are already looking for you.' },
+    { id: 'f3', tag: 'Site', title: 'Check sale prices went live correctly', detail: 'Prices on the site, in the cart and in your Shopping feed match, banners show the right dates, and nothing is marked down that should not be.' },
+    { id: 'f4', tag: 'Ads', title: 'Set up a one-page daily report', detail: 'Spend, revenue, ROAS, new customers and stock of your top products, checked every morning and evening.' },
+    { id: 'f5', tag: 'CRM', title: 'Brief customer support', detail: 'Ready answers on delivery dates, returns, codes and payments, quick replies in WhatsApp, and extended hours for the busiest days.' },
+  ] },
+  { id: 'sale', title: 'Sale days', intro: 'Watch closely and move fast, but do not panic over one slow day.', items: [
+    { id: 'g1', tag: 'Ads', title: 'Move budget to what is working and in stock', detail: 'Shift spend towards the best-performing products and campaigns, and pause ads for anything that has sold out.' },
+    { id: 'g2', tag: 'Site', title: 'Watch checkout and payment failures', detail: 'Check orders per hour, failed payments and site errors. A broken payment method or discount code costs the most on the busiest days.' },
+    { id: 'g3', tag: 'CRM', title: 'Send the start, middle and last-day reminders', detail: 'With abandoned-cart and browse-abandonment messages running. Only say "last chance" when it really is.' },
+    { id: 'g4', tag: 'Offers', title: 'Use the back-up lever only if needed', detail: 'If sales are behind plan, switch on the second-phase offer or bundle you prepared rather than deepening the discount on the fly.' },
+    { id: 'g5', tag: 'Stock', title: 'Dispatch every day and keep customers informed', detail: 'Same-day or next-day dispatch, tracking messages on time, and a quick note to customers if anything is delayed.' },
+  ] },
+  { id: 'after', title: 'After the sale: review', intro: 'Tidy up, keep the new customers, and write down what you learned.', items: [
+    { id: 'h1', tag: 'Site', title: 'Remove sale banners, codes and prices', detail: 'Restore normal prices on the site and in feeds, switch off codes and countdowns, and check nothing still shows the sale.' },
+    { id: 'h2', tag: 'Ads', title: 'Bring budgets back to normal', detail: 'Pause sale ads, return to everyday campaigns, and keep a short retargeting window for people who visited during the sale but did not buy.' },
+    { id: 'h3', tag: 'CRM', title: 'Thank buyers and ask for reviews', detail: 'A thank-you message, a review request after delivery, and a plan to win a second order from new customers in the weeks after.' },
+    { id: 'h4', tag: 'Offers', title: 'Review profit, not just revenue', detail: 'Revenue, ad spend, profit after ads, new customers, average order value, returns and stock left. Write three things to repeat and three to change.' },
+    { id: 'h5', tag: 'Stock', title: 'Process returns and plan leftover stock', detail: 'Handle returns quickly, restock what comes back in good condition, and decide what to do with slow sellers before the next season.' },
+  ] },
+];
+const total = stages.reduce((n, s) => n + s.items.length, 0);
+
+const variations = [
+  { title: 'Diwali and the Indian festive season', market: 'India', points: ['Plan back from the start of the festive season (Navratri and the big marketplace sales), not from Diwali itself. Festival dates move each year with the lunar calendar.', 'Gifting drives demand, so gift sets, gift wrap and "delivered before Diwali" cut-off dates matter more than usual.', 'Cash on delivery orders tend to rise, so tighten COD limits and confirmation messages before the rush.', 'Marketplace events such as Flipkart Big Billion Days and Amazon Great Indian Festival usually run in September or October; the platforms announce dates.'] },
+  { title: 'Black Friday and Cyber Monday', market: 'US, UK, Australia, UAE', points: ['Black Friday is the Friday after US Thanksgiving, in late November. Many brands now run a full week through Cyber Monday.', 'Ad costs usually rise as everyone bids at once, so test creatives and build warm audiences in October.', 'In the UAE the same period is often called White Friday on Amazon.ae and Noon.', 'Christmas cut-off dates and Boxing Day (UK, Australia) follow soon after, so plan stock for all three.'] },
+  { title: 'Ramadan and Eid', market: 'UAE, plus India and the UK', points: ['Dates move about 11 days earlier each year and are confirmed by moon sighting; plan with expected dates and confirm closer to the time.', 'Shopping and browsing shift towards the evening and late night, after iftar, so schedule ads and messages for those hours.', 'Eid gifting and outfits peak in the last part of Ramadan: publish "delivered before Eid" cut-offs clearly.', 'Keep creative respectful and avoid food-heavy daytime messaging during fasting hours.'] },
+  { title: 'EOFY sales', market: 'Australia', points: ['The Australian financial year ends on 30 June, and end-of-financial-year sales run through June.', 'Start the six-week plan in mid-May. Businesses and sole traders buying before year-end are a useful audience for work and tech products.', 'Prices are shown including GST, and Afterpay, Zip and Klarna are widely used.', 'Click Frenzy and Black Friday come later in the year; keep notes from EOFY to plan them.'] },
+];
+
+const guide = [
+  { heading: 'Why festive sale planning starts six weeks out', paragraphs: ['Most of what makes a sale work happens before it starts. Stock has to be ordered, creatives shot, offers checked against margin, WhatsApp templates approved and campaigns built. Festive sale planning that starts a week before ends up with a rushed discount, generic ads and stock-outs on the best sellers. This playbook spreads the work over six weeks, then covers the sale days and the review afterwards.', 'Use it as a sale campaign checklist for any big event: Diwali, Black Friday, Ramadan and Eid, EOFY, a marketplace event or your own anniversary sale. Count back six weeks from the day the sale, or the festive season, actually starts.'] },
+  { heading: 'Get the offer and the margin right first', paragraphs: ['A discount comes straight out of your margin, and your margin decides what you can spend on ads. Take an example product priced at 1,000 with a 50% gross margin. At full price, break-even ROAS is 2.0. Give 20% off and the price falls to 800 while costs stay at 500, so margin drops to 37.5% and break-even ROAS rises to about 2.7. The same campaign that was profitable before the sale can lose money during it.', 'That is why the playbook starts with the goal and the offer. Bundles, gifts with purchase and spend-more-save-more offers often protect margin better than a flat discount. Check every option with the numbers before you design a single banner.'] },
+  { heading: 'Ads: test early, scale during the sale', paragraphs: ['Ad costs usually rise around big sales because many brands bid for the same shoppers. You cannot avoid that, but you can arrive ready. Build warm audiences in weeks five and four, test creatives in week three so you know your winners, and schedule sale ads with start and end dates. During the sale, move budget towards what is working and in stock, and keep brand search covered.', 'Judge results against the break-even ROAS for the sale margin, not your everyday target, and look at new customers as well as revenue.', 'Marketplaces need their own plan. Amazon, Flipkart and Noon run their own sale events with deal submission deadlines and inbound stock cut-offs, and sponsored ads on those platforms get more competitive at the same time. Decide early which channel gets which products and how much of the budget, so your own store and your marketplace listings do not end up bidding against each other for the same shoppers.'] },
+  { heading: 'Stock, delivery and support', paragraphs: ['Running out of a best seller on day one wastes the ad spend that brought shoppers to it. Order stock early, count it before the sale, keep channels in sync and switch off ads for anything that sells out. For festivals, delivery before the day is part of the promise: agree pickup capacity with couriers and publish a clear last order date.', 'In India, cash on delivery orders tend to rise during festive sales, and so do returns to origin; confirm COD orders before dispatch. Brief whoever answers customers with ready replies on delivery, returns and payment. Questions arrive in bursts during a sale, and a slow reply on WhatsApp often means a lost order or a cancelled COD parcel.'] },
+  { heading: 'Email and WhatsApp: your lowest-cost sales', paragraphs: ['Past buyers and subscribers already know you, and reaching them costs little compared with ads. Grow the list before the sale with an early-access sign-up, send early access first, then remind at the start, middle and end. Leave out people who bought very recently and respect unsubscribes. In festive sale planning this channel is often the difference between a profitable sale and a busy one.', 'Keep the messages useful rather than loud. A gift guide, a reminder of the delivery cut-off date or a note that a popular size is running low gives people a reason to open. Five near-identical "sale is live" messages give them a reason to unsubscribe, which costs you the list you will need for the next sale.'] },
+  { heading: 'After the sale: measure profit, not revenue', paragraphs: ['Revenue numbers flatter sales. Within a week, work out profit after ads and discounts, the number of new customers and what each cost, returns, and stock left over. Our ads report template gives you the columns and formulas. Write down what to repeat and what to change while it is fresh, and keep the notes with this sale campaign checklist for next time.'] },
+];
+const faqs = [
+  { q: 'When should I start planning a festive sale?', a: 'Start about six weeks before the sale or festive season begins. That gives time to order stock, shoot creatives, check offers against margin, get WhatsApp templates approved, build campaigns in draft and test the site. For Diwali, count back from the start of the festive season and the big marketplace sales, not from Diwali day itself.' },
+  { q: 'How much discount should I offer in a sale?', a: 'There is no right percentage for every brand. Work out your margin after the discount, then the break-even ROAS at that margin, and check whether your ads can beat it. Bundles, gifts with purchase and spend-more-save-more offers often protect margin better than a deeper flat discount. Our ROAS calculator helps with the maths.' },
+  { q: 'Should I increase my ad budget during the sale?', a: 'Usually yes, but in steps and against the right target. Build warm audiences and test creatives in the weeks before, then raise budgets on proven ads during the sale. Judge results against the break-even ROAS at your sale margin, pause ads on sold-out products and keep brand search covered.' },
+  { q: 'How do I plan a Ramadan or Eid sale when the dates change?', a: 'Plan with the expected dates published for the year and confirm closer to the time, because Ramadan and Eid depend on moon sighting and move about 11 days earlier each year. Schedule ads and messages for the evening and late night, and publish clear delivery cut-off dates for Eid gifting.' },
+  { q: 'What should I do after a sale ends?', a: 'Remove sale prices, banners and codes from the site and feeds, bring ad budgets back to normal, thank buyers and ask for reviews, and plan a second order for new customers. Then review profit after ads and discounts, new customers, returns and leftover stock, and note what to repeat next time.' },
+  { q: 'Can I save my progress on this sale campaign checklist?', a: 'Yes. Ticks are saved in this browser using local storage and are never sent to us, so you can come back each week. Use reset to start again for the next sale. Download the PDF or print the page to share the plan with your team, agency or warehouse.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: current, href: `/resources/${slug}/` }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'Article', headline: 'Festive Sale Playbook: a 6-Week Sale Campaign Checklist', description: 'A week-by-week festive sale planning checklist covering offers, stock, creatives, ads, site and CRM, with notes for Diwali, Black Friday, Ramadan and Eid, and EOFY.', url: `${site.url}/resources/${slug}/`, mainEntityOfPage: `${site.url}/resources/${slug}/`, datePublished: '2026-10-22', dateModified: '2026-10-22', inLanguage: 'en-IN', author: { '@id': `${site.url}/#org` }, publisher: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'steps', caption: 'The six weeks before a big sale, plus the sale itself and the review.', after: 0, steps: [
+    { title: 'Plan', body: 'Goal, offer, budget, stock orders' },
+    { title: 'Build', body: 'Content, terms, sale pages' },
+    { title: 'Prepare and test', body: 'Draft campaigns, discounts, speed' },
+    { title: 'Sell', body: 'Early access, then watch daily' },
+    { title: 'Review', body: 'Profit, new customers, notes' },
+  ] },
+  { type: 'venn', caption: 'Ads find new buyers; your own list brings back the ones you already have.', after: 4, left: { title: 'Paid ads', body: 'Reach new shoppers; costs usually rise at the peak' }, right: { title: 'Email and WhatsApp', body: 'Past buyers and subscribers at a low cost per send' }, overlap: 'Retarget, remind, close the sale' },
+];
+const meta = {
+  title: 'Festive Sale Planning Playbook: 6-Week Checklist | Magnus Path',
+  description: 'Festive sale planning made simple: a free 6-week sale campaign checklist for Diwali, Black Friday, Ramadan and EOFY, covering offers, stock, ads, site and CRM.',
+  h1: 'Festive Sale Playbook: a *6-Week Plan* for Your Biggest Sale',
+  intro: 'This playbook turns festive sale planning into a week-by-week list: 43 tasks across offers, stock, creatives, ads, site and CRM, starting six weeks before the sale. Use it as a sale campaign checklist for Diwali, Black Friday, Ramadan and Eid, or EOFY.',
+  guideTitle: 'How to plan a festive sale that makes a profit',
+  faqTitle: 'Festive sale planning questions',
+  stageWord: 'Part',
+  doneLabel: 'All done: sale wrapped up',
+  leadHeading: 'Planning a big sale? Get your store and ads checked first',
+  leadSub: 'Request the free e-commerce audit. Our team reviews your store, ad accounts and offers and sends a video walkthrough with the fixes to make before the sale, within 24 working hours.',
+};
+const related = [
+  { label: 'Performance marketing for e-commerce', href: '/performance-marketing/' },
+  { label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' },
+  { label: 'How to reduce RTO and COD returns', href: '/blog/how-to-reduce-rto-cod-returns/' },
+  { label: 'Flipkart account management', href: '/flipkart-account-management/' },
+  { label: 'Amazon advertising agency', href: '/amazon-marketing-agency/' },
+];
+---
+<Base title={meta.title} description={meta.description} schema={schema}>
+  <SimpleHero eyebrow="Free resource" h1={meta.h1} intro={meta.intro} trail={trail} current={current}>
+    <div class="cl__heroact no-print">
+      <a class="btn btn--primary" href={pdf} download>Download PDF <span class="arrow" aria-hidden="true">↓</span></a>
+      <button class="btn btn--ghost" type="button" data-print>Print checklist</button>
+    </div>
+    <p class="cl__printonly">Free resource from Magnus Path · {site.url.replace('https://', '')}/resources/{slug}/ · Tick each box as you finish it.</p>
+  </SimpleHero>
+
+  <section class="section cl" data-checklist={slug} data-done-label={meta.doneLabel} id="checklist">
+    <div class="wrap cl__grid">
+      <aside class="calc__out cl__panel" aria-label="Your progress">
+        <span class="calc__status" data-status data-state="warn">Not started</span>
+        <div>
+          <div class="calc__big"><span data-pct>0</span>%</div>
+          <p class="calc__biglabel" aria-live="polite"><span data-done>0</span> of {total} points done</p>
+        </div>
+        <div class="cl__bar" role="progressbar" aria-label="Checklist progress" aria-valuemin="0" aria-valuemax={total} aria-valuenow="0"><span data-bar></span></div>
+        <ol class="cl__stages">
+          {stages.map((s, i) => <li><a href={`#stage-${s.id}`}>{i + 1}. {s.title}</a><span data-stage-count={s.id}>0/{s.items.length}</span></li>)}
+        </ol>
+        <div class="cl__actions">
+          <a class="btn btn--primary btn--sm" href={pdf} download>Download PDF <span class="arrow" aria-hidden="true">↓</span></a>
+          <button class="btn btn--sm cl__btnline" type="button" data-print>Print</button>
+          <button class="btn btn--sm cl__btnline" type="button" data-reset>Reset</button>
+        </div>
+        <a class="btn btn--primary" href={`/free-ecommerce-audit/?from=${slug}#audit`}>Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+        <p class="calc__note" data-storage-note>Your ticks are saved in this browser only. Nothing is sent to us.</p>
+      </aside>
+
+      <div class="cl__main">
+        {stages.map((s, i) => (
+          <section class="cl__stage" id={`stage-${s.id}`} data-stage={s.id}>
+            <div class="cl__head">
+              <h2><span class="cl__kicker">{meta.stageWord} {i + 1} of {stages.length}</span>{s.title}</h2>
+              <span class="cl__chip" data-stage-count={s.id}>0/{s.items.length}</span>
+            </div>
+            <p class="cl__intro">{s.intro}</p>
+            <ol class="cl__items">
+              {s.items.map((it) => (
+                <li class="cl__item">
+                  <label>
+                    <input type="checkbox" data-item={it.id} />
+                    <span class="cl__txt"><strong>{it.title}</strong><span>{it.detail}</span>{it.tag && <em class="cl__tag">{it.tag}</em>}{it.checker && <em class="cl__tag">Website checker: {it.checker}</em>}</span>
+                  </label>
+                  {(it.india || it.intl) && (
+                    <div class="cl__notes">
+                      {it.india && <p><b>India:</b> {it.india}</p>}
+                      {it.intl && <p><b>UK, US, UAE, Australia:</b> {it.intl}</p>}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section fv" id="variations">
+    <div class="wrap fv__in">
+      <div class="fv__head">
+        <p class="label">Market variations</p>
+        <h2>Diwali, Black Friday, Ramadan and EOFY: what changes</h2>
+        <p class="fv__lede">The six-week plan stays the same. These are the differences to build in for each big sale moment. Dates for lunar festivals and marketplace events change every year: confirm them closer to the time.</p>
+      </div>
+      <div class="fv__grid">
+        {variations.map((v) => (
+          <article class="fv__card">
+            <p class="fv__market">{v.market}</p>
+            <h3>{v.title}</h3>
+            <ul>{v.points.map((pt) => <li>{pt}</li>)}</ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title={meta.guideTitle} />
+  <FAQ items={faqs} title={meta.faqTitle} />
+  <Related links={related} />
+  <LeadForm heading={meta.leadHeading} sub={meta.leadSub} />
+</Base>
+
+<script>
+  // Interactive checklist: ticks saved per page in localStorage (wrapped in try/catch for private mode / blocked storage).
+  const root = document.querySelector<HTMLElement>('[data-checklist]');
+  if (root) {
+    const key = 'mp-checklist:' + root.dataset.checklist;
+    const boxes = Array.from(root.querySelectorAll<HTMLInputElement>('input[data-item]'));
+    let storageOk = true;
+    const load = (): string[] => {
+      try { const v = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(v) ? v : []; } catch { storageOk = false; return []; }
+    };
+    const save = () => {
+      try { localStorage.setItem(key, JSON.stringify(boxes.filter((b) => b.checked).map((b) => b.dataset.item))); } catch { storageOk = false; note(); }
+    };
+    const note = () => {
+      if (storageOk) return;
+      root.querySelectorAll('[data-storage-note]').forEach((el) => { el.textContent = 'Your browser is blocking storage, so ticks will clear when you leave this page. Download the PDF to keep a copy.'; });
+    };
+    const saved = new Set(load());
+    boxes.forEach((b) => { b.checked = saved.has(b.dataset.item || ''); });
+    const render = () => {
+      const done = boxes.filter((b) => b.checked).length;
+      const pct = boxes.length ? Math.round((done / boxes.length) * 100) : 0;
+      root.querySelectorAll('[data-done]').forEach((el) => { el.textContent = String(done); });
+      root.querySelectorAll('[data-pct]').forEach((el) => { el.textContent = String(pct); });
+      const bar = root.querySelector<HTMLElement>('[data-bar]');
+      if (bar) bar.style.width = pct + '%';
+      root.querySelector('[role=progressbar]')?.setAttribute('aria-valuenow', String(done));
+      root.querySelectorAll<HTMLElement>('[data-stage]').forEach((st) => {
+        const inside = Array.from(st.querySelectorAll<HTMLInputElement>('input[data-item]'));
+        const n = inside.filter((b) => b.checked).length;
+        root.querySelectorAll<HTMLElement>(`[data-stage-count="${st.dataset.stage}"]`).forEach((el) => {
+          el.textContent = `${n}/${inside.length}`;
+          el.toggleAttribute('data-full', n === inside.length);
+        });
+      });
+      boxes.forEach((b) => b.closest('.cl__item')?.classList.toggle('is-done', b.checked));
+      const status = root.querySelector<HTMLElement>('[data-status]');
+      if (status) {
+        status.dataset.state = pct === 100 ? 'good' : pct >= 50 ? 'good' : 'warn';
+        status.textContent = done === 0 ? 'Not started' : pct === 100 ? (root.dataset.doneLabel || 'All done') : pct >= 50 ? 'More than halfway' : 'Under way';
+      }
+    };
+    boxes.forEach((b) => b.addEventListener('change', () => { save(); render(); }));
+    root.querySelectorAll('[data-reset]').forEach((btn) => btn.addEventListener('click', () => {
+      if (!confirm('Clear all ticks on this checklist?')) return;
+      boxes.forEach((b) => { b.checked = false; });
+      try { localStorage.removeItem(key); } catch { /* storage blocked: nothing saved anyway */ }
+      render();
+    }));
+    note();
+    render();
+  }
+  document.querySelectorAll('[data-print]').forEach((btn) => btn.addEventListener('click', () => window.print()));
+  // Show every FAQ answer on paper, then restore the open/closed state.
+  let closed: HTMLDetailsElement[] = [];
+  window.addEventListener('beforeprint', () => { closed = Array.from(document.querySelectorAll<HTMLDetailsElement>('details:not([open])')); closed.forEach((d) => { d.open = true; }); });
+  window.addEventListener('afterprint', () => { closed.forEach((d) => { d.open = false; }); closed = []; });
+</script>
+
+<style>
+  .cl__heroact { display: flex; flex-wrap: wrap; gap: 12px; }
+  .cl__printonly { display: none; }
+  .cl { padding-top: clamp(20px, 3vw, 40px); }
+  .cl__grid { display: grid; gap: 20px; }
+  .cl__main { display: grid; gap: 20px; min-width: 0; }
+  .cl__panel { position: static; }
+  .cl__bar { height: 10px; border-radius: 999px; background: rgba(255,255,255,.14); overflow: hidden; }
+  .cl__bar span { display: block; height: 100%; width: 0; background: var(--accent); border-radius: inherit; transition: width .4s var(--ease); }
+  .cl__stages { list-style: none; margin: 0; padding: 0; display: grid; }
+  .cl__stages li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line-dark); font-size: 14.5px; }
+  .cl__stages a { color: var(--white); text-decoration: none; }
+  .cl__stages a:hover { color: var(--accent-soft); }
+  .cl__stages span { color: var(--muted-on-dark); font-variant-numeric: tabular-nums; }
+  .cl__stages span[data-full] { color: #86efac; }
+  .cl__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cl__btnline { background: transparent; color: var(--white); border-color: rgba(255,255,255,.3); padding-right: 18px; }
+  .cl__btnline:hover { border-color: var(--white); }
+  .cl__panel > .btn { justify-self: start; }
+  .cl__stage { background: var(--white); border: 1px solid var(--line); border-radius: 28px; padding: clamp(20px, 3vw, 32px); display: grid; gap: 12px; scroll-margin-top: 110px; }
+  .cl__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .cl__head h2 { font-size: clamp(1.3rem, 2.2vw, 1.65rem); }
+  .cl__kicker { display: block; font: 600 12.5px/1.2 var(--font-body); color: var(--accent-ink); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+  .cl__chip { flex: none; font-size: 13px; font-weight: 600; padding: 6px 11px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  .cl__chip[data-full] { background: #dcfce7; border-color: #86efac; color: #166534; }
+  .cl__intro { color: var(--muted); font-size: 15px; }
+  .cl__items { list-style: none; margin: 0; padding: 0; display: grid; }
+  .cl__item { border-top: 1px solid var(--line); padding: 14px 0; display: grid; gap: 8px; }
+  .cl__item:last-child { padding-bottom: 0; }
+  .cl__item label { display: grid; grid-template-columns: 24px 1fr; gap: 14px; align-items: start; cursor: pointer; }
+  .cl__item input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--accent); cursor: pointer; }
+  .cl__txt { display: grid; gap: 4px; }
+  .cl__txt strong { font-size: 16.5px; line-height: 1.4; }
+  .cl__txt span { color: #33373d; font-size: 15px; line-height: 1.6; }
+  .cl__txt .cl__tag { justify-self: start; font-style: normal; font-size: 12.5px; font-weight: 600; color: var(--accent-ink); background: var(--accent-tint); border-radius: 999px; padding: 3px 10px; margin-top: 2px; }
+  .cl__item.is-done .cl__txt strong { text-decoration: line-through; text-decoration-color: var(--accent); text-decoration-thickness: 2px; color: var(--muted); }
+  .cl__notes { margin-left: 38px; display: grid; gap: 6px; }
+  .cl__notes p { margin: 0; padding: 8px 12px; border-radius: 12px; background: var(--paper); font-size: 14px; line-height: 1.55; color: var(--muted); }
+  .cl__notes b { color: var(--ink); font-weight: 600; }
+  @media (max-width: 520px) { .cl__notes { margin-left: 0; } }
+  @media (min-width: 980px) {
+    .cl__grid { grid-template-columns: minmax(0, 1fr) 330px; gap: 32px; align-items: start; }
+    .cl__panel { grid-column: 2; grid-row: 1; position: sticky; top: 100px; }
+    .cl__main { grid-column: 1; grid-row: 1; }
+  }
+
+  .fv { padding-top: clamp(20px, 3vw, 40px); }
+  .fv__in { display: grid; gap: 28px; }
+  .fv__head { display: grid; gap: 14px; max-width: 72ch; }
+  .fv__head h2 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); }
+  .fv__lede { color: var(--muted); }
+  .fv__grid { display: grid; gap: 16px; }
+  .fv__card { background: var(--white); border: 1px solid var(--line); border-radius: 24px; padding: clamp(20px, 2.6vw, 28px); display: grid; gap: 10px; align-content: start; }
+  .fv__market { font: 600 12.5px/1.2 var(--font-body); color: var(--accent-ink); text-transform: uppercase; letter-spacing: .06em; }
+  .fv__card h3 { font-size: 1.25rem; }
+  .fv__card ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 15px; line-height: 1.6; color: #33373d; }
+  @media (min-width: 760px) { .fv__grid { grid-template-columns: 1fr 1fr; } }
+
+  @media print {
+    @page { margin: 14mm 12mm; }
+    :global(html), :global(body) { background: #fff !important; color: #000 !important; font-size: 11pt; }
+    :global(.hdr), :global(.ftr), :global(.mbar), :global(.cta), :global(.skip), :global(.cursor), :global(.bc),
+    :global(.gde__toc), :global(.rl), :global(.sh__bg), :global(.plus), :global(.btn), :global(.faq summary span),
+    .cl__panel, .no-print { display: none !important; }
+    :global([data-reveal]) { opacity: 1 !important; transform: none !important; }
+    :global(.words .w) { opacity: 1 !important; filter: none !important; transform: none !important; animation: none !important; }
+    :global(.section), :global(.sh), :global(.fb) { padding: 0 0 14pt !important; }
+    :global(.wrap) { max-width: none !important; padding: 0 !important; }
+    :global(main) :global(h1), :global(main) :global(h2), :global(main) :global(h3), :global(main) :global(p), :global(main) :global(li), :global(main) :global(.lede) { color: #000 !important; }
+    :global(.sh h1) { font-size: 22pt !important; max-width: none !important; }
+    :global(.sh h1 em) { color: #000 !important; }
+    :global(a) { color: #000 !important; text-decoration: none !important; }
+    :global(h2), :global(h3), :global(summary) { break-after: avoid; page-break-after: avoid; }
+    :global(.gde), :global(.faq) { break-before: page; page-break-before: always; }
+    :global(.gde__body section), :global(.sk), :global(details) { break-inside: avoid; page-break-inside: avoid; }
+    :global(.faq details p) { padding: 0 0 10pt !important; color: #000 !important; }
+    :global(.faq summary) { padding: 8pt 0 4pt !important; }
+    .fv { break-before: page; page-break-before: always; padding: 0 !important; }
+    .fv__card { border: 1px solid #000; border-radius: 0; break-inside: avoid; page-break-inside: avoid; background: #fff; }
+    .fv__market, .fv__lede, .fv__card ul { color: #000 !important; }
+    .cl__printonly { display: block; font-size: 10pt; color: #000; border: 1px solid #000; padding: 6pt 8pt; }
+    .cl { padding: 0 !important; }
+    .cl__grid { display: block; }
+    :global(.fb) { break-inside: avoid; page-break-inside: avoid; }
+    :global(.fb .label) { break-after: avoid; }
+    .cl__stage, .cl__items { display: block; }
+    .cl__stage { border: 0; border-radius: 0; padding: 0; margin: 0 0 16pt; background: #fff; }
+    .cl__head, .cl__intro { break-after: avoid; page-break-after: avoid; margin-bottom: 6pt; }
+    .cl__item:first-child { break-before: avoid; page-break-before: avoid; }
+    .cl__stage + .cl__stage { border-top: 2px solid #000; padding-top: 10pt; }
+    .cl__head h2 { font-size: 15pt; }
+    .cl__kicker, .cl__intro, .cl__txt span, .cl__notes p, .cl__notes b { color: #000 !important; }
+    .cl__chip { display: none; }
+    .cl__txt .cl__tag { background: none; border: 1px solid #000; color: #000; }
+    .cl__item { padding: 7pt 0; border-top: 1px solid #999; break-inside: avoid; page-break-inside: avoid; }
+    .cl__item input { accent-color: #000; width: 14pt; height: 14pt; }
+    .cl__item.is-done .cl__txt strong { color: #000; text-decoration-color: #000; }
+    .cl__txt strong { font-size: 11.5pt; }
+    .cl__txt span { font-size: 10pt; }
+    .cl__notes p { background: none; border-left: 2px solid #000; border-radius: 0; padding: 0 0 0 8pt; font-size: 9.5pt; }
+  }
+</style>

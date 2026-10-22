@@ -122,6 +122,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
       { label: 'Facebook advertising agencies in India', href: '/facebook-advertising-agencies/' },
       { label: 'Performance marketing for D2C brands', href: '/performance-marketing/' },
       { label: 'E-commerce SEO services', href: '/ecommerce-seo/' },
@@ -249,6 +250,8 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Festive sale playbook', href: '/resources/festive-sale-playbook/' },
+      { label: 'RTO and COD cost calculator', href: '/tools/rto-cod-calculator/' },
       { label: 'Ecommerce Meta ads agency in Coimbatore', href: '/coimbatore/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Shopify development for fashion brands', href: '/shopify-development/' },
@@ -388,6 +391,8 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Discount calculator', href: '/tools/discount-calculator/' },
+      { label: 'Free shipping threshold calculator', href: '/tools/free-shipping-threshold-calculator/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Performance marketing for beauty brands', href: '/performance-marketing/' },
       { label: 'Amazon account management', href: '/amazon-account-management/' },
@@ -514,6 +519,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free shipping threshold calculator', href: '/tools/free-shipping-threshold-calculator/' },
       { label: 'Quick commerce marketing on Blinkit, Zepto and Instamart', href: '/quick-commerce-marketing/' },
       { label: 'Amazon marketing agency for food brands', href: '/amazon-marketing-agency/' },
       { label: 'Performance marketing on Meta and Google', href: '/performance-marketing/' },
@@ -1070,6 +1076,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'RTO and COD cost calculator', href: '/tools/rto-cod-calculator/' },
       { label: 'Facebook advertising agencies in Chennai', href: '/chennai/facebook-advertising-agencies/' },
       { label: 'Ecommerce Meta ads agency in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'Google Ads agency in Chennai', href: '/chennai/google-ads-agency/' },

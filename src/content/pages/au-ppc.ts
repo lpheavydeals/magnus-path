@@ -119,6 +119,7 @@ export const auPpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ad budget planner', href: '/tools/ad-budget-planner/' },
       { label: 'Ecommerce Meta ads agency in Australia', href: '/australia/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce marketing agency for Australian brands', href: '/australia/ecommerce-marketing-agency/' },
       { label: 'Ecommerce SEO for Australian online stores', href: '/australia/ecommerce-seo/' },

@@ -130,6 +130,8 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Festive sale playbook', href: '/resources/festive-sale-playbook/' },
+      { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
       { label: 'Facebook advertising agencies (UK)', href: '/uk/facebook-advertising-agencies/' },
       { label: 'Facebook ads agency (UK)', href: '/uk/facebook-ads-agency/' },
       { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
@@ -269,6 +271,7 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
       { label: 'Facebook advertising agencies in Australia', href: '/australia/facebook-advertising-agencies/' },
       { label: 'Facebook ads agency in Australia', href: '/australia/facebook-ads-agency/' },
       { label: 'WordPress developer for Australian businesses', href: '/australia/wordpress-developer/' },
@@ -407,6 +410,7 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
       { label: 'Meta ads agency in Sharjah', href: '/uae/meta-ads-agency-sharjah/' },
       { label: 'Meta ads agency in Abu Dhabi', href: '/uae/meta-ads-agency-abu-dhabi/' },
       { label: 'Facebook advertising agencies in Dubai', href: '/uae/facebook-advertising-agencies-dubai/' },

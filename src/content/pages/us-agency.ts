@@ -133,6 +133,7 @@ export const usAgencyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
       { label: 'Facebook advertising agencies (US)', href: '/us/facebook-advertising-agencies/' },
       { label: 'Facebook ads agency (US)', href: '/us/facebook-ads-agency/' },
       { label: 'White label SEO services for US agencies', href: '/us/white-label-seo/' },

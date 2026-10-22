@@ -121,6 +121,7 @@ export const indiaMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ad budget planner', href: '/tools/ad-budget-planner/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Meta advertising across Facebook, Instagram and WhatsApp', href: '/meta-ads-agency/' },
       { label: 'Facebook lead ads for local and service businesses', href: '/facebook-ads-agency/' },
@@ -248,6 +249,8 @@ export const indiaMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce ads report template', href: '/resources/ads-report-template/' },
+      { label: 'Free UTM link builder', href: '/tools/utm-builder/' },
       { label: 'Meta catalogue and Advantage+ ads for online stores', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Facebook lead ads and instant forms for local businesses', href: '/facebook-ads-agency/' },
       { label: 'Comparing Facebook ad agencies: questions and red flags', href: '/facebook-advertising-agencies/' },

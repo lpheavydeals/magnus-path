@@ -120,6 +120,8 @@ export const indiaPpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free UTM link builder', href: '/tools/utm-builder/' },
+      { label: 'Free ad budget planner', href: '/tools/ad-budget-planner/' },
       { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'PPC company in Bangalore', href: '/bangalore/ppc-company/' },
