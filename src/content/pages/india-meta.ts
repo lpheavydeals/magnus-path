@@ -121,6 +121,7 @@ export const indiaMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Meta advertising across Facebook, Instagram and WhatsApp', href: '/meta-ads-agency/' },
       { label: 'Facebook lead ads for local and service businesses', href: '/facebook-ads-agency/' },
       { label: 'How to compare Facebook ad agencies in India', href: '/facebook-advertising-agencies/' },

@@ -122,6 +122,7 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Facebook advertising agencies in India', href: '/facebook-advertising-agencies/' },
       { label: 'Facebook ads agency in India', href: '/facebook-ads-agency/' },

@@ -66,3 +66,4 @@
 - [x] Bangalore page: workshops at the Bengaluru office included in scope; much of the build done by the Chennai team (confirmed 18 Oct 2026)
 - [ ] ChatGPT ads: ₹25,000 / month + ad spend; facts on /chatgpt-ads-agency/ (country availability, CPM/CPC, pixel, restricted categories) re-checked against OpenAI's help pages before launch
 - [ ] London Google Business Profile at the E18 address (most London keywords show a Maps pack); UK phone number in `site.offices`
+- [ ] Free ecommerce website checker: create a Google PageSpeed Insights API key (Google Cloud → APIs → PageSpeed Insights API → Credentials), restrict it to the live domain, paste it into `psiKey` in `src/data/site.ts`

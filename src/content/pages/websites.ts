@@ -133,6 +133,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Shopify experts for Australian brands', href: '/australia/shopify-agency/' },
@@ -282,6 +283,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce website development in Dubai', href: '/uae/ecommerce-website-development-dubai/' },
       { label: 'Shopify development company', href: '/shopify-development/' },
       { label: 'WooCommerce development services', href: '/woocommerce-development/' },
@@ -419,6 +421,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'WooCommerce agency for UK shops', href: '/uk/woocommerce-agency/' },
       { label: 'WooCommerce agency for US stores', href: '/us/woocommerce-agency/' },
       { label: 'E-commerce website development company', href: '/ecommerce-website-development/' },
@@ -555,6 +558,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce Meta ads agency in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'E-commerce website development company', href: '/ecommerce-website-development/' },
@@ -697,6 +701,7 @@ export const websitePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce Meta ads agency in Bangalore', href: '/bangalore/ecommerce-meta-ads-agency/' },
       { label: 'PPC company in Bangalore', href: '/bangalore/ppc-company/' },
       { label: 'Performance marketing agency in Bangalore', href: '/bangalore/performance-marketing-agency/' },

@@ -1,0 +1,57 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import StoreChecker from '../../components/tools/StoreChecker.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+const trail = [{ label: 'Free Tools', href: '/tools/' }];
+const guide = [
+  { heading: 'What this ecommerce website checker looks at', paragraphs: ['Most online stores do not lose sales because of one big problem. They lose them to a handful of small ones: a slow first screen on mobile, a product page without a size guide, an offer banner that expired last month, a checkout that asks for an account. This ecommerce website checker looks at ten of those points in a few minutes, so you know where to start.', 'Four checks are automatic. When you enter your store link, the tool runs Google\'s PageSpeed Insights test on a simulated mobile connection and reads the results for speed, loading, layout stability and basic search set-up. The other six are short questions about what shoppers see on your product pages, cart and checkout, because those are things software cannot judge reliably from the outside.'] },
+  { heading: 'Speed and Core Web Vitals', paragraphs: ['Shoppers on phones leave slow pages, and every extra second before the first product image appears costs you some of the visitors you paid to bring in. The checker reports your mobile performance score, how long the main content takes to appear (Largest Contentful Paint), whether the layout jumps while loading (Cumulative Layout Shift) and how long the page is busy before it responds to taps (Total Blocking Time).', 'Treat the score as a guide, not a grade. Lab tests vary a little from run to run, and a store with heavy product photography will never score like a blog. What matters is the trend and the biggest causes: oversized images, too many apps and tracking scripts, and sliders or pop-ups above the fold.'], bullets: ['Largest Contentful Paint: aim for 2.5 seconds or less on mobile', 'Cumulative Layout Shift: aim for 0.1 or less', 'Total Blocking Time: aim for 200 ms or less in the lab test'] },
+  { heading: 'Order value: bundles, thresholds and upsells', paragraphs: ['Raising average order value is often cheaper than finding new customers, because you are selling more to people who are already buying. The simplest boosters are a free-shipping threshold shown in the cart ("add a little more for free delivery"), product bundles, "frequently bought together" suggestions on product pages and a relevant add-on at checkout.', 'Add them one at a time and watch your average order value and conversion rate together. A threshold set too high can lower conversion, and an upsell that interrupts checkout can cost more than it adds.'] },
+  { heading: 'Offers that are clear and still valid', paragraphs: ['Expired banners and codes that no longer work are one of the most common problems we find. They frustrate shoppers at the exact moment they were ready to buy, and they make the whole store look neglected. A valid offer is easy to find, shown on the product page and in the cart, has an end date and states its conditions in plain words.', 'Check your offers every time a sale ends: homepage banners, announcement bars, pop-ups, product badges and any codes shared with influencers or in ads.'] },
+  { heading: 'Product pages, trust and checkout', paragraphs: ['A product page has to answer the questions a shopper would ask in a shop: what it looks like from every angle, whether it will fit or suit them, when it will arrive and what happens if it does not work out. Several images or a short video, a size or specification guide and a delivery estimate cover most of that. Reviews near the price, a visible return policy and an easy way to contact you remove the rest of the doubt.', 'At checkout, the biggest leaks are forced account creation, missing payment methods and surprise costs at the last step. Let shoppers check out as guests, offer the payment methods your buyers use most (UPI and cash on delivery in India; cards, wallets and pay-later options in most other markets) and show shipping costs early.'] },
+  { heading: 'From this quick check to a full audit', paragraphs: ['This checker gives you a fast, honest snapshot. It does not see your analytics, your ad accounts or how your store compares with competitors. Our free e-commerce audit does: our team records a video walkthrough of your store, ads and SEO and sends a prioritised list of fixes within 24 working hours. Your checker score and store link are passed into the audit form, so you do not need to type them again.'] },
+];
+const faqs = [
+  { q: 'Is the ecommerce website checker free?', a: 'Yes. The checker is free to use as often as you like, with no sign-up. The speed test uses Google\'s free PageSpeed Insights service, and the rest of the check runs in your browser. If you want a deeper review, the full e-commerce audit from our team is also free.' },
+  { q: 'Which platforms does it work with?', a: 'Any public store: Shopify, WooCommerce, Magento, custom builds and headless stores. The speed checks need a page that is publicly reachable, so password-protected or staging stores cannot be tested automatically. In that case, answer the four self-check speed questions instead.' },
+  { q: 'Why is my speed score different each time?', a: 'PageSpeed Insights runs a lab test on a simulated mobile device, and results vary a little between runs because of server response times, third-party scripts and network conditions. Run it two or three times and look at the typical result and the biggest causes rather than a single number.' },
+  { q: 'What does the store health score mean?', a: 'Each of the ten checks is marked good, needs work or needs fixing. The score is the share of points earned across the checks you completed, out of 100. Above 80 means strong foundations, 50 to 80 means clear room to grow, and below 50 means the store is likely leaking sales.' },
+  { q: 'Do you store my website or answers?', a: 'No. Your store link is sent to Google\'s PageSpeed Insights to run the speed test, and your answers stay in your browser. Nothing is saved by us unless you choose to request the full audit, in which case your link and score are added to the audit form for you.' },
+  { q: 'How is this different from the free audit?', a: 'The checker is a quick self-service snapshot of ten basics. The free audit is done by our team: a recorded video review of your store, ads and SEO with a prioritised list of fixes, delivered within 24 working hours. Many store owners run the checker first, fix the quick wins, then request the audit.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'Ecommerce Website Checker', href: '/tools/ecommerce-website-checker/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Ecommerce Website Checker', url: `${site.url}/tools/ecommerce-website-checker/`, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0' }, provider: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'mindmap', caption: 'The ten points the checker covers, grouped by where shoppers meet them.', after: 0, center: 'Store health', branches: [
+    { label: 'Speed', items: ['Mobile score', 'Main content load', 'Layout stability'] },
+    { label: 'Basics', items: ['Https', 'Titles and descriptions'] },
+    { label: 'Order value', items: ['Bundles and upsells', 'Clear, valid offers'] },
+    { label: 'Buying', items: ['Product pages', 'Trust and checkout', 'Abandoned carts'] },
+  ] },
+  { type: 'steps', caption: 'How to use the checker before asking for a full audit.', after: 4, steps: [
+    { title: 'Run the check', body: 'Your best-selling product page' },
+    { title: 'Fix quick wins', body: 'Expired offers, missing guides' },
+    { title: 'Re-test speed', body: 'Run it two or three times' },
+    { title: 'Get the full audit', body: 'Ads, SEO and conversion review' },
+  ] },
+];
+---
+<Base title="Free Ecommerce Website Checker: Speed, AOV & Offers | Magnus Path" description="Free ecommerce website checker: test your store's mobile speed with Google PageSpeed and check order-value boosters, offers, trust and checkout in minutes." schema={schema}>
+  <SimpleHero eyebrow="Free tool" h1="Free Ecommerce Website Checker for *Speed, AOV and Offers*" intro="Enter your store link to test mobile speed with Google PageSpeed Insights, then answer six quick questions about order value, offers, product pages, trust and checkout. You get a score out of 100 and the fixes to make first." trail={trail} current="Ecommerce Website Checker" />
+  <StoreChecker />
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="What the checker measures and why it matters" />
+  <FAQ items={faqs} title="Ecommerce website checker questions" />
+  <Related links={[{ label: 'Free e-commerce store audit', href: '/free-ecommerce-audit/' }, { label: 'E-commerce website development', href: '/ecommerce-website-development/' }, { label: 'Website maintenance services', href: '/website-maintenance-services/' }, { label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' }, { label: 'Shopify SEO checklist', href: '/blog/shopify-seo-checklist/' }]} />
+  <LeadForm heading="Want the full picture?" sub="Request the free e-commerce audit. Our team reviews your store, ads and SEO and sends a video walkthrough with a prioritised fix list within 24 working hours." />
+</Base>

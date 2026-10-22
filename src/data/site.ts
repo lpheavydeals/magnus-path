@@ -24,6 +24,8 @@ export const site = {
     { id: 'bengaluru', label: 'Bengaluru', street: 'Street address', locality: 'Bengaluru', region: 'Karnataka', postalCode: '560000', country: 'IN', countryName: 'India', phone: '+91 80984 25000', phoneHref: 'tel:+918098425000', hours: 'Mon–Sat, 9:30 AM – 7:00 PM IST', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:30', closes: '19:00' }, gbp: '#', map: '#' }, // TODO address, Google Business Profile + Maps links
     { id: 'london', label: 'London', street: '16 Avondale Court', locality: 'London', region: 'England', postalCode: 'E18 2RD', country: 'GB', countryName: 'United Kingdom', phone: '+44 0000 000000', phoneHref: 'tel:+440000000000', hours: 'Mon–Fri, 9:30 AM – 6:00 PM UK time', open: { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:30', closes: '18:00' }, gbp: '#', map: '#' }, // TODO phone, Google Business Profile + Maps links
   ],
+  // Google PageSpeed Insights API key for the free website checker (free; restrict it to the live domain in Google Cloud).
+  psiKey: '', // TODO
   formEndpoint: '#', // TODO: form handler (Web3Forms / Formspree / CRM webhook)
   social: {
     linkedin: '#', // TODO
@@ -87,7 +89,8 @@ export const nav: NavItem[] = [
     children: [
       { label: 'Case Studies', href: '/case-studies/', note: 'Results from our work' },
       { label: 'Guides & Blog', href: '/blog/', note: 'Websites, ads, SEO, export' },
-      { label: 'Free Tools', href: '/tools/', note: 'ROAS & profit calculators' },
+      { label: 'Free Tools', href: '/tools/', note: 'Store checker & calculators' },
+      { label: 'Ecommerce Website Checker', href: '/tools/ecommerce-website-checker/', note: 'Free speed & conversion check' },
     ],
   },
 ];

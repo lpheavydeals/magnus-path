@@ -1,0 +1,156 @@
+---
+// Free e-commerce website checker: 4 automatic checks via Google PageSpeed Insights (runs in the
+// visitor's browser) + 6 guided yes/partly/no checks. Score out of 100, top fixes, full-audit CTA.
+import './calc.css';
+import { site } from '../../data/site';
+type Check = { id: string; auto?: boolean; title: string; ask: string; tip: string };
+const checks: Check[] = [
+  { id: 'speed', auto: true, title: 'Mobile speed score', ask: 'Does your home page feel fast on a mid-range phone using mobile data?', tip: 'Compress and resize images, remove apps and scripts you no longer use, and lazy-load anything below the first screen.' },
+  { id: 'lcp', auto: true, title: 'Main content load time', ask: 'Do your product photos and prices appear within about 3 seconds on mobile?', tip: 'Make the first product image or banner load first: serve it in a modern format at the right size, and avoid heavy sliders above the fold.' },
+  { id: 'stable', auto: true, title: 'Layout stability and responsiveness', ask: 'Can shoppers tap buttons straight away, without the page jumping around as it loads?', tip: 'Reserve space for images, banners and pop-ups so the layout does not shift, and delay non-essential scripts such as chat widgets.' },
+  { id: 'basics', auto: true, title: 'Security and search basics', ask: 'Does your store use https and have a unique title and description on its main pages?', tip: 'Serve every page over https, give each product and collection page its own title and meta description, and add alt text to product images.' },
+  { id: 'aov', title: 'Ways to raise order value', ask: 'Do you offer bundles, "frequently bought together", a free-shipping threshold message or an upsell in the cart?', tip: 'Add one AOV booster at a time: a free-shipping threshold bar in the cart, then bundles or "frequently bought together" on your best sellers.' },
+  { id: 'offers', title: 'Clear, valid offers', ask: 'Are your offers easy to find, with an end date and terms, and do all discount codes and banners still work?', tip: 'Remove expired banners and codes, show the offer on the product page and in the cart, and state the end date and any conditions in plain words.' },
+  { id: 'pdp', title: 'Complete product pages', ask: 'Do product pages have several images or a video, a size or spec guide, and a delivery date or pin-code check?', tip: 'Add at least four images or a short video per product, a size or specification guide, and an estimated delivery date before checkout.' },
+  { id: 'trust', title: 'Trust signals', ask: 'Do product pages show reviews, and are your return policy and contact details (or WhatsApp) easy to find?', tip: 'Show reviews (ideally with photos) near the price, link the return policy from product pages and the cart, and make phone or WhatsApp support visible.' },
+  { id: 'checkout', title: 'Smooth checkout', ask: 'Can shoppers check out as a guest, with the payment methods they expect and no surprise charges at the end?', tip: 'Allow guest checkout, offer the payment methods your buyers use most (UPI and COD in India; cards, wallets and pay-later abroad) and show shipping costs early.' },
+  { id: 'retain', title: 'Bringing shoppers back', ask: 'Do you collect email or WhatsApp sign-ups and send abandoned-cart reminders?', tip: 'Add a simple sign-up offer and switch on abandoned-cart reminders by email or WhatsApp; they recover sales you have already paid ads to win.' },
+];
+---
+<section class="section sc"><div class="wrap">
+  <div class="calc sc__grid" id="checker">
+    <div class="sc__steps">
+      <form class="calc__in" id="sc-url-form" novalidate>
+        <p class="sc__step">Step 1 · Automatic checks</p>
+        <h2>Test your store's speed</h2>
+        <label class="calc__field" for="sc-url">Your store link<small>Home page or your best-selling product page</small>
+          <span class="calc__wrap"><input id="sc-url" type="text" inputmode="url" autocomplete="url" placeholder="yourstore.com" /></span>
+        </label>
+        <button class="btn btn--primary" type="submit" id="sc-run">Check my store <span class="arrow" aria-hidden="true">→</span></button>
+        <p class="sc__msg" id="sc-msg" aria-live="polite">Uses Google's free PageSpeed Insights test on a mobile connection. It usually takes 20 to 40 seconds.</p>
+        <div class="sc__manual" id="sc-manual" hidden>
+          {checks.filter((c) => c.auto).map((c) => (
+            <fieldset class="sc__q" data-id={c.id}>
+              <legend>{c.ask}</legend>
+              <div class="sc__opts">{[['2', 'Yes'], ['1', 'Partly'], ['0', 'No / not sure']].map(([v, l]) => <label><input type="radio" name={c.id} value={v} />{l}</label>)}</div>
+            </fieldset>
+          ))}
+        </div>
+      </form>
+      <div class="calc__in">
+        <p class="sc__step">Step 2 · Quick questions</p>
+        <h2>What shoppers see</h2>
+        {checks.filter((c) => !c.auto).map((c) => (
+          <fieldset class="sc__q" data-id={c.id}>
+            <legend><strong>{c.title}</strong>{c.ask}</legend>
+            <div class="sc__opts">{[['2', 'Yes'], ['1', 'Partly'], ['0', 'No / not sure']].map(([v, l]) => <label><input type="radio" name={c.id} value={v} />{l}</label>)}</div>
+          </fieldset>
+        ))}
+      </div>
+    </div>
+    <div class="calc__out" aria-live="polite">
+      <span class="calc__status" id="sc-status" data-state="warn">Answer a few checks to see your score</span>
+      <div><div class="calc__big" id="sc-score">–</div><p class="calc__biglabel" id="sc-basis">Store health score out of 100</p></div>
+      <ul class="sc__list" id="sc-list">
+        {checks.map((c) => <li data-id={c.id} data-state="none"><span class="sc__dot" aria-hidden="true"></span><span class="sc__t">{c.title}</span><span class="sc__v">Not checked</span></li>)}
+      </ul>
+      <div class="sc__fixes" id="sc-fixes" hidden><h3>Fix these first</h3><ol id="sc-fixlist"></ol></div>
+      <a class="btn btn--primary" id="sc-cta" href="/free-ecommerce-audit/#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+      <p class="calc__note">This is a quick health check, not a full audit. The free audit adds conversion, ads and SEO reviews by our team. Your store link is sent to Google's PageSpeed Insights; your answers stay in your browser.</p>
+    </div>
+  </div>
+</div></section>
+<script is:inline type="application/json" id="sc-data" set:html={JSON.stringify({ checks, key: site.psiKey })}></script>
+<script>
+  type Check = { id: string; auto?: boolean; title: string; ask: string; tip: string };
+  const data = JSON.parse(document.getElementById('sc-data')!.textContent || '{}') as { checks: Check[]; key: string };
+  const pts: Record<string, number | undefined> = {};      // 0 = poor, 1 = needs work, 2 = good
+  const auto: Record<string, string> = {};                    // measured value text for automatic checks
+  const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+  let storeUrl = '';
+
+  function render() {
+    const done = data.checks.filter((c) => pts[c.id] !== undefined);
+    const score = done.length ? Math.round((done.reduce((s, c) => s + (pts[c.id] as number), 0) / (done.length * 2)) * 100) : null;
+    $('sc-score').textContent = score === null ? '–' : String(score);
+    $('sc-basis').textContent = score === null ? 'Store health score out of 100' : `Store health score out of 100 · based on ${done.length} of ${data.checks.length} checks`;
+    const st = $('sc-status');
+    st.dataset.state = score === null ? 'warn' : score >= 80 ? 'good' : score >= 50 ? 'warn' : 'bad';
+    st.textContent = score === null ? 'Answer a few checks to see your score' : score >= 80 ? 'Strong foundations' : score >= 50 ? 'Room to grow' : 'Leaking sales';
+    for (const c of data.checks) {
+      const li = document.querySelector<HTMLElement>(`#sc-list li[data-id="${c.id}"]`)!;
+      const p = pts[c.id];
+      li.dataset.state = p === undefined ? 'none' : ['bad', 'warn', 'good'][p];
+      li.querySelector('.sc__v')!.textContent = p === undefined ? 'Not checked' : auto[c.id] || ['Needs fixing', 'Needs work', 'Good'][p];
+    }
+    const fixes = data.checks.filter((c) => pts[c.id] !== undefined && (pts[c.id] as number) < 2).sort((a, b) => (pts[a.id] as number) - (pts[b.id] as number)).slice(0, 3);
+    $('sc-fixes').hidden = !fixes.length;
+    $('sc-fixlist').innerHTML = '';
+    for (const f of fixes) { const li = document.createElement('li'); li.innerHTML = `<strong></strong> <span></span>`; li.querySelector('strong')!.textContent = f.title + ':'; li.querySelector('span')!.textContent = f.tip; $('sc-fixlist').appendChild(li); }
+    const q = new URLSearchParams({ ...(storeUrl ? { store: storeUrl } : {}), ...(score !== null ? { score: String(score) } : {}) }).toString();
+    $<HTMLAnchorElement>('sc-cta').href = '/free-ecommerce-audit/' + (q ? '?' + q : '') + '#audit';
+  }
+
+  document.querySelectorAll<HTMLInputElement>('.sc__q input[type=radio]').forEach((r) => r.addEventListener('change', () => {
+    pts[r.name] = +r.value; delete auto[r.name]; render();
+  }));
+
+  const grade = (v: number, good: number, ok: number) => (v <= good ? 2 : v <= ok ? 1 : 0);
+  $('sc-url-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    let url = $<HTMLInputElement>('sc-url').value.trim();
+    if (!/^https?:\/\//i.test(url)) url = 'https://' + url;
+    try { if (!new URL(url).hostname.includes('.')) throw 0; } catch { $('sc-msg').textContent = 'Please enter a full store link, for example https://yourstore.com'; return; }
+    storeUrl = url;
+    const btn = $<HTMLButtonElement>('sc-run'); btn.disabled = true;
+    $('sc-msg').textContent = 'Testing your store on a simulated mobile connection. This usually takes 20 to 40 seconds…';
+    const api = new URL('https://www.googleapis.com/pagespeedonline/v5/runPagespeed');
+    api.searchParams.set('url', url); api.searchParams.set('strategy', 'mobile');
+    for (const c of ['performance', 'seo', 'best-practices']) api.searchParams.append('category', c);
+    if (data.key) api.searchParams.set('key', data.key);
+    try {
+      const res = await fetch(api.toString());
+      if (!res.ok) throw new Error(String(res.status));
+      const j = await res.json(); const lh = j.lighthouseResult; const a = lh.audits;
+      const perf = Math.round(lh.categories.performance.score * 100), seo = Math.round(lh.categories.seo.score * 100);
+      const lcp = a['largest-contentful-paint'].numericValue / 1000, cls = a['cumulative-layout-shift'].numericValue, tbt = a['total-blocking-time'].numericValue;
+      const https = a['is-on-https']?.score === 1;
+      pts.speed = perf >= 90 ? 2 : perf >= 50 ? 1 : 0; auto.speed = `${perf} / 100`;
+      pts.lcp = grade(lcp, 2.5, 4); auto.lcp = `${lcp.toFixed(1)} s`;
+      pts.stable = Math.min(grade(cls, 0.1, 0.25), grade(tbt, 200, 600)); auto.stable = `CLS ${cls.toFixed(2)} · TBT ${Math.round(tbt)} ms`;
+      pts.basics = !https ? 0 : seo >= 90 ? 2 : seo >= 70 ? 1 : 0; auto.basics = `${https ? 'https' : 'no https'} · SEO ${seo}`;
+      $('sc-manual').hidden = true;
+      $('sc-msg').textContent = 'Done. Speed results are from Google PageSpeed Insights (mobile, lab test). Now answer the quick questions.';
+    } catch {
+      $('sc-manual').hidden = false;
+      $('sc-msg').textContent = "We couldn't reach Google's speed test just now (it may be busy). Answer these four questions instead, or try again in a minute.";
+    }
+    btn.disabled = false; render();
+  });
+  render();
+</script>
+<style>
+  .sc__grid { align-items: start; }
+  .sc__steps { display: grid; gap: 16px; }
+  .sc__step { font-size: 13px; font-weight: 600; color: var(--accent-ink); text-transform: uppercase; letter-spacing: .06em; }
+  .sc__msg { font-size: 14px; color: var(--muted); }
+  .sc__manual { display: grid; gap: 14px; }
+  .sc__manual[hidden], .sc__fixes[hidden] { display: none; }
+  .sc__q { border: 0; padding: 14px 0 0; margin: 0; border-top: 1px solid var(--line); display: grid; gap: 10px; }
+  .sc__q legend { padding: 0; font-size: 15px; line-height: 1.45; display: grid; gap: 2px; }
+  .sc__q legend strong { font-size: 16px; }
+  .sc__opts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .sc__opts label { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; font-size: 14px; cursor: pointer; background: var(--paper); }
+  .sc__opts label:has(input:checked) { border-color: var(--accent); background: var(--accent-tint, #fff1ea); }
+  .sc__opts input { accent-color: var(--accent); margin: 0; }
+  .sc__list { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sc__list li { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line-dark); font-size: 14.5px; }
+  .sc__dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.25); }
+  li[data-state="good"] .sc__dot { background: #22c55e; } li[data-state="warn"] .sc__dot { background: #f59e0b; } li[data-state="bad"] .sc__dot { background: #ef4444; }
+  .sc__v { color: var(--muted-on-dark); font-variant-numeric: tabular-nums; text-align: right; }
+  .sc__fixes { display: grid; gap: 10px; padding: 16px; border-radius: 18px; background: rgba(255,255,255,.07); }
+  .sc__fixes h3 { font-size: 1.05rem; }
+  .sc__fixes ol { margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 14.5px; color: var(--muted-on-dark); }
+  .sc__fixes strong { color: var(--white); }
+  .calc__out .btn { justify-self: start; }
+</style>

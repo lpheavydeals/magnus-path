@@ -123,6 +123,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Ecommerce SEO for Australian online stores', href: '/australia/ecommerce-seo/' },
       { label: 'Ecommerce SEO agency for UK brands', href: '/uk/ecommerce-seo-agency/' },
       { label: 'Shopify SEO services', href: '/shopify-seo/' },
@@ -260,6 +261,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
       { label: 'Shopify SEO agency for US brands', href: '/us/shopify-seo-agency/' },
       { label: 'Ecommerce SEO services', href: '/ecommerce-seo/' },
       { label: 'Shopify development company', href: '/shopify-development/' },

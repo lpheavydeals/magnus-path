@@ -32,6 +32,7 @@ const { market, heading = 'Ready to sell more online?', sub = 'Get a free e-comm
     </div>
     <form class="cta__form" action={site.formEndpoint} method="post" data-reveal>
       <input type="hidden" name="source" value="website-audit-form" />
+      <input type="hidden" name="checker_score" value="" />
       <label>Your name<input name="name" autocomplete="name" required /></label>
       <label>Work email<input name="email" type="email" autocomplete="email" required /></label>
       <label>{market ? "Phone or WhatsApp" : "WhatsApp number"}<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required /></label>
@@ -52,6 +53,15 @@ const { market, heading = 'Ready to sell more online?', sub = 'Get a free e-comm
     </form>
   </div>
 </section>
+<script>
+  // Prefill from the ecommerce website checker (/free-ecommerce-audit/?store=…&score=…)
+  const q = new URLSearchParams(location.search);
+  document.querySelectorAll<HTMLFormElement>('.cta__form').forEach((f) => {
+    const store = q.get('store'), score = q.get('score');
+    if (store && /^https?:\/\//.test(store)) (f.elements.namedItem('store') as HTMLInputElement).value = store;
+    if (score && /^\d{1,3}$/.test(score)) (f.elements.namedItem('checker_score') as HTMLInputElement).value = score;
+  });
+</script>
 <style>
   .cta { position: relative; overflow: hidden; padding: var(--section) 0 clamp(80px, 10vw, 140px); background: linear-gradient(180deg, var(--paper) 0%, #fff4ee 40%, #ffe2d3 100%); }
   .cta__waves { position: absolute; inset: auto 0 0 0; height: 75%; }
