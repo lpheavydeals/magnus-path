@@ -133,7 +133,8 @@ const currencies = [['INR', '₹ Indian rupee'], ['USD', '$ US dollar'], ['GBP',
   .dc__opts label:has(input:checked) { border-color: var(--accent); background: var(--accent-tint, #fff1ea); }
   .dc__opts input { accent-color: var(--accent); margin: 0; }
   .calc__wrap span[hidden] { display: none; }
-  .calc__list dd { text-align: right; }
+  .calc__list dd { text-align: right; white-space: nowrap; }
+  .calc__wrap input:first-child, .calc__wrap span[hidden] + input { padding-left: 14px; }
   .dc__tablewrap { overflow-x: auto; }
   .dc__table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
   .dc__table caption { text-align: left; font-weight: 600; font-size: 15px; padding-bottom: 8px; }

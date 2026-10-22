@@ -111,7 +111,7 @@ const currencies = [['INR', '₹ Indian rupee'], ['USD', '$ US dollar'], ['GBP',
     set('lc-tl', target > 0 ? `(at ${dec(target)}:1)` : '');
     set('lc-max', money(maxCac));
     set('lc-be', money(ltvGp));
-    set('lc-payo', !ok(payN) ? '—' : beyond ? 'Not within lifetime' : `order ${payN}` + (payN > 1 ? ` (${dec(payExact, 2)} orders of margin)` : ''));
+    set('lc-payo', !ok(payN) ? '—' : beyond ? 'Not within lifetime' : `order ${payN}`);
     set('lc-paym', !ok(payM) || beyond ? '—' : payN === 1 ? 'On the first order' : dec(payM) + ' months');
 
     const st = $('lc-status');
@@ -146,6 +146,8 @@ const currencies = [['INR', '₹ Indian rupee'], ['USD', '$ US dollar'], ['GBP',
   .lc__opts label:has(input:checked) { border-color: var(--accent); background: var(--accent-tint); }
   .lc__opts input { accent-color: var(--accent); margin: 0; }
   .calc__field[hidden] { display: none; }
+  .lc .calc__wrap input:first-child { padding-left: 14px; }
+  .lc__formulas :global(li) { padding-left: 2px; }
   .lc .calc__list dt span { font-size: 13px; }
   .lc .calc__list dd { text-align: right; }
   .lc__formulas { border-top: 1px solid var(--line-dark); padding-top: 14px; display: grid; gap: 8px; }

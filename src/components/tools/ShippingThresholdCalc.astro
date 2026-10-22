@@ -50,7 +50,7 @@ const options = [
       <div><div class="calc__big" id="fst-big">—</div><p class="calc__biglabel" id="fst-biglabel">Free shipping threshold to test</p></div>
       <table class="fst__table">
         <caption class="sr-only">Threshold options</caption>
-        <thead><tr><th scope="col">Option</th><th scope="col">Threshold</th><th scope="col">Step-up</th><th scope="col">Net per step-up order</th></tr></thead>
+        <thead><tr><th scope="col">Option</th><th scope="col">Threshold</th><th scope="col">Step-up</th><th scope="col">Net gain</th></tr></thead>
         <tbody>
           {options.map((o) => <tr data-id={o.id}><th scope="row">{o.name}<small>{o.how}</small></th><td data-k="t">—</td><td data-k="s">—</td><td data-k="n">—</td></tr>)}
         </tbody>
@@ -58,7 +58,7 @@ const options = [
       <dl class="calc__list">
         <div><dt>Extra order value needed to pay for shipping</dt><dd id="fst-extra">—</dd></div>
         <div><dt>Lowest threshold that pays its own shipping</dt><dd id="fst-min">—</dd></div>
-        <div><dt>Free-shipping cost on orders that already qualify</dt><dd id="fst-giveaway">—</dd></div>
+        <div><dt>Shipping you pay on orders that already qualify</dt><dd id="fst-giveaway">—</dd></div>
         <div><dt>Orders that must step up to break even</dt><dd id="fst-need">—</dd></div>
         <div><dt>As a share of orders below the threshold</dt><dd id="fst-needpct">—</dd></div>
       </dl>
@@ -67,8 +67,8 @@ const options = [
       <div class="calc__note fst__how">
         <p><strong>How it is calculated</strong></p>
         <p>Options are your AOV plus half, one and one and a half typical items, rounded up to a round number. Step-up = threshold − AOV.</p>
-        <p>Extra order value needed to pay for shipping = shipping cost ÷ gross margin. Net per step-up order = step-up × gross margin − shipping cost: the extra gross profit when an order grows from your AOV to the threshold, after you pay its shipping.</p>
-        <p>Break-even: orders already at or above the threshold now ship free, costing orders × that share × shipping cost a month. Orders that must step up = that cost ÷ net per step-up order.</p>
+        <p>Extra order value needed to pay for shipping = shipping cost ÷ gross margin. Net gain per step-up order = step-up × gross margin − shipping cost: the extra gross profit when an order grows from your AOV to the threshold, after you pay its shipping.</p>
+        <p>Break-even: orders already at or above the threshold now ship free, costing orders × that share × shipping cost a month. Orders that must step up = that cost ÷ net gain per step-up order.</p>
         <p>Assumes you charge shoppers roughly your shipping cost today, so each free-shipping order costs you that amount. It does not model a change in conversion rate. Nothing you type leaves your browser.</p>
       </div>
     </div>
@@ -107,12 +107,12 @@ const options = [
     for (const id in mult) {
       set(`fst-o-${id}`, base ? money(th[id]) : '—');
       const row = document.querySelector<HTMLElement>(`#fst tr[data-id="${id}"]`)!;
-      const step = th[id] - aov, net = step * m - ship;
+      const step = th[id] - aov, raw = step * m - ship, net = Math.abs(raw) < 0.005 ? 0 : raw;
       row.querySelector('[data-k="t"]')!.textContent = base ? money(th[id]) : '—';
       row.querySelector('[data-k="s"]')!.textContent = base ? money(step) : '—';
       const n = row.querySelector<HTMLElement>('[data-k="n"]')!;
       n.textContent = base && m > 0 ? signed(net) : '—';
-      n.dataset.state = base && m > 0 ? (net > 0 ? 'good' : 'bad') : '';
+      n.dataset.state = base && m > 0 && net !== 0 ? (net > 0 ? 'good' : 'bad') : '';
     }
 
     // Selected threshold
@@ -126,16 +126,17 @@ const options = [
     set('fst-extra', m > 0 && ship > 0 ? money(extra) : '—');
     set('fst-min', m > 0 && ship > 0 && aov > 0 ? money(roundUp(aov + extra)) : '—');
 
-    const step = hasT ? t - aov : NaN, net = step * m - ship;
+    const step = hasT ? t - aov : NaN, net = step * m - ship > -0.005 && step * m - ship < 0.005 ? 0 : step * m - ship;
     const giveaway = orders * above * ship;
     const ready = hasT && m > 0 && ship > 0 && orders > 0;
     set('fst-giveaway', ready ? money(giveaway) + ' / month' : '—');
     const st = $('fst-status'), verdict = $('fst-verdict');
     if (!ready) {
       set('fst-need', '—'); set('fst-needpct', '—');
-      st.dataset.state = 'warn';
-      st.textContent = 'Enter your numbers';
-      verdict.textContent = ship === 0 && aov > 0 ? 'With no shipping cost, free shipping costs you nothing at any threshold.' : '';
+      const noShip = ship === 0 && hasT;
+      st.dataset.state = noShip ? 'good' : 'warn';
+      st.textContent = noShip ? 'No shipping cost entered' : 'Enter your numbers';
+      verdict.textContent = noShip ? 'With no shipping cost, free shipping costs you nothing at any threshold.' : '';
       return;
     }
     const below = orders * (1 - above);
@@ -180,7 +181,7 @@ const options = [
 </script>
 <style>
   .fst__hint { color: var(--muted); }
-  .fst__pick { border: 0; margin: 0; padding: 14px 0 0; border-top: 1px solid var(--line); display: grid; gap: 12px; min-width: 0; }
+  .fst__pick { border: 0; margin: 0; padding: 0; display: grid; gap: 12px; min-width: 0; }
   .fst__pick legend { padding: 0; font-size: 14px; font-weight: 500; display: grid; gap: 2px; }
   .fst__pick legend small { font-weight: 400; color: var(--muted); }
   .fst__opts { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -201,4 +202,7 @@ const options = [
   .fst__how strong { color: var(--white); }
   .fst .calc__out .btn { justify-self: start; }
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .fst .calc__wrap > input:first-child, .fst .calc__wrap > select:first-child { padding-left: 14px; }
+  .fst .calc__list dd { white-space: nowrap; text-align: right; }
+  @media (max-width: 480px) { .fst__table { font-size: 13px; } .fst__table th, .fst__table td { padding: 9px 4px; } }
 </style>

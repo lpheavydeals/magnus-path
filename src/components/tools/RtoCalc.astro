@@ -110,7 +110,7 @@ const currencies = [
     set('rto-month', has ? money(monthly) : '—');
     set('rto-parcels', has ? count(parcels) : '—');
     set('rto-rate', has ? pc(parcels / orders) : '—');
-    set('rto-per', perParcel > 0 ? money(perParcel) : '—');
+    set('rto-per', money(perParcel));
     set('rto-perdel', has && delivered > 0 ? money(monthly / delivered) : '—');
     set('rto-year', has ? money(monthly * 12) : '—');
     set('rto-newcod', has ? pc(newCod) : '—');
@@ -150,4 +150,6 @@ const currencies = [
   .rto__how { display: grid; gap: 8px; line-height: 1.55; }
   .rto__how strong { color: var(--white); }
   .rto .calc__out .btn { justify-self: start; }
+  .rto .calc__wrap > input:first-child, .rto .calc__wrap > select:first-child { padding-left: 14px; }
+  .rto .calc__list dd { white-space: nowrap; text-align: right; }
 </style>

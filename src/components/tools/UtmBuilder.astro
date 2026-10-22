@@ -33,7 +33,7 @@ const fields = [
         </fieldset>
         <div class="calc__row">
           {fields.map((f) => (
-            <label class="calc__field" for={`ub-${f.id}`}>{f.label}{f.req ? ' *' : ''} <code class="ub__key">{f.key}</code><small>{f.hint}</small>
+            <label class="calc__field" for={`ub-${f.id}`}><span>{f.label}{f.req ? ' *' : ''} <code class="ub__key">{f.key}</code></span><small>{f.hint}</small>
               <span class="calc__wrap"><input id={`ub-${f.id}`} type="text" autocomplete="off" spellcheck="false" placeholder={f.ph} data-key={f.key} /></span>
             </label>
           ))}
@@ -217,10 +217,11 @@ const fields = [
   .ub__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
   .ub__actions .btn:disabled { opacity: .45; cursor: not-allowed; }
   .ub__copied { font-size: 14px; color: #86efac; }
+  .ub .calc__wrap input:first-child { padding-left: 14px; }
   .ub__warn { margin: 0; padding: 12px 14px 12px 32px; border-radius: 14px; background: rgba(245,158,11,.14); color: #fde68a; font-size: 14px; display: grid; gap: 6px; }
-  .ub__warn[hidden], .ub__small[hidden] { display: none; }
-  .ub__small { justify-self: start; padding: 7px 12px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--white); color: var(--ink); font: 500 13px var(--font-body); cursor: pointer; white-space: nowrap; }
-  .ub__small:disabled { opacity: .5; cursor: default; }
+  .ub__warn[hidden], .ub :global(.ub__small[hidden]) { display: none; }
+  .ub :global(.ub__small) { justify-self: start; padding: 7px 12px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--white); color: var(--ink); font: 500 13px var(--font-body); cursor: pointer; white-space: nowrap; }
+  .ub :global(.ub__small:disabled) { opacity: .5; cursor: default; }
   .ub__small--dark { background: transparent; color: var(--white); border-color: var(--line-dark); }
   .ub__small--dark:hover { border-color: var(--white); }
   .ub .calc__list dt { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13.5px; }
@@ -228,7 +229,7 @@ const fields = [
   .ub .calc__out .btn--primary[href] { justify-self: start; }
   .ub__histhead { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
   .ub__histlist { list-style: none; margin: 0; padding: 0; display: grid; }
-  .ub__histlist li { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
-  .ub__histlist code { font-size: 13px; overflow-wrap: anywhere; word-break: break-all; color: var(--ink); }
-  .ub__histlist .ub__empty { display: block; color: var(--muted); font-size: 14px; }
+  .ub__histlist :global(li) { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+  .ub__histlist :global(code) { font-size: 13px; overflow-wrap: anywhere; word-break: break-all; color: var(--ink); }
+  .ub__histlist :global(.ub__empty) { display: block; color: var(--muted); font-size: 14px; }
 </style>

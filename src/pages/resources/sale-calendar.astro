@@ -1,0 +1,334 @@
+---
+// Ecommerce sale calendar Nov 2026 – Dec 2027 for India, UK, US, UAE and Australia.
+// Data lives here; the market filter, month grouping and CSV download run in the browser.
+// Date rules (docs/free-tools-plan.md): fixed dates exact; Islamic dates "expected, depends on moon sighting";
+// Hindu festivals where calendars differ get "confirm"; marketplace/platform sales are "usually <month>", never a date.
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+
+type Mk = 'IN' | 'UK' | 'US' | 'UAE' | 'AU';
+type Flag = 'moon' | 'confirm' | 'tbc' | 'usually';
+type Ev = {
+  sort: string;            // YYYY-MM-DD; the real date when `exact`, otherwise only used for ordering and month grouping
+  exact?: boolean;         // true = the date is fixed or calculated (compute "start ads" / "prep" dates from it)
+  when?: string;           // display text for non-exact rows (and extra detail for flagged rows)
+  flag?: Flag;
+  m: Mk[];
+  event: string;
+  why: string;
+  ads: [number, number] | string;   // weeks before, or custom text
+  prep: number | string;            // weeks before, or custom text
+};
+
+const events: Ev[] = [
+  // ---- November 2026
+  { sort: '2026-11-06', exact: true, flag: 'confirm', when: '6 Nov 2026 (most calendars)', m: ['IN'], event: 'Dhanteras', why: 'Gold, jewellery, kitchenware and electronics peak; for many Indian shoppers it is the first big buying day of Diwali week.', ads: [2, 3], prep: 6 },
+  { sort: '2026-11-08', exact: true, flag: 'confirm', when: '8 Nov 2026 (most calendars)', m: ['IN', 'UK', 'UAE'], event: 'Diwali (Lakshmi Puja)', why: 'The biggest gifting and ethnic-wear season in India and for Indian shoppers abroad. Demand peaks in the two to three weeks before; orders drop sharply after the day.', ads: [3, 4], prep: 8 },
+  { sort: '2026-11-11', exact: true, m: ['AU', 'UAE'], event: "Singles' Day (11.11)", why: 'Started as a Chinese marketplace event; many Australian and Gulf retailers now run 11.11 offers, an early warm-up before Black Friday.', ads: [1, 2], prep: 4 },
+  { sort: '2026-11-14', when: 'Usually mid-November', flag: 'usually', m: ['AU'], event: 'Click Frenzy: The Main Event', why: 'One of the biggest online sales in Australia; dates are announced by Click Frenzy. Retailers join as partners or run matching offers.', ads: [2, 3], prep: 6 },
+  { sort: '2026-11-15', when: 'Usually November, around Black Friday', flag: 'usually', m: ['UAE'], event: 'Amazon.ae White Friday', why: "Amazon's Black Friday event in the UAE. Sellers submit deals ahead of the published dates; off-Amazon stores see matching price comparisons.", ads: [2, 3], prep: 8 },
+  { sort: '2026-11-16', when: 'Usually November, around Black Friday', flag: 'usually', m: ['UAE'], event: 'Noon Yellow Friday', why: "Noon's biggest sale of the year in the UAE. Deal submissions close before the event, so plan stock and pricing early.", ads: [2, 3], prep: 8 },
+  { sort: '2026-11-26', exact: true, m: ['US'], event: 'Thanksgiving', why: 'Starts the long weekend. Many US stores open Black Friday deals earlier in the week to catch shoppers before ad costs peak.', ads: [2, 3], prep: 6 },
+  { sort: '2026-11-27', exact: true, m: ['US', 'UK', 'AU', 'UAE', 'IN'], event: 'Black Friday', why: 'The biggest online sale day in the US, UK and Australia, and growing in the UAE and India. Ad auctions are at their most expensive this week.', ads: [4, 6], prep: 8 },
+  { sort: '2026-11-28', exact: true, m: ['US'], event: 'Small Business Saturday', why: 'A day when US shoppers are encouraged to buy from independent brands; useful messaging for smaller D2C stores.', ads: [1, 2], prep: 3 },
+  { sort: '2026-11-30', exact: true, m: ['US', 'UK', 'AU'], event: 'Cyber Monday', why: 'Online-only follow-up to Black Friday; often the last big push of the weekend. Extend or refresh offers rather than repeat them.', ads: [4, 6], prep: 8 },
+  // ---- December 2026
+  { sort: '2026-12-02', exact: true, m: ['UAE'], event: 'UAE National Day (Eid Al Etihad)', why: 'Public holiday weekend with national-themed offers across retail; a short spike between White Friday and the Dubai Shopping Festival.', ads: [1, 2], prep: 4 },
+  { sort: '2026-12-12', when: 'Usually mid-to-late December', flag: 'usually', m: ['UK', 'US', 'AU'], event: 'Last Christmas delivery dates', why: 'Carriers publish last posting dates each year. Show an "order by" date on product pages and in emails; after it, push gift cards and click-and-collect.', ads: 'Run "order by" reminders in the final 7–10 days', prep: 'Check carrier cut-offs 4 weeks before' },
+  { sort: '2026-12-14', when: 'Usually December (also June)', flag: 'usually', m: ['IN'], event: 'Myntra End of Reason Sale', why: "One of India's largest fashion sales; dates are announced by Myntra. Fashion brands on and off Myntra feel the price pressure.", ads: [1, 2], prep: 6 },
+  { sort: '2026-12-15', when: 'Usually mid-December to late January', flag: 'usually', m: ['UAE'], event: 'Dubai Shopping Festival', why: 'A city-wide retail festival with big footfall and online promotions; dates are announced by the organisers each year.', ads: [2, 3], prep: 6 },
+  { sort: '2026-12-25', exact: true, m: ['UK', 'US', 'AU', 'IN'], event: 'Christmas Day', why: 'Gifting peak for the UK, US and Australia, and a growing gifting and party-wear moment in Indian cities. Most online sales happen before delivery cut-offs.', ads: [4, 6], prep: 8 },
+  { sort: '2026-12-26', exact: true, m: ['UK', 'AU'], event: 'Boxing Day sales', why: 'One of the biggest sale days in the UK and Australia. Shoppers spend gift cards and hunt discounts; many stores start online on Christmas Day evening.', ads: [2, 3], prep: 6 },
+  // ---- January 2027
+  { sort: '2027-01-01', exact: true, m: ['IN', 'UK', 'US', 'UAE', 'AU'], event: "New Year's Day and January sales", why: 'Clearance sales continue and "new year, new me" categories (fitness, wellness, planners) rise. A good time to clear winter stock.', ads: [1, 2], prep: 4 },
+  { sort: '2027-01-14', exact: true, flag: 'confirm', when: '14 or 15 Jan 2027 (calendars differ; Lohri is the evening before)', m: ['IN'], event: 'Pongal, Makar Sankranti and Lohri', why: 'Harvest festivals across India: Pongal in Tamil Nadu, Sankranti in the south and west, Lohri in the north. Ethnic wear, kitchenware, sweets and gifting.', ads: [2, 3], prep: 6 },
+  { sort: '2027-01-18', when: 'Usually mid-to-late January', flag: 'usually', m: ['IN'], event: 'Republic Day sales (Amazon, Flipkart)', why: 'Amazon and Flipkart usually run large sales around Republic Day; dates are announced a few weeks ahead. Marketplace ad costs rise during the event.', ads: [2, 3], prep: 6 },
+  { sort: '2027-01-26', exact: true, m: ['IN'], event: 'Republic Day', why: 'National holiday; brands run patriotic-themed offers and the marketplace sales usually end around this date.', ads: [1, 2], prep: 4 },
+  { sort: '2027-01-26', exact: true, m: ['AU'], event: 'Australia Day', why: 'Public holiday with long-weekend sales, often combined with the end of summer and back-to-school shopping.', ads: [1, 2], prep: 4 },
+  { sort: '2027-01-27', when: 'Usually January to early February', flag: 'usually', m: ['AU'], event: 'Back to school (Australia)', why: 'The school year starts in late January or early February; stationery, uniforms, lunchboxes, shoes and laptops peak.', ads: [2, 3], prep: 6 },
+  // ---- February 2027
+  { sort: '2027-02-06', exact: true, m: ['IN', 'UK', 'US', 'UAE', 'AU'], event: 'Lunar New Year (supplier shutdowns)', why: 'A gifting moment in Australia, the US and the UK. For every market, many factories and suppliers in China close for one to three weeks, so place stock orders well before.', ads: [1, 2], prep: 'Place supplier orders 8–10 weeks before' },
+  { sort: '2027-02-08', exact: true, flag: 'moon', when: 'Expected to start around 8 Feb 2027', m: ['UAE', 'UK', 'IN'], event: 'Ramadan begins', why: 'Shopping moves to evenings and late nights; food, modest fashion, home, gifting and electronics rise through the month and peak before Eid.', ads: 'From the first week of Ramadan; scale in the last 10 days', prep: 6 },
+  { sort: '2027-02-14', exact: true, m: ['IN', 'UK', 'US', 'UAE', 'AU'], event: "Valentine's Day", why: 'Gifting for jewellery, flowers, chocolates, fragrance, beauty and personalised products. Delivery by the day is what sells.', ads: [2, 3], prep: 6 },
+  { sort: '2027-02-15', exact: true, m: ['US'], event: "Presidents' Day", why: 'Long-weekend sales, especially for furniture, mattresses, home and appliances.', ads: [1, 2], prep: 4 },
+  // ---- March 2027
+  { sort: '2027-03-07', exact: true, m: ['UK'], event: "Mothering Sunday (UK Mother's Day)", why: 'A major UK gifting date for flowers, beauty, jewellery and experiences. Set delivery cut-offs for the Thursday or Friday before.', ads: [2, 3], prep: 6 },
+  { sort: '2027-03-08', exact: true, m: ['IN', 'UK', 'US', 'UAE', 'AU'], event: "International Women's Day", why: 'Brand campaigns and offers in beauty, fashion and wellness; works best with a genuine story rather than a plain discount.', ads: [1, 2], prep: 4 },
+  { sort: '2027-03-10', exact: true, flag: 'moon', when: 'Expected around 9–10 Mar 2027', m: ['UAE', 'UK', 'IN'], event: 'Eid al-Fitr', why: 'The end of Ramadan: new clothes, gifts, sweets and family gatherings. Most orders must arrive before Eid, so delivery promises matter.', ads: 'Peak in the last 10 days of Ramadan', prep: 6 },
+  { sort: '2027-03-22', exact: true, flag: 'confirm', when: '22 Mar 2027 (Holika Dahan 21 Mar; a few regional calendars differ)', m: ['IN'], event: 'Holi', why: 'Colours, white kurtas, sweets, snacks and gifting. Short buying window; quick commerce matters for last-minute orders.', ads: [2, 3], prep: 6 },
+  { sort: '2027-03-28', exact: true, when: '28 Mar 2027 (Good Friday 26 Mar, Easter Monday 29 Mar)', m: ['UK', 'US', 'AU'], event: 'Easter', why: 'Chocolate, gifts, homeware and long-weekend sales; in Australia and the UK the four-day weekend is a key promotion window.', ads: [2, 3], prep: 6 },
+  // ---- April 2027
+  { sort: '2027-04-07', exact: true, flag: 'confirm', when: '7 Apr 2027 (most calendars)', m: ['IN'], event: 'Ugadi and Gudi Padwa', why: 'New year in Karnataka, Andhra Pradesh, Telangana and Maharashtra; an auspicious day for gold, vehicles, electronics and new clothes.', ads: [2, 3], prep: 6 },
+  { sort: '2027-04-14', exact: true, flag: 'confirm', when: '14 Apr 2027 (Vishu may fall on 15 Apr)', m: ['IN'], event: 'Tamil New Year (Puthandu), Vishu and Baisakhi', why: 'Regional new year and harvest festivals in Tamil Nadu, Kerala and Punjab: ethnic wear, gold, kitchenware and festive food.', ads: [2, 3], prep: 6 },
+  // ---- May 2027
+  { sort: '2027-05-05', when: 'Usually May', flag: 'usually', m: ['IN'], event: 'Amazon Great Summer Sale', why: "Amazon India's summer sale; dates are announced by Amazon. Appliances, cooling, fashion and travel gear lead.", ads: [2, 3], prep: 6 },
+  { sort: '2027-05-06', when: 'Usually May', flag: 'usually', m: ['AU'], event: 'Click Frenzy Mayhem', why: 'A mid-year Click Frenzy event in Australia; dates are announced by Click Frenzy.', ads: [2, 3], prep: 6 },
+  { sort: '2027-05-09', flag: 'tbc', when: 'May 2027, date to be confirmed (several calendars list 9 May)', m: ['IN'], event: 'Akshaya Tritiya', why: 'One of the most auspicious days in India for buying gold and jewellery, and for starting new purchases.', ads: [2, 3], prep: 6 },
+  { sort: '2027-05-09', exact: true, m: ['US', 'AU', 'IN'], event: "Mother's Day (US, Australia, India)", why: 'Second Sunday of May. Big for flowers, beauty, jewellery, fashion and personalised gifts.', ads: [2, 3], prep: 6 },
+  { sort: '2027-05-16', exact: true, flag: 'moon', when: 'Expected around 16 May 2027 (Arafat Day around 15 May)', m: ['UAE', 'UK', 'IN'], event: 'Eid al-Adha', why: 'Holiday shopping for clothes, gifts, food and travel; long public holidays in the UAE change delivery and browsing patterns.', ads: [2, 3], prep: 6 },
+  { sort: '2027-05-31', exact: true, m: ['US'], event: 'Memorial Day', why: 'The unofficial start of summer in the US: outdoor, home, furniture and fashion sales on the long weekend.', ads: [1, 2], prep: 4 },
+  // ---- June 2027
+  { sort: '2027-06-10', when: 'Usually June (also December)', flag: 'usually', m: ['IN'], event: 'Myntra End of Reason Sale', why: 'The mid-year edition of Myntra’s big fashion sale; dates are announced by Myntra.', ads: [1, 2], prep: 6 },
+  { sort: '2027-06-20', exact: true, m: ['UK', 'US', 'IN'], event: "Father's Day (UK, US, India)", why: 'Third Sunday of June. Grooming, gadgets, fashion, watches and experiences.', ads: [2, 3], prep: 6 },
+  { sort: '2027-06-30', exact: true, when: '30 Jun 2027 (EOFY sales usually run through June)', m: ['AU'], event: 'End of financial year (EOFY)', why: 'Australian shoppers and small businesses buy before the tax year ends; electronics, office, tools and furniture sales run all month.', ads: 'From late May or early June', prep: 6 },
+  // ---- July 2027
+  { sort: '2027-07-04', exact: true, m: ['US'], event: 'Independence Day (US)', why: 'Summer long-weekend sales: outdoor, fashion, home and grilling.', ads: [1, 2], prep: 4 },
+  { sort: '2027-07-12', when: 'Usually July (dates can differ by country)', flag: 'usually', m: ['US', 'UK', 'AU', 'UAE', 'IN'], event: 'Amazon Prime Day', why: "Amazon's members-only sale. Deal submissions close weeks before; off-Amazon stores often run competing offers the same days.", ads: [2, 3], prep: 8 },
+  { sort: '2027-07-15', when: 'Usually July to August', flag: 'usually', m: ['UAE'], event: 'Dubai Summer Surprises', why: 'A summer retail festival in Dubai; dates are announced by the organisers.', ads: [2, 3], prep: 6 },
+  { sort: '2027-07-25', when: 'Usually late July to August', flag: 'usually', m: ['US', 'UK'], event: 'Back to school (US and UK)', why: 'Uniforms, shoes, bags, stationery and laptops. US shopping starts earlier; UK peaks in August.', ads: [2, 3], prep: 6 },
+  // ---- August 2027
+  { sort: '2027-08-05', when: 'Usually early August', flag: 'usually', m: ['IN'], event: 'Independence Day sales (Amazon, Flipkart)', why: 'Amazon and Flipkart usually run sales around 15 August; dates are announced a few weeks ahead.', ads: [2, 3], prep: 6 },
+  { sort: '2027-08-15', exact: true, m: ['IN'], event: 'Independence Day (India)', why: 'National holiday with patriotic-themed offers; in 2027 it falls on a Sunday.', ads: [1, 2], prep: 4 },
+  { sort: '2027-08-17', exact: true, flag: 'confirm', when: '17 Aug 2027 (most calendars; some list 16 Aug)', m: ['IN'], event: 'Raksha Bandhan', why: 'Rakhis, sweets, chocolates and gifts for siblings, including orders sent to India from abroad. Delivery dates decide the sale.', ads: [2, 3], prep: 6 },
+  { sort: '2027-08-24', flag: 'confirm', when: '24 or 25 Aug 2027 (calendars differ)', m: ['IN'], event: 'Janmashtami', why: 'Festive clothes for children, puja items, sweets and home décor.', ads: [1, 2], prep: 4 },
+  // ---- September 2027
+  { sort: '2027-09-03', exact: true, flag: 'confirm', when: '3 Sep 2027 (most calendars; some list 4 Sep)', m: ['IN'], event: 'Ganesh Chaturthi', why: 'Big in Maharashtra, Karnataka, Telangana and Tamil Nadu: idols, décor, sweets, ethnic wear and electronics.', ads: [2, 3], prep: 6 },
+  { sort: '2027-09-05', exact: true, m: ['AU'], event: "Father's Day (Australia)", why: 'First Sunday of September. Grooming, gadgets, tools, fashion and experiences.', ads: [2, 3], prep: 6 },
+  { sort: '2027-09-06', exact: true, m: ['US'], event: 'Labor Day', why: 'End-of-summer sales and clearance before the fourth quarter.', ads: [1, 2], prep: 4 },
+  { sort: '2027-09-12', flag: 'confirm', when: '12 or 13 Sep 2027 (calendars differ)', m: ['IN'], event: 'Onam (Thiruvonam)', why: "Kerala's biggest festival: kasavu sarees and mundus, gold, home appliances and food. Shopping builds over the ten days before.", ads: [2, 3], prep: 6 },
+  { sort: '2027-09-25', when: 'Usually late September or early October', flag: 'usually', m: ['IN'], event: 'Flipkart Big Billion Days', why: "Flipkart's biggest sale, usually timed before Navratri; dates are announced by Flipkart. Marketplace ad costs and competition peak.", ads: [3, 4], prep: 8 },
+  { sort: '2027-09-26', when: 'Usually late September or early October, running for weeks', flag: 'usually', m: ['IN'], event: 'Amazon Great Indian Festival', why: "Amazon India's festive sale, usually starting around the same time as Big Billion Days and running into Diwali; dates are announced by Amazon.", ads: [3, 4], prep: 8 },
+  { sort: '2027-09-30', exact: true, flag: 'confirm', when: 'Around 30 Sep – 8 Oct 2027 (most calendars)', m: ['IN'], event: 'Navratri and Durga Puja', why: 'Nine nights of festivities: chaniya cholis and ethnic wear, jewellery, décor and gifting. Durga Puja peaks in West Bengal in the same window.', ads: [3, 4], prep: 8 },
+  // ---- October 2027
+  { sort: '2027-10-09', exact: true, flag: 'confirm', when: '9 Oct 2027 (most calendars)', m: ['IN'], event: 'Dussehra', why: 'An auspicious buying day for vehicles, electronics and gold, and the start of the final run-up to Diwali.', ads: [2, 3], prep: 8 },
+  { sort: '2027-10-12', when: 'Usually October', flag: 'usually', m: ['US', 'UK'], event: 'Amazon Prime Big Deal Days', why: "Amazon's autumn Prime event in several countries; dates are announced by Amazon. An early start to holiday shopping.", ads: [2, 3], prep: 8 },
+  { sort: '2027-10-27', exact: true, flag: 'confirm', when: '27 Oct 2027 (most calendars)', m: ['IN'], event: 'Dhanteras', why: 'Gold, jewellery, kitchenware and electronics peak two days before Diwali.', ads: [2, 3], prep: 6 },
+  { sort: '2027-10-29', exact: true, flag: 'confirm', when: '29 Oct 2027 (most calendars)', m: ['IN', 'UK', 'UAE'], event: 'Diwali (Lakshmi Puja)', why: 'The biggest gifting and ethnic-wear season for Indian shoppers at home and abroad. Most orders land in the three weeks before.', ads: [3, 4], prep: 8 },
+  { sort: '2027-10-31', exact: true, m: ['US', 'UK', 'AU'], event: 'Halloween', why: 'Costumes, décor, sweets and party supplies; a short window that ends abruptly on the day.', ads: [2, 3], prep: 6 },
+  // ---- November 2027
+  { sort: '2027-11-11', exact: true, m: ['AU', 'UAE'], event: "Singles' Day (11.11)", why: 'Marketplace-led sale day; an early warm-up for Black Friday in Australia and the Gulf.', ads: [1, 2], prep: 4 },
+  { sort: '2027-11-13', when: 'Usually mid-November', flag: 'usually', m: ['AU'], event: 'Click Frenzy: The Main Event', why: 'One of the biggest online sales in Australia; dates are announced by Click Frenzy.', ads: [2, 3], prep: 6 },
+  { sort: '2027-11-14', when: 'Usually November, around Black Friday', flag: 'usually', m: ['UAE'], event: 'Amazon.ae White Friday', why: "Amazon's Black Friday event in the UAE; deals are submitted ahead of the published dates.", ads: [2, 3], prep: 8 },
+  { sort: '2027-11-15', when: 'Usually November, around Black Friday', flag: 'usually', m: ['UAE'], event: 'Noon Yellow Friday', why: "Noon's biggest sale of the year in the UAE; deal submissions close before the event.", ads: [2, 3], prep: 8 },
+  { sort: '2027-11-25', exact: true, m: ['US'], event: 'Thanksgiving', why: 'Starts the long weekend; many US stores open Black Friday deals earlier in the week.', ads: [2, 3], prep: 6 },
+  { sort: '2027-11-26', exact: true, m: ['US', 'UK', 'AU', 'UAE', 'IN'], event: 'Black Friday', why: 'The biggest online sale day in the US, UK and Australia, and growing in the UAE and India. Ad auctions are at their most expensive this week.', ads: [4, 6], prep: 8 },
+  { sort: '2027-11-29', exact: true, m: ['US', 'UK', 'AU'], event: 'Cyber Monday', why: 'Online-only follow-up to Black Friday. Refresh offers rather than repeating them.', ads: [4, 6], prep: 8 },
+  // ---- December 2027
+  { sort: '2027-12-02', exact: true, m: ['UAE'], event: 'UAE National Day (Eid Al Etihad)', why: 'Public holiday weekend with national-themed offers across retail.', ads: [1, 2], prep: 4 },
+  { sort: '2027-12-12', when: 'Usually mid-to-late December', flag: 'usually', m: ['UK', 'US', 'AU'], event: 'Last Christmas delivery dates', why: 'Carriers publish last posting dates each year. Show an "order by" date on product pages and in emails.', ads: 'Run "order by" reminders in the final 7–10 days', prep: 'Check carrier cut-offs 4 weeks before' },
+  { sort: '2027-12-14', when: 'Usually December', flag: 'usually', m: ['IN'], event: 'Myntra End of Reason Sale', why: "India's big fashion sale; dates are announced by Myntra.", ads: [1, 2], prep: 6 },
+  { sort: '2027-12-15', when: 'Usually mid-December to late January', flag: 'usually', m: ['UAE'], event: 'Dubai Shopping Festival', why: 'City-wide retail festival with online promotions; dates are announced by the organisers.', ads: [2, 3], prep: 6 },
+  { sort: '2027-12-25', exact: true, m: ['UK', 'US', 'AU', 'IN'], event: 'Christmas Day', why: 'Gifting peak for the UK, US and Australia, and a growing gifting moment in Indian cities. Most online sales happen before delivery cut-offs.', ads: [4, 6], prep: 8 },
+  { sort: '2027-12-26', exact: true, m: ['UK', 'AU'], event: 'Boxing Day sales', why: 'One of the biggest sale days in the UK and Australia; many stores start online on Christmas Day evening.', ads: [2, 3], prep: 6 },
+];
+
+const MK: Record<Mk, string> = { IN: 'India', UK: 'UK', US: 'US', UAE: 'UAE', AU: 'Australia' };
+const FLAG: Record<Flag, string> = {
+  moon: 'Expected: depends on moon sighting / official announcement',
+  confirm: 'Lunar calendar: confirm closer to the date',
+  tbc: 'Date to be confirmed',
+  usually: 'Platform announces dates',
+};
+const DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const MONTH_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const toDate = (s: string) => { const [y, m, d] = s.split('-').map(Number); return new Date(Date.UTC(y, m - 1, d)); };
+const fmt = (d: Date, year = false) => `${d.getUTCDate()} ${MON[d.getUTCMonth()]}${year ? ' ' + d.getUTCFullYear() : ''}`;
+const minus = (s: string, weeks: number) => new Date(toDate(s).getTime() - weeks * 7 * 864e5);
+
+const rows = [...events].sort((a, b) => a.sort.localeCompare(b.sort)).map((e) => {
+  const d = toDate(e.sort);
+  const when = e.when ?? `${DOW[d.getUTCDay()]} ${fmt(d, true)}`;
+  const day = e.exact || e.flag === 'confirm' || e.flag === 'moon' ? `${d.getUTCDate()}` : '';
+  const ads = typeof e.ads === 'string' ? e.ads : `${e.ads[0]}–${e.ads[1]} weeks before` + (e.exact ? ` (from ${fmt(minus(e.sort, e.ads[1]))})` : e.flag === 'usually' ? ' the announced dates' : '');
+  const prep = typeof e.prep === 'string' ? e.prep : `${e.prep} weeks before` + (e.exact ? ` (by ${fmt(minus(e.sort, e.prep))})` : '');
+  return { month: e.sort.slice(0, 7), day, mon: MON[d.getUTCMonth()], when, flag: e.flag, flagText: e.flag ? FLAG[e.flag] : '', m: e.m, markets: e.m.map((k) => MK[k]).join(', '), event: e.event, why: e.why, ads, prep, date: e.exact && !e.flag ? e.sort : '' };
+});
+const months = [...new Set(rows.map((r) => r.month))].map((k) => ({ key: k, label: `${MONTH_LONG[+k.slice(5) - 1]} ${k.slice(0, 4)}`, rows: rows.filter((r) => r.month === k) }));
+const csvRows = rows.map((r) => ({ m: r.m, cells: [r.date, r.when, r.markets, r.event, r.why, r.ads, r.prep, r.flagText || 'Fixed date'] }));
+
+const trail = [{ label: 'Resources', href: '/resources/' }];
+const guide = [
+  { heading: 'How to use this ecommerce sale calendar', paragraphs: ['This ecommerce sale calendar covers November 2026 to December 2027 for the five markets we work in most: India, the UK, the US, the UAE and Australia. Each row gives the date (or the month, when a platform sets it), the markets it matters in, why it matters for an online store, when to start ads and when your preparation should be finished.', 'Use the market buttons to see only the dates that apply to you, then download the CSV and paste it into your planning sheet or project tool. The "start ads" and "prep by" dates are worked back from the event date, so you can drop them straight into a content calendar. Treat them as a starting point: a store with long delivery times or slow stock replenishment needs to start earlier.'] },
+  { heading: 'Fixed dates, moon-based dates and platform sales', paragraphs: ['Not every date in a festive sale calendar is equally certain, and planning around the wrong day can waste a whole campaign. We mark three kinds of dates differently.', 'Fixed and calculated dates, such as Black Friday, Christmas, Boxing Day, Mothering Sunday and national days, are shown exactly. Hindu festivals follow the lunar calendar, and regional calendars sometimes differ by a day; we show the date most calendars give and mark it "confirm closer to the date". Ramadan and the two Eids depend on moon sighting and official announcements, so they are marked as expected dates that can move by a day or two.', 'Marketplace and shopping-festival dates (Flipkart Big Billion Days, Amazon Great Indian Festival, Prime Day, White Friday, Yellow Friday, Click Frenzy, the Dubai Shopping Festival) are announced by the platforms or organisers, usually a few weeks ahead. We show the month they usually fall in, never a guessed date. Watch seller emails and seller central notices for the real dates.'] },
+  { heading: 'When to start ads before a sale', paragraphs: ['Ad platforms need time to learn who buys. If you switch on a new campaign the day before a sale, it competes in the most expensive auctions with no history and no warm audience. Starting earlier lets you test creatives while costs are lower, build a pool of engaged visitors for remarketing, and spend the peak days on people who already know you.', 'For the biggest peaks (Diwali, Black Friday, Christmas, Big Billion Days, Ramadan) start testing three to six weeks before and save most of the budget for the final week. For mid-sized gifting days such as Valentine\'s Day, Mother\'s Day and Raksha Bandhan, two to three weeks is usually enough. Check your break-even ROAS before the peak so you know how far you can raise bids and still make money.'], bullets: ['Test creatives and offers early, when ad costs are lower', 'Build remarketing audiences from video viewers, visitors and add-to-carts', 'Scale spend in the final week on the winners only', 'Keep a small budget running after the sale for late buyers and returns'] },
+  { heading: 'What to prepare before every sale', paragraphs: ['Most sale problems are not ad problems. They are stock that runs out on day one, a discount code that does not work, a site that slows down under traffic, or a delivery promise the courier cannot keep. The "prep by" column is when these should be finished, not started.', 'Lock your offers and pricing first, because everything else depends on them. Then confirm stock and supplier lead times (remember Lunar New Year factory closures for anything sourced from China), brief creatives, test the site on mobile, and set delivery cut-off messages. Marketplace deals need extra time: Amazon, Flipkart and Noon close deal submissions well before the sale starts.'] },
+  { heading: 'Peak seasons by market', paragraphs: ['India has two long peaks: the festive run from the big marketplace sales in late September through Navratri, Dussehra and Diwali, and a second wave of regional festivals through the year, from Pongal and Holi to Onam. Quick commerce matters for last-minute orders on festival days.', 'The UK, US and Australia share the Black Friday to Boxing Day peak, with Australia adding Click Frenzy and the EOFY sales in June. The UAE runs on a different rhythm: Ramadan and Eid al-Fitr, Eid al-Adha, White Friday and Yellow Friday, UAE National Day and the Dubai Shopping Festival. If you sell in more than one market, filter by each one and you will see where your team\'s busy weeks overlap.'] },
+];
+const faqs = [
+  { q: 'When is Black Friday 2026 and 2027?', a: 'Black Friday is the day after US Thanksgiving, which falls on the fourth Thursday of November. In 2026 it is Friday 27 November, with Cyber Monday on 30 November. In 2027 Black Friday is Friday 26 November and Cyber Monday is 29 November.' },
+  { q: 'When is Diwali 2027?', a: 'Most calendars place Diwali (Lakshmi Puja) on Friday 29 October 2027, with Dhanteras two days earlier on 27 October. Hindu festival dates follow the lunar calendar and regional calendars can differ by a day, so confirm the date in a local calendar before you fix delivery cut-offs.' },
+  { q: 'When are Ramadan and Eid in 2027?', a: 'Ramadan is expected to start around 8 February 2027, Eid al-Fitr around 9 or 10 March and Eid al-Adha around 16 May. All three depend on moon sighting and official announcements, so they can move by a day or two. Plan campaigns around the expected window and adjust when dates are confirmed.' },
+  { q: 'When are Flipkart Big Billion Days and Amazon Great Indian Festival?', a: 'Both are usually held in late September or early October, before Navratri, and run into the Diwali season. Flipkart and Amazon announce the exact dates themselves, usually a few weeks before. We do not list guessed dates; watch seller notices and plan your stock and deals as if the sale starts in late September.' },
+  { q: 'How early should I start ads before a festive sale?', a: 'For major peaks such as Diwali, Black Friday or Christmas, start testing creatives and building audiences three to six weeks before, then put most of the budget into the final week. For smaller gifting days, two to three weeks is usually enough. Brands with long delivery times should start earlier.' },
+  { q: 'Can I download this sale calendar?', a: 'Yes. Choose a market (or all markets) and press "Download CSV". The file includes the date, markets, event, why it matters, when to start ads and the prep deadline, and opens in Excel, Google Sheets or Numbers. Lunar, moon-sighting and platform dates are labelled so you know which to recheck.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'Ecommerce Sale Calendar 2027', href: '/resources/sale-calendar/' }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'Article', headline: 'Ecommerce Sale Calendar 2027 for India, UK, US, UAE and Australia', description: 'Festive and sale dates from November 2026 to December 2027 with when to start ads and when to prepare.', url: `${site.url}/resources/sale-calendar/`, datePublished: '2026-10-22', dateModified: '2026-10-22', author: { '@id': `${site.url}/#org` }, publisher: { '@id': `${site.url}/#org` }, inLanguage: 'en-IN' },
+];
+const figures = [
+  { type: 'mindmap', caption: 'The sale peaks that shape the year in each of the five markets.', after: 0, center: 'Sale peaks 2027', branches: [
+    { label: 'India', items: ['Big Billion Days, Navratri', 'Diwali and Dhanteras', 'Pongal, Holi, Onam'] },
+    { label: 'UK and US', items: ['Black Friday weekend', 'Christmas cut-offs', 'Mother\'s and Father\'s Day'] },
+    { label: 'UAE', items: ['Ramadan and Eid', 'White and Yellow Friday', 'Dubai Shopping Festival'] },
+    { label: 'Australia', items: ['Click Frenzy', 'EOFY in June', 'Boxing Day'] },
+  ] },
+  { type: 'steps', caption: 'A simple countdown for one big sale, from offers to the final push.', after: 2, steps: [
+    { title: '8 weeks out', body: 'Lock offers, stock and supplier orders' },
+    { title: '6 weeks out', body: 'Brief creatives, submit marketplace deals' },
+    { title: '4 weeks out', body: 'Test ads, build remarketing audiences' },
+    { title: 'Final week', body: 'Scale winners, show delivery cut-offs' },
+    { title: 'After the sale', body: 'Retarget buyers, review profit' },
+  ] },
+];
+const filters: { k: 'all' | Mk; label: string }[] = [{ k: 'all', label: 'All markets' }, { k: 'IN', label: 'India' }, { k: 'UK', label: 'UK' }, { k: 'US', label: 'US' }, { k: 'UAE', label: 'UAE' }, { k: 'AU', label: 'Australia' }];
+---
+<Base title="Ecommerce Sale Calendar 2027: Festive & Sale Dates | Magnus Path" description="Ecommerce sale calendar 2027 for India, UK, US, UAE and Australia: festive and marketplace sale dates, when to start ads and when to prep. Free CSV download." schema={schema}>
+  <SimpleHero eyebrow="Free resource" h1="Ecommerce Sale Calendar 2027 for *India, UK, US, UAE and Australia*" intro="This ecommerce sale calendar 2027 lists every festive and shopping peak from November 2026 to December 2027, with when to start ads and when to finish preparing. Filter by market and download it as a CSV." trail={trail} current="Ecommerce Sale Calendar 2027" />
+
+  <section class="section scal" id="calendar">
+    <div class="wrap scal__wrap">
+      <div class="scal__bar">
+        <div class="scal__filters" role="group" aria-label="Filter by market">
+          {filters.map((f, i) => <button type="button" class="scal__chip" data-k={f.k} aria-pressed={i === 0 ? 'true' : 'false'}>{f.label}</button>)}
+        </div>
+        <button type="button" class="btn btn--primary btn--sm" id="scal-csv">Download CSV <span class="arrow" aria-hidden="true">↓</span></button>
+      </div>
+      <p class="scal__count" id="scal-count" aria-live="polite">Showing all {rows.length} dates, November 2026 to December 2027.</p>
+      <ul class="scal__legend" aria-label="Date labels">
+        <li><span class="scal__flag" data-f="confirm">Confirm</span> Lunar calendar: calendars can differ by a day</li>
+        <li><span class="scal__flag" data-f="moon">Expected</span> Depends on moon sighting / official announcement</li>
+        <li><span class="scal__flag" data-f="usually">Usually</span> Platform or organiser announces the dates</li>
+        <li><span class="scal__flag" data-f="tbc">TBC</span> Date to be confirmed</li>
+      </ul>
+
+      {months.map((mo) => (
+        <section class="scal__month" data-month={mo.key} aria-labelledby={`m-${mo.key}`}>
+          <h2 id={`m-${mo.key}`}>{mo.label}</h2>
+          <ul class="scal__list">
+            {mo.rows.map((r) => (
+              <li class="scal__row" data-m={r.m.join(' ')}>
+                <div class="scal__when">
+                  <span class="scal__day" aria-hidden="true">{r.day ? <>{r.day}<small>{r.mon}</small></> : <small>{r.mon}</small>}</span>
+                  <span class="scal__date">{r.when}{r.flag && <span class="scal__flag" data-f={r.flag} title={r.flagText}>{{ moon: 'Expected', confirm: 'Confirm', tbc: 'TBC', usually: 'Usually' }[r.flag]}</span>}</span>
+                </div>
+                <div class="scal__what">
+                  <h3>{r.event}</h3>
+                  <p>{r.why}</p>
+                  <p class="scal__mk"><span class="sr-only">Markets: </span>{r.m.map((k) => <span>{MK[k]}</span>)}</p>
+                </div>
+                <dl class="scal__plan">
+                  <div><dt>Start ads</dt><dd>{r.ads}</dd></div>
+                  <div><dt>Prep by</dt><dd>{r.prep}</dd></div>
+                </dl>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      <p class="scal__empty" id="scal-empty" hidden>No dates for this market.</p>
+      <div class="scal__cta">
+        <p>Want help planning your next peak? Our team reviews your store, ads and offers before the sale.</p>
+        <a class="btn btn--primary" href="/free-ecommerce-audit/?from=sale-calendar#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <p class="scal__note">Dates checked on 22 October 2026. Lunar and moon-sighting dates can shift; platform sale dates are set by Amazon, Flipkart, Noon, Myntra, Click Frenzy and event organisers. Recheck each date a few weeks before you commit spend.</p>
+    </div>
+  </section>
+  <script is:inline type="application/json" id="scal-data" set:html={JSON.stringify(csvRows)}></script>
+
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="How to plan around the 2027 sale calendar" />
+  <FAQ items={faqs} title="Sale calendar questions" />
+  <Related links={[{ label: 'Performance marketing for e-commerce brands', href: '/performance-marketing/' }, { label: 'Amazon marketing agency', href: '/amazon-marketing-agency/' }, { label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' }, { label: 'UAE e-commerce marketing agency', href: '/uae/ecommerce-marketing-agency/' }, { label: 'Free e-commerce store audit', href: '/free-ecommerce-audit/' }]} />
+  <LeadForm heading="Planning a big sale this year?" sub="Tell us which peak you are preparing for. We will review your store, ads and offers and send a prioritised list of fixes before the rush." />
+</Base>
+
+<script>
+  type Row = { m: string[]; cells: string[] };
+  const data = JSON.parse(document.getElementById('scal-data')!.textContent || '[]') as Row[];
+  const names: Record<string, string> = { all: 'all markets', IN: 'India', UK: 'the UK', US: 'the US', UAE: 'the UAE', AU: 'Australia' };
+  const chips = document.querySelectorAll<HTMLButtonElement>('.scal__chip');
+  let current = 'all';
+  try { const saved = localStorage.getItem('mp-sale-cal-market'); if (saved && saved in names) current = saved; } catch { /* storage blocked */ }
+
+  function apply() {
+    chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.k === current)));
+    let shown = 0;
+    document.querySelectorAll<HTMLElement>('.scal__month').forEach((mo) => {
+      let n = 0;
+      mo.querySelectorAll<HTMLElement>('.scal__row').forEach((r) => {
+        const ok = current === 'all' || (r.dataset.m || '').split(' ').includes(current);
+        r.hidden = !ok; if (ok) n++;
+      });
+      mo.hidden = n === 0; shown += n;
+    });
+    document.getElementById('scal-empty')!.hidden = shown > 0;
+    document.getElementById('scal-count')!.textContent = `Showing ${shown} dates for ${names[current]}, November 2026 to December 2027.`;
+  }
+  chips.forEach((c) => c.addEventListener('click', () => {
+    current = c.dataset.k || 'all';
+    try { localStorage.setItem('mp-sale-cal-market', current); } catch { /* storage blocked */ }
+    apply();
+  }));
+
+  const esc = (s: string) => (/[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s);
+  document.getElementById('scal-csv')!.addEventListener('click', () => {
+    const head = ['Date (fixed dates only)', 'When', 'Markets', 'Event', 'Why it matters', 'Start ads', 'Prep by', 'Date status'];
+    const rows = data.filter((r) => current === 'all' || r.m.includes(current));
+    const csv = '﻿' + [head, ...rows.map((r) => r.cells)].map((r) => r.map(esc).join(',')).join('\r\n');
+    const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url; a.download = `ecommerce-sale-calendar-2027${current === 'all' ? '' : '-' + current.toLowerCase()}.csv`;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+  apply();
+</script>
+
+<style>
+  .scal { padding-top: clamp(20px, 3vw, 40px); }
+  .scal__wrap { display: grid; gap: 18px; }
+  .scal__bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; position: sticky; top: 76px; z-index: 5; background: var(--paper); padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .scal__filters { display: flex; flex-wrap: wrap; gap: 8px; }
+  .scal__chip { font: 600 14px var(--font-body); padding: 9px 15px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--white); color: var(--ink); cursor: pointer; }
+  .scal__chip:hover { border-color: var(--ink); }
+  .scal__chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--white); }
+  .scal__chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .scal__count { font-size: 14px; color: var(--muted); }
+  .scal__legend { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: var(--muted); }
+  .scal__legend li { display: inline-flex; align-items: center; gap: 8px; }
+  .scal__flag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; background: #eef0f2; color: #33373d; white-space: nowrap; }
+  .scal__flag[data-f="moon"] { background: #e6eef9; color: #1e3a8a; }
+  .scal__flag[data-f="confirm"] { background: #fdf0d5; color: #7c4a03; }
+  .scal__flag[data-f="usually"] { background: var(--accent-tint); color: var(--accent-ink); }
+  .scal__flag[data-f="tbc"] { background: #f3e8ff; color: #6b21a8; }
+  .scal__month { display: grid; gap: 10px; margin-top: 18px; scroll-margin-top: 150px; }
+  .scal__month[hidden], .scal__row[hidden], .scal__empty[hidden] { display: none; }
+  .scal__month h2 { font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
+  .scal__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .scal__row { display: grid; gap: 12px; padding: 18px; background: var(--white); border: 1px solid var(--line); border-radius: 20px; }
+  .scal__when { display: flex; gap: 14px; align-items: flex-start; }
+  .scal__day { flex: none; width: 54px; height: 54px; border-radius: 14px; background: var(--paper); border: 1px solid var(--line); display: grid; place-content: center; text-align: center; font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; line-height: 1; font-variant-numeric: tabular-nums; }
+  .scal__day small { display: block; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 3px; }
+  .scal__date { display: grid; gap: 6px; justify-items: start; font-size: 14px; font-weight: 600; line-height: 1.4; }
+  .scal__what { display: grid; gap: 6px; min-width: 0; }
+  .scal__what h3 { font-size: 1.12rem; }
+  .scal__what p { font-size: 15px; color: #33373d; line-height: 1.55; }
+  .scal__mk { display: flex; flex-wrap: wrap; gap: 6px; }
+  .scal__mk span:not(.sr-only) { font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .scal__plan { margin: 0; display: grid; gap: 8px; font-size: 14px; }
+  .scal__plan div { display: grid; gap: 2px; }
+  .scal__plan dt { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--accent-ink); }
+  .scal__plan dd { margin: 0; color: #33373d; }
+  .scal__empty { color: var(--muted); }
+  .scal__cta { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; padding: clamp(20px, 3vw, 30px); border-radius: 24px; background: var(--ink); color: var(--white); }
+  .scal__cta p { max-width: 52ch; }
+  .scal__note { font-size: 13px; color: var(--muted); max-width: 90ch; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  @media (min-width: 900px) {
+    .scal__row { grid-template-columns: 240px 1fr 230px; gap: 24px; align-items: start; }
+  }
+  @media print {
+    .scal__bar, .scal__cta { display: none; }
+    .scal__row { break-inside: avoid; border-color: #ccc; }
+  }
+</style>

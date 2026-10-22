@@ -124,5 +124,6 @@ const currencies = [['INR', '₹ Indian rupee'], ['USD', '$ US dollar'], ['GBP',
   .pm__formula { display: grid; gap: 6px; }
   .pm__formula strong { color: var(--white); }
   .calc__out .btn { justify-self: start; }
-  .calc__list dd { text-align: right; }
+  .calc__list dd { text-align: right; white-space: nowrap; }
+  .calc__wrap input:first-child, .calc__wrap span[hidden] + input { padding-left: 14px; }
 </style>
