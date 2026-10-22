@@ -37,3 +37,19 @@ All pages: `kind: 'industry'`, no `market` (India-first, written so overseas bra
 Rules that apply to every page: `docs/content-brief.md`, `docs/no-prices-rules.md`, the banned-word list
 (best, certified, guarantee, partner claims, CRM names, Webflow). Each page owns its exact primary keyword;
 other pages may mention the category but not that exact phrase as an anchor or heading.
+
+## UK and US versions
+
+Each of the 12 pages gets a UK and a US version: `kind: 'industry'`, `market: 'UK' | 'US'`, `twin: '<india slug>'`
+(hreflang: India page is x-default), breadcrumb = the market's country hub (as in `uk-meta.ts` / `us-meta.ts`).
+Same primary keyword as the India page (hreflang separates them), except US spelling: `us/jewelry-marketing-agency`,
+primary keyword `jewelry marketing agency`. Slugs: `uk/<same-slug>` and `us/<same-slug>` (without the `industries/` part),
+e.g. `uk/skincare-marketing-agency`, `us/skincare-marketing-agency`.
+
+Market substance to localise (described generally and hedged, no legal advice):
+- UK: ASA/CAP code, UK Cosmetics Regulation and product notification, MHRA (herbal THR, borderline products), food
+  supplement and nutrition/health claims rules, UK assay office hallmarking, UK product safety/UKCA, WEEE, Amazon UK,
+  eBay, Etsy, TikTok Shop, retailers such as Boots, Superdrug, John Lewis as context only, GBP quotes, London E18 office.
+- US: FTC advertising and endorsement rules, FDA cosmetics (MoCRA), DSHEA structure/function claims and disclaimer,
+  CPSC/CPSIA for children's products, FCC for electronics, AAFCO and state rules for pet food, Amazon US, Walmart,
+  Target, TikTok Shop, Ulta/Sephora as context only, USD quotes, delivered remotely (no US office).
