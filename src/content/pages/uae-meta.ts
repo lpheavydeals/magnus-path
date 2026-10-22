@@ -193,7 +193,7 @@ export const uaeMetaPages: ServicePageData[] = [
         { label: 'Messaging', items: ['WhatsApp click-to-chat', 'Messenger replies'] },
         { label: 'Set-up', items: ['Business Suite roles', 'Pixel and Conversions API'] },
       ] },
-      { type: 'venn', caption: 'Why the pixel and the Conversions API work best together, as long as each event is counted once.', after: 2,
+      { type: 'venn', caption: 'Why the pixel and the Conversions API are stronger together, as long as each event is counted once.', after: 2,
         left: { title: 'Meta pixel', body: 'Runs in the browser; sees page views, baskets and purchases' },
         right: { title: 'Conversions API', body: 'Sent from your server; still counts when browsers block cookies' },
         overlap: 'Deduplicated: each event once' },
@@ -249,7 +249,7 @@ export const uaeMetaPages: ServicePageData[] = [
         heading: 'Instagram placements, Advantage+ and creative in two languages',
         paragraphs: [
           'Instagram Reels, Stories and Explore each need creative made for them: vertical video, text kept inside the safe zones, and captions for people watching without sound. Resized feed posts usually underperform. We plan formats per placement and let Advantage+ placements spread delivery once each format has a proper version.',
-          'Advantage+ campaigns automate audiences, placements and budgets. They save time and often lower costs, but they work best with good tracking and varied creative, and they can blur results between new and existing customers. We use them where they fit and keep manual campaigns where you need control, such as a launch aimed at one emirate or one audience.',
+          'Advantage+ campaigns automate audiences, placements and budgets. They save time and often lower costs, but they need good tracking and varied creative, and they can blur results between new and existing customers. We use them where they fit and keep manual campaigns where you need control, such as a launch aimed at one emirate or one audience.',
           'For a mixed UAE audience, plan English and Arabic versions together. Arabic copy is written or checked by a fluent Arabic writer, and Arabic ads should lead to Arabic pages or an Arabic greeting in WhatsApp.',
         ],
       },
