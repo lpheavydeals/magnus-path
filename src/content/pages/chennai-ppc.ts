@@ -86,7 +86,7 @@ export const chennaiPpcPages: ServicePageData[] = [
         heading: 'Local campaigns for Chennai showrooms and stores',
         paragraphs: [
           'Many Chennai businesses sell in person: textile and jewellery showrooms in T. Nagar, furniture and electronics stores in Anna Nagar and Velachery, clinics and service centres across the city. For them, the goal is calls, directions and visits, not online orders. Location targeting lets you show ads only to people within a set distance of each store, or in the areas your customers actually come from.',
-          'Link your Google Business Profile to the ad account so your address, hours and reviews appear with your ads. Track calls from ads and the website, and WhatsApp clicks, as conversions. Where Google offers store-visit reporting for your account, use it as a guide alongside your own billing data. A Google Ads agency in Chennai that cannot show you calls and visits from your local campaigns is asking you to judge them on faith.',
+          'Link your Google Business Profile to the ad account so your address, hours and reviews appear with your ads. Track calls from ads and the website, and WhatsApp clicks, as conversions. Where Google offers store-visit reporting for your account, use it as a guide alongside your own billing data. Any PPC team that cannot show you calls and visits from your local campaigns is asking you to judge them on faith.',
         ],
         bullets: [
           'Set a radius around each store, not the whole state',
