@@ -99,7 +99,7 @@ export const industryProductsPages: ServicePageData[] = [
         paragraphs: [
           'Pet food and litter are now common on Blinkit, Zepto and Instamart, because running out is urgent. Being listed in the right cities, with clear pack shots and sizes, puts you in front of the buyer at that moment. Sponsored ads on these apps help a newer brand appear next to established names. Quick-commerce advertising in India is projected to grow from about ₹4,000 crore to ₹6,000 crore in 2026 (Pitch Madison), so competition for these slots is rising.',
           'Amazon remains strong for pet products that people research, compare and review: premium food, treats, grooming tools, beds and accessories. Variations by size and flavour, A+ content and steady review building matter as much as ad bids.',
-          'Your own store is where you keep the customer relationship. Subscriptions, bundles, new launches and loyalty offers work best there, and it is the only channel where you own the data needed for reorder reminders.',
+          'Your own store is where you keep the customer relationship. Subscriptions, bundles, new launches and loyalty offers work well there, and it is the only channel where you own the data needed for reorder reminders.',
         ],
       },
       {
@@ -193,6 +193,7 @@ export const industryProductsPages: ServicePageData[] = [
           'Shoes are harder to sell online than most clothing. A kurta that is slightly loose can still be worn; a shoe that is half a size too small usually cannot. Feet differ in length and width, brands size differently, and many buyers do not know their size in more than one system. That is why a footwear marketing agency has to start with fit, not with the ads.',
           'The cost of getting it wrong is high. Each size exchange means a reverse pickup, a second outbound shipment and a box that may come back scuffed. When a campaign brings lots of orders that turn into exchanges, the ad report looks good while the business pays twice for delivery. We track net sales after exchanges and returns by style and campaign, so budget follows shoes that fit and stay sold.',
           'Footwear also differs from fashion in how people browse. Buyers often know the type they want, such as white sneakers, running shoes or a festive jutti, and compare many options side by side. Clean filters by size, width and use make the store easier to shop.',
+          'Repeat buying works differently too. People replace running shoes after heavy use, buy school shoes every year as children grow, and come back for festive footwear each wedding season. A buyer who got the right size once will usually trust your size chart again, so a smooth first fit is also the start of your repeat sales.',
         ],
       },
       {
@@ -242,7 +243,7 @@ export const industryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
-      { label: 'Ecommerce marketing for fashion brands and apparel', href: '/industries/fashion-apparel/' },
+      { label: 'Fashion and apparel brand marketing', href: '/industries/fashion-apparel/' },
       { label: 'RTO and COD cost calculator', href: '/tools/rto-cod-calculator/' },
       { label: 'How to reduce RTO and COD returns', href: '/blog/how-to-reduce-rto-cod-returns/' },
       { label: 'Ecommerce Meta ads agency for catalogue ads', href: '/ecommerce-meta-ads-agency/' },
@@ -267,7 +268,7 @@ export const industryProductsPages: ServicePageData[] = [
     slug: 'industries/electronics-marketing-agency',
     kind: 'industry',
     title: 'Consumer Electronics Marketing Agency in India | Magnus Path',
-    description: 'Consumer electronics marketing agency for gadget brands: spec-led listings, Amazon and Flipkart ads, sale-event planning, review and video content, honest warranty info.',
+    description: 'Consumer electronics marketing agency for gadget brands: spec-led listings, Amazon and Flipkart ads, sale-event plans, reviews, video and honest warranty info.',
     primaryKeyword: 'consumer electronics marketing agency',
     navLabel: 'Consumer Electronics',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
@@ -305,7 +306,7 @@ export const industryProductsPages: ServicePageData[] = [
     figures: [
       { type: 'steps', caption: 'A sale-event plan for electronics starts weeks before the sale page goes live.', after: 4, steps: [
         { title: 'Pick hero models', body: 'Two or three products to push hardest' },
-        { title: 'Lock stock and deals', body: 'Inventory, coupons and bank offers' },
+        { title: 'Stock and deals', body: 'Inventory, coupons and bank offers' },
         { title: 'Warm up early', body: 'Build views and reviews before the sale' },
         { title: 'Run the sale', body: 'Daily bid and budget checks' },
         { title: 'Follow up', body: 'Reviews, setup help and accessories' },
@@ -355,6 +356,7 @@ export const industryProductsPages: ServicePageData[] = [
         paragraphs: [
           'Electronics demand peaks during marketplace sale events. Shoppers wait for these windows, compare deals and buy in large numbers. Click costs rise sharply too, so brands that plan late compete for the most expensive traffic with the least preparation.',
           'A good sale plan starts weeks ahead: pick hero models, agree deals and coupons, secure stock, build reviews and views in the weeks before, and set budgets for each day of the sale. During the event, we check bids and budgets daily. Afterwards, follow-up for reviews, setup help and accessory offers turns sale buyers into repeat customers. Our sale calendar lists the main dates.',
+          'Not every model should be discounted. Sale events suit products with healthy margins and enough stock, while new launches may do better with bundles or bank offers than with deep price cuts. Deciding this early protects margin and stops the sale from training buyers to wait for discounts on everything.',
         ],
       },
       {
