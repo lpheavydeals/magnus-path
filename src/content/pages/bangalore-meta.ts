@@ -12,7 +12,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Meta catalogue ads for Bengaluru online stores',
     h1: 'Ecommerce *Meta Ads* Agency in Bangalore for Online Stores',
-    intro: 'Magnus Path is an ecommerce Meta ads agency in Bangalore for online stores and D2C brands. We run catalogue and Advantage+ sales campaigns on Facebook and Instagram, keep your product feed healthy, test UGC creative every week and judge results on ROAS after COD, RTO and returns, with reviews at our Bengaluru office or on video.',
+    intro: 'Magnus Path is an ecommerce Meta ads agency in Bangalore for online stores and D2C brands. We run catalogue and Advantage+ sales campaigns (previously Advantage+ shopping) on Facebook and Instagram, keep your product feed healthy, test UGC creative every week and judge results on ROAS after COD, RTO and returns, with reviews at our Bengaluru office or on video.',
     icon: 'social',
     facts: ['Free Meta ads audit first', 'Ad account and pixel in your name', 'Catalogue fixed before scaling'],
     headings: {
@@ -27,7 +27,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
       { title: 'Creative that burns out in weeks', body: 'One studio shoot and a handful of carousels run until costs climb, with no steady supply of UGC, unboxing or try-on videos to test against them.' },
     ],
     includes: [
-      { title: 'Advantage+ sales campaigns', body: 'Set up with your catalogue, customer lists uploaded and a cap on spend towards existing buyers, so the campaign is pushed towards first orders rather than repeat customers who would buy anyway.' },
+      { title: 'Advantage+ sales campaigns', body: 'Previously called Advantage+ shopping. Set up with your catalogue, customer lists uploaded and a cap on spend towards existing buyers, so the campaign is pushed towards first orders rather than repeat customers who would buy anyway.' },
       { title: 'Catalogue and product feed health', body: 'Feed from Shopify, WooCommerce or a custom store kept in sync: titles, images, sale prices, variants and stock, with product sets by margin, category and season.' },
       { title: 'Dynamic product ads', body: 'Catalogue retargeting that shows viewed or carted products to past visitors, plus cross-sell sets for buyers, with frequency kept in check so ads do not follow people for weeks.' },
       { title: 'UGC and creative testing', body: 'A weekly test plan for hooks, formats and offers using customer videos, creator clips, try-ons and unboxings, with clear rules on when an ad wins or is retired.' },
@@ -73,7 +73,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
         paragraphs: [
           'An ecommerce Meta ads agency in Bangalore should start with the store, not the ad account. Facebook and Instagram sell products well, but only when the catalogue is accurate, purchase events are counted once and everyone knows what an order is really worth after delivery costs. Without those three, campaign tweaks are guesswork.',
           'This page is for online stores: D2C brands on Shopify or WooCommerce, marketplace sellers building their own site, and funded Bengaluru startups that need first orders to turn into repeat customers. If you sell a service or want enquiries, our pages on Facebook lead ads and on the wider Meta platform fit better.',
-          'For a store, the working structure is simple. A prospecting layer finds new buyers, usually through Advantage+ sales campaigns. A catalogue layer brings back people who viewed or carted products. A steady creative pipeline feeds both. Most other decisions are detail.',
+          'For a store, the working structure is simple. A prospecting layer finds new buyers, usually through Advantage+ sales campaigns, previously called Advantage+ shopping. A catalogue layer brings back people who viewed or carted products. A steady creative pipeline feeds both. Most other decisions are detail.',
         ],
       },
       {
@@ -92,7 +92,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
       {
         heading: 'Advantage+ sales, dynamic product ads and Shops',
         paragraphs: [
-          'Advantage+ sales campaigns let Meta’s system choose audiences, placements and creative combinations across Facebook and Instagram. They suit stores with steady purchase volume and a clean catalogue. Upload your customer list so Meta can tell new buyers from returning ones, cap the share of spend on existing customers and judge the campaign on new-customer orders.',
+          'Advantage+ sales campaigns (Meta’s newer name for Advantage+ shopping) let Meta’s system choose audiences, placements and creative combinations across Facebook and Instagram. They suit stores with steady purchase volume and a clean catalogue. Upload your customer list so Meta can tell new buyers from returning ones, cap the share of spend on existing customers and judge the campaign on new-customer orders.',
           'Dynamic product ads are the catalogue retargeting layer. They show people the exact products they viewed or added to cart, and can cross-sell to past buyers: a matching dupatta after a kurta, a refill after a serum. Keep the window short for fast-moving items and longer for considered buys such as furniture or electronics.',
           'Facebook and Instagram Shops use the same catalogue as a storefront inside the apps. Treat Shops as a shop window and a way to tag products in posts and Reels, and keep the checkout on your own site, where you control COD rules, offers and customer data.',
         ],
@@ -284,9 +284,9 @@ export const bangaloreMetaPages: ServicePageData[] = [
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Facebook lead ads for Bengaluru businesses',
     h1: 'Facebook Ads Agency in Bangalore for *Leads and Local Reach*',
-    intro: 'Magnus Path is a Facebook ads agency in Bangalore for service businesses and local brands that need enquiries, not just likes. We build lead ads with instant forms, choose Facebook feed, Marketplace and Reels placements, target the neighbourhoods you serve and send lead outcomes back to Facebook, so it learns which enquiries become customers.',
+    intro: 'Magnus Path is a Facebook ads agency in Bangalore for service businesses and local brands that need enquiries, not just likes. We build lead ads with instant forms, choose Facebook feed, Marketplace and Reels placements, target the neighbourhoods you serve and track which leads become customers, so campaigns are judged on sales, not form fills.',
     icon: 'social',
-    facts: ['Free lead-quality audit', 'Page and ad account in your name', 'Lead outcomes fed back weekly'],
+    facts: ['Free lead-quality audit', 'Page and ad account in your name', 'Leads judged on real customers'],
     headings: {
       pains: 'Why Facebook leads disappoint Bengaluru businesses',
       includes: 'What our Facebook ads management includes',
@@ -302,7 +302,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
       { title: 'Lead ads and instant forms', body: 'Forms with the right mix of pre-filled and custom questions, the higher-intent setting where it helps, a clear privacy notice and a thank-you screen that sets the next step.' },
       { title: 'Placement choices on Facebook', body: 'Feed, Marketplace, Reels, Stories and in-stream video chosen and reviewed by lead quality, not left on every placement by default.' },
       { title: 'Local and service audiences', body: 'Radius and pin-code targeting around your locations, past-enquirer lists and lookalikes, built for clinics, schools, salons, gyms, realtors and home services.' },
-      { title: 'Lead quality and offline uploads', body: 'A simple sheet where your team marks each lead as contacted, qualified, won or junk, with outcomes sent back to Meta weekly so Facebook learns from real customers.' },
+      { title: 'Lead quality and offline uploads', body: 'A simple sheet where your team marks each lead as contacted, qualified, won or junk, so campaigns are judged on real customers; a Conversions API link can follow once volume justifies it.' },
       { title: 'Page and comment moderation', body: 'Hidden-word filters, daily checks of ad comments, replies to genuine questions in your tone and a clear route for passing complaints to your team.' },
       { title: 'Fast lead delivery', body: 'Leads sent to email, WhatsApp or a Google Sheet within minutes, so your team calls while the person still remembers the ad.' },
       { title: 'Ad copy and creative for Facebook', body: 'Short videos, carousels and image ads in English and Kannada, with offers and proof that suit people choosing a local service.' },
@@ -311,7 +311,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
       { title: 'Free lead-quality audit', body: 'We review your Page, ad account, forms and a sample of recent leads with your team, and find where the poor-quality enquiries come from.' },
       { title: 'Rebuild forms and audiences', body: 'Forms get qualifying questions, targeting is tightened to the areas you serve, and a lead-outcome sheet is agreed with your sales team.' },
       { title: 'Launch and moderate', body: 'Campaigns go live on the chosen placements, comments are checked daily and new leads reach your team within minutes.' },
-      { title: 'Feed back and refine', body: 'Each week we send lead outcomes to Meta and adjust forms, audiences and creative. Monthly reviews happen at our Bengaluru office or on video.' },
+      { title: 'Feed back and refine', body: 'Each week we review lead outcomes and adjust forms, audiences and creative.'.replace("'",'') if False else 'Each week we review lead outcomes from your sheet and adjust forms, audiences and creative. Monthly reviews happen at our Bengaluru office or on video.' },
     ],
     platforms: ['Meta Ads Manager', 'Facebook Pages', 'Instant Forms', 'Events Manager', 'Facebook Marketplace', 'Google Sheets', 'WhatsApp Business'],
     local: {
@@ -332,10 +332,10 @@ export const bangaloreMetaPages: ServicePageData[] = [
         { title: 'Add friction', body: 'Higher-intent form, qualifying questions, tighter areas' },
         { title: 'Rethink the offer', body: 'Change the offer or audience before spending more' },
       ] },
-      { type: 'steps', caption: 'A CRM-free way to send lead outcomes back to Facebook every week.', after: 3, steps: [
+      { type: 'steps', caption: 'A CRM-free way to judge Facebook campaigns on the leads that became customers.', after: 3, steps: [
         { title: 'Export new leads', body: 'Download form leads with their lead IDs' },
         { title: 'Mark outcomes', body: 'Contacted, qualified, won or junk' },
-        { title: 'Send to Meta', body: 'Upload outcomes through Events Manager' },
+        { title: 'Match to ads', body: 'Join outcomes to form, ad set and area' },
         { title: 'Review the signal', body: 'Move budget to forms that bring sales' },
       ] },
     ],
@@ -369,10 +369,10 @@ export const bangaloreMetaPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'Sending lead outcomes back without a CRM',
+        heading: 'Tracking lead outcomes without a CRM',
         paragraphs: [
-          'You do not need sales software to teach Facebook which leads are good. A shared Google Sheet works. Export new leads from the form with their lead IDs, have your team mark each one as contacted, qualified, won or junk, and send those outcomes back to Meta through Events Manager each week, by file upload or a simple Conversions API connection.',
-          'Over time, Facebook can then optimise towards people who resemble your qualified leads, rather than anyone willing to fill a form. It also gives you honest reporting on which forms, areas and ads produce customers. Keep the sheet simple, agree who updates it and restrict access, because it holds personal data.',
+          'You do not need sales software to find out which Facebook leads are good. A shared Google Sheet works. Export new leads from the form with their lead IDs, have your team mark each one as contacted, qualified, won or junk, and match those outcomes to the form, ad set and area each lead came from.',
+          'That gives you honest reporting on which forms, areas and ads produce customers, so budget moves to what sells. A sheet does not, on its own, make Facebook optimise for quality leads. That needs lead outcomes sent through a supported connection, such as the Conversions API or a platform integration, which is worth setting up once lead volume justifies it. Keep the sheet simple, agree who updates it and restrict access, because it holds personal data.',
         ],
       },
       {
@@ -399,10 +399,10 @@ export const bangaloreMetaPages: ServicePageData[] = [
       { label: 'PPC company in Bangalore for Google lead generation', href: '/bangalore/ppc-company/' },
     ],
     faqs: [
-      { q: 'What does a Facebook ads agency in Bangalore do?', a: 'It plans and runs Facebook campaigns, usually for leads and local reach: lead ads with instant forms, feed, Marketplace and Reels placements, local audiences and comment moderation. A useful agency also tracks which leads became customers and feeds that back to Facebook, so campaigns improve on sales rather than form fills.' },
-      { q: 'How much does it cost to run Facebook ads in Bengaluru with an agency?', a: 'Costs depend on the number of locations and services you promote, how many forms and audiences you need, creative volume, moderation load and whether lead outcomes are sent back weekly. Ad spend is paid directly to Meta from your own ad account. We quote our management fee separately, in writing, after a free audit.' },
-      { q: 'Why are my Facebook leads poor quality?', a: 'Usually because the form is too easy, the targeting is too wide or nobody calls fast enough. Pre-filled forms invite casual taps. A higher-intent review step, one or two qualifying questions, tighter local targeting and calls within minutes normally lift quality, and sending lead outcomes back helps Facebook find better prospects.' },
-      { q: 'Do we need a CRM to track lead quality?', a: 'No. A shared Google Sheet is enough to start. Your team marks each lead as contacted, qualified, won or junk, and we send those outcomes to Meta through Events Manager every week. That gives Facebook a better signal and gives you honest figures for cost per qualified lead and cost per customer.' },
+      { q: 'What does a Facebook ads agency in Bangalore do?', a: 'It plans and runs Facebook campaigns, usually for leads and local reach: lead ads with instant forms, feed, Marketplace and Reels placements, local audiences and comment moderation. A useful agency also tracks which leads became customers, so campaigns are judged and budgets moved on sales rather than form fills.' },
+      { q: 'How much does it cost to run Facebook ads in Bengaluru with an agency?', a: 'Costs depend on the number of locations and services you promote, how many forms and audiences you need, creative volume, moderation load and how lead outcomes are tracked. Ad spend is paid directly to Meta from your own ad account. We quote our management fee separately, in writing, after a free audit.' },
+      { q: 'Why are my Facebook leads poor quality?', a: 'Usually because the form is too easy, the targeting is too wide or nobody calls fast enough. Pre-filled forms invite casual taps. A higher-intent review step, one or two qualifying questions, tighter local targeting and calls within minutes normally lift quality, and tracking outcomes shows which forms and areas to keep.' },
+      { q: 'Do we need a CRM to track lead quality?', a: 'No. A shared Google Sheet is enough to start. Your team marks each lead as contacted, qualified, won or junk, and we match them to forms, ad sets and areas. That gives you honest cost per qualified lead and per customer. Letting Meta optimise for converted leads needs a Conversions API link, worth adding once volume justifies it.' },
       { q: 'Is Facebook Marketplace worth advertising on?', a: 'For some businesses, yes. Marketplace reaches people who are browsing to buy, which suits furniture, home décor, home services and property. For other offers it can bring weaker leads. We test it as one placement among several and keep it only if it brings qualified enquiries at a sensible cost.' },
       { q: 'Do you handle comments on our ads and Page?', a: 'Yes. We set hidden-word filters for spam and abuse, check ad comments daily, reply to genuine questions in your agreed tone and pass complaints or service issues to your team privately. Comments are visible on every view of an ad, so a tidy, responsive comment section helps new prospects trust you.' },
       { q: 'Can we meet you in Bengaluru?', a: 'Yes, by appointment at our Bengaluru office. Lead-quality reviews with your sales team and campaign workshops happen there and are included in scope. Much of the campaign build, moderation and daily management is done by our Chennai head-office team on the same working hours, with updates by WhatsApp and video.' },

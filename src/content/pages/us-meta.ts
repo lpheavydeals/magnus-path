@@ -16,7 +16,7 @@ export const usMetaPages: ServicePageData[] = [
     breadcrumb: usBreadcrumb,
     eyebrow: 'Catalog ads · Advantage+ · UGC testing',
     h1: 'Ecommerce Meta Ads Agency That Starts With Your *Product Catalog*',
-    intro: 'Magnus Path is an ecommerce Meta ads agency for US online stores. We start with your product catalog and feed, then run Advantage+ sales campaigns, dynamic product ads and UGC-style creative tests on Facebook and Instagram, and we judge results on profit after returns and refunds, not on the ROAS Meta reports.',
+    intro: 'Magnus Path is an ecommerce Meta ads agency for US online stores. We start with your product catalog and feed, then run Advantage+ sales campaigns (previously Advantage+ shopping), dynamic product ads and UGC-style creative tests on Facebook and Instagram, and we judge results on profit after returns and refunds, not on the ROAS Meta reports.',
     icon: 'social',
     facts: ['Catalog fixed before scaling', 'Ad account stays in your name', 'Quoted in USD after a free audit'],
     headings: {
@@ -112,7 +112,7 @@ export const usMetaPages: ServicePageData[] = [
         paragraphs: [
           'Meta records a purchase when checkout completes. It never learns that the order was returned, refunded or hit by a chargeback weeks later. In categories such as apparel and footwear, where returns are common, the reported ROAS can sit well above the real one.',
           'Start with break-even ROAS: one divided by your contribution margin after product cost, shipping, payment fees and an allowance for returns. A 40% margin breaks even at a ROAS of 2.5. Then compare Meta’s figures with your store data every week: net revenue after refunds, new versus repeat customers, and blended marketing cost across channels.',
-          'None of this works without sound tracking. The pixel and the Conversions API should both send purchase events with a shared event ID so Meta can remove duplicates, and match quality should be checked in Events Manager.',
+          'None of this works without sound tracking, so an ecommerce Meta ads agency should check it before changing any target. The pixel and the Conversions API should both send purchase events with a shared event ID so Meta can remove duplicates, and match quality should be checked in Events Manager.',
         ],
       },
       {
@@ -200,7 +200,7 @@ export const usMetaPages: ServicePageData[] = [
         { title: 'Verify the domain', body: 'Confirm it and choose your key events' },
         { title: 'Add partners', body: 'Agencies get partner access, not ownership' },
       ] },
-      { type: 'venn', caption: 'Why the pixel and the Conversions API work best together, as long as events are deduplicated.', after: 3,
+      { type: 'venn', caption: 'Why the pixel and the Conversions API belong together, as long as events are deduplicated.', after: 3,
         left: { title: 'Meta pixel', body: 'Runs in the browser; some settings and blockers stop it' },
         right: { title: 'Conversions API', body: 'Sent from your server; keeps data browsers would lose' },
         overlap: 'One shared event ID, no duplicates' },
@@ -284,7 +284,7 @@ export const usMetaPages: ServicePageData[] = [
     breadcrumb: usBreadcrumb,
     eyebrow: 'Lead ads · Instant forms · Local audiences',
     h1: 'Facebook Ads Agency for Leads That *Actually Close*',
-    intro: 'Magnus Path is a Facebook ads agency for US businesses that need qualified leads, not just form fills. We run lead ads with instant forms, Marketplace and Reels placements and local audiences, then send back which leads became customers so Facebook learns to find more of them. We also keep your page and ad comments under control.',
+    intro: 'Magnus Path is a Facebook ads agency for US businesses that need qualified leads, not just form fills. We run lead ads with instant forms, Marketplace and Reels placements and local audiences, then track which leads became customers so every campaign is judged on real sales. We also keep your page and ad comments under control.',
     icon: 'social',
     facts: ['Lead quality reported weekly', 'Page and ad account in your name', 'Free audit, then a USD quote'],
     headings: {
@@ -302,7 +302,7 @@ export const usMetaPages: ServicePageData[] = [
       { title: 'Lead ads and instant forms', body: 'Forms built for the quality you need: the higher-intent form type, qualifying questions, and an intro that sets expectations before anyone submits.' },
       { title: 'Placements that fit the offer', body: 'Facebook feed, Marketplace, Reels and in-stream video tested with formats made for each, rather than one image stretched everywhere.' },
       { title: 'Local and service-area audiences', body: 'Radius and ZIP code targeting around your locations or service area, with Advantage+ audience used where it brings better leads.' },
-      { title: 'Lead quality feedback without a CRM', body: 'A simple spreadsheet of qualified leads and sales uploaded in Events Manager or sent through the Conversions API, so Facebook learns who converts.' },
+      { title: 'Lead outcome tracking without a CRM', body: 'A simple spreadsheet of qualified leads and sales uploaded in Events Manager, so you judge campaigns on real customers, with a Conversions API connection added once volume justifies it.' },
       { title: 'Fast lead delivery', body: 'Leads routed to email or a shared sheet within minutes, because a lead contacted quickly is far easier to reach than one called days later.' },
       { title: 'Page and comment moderation', body: 'Hidden-word filters, spam and scam removal, and replies to genuine questions under your ads and page posts, using wording you approve.' },
       { title: 'Special ad category setup', body: 'Campaigns for housing, employment, credit and similar topics declared and built under Meta’s special ad category rules from day one.' },
@@ -319,7 +319,7 @@ export const usMetaPages: ServicePageData[] = [
         { label: 'The form', items: ['Higher-intent form type', 'One or two qualifiers'] },
         { label: 'Placements', items: ['Feed and Marketplace', 'Reels and video'] },
         { label: 'Audiences', items: ['Radius or ZIP targeting', 'Lookalikes of customers'] },
-        { label: 'Follow-up', items: ['Contact within minutes', 'Outcomes sent to Meta', 'Comments moderated'] },
+        { label: 'Follow-up', items: ['Contact within minutes', 'Lead outcomes tracked', 'Comments moderated'] },
       ] },
       { type: 'matrix', caption: 'How form type and speed of follow-up combine to decide what your leads are worth.', after: 1, cols: ['Contacted fast', 'Contacted slowly'], rows: ['Higher-intent form', 'More-volume form'], cells: [
         { title: 'Strong pipeline', body: 'Fewer leads, but most answer and many qualify' },
@@ -327,11 +327,11 @@ export const usMetaPages: ServicePageData[] = [
         { title: 'Volume to sort', body: 'Many leads; needs fast calls and a clear qualifier' },
         { title: 'Burned budget', body: 'Cheap leads that rarely answer; change the form first' },
       ] },
-      { type: 'steps', caption: 'A simple weekly loop for telling Facebook which leads became customers, no CRM needed.', after: 3, steps: [
+      { type: 'steps', caption: 'A simple weekly loop for checking which Facebook leads became customers, no CRM needed.', after: 3, steps: [
         { title: 'Export leads', body: 'Download the week’s leads from Meta' },
         { title: 'Mark outcomes', body: 'Qualified, sold or junk, in a shared sheet' },
-        { title: 'Upload to Meta', body: 'Events Manager upload or Conversions API' },
-        { title: 'Optimize on it', body: 'Campaigns learn from qualified leads' },
+        { title: 'Upload to Meta', body: 'Outcomes added in Events Manager' },
+        { title: 'Judge on sales', body: 'Move budget to ads that bring customers' },
       ] },
     ],
     guide: [
@@ -367,8 +367,8 @@ export const usMetaPages: ServicePageData[] = [
       {
         heading: 'Sending lead outcomes back to Facebook without a CRM',
         paragraphs: [
-          'Facebook optimizes for whatever you tell it is a conversion. If that is a form submission, it will find people who submit forms. To find buyers, it needs to know which leads became qualified or turned into sales.',
-          'You do not need a CRM for this. Download your leads each week, mark each one as qualified, sold or junk in a shared spreadsheet, and upload the outcomes in Events Manager, or send them through the Conversions API if you have a developer. Each lead carries a lead ID, so Meta can match outcomes to the original form. Once enough outcomes flow back, campaigns can optimize for conversion leads rather than raw form fills.',
+          'Facebook optimizes for whatever you tell it is a conversion. If that is a form submission, it will find people who submit forms. To steer toward buyers, you first need to know which leads became qualified or turned into sales.',
+          'You do not need a CRM to start. Download your leads each week, mark each one as qualified, sold or junk in a shared spreadsheet, and upload the outcomes in Events Manager. That lets you judge every ad, placement and audience on real customers instead of form fills, and a good Facebook ads agency moves budget on that basis. Having Meta optimize directly toward converted leads is a further step: it needs a supported connection, such as the Conversions API or a platform integration, sending lead stages back with each lead ID, and it pays off only once lead volume justifies it.',
           'This weekly habit takes a few minutes of admin, and it is usually what separates accounts that improve from accounts that stall.',
         ],
       },
@@ -397,10 +397,10 @@ export const usMetaPages: ServicePageData[] = [
       { label: 'Free ROAS calculator for ad campaigns', href: '/tools/roas-calculator/' },
     ],
     faqs: [
-      { q: 'What does a Facebook ads agency do for lead generation?', a: 'It plans and runs Facebook campaigns that collect inquiries, usually with lead ads and instant forms. The work covers the offer, form design and qualifying questions, placements, local audiences, fast lead routing, comment moderation, and sending lead outcomes back to Meta so campaigns learn to find people who buy.' },
+      { q: 'What does a Facebook ads agency do for lead generation?', a: 'It plans and runs Facebook campaigns that collect inquiries, usually with lead ads and instant forms. The work covers the offer, form design and qualifying questions, placements, local audiences, fast lead routing, comment moderation, and tracking which leads become customers so budget follows real sales rather than form fills.' },
       { q: 'How much does it cost to hire a Facebook ads agency?', a: 'We quote a monthly management fee in USD after a free audit. It depends on the number of campaigns and locations, how much creative and form work is needed, moderation volume, the lead feedback setup and your ad spend. Ad spend is paid directly to Meta from your own account.' },
-      { q: 'Why are my Facebook leads such low quality?', a: 'Usually the form is too easy, the audience is too broad, or Facebook has no feedback on which leads turned into customers. Switch to the higher-intent form type, add a qualifying question, contact leads within minutes and upload lead outcomes each week so the algorithm learns.' },
-      { q: 'Can I send lead outcomes to Facebook without a CRM?', a: 'Yes. Export the week’s leads, mark each as qualified, sold or junk in a spreadsheet, and upload the results in Events Manager, or send them through the Conversions API. Each lead has a lead ID, which lets Meta match the outcome to the original form submission.' },
+      { q: 'Why are my Facebook leads such low quality?', a: 'Usually the form is too easy, the audience is too broad, or nobody tracks which leads turned into customers. Switch to the higher-intent form type, add a qualifying question, contact leads within minutes and record lead outcomes each week so budget moves to the ads that bring buyers.' },
+      { q: 'Can I track Facebook lead outcomes without a CRM?', a: 'Yes, for judging campaigns. Export the week’s leads, mark each as qualified, sold or junk in a spreadsheet, and upload the results in Events Manager, so you can compare ads on real customers. Having Meta optimize toward converted leads needs a supported Conversions API connection or integration, worth adding once lead volume justifies it.' },
       { q: 'Are Marketplace ads worth it for local businesses?', a: 'They can be, especially for products and services people browse visually, such as furniture, home improvement or local retail. Marketplace runs as a placement within your campaign, so test it with suitable creative and judge it on qualified leads, not on cost per lead alone.' },
       { q: 'What are Meta special ad categories?', a: 'They are topics such as housing, employment, credit and financial products, and social issues or politics, where Meta requires advertisers to declare the category. Some targeting options are restricted to reduce discrimination. If your ads fall into one, the campaign must be set up under those rules from the start.' },
       { q: 'Do you moderate comments on our ads and page?', a: 'Yes. We set hidden-word filters, remove spam and scam links, reply to genuine questions with wording you approve and flag complaints to you in our daily note. Because we work while the US sleeps, urgent issues during your day should go to someone on your team.' },

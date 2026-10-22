@@ -71,7 +71,7 @@ export const uaeMetaPages: ServicePageData[] = [
       {
         heading: 'What an ecommerce Meta ads agency in Dubai should handle',
         paragraphs: [
-          'An ecommerce Meta ads agency in Dubai has a narrower job than a general social media agency. It works only for online stores, so everything starts with the product catalogue and ends with orders that are paid for. Follower growth and community posting are not the goal. The goal is profitable sales from Facebook and Instagram, at a cost per order your margins can carry.',
+          'An ecommerce Meta ads agency in Dubai has a narrower job than a general social media agency. It works only for online stores, so everything starts with the product catalogue and ends with orders that are paid for. The goal is profitable sales from Facebook and Instagram, at a cost per order your margins can carry.',
           'In practice that means four things done well: a clean catalogue that Meta can read, campaigns built for shopping (Advantage+ sales campaigns and catalogue retargeting), a steady supply of new creative, and a ROAS figure that reflects what reaches your bank account. If you need lead generation, Messenger or WhatsApp click-to-chat campaigns across the full platform, our Meta advertising service for Dubai brands covers that wider scope.',
           'Your accounts stay yours. The business portfolio (formerly Business Manager), ad account, pixel and catalogue remain in your company’s name, and ad spend is paid directly to Meta from your own card or payment method. We work through partner access that you can remove at any time.',
         ],
@@ -80,7 +80,7 @@ export const uaeMetaPages: ServicePageData[] = [
         heading: 'Catalogue health: the feed behind every shopping ad',
         paragraphs: [
           'Catalogue ads, Advantage+ sales campaigns and Shops all draw from the same product catalogue in Commerce Manager. If the catalogue is wrong, every one of those formats is wrong too. Most UAE stores sync it from Shopify or WooCommerce, which works well once a few details are checked.',
-          'We check the catalogue diagnostics every week. Rejected products, missing fields and price mismatches are fixed at the source, in your store, rather than patched inside Meta where the next sync would undo them.',
+          'We check catalogue diagnostics weekly and fix rejections and price mismatches at the source, in your store, so the next sync does not undo them.',
         ],
         bullets: [
           'AED prices that match the product page, with 5% VAT included as shoppers see it',
@@ -95,7 +95,7 @@ export const uaeMetaPages: ServicePageData[] = [
         heading: 'Advantage+ sales campaigns and catalogue retargeting',
         paragraphs: [
           'Meta’s Advantage+ sales campaigns (previously Advantage+ shopping campaigns) let the system choose audiences, placements and products from your catalogue. They suit stores with clean tracking and a steady flow of purchases, but they need guard rails. We set how much budget may go to existing customers, exclude recent buyers where it makes sense, and give the campaign a mix of catalogue and creative-led ads.',
-          'Catalogue retargeting, previously called dynamic product ads, shows each shopper the products they viewed or left in the basket. It is often the cheapest revenue in the account, which is exactly why it flatters results: many of those buyers would have come back anyway. We keep the retargeting window short, watch frequency, and report it apart from prospecting so you can see what a new customer really costs.',
+          'Catalogue retargeting, previously called dynamic product ads, shows each shopper the products they viewed or left in the basket. It often looks like the cheapest revenue in the account, but many of those buyers would have come back anyway. We keep the retargeting window short, watch frequency, and report it apart from prospecting so you can see what a new customer really costs.',
           'An ecommerce Meta ads agency in Dubai should also explain why it chose a structure. Fewer, larger campaigns usually learn faster than many small ones, and splitting by margin or category is worth it only when those groups behave differently.',
         ],
       },
@@ -103,7 +103,7 @@ export const uaeMetaPages: ServicePageData[] = [
         heading: 'Creative testing with UGC, in English and Arabic',
         paragraphs: [
           'On Meta, creative does much of the targeting. The system finds people who respond to the ad, so the ad itself shapes who sees it. That makes a steady testing routine more valuable than clever audience tricks.',
-          'We test one variable at a time: the hook in the opening seconds, the format (short video, carousel, collection or static image), the offer, or the angle. User-generated content, meaning short phone-filmed videos by real customers or creators, often feels more trustworthy than polished studio ads, especially for fashion, beauty and home products. We write the briefs; you or your creators film them.',
+          'We test one variable at a time: the hook in the opening seconds, the format (short video, carousel, collection or static image), the offer, or the angle. User-generated content, meaning short phone-filmed videos by real customers or creators, often feels more trustworthy than polished studio ads, especially for fashion, beauty and home products.',
           'UAE audiences are mixed, so we plan English and Arabic versions where they suit the product. Arabic copy is written or checked by a fluent Arabic writer, never just machine-translated, and an Arabic ad should lead to an Arabic product page where one exists.',
         ],
       },
@@ -464,7 +464,7 @@ export const uaeMetaPages: ServicePageData[] = [
         { label: 'Full-service', items: ['Ads, SEO, content, web', 'More hand-offs inside'] },
         { label: 'In-house', items: ['Your own hire', 'Needs training and tools'] },
       ] },
-      { type: 'matrix', caption: 'A rough way to match the type of help to your budget and how complex your advertising is.', after: 1, cols: ['Smaller budget', 'Larger budget'], rows: ['One simple account', 'Several channels or markets'], cells: [
+      { type: 'matrix', caption: 'A rough way to match the type of help to your budget and how complex your advertising is.', after: 1, cols: ['Smaller budget', 'Larger budget'], rows: ['One simple account', 'Many channels or markets'], cells: [
         { title: 'Freelancer', body: 'A capable freelancer can cover one simple account' },
         { title: 'Specialist agency', body: 'More testing and creative output on Meta' },
         { title: 'Small agency', body: 'One team handling Meta plus a couple of other channels' },
