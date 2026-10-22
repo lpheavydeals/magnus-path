@@ -6,6 +6,7 @@ import SimpleHero from '../components/page/SimpleHero.astro';
 import { getCollection } from 'astro:content';
 import { allPages } from '../content/pages';
 import { breadcrumbSchema } from '../data/schema';
+import { freeTools, freeResources } from '../data/tools';
 
 type L = { label: string; href: string };
 const regions: [string, RegExp][] = [
@@ -25,7 +26,8 @@ const sections: { title: string; links: L[] }[] = [
   { title: 'Company', links: [{ label: 'Home', href: '/' }, { label: 'About', href: '/about/' }, { label: 'Contact', href: '/contact/' }, { label: 'Free e-commerce audit', href: '/free-ecommerce-audit/' }, { label: 'Careers', href: '/careers/' }] },
   ...[...groups].filter(([, l]) => l.length).map(([title, links]) => ({ title, links })),
   { title: 'Guides', links: [{ label: 'All guides', href: '/blog/' }, ...posts.map((p) => ({ label: p.data.title, href: `/blog/${p.id}/` }))] },
-  { title: 'Free tools', links: [{ label: 'All tools', href: '/tools/' }, { label: 'ROAS calculator', href: '/tools/roas-calculator/' }, { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' }] },
+  { title: 'Free tools', links: [{ label: 'All tools', href: '/tools/' }, ...freeTools.map((t) => ({ label: t.title, href: t.href }))] },
+  { title: 'Free resources', links: [{ label: 'All resources', href: '/resources/' }, ...freeResources.map((t) => ({ label: t.title, href: t.href }))] },
   { title: 'Legal', links: [{ label: 'Privacy policy', href: '/privacy-policy/' }, { label: 'Terms of use', href: '/terms/' }] },
 ];
 ---

@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import Icon3D from '../../components/Icon3D.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema } from '../../data/schema';
+import { freeResources } from '../../data/tools';
+const groups = [...new Set(freeResources.map((t) => t.group))];
+---
+<Base title="Free Ecommerce Resources & Templates | Magnus Path" description="Free ecommerce resources: sale calendar 2027, festive sale playbook, launch and product page checklists, an ads report template and a glossary." schema={[breadcrumbSchema([{ label: 'Resources', href: '/resources/' }])]}>
+  <SimpleHero eyebrow="Free resources" h1="Free Checklists, Templates and *Sale Plans*" intro="Practical checklists, a ready ads report spreadsheet, a sale calendar for five markets and a plain-English glossary. Free to use, print and share." current="Resources" />
+  {groups.map((g) => (
+    <section class="section tl"><div class="wrap">
+      <h2 class="tl__h" data-reveal>{g}</h2>
+      <ul class="tl__grid">
+        {freeResources.filter((t) => t.group === g).map((t) => <li data-reveal><a href={t.href}><div class="tl__icon"><Icon3D name={t.icon} /></div><h3>{t.title}</h3><p>{t.desc}</p><span class="tl__go" aria-hidden="true">→</span></a></li>)}
+      </ul>
+    </div></section>
+  ))}
+  <section class="section tl"><div class="wrap"><p class="tl__more" data-reveal>Need numbers instead? Try our <a href="/tools/">free ecommerce tools and calculators</a>, or get a <a href="/free-ecommerce-audit/">free store audit</a> from our team.</p></div></section>
+  <LeadForm />
+</Base>
+<style>
+  .tl { padding-top: 0; }
+  .tl__h { font-size: 1.5rem; margin-bottom: 18px; }
+  .tl__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+  .tl__grid a { position: relative; display: grid; gap: 12px; padding: 28px; border-radius: var(--radius); background: #f3f1ee; text-decoration: none; height: 100%; transition: background .4s var(--ease), transform .4s var(--ease); }
+  .tl__grid a:hover { background: var(--accent-tint); transform: translateY(-6px); }
+  .tl__icon { width: 46%; margin: 0 auto 6px; }
+  .tl__grid h3 { font-size: 1.3rem; }
+  .tl__grid p { color: var(--muted); font-size: 15px; }
+  .tl__go { position: absolute; top: 22px; right: 22px; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--white); }
+  .tl__more { font-size: 1.1rem; }
+  @media (min-width: 700px) { .tl__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1040px) { .tl__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

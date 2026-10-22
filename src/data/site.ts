@@ -91,6 +91,7 @@ export const nav: NavItem[] = [
       { label: 'Guides & Blog', href: '/blog/', note: 'Websites, ads, SEO, export' },
       { label: 'Free Tools', href: '/tools/', note: 'Store checker & calculators' },
       { label: 'Ecommerce Website Checker', href: '/tools/ecommerce-website-checker/', note: 'Free speed & conversion check' },
+      { label: 'Free Resources', href: '/resources/', note: 'Checklists, templates, sale calendar' },
     ],
   },
 ];
