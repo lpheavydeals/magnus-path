@@ -153,7 +153,7 @@ export const usIndustryProductsPages: ServicePageData[] = [
     eyebrow: 'Furniture, decor, lighting and textiles',
     h1: 'Home Decor Marketing Agency for US Brands Selling *Big-Ticket Rooms*',
     intro: 'Magnus Path is a home decor marketing agency for US furniture, lighting, rug and decor brands. We help shoppers picture your products in their own homes, make freight delivery and returns easy to understand, run Pinterest, Meta and Google campaigns built for a long buying journey, and plan around holiday weekend sales and Black Friday.',
-    icon: 'web',
+    icon: 'website',
     facts: ['Room-first creative', 'Freight and returns made clear', 'Quoted in USD after a free audit'],
     headings: {
       pains: 'Why US home decor brands lose sales between browse and buy',

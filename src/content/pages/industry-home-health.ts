@@ -148,7 +148,7 @@ export const industryHomeHealthPages: ServicePageData[] = [
     eyebrow: 'Home decor, furniture and furnishings',
     h1: 'Home Decor Marketing Agency for *High-Value, Slow-Decision* Buyers',
     intro: 'Magnus Path is a home decor marketing agency for furniture, furnishing, lighting and decor brands. We show your products in real rooms, build stores that answer size, material and delivery questions, run ads that follow a long buying journey, and plan campaigns around housewarming, festive and wedding seasons, in India and abroad.',
-    icon: 'web',
+    icon: 'website',
     facts: ['Room-first creative', 'Long-journey ad plans', 'Delivery and returns clarity'],
     headings: {
       pains: 'Where home decor and furniture brands lose sales online',

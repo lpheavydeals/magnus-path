@@ -130,6 +130,12 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency UK', href: '/uk/skincare-marketing-agency/' },
+      { label: 'Haircare marketing agency UK', href: '/uk/haircare-marketing-agency/' },
+      { label: 'Jewellery marketing agency UK', href: '/uk/jewellery-marketing-agency/' },
+      { label: 'Supplement marketing agency UK', href: '/uk/supplement-marketing-agency/' },
+      { label: 'Home decor marketing agency UK', href: '/uk/home-decor-marketing-agency/' },
+      { label: 'Pet brand marketing agency UK', href: '/uk/pet-brand-marketing-agency/' },
       { label: 'Festive sale playbook', href: '/resources/festive-sale-playbook/' },
       { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
       { label: 'Facebook advertising agencies (UK)', href: '/uk/facebook-advertising-agencies/' },

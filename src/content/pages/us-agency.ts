@@ -133,6 +133,12 @@ export const usAgencyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency for US brands', href: '/us/skincare-marketing-agency/' },
+      { label: 'Haircare marketing agency for US brands', href: '/us/haircare-marketing-agency/' },
+      { label: 'Jewelry marketing agency', href: '/us/jewelry-marketing-agency/' },
+      { label: 'Supplement marketing agency for US brands', href: '/us/supplement-marketing-agency/' },
+      { label: 'Home decor marketing agency for US brands', href: '/us/home-decor-marketing-agency/' },
+      { label: 'Pet brand marketing agency for US brands', href: '/us/pet-brand-marketing-agency/' },
       { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
       { label: 'Facebook advertising agencies (US)', href: '/us/facebook-advertising-agencies/' },
       { label: 'Facebook ads agency (US)', href: '/us/facebook-ads-agency/' },
