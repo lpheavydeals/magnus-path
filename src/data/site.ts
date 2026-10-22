@@ -85,7 +85,7 @@ export const nav: NavItem[] = [
       { label: 'Jewellery Brands', href: '/industries/jewellery-marketing-agency/' },
       { label: 'Food & FMCG', href: '/industries/food-fmcg/' },
       { label: 'Supplements & Nutrition', href: '/industries/supplement-marketing-agency/' },
-      { label: 'All industries', href: '/industries/', note: '15 categories we work with' },
+      { label: 'All industries', href: '/industries/', note: '16 categories we work with' },
     ],
   },
   {
