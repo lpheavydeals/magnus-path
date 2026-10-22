@@ -2,6 +2,10 @@ import { websitePages } from './websites';
 import { adsPages } from './ads';
 import { seoPages } from './seo';
 import { industryPages } from './industries';
+import { industryBeautyPages } from './industry-beauty';
+import { industryLifestylePages } from './industry-lifestyle';
+import { industryHomeHealthPages } from './industry-home-health';
+import { industryProductsPages } from './industry-products';
 import { globalPages } from './global';
 import { businessWebsitePages } from './business-websites';
 import { businessWebsitePages2 } from './business-websites-2';
@@ -52,4 +56,4 @@ import { coimbatoreMetaPages } from './coimbatore-meta';
 import { abuDhabiMetaPages } from './abudhabi-meta';
 import { sharjahMetaPages } from './sharjah-meta';
 
-export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages, ...uaeWebsitesPages, ...auWebsitesPages, ...chatgptAdsPages, ...usChatgptAdsPages, ...ukChatgptAdsPages, ...bangaloreMarketingPages, ...bangaloreServicesPages, ...londonCorePages, ...londonGrowthPages, ...londonWebsitesPages, ...chennaiSocialPages, ...ukPpcPages, ...usPpcPages, ...auPpcPages, ...uaePpcPages, ...indiaPpcPages, ...chennaiPpcPages, ...bangalorePpcPages, ...londonGoogleAdsPages, ...uaeGoogleAdsPages, ...chennaiGoogleAdsPages, ...bangaloreGoogleAdsPages, ...indiaMetaPages, ...ukMetaPages, ...usMetaPages, ...auMetaPages, ...uaeMetaPages, ...chennaiMetaPages, ...bangaloreMetaPages, ...londonMetaPages, ...coimbatoreMetaPages, ...abuDhabiMetaPages, ...sharjahMetaPages];
+export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...industryBeautyPages, ...industryLifestylePages, ...industryHomeHealthPages, ...industryProductsPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages, ...uaeWebsitesPages, ...auWebsitesPages, ...chatgptAdsPages, ...usChatgptAdsPages, ...ukChatgptAdsPages, ...bangaloreMarketingPages, ...bangaloreServicesPages, ...londonCorePages, ...londonGrowthPages, ...londonWebsitesPages, ...chennaiSocialPages, ...ukPpcPages, ...usPpcPages, ...auPpcPages, ...uaePpcPages, ...indiaPpcPages, ...chennaiPpcPages, ...bangalorePpcPages, ...londonGoogleAdsPages, ...uaeGoogleAdsPages, ...chennaiGoogleAdsPages, ...bangaloreGoogleAdsPages, ...indiaMetaPages, ...ukMetaPages, ...usMetaPages, ...auMetaPages, ...uaeMetaPages, ...chennaiMetaPages, ...bangaloreMetaPages, ...londonMetaPages, ...coimbatoreMetaPages, ...abuDhabiMetaPages, ...sharjahMetaPages];

@@ -262,6 +262,8 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Footwear marketing agency', href: '/industries/footwear-marketing-agency/' },
+      { label: 'Jewellery marketing agency', href: '/industries/jewellery-marketing-agency/' },
       { label: 'Festive sale playbook', href: '/resources/festive-sale-playbook/' },
       { label: 'RTO and COD cost calculator', href: '/tools/rto-cod-calculator/' },
       { label: 'Ecommerce Meta ads agency in Coimbatore', href: '/coimbatore/ecommerce-meta-ads-agency/' },
@@ -536,6 +538,8 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Supplement marketing agency', href: '/industries/supplement-marketing-agency/' },
+      { label: 'Pet brand marketing agency', href: '/industries/pet-brand-marketing-agency/' },
       { label: 'Free shipping threshold calculator', href: '/tools/free-shipping-threshold-calculator/' },
       { label: 'Quick commerce marketing on Blinkit, Zepto and Instamart', href: '/quick-commerce-marketing/' },
       { label: 'Amazon marketing agency for food brands', href: '/amazon-marketing-agency/' },
