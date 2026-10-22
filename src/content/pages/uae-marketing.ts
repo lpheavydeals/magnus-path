@@ -119,6 +119,7 @@ export const uaeMarketingPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Dubai', href: '/uae/facebook-advertising-agencies-dubai/' },
       { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },
       { label: 'Ecommerce agency in Dubai and the UAE', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Performance marketing agency in Dubai', href: '/uae/performance-marketing-agency-dubai/' },
@@ -249,6 +250,8 @@ export const uaeMarketingPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Dubai', href: '/uae/facebook-ads-agency-dubai/' },
+      { label: 'Meta ads agency in Dubai', href: '/uae/meta-ads-agency-dubai/' },
       { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },
       { label: 'Ecommerce PPC agency in Dubai', href: '/uae/ecommerce-ppc-agency-dubai/' },
       { label: 'Ecommerce agency in Dubai and the UAE', href: '/uae/ecommerce-marketing-agency/' },

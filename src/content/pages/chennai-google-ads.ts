@@ -124,6 +124,7 @@ export const chennaiGoogleAdsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Chennai', href: '/chennai/facebook-ads-agency/' },
       { label: 'PPC services in Chennai for Shopping and PMax', href: '/chennai/ppc-agency/' },
       { label: 'Digital marketing agency in Chennai', href: '/chennai/digital-marketing-agency/' },
       { label: 'SEO company in Chennai for local search', href: '/chennai/seo-company/' },

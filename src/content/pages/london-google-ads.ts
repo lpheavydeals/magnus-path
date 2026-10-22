@@ -128,6 +128,7 @@ export const londonGoogleAdsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in London', href: '/london/facebook-ads-agency/' },
       { label: 'Multi-platform PPC in London: Google, Microsoft and Meta', href: '/london/ppc-agency/' },
       { label: 'Ecommerce PPC agency for UK online shops', href: '/uk/ecommerce-ppc-agency/' },
       { label: 'E-commerce agency in London', href: '/london/ecommerce-agency/' },

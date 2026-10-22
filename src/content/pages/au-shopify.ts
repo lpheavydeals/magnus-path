@@ -117,6 +117,7 @@ export const auShopifyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in Australia', href: '/australia/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce PPC agency in Australia', href: '/australia/ecommerce-ppc-agency/' },
       { label: 'Web development company in Australia', href: '/australia/web-development-company/' },
       { label: 'Ecommerce agency for Australian brands', href: '/australia/ecommerce-marketing-agency/' },

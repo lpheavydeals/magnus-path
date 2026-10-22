@@ -109,6 +109,7 @@ export const usChatgptAdsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Meta ads agency (US)', href: '/us/meta-ads-agency/' },
       { label: 'Ecommerce PPC agency (US)', href: '/us/ecommerce-ppc-agency/' },
       { label: 'Ecommerce marketing agency for US brands', href: '/us/ecommerce-marketing-agency/' },
       { label: 'Generative engine optimization agency for US brands', href: '/us/generative-engine-optimization-agency/' },

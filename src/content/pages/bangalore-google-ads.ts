@@ -113,6 +113,7 @@ export const bangaloreGoogleAdsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Bangalore', href: '/bangalore/facebook-ads-agency/' },
       { label: 'E-commerce PPC and Google Shopping in Bengaluru', href: '/bangalore/ppc-company/' },
       { label: 'Paid media across Google, Meta and marketplaces in Bengaluru', href: '/bangalore/performance-marketing-agency/' },
       { label: 'Digital marketing agency in Bangalore', href: '/bangalore/digital-marketing-agency/' },

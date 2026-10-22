@@ -109,6 +109,7 @@ export const ukChatgptAdsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Meta ads agency (UK)', href: '/uk/meta-ads-agency/' },
       { label: 'Ecommerce PPC agency (UK)', href: '/uk/ecommerce-ppc-agency/' },
       { label: 'E-commerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },
       { label: 'AI search optimisation agency for UK businesses', href: '/uk/ai-search-optimisation-agency/' },

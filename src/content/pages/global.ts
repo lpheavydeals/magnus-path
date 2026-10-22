@@ -36,6 +36,8 @@ export const globalPages: ServicePageData[] = [
       { title: 'White-label delivery for UK agencies', body: 'SEO, Shopify and WordPress work done under your agency’s brand, with an NDA, unbranded reports and no contact with your clients.' },
     ],
     children: [
+      { title: 'Meta Ads Agency', href: '/uk/meta-ads-agency/', body: 'Facebook, Instagram, Messenger and WhatsApp ads run from one Meta set-up, with tracking you can trust and accounts in your name.', icon: 'social' },
+      { title: 'Ecommerce Meta Ads', href: '/uk/ecommerce-meta-ads-agency/', body: 'Catalogue and Advantage+ sales campaigns for online stores, judged on profit after returns, not platform ROAS.', icon: 'social' },
       { title: 'Ecommerce SEO Agency', href: '/uk/ecommerce-seo-agency/', body: 'Technical fixes, collection and product pages, and British English content for online shops competing on Google UK.', icon: 'seo' },
       { title: 'Shopify Agency', href: '/uk/shopify-agency/', body: 'Store builds, redesigns and conversion work with VAT-inclusive pricing, UK delivery details and Shopify Markets.', icon: 'shopify' },
       { title: 'Shopify Developer', href: '/uk/shopify-developer/', body: 'Theme fixes, app set-up and custom sections from developers whose working day overlaps your UK morning.', icon: 'website' },
@@ -128,6 +130,8 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies (UK)', href: '/uk/facebook-advertising-agencies/' },
+      { label: 'Facebook ads agency (UK)', href: '/uk/facebook-ads-agency/' },
       { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
       { label: 'Shopify agency for UK brands', href: '/uk/shopify-agency/' },
       { label: 'Amazon agency for Amazon.co.uk sellers', href: '/uk/amazon-agency/' },
@@ -181,6 +185,8 @@ export const globalPages: ServicePageData[] = [
       { title: 'White-label delivery for Australian agencies', body: 'SEO, Shopify and WordPress work done under your agency’s brand, with an NDA, unbranded reports and no contact with your clients.' },
     ],
     children: [
+      { title: 'Meta Ads Agency', href: '/australia/meta-ads-agency/', body: 'Facebook, Instagram, Messenger and WhatsApp ads run from one Meta set-up, with tracking you can trust and accounts in your name.', icon: 'social' },
+      { title: 'Ecommerce Meta Ads', href: '/australia/ecommerce-meta-ads-agency/', body: 'Catalogue and Advantage+ sales campaigns for online stores, judged on profit after returns, not platform ROAS.', icon: 'social' },
       { title: 'Ecommerce PPC Agency', href: '/australia/ecommerce-ppc-agency/', body: 'Google Shopping, Performance Max and Search for Australian online stores, with GST-inclusive feeds and bids set from your margins.', icon: 'social' },
       { title: 'Ecommerce SEO', href: '/australia/ecommerce-seo/', body: 'Technical fixes, collection and product pages, and Australian English content for online stores competing on Google.com.au.', icon: 'seo' },
       { title: 'White Label SEO', href: '/australia/white-label-seo/', body: 'SEO delivered under your agency’s brand: audits, on-page work, content and reporting, quoted in AUD.', icon: 'seo' },
@@ -263,6 +269,8 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Australia', href: '/australia/facebook-advertising-agencies/' },
+      { label: 'Facebook ads agency in Australia', href: '/australia/facebook-ads-agency/' },
       { label: 'WordPress developer for Australian businesses', href: '/australia/wordpress-developer/' },
       { label: 'Web development company in Australia', href: '/australia/web-development-company/' },
       { label: 'Shopify experts and Shopify agency for Australian brands', href: '/australia/shopify-agency/' },
@@ -316,6 +324,8 @@ export const globalPages: ServicePageData[] = [
       { title: 'COD and returns reporting', body: 'Order confirmation flows and reports that show COD failure and return rates by channel, so you can see real profit.' },
     ],
     children: [
+      { title: 'Meta Ads Agency', href: '/uae/meta-ads-agency-dubai/', body: 'Facebook, Instagram, Messenger and WhatsApp ads run from one Meta set-up, with tracking you can trust and accounts in your name.', icon: 'social' },
+      { title: 'Ecommerce Meta Ads', href: '/uae/ecommerce-meta-ads-agency-dubai/', body: 'Catalogue and Advantage+ sales campaigns for online stores, judged on profit after returns, not platform ROAS.', icon: 'social' },
       { title: 'Ecommerce PPC Agency', href: '/uae/ecommerce-ppc-agency-dubai/', body: 'Google Shopping, Performance Max and Search in English and Arabic for UAE online stores, with bids set from your margins.', icon: 'social' },
       { title: 'Google Ads Agency', href: '/uae/google-ads-agency-dubai/', body: 'Search, Performance Max and YouTube in English and Arabic for Dubai businesses, judged by real calls, forms and WhatsApp enquiries.', icon: 'social' },
       { title: 'Digital Marketing Agency Dubai', href: '/uae/digital-marketing-agency-dubai/', body: 'SEO, Google, Meta, Snapchat, TikTok and LinkedIn campaigns in Arabic and English, with WhatsApp leads tracked to sales.', icon: 'social' },
@@ -395,6 +405,8 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Dubai', href: '/uae/facebook-advertising-agencies-dubai/' },
+      { label: 'Facebook ads agency in Dubai', href: '/uae/facebook-ads-agency-dubai/' },
       { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },
       { label: 'Digital marketing agency in Dubai', href: '/uae/digital-marketing-agency-dubai/' },
       { label: 'Amazon.ae and Noon agency for UAE sellers', href: '/uae/amazon-noon-agency/' },

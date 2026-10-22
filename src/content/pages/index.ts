@@ -40,5 +40,13 @@ import { londonGoogleAdsPages } from './london-google-ads';
 import { uaeGoogleAdsPages } from './uae-google-ads';
 import { chennaiGoogleAdsPages } from './chennai-google-ads';
 import { bangaloreGoogleAdsPages } from './bangalore-google-ads';
+import { indiaMetaPages } from './india-meta';
+import { ukMetaPages } from './uk-meta';
+import { usMetaPages } from './us-meta';
+import { auMetaPages } from './au-meta';
+import { uaeMetaPages } from './uae-meta';
+import { chennaiMetaPages } from './chennai-meta';
+import { bangaloreMetaPages } from './bangalore-meta';
+import { londonMetaPages } from './london-meta';
 
-export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages, ...uaeWebsitesPages, ...auWebsitesPages, ...chatgptAdsPages, ...usChatgptAdsPages, ...ukChatgptAdsPages, ...bangaloreMarketingPages, ...bangaloreServicesPages, ...londonCorePages, ...londonGrowthPages, ...londonWebsitesPages, ...chennaiSocialPages, ...ukPpcPages, ...usPpcPages, ...auPpcPages, ...uaePpcPages, ...indiaPpcPages, ...chennaiPpcPages, ...bangalorePpcPages, ...londonGoogleAdsPages, ...uaeGoogleAdsPages, ...chennaiGoogleAdsPages, ...bangaloreGoogleAdsPages];
+export const allPages = [...websitePages, ...adsPages, ...seoPages, ...industryPages, ...globalPages, ...businessWebsitePages, ...businessWebsitePages2, ...usAgencyPages, ...usShopifyPages, ...usAmazonGeoPages, ...ukAgencyPages, ...ukShopifyPages, ...ukSeoAmazonPages, ...uaeMarketingPages, ...uaeServicesPages, ...auShopifyPages, ...auSeoPages, ...usWebsitesPages, ...usWooWpPages, ...ukWebsitesPages, ...uaeWebsitesPages, ...auWebsitesPages, ...chatgptAdsPages, ...usChatgptAdsPages, ...ukChatgptAdsPages, ...bangaloreMarketingPages, ...bangaloreServicesPages, ...londonCorePages, ...londonGrowthPages, ...londonWebsitesPages, ...chennaiSocialPages, ...ukPpcPages, ...usPpcPages, ...auPpcPages, ...uaePpcPages, ...indiaPpcPages, ...chennaiPpcPages, ...bangalorePpcPages, ...londonGoogleAdsPages, ...uaeGoogleAdsPages, ...chennaiGoogleAdsPages, ...bangaloreGoogleAdsPages, ...indiaMetaPages, ...ukMetaPages, ...usMetaPages, ...auMetaPages, ...uaeMetaPages, ...chennaiMetaPages, ...bangaloreMetaPages, ...londonMetaPages];

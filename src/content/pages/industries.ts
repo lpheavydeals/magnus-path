@@ -122,6 +122,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in India', href: '/facebook-advertising-agencies/' },
       { label: 'Performance marketing for D2C brands', href: '/performance-marketing/' },
       { label: 'E-commerce SEO services', href: '/ecommerce-seo/' },
       { label: 'Shopify development for D2C brands', href: '/shopify-development/' },
@@ -248,6 +249,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Shopify development for fashion brands', href: '/shopify-development/' },
       { label: 'Performance marketing on Meta and Google', href: '/performance-marketing/' },
       { label: 'Flipkart account management', href: '/flipkart-account-management/' },
@@ -385,6 +387,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Performance marketing for beauty brands', href: '/performance-marketing/' },
       { label: 'Amazon account management', href: '/amazon-account-management/' },
       { label: 'Amazon SEO and listing optimisation', href: '/amazon-seo/' },
@@ -642,6 +645,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in India', href: '/facebook-ads-agency/' },
       { label: 'Google Ads agency in Chennai', href: '/chennai/google-ads-agency/' },
       { label: 'How to find buyers for export', href: '/blog/how-to-find-buyers-for-export/' },
       { label: 'SEO services for businesses', href: '/seo-services/' },
@@ -1064,6 +1068,8 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Chennai', href: '/chennai/facebook-advertising-agencies/' },
+      { label: 'Ecommerce Meta ads agency in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'Google Ads agency in Chennai', href: '/chennai/google-ads-agency/' },
       { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },

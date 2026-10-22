@@ -57,6 +57,7 @@ export const nav: NavItem[] = [
       { label: 'Flipkart Account & Ads', href: '/flipkart-account-management/', note: 'PLA & brand ads' },
       { label: 'Quick Commerce Ads', href: '/quick-commerce-marketing/', note: 'Blinkit · Zepto · Instamart' },
       { label: 'Ecommerce PPC', href: '/ecommerce-ppc-agency/', note: 'Google Shopping & PMax' },
+      { label: 'Meta & Facebook Ads', href: '/meta-ads-agency/', note: 'Facebook, Instagram, WhatsApp' },
       { label: 'ChatGPT Ads', href: '/chatgpt-ads-agency/', note: 'Ads in ChatGPT answers' },
     ],
   },

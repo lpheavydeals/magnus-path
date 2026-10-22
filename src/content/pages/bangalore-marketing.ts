@@ -268,6 +268,8 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Bangalore', href: '/bangalore/facebook-advertising-agencies/' },
+      { label: 'Ecommerce Meta ads agency in Bangalore', href: '/bangalore/ecommerce-meta-ads-agency/' },
       { label: 'Google Ads agency in Bangalore', href: '/bangalore/google-ads-agency/' },
       { label: 'PPC company in Bangalore', href: '/bangalore/ppc-company/' },
       { label: 'Website design cost in Bangalore', href: '/blog/website-design-cost-in-bangalore/' },

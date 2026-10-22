@@ -69,7 +69,7 @@ export const adsPages: ServicePageData[] = [
       {
         heading: 'Meta ads vs Google ads: where each one fits',
         paragraphs: [
-          'Meta ads create demand. Someone scrolling Instagram did not plan to buy a kurta set or a face serum today, but a good video and a clear offer can change that. This is where most D2C brands find new customers, and why a strong Meta ads agency spends as much time on creative as on targeting.',
+          'Meta ads create demand. Someone scrolling Instagram did not plan to buy a kurta set or a face serum today, but a good video and a clear offer can change that. This is where most D2C brands find new customers, and why a strong paid social team spends as much time on creative as on targeting.',
           'Google ads capture demand that already exists. Shopping ads and Performance Max show your products, price and image to people searching for them, while search ads cover your brand name and high-intent terms. Most stores need both channels, with the split depending on how well known the product category is.',
         ],
         bullets: [
@@ -122,6 +122,10 @@ export const adsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
+      { label: 'Facebook advertising agencies in India', href: '/facebook-advertising-agencies/' },
+      { label: 'Facebook ads agency in India', href: '/facebook-ads-agency/' },
+      { label: 'Meta ads agency in India', href: '/meta-ads-agency/' },
       { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Performance marketing agency in Bangalore', href: '/bangalore/performance-marketing-agency/' },
       { label: 'Performance marketing agency in Dubai', href: '/uae/performance-marketing-agency-dubai/' },

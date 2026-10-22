@@ -41,6 +41,8 @@ export const londonCorePages: ServicePageData[] = [
       { title: 'White-label work for agencies', body: 'SEO and web development delivered under your agency’s name for London digital agencies that have sold more than they can staff.' },
     ],
     children: [
+      { title: 'Meta Ads Agency', href: '/london/meta-ads-agency/', body: 'Facebook, Instagram, Messenger and WhatsApp ads run from one Meta set-up, with tracking you can trust and accounts in your name.', icon: 'social' },
+      { title: 'Ecommerce Meta Ads', href: '/london/ecommerce-meta-ads-agency/', body: 'Catalogue and Advantage+ sales campaigns for online stores, judged on profit after returns, not platform ROAS.', icon: 'social' },
       { title: 'PPC Agency', href: '/london/ppc-agency/', body: 'Google Ads, Shopping and Meta campaigns for London online shops, built around margin and checked tracking.', icon: 'social' },
       { title: 'Google Ads Agency', href: '/london/google-ads-agency/', body: 'Google Shopping, Performance Max, Search and local campaigns for London shops, with feeds and bids set from your margins.', icon: 'social' },
       { title: 'Ecommerce SEO Agency', href: '/london/ecommerce-seo-agency/', body: 'Category and product page SEO, plus local search for London shops with a showroom or shop front.', icon: 'seo' },
@@ -125,6 +127,8 @@ export const londonCorePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in London', href: '/london/facebook-advertising-agencies/' },
+      { label: 'Facebook ads agency in London', href: '/london/facebook-ads-agency/' },
       { label: 'Google Ads agency in London', href: '/london/google-ads-agency/' },
       { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
       { label: 'Ecommerce marketing agency for UK brands', href: '/uk/ecommerce-marketing-agency/' },

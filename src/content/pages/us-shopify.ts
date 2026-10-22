@@ -235,6 +235,7 @@ export const usShopifyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency (US)', href: '/us/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce PPC agency (US)', href: '/us/ecommerce-ppc-agency/' },
       { label: 'E-commerce marketing agency for US brands', href: '/us/ecommerce-marketing-agency/' },
       { label: 'Shopify SEO agency for US stores', href: '/us/shopify-seo-agency/' },

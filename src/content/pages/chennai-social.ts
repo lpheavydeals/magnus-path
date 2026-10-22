@@ -91,7 +91,7 @@ export const chennaiSocialPages: ServicePageData[] = [
       {
         heading: 'Meta ads, Facebook ads and WhatsApp leads',
         paragraphs: [
-          'Organic reach on its own is limited, so most brands need paid campaigns. A Meta ads agency in Chennai should run proper campaigns in Ads Manager, not boosted posts: separate campaigns for new audiences, retargeting and, for online stores, catalogue ads that show the exact products people viewed.',
+          'Organic reach on its own is limited, so most brands need paid campaigns. A good paid social team should run proper campaigns in Ads Manager, not boosted posts: separate campaigns for new audiences, retargeting and, for online stores, catalogue ads that show the exact products people viewed.',
           'Tracking decides whether those ads can be judged fairly. The Meta pixel alone misses many orders because of browser privacy settings, so we set up the Conversions API as well and check its numbers against your actual orders. For businesses that sell over chat, click-to-WhatsApp ads open a conversation directly. Restaurants, clinics, real estate projects and boutiques often close more sales this way than through a website.',
         ],
       },
@@ -124,6 +124,8 @@ export const chennaiSocialPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Chennai', href: '/chennai/facebook-ads-agency/' },
+      { label: 'Meta ads agency in Chennai', href: '/chennai/meta-ads-agency/' },
       { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Digital marketing cost in Chennai', href: '/blog/digital-marketing-cost-in-chennai/' },
       { label: 'Digital marketing agency in Chennai', href: '/chennai/digital-marketing-agency/' },
@@ -137,7 +139,7 @@ export const chennaiSocialPages: ServicePageData[] = [
       { q: 'How much does social media marketing cost in Chennai?', a: 'It depends on the number of posts, shoots and platforms you need, and whether Meta ads are included. Ad spend is paid directly to Meta from your own account, and our management fee is quoted separately. Content-only, ads-only or combined scopes get a fixed written quote after a free audit.' },
       { q: 'Can we meet your team in Chennai?', a: 'Yes. Chennai is our head office and main delivery team, and you can meet the people working on your account by appointment. We use these meetings for kick-off, shoot planning and monthly reviews, and we can also visit your store, studio or clinic for shoots.' },
       { q: 'Do you create Instagram content in Tamil?', a: 'Yes. We make reels, carousels, captions and ads in Tamil, English or a mix, depending on who your buyers are. For many Chennai and Tamil Nadu brands, Tamil voice-overs and captions feel more natural, and we test both versions to see which brings more orders.' },
-      { q: 'Are you a Meta ads agency or Facebook ads agency in Chennai?', a: 'Yes. We run Facebook and Instagram campaigns in Meta Ads Manager for Chennai businesses and brands across India: prospecting, retargeting, catalogue and click-to-WhatsApp ads. We set up the pixel and Conversions API and check results against your real orders or leads.' },
+      { q: 'Do you also run paid Facebook and Instagram campaigns?', a: 'Yes. Alongside organic social, we run Facebook and Instagram campaigns in Meta Ads Manager for Chennai businesses and brands across India: prospecting, retargeting, catalogue and click-to-WhatsApp ads. We set up the pixel and Conversions API and check results against your real orders or leads.' },
       { q: 'Do you work with influencers and creators?', a: 'Yes. We shortlist creators by genuine engagement and audience fit, agree clear briefs and give each one a unique link or code so their sales can be tracked. We never buy followers, likes or reviews, as these break platform rules and make your data unreliable.' },
       { q: 'Which businesses suit your social media marketing service?', a: 'It suits businesses where social media drives sales or enquiries: D2C fashion, beauty and food brands, restaurants, clinics, real estate projects and education providers. For B2B firms selling to other businesses, we focus on LinkedIn and pair it with search and website work.' },
     ],

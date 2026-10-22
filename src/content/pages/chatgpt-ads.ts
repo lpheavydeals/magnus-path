@@ -112,6 +112,7 @@ export const chatgptAdsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Meta ads agency in India', href: '/meta-ads-agency/' },
       { label: 'ChatGPT ads agency (US)', href: '/us/chatgpt-ads-agency/' },
       { label: 'ChatGPT ads agency (UK)', href: '/uk/chatgpt-ads-agency/' },
       { label: 'Performance marketing agency for Meta and Google ads', href: '/performance-marketing/' },

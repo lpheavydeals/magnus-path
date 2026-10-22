@@ -39,6 +39,8 @@ export const usAgencyPages: ServicePageData[] = [
       { title: 'One report in USD', body: 'Revenue, ad spend and results across channels in one monthly report, followed by a call booked in your morning.' },
     ],
     children: [
+      { title: 'Meta Ads Agency', href: '/us/meta-ads-agency/', body: 'Facebook, Instagram, Messenger and WhatsApp ads run from one Meta set-up, with tracking you can trust and accounts in your name.', icon: 'social' },
+      { title: 'Ecommerce Meta Ads', href: '/us/ecommerce-meta-ads-agency/', body: 'Catalogue and Advantage+ sales campaigns for online stores, judged on profit after returns, not platform ROAS.', icon: 'social' },
       { title: 'White Label SEO', href: '/us/white-label-seo/', body: 'SEO fulfillment for US agencies under your brand: audits, on-page, content, links and local SEO, quoted per client site.', icon: 'seo' },
       { title: 'SEO Outsourcing', href: '/us/seo-outsourcing/', body: 'A senior offshore SEO team for US businesses and agencies, with a written monthly scope and task-level reports.', icon: 'seo' },
       { title: 'White Label Web Development', href: '/us/white-label-web-development/', body: 'Shopify, WordPress and custom builds delivered under your agency’s name, with code and accounts you own.', icon: 'website' },
@@ -131,6 +133,8 @@ export const usAgencyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies (US)', href: '/us/facebook-advertising-agencies/' },
+      { label: 'Facebook ads agency (US)', href: '/us/facebook-ads-agency/' },
       { label: 'White label SEO services for US agencies', href: '/us/white-label-seo/' },
       { label: 'Amazon PPC agency for US sellers', href: '/us/amazon-ppc-agency/' },
       { label: 'Shopify SEO agency for US stores', href: '/us/shopify-seo-agency/' },

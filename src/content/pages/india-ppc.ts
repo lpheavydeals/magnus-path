@@ -120,6 +120,7 @@ export const indiaPpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'PPC company in Bangalore', href: '/bangalore/ppc-company/' },
       { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Performance marketing agency for Meta and Google ads', href: '/performance-marketing/' },
