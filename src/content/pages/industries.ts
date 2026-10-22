@@ -249,6 +249,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in Coimbatore', href: '/coimbatore/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Shopify development for fashion brands', href: '/shopify-development/' },
       { label: 'Performance marketing on Meta and Google', href: '/performance-marketing/' },
@@ -645,6 +646,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Coimbatore', href: '/coimbatore/facebook-ads-agency/' },
       { label: 'Facebook ads agency in India', href: '/facebook-ads-agency/' },
       { label: 'Google Ads agency in Chennai', href: '/chennai/google-ads-agency/' },
       { label: 'How to find buyers for export', href: '/blog/how-to-find-buyers-for-export/' },

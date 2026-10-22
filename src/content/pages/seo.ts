@@ -931,6 +931,10 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Coimbatore', href: '/coimbatore/facebook-advertising-agencies/' },
+      { label: 'Ecommerce Meta ads agency in Coimbatore', href: '/coimbatore/ecommerce-meta-ads-agency/' },
+      { label: 'Facebook ads agency in Coimbatore', href: '/coimbatore/facebook-ads-agency/' },
+      { label: 'Meta ads agency in Coimbatore', href: '/coimbatore/meta-ads-agency/' },
       { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Digital marketing cost in Chennai', href: '/blog/digital-marketing-cost-in-chennai/' },
       { label: 'B2B digital marketing for manufacturers and exporters', href: '/b2b-digital-marketing/' },

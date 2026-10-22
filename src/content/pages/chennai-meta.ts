@@ -119,6 +119,7 @@ export const chennaiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in Coimbatore', href: '/coimbatore/ecommerce-meta-ads-agency/' },
       { label: 'Meta advertising across Facebook, Instagram and WhatsApp in Chennai', href: '/chennai/meta-ads-agency/' },
       { label: 'Facebook lead ads for Chennai local and service businesses', href: '/chennai/facebook-ads-agency/' },
       { label: 'How to compare Facebook advertising firms in Chennai', href: '/chennai/facebook-advertising-agencies/' },
@@ -250,6 +251,7 @@ export const chennaiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Meta ads agency in Coimbatore', href: '/coimbatore/meta-ads-agency/' },
       { label: 'Meta ads for online stores: catalogue and Advantage+ sales ads in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'Facebook lead ads and instant forms for Chennai businesses', href: '/chennai/facebook-ads-agency/' },
       { label: 'How to compare Facebook advertising firms in Chennai', href: '/chennai/facebook-advertising-agencies/' },
@@ -379,6 +381,7 @@ export const chennaiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Coimbatore', href: '/coimbatore/facebook-ads-agency/' },
       { label: 'Meta advertising across Facebook, Instagram and WhatsApp in Chennai', href: '/chennai/meta-ads-agency/' },
       { label: 'Meta ads for online stores: catalogue and Advantage+ sales ads in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'How to compare Facebook advertising firms in Chennai', href: '/chennai/facebook-advertising-agencies/' },
@@ -524,6 +527,7 @@ export const chennaiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Coimbatore', href: '/coimbatore/facebook-advertising-agencies/' },
       { label: 'Meta ads for online stores: catalogue and Advantage+ sales ads in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'Meta advertising across Facebook, Instagram and WhatsApp in Chennai', href: '/chennai/meta-ads-agency/' },
       { label: 'Facebook lead ads for Chennai local and service businesses', href: '/chennai/facebook-ads-agency/' },
