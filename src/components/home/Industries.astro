@@ -19,6 +19,7 @@ const inds = [
           </li>
         ))}
       </ol>
+      <a class="ind__all" href="/industries/">See all 15 industries <span class="arrow" aria-hidden="true">→</span></a>
     </div>
     <div class="ind__cards">
       {inds.map((d, i) => (
@@ -35,6 +36,7 @@ const inds = [
 </section>
 <style>
   .ind__grid { display: grid; gap: 40px; }
+  .ind__all { font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
   .ind__left { display: grid; gap: 30px; align-content: start; }
   .ind__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
   .ind__list li { display: flex; align-items: baseline; gap: 14px; }

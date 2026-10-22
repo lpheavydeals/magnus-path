@@ -80,7 +80,12 @@ export const nav: NavItem[] = [
       { label: 'Manufacturers & Exporters', href: '/b2b-digital-marketing/', note: 'B2B lead generation' },
       { label: 'Fashion & Ethnic Wear', href: '/industries/fashion-apparel/' },
       { label: 'Beauty & Ayurveda', href: '/industries/beauty-ayurveda/' },
+      { label: 'Skincare Brands', href: '/industries/skincare-marketing-agency/' },
+      { label: 'Haircare Brands', href: '/industries/haircare-marketing-agency/' },
+      { label: 'Jewellery Brands', href: '/industries/jewellery-marketing-agency/' },
       { label: 'Food & FMCG', href: '/industries/food-fmcg/' },
+      { label: 'Supplements & Nutrition', href: '/industries/supplement-marketing-agency/' },
+      { label: 'All industries', href: '/industries/', note: '15 categories we work with' },
     ],
   },
   {
