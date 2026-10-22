@@ -17,7 +17,7 @@ const pdf = `/downloads/${slug}.pdf`;
 const trail = [{ label: 'Resources', href: '/resources/' }];
 const current = 'Ecommerce Launch Checklist';
 
-type Item = { id: string; title: string; detail: string; india?: string; intl?: string };
+type Item = { id: string; title: string; detail: string; india?: string; intl?: string; checker?: string };
 type Stage = { id: string; title: string; intro: string; items: Item[] };
 const stages: Stage[] = [
   { id: 'platform', title: 'Domain & platform', intro: 'The foundations. Changing these after launch is slow and costly, so decide them first.', items: [
@@ -123,9 +123,28 @@ const figures = [
     { title: 'Go live', body: 'Announce, then watch daily' },
   ] },
 ];
+const meta = {
+  title: 'Ecommerce Launch Checklist: 50 Points in 7 Stages | Magnus Path',
+  description: 'Free ecommerce launch checklist: 50 points in 7 stages, from domain and payments to tracking and launch week. Tick as you go or download the printable PDF.',
+  h1: 'Ecommerce Launch Checklist: *50 Points* Before You Go Live',
+  intro: 'This ecommerce launch checklist covers 50 things to get right before your online store goes live, in seven stages from domain and platform to launch week. It works for Shopify, WooCommerce and custom stores, with notes where India differs from the UK, US, UAE and Australia.',
+  guideTitle: 'How to plan an online store launch',
+  faqTitle: 'Ecommerce launch checklist questions',
+  stageWord: 'Stage',
+  doneLabel: 'All done: ready to launch',
+  leadHeading: 'Launching soon? Get a second pair of eyes',
+  leadSub: 'Request the free e-commerce audit. Our team reviews your store, tracking and checkout and sends a video walkthrough with the fixes to make before you spend on ads, within 24 working hours.',
+};
+const related = [
+    { label: 'E-commerce website development', href: '/ecommerce-website-development/' },
+    { label: 'Shopify store development', href: '/shopify-development/' },
+    { label: 'WooCommerce development', href: '/woocommerce-development/' },
+    { label: 'Best ecommerce platform in India', href: '/blog/best-ecommerce-platform-in-india/' },
+    { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
+];
 ---
-<Base title="Ecommerce Launch Checklist: 50 Points in 7 Stages | Magnus Path" description="Free ecommerce launch checklist: 50 points in 7 stages, from domain and payments to tracking and launch week. Tick as you go or download the printable PDF." schema={schema}>
-  <SimpleHero eyebrow="Free resource" h1="Ecommerce Launch Checklist: *50 Points* Before You Go Live" intro="This ecommerce launch checklist covers 50 things to get right before your online store goes live, in seven stages from domain and platform to launch week. It works for Shopify, WooCommerce and custom stores, with notes where India differs from the UK, US, UAE and Australia." trail={trail} current={current}>
+<Base title={meta.title} description={meta.description} schema={schema}>
+  <SimpleHero eyebrow="Free resource" h1={meta.h1} intro={meta.intro} trail={trail} current={current}>
     <div class="cl__heroact no-print">
       <a class="btn btn--primary" href={pdf} download>Download PDF <span class="arrow" aria-hidden="true">↓</span></a>
       <button class="btn btn--ghost" type="button" data-print>Print checklist</button>
@@ -133,7 +152,7 @@ const figures = [
     <p class="cl__printonly">Free resource from Magnus Path · {site.url.replace('https://', '')}/resources/{slug}/ · Tick each box as you finish it.</p>
   </SimpleHero>
 
-  <section class="section cl" data-checklist={slug} id="checklist">
+  <section class="section cl" data-checklist={slug} data-done-label={meta.doneLabel} id="checklist">
     <div class="wrap cl__grid">
       <aside class="calc__out cl__panel" aria-label="Your progress">
         <span class="calc__status" data-status data-state="warn">Not started</span>
@@ -158,7 +177,7 @@ const figures = [
         {stages.map((s, i) => (
           <section class="cl__stage" id={`stage-${s.id}`} data-stage={s.id}>
             <div class="cl__head">
-              <h2><span class="cl__kicker">Stage {i + 1} of {stages.length}</span>{s.title}</h2>
+              <h2><span class="cl__kicker">{meta.stageWord} {i + 1} of {stages.length}</span>{s.title}</h2>
               <span class="cl__chip" data-stage-count={s.id}>0/{s.items.length}</span>
             </div>
             <p class="cl__intro">{s.intro}</p>
@@ -167,7 +186,7 @@ const figures = [
                 <li class="cl__item">
                   <label>
                     <input type="checkbox" data-item={it.id} />
-                    <span class="cl__txt"><strong>{it.title}</strong><span>{it.detail}</span></span>
+                    <span class="cl__txt"><strong>{it.title}</strong><span>{it.detail}</span>{it.checker && <em class="cl__tag">Website checker: {it.checker}</em>}</span>
                   </label>
                   {(it.india || it.intl) && (
                     <div class="cl__notes">
@@ -185,16 +204,10 @@ const figures = [
   </section>
 
   <FigureBand figure={figures[0] as any} n={1} />
-  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="How to plan an online store launch" />
-  <FAQ items={faqs} title="Ecommerce launch checklist questions" />
-  <Related links={[
-    { label: 'E-commerce website development', href: '/ecommerce-website-development/' },
-    { label: 'Shopify store development', href: '/shopify-development/' },
-    { label: 'WooCommerce development', href: '/woocommerce-development/' },
-    { label: 'Best ecommerce platform in India', href: '/blog/best-ecommerce-platform-in-india/' },
-    { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
-  ]} />
-  <LeadForm heading="Launching soon? Get a second pair of eyes" sub="Request the free e-commerce audit. Our team reviews your store, tracking and checkout and sends a video walkthrough with the fixes to make before you spend on ads, within 24 working hours." />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title={meta.guideTitle} />
+  <FAQ items={faqs} title={meta.faqTitle} />
+  <Related links={related} />
+  <LeadForm heading={meta.leadHeading} sub={meta.leadSub} />
 </Base>
 
 <script>
@@ -236,7 +249,7 @@ const figures = [
       const status = root.querySelector<HTMLElement>('[data-status]');
       if (status) {
         status.dataset.state = pct === 100 ? 'good' : pct >= 50 ? 'good' : 'warn';
-        status.textContent = done === 0 ? 'Not started' : pct === 100 ? 'All done: ready to launch' : pct >= 50 ? 'More than halfway' : 'Under way';
+        status.textContent = done === 0 ? 'Not started' : pct === 100 ? (root.dataset.doneLabel || 'All done') : pct >= 50 ? 'More than halfway' : 'Under way';
       }
     };
     boxes.forEach((b) => b.addEventListener('change', () => { save(); render(); }));
@@ -290,11 +303,12 @@ const figures = [
   .cl__txt { display: grid; gap: 4px; }
   .cl__txt strong { font-size: 16.5px; line-height: 1.4; }
   .cl__txt span { color: #33373d; font-size: 15px; line-height: 1.6; }
+  .cl__txt .cl__tag { justify-self: start; font-style: normal; font-size: 12.5px; font-weight: 600; color: var(--accent-ink); background: var(--accent-tint); border-radius: 999px; padding: 3px 10px; margin-top: 2px; }
   .cl__item.is-done .cl__txt strong { text-decoration: line-through; text-decoration-color: var(--accent); text-decoration-thickness: 2px; color: var(--muted); }
   .cl__notes { margin-left: 38px; display: grid; gap: 6px; }
   .cl__notes p { margin: 0; padding: 8px 12px; border-radius: 12px; background: var(--paper); font-size: 14px; line-height: 1.55; color: var(--muted); }
   .cl__notes b { color: var(--ink); font-weight: 600; }
-  @media (max-width: 520px) { .cl__notes { margin-left: 0; } .cl__head { flex-direction: column; } }
+  @media (max-width: 520px) { .cl__notes { margin-left: 0; } }
   @media (min-width: 980px) {
     .cl__grid { grid-template-columns: minmax(0, 1fr) 330px; gap: 32px; align-items: start; }
     .cl__panel { grid-column: 2; grid-row: 1; position: sticky; top: 100px; }
@@ -323,11 +337,17 @@ const figures = [
     .cl__printonly { display: block; font-size: 10pt; color: #000; border: 1px solid #000; padding: 6pt 8pt; }
     .cl { padding: 0 !important; }
     .cl__grid { display: block; }
+    :global(.fb) { break-inside: avoid; page-break-inside: avoid; }
+    :global(.fb .label) { break-after: avoid; }
+    .cl__stage, .cl__items { display: block; }
     .cl__stage { border: 0; border-radius: 0; padding: 0; margin: 0 0 16pt; background: #fff; }
+    .cl__head, .cl__intro { break-after: avoid; page-break-after: avoid; margin-bottom: 6pt; }
+    .cl__item:first-child { break-before: avoid; page-break-before: avoid; }
     .cl__stage + .cl__stage { border-top: 2px solid #000; padding-top: 10pt; }
     .cl__head h2 { font-size: 15pt; }
     .cl__kicker, .cl__intro, .cl__txt span, .cl__notes p, .cl__notes b { color: #000 !important; }
     .cl__chip { display: none; }
+    .cl__txt .cl__tag { background: none; border: 1px solid #000; color: #000; }
     .cl__item { padding: 7pt 0; border-top: 1px solid #999; break-inside: avoid; page-break-inside: avoid; }
     .cl__item input { accent-color: #000; width: 14pt; height: 14pt; }
     .cl__item.is-done .cl__txt strong { color: #000; text-decoration-color: #000; }

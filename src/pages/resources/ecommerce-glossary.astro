@@ -1,0 +1,272 @@
+---
+// Ecommerce glossary: A–Z terms with anchors, client-side search, links to tools/services, DefinedTermSet schema.
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+
+type L = { label: string; href: string };
+type Term = { term: string; full?: string; def: string; links?: L[] };
+
+const T = {
+  roas: { label: 'ROAS calculator', href: '/tools/roas-calculator/' },
+  checker: { label: 'Ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
+  margin: { label: 'Profit margin calculator', href: '/tools/profit-margin-calculator/' },
+  rto: { label: 'RTO & COD calculator', href: '/tools/rto-cod-calculator/' },
+  budget: { label: 'Ad budget planner', href: '/tools/ad-budget-planner/' },
+  cr: { label: 'Conversion rate calculator', href: '/tools/conversion-rate-calculator/' },
+  ltv: { label: 'LTV:CAC calculator', href: '/tools/ltv-cac-calculator/' },
+  ship: { label: 'Free shipping threshold calculator', href: '/tools/free-shipping-threshold-calculator/' },
+  discount: { label: 'Discount calculator', href: '/tools/discount-calculator/' },
+  utm: { label: 'UTM builder', href: '/tools/utm-builder/' },
+  mkt: { label: 'Marketplace profit calculator', href: '/tools/marketplace-profit-calculator/' },
+  amazon: { label: 'Amazon marketing agency', href: '/amazon-marketing-agency/' },
+  amazonAcc: { label: 'Amazon account management', href: '/amazon-account-management/' },
+  flipkart: { label: 'Flipkart account management', href: '/flipkart-account-management/' },
+  qc: { label: 'Quick commerce marketing', href: '/quick-commerce-marketing/' },
+  perf: { label: 'Performance marketing', href: '/performance-marketing/' },
+  seo: { label: 'E-commerce SEO', href: '/ecommerce-seo/' },
+  shopifySeo: { label: 'Shopify SEO', href: '/shopify-seo/' },
+  geo: { label: 'AI search optimisation', href: '/ai-search-optimization/' },
+  web: { label: 'E-commerce website development', href: '/ecommerce-website-development/' },
+  rtoBlog: { label: 'How to reduce RTO and COD returns', href: '/blog/how-to-reduce-rto-cod-returns/' },
+  ppcBlog: { label: 'Amazon PPC guide', href: '/blog/amazon-ppc-guide-india/' },
+  qcBlog: { label: 'Selling on Blinkit, Zepto and Instamart', href: '/blog/how-to-sell-on-blinkit-zepto-instamart/' },
+} satisfies Record<string, L>;
+
+const terms: Term[] = [
+  { term: 'A+ content', def: 'Extra images, comparison charts and formatted text that brand owners can add below the product description on Amazon. It is available to sellers enrolled in Brand Registry and helps shoppers understand the product before they buy.', links: [T.amazonAcc] },
+  { term: 'ACoS', full: 'Advertising cost of sale', def: 'Ad spend divided by the sales those ads brought in, shown as a percentage. It is the main ad metric on Amazon and Flipkart. An ACoS of 25% is the same as a ROAS of 4×.', links: [T.roas, T.ppcBlog] },
+  { term: 'Advantage+', def: "Meta's automated campaign options, where Meta's system chooses audiences, placements and budget split with little manual targeting. For online stores, Advantage+ sales campaigns (earlier called Advantage+ shopping campaigns) are the common choice.", links: [T.perf] },
+  { term: 'Attribution', def: 'The rules that decide which ad, channel or click gets credit for a sale. Different platforms use different windows and models, so Meta, Google and your store analytics rarely report the same numbers for the same sales.', links: [T.utm] },
+  { term: 'AOV', full: 'Average order value', def: 'Total revenue divided by the number of orders over the same period. Raising AOV with bundles, upsells or a free-shipping threshold often adds profit without needing more traffic.', links: [T.ship] },
+  { term: 'BNPL', full: 'Buy now, pay later', def: 'Payment options that let shoppers split a purchase into instalments, such as Klarna and Clearpay in the UK, Afterpay and Zip in Australia, Tabby and Tamara in the UAE, and pay-later options from Indian wallets and banks.' },
+  { term: 'Brand Registry', full: 'Amazon Brand Registry', def: 'An Amazon programme for brand owners with a registered or pending trademark. It gives more control over product listings, protection tools against counterfeits and access to A+ content, Sponsored Brands and brand analytics.', links: [T.amazonAcc] },
+  { term: 'Break-even ROAS', def: 'The ROAS at which ads neither make nor lose money on product margin: 1 divided by your gross margin. With a 40% margin, break-even ROAS is 2.5×. Below it, every ad-driven order loses money.', links: [T.roas, T.margin] },
+  { term: 'Bundle', def: 'Two or more products sold together, usually at a small saving. Bundles lift average order value and help move slower stock alongside best sellers.', links: [T.discount] },
+  { term: 'Buy Box', def: 'The "Add to Cart" and "Buy Now" area on an Amazon product page. When several sellers offer the same product, Amazon picks one featured offer based on price, delivery speed, stock and seller performance; most sales go to that offer.', links: [T.amazon] },
+  { term: 'CAC', full: 'Customer acquisition cost', def: 'What it costs, on average, to win one new customer: marketing spend divided by new customers in the same period. Compare it with LTV to see whether growth is profitable.', links: [T.ltv] },
+  { term: 'CAPI', full: 'Conversions API', def: "Meta's server-side tracking. Your store sends purchase and other events directly from its server to Meta, so fewer conversions are lost to browser blockers and privacy settings. Most stores run it alongside the pixel.", links: [T.perf] },
+  { term: 'Cart abandonment', def: 'When a shopper adds products to the cart but leaves without paying. Common causes are surprise shipping costs, forced account creation and missing payment methods. Reminder emails and WhatsApp messages win some of these sales back.', links: [T.checker] },
+  { term: 'CLS', full: 'Cumulative Layout Shift', def: 'A Core Web Vitals metric for how much the page jumps around while loading. Google treats 0.1 or less as good. Reserving space for images and banners is the usual fix.', links: [T.checker] },
+  { term: 'COD', full: 'Cash on delivery', def: 'The shopper pays the courier in cash (or by UPI) when the parcel arrives. Still common in India and the UAE; it lifts conversion but raises the risk of refused deliveries and RTO.', links: [T.rto, T.rtoBlog] },
+  { term: 'Contribution margin', def: 'What an order leaves after all variable costs: product cost, shipping, packaging, payment and marketplace fees, returns and the ad cost to win it. It is a better guide to profit per order than gross margin alone.', links: [T.margin] },
+  { term: 'Conversion rate', full: 'CR', def: 'The share of sessions (or visitors) that end in an order: orders divided by sessions, times 100. Small improvements to conversion rate lift revenue from the traffic you already pay for.', links: [T.cr] },
+  { term: 'Core Web Vitals', def: "Google's three user-experience metrics for page speed and stability: LCP (loading), INP (responsiveness) and CLS (visual stability). They feed into Google's page experience signals and strongly affect mobile shoppers.", links: [T.checker] },
+  { term: 'CPA', full: 'Cost per acquisition', def: 'Ad spend divided by the number of conversions, usually purchases. Unlike CAC, it counts every conversion, including repeat buyers.', links: [T.budget] },
+  { term: 'CPC', full: 'Cost per click', def: 'What you pay on average for one click on an ad: ad spend divided by clicks. It is set by the auction, so it rises in peak seasons and competitive categories.', links: [T.budget] },
+  { term: 'CPM', full: 'Cost per mille', def: 'The cost of 1,000 ad impressions. Meta and display ads are often bought and compared on CPM; it climbs sharply around big sale days.', links: [T.budget] },
+  { term: 'Cross-sell', def: 'Suggesting a related product alongside the one a shopper is viewing, such as a case with a phone. "Frequently bought together" is the most common form.' },
+  { term: 'CTR', full: 'Click-through rate', def: 'Clicks divided by impressions, times 100. A low CTR usually points to weak creative, the wrong audience or an offer that does not stand out.', links: [T.budget] },
+  { term: 'D2C', full: 'Direct to consumer', def: 'Brands that sell to shoppers through their own website (and often marketplaces) rather than only through distributors and retailers. D2C brands own the customer data and the relationship.', links: [T.web] },
+  { term: 'Dark store', def: 'A small warehouse, closed to walk-in shoppers, set up to pick and pack online orders fast. Quick commerce apps such as Blinkit, Zepto and Swiggy Instamart run networks of dark stores.', links: [T.qc] },
+  { term: 'Easy Ship', full: 'Amazon Easy Ship', def: 'An Amazon India option where you store and pack orders yourself and Amazon picks them up and delivers them. It sits between self-shipping and FBA.', links: [T.mkt] },
+  { term: 'FBA', full: 'Fulfilment by Amazon', def: 'You send stock to Amazon warehouses and Amazon stores, picks, packs, delivers and handles returns for a fee. FBA products are usually Prime-eligible. Flipkart has a similar programme in Fulfilled by Flipkart.', links: [T.mkt, T.amazonAcc] },
+  { term: 'Free-shipping threshold', def: 'The order value above which delivery is free, such as "free delivery over ₹999". Set a little above your current AOV, it nudges shoppers to add one more item.', links: [T.ship] },
+  { term: 'GMV', full: 'Gross merchandise value', def: 'The total value of goods sold before deducting returns, cancellations, discounts and fees. Marketplaces often report GMV; your actual net revenue is lower.' },
+  { term: 'Gross margin', def: 'Revenue minus the cost of the goods sold, as a percentage of revenue. It is the starting point for break-even ROAS, but it ignores shipping, fees, returns and ads.', links: [T.margin] },
+  { term: 'GST / VAT', def: 'Sales taxes added to the price: GST in India and Australia (10% in Australia), VAT in the UK (20% standard rate) and the UAE (5%). Consumer prices in these markets are normally shown including tax.', links: [T.margin] },
+  { term: 'GTIN', full: 'Global Trade Item Number', def: 'The barcode number that identifies a product worldwide, such as a UPC, EAN or ISBN. Google Merchant Center and marketplaces ask for it on branded products to match listings correctly.' },
+  { term: 'Guest checkout', def: 'Letting shoppers pay without creating an account. Forcing sign-up at checkout is one of the most common reasons for cart abandonment.', links: [T.checker] },
+  { term: 'Hreflang', def: 'A tag that tells search engines which language and country each version of a page is for, such as en-IN, en-GB or en-AE. Stores selling in several countries use it so the right version shows in each market.', links: [T.seo] },
+  { term: 'INP', full: 'Interaction to Next Paint', def: 'A Core Web Vitals metric for how quickly a page responds when someone taps or clicks. Google treats 200 milliseconds or less as good. Heavy apps and scripts are the usual cause of slow INP.', links: [T.checker] },
+  { term: 'LCP', full: 'Largest Contentful Paint', def: 'A Core Web Vitals metric for how long the main content, often the hero or first product image, takes to appear. Google treats 2.5 seconds or less as good.', links: [T.checker] },
+  { term: 'Lookalike audience', def: 'An ad audience built from people who resemble a source list, such as your buyers. Meta pioneered it; with broad and automated targeting now common, your customer list matters more as a signal than as a strict audience.', links: [T.perf] },
+  { term: 'LTV', full: 'Customer lifetime value', def: 'The revenue (or, better, the margin) a customer brings over the whole relationship with your brand. Comparing LTV with CAC shows how much you can afford to spend to win a customer.', links: [T.ltv] },
+  { term: 'MAP', full: 'Minimum advertised price', def: 'A brand policy that sets the lowest price resellers may advertise a product at. It protects brand value and stops price wars between sellers of the same product.', links: [T.discount] },
+  { term: 'Merchant Center', full: 'Google Merchant Center', def: "Google's tool where you upload your product feed so products can appear in Shopping ads, Performance Max and free product listings on Google.", links: [T.perf] },
+  { term: 'NDR', full: 'Non-delivery report', def: 'A courier alert that a delivery attempt failed, for example because the customer was unreachable or refused the parcel. Acting on NDRs within hours, by calling or messaging the customer, prevents many RTOs.', links: [T.rto, T.rtoBlog] },
+  { term: 'Pixel', def: 'A small piece of tracking code (Meta pixel, TikTok pixel, Google tag) that records page views, add-to-carts and purchases in the browser, so ad platforms can measure and optimise campaigns.', links: [T.perf] },
+  { term: 'PLA', full: 'Product listing ads', def: 'Ads that show a product image, price and store name, such as Google Shopping ads. They run from your product feed rather than from keywords you write.', links: [T.perf] },
+  { term: 'PMax', full: 'Performance Max', def: 'A Google Ads campaign type that runs across Search, Shopping, YouTube, Display, Discover, Gmail and Maps from one campaign, using your feed, creatives and conversion data.', links: [T.perf] },
+  { term: 'Product feed', def: 'A file listing every product with its title, price, availability, images, GTIN and other attributes, sent to Google Merchant Center, Meta catalogues and marketplaces. Feed quality decides how well Shopping and catalogue ads perform.', links: [T.perf] },
+  { term: 'Quick commerce', def: 'Delivery of groceries and everyday products within minutes from dark stores, through apps such as Blinkit, Zepto and Swiggy Instamart. Brands list products and run in-app ads to win visibility.', links: [T.qc, T.qcBlog] },
+  { term: 'Repeat purchase rate', def: 'The share of customers who buy more than once in a period. It drives LTV and is often a faster route to profit than chasing new customers.', links: [T.ltv] },
+  { term: 'Retargeting', def: 'Showing ads to people who have already visited your site, viewed a product or added to cart. Also called remarketing. It is usually cheaper per sale than reaching new people.', links: [T.perf] },
+  { term: 'ROAS', full: 'Return on ad spend', def: 'Revenue from ads divided by ad spend. A ROAS of 4× means ₹4 in sales for every ₹1 spent. Always compare it with your break-even ROAS, not with someone else\'s number.', links: [T.roas] },
+  { term: 'RTO', full: 'Return to origin', def: 'A parcel that could not be delivered and goes back to the seller, usually a refused or unreachable cash-on-delivery order. You pay shipping both ways and earn nothing, so RTO can wipe out the profit on many good orders.', links: [T.rto, T.rtoBlog] },
+  { term: 'Schema markup', def: 'Structured data added to pages (for example Product, Offer, Review and FAQ) that helps search engines and AI answers understand prices, stock and ratings, and can unlock rich results.', links: [T.shopifySeo, T.geo] },
+  { term: 'Seller Flex', def: 'An Amazon India programme where the seller\'s own warehouse runs on Amazon\'s systems and processes, with Amazon handling delivery. Products can carry the Prime badge without moving stock into Amazon warehouses.', links: [T.amazonAcc] },
+  { term: 'SKU', full: 'Stock keeping unit', def: 'Your internal code for one specific product variant, such as a size and colour combination. Each SKU is tracked separately for stock, pricing and ads.' },
+  { term: 'Sponsored Products', def: 'Keyword- and product-targeted ads that appear in Amazon search results and on product pages, paid per click. They are the starting point for most Amazon advertising.', links: [T.ppcBlog, T.amazon] },
+  { term: 'TACoS', full: 'Total advertising cost of sale', def: 'Ad spend divided by total sales (ad-driven plus organic), as a percentage. A falling TACoS while sales grow shows that ads are building organic rank, not just buying orders.', links: [T.roas, T.amazon] },
+  { term: 'UGC', full: 'User-generated content', def: 'Photos, videos and reviews made by customers or creators rather than the brand. UGC often works well as ad creative because it looks like a real recommendation.' },
+  { term: 'Upsell', def: 'Offering a better, bigger or premium version of what the shopper is already buying, such as a larger pack. A good upsell raises AOV without interrupting checkout.', links: [T.ship] },
+  { term: 'UTM parameters', def: 'Tags added to a link (utm_source, utm_medium, utm_campaign and others) that tell Google Analytics where a visit came from. Consistent, lowercase UTMs keep campaign reports clean.', links: [T.utm] },
+];
+
+const slug = (s: string) => s.toLowerCase().replace(/\+/g, '-plus').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const sorted = [...terms].sort((a, b) => a.term.localeCompare(b.term, 'en', { sensitivity: 'base' })).map((t) => ({ ...t, id: slug(t.term) }));
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const groups = letters.map((l) => ({ l, items: sorted.filter((t) => t.term[0].toUpperCase() === l) })).filter((g) => g.items.length);
+const has = new Set(groups.map((g) => g.l));
+const N = sorted.length;
+
+const trail = [{ label: 'Resources', href: '/resources/' }];
+const guide = [
+  { heading: 'How to use this ecommerce glossary', paragraphs: ['Ecommerce has its own language, and most of it arrives as three- and four-letter abbreviations: ROAS, ACoS, TACoS, RTO, NDR, PMax, CAPI. This ecommerce glossary explains each term in one to three plain sentences, the way we would explain it to a founder in a meeting. Use the search box to find a term, or the A–Z letters to jump to a section. Every term has its own link, so you can share the exact definition with your team.', 'Where a term has a number you can work out, we link to one of our free calculators so you can try it with your own figures. Where it belongs to a service, such as Amazon advertising or quick commerce, we link to the page that explains how that work is done.'] },
+  { heading: 'The ad metrics that decide profit', paragraphs: ['Most confusion in ecommerce terms is about ad metrics, because each platform prefers a different one. Meta and Google report ROAS, Amazon and Flipkart report ACoS, and serious marketplace sellers watch TACoS. They describe the same relationship between spend and sales from different angles: ROAS is sales divided by spend, ACoS is spend divided by sales, and TACoS divides spend by all sales, including organic ones.', 'None of them tells you whether you made money on its own. For that you need your break-even ROAS, which comes from your margin, and ideally your contribution margin per order after shipping, fees and returns. A campaign can show a healthy ROAS and still lose money if the margin underneath it is thin.'], bullets: ['ROAS = ad revenue ÷ ad spend', 'ACoS = ad spend ÷ ad revenue × 100', 'TACoS = ad spend ÷ total revenue × 100', 'Break-even ROAS = 1 ÷ gross margin'] },
+  { heading: 'Marketplace terms Indian sellers meet first', paragraphs: ['Sellers moving onto Amazon and Flipkart meet a new set of words in the first week. The Buy Box decides who gets the sale when several sellers list the same product. FBA, Easy Ship and Seller Flex are three different ways of getting orders to customers, each with its own fees and control. Brand Registry unlocks A+ content, Sponsored Brands and protection against copycat listings, so brand owners usually apply as early as they can.', 'Quick commerce adds dark stores and in-app ads to the list. The rules and fees on every platform change often, so check the current seller documentation before you plan around any one programme.'] },
+  { heading: 'Delivery and payment terms: COD, RTO and NDR', paragraphs: ['In India and the UAE, cash on delivery is still a big share of orders, and it brings two more terms with it. An NDR is the courier telling you a delivery attempt failed. An RTO is what happens if nobody acts on it: the parcel comes back, and you pay shipping both ways for no sale.', 'The fixes are practical: confirm COD orders by WhatsApp or a call, act on NDRs within hours, nudge shoppers towards prepaid with a small incentive, and watch RTO by pin code and product. Our RTO and COD calculator shows what this costs you each month.'] },
+  { heading: 'Website, speed and search terms', paragraphs: ['On your own store, the terms that matter most describe speed and how search engines read your pages. Core Web Vitals (LCP, INP and CLS) measure how quickly the page loads, how quickly it responds and whether it jumps around. Schema markup describes your products, prices and reviews in a format Google and AI assistants can read. Hreflang tells search engines which version of a page belongs to which country, which matters as soon as you sell in more than one market.', 'Run your store through our ecommerce website checker to see how your mobile speed scores, then use this glossary to decode the report.'] },
+];
+const faqs = [
+  { q: 'What is the difference between ROAS and ACoS?', a: 'They measure the same thing from opposite sides. ROAS is ad revenue divided by ad spend, shown as a multiple such as 4×. ACoS is ad spend divided by ad revenue, shown as a percentage such as 25%. Meta and Google report ROAS; Amazon and Flipkart report ACoS. ROAS equals 100 divided by ACoS.' },
+  { q: 'What does RTO mean in ecommerce?', a: 'RTO stands for return to origin: a parcel that could not be delivered and is sent back to the seller. It usually happens with cash-on-delivery orders that are refused or where the customer cannot be reached. The seller pays forward and return shipping and earns nothing on the order.' },
+  { q: 'What is TACoS on Amazon?', a: 'TACoS is total advertising cost of sale: ad spend divided by total sales, including organic sales, as a percentage. While ACoS only looks at ad-driven sales, TACoS shows whether advertising is lifting the whole business. A falling TACoS while total sales rise usually means ads are building organic rank.' },
+  { q: 'What are Core Web Vitals?', a: "Core Web Vitals are Google's three page-experience metrics: Largest Contentful Paint for loading speed, Interaction to Next Paint for responsiveness, and Cumulative Layout Shift for visual stability. Google treats LCP of 2.5 seconds or less, INP of 200 milliseconds or less and CLS of 0.1 or less as good." },
+  { q: 'What is the difference between CAC and CPA?', a: 'CAC (customer acquisition cost) counts only new customers: marketing spend divided by the number of new customers won. CPA (cost per acquisition) usually counts every conversion an ad platform reports, including repeat buyers. CAC is the better number to compare with lifetime value when you decide how much growth you can afford.' },
+  { q: 'Can I link to a single term in this glossary?', a: 'Yes. Every term has its own anchor, so you can link straight to it, for example /resources/ecommerce-glossary/#roas. Click a term heading to put its link in your address bar, then copy it into a document, message or training sheet for your team.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: 'Ecommerce Glossary', href: '/resources/ecommerce-glossary/' }]),
+  faqSchema(faqs),
+  {
+    '@context': 'https://schema.org', '@type': 'DefinedTermSet', '@id': `${site.url}/resources/ecommerce-glossary/#terms`,
+    name: 'Ecommerce Glossary', description: 'Plain-English definitions of common ecommerce, marketplace and ad terms.', url: `${site.url}/resources/ecommerce-glossary/`,
+    publisher: { '@id': `${site.url}/#org` }, inLanguage: 'en-IN',
+    hasDefinedTerm: sorted.map((t) => ({ '@type': 'DefinedTerm', '@id': `${site.url}/resources/ecommerce-glossary/#${t.id}`, name: t.term, ...(t.full ? { alternateName: t.full } : {}), description: t.def, url: `${site.url}/resources/ecommerce-glossary/#${t.id}`, inDefinedTermSet: `${site.url}/resources/ecommerce-glossary/#terms` })),
+  },
+];
+const figures = [
+  { type: 'mindmap', caption: 'The four groups of terms most store owners meet, from ads to delivery.', after: 0, center: 'Ecommerce terms', branches: [
+    { label: 'Ads', items: ['ROAS, ACoS, TACoS', 'CPC, CPM, CTR', 'PMax, Advantage+'] },
+    { label: 'Marketplaces', items: ['Buy Box, A+ content', 'FBA, Easy Ship, Seller Flex'] },
+    { label: 'Delivery', items: ['COD, RTO, NDR', 'Dark stores'] },
+    { label: 'Website', items: ['LCP, INP, CLS', 'Schema, hreflang', 'UTM parameters'] },
+  ] },
+  { type: 'venn', caption: 'Ad metrics only tell you about profit when you read them with your store margins.', after: 1,
+    left: { title: 'Ad metrics', body: 'ROAS, ACoS, TACoS, CPC and CPA from each ad platform' },
+    right: { title: 'Store numbers', body: 'Gross margin, shipping, fees, returns and AOV' },
+    overlap: 'Profit after ads' },
+];
+---
+<Base title={`Ecommerce Glossary: ${N} Ecommerce Terms Explained | Magnus Path`} description={`Ecommerce glossary: plain-English definitions of ${N} ecommerce terms, from ROAS, ACoS and TACoS to RTO, COD, PMax, CAPI and Core Web Vitals.`} schema={schema}>
+  <SimpleHero eyebrow="Free resource" h1="Ecommerce Glossary: *Ecommerce Terms Explained Simply*" intro={`This ecommerce glossary explains ${N} terms that online sellers meet every week, from ROAS and TACoS to RTO, Buy Box and Core Web Vitals, in one to three plain sentences each, with links to free calculators.`} trail={trail} current="Ecommerce Glossary" />
+
+  <section class="section gl" id="glossary">
+    <div class="wrap gl__wrap">
+      <div class="gl__bar">
+        <label class="gl__search" for="gl-q">
+          <span class="sr-only">Search the glossary</span>
+          <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input id="gl-q" type="search" placeholder="Search terms, e.g. ROAS or RTO" autocomplete="off" />
+        </label>
+        <nav class="gl__az" aria-label="Jump to letter">
+          {letters.map((l) => has.has(l) ? <a href={`#letter-${l.toLowerCase()}`} data-l={l}>{l}</a> : <span aria-hidden="true">{l}</span>)}
+        </nav>
+      </div>
+      <p class="gl__count" id="gl-count" aria-live="polite">{N} terms</p>
+
+      {groups.map((g) => (
+        <section class="gl__group" id={`letter-${g.l.toLowerCase()}`} data-l={g.l} aria-labelledby={`h-${g.l}`}>
+          <h2 id={`h-${g.l}`} class="gl__letter">{g.l}</h2>
+          <dl class="gl__list">
+            {g.items.map((t) => (
+              <div class="gl__term" id={t.id} data-s={`${t.term} ${t.full ?? ''} ${t.def}`.toLowerCase()}>
+                <dt><a href={`#${t.id}`}>{t.term}</a>{t.full && <span class="gl__full">{t.full}</span>}</dt>
+                <dd>
+                  <p>{t.def}</p>
+                  {t.links && <p class="gl__links">{t.links.map((l) => <a href={l.href}>{l.label} <span aria-hidden="true">→</span></a>)}</p>}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      ))}
+      <p class="gl__empty" id="gl-empty" hidden>No terms match your search. Try a shorter word, or <a href="/contact/">ask us</a>.</p>
+      <div class="gl__cta">
+        <p>Seeing these terms in your own reports and not sure what to fix first? Our team reviews your store, ads and SEO for free.</p>
+        <a class="btn btn--primary" href="/free-ecommerce-audit/?from=ecommerce-glossary#audit">Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="Making sense of ecommerce terms" />
+  <FAQ items={faqs} title="Ecommerce glossary questions" />
+  <Related links={[{ label: 'ROAS & break-even ACoS calculator', href: '/tools/roas-calculator/' }, { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' }, { label: 'Amazon PPC guide for Indian sellers', href: '/blog/amazon-ppc-guide-india/' }, { label: 'How to reduce RTO and COD returns', href: '/blog/how-to-reduce-rto-cod-returns/' }, { label: 'Free ecommerce tools and calculators', href: '/tools/' }]} />
+  <LeadForm heading="Want these numbers explained for your store?" sub="Request the free e-commerce audit. We look at your ROAS, margins, RTO and site speed and send a video walkthrough with a prioritised fix list." />
+</Base>
+
+<script>
+  const q = document.getElementById('gl-q') as HTMLInputElement;
+  const termsEl = [...document.querySelectorAll<HTMLElement>('.gl__term')];
+  const groupsEl = [...document.querySelectorAll<HTMLElement>('.gl__group')];
+  const total = termsEl.length;
+  function filter() {
+    const v = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const t of termsEl) { const ok = !v || (t.dataset.s || '').includes(v); t.hidden = !ok; if (ok) shown++; }
+    for (const g of groupsEl) {
+      const n = g.querySelectorAll('.gl__term:not([hidden])').length;
+      g.hidden = n === 0;
+      const a = document.querySelector<HTMLElement>(`.gl__az a[data-l="${g.dataset.l}"]`);
+      if (a) a.classList.toggle('is-off', n === 0);
+    }
+    document.getElementById('gl-empty')!.hidden = shown > 0;
+    document.getElementById('gl-count')!.textContent = v ? `${shown} of ${total} terms match "${q.value.trim()}"` : `${total} terms`;
+  }
+  q.addEventListener('input', filter);
+  // Jumping to a letter or term clears an active search so the target is visible.
+  document.querySelectorAll<HTMLAnchorElement>('.gl__az a, .gl__term dt a').forEach((a) => a.addEventListener('click', () => {
+    if (q.value) { q.value = ''; filter(); }
+  }));
+  if (location.hash) { const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el && el.classList.contains('gl__term')) el.classList.add('is-target'); }
+  window.addEventListener('hashchange', () => {
+    document.querySelectorAll('.gl__term.is-target').forEach((e) => e.classList.remove('is-target'));
+    const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (el && el.classList.contains('gl__term')) el.classList.add('is-target');
+  });
+</script>
+
+<style>
+  .gl { padding-top: clamp(20px, 3vw, 40px); }
+  .gl__wrap { display: grid; gap: 16px; max-width: 1040px; }
+  .gl__bar { display: grid; gap: 12px; position: sticky; top: 76px; z-index: 5; background: var(--paper); padding: 10px 0 12px; border-bottom: 1px solid var(--line); }
+  .gl__search { display: flex; align-items: center; gap: 10px; padding: 0 16px; border: 1.5px solid var(--line); border-radius: 14px; background: var(--white); color: var(--muted); }
+  .gl__search:focus-within { border-color: var(--accent); }
+  .gl__search input { flex: 1; min-width: 0; min-height: 50px; border: 0; background: transparent; font: 500 16px var(--font-body); color: var(--ink); }
+  .gl__search input:focus { outline: none; }
+  .gl__az { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: thin; padding-bottom: 4px; }
+  .gl__az a, .gl__az span { flex: none; }
+  @media (min-width: 760px) { .gl__az { flex-wrap: wrap; overflow: visible; padding-bottom: 0; } }
+  .gl__az a, .gl__az span { display: inline-grid; place-items: center; min-width: 32px; height: 32px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+  .gl__az a { color: var(--ink); text-decoration: none; background: var(--white); border: 1px solid var(--line); }
+  .gl__az a:hover, .gl__az a:focus-visible { border-color: var(--accent); color: var(--accent-ink); }
+  .gl__az a.is-off { opacity: .4; }
+  .gl__az span { color: #c4c8cc; }
+  .gl__count { font-size: 14px; color: var(--muted); }
+  .gl__group { display: grid; gap: 4px; scroll-margin-top: 215px; }
+  .gl__group[hidden], .gl__term[hidden], .gl__empty[hidden] { display: none; }
+  .gl__letter { font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--accent-ink); padding-top: 14px; border-bottom: 1px solid var(--line); }
+  .gl__list { margin: 0; display: grid; }
+  .gl__term { display: grid; gap: 6px; padding: 18px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 215px; border-radius: 12px; transition: background .4s ease; }
+  .gl__term.is-target, .gl__term:target { background: var(--accent-tint); padding-left: 14px; padding-right: 14px; }
+  .gl__term dt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+  .gl__term dt a { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+  .gl__term dt a:hover { color: var(--accent-ink); }
+  .gl__full { font-size: 14px; color: var(--muted); }
+  .gl__term dd { margin: 0; display: grid; gap: 8px; }
+  .gl__term dd p { color: #33373d; line-height: 1.6; max-width: 75ch; }
+  .gl__links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
+  .gl__links a { color: var(--accent-ink); font-weight: 600; text-decoration: none; }
+  .gl__links a:hover { text-decoration: underline; }
+  .gl__empty { color: var(--muted); }
+  .gl__cta { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; padding: clamp(20px, 3vw, 30px); border-radius: 24px; background: var(--ink); color: var(--white); }
+  .gl__cta p { max-width: 52ch; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  @media (min-width: 760px) {
+    .gl__term { grid-template-columns: 220px 1fr; gap: 24px; }
+    .gl__term dt { flex-direction: column; gap: 2px; }
+  }
+  @media print {
+    .gl__bar, .gl__cta { display: none; }
+    .gl__term { break-inside: avoid; }
+  }
+</style>

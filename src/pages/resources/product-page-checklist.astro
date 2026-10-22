@@ -1,0 +1,342 @@
+---
+// Lead magnet #12 (docs/free-tools-plan.md): 30-point product page checklist in 9 groups.
+// Items line up with the website checker questions (src/components/tools/StoreChecker.astro) via `checker`.
+// Interactive ticks saved in localStorage (per page key); print stylesheet; PDF made by the coordinator.
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import '../../components/tools/calc.css';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+
+const slug = 'product-page-checklist';
+const pdf = `/downloads/${slug}.pdf`;
+const trail = [{ label: 'Resources', href: '/resources/' }];
+const current = 'Product Page Checklist';
+
+type Item = { id: string; title: string; detail: string; india?: string; intl?: string; checker?: string };
+type Stage = { id: string; title: string; intro: string; items: Item[] };
+const stages: Stage[] = [
+  { id: 'images', title: 'Images & video', intro: 'Shoppers cannot touch the product, so the photos do the job of the shop floor.', items: [
+    { id: 'i1', title: 'At least four images or a short video', detail: 'Front, back, a close-up of the material or finish, and one that shows size or scale. A 15–30 second video of the product in use often answers more than another photo.', checker: 'Complete product pages' },
+    { id: 'i2', title: 'Show the product in use or on a person', detail: "Fashion: on a model, with the model's height and the size they wear. Beauty: texture and shade swatches on different skin tones. Food: a serving, not just the pack." },
+    { id: 'i3', title: 'Each variant shows its own photo', detail: 'Picking a colour or pack size changes the main image. Colours look true to life, and every image uses the same background and aspect ratio.' },
+    { id: 'i4', title: 'Alt text on every product image', detail: 'A short, plain description of what the image shows ("navy cotton kurta, side view"). It helps screen-reader users and image search.', checker: 'Security and search basics' },
+  ] },
+  { id: 'copy', title: 'Title & description', intro: 'The words answer the questions the photos cannot.', items: [
+    { id: 'c1', title: 'A title that says exactly what it is', detail: 'Brand, product type and the attribute people choose by (size, colour, material, pack size), written for shoppers first. No keyword lists.' },
+    { id: 'c2', title: 'Benefits first, then details', detail: 'The first lines say why someone should buy it. Then short bullets for features and a fuller description below for those who want it.' },
+    { id: 'c3', title: 'A size guide, spec table or ingredient list', detail: 'Measurements in the units your buyers use, a fit note ("runs small"), dimensions and compatibility, or the full ingredient list.', checker: 'Complete product pages', india: 'Packaged goods also show MRP, net quantity, country of origin and manufacturer or importer details on the listing.', intl: 'Show sizes in the local system (UK, US, EU) and any labelling each market requires for food, cosmetics or supplements.' },
+    { id: 'c4', title: 'Answers to the common questions', detail: 'A few short answers on the page: how to use it, how to care for it, what is in the box, who it suits. Take them from real customer messages.' },
+  ] },
+  { id: 'price', title: 'Price & offers', intro: 'No guessing about what the shopper will pay or what the offer really is.', items: [
+    { id: 'o1', title: 'Price shown the way local shoppers expect', detail: 'One clear price near the title, with any saving shown honestly.', india: 'Selling price including GST, with the MRP shown alongside if you discount from it.', intl: 'UK, UAE and Australian prices include VAT or GST; US prices are shown before sales tax.' },
+    { id: 'o2', title: 'Offers that are clear and still valid', detail: 'The offer appears on the product page and in the cart, with an end date and plain conditions. No expired banners or codes that fail at checkout.', checker: 'Clear, valid offers' },
+    { id: 'o3', title: 'One way to raise order value', detail: 'A bundle, "frequently bought together" or a free-shipping threshold message such as "add a little more for free delivery". Add one at a time and measure.', checker: 'Ways to raise order value' },
+    { id: 'o4', title: 'Payment options shown near the price', detail: 'Shoppers who see their preferred way to pay are less likely to leave at checkout.', checker: 'Smooth checkout', india: 'UPI, cards and whether cash on delivery is available for this item or pin code; EMI for higher-priced products.', intl: 'Apple Pay, Google Pay and buy now pay later messaging where used: Klarna or Clearpay (UK), Afterpay or Zip (Australia), Tabby or Tamara (UAE).' },
+  ] },
+  { id: 'delivery', title: 'Delivery & stock', intro: '"When will it arrive?" is asked on almost every product page. Answer it before the cart.', items: [
+    { id: 'd1', title: 'A delivery date or location check before the cart', detail: 'An estimated delivery date, or a check that gives one, near the add-to-cart button.', checker: 'Complete product pages', india: 'A pin-code check that also confirms COD availability.', intl: 'A postcode or ZIP check, or "order by 2pm for next-day dispatch" style messaging.' },
+    { id: 'd2', title: 'Shipping cost stated on the page', detail: 'Free, flat or "calculated at checkout" with a link to rates, plus the free-shipping threshold if you have one. No surprises at the last step.', checker: 'Smooth checkout' },
+    { id: 'd3', title: 'Clear stock status for every variant', detail: 'Sold-out sizes or colours are marked before they are picked, with a back-in-stock alert instead of a dead end.' },
+  ] },
+  { id: 'trust', title: 'Trust', intro: 'Remove the doubts that stop a first-time buyer from paying a brand they do not know yet.', items: [
+    { id: 't1', title: 'Returns summary next to the add-to-cart button', detail: 'One line ("Easy 7-day exchange" or "Free returns within 30 days", whatever your real policy is) with a link to the full policy.', checker: 'Trust signals' },
+    { id: 't2', title: 'Contact or WhatsApp easy to find', detail: 'A visible way to ask a question before buying: chat, WhatsApp, phone or email, with the hours you reply.', checker: 'Trust signals' },
+    { id: 't3', title: 'Only true trust badges', detail: 'Secure payment logos, warranty, genuine-product or certification marks only where they are real and current. Fake or vague badges hurt more than they help.' },
+  ] },
+  { id: 'reviews', title: 'Reviews', intro: 'Other buyers are more convincing than any product description.', items: [
+    { id: 'r1', title: 'Star rating and review count near the title', detail: 'Shoppers look for it at the top of the page. Clicking it jumps to the reviews.', checker: 'Trust signals' },
+    { id: 'r2', title: 'Photo reviews and useful filters', detail: 'Customer photos and videos, and filters that matter for the category: size bought, skin type, use case.' },
+    { id: 'r3', title: 'Reviews collected automatically and answered', detail: 'A review request goes out after delivery, and negative reviews get a polite, useful reply. Never hide or invent reviews.' },
+  ] },
+  { id: 'seo', title: 'SEO', intro: 'The parts search engines and AI answers read.', items: [
+    { id: 'e1', title: 'A unique meta title and description', detail: 'Written for this product, not copied from the theme default or another variant.', checker: 'Security and search basics' },
+    { id: 'e2', title: 'Valid product structured data', detail: 'Product, Offer (price, currency, availability) and review data that matches what the page and your Merchant Center feed show.' },
+    { id: 'e3', title: 'Clean URL and internal links', detail: 'A readable URL, one canonical page for all variants, and links from collections, related products and buying guides.' },
+  ] },
+  { id: 'speed', title: 'Speed', intro: 'A slow product page wastes the ad click that brought the shopper there.', items: [
+    { id: 's1', title: 'The main image appears quickly on mobile', detail: 'Serve the first product image at the right size in a modern format and load it first. Aim for a Largest Contentful Paint of 2.5 seconds or less.', checker: 'Main content load time' },
+    { id: 's2', title: 'Nothing jumps while the page loads', detail: 'Reserve space for images, review widgets, banners and pop-ups so buttons do not move under the shopper\'s thumb.', checker: 'Layout stability and responsiveness' },
+    { id: 's3', title: 'Apps and scripts trimmed', detail: 'Remove apps you no longer use, and load chat, review and pop-up scripts after the main content.', checker: 'Mobile speed score' },
+  ] },
+  { id: 'mobile', title: 'Mobile', intro: 'Most shoppers will see this page on a phone, so check it on one.', items: [
+    { id: 'b1', title: 'Add to cart always within reach', detail: 'The button is visible on the first screen or in a sticky bar, and size and colour selectors are big enough to tap.' },
+    { id: 'b2', title: 'Readable without zooming', detail: 'Body text of at least 16px, short paragraphs, and long details tucked into tabs or accordions instead of one endless page.' },
+    { id: 'b3', title: 'Pop-ups that do not block the product', detail: 'No full-screen pop-up on arrival. Delay sign-up offers, make them easy to close, and keep them away from the add-to-cart button.' },
+  ] },
+];
+const total = stages.reduce((n, s) => n + s.items.length, 0);
+
+const guide = [
+  { heading: 'What this product page checklist covers', paragraphs: ['This product page checklist has 30 points in nine groups: images, title and description, price and offers, delivery, trust, reviews, SEO, speed and mobile. Every point is something a shopper notices, or something that decides whether they find the page at all. It works the same on Shopify, WooCommerce and custom stores, because the questions shoppers ask do not depend on your platform.', 'Points marked "Website checker" match a question in our free ecommerce website checker, so you can run the checker for a quick score and then use this list to fix each item in detail.'] },
+  { heading: 'Start with the first screen on a phone', paragraphs: ['Open your best-selling product on a phone and look only at the first screen. Can you see what the product is, the price, a rating and the add-to-cart button without scrolling? Is the main image sharp and quick to load? Most of the decision to stay or leave happens here, so the image, title, price and button deserve more attention than anything further down.', 'Then scroll as a shopper would. Do you find the size guide, the delivery date and the returns policy before you have to ask? If you keep wanting to message the brand, those answers belong on the page.', 'A useful habit is to read your customer messages and returns reasons every month. Questions that keep coming back ("does it run small?", "is it suitable for oily skin?", "when will it reach Pune?") point straight at a missing item on this product page checklist.'] },
+  { heading: 'Price, offers and delivery: remove the doubts', paragraphs: ['Surprises at checkout are one of the main reasons people abandon carts: a shipping charge they did not expect, a discount code that no longer works, a payment method that is missing. The fix starts on the product page. Show the price the way local shoppers expect, state shipping costs and the free-shipping threshold, and show which payment methods are available.', 'Offers need the most upkeep. When a sale ends, check every banner, badge, pop-up and code, including ones shared with creators and in ads. An expired offer at the moment someone is ready to buy is worse than no offer at all.'], bullets: ['India: price including GST, MRP alongside, UPI and COD availability by pin code', 'UK, UAE and Australia: prices including VAT or GST, with pay-later options where shoppers use them', 'US: prices before sales tax, with tax and shipping shown before the final step'] },
+  { heading: 'Reviews and trust for first-time buyers', paragraphs: ["A new shopper does not know your brand. Reviews with photos, a visible returns summary and a quick way to ask a question do more to win that first order than any badge. Ask every customer for a review after delivery, reply to the negative ones, and never invent or filter reviews: shoppers notice, and so do platforms and regulators.", 'Keep trust badges honest. Secure payment logos, warranties and certifications are helpful only when they are real and current. The trust group of this product page checklist is short on purpose: a few honest signals placed near the price and the add-to-cart button work better than a row of logos at the bottom of the page.'] },
+  { heading: 'SEO and speed: the parts shoppers do not see', paragraphs: ['A product page that is not found does not sell. Give each product a unique meta title and description, valid product structured data that matches your Merchant Center feed, and links from collections and related products. These also help AI answer engines describe your products accurately.', 'Speed matters most on mobile and on paid traffic, where you have already paid for the visit. Size and compress images, load the main image first, reserve space so nothing jumps, and remove apps you no longer use.'] },
+  { heading: 'How to work through the list', paragraphs: ['Do not try to fix all 30 points on every product at once. Start with template changes that fix every page in one go, such as the returns line, delivery check, sticky add-to-cart bar and review stars. Then work through your best sellers one by one: photos, copy, size guide and answers. Use this product page checklist again whenever you launch a new product, and re-run the website checker after each round of fixes to see what has improved.'] },
+];
+const faqs = [
+  { q: 'What should a good product page include?', a: 'A good product page shows several clear images or a video, a title that says exactly what the product is, benefits before specifications, a size guide or spec table, an honest price and valid offer, a delivery estimate, a returns summary, reviews and a visible add-to-cart button on mobile. Our checklist covers 30 such points in nine groups.' },
+  { q: 'How many product images should I have?', a: 'We suggest at least four images per product, or three images and a short video: front, back, a close-up of the material or finish, and one that shows size or the product in use. Every variant should have its own photos, and all images should share the same background and aspect ratio.' },
+  { q: 'Does this product page checklist work for Shopify and WooCommerce?', a: 'Yes. The points are platform-neutral and apply to Shopify, WooCommerce and custom stores. How you implement them differs: on Shopify many are theme settings or apps, on WooCommerce they are theme or plugin changes, and on a custom store your developer builds them. Template-level fixes apply to every product at once.' },
+  { q: 'How is this related to your website checker?', a: 'Our free ecommerce website checker asks ten quick questions and tests mobile speed, then gives a score out of 100. Nine of those checks relate to product pages, and the matching points here are labelled "Website checker". Run the checker for a quick score, then use this checklist to fix each point in detail.' },
+  { q: 'Which product page fixes should I do first?', a: 'Start with fixes that affect every product through the template: delivery estimate, returns summary, review stars near the title, payment options and a sticky add-to-cart bar on mobile. Then improve your best sellers one at a time with better photos, copy and size guides, because they get most of your traffic and ad spend.' },
+  { q: 'Is my progress saved?', a: 'Yes. Your ticks are saved in this browser using local storage and are never sent to us, so you can close the page and return later. Use the reset button to start again for another product. You can also download the PDF or print the page to work through the list on paper with your team.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: current, href: `/resources/${slug}/` }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'Article', headline: 'Product Page Checklist: 30 Points for Ecommerce Stores', description: 'A 30-point product page checklist covering images, copy, price and offers, delivery, trust, reviews, SEO, speed and mobile for Shopify, WooCommerce and custom stores.', url: `${site.url}/resources/${slug}/`, mainEntityOfPage: `${site.url}/resources/${slug}/`, datePublished: '2026-10-22', dateModified: '2026-10-22', inLanguage: 'en-IN', author: { '@id': `${site.url}/#org` }, publisher: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'mindmap', caption: 'Every point on the checklist helps a shopper do one of four things.', after: 0, center: 'Product page', branches: [
+    { label: 'See it', items: ['Four images or a video', 'In use or on a model'] },
+    { label: 'Understand it', items: ['Clear title and benefits', 'Size guide or specs'] },
+    { label: 'Trust it', items: ['Photo reviews', 'Returns and contact'] },
+    { label: 'Get it', items: ['Clear price and offer', 'Delivery date and payment'] },
+  ] },
+  { type: 'matrix', caption: 'Where to start: quick template fixes first, then your best sellers.', after: 5, cols: ['Quick to fix', 'Takes longer'], rows: ['Best sellers', 'Whole catalogue'], cells: [
+    { title: 'Do this week', body: 'Fix offers, add review stars and delivery dates' },
+    { title: 'Plan next', body: 'Reshoot photos and add a short video' },
+    { title: 'Theme changes', body: 'Returns line, sticky cart and payment icons, once' },
+    { title: 'Ongoing work', body: 'Rewrite copy and collect photo reviews' },
+  ] },
+];
+const meta = {
+  title: 'Product Page Checklist: 30 Points for More Sales | Magnus Path',
+  description: 'Free product page checklist: 30 points on images, copy, price, delivery, trust, reviews, SEO, speed and mobile. Tick as you go or print the PDF.',
+  h1: 'Product Page Checklist: *30 Points* Shoppers Look For',
+  intro: 'This product page checklist covers 30 points in nine groups, from images and copy to delivery, reviews, speed and mobile. It works for Shopify, WooCommerce and custom stores, and lines up with the questions in our free ecommerce website checker.',
+  guideTitle: 'How to build product pages that sell',
+  faqTitle: 'Product page checklist questions',
+  stageWord: 'Group',
+  doneLabel: 'All done: page ready',
+  leadHeading: 'Want us to review your product pages?',
+  leadSub: 'Request the free e-commerce audit. Our team reviews your best-selling product pages, checkout, ads and SEO and sends a video walkthrough with a prioritised fix list within 24 working hours.',
+};
+const related = [
+  { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
+  { label: 'Shopify store development', href: '/shopify-development/' },
+  { label: 'E-commerce SEO services', href: '/ecommerce-seo/' },
+  { label: 'Shopify SEO checklist', href: '/blog/shopify-seo-checklist/' },
+  { label: 'E-commerce website development', href: '/ecommerce-website-development/' },
+];
+---
+<Base title={meta.title} description={meta.description} schema={schema}>
+  <SimpleHero eyebrow="Free resource" h1={meta.h1} intro={meta.intro} trail={trail} current={current}>
+    <div class="cl__heroact no-print">
+      <a class="btn btn--primary" href={pdf} download>Download PDF <span class="arrow" aria-hidden="true">↓</span></a>
+      <button class="btn btn--ghost" type="button" data-print>Print checklist</button>
+    </div>
+    <p class="cl__printonly">Free resource from Magnus Path · {site.url.replace('https://', '')}/resources/{slug}/ · Tick each box as you finish it.</p>
+  </SimpleHero>
+
+  <section class="section cl" data-checklist={slug} data-done-label={meta.doneLabel} id="checklist">
+    <div class="wrap cl__grid">
+      <aside class="calc__out cl__panel" aria-label="Your progress">
+        <span class="calc__status" data-status data-state="warn">Not started</span>
+        <div>
+          <div class="calc__big"><span data-pct>0</span>%</div>
+          <p class="calc__biglabel" aria-live="polite"><span data-done>0</span> of {total} points done</p>
+        </div>
+        <div class="cl__bar" role="progressbar" aria-label="Checklist progress" aria-valuemin="0" aria-valuemax={total} aria-valuenow="0"><span data-bar></span></div>
+        <ol class="cl__stages">
+          {stages.map((s, i) => <li><a href={`#stage-${s.id}`}>{i + 1}. {s.title}</a><span data-stage-count={s.id}>0/{s.items.length}</span></li>)}
+        </ol>
+        <div class="cl__actions">
+          <a class="btn btn--primary btn--sm" href={pdf} download>Download PDF <span class="arrow" aria-hidden="true">↓</span></a>
+          <button class="btn btn--sm cl__btnline" type="button" data-print>Print</button>
+          <button class="btn btn--sm cl__btnline" type="button" data-reset>Reset</button>
+        </div>
+        <a class="btn btn--primary" href={`/free-ecommerce-audit/?from=${slug}#audit`}>Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+        <p class="calc__note" data-storage-note>Your ticks are saved in this browser only. Nothing is sent to us.</p>
+      </aside>
+
+      <div class="cl__main">
+        {stages.map((s, i) => (
+          <section class="cl__stage" id={`stage-${s.id}`} data-stage={s.id}>
+            <div class="cl__head">
+              <h2><span class="cl__kicker">{meta.stageWord} {i + 1} of {stages.length}</span>{s.title}</h2>
+              <span class="cl__chip" data-stage-count={s.id}>0/{s.items.length}</span>
+            </div>
+            <p class="cl__intro">{s.intro}</p>
+            <ol class="cl__items">
+              {s.items.map((it) => (
+                <li class="cl__item">
+                  <label>
+                    <input type="checkbox" data-item={it.id} />
+                    <span class="cl__txt"><strong>{it.title}</strong><span>{it.detail}</span>{it.checker && <em class="cl__tag">Website checker: {it.checker}</em>}</span>
+                  </label>
+                  {(it.india || it.intl) && (
+                    <div class="cl__notes">
+                      {it.india && <p><b>India:</b> {it.india}</p>}
+                      {it.intl && <p><b>UK, US, UAE, Australia:</b> {it.intl}</p>}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title={meta.guideTitle} />
+  <FAQ items={faqs} title={meta.faqTitle} />
+  <Related links={related} />
+  <LeadForm heading={meta.leadHeading} sub={meta.leadSub} />
+</Base>
+
+<script>
+  // Interactive checklist: ticks saved per page in localStorage (wrapped in try/catch for private mode / blocked storage).
+  const root = document.querySelector<HTMLElement>('[data-checklist]');
+  if (root) {
+    const key = 'mp-checklist:' + root.dataset.checklist;
+    const boxes = Array.from(root.querySelectorAll<HTMLInputElement>('input[data-item]'));
+    let storageOk = true;
+    const load = (): string[] => {
+      try { const v = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(v) ? v : []; } catch { storageOk = false; return []; }
+    };
+    const save = () => {
+      try { localStorage.setItem(key, JSON.stringify(boxes.filter((b) => b.checked).map((b) => b.dataset.item))); } catch { storageOk = false; note(); }
+    };
+    const note = () => {
+      if (storageOk) return;
+      root.querySelectorAll('[data-storage-note]').forEach((el) => { el.textContent = 'Your browser is blocking storage, so ticks will clear when you leave this page. Download the PDF to keep a copy.'; });
+    };
+    const saved = new Set(load());
+    boxes.forEach((b) => { b.checked = saved.has(b.dataset.item || ''); });
+    const render = () => {
+      const done = boxes.filter((b) => b.checked).length;
+      const pct = boxes.length ? Math.round((done / boxes.length) * 100) : 0;
+      root.querySelectorAll('[data-done]').forEach((el) => { el.textContent = String(done); });
+      root.querySelectorAll('[data-pct]').forEach((el) => { el.textContent = String(pct); });
+      const bar = root.querySelector<HTMLElement>('[data-bar]');
+      if (bar) bar.style.width = pct + '%';
+      root.querySelector('[role=progressbar]')?.setAttribute('aria-valuenow', String(done));
+      root.querySelectorAll<HTMLElement>('[data-stage]').forEach((st) => {
+        const inside = Array.from(st.querySelectorAll<HTMLInputElement>('input[data-item]'));
+        const n = inside.filter((b) => b.checked).length;
+        root.querySelectorAll<HTMLElement>(`[data-stage-count="${st.dataset.stage}"]`).forEach((el) => {
+          el.textContent = `${n}/${inside.length}`;
+          el.toggleAttribute('data-full', n === inside.length);
+        });
+      });
+      boxes.forEach((b) => b.closest('.cl__item')?.classList.toggle('is-done', b.checked));
+      const status = root.querySelector<HTMLElement>('[data-status]');
+      if (status) {
+        status.dataset.state = pct === 100 ? 'good' : pct >= 50 ? 'good' : 'warn';
+        status.textContent = done === 0 ? 'Not started' : pct === 100 ? (root.dataset.doneLabel || 'All done') : pct >= 50 ? 'More than halfway' : 'Under way';
+      }
+    };
+    boxes.forEach((b) => b.addEventListener('change', () => { save(); render(); }));
+    root.querySelectorAll('[data-reset]').forEach((btn) => btn.addEventListener('click', () => {
+      if (!confirm('Clear all ticks on this checklist?')) return;
+      boxes.forEach((b) => { b.checked = false; });
+      try { localStorage.removeItem(key); } catch { /* storage blocked: nothing saved anyway */ }
+      render();
+    }));
+    note();
+    render();
+  }
+  document.querySelectorAll('[data-print]').forEach((btn) => btn.addEventListener('click', () => window.print()));
+  // Show every FAQ answer on paper, then restore the open/closed state.
+  let closed: HTMLDetailsElement[] = [];
+  window.addEventListener('beforeprint', () => { closed = Array.from(document.querySelectorAll<HTMLDetailsElement>('details:not([open])')); closed.forEach((d) => { d.open = true; }); });
+  window.addEventListener('afterprint', () => { closed.forEach((d) => { d.open = false; }); closed = []; });
+</script>
+
+<style>
+  .cl__heroact { display: flex; flex-wrap: wrap; gap: 12px; }
+  .cl__printonly { display: none; }
+  .cl { padding-top: clamp(20px, 3vw, 40px); }
+  .cl__grid { display: grid; gap: 20px; }
+  .cl__main { display: grid; gap: 20px; min-width: 0; }
+  .cl__panel { position: static; }
+  .cl__bar { height: 10px; border-radius: 999px; background: rgba(255,255,255,.14); overflow: hidden; }
+  .cl__bar span { display: block; height: 100%; width: 0; background: var(--accent); border-radius: inherit; transition: width .4s var(--ease); }
+  .cl__stages { list-style: none; margin: 0; padding: 0; display: grid; }
+  .cl__stages li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line-dark); font-size: 14.5px; }
+  .cl__stages a { color: var(--white); text-decoration: none; }
+  .cl__stages a:hover { color: var(--accent-soft); }
+  .cl__stages span { color: var(--muted-on-dark); font-variant-numeric: tabular-nums; }
+  .cl__stages span[data-full] { color: #86efac; }
+  .cl__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cl__btnline { background: transparent; color: var(--white); border-color: rgba(255,255,255,.3); padding-right: 18px; }
+  .cl__btnline:hover { border-color: var(--white); }
+  .cl__panel > .btn { justify-self: start; }
+  .cl__stage { background: var(--white); border: 1px solid var(--line); border-radius: 28px; padding: clamp(20px, 3vw, 32px); display: grid; gap: 12px; scroll-margin-top: 110px; }
+  .cl__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .cl__head h2 { font-size: clamp(1.3rem, 2.2vw, 1.65rem); }
+  .cl__kicker { display: block; font: 600 12.5px/1.2 var(--font-body); color: var(--accent-ink); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+  .cl__chip { flex: none; font-size: 13px; font-weight: 600; padding: 6px 11px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  .cl__chip[data-full] { background: #dcfce7; border-color: #86efac; color: #166534; }
+  .cl__intro { color: var(--muted); font-size: 15px; }
+  .cl__items { list-style: none; margin: 0; padding: 0; display: grid; }
+  .cl__item { border-top: 1px solid var(--line); padding: 14px 0; display: grid; gap: 8px; }
+  .cl__item:last-child { padding-bottom: 0; }
+  .cl__item label { display: grid; grid-template-columns: 24px 1fr; gap: 14px; align-items: start; cursor: pointer; }
+  .cl__item input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--accent); cursor: pointer; }
+  .cl__txt { display: grid; gap: 4px; }
+  .cl__txt strong { font-size: 16.5px; line-height: 1.4; }
+  .cl__txt span { color: #33373d; font-size: 15px; line-height: 1.6; }
+  .cl__txt .cl__tag { justify-self: start; font-style: normal; font-size: 12.5px; font-weight: 600; color: var(--accent-ink); background: var(--accent-tint); border-radius: 999px; padding: 3px 10px; margin-top: 2px; }
+  .cl__item.is-done .cl__txt strong { text-decoration: line-through; text-decoration-color: var(--accent); text-decoration-thickness: 2px; color: var(--muted); }
+  .cl__notes { margin-left: 38px; display: grid; gap: 6px; }
+  .cl__notes p { margin: 0; padding: 8px 12px; border-radius: 12px; background: var(--paper); font-size: 14px; line-height: 1.55; color: var(--muted); }
+  .cl__notes b { color: var(--ink); font-weight: 600; }
+  @media (max-width: 520px) { .cl__notes { margin-left: 0; } }
+  @media (min-width: 980px) {
+    .cl__grid { grid-template-columns: minmax(0, 1fr) 330px; gap: 32px; align-items: start; }
+    .cl__panel { grid-column: 2; grid-row: 1; position: sticky; top: 100px; }
+    .cl__main { grid-column: 1; grid-row: 1; }
+  }
+
+  @media print {
+    @page { margin: 14mm 12mm; }
+    :global(html), :global(body) { background: #fff !important; color: #000 !important; font-size: 11pt; }
+    :global(.hdr), :global(.ftr), :global(.mbar), :global(.cta), :global(.skip), :global(.cursor), :global(.bc),
+    :global(.gde__toc), :global(.rl), :global(.sh__bg), :global(.plus), :global(.btn), :global(.faq summary span),
+    .cl__panel, .no-print { display: none !important; }
+    :global([data-reveal]) { opacity: 1 !important; transform: none !important; }
+    :global(.words .w) { opacity: 1 !important; filter: none !important; transform: none !important; animation: none !important; }
+    :global(.section), :global(.sh), :global(.fb) { padding: 0 0 14pt !important; }
+    :global(.wrap) { max-width: none !important; padding: 0 !important; }
+    :global(main) :global(h1), :global(main) :global(h2), :global(main) :global(h3), :global(main) :global(p), :global(main) :global(li), :global(main) :global(.lede) { color: #000 !important; }
+    :global(.sh h1) { font-size: 22pt !important; max-width: none !important; }
+    :global(.sh h1 em) { color: #000 !important; }
+    :global(a) { color: #000 !important; text-decoration: none !important; }
+    :global(h2), :global(h3), :global(summary) { break-after: avoid; page-break-after: avoid; }
+    :global(.gde), :global(.faq) { break-before: page; page-break-before: always; }
+    :global(.gde__body section), :global(.sk), :global(details) { break-inside: avoid; page-break-inside: avoid; }
+    :global(.faq details p) { padding: 0 0 10pt !important; color: #000 !important; }
+    :global(.faq summary) { padding: 8pt 0 4pt !important; }
+    .cl__printonly { display: block; font-size: 10pt; color: #000; border: 1px solid #000; padding: 6pt 8pt; }
+    .cl { padding: 0 !important; }
+    .cl__grid { display: block; }
+    :global(.fb) { break-inside: avoid; page-break-inside: avoid; }
+    :global(.fb .label) { break-after: avoid; }
+    .cl__stage, .cl__items { display: block; }
+    .cl__stage { border: 0; border-radius: 0; padding: 0; margin: 0 0 16pt; background: #fff; }
+    .cl__head, .cl__intro { break-after: avoid; page-break-after: avoid; margin-bottom: 6pt; }
+    .cl__item:first-child { break-before: avoid; page-break-before: avoid; }
+    .cl__stage + .cl__stage { border-top: 2px solid #000; padding-top: 10pt; }
+    .cl__head h2 { font-size: 15pt; }
+    .cl__kicker, .cl__intro, .cl__txt span, .cl__notes p, .cl__notes b { color: #000 !important; }
+    .cl__chip { display: none; }
+    .cl__txt .cl__tag { background: none; border: 1px solid #000; color: #000; }
+    .cl__item { padding: 7pt 0; border-top: 1px solid #999; break-inside: avoid; page-break-inside: avoid; }
+    .cl__item input { accent-color: #000; width: 14pt; height: 14pt; }
+    .cl__item.is-done .cl__txt strong { color: #000; text-decoration-color: #000; }
+    .cl__txt strong { font-size: 11.5pt; }
+    .cl__txt span { font-size: 10pt; }
+    .cl__notes p { background: none; border-left: 2px solid #000; border-radius: 0; padding: 0 0 0 8pt; font-size: 9.5pt; }
+  }
+</style>

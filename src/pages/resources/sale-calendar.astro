@@ -139,7 +139,7 @@ const rows = [...events].sort((a, b) => a.sort.localeCompare(b.sort)).map((e) =>
   const day = e.exact || e.flag === 'confirm' || e.flag === 'moon' ? `${d.getUTCDate()}` : '';
   const ads = typeof e.ads === 'string' ? e.ads : `${e.ads[0]}–${e.ads[1]} weeks before` + (e.exact ? ` (from ${fmt(minus(e.sort, e.ads[1]))})` : e.flag === 'usually' ? ' the announced dates' : '');
   const prep = typeof e.prep === 'string' ? e.prep : `${e.prep} weeks before` + (e.exact ? ` (by ${fmt(minus(e.sort, e.prep))})` : '');
-  return { month: e.sort.slice(0, 7), day, mon: MON[d.getUTCMonth()], when, flag: e.flag, flagText: e.flag ? FLAG[e.flag] : '', m: e.m, markets: e.m.map((k) => MK[k]).join(', '), event: e.event, why: e.why, ads, prep, date: e.exact && !e.flag ? e.sort : '' };
+  return { month: e.sort.slice(0, 7), day, mon: MON[d.getUTCMonth()], when, flag: e.flag, flagText: e.flag ? FLAG[e.flag] : '', m: e.m, markets: e.m.map((k) => MK[k]).join(', '), event: e.event, why: e.why, ads, prep, date: e.exact ? e.sort : '' };
 });
 const months = [...new Set(rows.map((r) => r.month))].map((k) => ({ key: k, label: `${MONTH_LONG[+k.slice(5) - 1]} ${k.slice(0, 4)}`, rows: rows.filter((r) => r.month === k) }));
 const csvRows = rows.map((r) => ({ m: r.m, cells: [r.date, r.when, r.markets, r.event, r.why, r.ads, r.prep, r.flagText || 'Fixed date'] }));
@@ -272,7 +272,7 @@ const filters: { k: 'all' | Mk; label: string }[] = [{ k: 'all', label: 'All mar
 
   const esc = (s: string) => (/[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s);
   document.getElementById('scal-csv')!.addEventListener('click', () => {
-    const head = ['Date (fixed dates only)', 'When', 'Markets', 'Event', 'Why it matters', 'Start ads', 'Prep by', 'Date status'];
+    const head = ['Date (YYYY-MM-DD)', 'When', 'Markets', 'Event', 'Why it matters', 'Start ads', 'Prep by', 'Date status'];
     const rows = data.filter((r) => current === 'all' || r.m.includes(current));
     const csv = '﻿' + [head, ...rows.map((r) => r.cells)].map((r) => r.map(esc).join(',')).join('\r\n');
     const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
@@ -287,7 +287,8 @@ const filters: { k: 'all' | Mk; label: string }[] = [{ k: 'all', label: 'All mar
 <style>
   .scal { padding-top: clamp(20px, 3vw, 40px); }
   .scal__wrap { display: grid; gap: 18px; }
-  .scal__bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; position: sticky; top: 76px; z-index: 5; background: var(--paper); padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .scal__bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; background: var(--paper); padding: 10px 0; border-bottom: 1px solid var(--line); }
+  @media (min-width: 760px) { .scal__bar { position: sticky; top: 76px; z-index: 5; } }
   .scal__filters { display: flex; flex-wrap: wrap; gap: 8px; }
   .scal__chip { font: 600 14px var(--font-body); padding: 9px 15px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--white); color: var(--ink); cursor: pointer; }
   .scal__chip:hover { border-color: var(--ink); }
