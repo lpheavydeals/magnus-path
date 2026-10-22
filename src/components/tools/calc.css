@@ -22,3 +22,5 @@
 .calc__note { font-size: 13px; color: var(--muted-on-dark); }
 @media (min-width: 680px) { .calc__row { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 980px) { .calc { grid-template-columns: 1.1fr 1fr; gap: 24px; align-items: start; } }
+/* Inputs with no leading symbol need their own left padding. */
+.calc__wrap input:first-child, .calc__wrap select:first-child { padding-left: 14px; }
