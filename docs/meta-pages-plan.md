@@ -24,6 +24,7 @@ volume and KD < 30 for all of them. The 4 pages in one location must NOT reword 
 | London | london/<stem> | UK | location page, local block; keyword "... in London" | london-google-ads.ts |
 | Coimbatore | coimbatore/<stem> | none | location page, local block; keyword "... in Coimbatore"; NO office: served from Chennai (remote + visits when needed) | chennai-meta.ts |
 | Abu Dhabi | uae/<stem>-abu-dhabi | UAE | location page (kind 'location', local.city 'Abu Dhabi'), NO twin; keyword "... in Abu Dhabi"; NO UAE office: remote | uae-meta.ts + london-meta.ts |
+| Sharjah | uae/<stem>-sharjah | UAE | location page (kind 'location', local.city 'Sharjah'), NO twin; keyword "... in Sharjah"; NO UAE office: remote | abudhabi-meta.ts |
 
 Country primary keywords: India "... in India"; UK/US/AU the bare keyword (e.g. "Meta ads agency"), mention the country in title.
 
