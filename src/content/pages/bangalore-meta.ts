@@ -199,7 +199,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
         { title: 'Set roles', body: 'Staff and agency access, only what is needed' },
         { title: 'Verify', body: 'Domain and business verification done' },
       ] },
-      { type: 'venn', caption: 'Why the pixel and the Conversions API work best together, with one shared event ID.', after: 2, left: { title: 'Meta pixel', body: 'Browser events: views, carts, leads and purchases on site' }, right: { title: 'Conversions API', body: 'The same events sent from your server or store platform' }, overlap: 'Same event ID, counted once' },
+      { type: 'venn', caption: 'Why the pixel and the Conversions API belong together, with one shared event ID.', after: 2, left: { title: 'Meta pixel', body: 'Browser events: views, carts, leads and purchases on site' }, right: { title: 'Conversions API', body: 'The same events sent from your server or store platform' }, overlap: 'Same event ID, counted once' },
     ],
     guide: [
       {
@@ -512,7 +512,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
       {
         heading: 'What a proper audit looks like',
         paragraphs: [
-          'Most agencies offer a free audit, and the quality varies widely. A useful one is written, specific to your account and gives you fixes you could make yourself, even if you never hire the agency.',
+          'Most Facebook advertising agencies in Bangalore offer a free audit, and the quality varies widely. A useful one is written, specific to your account and gives you fixes you could make yourself, even if you never hire the agency.',
           'It should check ownership: who holds admin rights over the ad account, Page, pixel and catalogue. It should test tracking: whether purchases or leads are counted once, whether the Conversions API is deduplicated and whether values match your real orders. It should compare results with your margins, not just with platform averages. It should review creative: what has been tested, what has tired and what is missing. And it should end with a short, ranked list of fixes.',
           'Be wary of audits that are mostly screenshots of your own dashboard with general advice added, or that conclude only that you need a bigger budget.',
         ],
