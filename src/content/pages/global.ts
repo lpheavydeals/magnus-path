@@ -326,6 +326,7 @@ export const globalPages: ServicePageData[] = [
     children: [
       { title: 'Meta Ads Agency', href: '/uae/meta-ads-agency-dubai/', body: 'Facebook, Instagram, Messenger and WhatsApp ads run from one Meta set-up, with tracking you can trust and accounts in your name.', icon: 'social' },
       { title: 'Ecommerce Meta Ads', href: '/uae/ecommerce-meta-ads-agency-dubai/', body: 'Catalogue and Advantage+ sales campaigns for online stores, judged on profit after returns, not platform ROAS.', icon: 'social' },
+      { title: 'Abu Dhabi Meta Ads', href: '/uae/meta-ads-agency-abu-dhabi/', body: 'Arabic-first Facebook, Instagram and WhatsApp campaigns for Abu Dhabi and Al Ain audiences, run remotely from our Chennai team.', icon: 'social' },
       { title: 'Ecommerce PPC Agency', href: '/uae/ecommerce-ppc-agency-dubai/', body: 'Google Shopping, Performance Max and Search in English and Arabic for UAE online stores, with bids set from your margins.', icon: 'social' },
       { title: 'Google Ads Agency', href: '/uae/google-ads-agency-dubai/', body: 'Search, Performance Max and YouTube in English and Arabic for Dubai businesses, judged by real calls, forms and WhatsApp enquiries.', icon: 'social' },
       { title: 'Digital Marketing Agency Dubai', href: '/uae/digital-marketing-agency-dubai/', body: 'SEO, Google, Meta, Snapchat, TikTok and LinkedIn campaigns in Arabic and English, with WhatsApp leads tracked to sales.', icon: 'social' },
@@ -405,6 +406,7 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Meta ads agency in Abu Dhabi', href: '/uae/meta-ads-agency-abu-dhabi/' },
       { label: 'Facebook advertising agencies in Dubai', href: '/uae/facebook-advertising-agencies-dubai/' },
       { label: 'Facebook ads agency in Dubai', href: '/uae/facebook-ads-agency-dubai/' },
       { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },

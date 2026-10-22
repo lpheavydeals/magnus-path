@@ -119,6 +119,7 @@ export const uaeMarketingPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Abu Dhabi', href: '/uae/facebook-ads-agency-abu-dhabi/' },
       { label: 'Facebook advertising agencies in Dubai', href: '/uae/facebook-advertising-agencies-dubai/' },
       { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },
       { label: 'Ecommerce agency in Dubai and the UAE', href: '/uae/ecommerce-marketing-agency/' },

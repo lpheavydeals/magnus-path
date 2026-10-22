@@ -178,4 +178,4 @@ general city marketing). They were added for their search volume. Do not remove 
 - Extra allowed related URLs: /uk/ecommerce-ppc-agency/, /us/ecommerce-ppc-agency/, /australia/ecommerce-ppc-agency/, /uae/ecommerce-ppc-agency-dubai/, /ecommerce-ppc-agency/, /chennai/ppc-agency/, /bangalore/ppc-company/, /london/google-ads-agency/, /uae/google-ads-agency-dubai/, /chennai/google-ads-agency/, /bangalore/google-ads-agency/
 
 ## Meta / Facebook ads pages (22 Oct 2026)
-- 32 pages, see `docs/meta-pages-plan.md`. Allowed related URLs: every slug listed in that plan.
+- 40 pages (incl. Coimbatore and Abu Dhabi), see `docs/meta-pages-plan.md`. Allowed related URLs: every slug listed in that plan.

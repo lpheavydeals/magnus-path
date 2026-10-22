@@ -125,6 +125,7 @@ export const uaeMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in Abu Dhabi', href: '/uae/ecommerce-meta-ads-agency-abu-dhabi/' },
       { label: 'Meta advertising in Dubai across Instagram, Messenger and WhatsApp', href: '/uae/meta-ads-agency-dubai/' },
       { label: 'Facebook lead ads and local campaigns in Dubai', href: '/uae/facebook-ads-agency-dubai/' },
       { label: 'How to compare Facebook ad agencies in Dubai', href: '/uae/facebook-advertising-agencies-dubai/' },
@@ -263,6 +264,7 @@ export const uaeMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Meta ads agency in Abu Dhabi', href: '/uae/meta-ads-agency-abu-dhabi/' },
       { label: 'Catalogue and Advantage+ ads for UAE online stores', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
       { label: 'Facebook lead ads and instant forms in Dubai', href: '/uae/facebook-ads-agency-dubai/' },
       { label: 'Comparing Facebook ad agencies in Dubai: questions to ask', href: '/uae/facebook-advertising-agencies-dubai/' },
@@ -397,6 +399,7 @@ export const uaeMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Abu Dhabi', href: '/uae/facebook-ads-agency-abu-dhabi/' },
       { label: 'Meta ads across Instagram, Messenger and WhatsApp in Dubai', href: '/uae/meta-ads-agency-dubai/' },
       { label: 'Catalogue and Advantage+ ads for UAE online stores', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
       { label: 'Choosing between Facebook ad agencies in Dubai', href: '/uae/facebook-advertising-agencies-dubai/' },
@@ -547,6 +550,7 @@ export const uaeMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Abu Dhabi', href: '/uae/facebook-advertising-agencies-abu-dhabi/' },
       { label: 'Ecommerce Meta advertising for UAE online stores', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
       { label: 'Meta platform management in Dubai, including WhatsApp', href: '/uae/meta-ads-agency-dubai/' },
       { label: 'Facebook lead ads for Dubai service businesses', href: '/uae/facebook-ads-agency-dubai/' },
