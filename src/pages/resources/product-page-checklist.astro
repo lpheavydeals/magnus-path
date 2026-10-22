@@ -18,7 +18,7 @@ const pdf = `/downloads/${slug}.pdf`;
 const trail = [{ label: 'Resources', href: '/resources/' }];
 const current = 'Product Page Checklist';
 
-type Item = { id: string; title: string; detail: string; india?: string; intl?: string; checker?: string };
+type Item = { id: string; title: string; detail: string; india?: string; intl?: string; checker?: string; tag?: string };
 type Stage = { id: string; title: string; intro: string; items: Item[] };
 const stages: Stage[] = [
   { id: 'images', title: 'Images & video', intro: 'Shoppers cannot touch the product, so the photos do the job of the shop floor.', items: [
@@ -170,7 +170,7 @@ const related = [
                 <li class="cl__item">
                   <label>
                     <input type="checkbox" data-item={it.id} />
-                    <span class="cl__txt"><strong>{it.title}</strong><span>{it.detail}</span>{it.checker && <em class="cl__tag">Website checker: {it.checker}</em>}</span>
+                    <span class="cl__txt"><strong>{it.title}</strong><span>{it.detail}</span>{it.tag && <em class="cl__tag">{it.tag}</em>}{it.checker && <em class="cl__tag">Website checker: {it.checker}</em>}</span>
                   </label>
                   {(it.india || it.intl) && (
                     <div class="cl__notes">
