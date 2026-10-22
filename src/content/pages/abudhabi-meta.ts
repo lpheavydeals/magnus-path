@@ -130,6 +130,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in Sharjah', href: '/uae/ecommerce-meta-ads-agency-sharjah/' },
       linkMeta,
       linkFacebook,
       linkCompare,
@@ -270,6 +271,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Meta ads agency in Sharjah', href: '/uae/meta-ads-agency-sharjah/' },
       linkEcom,
       linkFacebook,
       linkCompare,
@@ -408,6 +410,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Sharjah', href: '/uae/facebook-ads-agency-sharjah/' },
       linkEcom,
       linkMeta,
       linkCompare,
@@ -565,6 +568,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Sharjah', href: '/uae/facebook-advertising-agencies-sharjah/' },
       linkEcom,
       linkMeta,
       linkFacebook,

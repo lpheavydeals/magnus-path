@@ -125,6 +125,7 @@ export const uaeMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ecommerce Meta ads agency in Sharjah', href: '/uae/ecommerce-meta-ads-agency-sharjah/' },
       { label: 'Ecommerce Meta ads agency in Abu Dhabi', href: '/uae/ecommerce-meta-ads-agency-abu-dhabi/' },
       { label: 'Meta advertising in Dubai across Instagram, Messenger and WhatsApp', href: '/uae/meta-ads-agency-dubai/' },
       { label: 'Facebook lead ads and local campaigns in Dubai', href: '/uae/facebook-ads-agency-dubai/' },
@@ -264,6 +265,7 @@ export const uaeMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Meta ads agency in Sharjah', href: '/uae/meta-ads-agency-sharjah/' },
       { label: 'Meta ads agency in Abu Dhabi', href: '/uae/meta-ads-agency-abu-dhabi/' },
       { label: 'Catalogue and Advantage+ ads for UAE online stores', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
       { label: 'Facebook lead ads and instant forms in Dubai', href: '/uae/facebook-ads-agency-dubai/' },
@@ -399,6 +401,7 @@ export const uaeMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook ads agency in Sharjah', href: '/uae/facebook-ads-agency-sharjah/' },
       { label: 'Facebook ads agency in Abu Dhabi', href: '/uae/facebook-ads-agency-abu-dhabi/' },
       { label: 'Meta ads across Instagram, Messenger and WhatsApp in Dubai', href: '/uae/meta-ads-agency-dubai/' },
       { label: 'Catalogue and Advantage+ ads for UAE online stores', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
@@ -550,6 +553,7 @@ export const uaeMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Facebook advertising agencies in Sharjah', href: '/uae/facebook-advertising-agencies-sharjah/' },
       { label: 'Facebook advertising agencies in Abu Dhabi', href: '/uae/facebook-advertising-agencies-abu-dhabi/' },
       { label: 'Ecommerce Meta advertising for UAE online stores', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
       { label: 'Meta platform management in Dubai, including WhatsApp', href: '/uae/meta-ads-agency-dubai/' },
