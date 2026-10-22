@@ -22,6 +22,7 @@ volume and KD < 30 for all of them. The 4 pages in one location must NOT reword 
 | Chennai | chennai/<stem> | none | location page, local block; keyword "... in Chennai" | chennai-ppc.ts |
 | Bangalore | bangalore/<stem> | none | location page, local block; keyword "... in Bangalore" | bangalore-ppc.ts |
 | London | london/<stem> | UK | location page, local block; keyword "... in London" | london-google-ads.ts |
+| Coimbatore | coimbatore/<stem> | none | location page, local block; keyword "... in Coimbatore"; NO office: served from Chennai (remote + visits when needed) | chennai-meta.ts |
 
 Country primary keywords: India "... in India"; UK/US/AU the bare keyword (e.g. "Meta ads agency"), mention the country in title.
 
