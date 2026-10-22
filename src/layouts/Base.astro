@@ -57,6 +57,7 @@ const officeSchema = site.offices.map((o) => ({
   ...(o.map !== '#' && { hasMap: o.map }),
   ...(o.gbp !== '#' && { sameAs: [o.gbp] }),
 }));
+import DownloadGate from '../components/DownloadGate.astro';
 ---
 <!doctype html>
 <html lang={lang}>
@@ -87,5 +88,6 @@ const officeSchema = site.offices.map((o) => ({
     <Footer />
     <MobileBar />
     <script>import '../scripts/motion.ts';</script>
+    <DownloadGate />
   </body>
 </html>

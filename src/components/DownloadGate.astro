@@ -1,0 +1,94 @@
+---
+// Email gate for resource downloads. Catches clicks on any /downloads/ link and on [data-gate] buttons,
+// asks for name, company and a work email (free mailbox domains are refused), sends the lead to the
+// form endpoint, then lets the download continue. Once unlocked, the visitor is not asked again.
+import { site } from '../data/site';
+---
+<dialog class="dg" id="dl-gate" aria-labelledby="dg-title">
+  <form class="dg__form" id="dg-form" method="dialog" novalidate>
+    <button class="dg__x" type="button" id="dg-close" aria-label="Close">×</button>
+    <p class="label">Free download</p>
+    <h2 id="dg-title">Get your free download</h2>
+    <p class="dg__sub" id="dg-file">Enter your work details to download this resource.</p>
+    <label>Your name<input name="name" autocomplete="name" required /></label>
+    <label>Work email<input name="email" type="email" autocomplete="email" required placeholder="you@yourcompany.com" /><small class="dg__err" id="dg-err" aria-live="polite"></small></label>
+    <label>Company or store name<input name="company" autocomplete="organization" required /></label>
+    <input type="hidden" name="source" value="resource-download" />
+    <input type="hidden" name="resource" value="" />
+    <input type="hidden" name="page" value="" />
+    <button class="btn btn--primary" type="submit">Download now <span class="arrow" aria-hidden="true">↓</span></button>
+    <p class="dg__note">Please use your company email, not Gmail, Yahoo or Outlook. We send occasional, useful e-commerce updates; unsubscribe any time.</p>
+  </form>
+</dialog>
+<script is:inline type="application/json" id="dg-cfg" set:html={JSON.stringify({ endpoint: site.formEndpoint })}></script>
+<script>
+  const FREE = ['gmail.com', 'googlemail.com', 'yahoo.com', 'yahoo.co.in', 'yahoo.co.uk', 'ymail.com', 'rocketmail.com', 'hotmail.com', 'hotmail.co.uk', 'outlook.com', 'outlook.in', 'live.com', 'live.in', 'live.co.uk', 'msn.com', 'icloud.com', 'me.com', 'mac.com', 'aol.com', 'proton.me', 'protonmail.com', 'pm.me', 'zoho.com', 'zohomail.com', 'zohomail.in', 'yandex.com', 'yandex.ru', 'gmx.com', 'gmx.net', 'mail.com', 'rediffmail.com', 'rediff.com', 'tutanota.com', 'tuta.io', 'hey.com', 'fastmail.com', 'inbox.com', 'qq.com', '163.com', 'web.de', 'btinternet.com', 'sky.com', 'bigpond.com', 'optusnet.com.au', 'mailinator.com', 'tempmail.com', 'guerrillamail.com', '10minutemail.com', 'yopmail.com'];
+  const FREE_PREFIX = /^(yahoo|hotmail|outlook|live|gmail|aol|icloud|gmx|yandex|proton)\./;
+  const KEY = 'mp-dl-unlocked';
+  const cfg = JSON.parse(document.getElementById('dg-cfg')!.textContent || '{}') as { endpoint: string };
+  const dlg = document.getElementById('dl-gate') as HTMLDialogElement;
+  const form = document.getElementById('dg-form') as HTMLFormElement;
+  const err = document.getElementById('dg-err')!;
+  let pending: HTMLElement | null = null;
+
+  const unlocked = () => { try { return localStorage.getItem(KEY) === '1'; } catch { return false; } };
+  const remember = () => { try { localStorage.setItem(KEY, '1'); } catch { /* storage blocked: ask again next time */ } };
+  let passOnce = false;
+
+  function workEmailError(v: string) {
+    const m = v.trim().toLowerCase().match(/^[^\s@]+@([^\s@]+\.[a-z]{2,})$/);
+    if (!m) return 'Please enter a valid email address.';
+    const d = m[1];
+    if (FREE.includes(d) || FREE_PREFIX.test(d)) return 'Please use your company email address. Personal mailboxes such as Gmail, Yahoo or Outlook are not accepted.';
+    return '';
+  }
+
+  document.addEventListener('click', (e) => {
+    const el = (e.target as HTMLElement).closest<HTMLElement>('a[href*="/downloads/"], a[href^="downloads/"], [data-gate]');
+    if (!el || passOnce || unlocked()) return;
+    e.preventDefault(); e.stopImmediatePropagation();
+    pending = el;
+    const name = el.getAttribute('data-gate') || (el.getAttribute('href') || '').split('/').pop() || 'resource';
+    (form.elements.namedItem('resource') as HTMLInputElement).value = name;
+    (form.elements.namedItem('page') as HTMLInputElement).value = location.pathname;
+    const title = (document.querySelector('h1')?.textContent || '').replace(/\s+/g, ' ').trim();
+    const kind = /\.pdf$/.test(name) ? 'PDF' : /\.xlsx$/.test(name) ? 'Excel file' : /csv/.test(name) ? 'CSV file' : 'file';
+    document.getElementById('dg-file')!.textContent = title ? `${title} (${kind}). Enter your work details and the download starts straight away.` : 'Enter your work details and the download starts straight away.';
+    err.textContent = '';
+    dlg.showModal();
+    (form.elements.namedItem('name') as HTMLInputElement).focus();
+  }, true);
+
+  document.getElementById('dg-close')!.addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  (form.elements.namedItem('email') as HTMLInputElement).addEventListener('input', () => { err.textContent = ''; });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = (form.elements.namedItem('name') as HTMLInputElement).value.trim();
+    const company = (form.elements.namedItem('company') as HTMLInputElement).value.trim();
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
+    const problem = !name ? 'Please enter your name.' : workEmailError(email) || (!company ? 'Please enter your company or store name.' : '');
+    if (problem) { err.textContent = problem; return; }
+    const btn = form.querySelector<HTMLButtonElement>('button[type=submit]')!; btn.disabled = true;
+    if (cfg.endpoint && cfg.endpoint !== '#') {
+      try { await fetch(cfg.endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } }); } catch { /* do not block the download on a network error */ }
+    }
+    remember(); btn.disabled = false; dlg.close();
+    if (pending) { passOnce = true; pending.click(); passOnce = false; pending = null; }
+  });
+</script>
+<style>
+  .dg { width: min(460px, calc(100vw - 32px)); padding: 0; border: 0; border-radius: 28px; box-shadow: 0 30px 80px rgba(0,0,0,.25); }
+  .dg::backdrop { background: rgba(20, 20, 22, .55); backdrop-filter: blur(3px); }
+  .dg__form { position: relative; display: grid; gap: 14px; padding: clamp(24px, 4vw, 34px); }
+  .dg__form h2 { font-size: 1.5rem; }
+  .dg__sub, .dg__note { color: var(--muted); font-size: 14px; }
+  .dg__form label { display: grid; gap: 6px; font-size: 14px; font-weight: 500; }
+  .dg__form input:not([type=hidden]) { width: 100%; min-height: 48px; padding: 0 14px; font: 400 16px var(--font-body); border: 1.5px solid var(--line); border-radius: 14px; }
+  .dg__form input:focus { outline: none; border-color: var(--accent); }
+  .dg__err { color: #b42318; font-size: 13px; font-weight: 500; min-height: 0; }
+  .dg__x { position: absolute; top: 14px; right: 16px; width: 36px; height: 36px; border: 0; border-radius: 50%; background: #f3f1ee; font-size: 22px; line-height: 1; cursor: pointer; }
+  .dg .btn { justify-self: stretch; justify-content: center; }
+  @media print { .dg { display: none; } }
+</style>

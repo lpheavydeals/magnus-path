@@ -191,7 +191,7 @@ const filters: { k: 'all' | Mk; label: string }[] = [{ k: 'all', label: 'All mar
         <div class="scal__filters" role="group" aria-label="Filter by market">
           {filters.map((f, i) => <button type="button" class="scal__chip" data-k={f.k} aria-pressed={i === 0 ? 'true' : 'false'}>{f.label}</button>)}
         </div>
-        <button type="button" class="btn btn--primary btn--sm" id="scal-csv">Download CSV <span class="arrow" aria-hidden="true">↓</span></button>
+        <button type="button" class="btn btn--primary btn--sm" id="scal-csv" data-gate="sale-calendar-csv">Download CSV <span class="arrow" aria-hidden="true">↓</span></button>
       </div>
       <p class="scal__count" id="scal-count" aria-live="polite">Showing all {rows.length} dates, November 2026 to December 2027.</p>
       <ul class="scal__legend" aria-label="Date labels">
