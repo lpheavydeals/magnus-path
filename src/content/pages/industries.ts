@@ -642,6 +642,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in Chennai', href: '/chennai/google-ads-agency/' },
       { label: 'How to find buyers for export', href: '/blog/how-to-find-buyers-for-export/' },
       { label: 'SEO services for businesses', href: '/seo-services/' },
       { label: 'SEO services in Coimbatore', href: '/coimbatore/seo-services/' },
@@ -1063,6 +1064,7 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in Chennai', href: '/chennai/google-ads-agency/' },
       { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Ecommerce PPC agency in India', href: '/ecommerce-ppc-agency/' },
       { label: 'Digital marketing cost in Chennai', href: '/blog/digital-marketing-cost-in-chennai/' },

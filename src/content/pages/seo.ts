@@ -791,6 +791,7 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in Chennai', href: '/chennai/google-ads-agency/' },
       { label: 'PPC agency in Chennai', href: '/chennai/ppc-agency/' },
       { label: 'Digital marketing cost in Chennai', href: '/blog/digital-marketing-cost-in-chennai/' },
       { label: 'SEO services for any business', href: '/seo-services/' },

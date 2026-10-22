@@ -124,6 +124,7 @@ export const chennaiPpcPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Google Ads agency in Chennai', href: '/chennai/google-ads-agency/' },
       { label: 'E-commerce PPC agency for Google Shopping', href: '/ecommerce-ppc-agency/' },
       { label: 'Performance marketing on Google and Meta', href: '/performance-marketing/' },
       { label: 'Digital marketing agency in Chennai', href: '/chennai/digital-marketing-agency/' },
