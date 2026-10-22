@@ -1,0 +1,338 @@
+---
+// Lead magnet #11 (docs/free-tools-plan.md): 50-point ecommerce launch checklist in 7 stages.
+// Interactive ticks saved in localStorage (per page key); print stylesheet; PDF made by the coordinator.
+import Base from '../../layouts/Base.astro';
+import SimpleHero from '../../components/page/SimpleHero.astro';
+import Guide from '../../components/page/Guide.astro';
+import FigureBand from '../../components/figures/FigureBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Related from '../../components/page/Related.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import '../../components/tools/calc.css';
+import { breadcrumbSchema, faqSchema } from '../../data/schema';
+import { site } from '../../data/site';
+
+const slug = 'ecommerce-launch-checklist';
+const pdf = `/downloads/${slug}.pdf`;
+const trail = [{ label: 'Resources', href: '/resources/' }];
+const current = 'Ecommerce Launch Checklist';
+
+type Item = { id: string; title: string; detail: string; india?: string; intl?: string };
+type Stage = { id: string; title: string; intro: string; items: Item[] };
+const stages: Stage[] = [
+  { id: 'platform', title: 'Domain & platform', intro: 'The foundations. Changing these after launch is slow and costly, so decide them first.', items: [
+    { id: 'p1', title: 'Buy a short, easy-to-spell domain', detail: "No hyphens or odd spellings. Buy the obvious misspellings too, put the domain in the business's name and switch on auto-renew.", india: '.com or .in both work for Indian shoppers.', intl: 'Local extensions build trust: .co.uk in the UK, .com.au in Australia (needs an Australian business number), .ae in the UAE.' },
+    { id: 'p2', title: 'Choose a platform you can run for the next few years', detail: 'Shopify is quickest to launch and maintain. WooCommerce gives full control on WordPress. A custom build suits unusual pricing, B2B ordering or heavy integrations. Decide by catalogue size, budget for upkeep and who will run the store day to day.' },
+    { id: 'p3', title: 'Set up business email on your domain', detail: 'Use addresses such as orders@ and support@ on your own domain, with SPF, DKIM and DMARC records set so order emails do not land in spam.' },
+    { id: 'p4', title: 'Serve every page over https with one main address', detail: 'Pick www or non-www, redirect the other, and redirect any old or test addresses so shoppers and search engines see a single version of the site.' },
+    { id: 'p5', title: 'Set currency, language and tax display', detail: 'Decide which markets you sell to at launch and how prices are shown in each.', india: 'Prices in ₹, shown including GST.', intl: 'UK, EU, UAE and Australian shoppers expect prices including VAT or GST. US shoppers expect prices before sales tax, added at checkout.' },
+    { id: 'p6', title: 'Install only the apps and plugins you need', detail: 'Every app adds scripts, monthly cost and something that can break. Keep a list of what each one does and who looks after it.' },
+    { id: 'p7', title: 'Give every person and agency their own login', detail: 'No shared passwords. The owner account, domain, ad accounts and payment gateway stay in the business\'s name, with staff and agencies added as users.' },
+  ] },
+  { id: 'products', title: 'Products', intro: 'Product data is the slowest part of most launches. Start it early and finish it properly once.', items: [
+    { id: 'r1', title: 'Write your own titles and descriptions', detail: 'Not the manufacturer copy. Say what the product is, who it is for and why it is better, then the details a shopper needs to decide.' },
+    { id: 'r2', title: 'Shoot consistent product photos', detail: 'At least four images per product (front, back, close-up, in use or on a model), with the same background, lighting and aspect ratio across the catalogue.' },
+    { id: 'r3', title: 'Add size guides, specifications or ingredients', detail: 'Answer the questions a shopper would ask in a shop: fit, material, dimensions, compatibility, ingredients, care.', india: 'Packaged goods listings must show details such as MRP, net quantity, country of origin and manufacturer or importer. Food brands also show their FSSAI licence number.', intl: 'Check labelling rules for each market you ship to, especially for food, cosmetics and supplements.' },
+    { id: 'r4', title: 'Set up SKUs, variants and stock levels', detail: 'Every size and colour gets its own SKU, and the stock count on the site matches what is actually on the shelf.' },
+    { id: 'r5', title: 'Assign tax codes and rates to each product', detail: 'Invoices and reports are only as correct as the tax settings behind them.', india: 'Add the HSN code and GST rate for each product.', intl: 'Set VAT rates (UK, UAE), GST (Australia) or product tax codes for US sales tax.' },
+    { id: 'r6', title: 'Record weight and package size', detail: 'Couriers charge on actual or volumetric weight, whichever is higher. Accurate numbers keep shipping charges and courier bills from drifting apart.' },
+    { id: 'r7', title: 'Organise collections and the menu', detail: 'Group products the way shoppers search: category, occasion, concern or price band. Keep the main menu to two levels.' },
+    { id: 'r8', title: 'Add barcodes (GTIN) where you have them', detail: 'Google Shopping and most marketplaces match products by barcode. Products without one need the brand and part number filled in instead.' },
+  ] },
+  { id: 'payments', title: 'Payments & shipping', intro: 'Payment approval and courier set-up take longer than people expect. Start them while the site is still being built.', items: [
+    { id: 's1', title: 'Apply for a payment gateway and finish KYC early', detail: 'Approval can take days if documents or website policies are missing. Have your business documents, bank details and live policy pages ready.', india: 'Gateways such as Razorpay, Cashfree and PayU cover UPI, cards, net banking and wallets.', intl: 'Shopify Payments, Stripe or PayPal where available; check that your gateway can settle in your local currency.' },
+    { id: 's2', title: 'Offer the payment methods your buyers expect', detail: 'A missing payment method is one of the most common reasons for abandoned checkouts.', india: 'UPI first, then cards, net banking and wallets. Add cash on delivery if your category needs it.', intl: 'Cards, Apple Pay and Google Pay, PayPal, and buy now pay later where shoppers use it: Klarna or Clearpay (UK), Afterpay or Zip (Australia), Tabby or Tamara (UAE).' },
+    { id: 's3', title: 'Decide your cash on delivery rules', detail: 'Set an order-value limit, a COD fee or part-prepayment, and confirm COD orders by WhatsApp or a call before dispatch to cut returns to origin (RTO).', india: 'Most relevant in India and the UAE, where COD is still common.' },
+    { id: 's4', title: 'Set shipping zones and rates', detail: 'Flat rate, free above a threshold or calculated by weight. Whatever you choose, show the cost before the last checkout step.' },
+    { id: 's5', title: 'Connect a courier or shipping aggregator', detail: 'Automate labels, pickup requests and tracking emails so orders do not need manual copying.', india: 'Aggregators such as Shiprocket, or couriers such as Delhivery, with COD remittance set up.', intl: 'Royal Mail, Evri or DPD (UK), Australia Post or Sendle (Australia), Aramex (UAE), USPS or UPS (US).' },
+    { id: 's6', title: 'Show a delivery estimate on product pages', detail: 'A pin code or postcode check, or a plain "delivered in X–Y days" line, answers the question shoppers ask before they buy.' },
+    { id: 's7', title: 'Prepare packaging and inserts', detail: 'Protective packing that survives the courier, the invoice in the box and a small insert with care instructions, a reorder code or a review request.' },
+    { id: 's8', title: 'Place real test orders with every payment method', detail: 'Pay, cancel, refund and (if offered) place a COD order. Check every email and SMS the customer receives, and the invoice.' },
+  ] },
+  { id: 'legal', title: 'Legal & policies', intro: 'Clear policies build trust and are often required by payment gateways and ad platforms. We are not lawyers: check the details with an adviser.', items: [
+    { id: 'l1', title: 'Publish shipping, returns and refund policies', detail: 'Plain words: how long delivery takes, how to return, who pays return shipping, and when refunds arrive.', intl: 'UK shoppers have a 14-day right to cancel most online orders. In Australia, consumer guarantees apply whatever your returns policy says.' },
+    { id: 'l2', title: 'Publish terms of service and a privacy policy', detail: 'Say what data you collect, why, who you share it with (payment, courier, ads tools) and how customers can ask for it to be deleted.', india: 'Written with the Digital Personal Data Protection Act in mind.', intl: 'UK GDPR, the UAE PDPL, the Australian Privacy Act and US state privacy laws each have their own requirements.' },
+    { id: 'l3', title: 'Add cookie consent where it is required', detail: 'Ask before setting non-essential cookies where the law requires it, and connect the banner to Google consent mode so tags respect the choice.', intl: 'Required in the UK and EU before analytics and ads cookies are set.' },
+    { id: 'l4', title: 'Show business name, address and contact details', detail: 'A real address, email and phone or WhatsApp number in the footer and on a contact page.', india: 'Sellers should also show grievance-officer contact details under the e-commerce consumer protection rules.' },
+    { id: 'l5', title: 'Register for tax and set up invoices', detail: 'Make sure every invoice shows the right tax details before the first order arrives.', india: 'Check whether you need GST registration for your turnover, the states you ship to and the channels you sell through. Marketplaces and payment gateways often ask for a GSTIN during onboarding.', intl: 'VAT registration above the threshold (UK, UAE), GST above the threshold (Australia), sales tax where you have nexus (US).' },
+    { id: 'l6', title: 'Check product claims and labels', detail: 'Avoid "cures", "guaranteed results" and medical-sounding claims. Ayurveda, beauty, supplements and food have specific claim rules in every market, and ad platforms enforce them too.' },
+    { id: 'l7', title: 'Protect your brand name', detail: 'File a trademark application in your main markets. It protects the name and is needed for programmes such as Amazon Brand Registry.' },
+  ] },
+  { id: 'tracking', title: 'Tracking', intro: 'Set up measurement before you spend on traffic. Data you did not collect at launch cannot be recovered later.', items: [
+    { id: 't1', title: 'Install Google Analytics 4 with e-commerce events', detail: 'At least view_item, add_to_cart, begin_checkout and purchase, each with value and currency.' },
+    { id: 't2', title: 'Add the Meta pixel and Conversions API', detail: 'Send purchase events from the browser and the server, with deduplication switched on so each order counts once.' },
+    { id: 't3', title: 'Set up Google Ads conversions and Merchant Center', detail: 'Purchase conversion tracking in Google Ads, and a Merchant Center product feed with shipping and return settings approved.' },
+    { id: 't4', title: 'Verify Google Search Console and submit the sitemap', detail: 'Also add the site to Bing Webmaster Tools. Both show indexing problems and the searches that bring people to you.' },
+    { id: 't5', title: 'Agree a UTM naming convention', detail: 'Lowercase, no spaces, one fixed list of sources and mediums, shared with your team, agency and any creators who post links.' },
+    { id: 't6', title: 'Test one purchase end to end in every tool', detail: 'Place a real order and confirm it appears once, with the right value and currency, in your store, Analytics, Meta and Google Ads.' },
+    { id: 't7', title: 'Choose the numbers you will check every week', detail: 'Sessions, conversion rate, average order value, orders, ad spend, ROAS and cost per new customer. Put them in one report from week one.' },
+  ] },
+  { id: 'marketing', title: 'Marketing', intro: 'Have your first customers lined up before launch day, so the store does not open to silence.', items: [
+    { id: 'm1', title: 'Collect email and WhatsApp sign-ups with consent', detail: 'A simple sign-up offer on the site and a clear consent line saying what people will receive.', india: 'WhatsApp marketing needs opt-in and the WhatsApp Business Platform for bulk messages.', intl: 'UK and EU email marketing needs consent or an existing-customer relationship (PECR / GDPR).' },
+    { id: 'm2', title: 'Switch on welcome, abandoned-cart and post-purchase flows', detail: 'A welcome message, two or three abandoned-cart reminders, order and shipping updates, and a review request after delivery.' },
+    { id: 'm3', title: 'Claim your social handles and profiles', detail: 'The same name on Instagram, Facebook, YouTube and any platform your buyers use, linked from the site footer. Add a Google Business Profile if you have a shop, showroom or pickup point.' },
+    { id: 'm4', title: 'Write SEO basics for your main pages', detail: 'A unique title and meta description on the home page, every collection and your best products, a short intro on collection pages, and product structured data.' },
+    { id: 'm5', title: 'Prepare a first set of ad creatives', detail: 'Clean product shots, a few short videos (unboxing, how it is used, a customer or creator talking) and one clear offer, in the sizes each platform needs.' },
+    { id: 'm6', title: 'Plan a small first ad budget and a simple structure', detail: 'A few campaigns you can read clearly: prospecting, retargeting, brand search and Shopping. Judge them against your break-even ROAS, not a rule of thumb.' },
+    { id: 'm7', title: 'Line up launch partners', detail: 'Friends, family and early customers to tell, creators with their own tracked codes, and marketplace listings if they are part of your plan.' },
+  ] },
+  { id: 'launch', title: 'Launch week', intro: 'The final checks, the switch-on, and the first two weeks of watching closely.', items: [
+    { id: 'w1', title: 'Walk through the store on real phones', detail: 'Home, collection, product, cart and checkout, on an Android phone and an iPhone, on mobile data rather than office Wi-Fi.' },
+    { id: 'w2', title: 'Test speed on your key pages', detail: 'Run PageSpeed Insights or our website checker on the home page and a best-selling product page, and fix the largest image or app problems first.' },
+    { id: 'w3', title: 'Check every link, form and email', detail: 'Menu and footer links, contact form, sign-up form, order and shipping emails (sender name, logo, reply-to address) and the 404 page.' },
+    { id: 'w4', title: 'Remove test content and open the store to search engines', detail: 'Delete test products and orders, turn off the password page, and make sure search engines are allowed to index the site (in WordPress, untick "Discourage search engines").' },
+    { id: 'w5', title: 'Brief whoever answers customers', detail: 'Ready answers for delivery, returns, sizing and payment questions, quick replies in WhatsApp, and clear support hours on the site.' },
+    { id: 'w6', title: 'Announce, then watch the numbers daily for two weeks', detail: 'Tell your list, followers and partners. Each day check orders, failed payments, abandoned carts, support questions and ad results, and fix what you find quickly.' },
+  ] },
+];
+const total = stages.reduce((n, s) => n + s.items.length, 0);
+
+const guide = [
+  { heading: 'How to use this ecommerce launch checklist', paragraphs: ['This ecommerce launch checklist is the list we would want in hand before any online store goes live. It has 50 points in seven stages, roughly in the order you need to tackle them: domain and platform, products, payments and shipping, legal and policies, tracking, marketing, and launch week. Tick each point as you finish it; your ticks are saved in this browser, so you can close the page and come back.', 'Not every point applies to every business. A single-product brand can skip collections, and a store with no cash on delivery can skip the COD rules. Mark those as done once you have consciously decided they do not apply. The value is in making a decision about each point, not in ticking boxes.'] },
+  { heading: 'Start the slow items first', paragraphs: ["Most launch delays come from things that depend on other people: payment gateway approval, tax registration, courier onboarding, trademark filings and product photography. None of them need a finished website, so start them in week one, even though they sit in later stages of the ecommerce launch checklist. Payment gateways in particular often ask to see live shipping, returns and privacy policy pages before approving an account, so publish simple versions of those early and improve them later.", 'Product data is the other slow item, and the one most often underestimated. Titles, descriptions, photos, variants, weights and tax codes for a full catalogue take far longer than building the theme. Finish one complete product first, agree on it as the template, and then load the rest.'] },
+  { heading: 'Shopify, WooCommerce or custom: the checklist still applies', paragraphs: ['The points in this ecommerce launch checklist are platform-neutral. Shopify handles hosting, security updates and checkout for you, so the platform stage is shorter, but you still need to choose apps carefully and set up markets, taxes and tracking. WooCommerce gives you full control on WordPress, which means you also own hosting, backups, plugin updates and security. A custom build gives complete freedom and puts every item on this list on your developer\'s plate, so agree who owns each one in writing.', 'Whichever platform you choose, keep the domain, ad accounts, analytics and payment gateway in the business\'s name, with your agency or developer added as a user. It makes it much easier to change partners later.'] },
+  { heading: 'Launching in India vs the UK, US, UAE and Australia', paragraphs: ['The biggest differences are payments, tax and policies. Indian shoppers expect UPI first, and many categories still need cash on delivery, which brings returns to origin (RTO) and the need for order confirmation and COD limits. Shoppers in the UK, US and Australia expect cards, Apple Pay, Google Pay and buy now pay later. In the UAE, cash on delivery is still common alongside cards and instalment options such as Tabby and Tamara.', 'Tax display differs too. Indian, UK, UAE and Australian prices are normally shown including GST or VAT, while US prices are shown before sales tax. Returns and privacy rules vary by country; the notes under each point flag where they differ, but they are not legal advice. If you sell across borders from day one, launch one market properly before adding the next.'] },
+  { heading: 'Get tracking right before you buy traffic', paragraphs: ['A launch is the one moment you can set up measurement cleanly. Install analytics and the ad platform pixels, add server-side events where the platform supports them, agree how UTM links are named, and then place a real test order and check that it shows up once, with the right value, everywhere. Fixing broken tracking after months of ad spend means making decisions on numbers you cannot trust.', 'Decide which few numbers you will check each week and put them in one simple report. Our ads report template gives you the columns and formulas to start with.'] },
+  { heading: 'The first 30 days after launch', paragraphs: ["Expect small problems: a payment method that fails on one bank, a courier that misses pickups, a product page that confuses people. Watch orders, failed payments, abandoned carts and support questions daily for the first two weeks and fix issues while traffic is still small. Then run a full review: speed, product pages, checkout and ads. Keep this ecommerce launch checklist for your next market or second store, because most of it applies again. Our free e-commerce audit is a good way to get a second pair of eyes on the store once real shoppers have used it."] },
+];
+const faqs = [
+  { q: 'What should be on an ecommerce launch checklist?', a: 'A complete ecommerce launch checklist covers seven areas: domain and platform, product data and photos, payments and shipping, legal policies and tax, tracking, pre-launch marketing, and final launch-week checks. Ours has 50 points across those stages, each with a short explanation and notes where India differs from the UK, US, UAE and Australia.' },
+  { q: 'How long does it take to launch an online store?', a: 'It depends far more on product data, payment approval and tax registration than on the website itself. A small Shopify store with photos ready can launch quickly; a large catalogue or custom build takes much longer. Start the slow items, such as gateway KYC, GST or VAT registration and photography, in week one.' },
+  { q: 'Do I need GST registration to start an online store in India?', a: 'It depends on your turnover, the type of goods, whether you ship to other states and whether you also sell through marketplaces, which have their own rules. Payment gateways and marketplaces often ask for a GSTIN during onboarding, so many brands register before launch. Check your own situation with a tax adviser early, because registration takes time.' },
+  { q: 'Should I offer cash on delivery at launch?', a: 'In India and the UAE, many shoppers expect it, so turning it off can cost orders. But cash on delivery brings more returns to origin. A balanced start is COD with an order-value limit, a small fee or part-prepayment, and confirmation by WhatsApp before dispatch, while nudging shoppers towards UPI or card payments.' },
+  { q: 'Is this checklist only for Shopify stores?', a: 'No. Every point applies to Shopify, WooCommerce and custom-built stores. What changes is who does the work: Shopify handles hosting, updates and checkout security, while WooCommerce and custom builds leave those to you or your developer. The notes avoid platform-specific steps wherever possible so the list works on any platform.' },
+  { q: 'Is my progress saved, and can I print the checklist?', a: 'Yes. Your ticks are saved in this browser only, using local storage, and are never sent to us. Use the reset button to start again. To share the list with your team, download the PDF or print the page: the print version shows all 50 points in black and white without the website menus.' },
+];
+const schema = [
+  breadcrumbSchema([...trail, { label: current, href: `/resources/${slug}/` }]),
+  faqSchema(faqs),
+  { '@context': 'https://schema.org', '@type': 'Article', headline: 'Ecommerce Launch Checklist: 50 Points in 7 Stages', description: 'A 50-point ecommerce launch checklist in seven stages, from domain and platform to launch week, for Shopify, WooCommerce and custom stores.', url: `${site.url}/resources/${slug}/`, mainEntityOfPage: `${site.url}/resources/${slug}/`, datePublished: '2026-10-22', dateModified: '2026-10-22', inLanguage: 'en-IN', author: { '@id': `${site.url}/#org` }, publisher: { '@id': `${site.url}/#org` } },
+];
+const figures = [
+  { type: 'mindmap', caption: 'The seven stages of the checklist, grouped into four jobs.', after: 0, center: 'Store launch', branches: [
+    { label: 'Build', items: ['Domain and platform', 'Product data and photos'] },
+    { label: 'Sell', items: ['Payments and COD rules', 'Shipping and packaging'] },
+    { label: 'Protect', items: ['Policies and tax', 'Claims and trademark'] },
+    { label: 'Grow', items: ['Tracking and reports', 'Marketing and launch week'] },
+  ] },
+  { type: 'steps', caption: 'Start the items that depend on other people first, then build around them.', after: 1, steps: [
+    { title: 'Start approvals', body: 'Gateway KYC, tax, courier, trademark' },
+    { title: 'Finish one product', body: 'Use it as the template for the rest' },
+    { title: 'Load the catalogue', body: 'Photos, variants, weights, tax codes' },
+    { title: 'Test everything', body: 'Real orders, refunds and tracking' },
+    { title: 'Go live', body: 'Announce, then watch daily' },
+  ] },
+];
+---
+<Base title="Ecommerce Launch Checklist: 50 Points in 7 Stages | Magnus Path" description="Free ecommerce launch checklist: 50 points in 7 stages, from domain and payments to tracking and launch week. Tick as you go or download the printable PDF." schema={schema}>
+  <SimpleHero eyebrow="Free resource" h1="Ecommerce Launch Checklist: *50 Points* Before You Go Live" intro="This ecommerce launch checklist covers 50 things to get right before your online store goes live, in seven stages from domain and platform to launch week. It works for Shopify, WooCommerce and custom stores, with notes where India differs from the UK, US, UAE and Australia." trail={trail} current={current}>
+    <div class="cl__heroact no-print">
+      <a class="btn btn--primary" href={pdf} download>Download PDF <span class="arrow" aria-hidden="true">↓</span></a>
+      <button class="btn btn--ghost" type="button" data-print>Print checklist</button>
+    </div>
+    <p class="cl__printonly">Free resource from Magnus Path · {site.url.replace('https://', '')}/resources/{slug}/ · Tick each box as you finish it.</p>
+  </SimpleHero>
+
+  <section class="section cl" data-checklist={slug} id="checklist">
+    <div class="wrap cl__grid">
+      <aside class="calc__out cl__panel" aria-label="Your progress">
+        <span class="calc__status" data-status data-state="warn">Not started</span>
+        <div>
+          <div class="calc__big"><span data-pct>0</span>%</div>
+          <p class="calc__biglabel" aria-live="polite"><span data-done>0</span> of {total} points done</p>
+        </div>
+        <div class="cl__bar" role="progressbar" aria-label="Checklist progress" aria-valuemin="0" aria-valuemax={total} aria-valuenow="0"><span data-bar></span></div>
+        <ol class="cl__stages">
+          {stages.map((s, i) => <li><a href={`#stage-${s.id}`}>{i + 1}. {s.title}</a><span data-stage-count={s.id}>0/{s.items.length}</span></li>)}
+        </ol>
+        <div class="cl__actions">
+          <a class="btn btn--primary btn--sm" href={pdf} download>Download PDF <span class="arrow" aria-hidden="true">↓</span></a>
+          <button class="btn btn--sm cl__btnline" type="button" data-print>Print</button>
+          <button class="btn btn--sm cl__btnline" type="button" data-reset>Reset</button>
+        </div>
+        <a class="btn btn--primary" href={`/free-ecommerce-audit/?from=${slug}#audit`}>Get the full free audit <span class="arrow" aria-hidden="true">→</span></a>
+        <p class="calc__note" data-storage-note>Your ticks are saved in this browser only. Nothing is sent to us.</p>
+      </aside>
+
+      <div class="cl__main">
+        {stages.map((s, i) => (
+          <section class="cl__stage" id={`stage-${s.id}`} data-stage={s.id}>
+            <div class="cl__head">
+              <h2><span class="cl__kicker">Stage {i + 1} of {stages.length}</span>{s.title}</h2>
+              <span class="cl__chip" data-stage-count={s.id}>0/{s.items.length}</span>
+            </div>
+            <p class="cl__intro">{s.intro}</p>
+            <ol class="cl__items">
+              {s.items.map((it) => (
+                <li class="cl__item">
+                  <label>
+                    <input type="checkbox" data-item={it.id} />
+                    <span class="cl__txt"><strong>{it.title}</strong><span>{it.detail}</span></span>
+                  </label>
+                  {(it.india || it.intl) && (
+                    <div class="cl__notes">
+                      {it.india && <p><b>India:</b> {it.india}</p>}
+                      {it.intl && <p><b>UK, US, UAE, Australia:</b> {it.intl}</p>}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <FigureBand figure={figures[0] as any} n={1} />
+  <Guide sections={guide} figures={figures.slice(1) as any} start={2} title="How to plan an online store launch" />
+  <FAQ items={faqs} title="Ecommerce launch checklist questions" />
+  <Related links={[
+    { label: 'E-commerce website development', href: '/ecommerce-website-development/' },
+    { label: 'Shopify store development', href: '/shopify-development/' },
+    { label: 'WooCommerce development', href: '/woocommerce-development/' },
+    { label: 'Best ecommerce platform in India', href: '/blog/best-ecommerce-platform-in-india/' },
+    { label: 'Free ecommerce website checker', href: '/tools/ecommerce-website-checker/' },
+  ]} />
+  <LeadForm heading="Launching soon? Get a second pair of eyes" sub="Request the free e-commerce audit. Our team reviews your store, tracking and checkout and sends a video walkthrough with the fixes to make before you spend on ads, within 24 working hours." />
+</Base>
+
+<script>
+  // Interactive checklist: ticks saved per page in localStorage (wrapped in try/catch for private mode / blocked storage).
+  const root = document.querySelector<HTMLElement>('[data-checklist]');
+  if (root) {
+    const key = 'mp-checklist:' + root.dataset.checklist;
+    const boxes = Array.from(root.querySelectorAll<HTMLInputElement>('input[data-item]'));
+    let storageOk = true;
+    const load = (): string[] => {
+      try { const v = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(v) ? v : []; } catch { storageOk = false; return []; }
+    };
+    const save = () => {
+      try { localStorage.setItem(key, JSON.stringify(boxes.filter((b) => b.checked).map((b) => b.dataset.item))); } catch { storageOk = false; note(); }
+    };
+    const note = () => {
+      if (storageOk) return;
+      root.querySelectorAll('[data-storage-note]').forEach((el) => { el.textContent = 'Your browser is blocking storage, so ticks will clear when you leave this page. Download the PDF to keep a copy.'; });
+    };
+    const saved = new Set(load());
+    boxes.forEach((b) => { b.checked = saved.has(b.dataset.item || ''); });
+    const render = () => {
+      const done = boxes.filter((b) => b.checked).length;
+      const pct = boxes.length ? Math.round((done / boxes.length) * 100) : 0;
+      root.querySelectorAll('[data-done]').forEach((el) => { el.textContent = String(done); });
+      root.querySelectorAll('[data-pct]').forEach((el) => { el.textContent = String(pct); });
+      const bar = root.querySelector<HTMLElement>('[data-bar]');
+      if (bar) bar.style.width = pct + '%';
+      root.querySelector('[role=progressbar]')?.setAttribute('aria-valuenow', String(done));
+      root.querySelectorAll<HTMLElement>('[data-stage]').forEach((st) => {
+        const inside = Array.from(st.querySelectorAll<HTMLInputElement>('input[data-item]'));
+        const n = inside.filter((b) => b.checked).length;
+        root.querySelectorAll<HTMLElement>(`[data-stage-count="${st.dataset.stage}"]`).forEach((el) => {
+          el.textContent = `${n}/${inside.length}`;
+          el.toggleAttribute('data-full', n === inside.length);
+        });
+      });
+      boxes.forEach((b) => b.closest('.cl__item')?.classList.toggle('is-done', b.checked));
+      const status = root.querySelector<HTMLElement>('[data-status]');
+      if (status) {
+        status.dataset.state = pct === 100 ? 'good' : pct >= 50 ? 'good' : 'warn';
+        status.textContent = done === 0 ? 'Not started' : pct === 100 ? 'All done: ready to launch' : pct >= 50 ? 'More than halfway' : 'Under way';
+      }
+    };
+    boxes.forEach((b) => b.addEventListener('change', () => { save(); render(); }));
+    root.querySelectorAll('[data-reset]').forEach((btn) => btn.addEventListener('click', () => {
+      if (!confirm('Clear all ticks on this checklist?')) return;
+      boxes.forEach((b) => { b.checked = false; });
+      try { localStorage.removeItem(key); } catch { /* storage blocked: nothing saved anyway */ }
+      render();
+    }));
+    note();
+    render();
+  }
+  document.querySelectorAll('[data-print]').forEach((btn) => btn.addEventListener('click', () => window.print()));
+  // Show every FAQ answer on paper, then restore the open/closed state.
+  let closed: HTMLDetailsElement[] = [];
+  window.addEventListener('beforeprint', () => { closed = Array.from(document.querySelectorAll<HTMLDetailsElement>('details:not([open])')); closed.forEach((d) => { d.open = true; }); });
+  window.addEventListener('afterprint', () => { closed.forEach((d) => { d.open = false; }); closed = []; });
+</script>
+
+<style>
+  .cl__heroact { display: flex; flex-wrap: wrap; gap: 12px; }
+  .cl__printonly { display: none; }
+  .cl { padding-top: clamp(20px, 3vw, 40px); }
+  .cl__grid { display: grid; gap: 20px; }
+  .cl__main { display: grid; gap: 20px; min-width: 0; }
+  .cl__panel { position: static; }
+  .cl__bar { height: 10px; border-radius: 999px; background: rgba(255,255,255,.14); overflow: hidden; }
+  .cl__bar span { display: block; height: 100%; width: 0; background: var(--accent); border-radius: inherit; transition: width .4s var(--ease); }
+  .cl__stages { list-style: none; margin: 0; padding: 0; display: grid; }
+  .cl__stages li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line-dark); font-size: 14.5px; }
+  .cl__stages a { color: var(--white); text-decoration: none; }
+  .cl__stages a:hover { color: var(--accent-soft); }
+  .cl__stages span { color: var(--muted-on-dark); font-variant-numeric: tabular-nums; }
+  .cl__stages span[data-full] { color: #86efac; }
+  .cl__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cl__btnline { background: transparent; color: var(--white); border-color: rgba(255,255,255,.3); padding-right: 18px; }
+  .cl__btnline:hover { border-color: var(--white); }
+  .cl__panel > .btn { justify-self: start; }
+  .cl__stage { background: var(--white); border: 1px solid var(--line); border-radius: 28px; padding: clamp(20px, 3vw, 32px); display: grid; gap: 12px; scroll-margin-top: 110px; }
+  .cl__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .cl__head h2 { font-size: clamp(1.3rem, 2.2vw, 1.65rem); }
+  .cl__kicker { display: block; font: 600 12.5px/1.2 var(--font-body); color: var(--accent-ink); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+  .cl__chip { flex: none; font-size: 13px; font-weight: 600; padding: 6px 11px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  .cl__chip[data-full] { background: #dcfce7; border-color: #86efac; color: #166534; }
+  .cl__intro { color: var(--muted); font-size: 15px; }
+  .cl__items { list-style: none; margin: 0; padding: 0; display: grid; }
+  .cl__item { border-top: 1px solid var(--line); padding: 14px 0; display: grid; gap: 8px; }
+  .cl__item:last-child { padding-bottom: 0; }
+  .cl__item label { display: grid; grid-template-columns: 24px 1fr; gap: 14px; align-items: start; cursor: pointer; }
+  .cl__item input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--accent); cursor: pointer; }
+  .cl__txt { display: grid; gap: 4px; }
+  .cl__txt strong { font-size: 16.5px; line-height: 1.4; }
+  .cl__txt span { color: #33373d; font-size: 15px; line-height: 1.6; }
+  .cl__item.is-done .cl__txt strong { text-decoration: line-through; text-decoration-color: var(--accent); text-decoration-thickness: 2px; color: var(--muted); }
+  .cl__notes { margin-left: 38px; display: grid; gap: 6px; }
+  .cl__notes p { margin: 0; padding: 8px 12px; border-radius: 12px; background: var(--paper); font-size: 14px; line-height: 1.55; color: var(--muted); }
+  .cl__notes b { color: var(--ink); font-weight: 600; }
+  @media (max-width: 520px) { .cl__notes { margin-left: 0; } .cl__head { flex-direction: column; } }
+  @media (min-width: 980px) {
+    .cl__grid { grid-template-columns: minmax(0, 1fr) 330px; gap: 32px; align-items: start; }
+    .cl__panel { grid-column: 2; grid-row: 1; position: sticky; top: 100px; }
+    .cl__main { grid-column: 1; grid-row: 1; }
+  }
+
+  @media print {
+    @page { margin: 14mm 12mm; }
+    :global(html), :global(body) { background: #fff !important; color: #000 !important; font-size: 11pt; }
+    :global(.hdr), :global(.ftr), :global(.mbar), :global(.cta), :global(.skip), :global(.cursor), :global(.bc),
+    :global(.gde__toc), :global(.rl), :global(.sh__bg), :global(.plus), :global(.btn), :global(.faq summary span),
+    .cl__panel, .no-print { display: none !important; }
+    :global([data-reveal]) { opacity: 1 !important; transform: none !important; }
+    :global(.words .w) { opacity: 1 !important; filter: none !important; transform: none !important; animation: none !important; }
+    :global(.section), :global(.sh), :global(.fb) { padding: 0 0 14pt !important; }
+    :global(.wrap) { max-width: none !important; padding: 0 !important; }
+    :global(main) :global(h1), :global(main) :global(h2), :global(main) :global(h3), :global(main) :global(p), :global(main) :global(li), :global(main) :global(.lede) { color: #000 !important; }
+    :global(.sh h1) { font-size: 22pt !important; max-width: none !important; }
+    :global(.sh h1 em) { color: #000 !important; }
+    :global(a) { color: #000 !important; text-decoration: none !important; }
+    :global(h2), :global(h3), :global(summary) { break-after: avoid; page-break-after: avoid; }
+    :global(.gde), :global(.faq) { break-before: page; page-break-before: always; }
+    :global(.gde__body section), :global(.sk), :global(details) { break-inside: avoid; page-break-inside: avoid; }
+    :global(.faq details p) { padding: 0 0 10pt !important; color: #000 !important; }
+    :global(.faq summary) { padding: 8pt 0 4pt !important; }
+    .cl__printonly { display: block; font-size: 10pt; color: #000; border: 1px solid #000; padding: 6pt 8pt; }
+    .cl { padding: 0 !important; }
+    .cl__grid { display: block; }
+    .cl__stage { border: 0; border-radius: 0; padding: 0; margin: 0 0 16pt; background: #fff; }
+    .cl__stage + .cl__stage { border-top: 2px solid #000; padding-top: 10pt; }
+    .cl__head h2 { font-size: 15pt; }
+    .cl__kicker, .cl__intro, .cl__txt span, .cl__notes p, .cl__notes b { color: #000 !important; }
+    .cl__chip { display: none; }
+    .cl__item { padding: 7pt 0; border-top: 1px solid #999; break-inside: avoid; page-break-inside: avoid; }
+    .cl__item input { accent-color: #000; width: 14pt; height: 14pt; }
+    .cl__item.is-done .cl__txt strong { color: #000; text-decoration-color: #000; }
+    .cl__txt strong { font-size: 11.5pt; }
+    .cl__txt span { font-size: 10pt; }
+    .cl__notes p { background: none; border-left: 2px solid #000; border-radius: 0; padding: 0 0 0 8pt; font-size: 9.5pt; }
+  }
+</style>
