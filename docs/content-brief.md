@@ -175,4 +175,4 @@ Keep every page, including the non-ecommerce ones (business websites, WordPress,
 general city marketing). They were added for their search volume. Do not remove or redirect them, even after a rebrand.
 
 ## Ecommerce PPC pages (21 Oct 2026)
-- Extra allowed related URLs: /uk/ecommerce-ppc-agency/, /us/ecommerce-ppc-agency/, /australia/ecommerce-ppc-agency/, /uae/ecommerce-ppc-agency-dubai/, /ecommerce-ppc-agency/, /chennai/ppc-agency/, /bangalore/ppc-company/, /london/google-ads-agency/, /uae/google-ads-agency-dubai/, /chennai/google-ads-agency/
+- Extra allowed related URLs: /uk/ecommerce-ppc-agency/, /us/ecommerce-ppc-agency/, /australia/ecommerce-ppc-agency/, /uae/ecommerce-ppc-agency-dubai/, /ecommerce-ppc-agency/, /chennai/ppc-agency/, /bangalore/ppc-company/, /london/google-ads-agency/, /uae/google-ads-agency-dubai/, /chennai/google-ads-agency/, /bangalore/google-ads-agency/

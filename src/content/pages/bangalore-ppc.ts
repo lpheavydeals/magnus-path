@@ -110,7 +110,7 @@ export const bangalorePpcPages: ServicePageData[] = [
         paragraphs: [
           'Not every Bengaluru account sells products. SaaS companies, B2B service firms and startups use Search to get demo requests and enquiries. The common problem is that Google optimises for form fills, and a form fill from a student looks the same as one from a buyer with budget.',
           'The fix is offline conversion import. Capture the Google click ID with each lead, then send back which leads became qualified demos or deals from your sales system. Google then bids towards the searches that produce pipeline. Add one or two qualifying fields to the form, write ads that say who the product is for, and use Microsoft Ads to reach desktop users at work.',
-          'This is where a Google Ads agency in Bangalore earns its fee: connecting ad clicks to revenue, not just reporting cost per lead.',
+          'This is where a PPC team earns its fee: connecting ad clicks to revenue, not just reporting cost per lead.',
         ],
       },
       {
