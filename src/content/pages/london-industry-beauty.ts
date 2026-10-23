@@ -37,7 +37,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
     ],
     includes: [
       { title: 'Pages for every skin tone', body: 'Product pages and swatches shown on a real range of London skin, with notes on dark marks, white cast, sensitivity and how each formula sits on deeper tones.' },
-      { title: 'Claims check against UK rules', body: 'Every claim mapped to the evidence you hold, with medicinal-sounding wording rewritten before it reaches an ad, a listing or a creator brief.' },
+      { title: 'Claims check against UK rules', body: 'Every claim mapped to the evidence you hold, so anything that sounds medicinal is reworded long before an ad, listing or creator brief goes out.' },
       { title: 'London creator programme', body: 'Briefs for London skincare creators on TikTok and Instagram, with #ad labelling, usage rights agreed in writing and partnership ads run from their handles.' },
       { title: 'Paid social and Google Shopping', body: 'Meta, TikTok and Google campaigns split by London, the rest of the UK and EU markets, so you can see where new customers really come from.' },
       { title: 'TikTok Shop UK and Amazon UK', body: 'Shoppable videos, live sessions and listings for hero products, priced in line with your own store so marketplaces do not teach buyers to wait for a deal.' },
@@ -104,7 +104,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         heading: 'Fast delivery, seasons and repeat orders',
         paragraphs: [
           'London shoppers are used to quick delivery, and some local brands use same-day or next-day dispatch within the M25 as a reason to buy direct. If you can do it reliably, say so in ads and at checkout; if you cannot, state realistic dates rather than letting buyers guess.',
-          'The year has clear peaks: Black Friday, Christmas gift sets and Boxing Day, then January routine resets, Valentine’s and Mother’s Day in March. Diwali and Eid matter to many London households, especially for gift boxes. Across all of them, the profit sits in second and third orders, so refill reminders, routine bundles and minis that lead to full sizes deserve as much planning as a launch.',
+          'The year has clear peaks: Black Friday, Christmas gift sets and Boxing Day, then fresh-start routines in January, Valentine’s, and Mother’s Day in March. Diwali and Eid matter to many London households, especially for gift boxes. Across all of them, the profit sits in second and third orders, so refill reminders, routine bundles and minis that lead to full sizes deserve as much planning as a launch.',
         ],
       },
       {
@@ -126,7 +126,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
       { label: 'E-commerce growth agency in London', href: '/london/ecommerce-agency/' },
     ],
     faqs: [
-      { q: 'What does a skincare marketing agency in London do?', a: 'It plans and runs the marketing that sells skincare online from London: product pages and routine content, Meta, TikTok and Google ads, creator partnerships, TikTok Shop UK and Amazon UK listings, and reorder emails. For indie brands it also links pop-ups and markets to online sales and supports expansion to the rest of the UK and Europe.' },
+      { q: 'What does a skincare marketing agency in London do?', a: 'It handles everything that turns London interest in your skincare into online orders: product pages and routine content, Meta, TikTok and Google ads, creator partnerships, TikTok Shop UK and Amazon UK listings, and reorder emails. For indie brands it also links pop-ups and markets to online sales and supports expansion to the rest of the UK and Europe.' },
       { q: 'How should a brand market skincare to people with melanin-rich skin?', a: 'Show the product on deeper skin in swatches, video and reviews, and answer the questions those buyers ask, such as white cast, dark marks and irritation. Avoid any lightening or whitening language. We plan creators and photography so that every product page reflects the range of skin you will meet across London.' },
       { q: 'Can our ads say a product clears acne or calms eczema?', a: 'Usually not as written. Under the CAP Code a cosmetic should describe appearance and feel, and treatment claims can be treated as medicinal, which brings MHRA rules into play. Most brands describe ingredients and how skin looks instead. Your Responsible Person or regulatory adviser should approve the final wording before anything goes live.' },
       { q: 'Is TikTok Shop UK worth it for a London skincare brand?', a: 'It can be, if your products show well on camera and you can handle the orders a popular video creates. Start with one or two hero products, work with creators who share your buyers’ skin type, and keep prices aligned with your own store so the shop does not undercut it.' },
@@ -209,6 +209,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'For many Black British and mixed-race buyers, haircare is a long learning process: porosity, the balance of moisture and protein, detangling, protective styles and wash days that take hours. Content that respects that knowledge, made with creators who share the hair type, earns trust. Content that treats textured hair as a niche add-on is spotted quickly.',
           'Show products on real coils and curls, filmed through the whole routine rather than just the final result. Say clearly which curl patterns a product suits and which it does not. Avoid framing that presents natural hair as a problem to be tamed.',
+          'Reviews carry extra weight here. Ask customers to note their curl pattern and porosity when they leave a review, and let shoppers filter reviews by hair type, so a buyer with tight coils can read what people with similar hair thought rather than a general star rating.',
         ],
         bullets: [
           'Filters by curl pattern, porosity and density on collection pages',
@@ -235,7 +236,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         heading: 'Creators, TikTok Shop UK and London delivery',
         paragraphs: [
           'London hair creators range from loctitians and braiders to students filming their first big chop. Wash-day content is long and patient, which suits TikTok, YouTube and Instagram Reels, and it works well as partnership ads once usage rights are agreed. TikTok Shop UK lets viewers buy during the video, which helps with styling products and tools.',
-          'Delivery matters more for haircare than people expect. A buyer who runs out of leave-in conditioner the night before wash day will walk to the local shop. Brands that dispatch quickly across London, offer refill subscriptions or send a reminder before the bottle runs low keep that order online.',
+          'Delivery matters more for haircare than people expect, and it is one of the few areas where an online brand can beat the high street. A buyer who runs out of leave-in conditioner the night before wash day will walk to the local shop. Brands that dispatch quickly across London, offer refill subscriptions or send a reminder before the bottle runs low keep that order online.',
         ],
       },
       {
@@ -257,7 +258,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
       { label: 'Shopify agency in London', href: '/london/shopify-agency/' },
     ],
     faqs: [
-      { q: 'What does a haircare marketing agency in London do?', a: 'It plans and runs the marketing that sells haircare online from London: content by hair type, product pages, Meta, TikTok and Google ads, creator partnerships, TikTok Shop UK and Amazon UK, and refill reminders. In London that also means speaking to textured hair and South Asian hair-oil buyers with real understanding.' },
+      { q: 'What does a haircare marketing agency in London do?', a: 'It takes charge of how a hair brand finds and keeps customers from a London base: content by hair type, product pages, Meta, TikTok and Google ads, creator partnerships, TikTok Shop UK and Amazon UK, and refill reminders. In London that also means speaking to textured hair and South Asian hair-oil buyers with real understanding.' },
       { q: 'How do you market products for textured hair?', a: 'Start with education and honesty. Show products on real coils and curls through a whole wash day, say which curl patterns they suit, and work with creators who share the hair type. Avoid framing natural hair as a problem. Organise the store so buyers can filter by curl pattern and porosity.' },
       { q: 'Can we say our hair oil makes hair grow?', a: 'Be very careful. In the UK, claims about regrowth or stopping hair loss can be read as medicinal and may bring a product under MHRA rules. Cosmetic wording usually focuses on conditioning, shine, less breakage and scalp comfort. Your regulatory adviser should approve the final claims before ads run.' },
       { q: 'Should a hair oil brand target South Asian buyers in London?', a: 'Usually yes, alongside newcomers to oiling. Heritage buyers in Southall, Wembley, Ilford and East Ham know the ritual and want quality they trust; newcomers need simple steps. We run separate creative and pages for each group and plan Diwali and Eid gift sets well ahead.' },
@@ -272,8 +273,8 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
     slug: 'london/cosmetics-marketing-agency',
     kind: 'location',
     market: 'UK',
-    title: 'Cosmetics Marketing Agency in London: Make-up Brands | Magnus Path',
-    description: 'Cosmetics marketing agency in London for make-up brands: shade content for every skin tone, London MUAs and creators, launch drops, TikTok Shop UK and gifting seasons.',
+    title: 'Cosmetics Marketing Agency in London: Make-up Lines | Magnus Path',
+    description: 'Cosmetics marketing agency in London for make-up brands: shade content for every skin tone, London MUAs, creators, launch drops, TikTok Shop UK and gifting seasons.',
     primaryKeyword: 'cosmetics marketing agency in London',
     navLabel: 'Cosmetics London',
     breadcrumb: londonBreadcrumb,
@@ -336,6 +337,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Shade is where most make-up sales are won or lost online. London buyers range from very fair to very deep, with olive, golden and neutral undertones across South Asian, Black, East Asian, Middle Eastern and mixed-heritage skin. A foundation range that stops at medium, or swatches that only show lighter tones, tells much of the city that the brand is not for them.',
           'Photograph swatches on real skin, in daylight and under indoor light, without filters. Name undertones clearly, give shade comparisons with well-known ranges where you can do so fairly, and offer a short shade quiz. Read returns reasons by shade; they often show exactly which photos are misleading.',
+          'Complexion content should also cover how products behave in London conditions: under office lighting, on a damp commute, after a long day in heated rooms. Buyers trust a brand that shows its foundation at the end of a working day, not only straight after application.',
         ],
         bullets: [
           'Swatches on at least light, medium, tan and deep skin for each product',
@@ -349,6 +351,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'London has a busy community of make-up artists, from fashion and editorial MUAs to bridal artists who specialise in South Asian and Black brides. They are trusted because they work on many faces. Briefing a few of them for honest wear tests often does more than one large influencer post.',
           'Get-ready-with-me videos, eight-hour wear tests and Tube-commute touch-ups show how a product behaves in real London life. Agree usage rights in writing so the strongest clips can run as partnership ads, and make sure every paid or gifted post is clearly labelled.',
+          'Choose creators whose followers look like your buyers. A brand built for deeper skin tones gains far more from three creators in Croydon, Brixton and Stratford who wear the shades daily than from one large account whose audience never buys foundation online.',
         ],
       },
       {
@@ -356,13 +359,14 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Make-up runs on newness. A drop needs teasers, a waitlist, creator seeding, a live session on launch day and content for the four weeks after. TikTok Shop UK makes that last part easier, because a strong video can keep selling long after launch day if stock and prices are in place.',
           'Pop-ups at Boxpark, in Covent Garden or at Spitalfields can launch a collection in person and give you swatch photos on real customers. Capture sign-ups at the event so the people who tried a shade can buy it online later.',
+          'Restocks deserve their own moment too. When a popular shade sells out, a back-in-stock list and a short creator post on its return can bring back buyers who would otherwise have tried a competitor. Track which shades sell out first, because they show where the range is strongest and where demand is being left on the table.',
         ],
       },
       {
         heading: 'UK cosmetics rules for make-up brands',
         paragraphs: [
           'Make-up is covered by the UK Cosmetics Regulation, which broadly requires a UK Responsible Person, a safety assessment and notification before products go on sale in Great Britain. Claims such as long-wear, transfer-proof or non-comedogenic need evidence that matches the exact wording.',
-          'The ASA has ruled against beauty ads that used filters to exaggerate a product’s effect, so wear tests and swatches should be shown as they are. Claims such as vegan or cruelty-free should be accurate and explained. This is general guidance; your Responsible Person or adviser should approve final claims.',
+          'The ASA has ruled against beauty ads that used filters to exaggerate a product’s effect, so wear tests and swatches should be shown as they are. Claims such as vegan or cruelty-free should be accurate and explained. This is general guidance; final wording should be cleared by your Responsible Person or adviser.',
         ],
       },
       {
@@ -384,10 +388,10 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
       { label: 'E-commerce growth agency in London', href: '/london/ecommerce-agency/' },
     ],
     faqs: [
-      { q: 'What does a cosmetics marketing agency in London do?', a: 'It plans and runs the marketing that sells make-up online from London: shade content and swatches, product pages, launch plans, creator and make-up artist partnerships, Meta, TikTok and Google ads, TikTok Shop UK and seasonal gift sets. The aim is fewer wrong-shade returns and more customers who come back for the next launch.' },
+      { q: 'What does a cosmetics marketing agency in London do?', a: 'It looks after the work that gets a make-up range bought online from London and beyond: shade content and swatches, product pages, launch plans, creator and make-up artist partnerships, Meta, TikTok and Google ads, TikTok Shop UK and seasonal gift sets. The aim is fewer wrong-shade returns and more customers who come back for the next launch.' },
       { q: 'How can we reduce wrong-shade returns?', a: 'Show every shade on real skin in daylight and indoor light, without filters. Name undertones, offer fair comparisons with familiar ranges, and add a short shade quiz or chat. Then read returns reasons by shade, because they usually point to the exact photos or descriptions that are misleading buyers.' },
-      { q: 'Should we work with London make-up artists or big influencers?', a: 'Often both, but make-up artists are underused. They work on many faces and skin tones, so honest wear tests from a few London MUAs can carry more weight than one large post. We brief them on claims, labelling and usage rights, and run their best clips as partnership ads.' },
-      { q: 'Can we use filters in make-up ads?', a: 'Generally not on the area the product is meant to change. The ASA has ruled against beauty ads where filters exaggerated the effect of a product. Show wear tests and swatches as they really look. Lighting and framing are fine as long as they do not misrepresent the result.' },
+      { q: 'Should we work with London make-up artists or big influencers?', a: 'Often both, but make-up artists are underused. They work on many faces and skin tones, so honest wear tests from a few London MUAs can carry more weight than one large post. We brief them on claims, labelling and usage rights, and run their strongest clips as partnership ads.' },
+      { q: 'Can we use filters in make-up ads?', a: 'Generally not on the area the product is meant to change. Advertising regulators have previously upheld complaints about beauty ads whose filters overstated what the product does. Show wear tests and swatches as they really look. Lighting and framing are fine as long as they do not misrepresent the result.' },
       { q: 'When should we plan Christmas, Diwali and Eid gift sets?', a: 'Months ahead. Decide sets and packaging in late summer, produce creative by early autumn, and start building audiences before the peak. Diwali and Eid dates move each year, so check them early. Late planning usually means paying more for attention when every beauty brand is advertising.' },
       { q: 'How much does a cosmetics marketing agency in London cost?', a: 'It depends on the number of products and shades, the channels, the number of launches and how much creator and video content you need. We quote the management fee in GBP in a fixed written quote after a free audit. Ad spend is paid by you directly to each platform.' },
       { q: 'Can we meet your team in London?', a: 'Yes. Our London office is in E18, near Woodford and Walthamstow, and make-up founders can meet us there by appointment, including to bring shades for a review. Most daily work is done by our Chennai team, so requests sent before UK lunchtime are usually handled the same day.' },
@@ -456,6 +460,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Ayurvedic brands in London sell to one of the largest South Asian communities outside the subcontinent and, at the same time, to a wellness audience that discovered abhyanga, turmeric lattes and oil pulling through yoga studios and social media. An ayurveda marketing agency in London has to keep both groups in view without diluting the tradition or overselling it.',
           'The day-to-day work covers product pages, ads, creators, marketplaces and seasonal campaigns, but the hardest part is language. Ayurveda describes herbs in terms of balance and healing; UK rules on cosmetics, food and medicines limit what can be said in an ad. Getting that translation right is what keeps a brand selling.',
+          'Many of these brands are founded by Londoners with family roots in India or Sri Lanka, or import from manufacturers in Kerala, Tamil Nadu and beyond. Either way, the product story usually starts far from London, and the marketing has to carry that heritage clearly to buyers here.',
         ],
       },
       {
@@ -470,6 +475,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'The second audience lives in Hackney, Stoke Newington, Islington and similar neighbourhoods, shops at wellness stores and follows yoga and slow-living creators. They are curious but cautious. They need short explanations of each herb, simple steps for a ritual such as self-massage with warm oil, and honest information about where ingredients come from.',
           'Avoid exoticising the tradition, and avoid treating it as a trend. Content that credits its roots, explains doshas simply without making health promises and shows real routines tends to earn trust with both audiences.',
+          'Search behaviour differs too. Wellness buyers type questions such as what ashwagandha is or how to use a tongue scraper, while heritage buyers search for the exact product or brand name they grew up with. Both kinds of search deserve pages, and both should lead to products described within the rules.',
         ],
         bullets: [
           'One-line explanations of each herb and its traditional use',
@@ -482,7 +488,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         heading: 'How UK rules apply to Ayurvedic products',
         paragraphs: [
           'In general terms, the route depends on how a product is presented. Oils, balms and herbal skincare sold for appearance usually fall under the UK Cosmetics Regulation. Teas, powders and capsules sold as foods or food supplements come under food law, where health claims are limited to an authorised list. Products presented as treating or preventing illness are generally treated as medicines, overseen by the MHRA, and herbal medicines may need a traditional herbal registration.',
-          'The ASA applies the CAP Code across all of them, including creator posts. Quality matters as well: buyers increasingly expect information on testing for contaminants such as heavy metals. We are not regulatory advisers, so we work with whoever advises you and write marketing around the claims they approve.',
+          'The ASA applies the CAP Code across all of them, including creator posts. Quality matters as well: buyers increasingly expect information on testing for contaminants such as heavy metals. Regulatory sign-off is not our role; your adviser decides the claims, and we build the campaigns on what they clear.',
         ],
       },
       {
@@ -490,6 +496,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Your own store is where the full story lives: sourcing, rituals and bundles. Amazon UK reaches buyers searching for specific herbs or oils, and TikTok Shop UK suits oils and rituals that show well on video. Google Search catches people asking what an herb is used for, which is a chance to answer carefully and link to products.',
           'Creators should be chosen for each audience: South Asian family and beauty creators for heritage buyers, yoga teachers and wellness creators for newcomers. Brief both on approved wording, and label every paid or gifted post.',
+          'WhatsApp is worth a place in the plan for heritage buyers, many of whom already use it for family and community groups. A simple reorder link or a festival offer sent to customers who opted in can bring repeat orders without extra ad spend, as long as consent and opt-outs are handled properly.',
         ],
       },
       {
@@ -544,7 +551,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
     },
     pains: [
       { title: 'A scent nobody can smell through a screen', body: 'Lists of top, heart and base notes mean little to most buyers. Without a clear picture of how a perfume smells and wears, London shoppers wait until they can try it in a shop.' },
-      { title: 'Samples that never become bottles', body: 'Discovery sets go out, people enjoy them and then forget which one they liked. Without follow-up, the sampling budget is spent and the full-size sale never comes.' },
+      { title: 'Discovery sets with no next step', body: 'Discovery sets go out, people enjoy them and then forget which one they liked. Without follow-up, the sampling budget is spent and the full-size sale never comes.' },
       { title: 'Standing next to the department store counter', body: 'London’s great fragrance halls set a high bar for how niche perfume is presented. An online shop with thin pages and stock photos struggles to feel premium beside them.' },
     ],
     includes: [
@@ -595,6 +602,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'London shoppers can test niche perfume in the fragrance halls at Liberty, Selfridges and Harrods, at specialist boutiques in Marylebone and Covent Garden, and at oud and attar shops along Edgware Road and in Whitechapel. Many of your buyers will have tried dozens of scents in person, so they notice vague or borrowed descriptions straight away.',
           'The city’s communities shape demand as well. Arab, South Asian and Muslim households often know attar and oud deeply and buy for Ramadan, Eid and Diwali. Younger buyers discover niche fragrance on TikTok and collect decants. A brand that understands which of these groups it serves can speak to them precisely.',
+          'Markets and pop-ups remain useful for fragrance in a way they are not for many products. A stall at Broadway Market or a Boxpark pop-up lets people smell the range, and a sign-up offer for a discovery set turns that afternoon into an online customer you can follow up with.',
         ],
       },
       {
@@ -602,6 +610,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Notes alone are not enough. Describe how a fragrance opens in the first few minutes, how it settles after an hour and what it feels like at the end of the day. Use moods, places and occasions: a cold walk across Hampstead Heath, a late summer evening, freshly ironed cotton. Compare it fairly with familiar scent families so buyers can place it.',
           'Be honest about strength and longevity, and only state wear times you have tested. Reviews that mention projection and lasting power are often more persuasive than your own copy, so ask for them.',
+          'Short video helps more than people expect for something invisible. A creator spraying a scent on a cold morning, describing it honestly and checking it again at lunchtime gives viewers a sense of the wear that a list of notes never could. TikTok Shop UK lets those viewers buy a discovery set without leaving the video.',
         ],
         bullets: [
           'Opening, heart and dry-down described in plain words',
@@ -615,12 +624,13 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Discovery sets are the most reliable way to sell fragrance online, provided they lead somewhere. Charge a fair price for them, include wear tips, and email a few days later to ask which scent the buyer loved. Credit the sample cost against a full bottle, and track how many sets convert by scent and by channel.',
           'Fast London delivery helps, because a buyer who tries a sample on Monday and loves it may want the bottle for the weekend. If you offer same-day or next-day dispatch in London, say so clearly.',
+          'Decants and travel sprays work in a similar way for collectors, who often want to wear a scent for weeks before committing. Treat them as a step on the same path, with the same follow-up, rather than as a separate product line that never leads anywhere.',
         ],
       },
       {
         heading: 'UK rules and practicalities for fragrance brands',
         paragraphs: [
-          'Perfumes are cosmetics under the UK Cosmetics Regulation, so they broadly need a UK Responsible Person, a safety assessment and notification before going on sale in Great Britain, with certain fragrance allergens listed on the label. Many perfumers also work to the IFRA industry standards.',
+          'Perfumes are cosmetics under the UK Cosmetics Regulation, so in broad terms each one needs a named UK Responsible Person, a safety report and notification ahead of sale in Great Britain, with certain fragrance allergens listed on the label. Many perfumers also work to the IFRA industry standards.',
           'Advertising follows the CAP Code: wear-time claims need evidence, and “inspired by” or comparison marketing can raise trade mark and comparative advertising issues, so take advice before naming another brand. Alcohol-based perfume is usually treated as a dangerous good in transport, which affects couriers and shipping to Europe. This is general guidance, not legal advice.',
         ],
       },
@@ -643,9 +653,9 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
       { label: 'E-commerce growth agency in London', href: '/london/ecommerce-agency/' },
     ],
     faqs: [
-      { q: 'What does a perfume marketing agency in London do?', a: 'It plans and runs the marketing that sells fragrance online from London: scent descriptions, product pages, discovery set funnels, creator partnerships, Meta, TikTok and Google ads, TikTok Shop UK and gifting campaigns. The central job is giving buyers enough confidence to try a scent they cannot smell, then turning that trial into a full bottle.' },
-      { q: 'How do you sell a perfume people cannot smell online?', a: 'Describe how it opens, settles and lasts in plain words, use moods and occasions, compare it fairly with familiar scent families and show real wear reviews. Then offer a discovery set at a fair price, follow up to ask which scent they loved, and credit the sample cost towards a full bottle.' },
-      { q: 'Are discovery sets worth it for a small fragrance brand?', a: 'Usually yes, if they are followed up. A paid discovery set attracts people genuinely interested in your scents. The value comes from the emails after it arrives: wear tips, a favourite-scent question and a bottle credit. We track conversion by scent and channel so the sets pay for themselves.' },
+      { q: 'What does a perfume marketing agency in London do?', a: 'It manages the work of selling fragrance online from a London base: scent descriptions, product pages, discovery set funnels, creator partnerships, Meta, TikTok and Google ads, TikTok Shop UK and gifting campaigns. The central job is giving buyers enough confidence to try a scent they cannot smell, then turning that trial into a full bottle.' },
+      { q: 'How can a London perfumer sell a scent buyers have never smelled?', a: 'Describe how it opens, settles and lasts in plain words, use moods and occasions, compare it fairly with familiar scent families and show real wear reviews. Then offer a discovery set at a fair price, follow up to ask which scent they loved, and credit the sample cost towards a full bottle.' },
+      { q: 'Should a small London perfumer sell discovery sets?', a: 'Usually yes, if they are followed up. A paid discovery set attracts people genuinely interested in your scents. The value comes from the emails after it arrives: wear tips, a favourite-scent question and a bottle credit. We track conversion by scent and channel so the sets pay for themselves.' },
       { q: 'Can we market a perfume as inspired by a famous fragrance?', a: 'Take advice first. Naming another brand’s perfume can raise trade mark and comparative advertising issues, and platforms may reject such ads. Describing your own scent family, notes and mood is usually safer and builds your own brand rather than someone else’s.' },
       { q: 'Do you work with attar and oud brands?', a: 'Yes. London has strong attar and oud buyers among its Arab, South Asian and Muslim communities, from Edgware Road to Whitechapel and Wembley. We plan content and gift sets around Ramadan, Eid and Diwali, and explain oils and concentrations clearly for newer buyers.' },
       { q: 'How much does a perfume marketing agency in London cost?', a: 'It depends on the number of scents, the channels, sampling volume and how much creator and content work you need. We quote the management fee in GBP in a fixed written quote after a free audit. Ad spend is separate and paid directly to each platform from your account.' },
@@ -685,10 +695,10 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
       { title: 'Search and Shopping campaigns', body: 'Google Search and Shopping for specific pieces, metals and occasions such as engagement rings, gold bangles or personalised necklaces.' },
       { title: 'Paid social for gifts and self-purchase', body: 'Meta, Pinterest and TikTok ads split between gift buyers and people buying for themselves, with different creative and timing for each.' },
       { title: 'Wedding and festive campaigns', body: 'Bridal sets, Diwali gold, Eid gifts and Christmas planned months ahead, with content for families who choose pieces together.' },
-      { title: 'Showroom and appointment bookings', body: 'For brands with a studio or showroom, booking flows and local campaigns that turn online interest into appointments.' },
+      { title: 'Showroom and appointment bookings', body: 'If you have a studio or showroom, booking flows and local campaigns that turn online interest into appointments.' },
     ],
     process: [
-      { title: 'Free jewellery audit', body: 'We review product pages, photography, feeds, ads and enquiries, then go through the findings on a call or at our E18 office, where you can bring pieces.' },
+      { title: 'Free jewellery audit', body: 'We look at your pages, photos, Shopping feed, campaigns and enquiry handling, then go through the findings on a call or at our E18 office, where you can bring pieces.' },
       { title: 'Plan and GBP quote', body: 'A written plan for pages, video, channels and the jewellery calendar, with the management fee quoted in GBP.' },
       { title: 'Pages and video first', body: 'Product detail, hallmark wording and try-on video are fixed before spend rises, then Search, Shopping and social campaigns launch.' },
       { title: 'Monthly review', body: 'We report sales, enquiries, appointments and returns by collection and channel, and move budget towards what sells.' },
@@ -733,7 +743,8 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         heading: 'Hallmarks and materials, explained clearly',
         paragraphs: [
           'UK buyers expect precious metal to be described accurately. In broad terms, pieces sold as gold, silver, platinum or palladium generally need a UK hallmark from an assay office, such as the London Assay Office at Goldsmiths’ Hall, unless they fall under the weight exemptions. Sellers are usually expected to show a notice explaining hallmarks, online as well as in shops.',
-          'Demi-fine brands need particular care with words such as gold, vermeil, plated and filled, and lab-grown diamonds should be named as such. This is general information, not legal advice; an assay office or adviser can confirm what applies to your range.',
+          'Demi-fine brands need particular care with words such as gold, vermeil, plated and filled, and lab-grown diamonds should be named as such. This is general information, not legal advice; check the detail for your collection with an assay office or your adviser.',
+          'Used well, these details become a selling point rather than small print. A short page explaining what each mark on your pieces means, with clear photos, reassures buyers who have never bought precious metal online and gives search engines and AI assistants a clear answer to quote.',
         ],
         bullets: [
           'Metal, purity and hallmark details on every precious-metal piece',
@@ -747,6 +758,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Short videos in daylight do more for jewellery than any other content: a ring turning on a hand, earrings moving as someone laughs, a necklace on different necklines and skin tones. Show pieces on hands and ears of different sizes so buyers can judge scale, and include a coin or ruler shot for dainty pieces.',
           'Virtual try-on tools can help with earrings and rings where your platform supports them. London creators who style jewellery in everyday outfits, stacks and layers help self-purchase buyers picture a piece in their own life.',
+          'Keep the photography consistent across the range: the same light, background and angles, so buyers can compare pieces fairly. Feed those images into Google Shopping and your catalogue ads as well, because a clear, honest image is often what earns the first click from someone comparing several London jewellers.',
         ],
       },
       {
@@ -754,6 +766,7 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'For many London families, the biggest jewellery purchases happen around weddings and festivals rather than Christmas. Bridal sets, gold bangles and gifts for relatives are often chosen together, sometimes over several visits. Content that shows complete looks, explains carat and craftsmanship, and invites families to book a viewing fits how these purchases are made.',
           'Diwali, Eid and the wedding season deserve their own campaigns, creative and stock plans. Dates move each year, so plan them early and keep imagery respectful of each community’s traditions.',
+          'Gold pricing adds a practical layer. Many families watch the gold rate before buying, so brands selling heavier gold pieces should explain how prices are set and how often they change. Clear information on making charges, weight and purity helps a family compare you fairly with the jeweller on their high street.',
         ],
       },
       {
@@ -775,8 +788,8 @@ export const londonIndustryBeautyPages: ServicePageData[] = [
       { label: 'Ecommerce SEO agency in London', href: '/london/ecommerce-seo-agency/' },
     ],
     faqs: [
-      { q: 'What does a jewellery marketing agency in London do?', a: 'It plans and runs the marketing that sells jewellery online from London: trust-first product pages, photography and try-on video, Google Search and Shopping, Meta, Pinterest and TikTok ads, appointment bookings for showrooms, and campaigns for Valentine’s, Christmas, weddings, Diwali and Eid. The aim is confident buyers and fewer returns.' },
-      { q: 'Do we need to explain hallmarks on our website?', a: 'Generally yes. Pieces sold as gold, silver, platinum or palladium usually need a UK hallmark unless exempt by weight, and sellers are normally expected to display a notice explaining hallmarks, including online. An assay office such as the London Assay Office can confirm what applies to your range.' },
+      { q: 'What does a jewellery marketing agency in London do?', a: 'It covers the work that turns London jewellery browsers into confident online buyers: trust-first product pages, photography and try-on video, Google Search and Shopping, Meta, Pinterest and TikTok ads, appointment bookings for showrooms, and campaigns for Valentine’s, Christmas, weddings, Diwali and Eid. The aim is confident buyers and fewer returns.' },
+      { q: 'Do we need to explain hallmarks on our website?', a: 'Generally yes. Pieces sold as gold, silver, platinum or palladium usually need a UK hallmark unless exempt by weight, and sellers are normally expected to display a notice explaining hallmarks, including online. The London Assay Office or another UK assay office can tell you which rules cover your pieces.' },
       { q: 'How should demi-fine brands describe their metals?', a: 'Plainly and accurately. Say what the base metal is, what the plating or vermeil layer is, and how to care for it. Avoid calling plated pieces simply gold or silver. Clear wording builds trust, reduces complaints and keeps you on the right side of hallmarking and advertising rules.' },
       { q: 'How do you market jewellery to South Asian families in London?', a: 'With campaigns built around weddings, Diwali and Eid, content that shows complete bridal and festive looks, clear carat and craftsmanship details, and an easy way to book a viewing. Families in Southall, Wembley, Ilford and around Green Street often choose together, so we plan for that.' },
       { q: 'Does video really matter for jewellery?', a: 'Yes. Short daylight videos show scale, sparkle and movement in a way photos cannot, and they reduce surprises on arrival. Show pieces on different hands, ears and skin tones, include a scale reference for small items, and use try-on tools where your platform supports them.' },

@@ -117,6 +117,7 @@ export const ukIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency in London', href: '/london/skincare-marketing-agency/' },
       { label: 'Haircare marketing for UK hair brands', href: '/uk/haircare-marketing-agency/' },
       { label: 'Makeup and cosmetics marketing in the UK', href: '/uk/cosmetics-marketing-agency/' },
       { label: 'Meta catalogue ads for UK online shops', href: '/uk/ecommerce-meta-ads-agency/' },
@@ -249,6 +250,7 @@ export const ukIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Haircare marketing agency in London', href: '/london/haircare-marketing-agency/' },
       { label: 'Skincare marketing for UK brands', href: '/uk/skincare-marketing-agency/' },
       { label: 'Makeup and cosmetics marketing in the UK', href: '/uk/cosmetics-marketing-agency/' },
       { label: 'Ayurveda and herbal hair oil brands in the UK', href: '/uk/ayurveda-marketing-agency/' },
@@ -383,6 +385,7 @@ export const ukIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Cosmetics marketing agency in London', href: '/london/cosmetics-marketing-agency/' },
       { label: 'Skincare marketing for UK brands', href: '/uk/skincare-marketing-agency/' },
       { label: 'Haircare marketing for UK hair brands', href: '/uk/haircare-marketing-agency/' },
       { label: 'Perfume and fragrance marketing in the UK', href: '/uk/perfume-marketing-agency/' },
@@ -517,6 +520,7 @@ export const ukIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ayurveda marketing agency in London', href: '/london/ayurveda-marketing-agency/' },
       { label: 'Haircare marketing for UK hair oil and shampoo brands', href: '/uk/haircare-marketing-agency/' },
       { label: 'Skincare marketing for UK brands', href: '/uk/skincare-marketing-agency/' },
       { label: 'Perfume and attar marketing in the UK', href: '/uk/perfume-marketing-agency/' },
@@ -650,6 +654,7 @@ export const ukIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Perfume marketing agency in London', href: '/london/perfume-marketing-agency/' },
       { label: 'Jewellery marketing for UK gifting brands', href: '/uk/jewellery-marketing-agency/' },
       { label: 'Makeup and cosmetics marketing in the UK', href: '/uk/cosmetics-marketing-agency/' },
       { label: 'Ayurveda and herbal brands in the UK', href: '/uk/ayurveda-marketing-agency/' },
@@ -784,6 +789,7 @@ export const ukIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Jewellery marketing agency in London', href: '/london/jewellery-marketing-agency/' },
       { label: 'Perfume and fragrance marketing for UK gifting brands', href: '/uk/perfume-marketing-agency/' },
       { label: 'Makeup and cosmetics marketing in the UK', href: '/uk/cosmetics-marketing-agency/' },
       { label: 'Google Shopping ads for UK online stores', href: '/uk/ecommerce-ppc-agency/' },

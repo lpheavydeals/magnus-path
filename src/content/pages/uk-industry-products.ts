@@ -117,6 +117,7 @@ export const ukIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Supplement marketing agency in London', href: '/london/supplement-marketing-agency/' },
       { label: 'LTV and CAC calculator for subscription supplement brands', href: '/tools/ltv-cac-calculator/' },
       { label: 'Amazon agency for UK supplement sellers', href: '/uk/amazon-agency/' },
       { label: 'Ecommerce Meta ads agency for UK online shops', href: '/uk/ecommerce-meta-ads-agency/' },
@@ -252,6 +253,7 @@ export const ukIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Home decor marketing agency in London', href: '/london/home-decor-marketing-agency/' },
       { label: 'Shopify agency for UK furniture and interiors stores', href: '/uk/shopify-agency/' },
       { label: 'Ecommerce Meta ads agency for UK online shops', href: '/uk/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce PPC and Google Shopping management in the UK', href: '/uk/ecommerce-ppc-agency/' },
@@ -381,6 +383,7 @@ export const ukIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Baby products marketing agency in London', href: '/london/baby-products-marketing-agency/' },
       { label: 'LTV and CAC calculator for subscription essentials', href: '/tools/ltv-cac-calculator/' },
       { label: 'Ecommerce Meta ads agency for UK online shops', href: '/uk/ecommerce-meta-ads-agency/' },
       { label: 'Amazon agency for UK baby and toy sellers', href: '/uk/amazon-agency/' },
@@ -515,6 +518,7 @@ export const ukIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Pet brand marketing agency in London', href: '/london/pet-brand-marketing-agency/' },
       { label: 'LTV and CAC calculator for pet food subscriptions', href: '/tools/ltv-cac-calculator/' },
       { label: 'Amazon agency for UK pet food and accessory sellers', href: '/uk/amazon-agency/' },
       { label: 'Ecommerce Meta ads agency for UK online shops', href: '/uk/ecommerce-meta-ads-agency/' },
@@ -650,6 +654,7 @@ export const ukIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Footwear marketing agency in London', href: '/london/footwear-marketing-agency/' },
       { label: 'Ecommerce Meta ads agency for UK catalogue ads', href: '/uk/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce PPC agency for Google Shopping in the UK', href: '/uk/ecommerce-ppc-agency/' },
       { label: 'Shopify agency for UK footwear stores', href: '/uk/shopify-agency/' },
@@ -780,6 +785,7 @@ export const ukIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Consumer electronics marketing agency in London', href: '/london/electronics-marketing-agency/' },
       { label: 'Amazon agency for UK electronics sellers', href: '/uk/amazon-agency/' },
       { label: 'Ecommerce PPC agency for Google Shopping and Amazon ads in the UK', href: '/uk/ecommerce-ppc-agency/' },
       { label: 'Ecommerce Meta ads agency for UK online shops', href: '/uk/ecommerce-meta-ads-agency/' },

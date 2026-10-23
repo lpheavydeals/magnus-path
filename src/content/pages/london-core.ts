@@ -127,6 +127,12 @@ export const londonCorePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency in London', href: '/london/skincare-marketing-agency/' },
+      { label: 'Haircare marketing agency in London', href: '/london/haircare-marketing-agency/' },
+      { label: 'Jewellery marketing agency in London', href: '/london/jewellery-marketing-agency/' },
+      { label: 'Perfume marketing agency in London', href: '/london/perfume-marketing-agency/' },
+      { label: 'Home decor marketing agency in London', href: '/london/home-decor-marketing-agency/' },
+      { label: 'Pet brand marketing agency in London', href: '/london/pet-brand-marketing-agency/' },
       { label: 'Facebook advertising agencies in London', href: '/london/facebook-advertising-agencies/' },
       { label: 'Facebook ads agency in London', href: '/london/facebook-ads-agency/' },
       { label: 'Google Ads agency in London', href: '/london/google-ads-agency/' },
