@@ -96,6 +96,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
         paragraphs: [
           'Australians compare supplements in pharmacy chains such as Chemist Warehouse, in supermarkets and online, so a direct brand competes with familiar names on price and trust. Amazon AU is a useful place to be found, particularly for sports nutrition and repeat purchases; strong listings, clear label images and genuine reviews matter more than bids. eBay AU, Catch and Kogan can move volume, and TikTok Shop suits creator-led launches, but every channel needs the same compliant wording.',
           'Your own Shopify store remains the home of subscriptions, bundles and customer data. Keep AUD prices aligned across channels, show GST-inclusive prices, and offer Afterpay or Zip on bigger bundles where it helps people commit.',
+          'Search matters as well. Many buyers type questions such as “plant or whey protein” or “what is in a multivitamin” into Google.com.au or an AI assistant before they shop. Careful ingredient guides that stay within your permitted claims can rank for those questions and be cited in AI answers, without turning into disguised advertising for a health benefit.',
         ],
       },
       {
@@ -115,7 +116,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
     ],
     related: [
       { label: 'LTV and CAC calculator for supplement subscriptions', href: '/tools/ltv-cac-calculator/' },
-      { label: 'Ecommerce Meta ads agency for Australian online stores', href: '/australia/ecommerce-meta-ads-agency/' },
+      { label: 'Ecommerce Meta ads for Australian supplement stores', href: '/australia/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce PPC and Google Shopping in Australia', href: '/australia/ecommerce-ppc-agency/' },
       { label: 'Shopify agency for Australian subscription stores', href: '/australia/shopify-agency/' },
       { label: 'Ecommerce SEO for Australian health and wellness content', href: '/australia/ecommerce-seo/' },
@@ -183,7 +184,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
         { title: 'Gift and style', body: 'Art, mirrors, premium decor: gift pages and careful packing' },
         { title: 'Long journey', body: 'Sofas, beds, dining: room visuals, swatches, retargeting' },
       ] },
-      { type: 'steps', caption: 'From first look to a delivered sofa: what Australian buyers need at each step.', after: 3, steps: [
+      { type: 'steps', caption: 'From first look to a delivered sofa: what Australian buyers need at each step.', after: 4, steps: [
         { title: 'Inspire', body: 'Room photos and short videos' },
         { title: 'Shortlist', body: 'Saved items and room collections' },
         { title: 'Check the fit', body: 'Dimensions, cartons and access' },
@@ -211,6 +212,12 @@ export const auIndustryProductsPages: ServicePageData[] = [
           'Assembly time, tools needed and whether delivery includes carrying the item inside',
           'Swatches or samples for upholstery, rugs and curtains where you can offer them',
           'The same room sets used in ads, on product pages and in social posts',
+        ],
+      },
+      {
+        heading: 'Search and inspiration content for homewares',
+        paragraphs: [
+          'Search content adds steady traffic. Buying guides such as how to choose a rug size for an open-plan lounge, or which timber suits a coastal home, answer questions people type into Google.com.au and AI assistants long before they name a brand. Pair them with a clean Shopping feed and Pinterest boards built from your room sets.',
         ],
       },
       {
@@ -244,7 +251,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
     ],
     related: [
       { label: 'Shopify agency for Australian furniture and homewares stores', href: '/australia/shopify-agency/' },
-      { label: 'Ecommerce Meta ads agency for Australian online stores', href: '/australia/ecommerce-meta-ads-agency/' },
+      { label: 'Catalogue and Meta ads for Australian homewares stores', href: '/australia/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce PPC and Google Shopping for Australian brands', href: '/australia/ecommerce-ppc-agency/' },
       { label: 'Ecommerce SEO for Australian home and lifestyle brands', href: '/australia/ecommerce-seo/' },
       { label: 'Free shipping threshold calculator', href: '/tools/free-shipping-threshold-calculator/' },
@@ -349,6 +356,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
         paragraphs: [
           'Reviews and photos from real parents are a baby brand’s strongest content. Ask for a review a week or two after delivery, make photo uploads easy and reply to concerns publicly and helpfully. Under the Australian Consumer Law, reviews must be genuine, so never write, filter or hide them in a way that gives a misleading picture.',
           'Practical guides help too: how to choose a pram for apartment living, what to pack for hospital, how to set up a sleep space in line with recognised safe sleeping advice. Guides like these rank on Google.com.au and give parents a reason to return. Keep them useful, point to official advice on safety topics and avoid medical promises.',
+          'Creators can help too, as long as paid posts are clearly labelled as advertising and the parent on screen talks about everyday use rather than health outcomes. Short videos of folding a pram, packing a nappy bag or setting up a play mat answer practical questions in seconds.',
         ],
       },
       {
@@ -367,8 +375,8 @@ export const auIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
-      { label: 'LTV and CAC calculator for subscription essentials', href: '/tools/ltv-cac-calculator/' },
-      { label: 'Ecommerce Meta ads agency for Australian online stores', href: '/australia/ecommerce-meta-ads-agency/' },
+      { label: 'LTV and CAC calculator for nappy and wipes subscriptions', href: '/tools/ltv-cac-calculator/' },
+      { label: 'Ecommerce Meta ads agency for Australian baby stores', href: '/australia/ecommerce-meta-ads-agency/' },
       { label: 'Meta ads agency for Australian brands', href: '/australia/meta-ads-agency/' },
       { label: 'Shopify agency for Australian kids and nursery stores', href: '/australia/shopify-agency/' },
       { label: 'Ecommerce SEO for Australian parenting content', href: '/australia/ecommerce-seo/' },
@@ -377,12 +385,12 @@ export const auIndustryProductsPages: ServicePageData[] = [
       { label: 'Home decor marketing agency for Australian nursery and furniture brands', href: '/australia/home-decor-marketing-agency/' },
     ],
     faqs: [
-      { q: 'What does a baby products marketing agency do?', a: 'It helps baby care, nursery, kids’ clothing and toy brands sell online by building product pages that answer safety questions, running ads to parents and gift buyers within platform rules, and setting up subscriptions, life-stage emails and gifting campaigns. For Australian brands it also means presenting mandatory safety information clearly.' },
+      { q: 'What does a baby products marketing agency do in Australia?', a: 'It helps baby care, nursery, kids’ clothing and toy brands sell online by building product pages that answer safety questions, running ads to parents and gift buyers within platform rules, and setting up subscriptions, life-stage emails and gifting campaigns. For Australian brands it also means presenting mandatory safety information clearly.' },
       { q: 'How much does marketing for a baby brand cost in Australia?', a: 'We quote a monthly fee in AUD after a free audit. It depends on your channels, catalogue size, creative needs and whether marketplace management is included. Ad spend is paid directly to Meta, Google, TikTok or Amazon from your own accounts, and the written quote sets out scope, timelines and exclusions.' },
       { q: 'Which mandatory safety standards apply to baby products in Australia?', a: 'It depends on the product. Australia has mandatory standards for items such as cots, toys for children up to 36 months, prams and strollers, and products with button or coin batteries, plus toppling furniture rules for nursery storage. The list changes, so confirm the requirements for each product with a qualified adviser or testing lab.' },
       { q: 'Can we target expecting or new parents with ads?', a: 'Only in limited ways. Platforms have removed or narrowed many sensitive targeting options, and copy must not suggest you know someone’s personal situation. Most brands now use broad audiences, parenting interests where offered and consented customer lists, with creative that clearly speaks to parents.' },
       { q: 'Can we advertise toys directly to children?', a: 'No. Major platforms do not allow ads aimed at young children, and the AANA has a specific code for advertising and marketing to children. Toy and kids brands should market to parents, relatives and gift buyers, who make the purchase, and keep claims and visuals appropriate for any child who might see them.' },
-      { q: 'Do subscriptions work for nappies and wipes?', a: 'Yes. Families use nappies and wipes on a predictable schedule, so subscribe-and-save and timed reminders help them avoid running out. Make changing size simple as the baby grows, allow easy pausing, and keep prices competitive with supermarkets so the subscription feels like a convenience rather than a lock-in.' },
+      { q: 'Are subscriptions worth it for nappies and wipes?', a: 'Yes. Families use nappies and wipes on a predictable schedule, so subscribe-and-save and timed reminders help them avoid running out. Make changing size simple as the baby grows, allow easy pausing, and keep prices competitive with supermarkets so the subscription feels like a convenience rather than a lock-in.' },
       { q: 'Can we meet your team in Australia?', a: 'No. We have no Australian office; Magnus Path is based in Chennai, with offices in Bengaluru and London. We work with Australian brands remotely, using video calls in your east-coast afternoon and shared reporting dashboards, and we quote in AUD after a free audit.' },
     ],
   },
@@ -485,13 +493,14 @@ export const auIndustryProductsPages: ServicePageData[] = [
         paragraphs: [
           'Amazon AU is strong for pet products people research and compare: premium food, treats, grooming tools, beds and accessories. Variations by size and flavour, A+ content and a steady flow of genuine reviews matter as much as bids. eBay AU, Catch, Kogan and TikTok Shop can add reach, but watch fees and the cost of shipping heavy items.',
           'Your own store is where you keep the customer relationship and the data for reminders. Subscriptions, bundles, new launches and loyalty offers belong there. Keep AUD prices consistent across channels so you never undercut yourself.',
+          'TikTok and Instagram creators with dogs and cats are a natural fit for this category. Brief them to show real feeding, play and grooming, label paid posts clearly as advertising, and keep them away from claims about health outcomes. With permission, their clips can then be reused as ads and on product pages.',
         ],
       },
       {
         heading: 'Seasons, accessories and choosing a partner',
         paragraphs: [
           'Accessories, beds, harnesses and toys are bought less often and judged on looks, fit and durability, so video of the product in use and size guides by breed or chest measurement do most of the work. Seasons follow the southern hemisphere: summer brings demand for cooling mats and travel gear, winter for beds and coats, and Click Frenzy, Black Friday and Christmas for gifting. EOFY in June is a sensible time to clear accessory stock.',
-          'When you compare a pet brand marketing agency, ask how it measures repeat rate and how it handles claims. If you plan to import pet food, check the biosecurity import conditions with the federal agriculture department early, because they are strict. Magnus Path works with Australian brands remotely from Chennai, with no office in Australia; calls fit your afternoon and we quote in AUD after a free audit.',
+          'When you compare a pet brand marketing agency, ask how it measures repeat rate and how it handles claims. Ask too whether it understands freight, because heavy bags sent to regional areas can wipe out the margin on a first order. If you plan to import pet food, check the biosecurity import conditions with the federal agriculture department early, because they are strict. Magnus Path works with Australian brands remotely from Chennai, with no office in Australia; calls fit your afternoon and we quote in AUD after a free audit.',
         ],
       },
     ],
@@ -506,11 +515,11 @@ export const auIndustryProductsPages: ServicePageData[] = [
       auHub,
     ],
     faqs: [
-      { q: 'What does a pet brand marketing agency do?', a: 'It plans and runs the online growth of a pet food, treat, grooming or accessory brand: the store, Meta, TikTok and Google ads, Amazon AU listings, content by pet type and life stage, and reorder journeys. For Australian brands, the aim is owners who keep buying from you rather than drifting back to the supermarket aisle.' },
+      { q: 'What does a pet brand marketing agency do for Australian brands?', a: 'It plans and runs the online growth of a pet food, treat, grooming or accessory brand: the store, Meta, TikTok and Google ads, Amazon AU listings, content by pet type and life stage, and reorder journeys. For Australian brands, the aim is owners who keep buying from you rather than drifting back to the supermarket aisle.' },
       { q: 'How much does pet brand marketing cost in Australia?', a: 'We quote a monthly fee in AUD after a free audit. It depends on the channels, the size of your range, how much creative you need each month and whether marketplaces are included. Ad spend is paid directly to each platform from your own account, and the quote sets out scope and timelines in writing.' },
       { q: 'What is AS 5812 and does it matter for marketing?', a: 'AS 5812 is the Australian Standard for manufacturing and marketing pet food, covering areas such as labelling. Members of the Pet Food Industry Association of Australia are expected to follow it. For marketing, it shapes what your label and claims should show. Check your own obligations with a qualified adviser.' },
-      { q: 'Can pet food ads mention health benefits?', a: 'Be careful. Ad platforms restrict health claims, and claims to treat or prevent disease can bring a product under veterinary chemical rules. Describe ingredients, protein sources, texture and feeding amounts accurately, and use phrases like “vet recommended” only when you can document them properly.' },
-      { q: 'How do pet food brands get more repeat orders?', a: 'Show pack sizes by pet weight, send a reminder a few days before a bag is likely to run low, offer a flexible subscription that is easy to pause, and use trial packs to lower first-order risk. Track repeat rate by campaign so budget goes to the ads that bring loyal buyers.' },
+      { q: 'Can Australian pet food ads mention health benefits?', a: 'Be careful. Ad platforms restrict health claims, and claims to treat or prevent disease can bring a product under veterinary chemical rules. Describe ingredients, protein sources, texture and feeding amounts accurately, and use phrases like “vet recommended” only when you can document them properly.' },
+      { q: 'How can pet food brands in Australia win more repeat orders?', a: 'Show pack sizes by pet weight, send a reminder a few days before a bag is likely to run low, offer a flexible subscription that is easy to pause, and use trial packs to lower first-order risk. Track repeat rate by campaign so budget goes to the ads that bring loyal buyers.' },
       { q: 'Should a pet brand sell on Amazon AU?', a: 'For treats, premium food, grooming and accessories, often yes, because owners compare products and reviews there. Watch fees and the cost of shipping heavy bags, keep AUD prices consistent with your own store, and use your store for subscriptions and the customer data that powers reminders.' },
       { q: 'Do you have a team in Australia?', a: 'No. Magnus Path is based in Chennai, with offices in Bengaluru and London, and we serve Australian brands remotely. Sydney and Melbourne are 4.5 hours ahead of India, or 5.5 hours in daylight saving, so calls suit your afternoon and replies arrive the same day.' },
     ],
@@ -577,7 +586,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
         heading: 'Why a footwear marketing agency starts with fit',
         paragraphs: [
           'Shoes are harder to sell online than most clothing. A shirt that is a little loose still gets worn; a shoe half a size too small usually goes back. Feet vary in length and width, brands size differently, and Australian buyers face an extra problem: there is no single AU size system that every brand follows. A footwear marketing agency that starts with ads before fixing fit is paying to create returns.',
-          'Each exchange costs a return label, a second outbound parcel and often a scuffed box. When a campaign drives lots of orders that turn into exchanges, the ad report looks strong while the business pays twice for freight. We track net sales after exchanges and returns by style and campaign, so budget follows shoes that fit and stay sold.',
+          'Each exchange costs a return label, a second outbound parcel and often a scuffed box. When a campaign drives lots of orders that turn into exchanges, the ad report looks strong while the business pays twice for freight. Our reports show net sales once exchanges and returns are taken off, by style and campaign, so budget goes to pairs that fit and stay sold.',
           'Getting fit right also builds repeat sales. Runners replace shoes after heavy use, parents buy school shoes every year, and a buyer who got the right size once will trust your chart the next time.',
         ],
       },
@@ -604,7 +613,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Four kinds of footwear buyer',
         paragraphs: [
-          'Shoe brand marketing works better when each range gets its own approach. Sneaker buyers follow drops, colourways and limited runs, so countdowns, on-foot video and creator content matter. Running and sports buyers compare cushioning, heel-to-toe drop and grip. Work boot buyers care about safety features, comfort across a long shift and whether the boot meets the standard their site requires.',
+          'Shoe brand marketing works better when each range gets its own approach. Sneaker buyers follow drops, colourways and limited runs, so countdowns, on-foot video and creator content matter. Running and sports buyers compare cushioning, heel-to-toe drop and grip. Work boot buyers care about safety features, comfort across a long shift and whether the boot meets the standard their site requires. Work boot pages should state the safety features each boot has, such as a protective toe cap or slip-resistant sole, exactly as testing supports, without implying a standard the boot does not meet.',
           'Kids’ shoes are usually bought by parents in a rush before the school year starts in late January or early February, and they want fit, grip, easy fastening and durability. Gift buying peaks around Father’s Day in September and Christmas. Splitting creative, collections and campaigns by these groups makes each message clearer and shows which range actually makes money.',
         ],
       },
@@ -612,6 +621,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
         heading: 'Catalogue ads, TikTok and marketplaces',
         paragraphs: [
           'Footwear catalogues are large, so catalogue ads on Meta and Google Shopping turn the range into ads automatically, but only if the feed is clean: size, colour, gender, age group, material and GST-inclusive AUD prices filled in, and sold-out sizes removed quickly. Short walking clips, sole close-ups and creator try-ons usually outperform still images.',
+          'Search content supports all of this. Guides such as how to measure your foot at home, what width means on a shoe label or how to choose school shoes rank on Google.com.au, get quoted by AI assistants and send buyers to the right size chart before they order.',
           'Amazon AU suits everyday, sports and kids’ shoes, eBay AU and Catch can move older stock, and TikTok Shop works well for creator-led sneaker and sandal launches. Department stores such as Myer shape what buyers expect on price and presentation. Keep the same size chart, photos and fit notes on every channel, and offer Afterpay, which many Australian shoppers look for on higher-priced pairs.',
         ],
       },
@@ -634,8 +644,8 @@ export const auIndustryProductsPages: ServicePageData[] = [
       { label: 'Consumer electronics marketing agency in Australia', href: '/australia/electronics-marketing-agency/' },
     ],
     faqs: [
-      { q: 'What does a footwear marketing agency do?', a: 'It grows a shoe brand’s online sales across its own store, ads and marketplaces. For Australian brands that covers size charts built on foot length, catalogue ads on Meta and Google, Amazon AU and TikTok Shop listings, Afterpay and returns messaging, and reporting on exchanges so growth does not simply create more return parcels.' },
-      { q: 'How much does footwear marketing cost in Australia?', a: 'We quote a monthly fee in AUD after a free audit. It depends on your channels, catalogue size, how much creative you need and whether marketplaces are included. Ad spend is paid directly to Meta, Google, TikTok and Amazon from your own accounts, and the written quote lists scope, timelines and exclusions.' },
+      { q: 'What does a footwear marketing agency do for Australian brands?', a: 'It grows online sales for a shoe brand across its own store, paid ads and marketplaces. For Australian brands that covers size charts built on foot length, catalogue ads on Meta and Google, Amazon AU and TikTok Shop listings, Afterpay and returns messaging, and reporting on exchanges so growth does not simply create more return parcels.' },
+      { q: 'How much does footwear marketing cost in Australia?', a: 'We quote a monthly fee in AUD after a free audit. It depends on your channels, the size of your catalogue, your creative needs and whether marketplace management is included. Ad spend is paid directly to Meta, Google, TikTok and Amazon from your own accounts, and the written quote lists scope, timelines and exclusions.' },
       { q: 'How should Australian shoe brands show sizes?', a: 'Base every chart on foot length in centimetres, then show AU, UK, US and EU sizes side by side, with men’s and women’s separate because Australian labels often follow different systems. Add fit notes and width information to each style, and a simple guide to measuring feet at home.' },
       { q: 'Do we have to offer free returns on shoes?', a: 'Change-of-mind returns are a business choice, not a legal requirement, but many buyers expect easy size exchanges. Separately, customers have consumer rights under the Australian Consumer Law when shoes are faulty or not as described, and your policy must not suggest otherwise. Get advice on the exact wording.' },
       { q: 'Can we say our shoes are Australian made?', a: 'Only if the claim is accurate under the Australian Consumer Law, which looks at where goods were substantially made. Origin labelling for footwear is generally voluntary, but any origin or material claim must not mislead. “Designed in Australia” can be accurate for shoes made overseas. Confirm specific claims with an adviser.' },
@@ -743,14 +753,14 @@ export const auIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Video, support content and how we work',
         paragraphs: [
-          'Video does much of the selling: unboxing, setup walkthroughs, sound tests and real battery demos answer questions a spec sheet cannot. Creators should clearly disclose paid content, and scripts must not include claims you cannot prove. Setup guides, comparison pages and warranty information on your own store rank on Google and are often quoted by AI assistants, so a consumer electronics marketing agency should treat them as part of the sales plan.',
+          'Video does much of the selling: unboxing, setup walkthroughs, sound tests and real battery demos answer questions a spec sheet cannot. Creators should clearly disclose paid content, and scripts must not include claims you cannot prove. Setup guides, comparison pages and warranty information on your own store rank on Google and are often quoted by AI assistants, so a consumer electronics marketing agency should treat them as part of the sales plan. Support content also cuts returns: some items sent back as faulty were simply not set up correctly, so clear pairing guides, firmware update steps and troubleshooting FAQs reduce both returns and one-star reviews.',
           'Magnus Path works with Australian electronics brands remotely from Chennai, with no Australian office. Our working day overlaps the east-coast afternoon. We start with a free audit of your listings, ads and reviews, then quote our fee in AUD, with ad spend paid directly to Amazon, Google and Meta from your accounts.',
         ],
       },
     ],
     related: [
       { label: 'Ecommerce PPC agency for Google Shopping in Australia', href: '/australia/ecommerce-ppc-agency/' },
-      { label: 'Ecommerce Meta ads agency for Australian online stores', href: '/australia/ecommerce-meta-ads-agency/' },
+      { label: 'Ecommerce Meta ads agency for Australian gadget stores', href: '/australia/ecommerce-meta-ads-agency/' },
       { label: 'Shopify agency for Australian electronics stores', href: '/australia/shopify-agency/' },
       { label: 'Ecommerce SEO for Australian gadget and tech brands', href: '/australia/ecommerce-seo/' },
       { label: 'Marketplace profit calculator for Amazon AU sellers', href: '/tools/marketplace-profit-calculator/' },
@@ -759,7 +769,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       { label: 'Footwear marketing agency in Australia', href: '/australia/footwear-marketing-agency/' },
     ],
     faqs: [
-      { q: 'What does a consumer electronics marketing agency do?', a: 'It grows online sales for gadget and electronics brands through spec-led listings and A+ content, Amazon AU and Google ads, sale-event plans, review and video content, and clear warranty and support pages. For Australian brands it also means presenting compliance details and consumer rights accurately, so buyers can trust what they read.' },
+      { q: 'What does a consumer electronics marketing agency do for Australian brands?', a: 'It grows online sales for gadget and electronics brands through spec-led listings and A+ content, Amazon AU and Google ads, sale-event plans, review and video content, and clear warranty and support pages. For Australian brands it also means presenting compliance details and consumer rights accurately, so buyers can trust what they read.' },
       { q: 'How much does electronics marketing cost in Australia?', a: 'We quote a monthly fee in AUD after a free audit. It depends on the number of models, the marketplaces and ad channels involved, how much content and video you need and how many sale events you plan for. Ad spend is paid directly to each platform from your account, and the scope is written down.' },
       { q: 'What is the RCM mark?', a: 'The Regulatory Compliance Mark shows that a product meets Australian electrical safety requirements and, for many devices, ACMA requirements on electromagnetic compatibility and radio. What applies depends on the product and the supplier’s registration. Confirm your obligations with a qualified adviser or testing lab; we make sure accurate details appear on your listings.' },
       { q: 'How should we describe warranties in Australia?', a: 'State the warranty period exactly, what it covers and how to claim. Make clear that it sits alongside consumer rights under the Australian Consumer Law, which apply to major failures regardless of the warranty. Warranty documents must include wording set out in the regulations, so have your adviser check them.' },
