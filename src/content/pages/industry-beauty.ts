@@ -114,6 +114,8 @@ export const industryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency in Chennai', href: '/chennai/skincare-marketing-agency/' },
+      { label: 'Skincare marketing agency in Bangalore', href: '/bangalore/skincare-marketing-agency/' },
       { label: 'Beauty and Ayurveda brands', href: '/industries/beauty-ayurveda/' },
       { label: 'Haircare brand marketing for oils and shampoos', href: '/industries/haircare-marketing-agency/' },
       { label: 'Makeup and cosmetics brand marketing', href: '/industries/cosmetics-marketing-agency/' },
@@ -241,6 +243,8 @@ export const industryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Haircare marketing agency in Chennai', href: '/chennai/haircare-marketing-agency/' },
+      { label: 'Haircare marketing agency in Bangalore', href: '/bangalore/haircare-marketing-agency/' },
       { label: 'Beauty and Ayurveda brands', href: '/industries/beauty-ayurveda/' },
       { label: 'Skincare brand marketing', href: '/industries/skincare-marketing-agency/' },
       { label: 'Makeup and cosmetics brand marketing', href: '/industries/cosmetics-marketing-agency/' },
@@ -372,6 +376,8 @@ export const industryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Cosmetics marketing agency in Chennai', href: '/chennai/cosmetics-marketing-agency/' },
+      { label: 'Cosmetics marketing agency in Bangalore', href: '/bangalore/cosmetics-marketing-agency/' },
       { label: 'Beauty and Ayurveda brands', href: '/industries/beauty-ayurveda/' },
       { label: 'Skincare brand marketing', href: '/industries/skincare-marketing-agency/' },
       { label: 'Haircare brand marketing for oils and shampoos', href: '/industries/haircare-marketing-agency/' },

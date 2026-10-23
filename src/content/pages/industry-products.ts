@@ -112,6 +112,8 @@ export const industryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Pet brand marketing agency in Chennai', href: '/chennai/pet-brand-marketing-agency/' },
+      { label: 'Pet brand marketing agency in Bangalore', href: '/bangalore/pet-brand-marketing-agency/' },
       { label: 'Quick commerce marketing for pet food brands', href: '/quick-commerce-marketing/' },
       { label: 'How to sell on Blinkit, Zepto and Instamart', href: '/blog/how-to-sell-on-blinkit-zepto-instamart/' },
       { label: 'Amazon account management for pet products', href: '/amazon-account-management/' },
@@ -243,6 +245,8 @@ export const industryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Footwear marketing agency in Chennai', href: '/chennai/footwear-marketing-agency/' },
+      { label: 'Footwear marketing agency in Bangalore', href: '/bangalore/footwear-marketing-agency/' },
       { label: 'Fashion and apparel brand marketing', href: '/industries/fashion-apparel/' },
       { label: 'RTO and COD cost calculator', href: '/tools/rto-cod-calculator/' },
       { label: 'How to reduce RTO and COD returns', href: '/blog/how-to-reduce-rto-cod-returns/' },
@@ -369,6 +373,8 @@ export const industryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Consumer electronics marketing agency in Chennai', href: '/chennai/electronics-marketing-agency/' },
+      { label: 'Consumer electronics marketing agency in Bangalore', href: '/bangalore/electronics-marketing-agency/' },
       { label: 'Amazon account management for electronics brands', href: '/amazon-account-management/' },
       { label: 'Flipkart account management for gadget brands', href: '/flipkart-account-management/' },
       { label: 'Amazon PPC guide for India', href: '/blog/amazon-ppc-guide-india/' },

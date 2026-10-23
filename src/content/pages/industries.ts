@@ -1097,6 +1097,12 @@ export const industryPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency in Chennai', href: '/chennai/skincare-marketing-agency/' },
+      { label: 'Haircare marketing agency in Chennai', href: '/chennai/haircare-marketing-agency/' },
+      { label: 'Jewellery marketing agency in Chennai', href: '/chennai/jewellery-marketing-agency/' },
+      { label: 'Ayurveda marketing agency in Chennai', href: '/chennai/ayurveda-marketing-agency/' },
+      { label: 'Home decor marketing agency in Chennai', href: '/chennai/home-decor-marketing-agency/' },
+      { label: 'Footwear marketing agency in Chennai', href: '/chennai/footwear-marketing-agency/' },
       { label: 'RTO and COD cost calculator', href: '/tools/rto-cod-calculator/' },
       { label: 'Facebook advertising agencies in Chennai', href: '/chennai/facebook-advertising-agencies/' },
       { label: 'Ecommerce Meta ads agency in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },

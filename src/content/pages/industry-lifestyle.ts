@@ -114,6 +114,8 @@ export const industryLifestylePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ayurveda marketing agency in Chennai', href: '/chennai/ayurveda-marketing-agency/' },
+      { label: 'Ayurveda marketing agency in Bangalore', href: '/bangalore/ayurveda-marketing-agency/' },
       { label: 'Beauty and Ayurveda brand marketing hub', href: '/industries/beauty-ayurveda/' },
       { label: 'Marketing for perfume and attar brands', href: '/industries/perfume-marketing-agency/' },
       { label: 'Marketing for jewellery brands', href: '/industries/jewellery-marketing-agency/' },
@@ -246,6 +248,8 @@ export const industryLifestylePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Perfume marketing agency in Chennai', href: '/chennai/perfume-marketing-agency/' },
+      { label: 'Perfume marketing agency in Bangalore', href: '/bangalore/perfume-marketing-agency/' },
       { label: 'Beauty and Ayurveda brand marketing hub', href: '/industries/beauty-ayurveda/' },
       { label: 'Marketing for Ayurvedic and herbal brands', href: '/industries/ayurveda-marketing-agency/' },
       { label: 'Marketing for jewellery and gifting brands', href: '/industries/jewellery-marketing-agency/' },
@@ -373,6 +377,8 @@ export const industryLifestylePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Jewellery marketing agency in Chennai', href: '/chennai/jewellery-marketing-agency/' },
+      { label: 'Jewellery marketing agency in Bangalore', href: '/bangalore/jewellery-marketing-agency/' },
       { label: 'Beauty and Ayurveda brand marketing hub', href: '/industries/beauty-ayurveda/' },
       { label: 'Marketing for perfume and gifting brands', href: '/industries/perfume-marketing-agency/' },
       { label: 'Marketing for Ayurvedic and herbal brands', href: '/industries/ayurveda-marketing-agency/' },

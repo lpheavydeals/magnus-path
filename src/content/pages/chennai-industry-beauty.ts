@@ -403,7 +403,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
   {
     slug: 'chennai/ayurveda-marketing-agency',
     kind: 'location',
-    title: 'Ayurveda Marketing Agency in Chennai | Siddha | Magnus Path',
+    title: 'Ayurveda Marketing Agency in Chennai: Herbal Brands | Magnus Path',
     description: 'Ayurveda marketing agency in Chennai for Ayurvedic, Siddha and herbal brands: Tamil and English content, AYUSH-aware claims, WhatsApp selling and online growth.',
     primaryKeyword: 'ayurveda marketing agency in Chennai',
     navLabel: 'Ayurveda Chennai',

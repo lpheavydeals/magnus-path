@@ -80,7 +80,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
         heading: 'FSSAI, AYUSH and platform rules for Chennai brands',
         paragraphs: [
           'National rules still apply in Chennai. Health supplements and nutraceuticals come under FSSAI, so the label, the licence number and every claim must line up. Products sold as Siddha or Ayurvedic medicines fall under AYUSH rules instead, and a plain health mix is usually a regular food. Many Tamil Nadu brands sell across these lines, so we keep separate wording, pages and ad sets for each rather than one message that blurs them.',
-          'Legal Metrology rules decide what the pack and listing must declare, and the consumer protection rules for e-commerce expect seller details, return terms and country of origin on your store. Meta and Google add their own limits on health wording and on who can see some products. We are not regulatory advisors, so confirm your product’s position with a qualified one; our role is to keep every ad and page consistent with what your label permits.',
+          'Legal Metrology rules decide what the pack and listing must declare, and the consumer protection rules for e-commerce expect seller details, return terms and country of origin on your store. Meta and Google add their own limits on health wording and on who can see some products. We are not regulatory advisors, so ask a qualified one where your product stands; our role is to keep every ad and page consistent with what your label permits.',
         ],
         bullets: [
           'Keep supplement, health mix and AYUSH products on separate pages and ad sets',
@@ -124,9 +124,9 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
     faqs: [
       { q: 'What does a supplement marketing agency in Chennai do?', a: 'It plans and runs online marketing for supplement, protein and health mix brands within FSSAI and platform rules: Tamil and English ads, label-true product pages, Amazon and quick-commerce listings, and WhatsApp refill reminders. It should also understand Chennai buyers, local seasons such as Pongal and Deepavali, and how the monsoon affects delivery.' },
       { q: 'Can you write supplement ads in Tamil?', a: 'Yes. We write Tamil, English and Tamil typed in English letters, and every Tamil line is written or checked by a fluent Tamil writer. Health wording is where translation goes wrong most easily, so we check that the Tamil version says exactly what the English version and your label say, nothing more.' },
-      { q: 'Is a health mix marketed the same way as a supplement?', a: 'Not quite. A traditional health mix is usually sold as a regular food, a protein powder or vitamin is a health supplement under FSSAI, and Siddha or Ayurvedic products fall under AYUSH rules. Each needs its own wording, product page and ad set. Confirm your product’s category with a qualified regulatory advisor.' },
+      { q: 'Is a health mix marketed the same way as a supplement?', a: 'Not quite. A traditional health mix is usually sold as a regular food, a protein powder or vitamin is a health supplement under FSSAI, and Siddha or Ayurvedic products fall under AYUSH rules. Each needs its own wording, product page and ad set. A qualified regulatory advisor can confirm which category your product falls into.' },
       { q: 'Should a Chennai supplement brand sell on quick commerce?', a: 'For some products, yes. Protein bars, electrolytes, sachets and single tubs suit Blinkit, Zepto and Swiggy Instamart, which deliver across most of Chennai. Larger packs, subscriptions and bundles usually sell better on your own store and Amazon. Quick commerce only works where your stock is placed, so plan inventory before ads.' },
-      { q: 'How much does it cost to hire you?', a: 'It depends on the channels, the number of products, how much Tamil and English creative you need and whether marketplaces are included. Ad spend goes directly to the platforms from your own account. Our fee is quoted after a free audit, as a fixed written quote before work starts.' },
+      { q: 'How is your fee for a Chennai supplement brand worked out?', a: 'We look at how many products you sell, which channels we run, how much Tamil and English creative each month needs and whether Amazon or quick commerce is in scope. Your ad budget is billed by the platforms straight to your own account. After a free audit you receive a fixed written quote before any work starts.' },
       { q: 'How does the monsoon affect supplement sales in Chennai?', a: 'The northeast monsoon, usually from October to December, brings delivery delays, flooded pincodes and more damaged parcels. We reduce ad spend in affected areas, message buyers about delays early and lean on quick commerce where dark stores stay open. Moisture-proof packaging and storage advice help protect reviews.' },
       { q: 'Can we meet the team in person?', a: 'Yes. Our head office is in Chennai, and supplement founders can meet the team by appointment for the audit walk-through, festive planning or monthly reviews. Brands elsewhere in Tamil Nadu and India work with us on video calls, with visits when they help.' },
     ],
@@ -243,12 +243,12 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
       { label: 'Free shipping threshold calculator for bulky orders', href: '/tools/free-shipping-threshold-calculator/' },
     ],
     faqs: [
-      { q: 'What does a home decor marketing agency in Chennai do?', a: 'It helps furniture, furnishing and decor brands sell online to buyers in Chennai and beyond. That covers room-led creative, Tamil and English ads on Meta and Google, Instagram and WhatsApp selling, store and catalogue setup, and clear delivery and return terms. It should understand local homes, festivals and the monsoon.' },
+      { q: 'What does a home decor marketing agency in Chennai do?', a: 'It helps Tamil Nadu furniture makers, furnishing labels and decor stores win orders from Chennai homes and beyond. That covers room-led creative, Tamil and English ads on Meta and Google, Instagram and WhatsApp selling, store and catalogue setup, and clear delivery and return terms. It should understand local homes, festivals and the monsoon.' },
       { q: 'We make furniture for exporters. Can we launch our own brand?', a: 'Yes, and many Tamil Nadu makers are doing it. You will need a brand name and story, photos in real homes, a store that handles single orders and packaging that survives delivery. We plan these step by step, starting with a few hero products rather than the whole range.' },
       { q: 'Do decor ads work better in Tamil or English?', a: 'It depends on your buyers, so we test both. English often works for premium furniture in newer apartments, while Tamil and Tamil typed in English letters can do better for festive, gifting and family audiences. Every Tamil line is written or checked by a fluent Tamil writer.' },
       { q: 'How do we handle delivery during the Chennai monsoon?', a: 'Show a clear monsoon notice on product pages, pack wood and fabric against moisture, and give honest delivery dates by pincode. During heavy rain we pause or reduce ads in areas you cannot reach and message buyers early about delays. That protects reviews and cuts cancellations.' },
       { q: 'Should handloom furnishing brands mention GI tags?', a: 'Only if the product truly carries one, such as a registered Bhavani jamakkalam from an authorised producer. Show the tag or the handloom mark where you have it. If you do not, describe the craft, the cluster and the maker honestly; buyers value a true story more than a borrowed label.' },
-      { q: 'How much does home decor marketing cost?', a: 'It depends on catalogue size, how many shoots you need, the channels and whether we also build or fix the store. Ad spend is paid directly to the platforms from your own account. Our fee is quoted after a free audit, as a fixed written quote before work starts.' },
+      { q: 'How much does home decor marketing cost in Chennai?', a: 'The fee follows the work: how many pieces need shooting in real homes, which channels we run, and whether your store also needs building or fixing. Your ad budget is billed by Meta, Google or the marketplace straight to your own account. We agree a fixed written quote after a free audit, before anything starts.' },
       { q: 'Can we meet you before we start?', a: 'Yes. Our head office is in Chennai, and decor brands can meet us by appointment, bring samples and swatches and plan a shoot together. We can also visit your workshop or showroom. Brands outside the city work with us over video calls.' },
     ],
   },
@@ -276,7 +276,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
     pains: [
       { title: 'Tiruppur quality, no brand recall', body: 'Many kidswear and baby clothing units in Tiruppur supply other labels. Their own brand launches with good fabric but no story, no reviews and photos that never show how the clothes feel on a baby.' },
       { title: 'Grandparents decide too', body: 'In many Chennai families, grandparents shape what a baby wears, eats and uses. English-only ads miss half of that conversation, and generic creative misses the traditions behind it.' },
-      { title: 'Rules on reaching parents', body: 'Ad platforms limit sensitive targeting and ads aimed at children. Brands that relied on narrow audiences or pregnancy hooks see ads rejected and reach fall away.' },
+      { title: 'Rules on reaching parents', body: 'Meta and Google restrict sensitive audiences and anything that speaks to kids directly. Pregnancy hooks and tight interest lists get rejected, and reach shrinks with them.' },
     ],
     includes: [
       { title: 'Pages a careful parent trusts', body: 'Fabric and ingredient lists, age ranges, BIS marks on toys and plain care steps, answered before a parent has to ask.' },
@@ -308,7 +308,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
       { type: 'matrix', caption: 'Which channel suits which baby product for Chennai families.', after: 3, cols: ['Daily essentials', 'Considered buys'], rows: ['Needed today', 'Planned ahead'], cells: [
         { title: 'Quick commerce', body: 'Diapers, wipes and baby wash on Instamart, Zepto, Blinkit' },
         { title: 'Store + WhatsApp', body: 'Gift sets and kidswear with WhatsApp help and fast dispatch' },
-        { title: 'Subscriptions', body: 'Refills on your store, timed to how fast a family uses them' },
+        { title: 'Subscriptions', body: 'Refills on your store, paced to each family’s usage' },
         { title: 'Marketplaces', body: 'Toys, prams and car seats compared on Amazon and FirstCry' },
       ] },
     ],
@@ -317,7 +317,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
         heading: 'What a baby products marketing agency in Chennai should do',
         paragraphs: [
           'Selling baby products in Chennai means earning the trust of a whole family. A young mother may research diapers and cotton clothing on Instagram, her mother may hold firm views on oil baths and cradles, and an aunt in Coimbatore may order a gift set for the naming ceremony. A baby products marketing agency in Chennai has to reach each of them, in the language they prefer, without breaking the platform rules that protect parents and children.',
-          'The work covers four areas: pages that answer safety and material questions, campaigns that follow targeting rules, gifting plans built around Tamil family occasions, and journeys that follow the child from one size or stage to the next.',
+          'The work covers four areas: pages that answer safety and material questions, campaigns that follow targeting rules, gifting plans built around Tamil family occasions, and journeys that grow with the child, month by month.',
         ],
       },
       {
@@ -331,7 +331,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
         heading: 'Safety, labels and ad rules',
         paragraphs: [
           'Indian rules still set the baseline. Toys sold in India need the BIS standard mark under the toy quality control order, so show it clearly on toy pages and listings. Packaged products need Legal Metrology declarations such as net quantity, manufacturer details and consumer care contacts, and the consumer protection rules for e-commerce expect country of origin and clear return terms. Infant food has its own strict FSSAI rules, and its promotion is restricted.',
-          'Meta and Google do not allow ads aimed at children and limit targeting based on personal circumstances such as pregnancy. That rules out hooks like “Just found out you are expecting?” We reach parents through broad audiences, interests, creators and your own customer lists with consent. We are not legal advisors, so confirm the rules for specific products with a qualified one.',
+          'Meta and Google bar ads directed at kids and restrict targeting built on personal circumstances, pregnancy included. That rules out hooks like “Just found out you are expecting?” We reach parents through broad audiences, interests, creators and your own customer lists with consent. We are not legal advisors, so confirm the rules for specific products with a qualified one.',
         ],
         bullets: [
           'Show BIS marks for toys and age guidance on every product',
@@ -357,7 +357,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Repeat orders and choosing an agency',
         paragraphs: [
-          'Babies outgrow sizes in months, which gives brands a natural reason to return. With consent, WhatsApp messages in Tamil or English can suggest the next diaper size, the next clothing size or toys for the next stage. Subscriptions for daily essentials, timed to how fast a family uses a pack, keep orders steady.',
+          'Babies outgrow sizes in months, which gives brands a natural reason to return. With consent, a WhatsApp note in Tamil or English can point a parent to the bigger diaper pack, the clothes a size up or toys for a crawling baby. Essentials on subscription, paced to each family’s usage, keep orders steady.',
           'Reviews from real parents carry more weight than any ad. Ask for a photo review a few weeks after delivery, once the parent has used the product, and reply to every concern publicly and calmly. In Chennai, word of mouth through apartment WhatsApp groups and parenting communities spreads fast, in both directions.',
           'When choosing a baby products marketing agency in Chennai, ask how it handles targeting rules, how it shows safety information and how it measures repeat purchases. Our team meets founders at the Chennai head office by appointment. Fees are quoted after a free audit, based on catalogue size, channels and creative needs.',
         ],
@@ -376,10 +376,10 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
     faqs: [
       { q: 'What does a baby products marketing agency in Chennai do?', a: 'It helps baby care, kidswear and toy brands win the trust of Chennai families online. That means safety-first product pages, Tamil and English ads that follow platform rules, gifting plans for valaikaappu, naming ceremonies and first birthdays, quick-commerce listings for essentials and journeys that follow a child’s age.' },
       { q: 'Can Tiruppur kidswear makers build their own brand online?', a: 'Yes. Tiruppur makers start with real strengths in fabric and production. The gaps are usually brand story, photos on real babies, size guidance by age and height, and reviews. We start with a focused range, build those pieces and grow through Instagram, WhatsApp, your own store and marketplaces.' },
-      { q: 'Do toys sold online in India need a BIS mark?', a: 'Yes. Toys sold in India must meet BIS standards under the toy quality control order and carry the standard mark. Show it on product images and listings, along with age guidance. Rules are updated from time to time, so confirm the details for your products with a qualified advisor.' },
+      { q: 'Do toys sold online in India need a BIS mark?', a: 'Yes. Toys sold in India must meet BIS standards under the toy quality control order and carry the standard mark. Show it on product images and listings, along with age guidance. Standards and dates change, so check your exact range with a qualified advisor.' },
       { q: 'Why are my baby product ads being rejected?', a: 'Common reasons are copy that points at a person’s situation, such as pregnancy, targeting that relies on sensitive categories, or ads that appear aimed at children. Rewriting around the product, its materials and its value for the family, and using broad audiences, solves most cases.' },
       { q: 'Should baby brands advertise in Tamil?', a: 'For most Chennai and Tamil Nadu audiences, testing Tamil alongside English is worth it, especially for gifting and family occasions where grandparents and relatives are involved. Every Tamil line is written or checked by a fluent Tamil writer, so names of ceremonies and care instructions read correctly.' },
-      { q: 'How much does baby products marketing cost?', a: 'It depends on your catalogue, the channels you sell on, how much creative you need and whether marketplaces are included. Ad spend is paid directly to the platforms from your own account. We quote our fee after a free audit, as a fixed written quote before work starts.' },
+      { q: 'How is the fee for a baby brand in Chennai decided?', a: 'Scope decides it: the size of your range, the channels we manage, how much Tamil and English creative and gifting content each season needs, and whether FirstCry or quick commerce is included. Your ad budget is billed by the platforms straight to your own account. A free audit comes first, then a fixed written quote.' },
       { q: 'Can we meet you in person?', a: 'Yes. Our head office is in Chennai, and founders can meet the team by appointment for the audit walk-through, seasonal planning or monthly reviews. Makers in Tiruppur, Coimbatore and elsewhere in Tamil Nadu can visit or work with us remotely.' },
     ],
   },
@@ -395,7 +395,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Pet food, treats, grooming and accessories',
     h1: 'Pet Brand Marketing Agency in Chennai for *Second and Third Orders*',
-    intro: 'Magnus Path is a pet brand marketing agency in Chennai for pet food, treat, grooming and accessory brands. We create Tamil and English content with real Chennai pets, write pages that answer heat, humidity and tick-season questions, place your products on quick commerce across the city and set up WhatsApp reorder reminders. Meet the team at our Chennai head office.',
+    intro: 'Magnus Path is a pet brand marketing agency in Chennai for food, treat, grooming and accessory labels selling to pet parents. We create Tamil and English content with real Chennai pets, write pages that answer heat, humidity and tick-season questions, place your products on quick commerce across the city and set up WhatsApp reorder reminders. Meet the team at our Chennai head office.',
     icon: 'social',
     facts: ['Real pets, real Chennai homes', 'Quick commerce and reorders', 'Meet us at our Chennai head office'],
     headings: {
@@ -500,12 +500,12 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
       { label: 'LTV and CAC calculator for repeat-purchase brands', href: '/tools/ltv-cac-calculator/' },
     ],
     faqs: [
-      { q: 'What does a pet brand marketing agency in Chennai do?', a: 'It helps pet food, treat, grooming and accessory brands win and keep Chennai pet parents. The work covers Tamil and English creative with local pets, climate-aware product pages, quick-commerce and marketplace listings, Meta and Google ads, and WhatsApp reorder reminders, measured on repeat orders rather than first sales alone.' },
+      { q: 'What does a pet brand marketing agency in Chennai do?', a: 'It helps food, treat, grooming and accessory labels win and keep Chennai pet parents. The work covers Tamil and English creative with local pets, climate-aware product pages, quick-commerce and marketplace listings, Meta and Google ads, and WhatsApp reorder reminders, measured on repeat orders rather than first sales alone.' },
       { q: 'Should pet brands talk about Chennai’s climate in their marketing?', a: 'Yes. Heat, humidity and tick season shape what Chennai pet parents need, from cooling mats and lighter beds to airtight food storage and grooming. Pages and ads that answer these questions honestly feel more relevant than generic content, as long as they avoid medical claims.' },
       { q: 'Is quick commerce worth it for a pet brand in Chennai?', a: 'For food, litter and treats, often yes, because many reorders happen when a bag runs out. Blinkit, Zepto and Swiggy Instamart deliver across most of Chennai, but listings only show where your stock is placed. Larger packs and subscriptions usually do better on your own store and Amazon.' },
       { q: 'Can you make pet content in Tamil?', a: 'Yes. We write Tamil, English and Tamil typed in English letters, and every Tamil line is written or checked by a fluent Tamil writer. Local pets, homes and familiar places such as beach walks make content feel close to home for Chennai buyers.' },
       { q: 'What claims should pet brands avoid?', a: 'Avoid saying a product treats, cures or prevents any illness unless it is a veterinary product sold under those rules. Talk about ingredients, coat care, routine and taste instead, and send owners to a vet for medical questions. That keeps ads approved and protects trust.' },
-      { q: 'How much does pet brand marketing cost?', a: 'It depends on your range, the channels you sell on, how much content you need and whether marketplaces are included. Ad spend is paid directly to the platforms from your own account. Our fee is quoted after a free audit, as a fixed written quote before work starts.' },
+      { q: 'How much does pet brand marketing cost in Chennai?', a: 'We price the work after a free audit, based on the number of products, the shoots with local pets you need, the channels we run and whether quick commerce and marketplaces are in scope. Your ad budget is billed by the platforms straight to your own account. You get a fixed written quote before we begin.' },
       { q: 'Can we meet your team?', a: 'Yes. Our head office is in Chennai, and pet brand founders can meet us by appointment to plan shoots, review reorder numbers or prepare for festive and monsoon months. Brands elsewhere in Tamil Nadu and India work with us remotely.' },
     ],
   },
@@ -540,7 +540,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
       { title: 'Tamil and English ads', body: 'Meta catalogue and video ads plus Google Shopping in both languages, with Tamil written or checked by a fluent Tamil writer.' },
       { title: 'Brand story for makers', body: 'Pages and content about leather sourcing, tanning, stitching and the cluster your shoes come from, told honestly.' },
       { title: 'Instagram and WhatsApp selling', body: 'Shoppable posts, reels of shoes on feet on Chennai streets and WhatsApp chats for size help before purchase.' },
-      { title: 'Marketplace growth', body: 'Listings and ads on Myntra, Ajio, Amazon and Flipkart, with size charts that match your own store and consistent pricing.' },
+      { title: 'Marketplace growth', body: 'Myntra, Ajio, Amazon and Flipkart listings and ads, with size charts that match your own store and prices kept in line.' },
       { title: 'Climate and care content', body: 'Leather care for humid weather and rain, breathable styles for summer and monsoon-ready options.' },
     ],
     process: [
@@ -609,7 +609,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Seasons, rules and choosing an agency',
         paragraphs: [
-          'Pongal and Deepavali bring new footwear for the family, wedding seasons bring formal leather and ethnic sandals, and the back-to-school rush in June suits kids’ school shoes. The Aadi sales in July and August bring discount buyers. Plan feeds, creative and stock four to six weeks ahead. National rules apply too: BIS quality control orders now cover many footwear types, and listings need Legal Metrology and e-commerce consumer protection details. Confirm which standards apply to your products with a qualified advisor.',
+          'Pongal and Deepavali bring new footwear for the family, wedding seasons bring formal leather and ethnic sandals, and the back-to-school rush in June suits kids’ school shoes. The Aadi sales in July and August bring discount buyers. Plan feeds, creative and stock four to six weeks ahead. National rules apply too: BIS quality control orders now cover many footwear types, and listings need Legal Metrology and e-commerce consumer protection details. A qualified advisor can tell you which standards cover your range.',
           'When you compare a footwear marketing agency in Chennai with others, ask how it measures sales after exchanges and how it would present your factory story. Our team meets makers at the Chennai head office by appointment. Fees are quoted after a free audit, based on catalogue size, channels and creative needs.',
         ],
       },
@@ -629,8 +629,8 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
       { q: 'Can an Ambur or Ranipet export unit build its own footwear brand?', a: 'Yes. Export units already have skill in leather and production. To sell directly they need a focused range for Indian feet and weather, a brand story, on-foot photos, fit guidance and reviews. We start small with a few hero styles and grow through your store, Instagram and marketplaces.' },
       { q: 'How do we reduce size exchanges?', a: 'Show foot length in centimetres for every size, add width and fit notes, include a short measuring video and offer size help on WhatsApp before purchase. Track exchanges by style and size, and stop advertising pairs that keep coming back until their fit information is fixed.' },
       { q: 'Do leather shoes sell in Chennai’s climate?', a: 'Yes, with the right styles and advice. Breathable leather sandals and light shoes sell through the hot months, while formal leather sells for offices and weddings. During the monsoon, rain-ready styles lead, and leather buyers want care tips for humid and wet weather.' },
-      { q: 'Do footwear products need BIS compliance?', a: 'Many footwear types are now covered by BIS quality control orders, which set standards for materials and construction. Which ones apply depends on the product. Confirm the requirements for your range with a qualified advisor before listing, and keep licence details ready for marketplaces.' },
-      { q: 'How much does footwear marketing cost?', a: 'It depends on catalogue size, the channels you use, how much creative and photography you need and whether marketplaces are included. Ad spend is paid directly to the platforms from your own account. Our fee is quoted after a free audit, as a fixed written quote before work starts.' },
+      { q: 'Do footwear products need BIS compliance?', a: 'Many footwear types are now covered by BIS quality control orders, which set standards for materials and construction. Which ones apply depends on the product. Check your range with a qualified advisor before listing, and keep licence details ready for marketplaces.' },
+      { q: 'How much does footwear marketing cost in Chennai?', a: 'It is set by the number of styles, the photo and video work needed to show fit, the channels we manage and whether Myntra, Ajio and the other marketplaces are in scope. Your ad budget is billed by the platforms straight to your own account. A free audit comes first, then a fixed written quote.' },
       { q: 'Can we meet you in person?', a: 'Yes. Our head office is in Chennai, and footwear makers can meet the team by appointment to go through exchange data, plan a shoot or prepare for a season. We can also visit units in Ranipet, Ambur and Vaniyambadi when it helps.' },
     ],
   },
@@ -714,7 +714,7 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
         heading: 'BIS, labelling and e-commerce rules',
         paragraphs: [
           'Many electronics products sold in India must be registered under BIS’s Compulsory Registration Scheme before they can be sold, including power banks, adapters and several IT and audio products. Show the registration number where marketplaces ask for it. Legal Metrology rules require declarations such as MRP, net quantity, manufacturer or importer details and consumer care contacts, and the consumer protection rules for e-commerce expect country of origin, seller details and clear return terms.',
-          'These rules change, and we are not regulatory consultants, so confirm what applies with a qualified advisor. Our job is to make sure every listing, product page and ad shows the right details consistently, because a missing registration number can get a listing blocked in the very week it matters most.',
+          'These rules change, and we are not regulatory consultants, so have a qualified advisor confirm your list. Our part is to see that every listing, product page and ad shows the right details consistently, because a missing registration number can get a listing blocked in the very week it matters most.',
         ],
         bullets: [
           'BIS registration number on listings and packaging where required',
@@ -758,10 +758,10 @@ export const chennaiIndustryProductsPages: ServicePageData[] = [
     faqs: [
       { q: 'What does a consumer electronics marketing agency in Chennai do?', a: 'It helps gadget, accessory and appliance brands sell online in India, with a focus on Chennai and Tamil Nadu buyers. That covers spec-clear listings, Amazon and Flipkart ads, Google and Meta campaigns in Tamil and English, sale-season planning, BIS and labelling details on listings, and warranty and service pages.' },
       { q: 'Can a contract manufacturer launch its own electronics brand?', a: 'Yes. Plants around Sriperumbudur, Oragadam and Hosur already have quality systems and supply chains. To sell under their own name they need a few hero products with a clear advantage, strong listings, reviews and clear service terms. We help plan the launch and grow it channel by channel.' },
-      { q: 'Do electronics products need BIS registration to sell online?', a: 'Many do. Products such as power banks, adapters and several IT and audio items fall under BIS’s Compulsory Registration Scheme, and marketplaces ask for the registration number. Requirements change, so confirm what applies to your products with a qualified advisor before you list them.' },
+      { q: 'Which electronics need a BIS registration number on Indian listings?', a: 'Many do. Products such as power banks, adapters and several IT and audio items fall under BIS’s Compulsory Registration Scheme, and marketplaces ask for the registration number. The list grows over time, so have a qualified advisor check each model before it goes live.' },
       { q: 'Should electronics brands advertise in Tamil?', a: 'For Tamil Nadu buyers, yes, especially for home appliances and products bought by families. Tamil demo videos, FAQs and ads often face less competition than English ones. Every Tamil script is written or checked by a fluent Tamil writer, so specs and instructions stay accurate.' },
       { q: 'When should we plan for Deepavali sales?', a: 'Start six to eight weeks ahead. Choose lead models, plan stock and deals, build reviews and warm up ads before the sale opens, then check bids and budgets daily. In Chennai, also plan for the northeast monsoon, which can delay deliveries during the same weeks.' },
-      { q: 'How much does electronics marketing cost?', a: 'It depends on the number of models, the channels you sell on, how much video and creative you need and whether marketplace management is included. Ad spend is paid directly to the platforms from your own account. Our fee is quoted after a free audit, as a fixed written quote.' },
+      { q: 'How is the fee for an electronics brand in Chennai set?', a: 'We scope it after a free audit, looking at how many models you sell, which marketplaces and ad channels we manage, the Tamil and English video you need and how many sale windows you plan for. Your ad budget is billed by the platforms straight to your own account. You then get a fixed written quote.' },
       { q: 'Can we meet your team or have you visit our plant?', a: 'Yes. Our head office is in Chennai, and manufacturers can meet the team by appointment for the audit walk-through or sale planning. We can also visit plants in the Sriperumbudur, Oragadam and Hosur belt when it helps.' },
     ],
   },

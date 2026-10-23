@@ -116,6 +116,8 @@ export const industryHomeHealthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Supplement marketing agency in Chennai', href: '/chennai/supplement-marketing-agency/' },
+      { label: 'Supplement marketing agency in Bangalore', href: '/bangalore/supplement-marketing-agency/' },
       { label: 'LTV and CAC calculator for supplement brands', href: '/tools/ltv-cac-calculator/' },
       { label: 'Amazon account management for supplement sellers', href: '/amazon-account-management/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
@@ -250,6 +252,8 @@ export const industryHomeHealthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Home decor marketing agency in Chennai', href: '/chennai/home-decor-marketing-agency/' },
+      { label: 'Home decor marketing agency in Bangalore', href: '/bangalore/home-decor-marketing-agency/' },
       { label: 'Shopify development for furniture and decor stores', href: '/shopify-development/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce PPC and Google Shopping management', href: '/ecommerce-ppc-agency/' },
@@ -377,6 +381,8 @@ export const industryHomeHealthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Baby products marketing agency in Chennai', href: '/chennai/baby-products-marketing-agency/' },
+      { label: 'Baby products marketing agency in Bangalore', href: '/bangalore/baby-products-marketing-agency/' },
       { label: 'LTV and CAC calculator', href: '/tools/ltv-cac-calculator/' },
       { label: 'Ecommerce Meta ads agency in India', href: '/ecommerce-meta-ads-agency/' },
       { label: 'Amazon account management for baby care brands', href: '/amazon-account-management/' },

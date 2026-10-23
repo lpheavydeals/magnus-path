@@ -268,6 +268,12 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency in Bangalore', href: '/bangalore/skincare-marketing-agency/' },
+      { label: 'Supplement marketing agency in Bangalore', href: '/bangalore/supplement-marketing-agency/' },
+      { label: 'Pet brand marketing agency in Bangalore', href: '/bangalore/pet-brand-marketing-agency/' },
+      { label: 'Home decor marketing agency in Bangalore', href: '/bangalore/home-decor-marketing-agency/' },
+      { label: 'Baby products marketing agency in Bangalore', href: '/bangalore/baby-products-marketing-agency/' },
+      { label: 'Consumer electronics marketing agency in Bangalore', href: '/bangalore/electronics-marketing-agency/' },
       { label: 'Facebook advertising agencies in Bangalore', href: '/bangalore/facebook-advertising-agencies/' },
       { label: 'Ecommerce Meta ads agency in Bangalore', href: '/bangalore/ecommerce-meta-ads-agency/' },
       { label: 'Google Ads agency in Bangalore', href: '/bangalore/google-ads-agency/' },
