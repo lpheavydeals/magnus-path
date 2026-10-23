@@ -74,3 +74,17 @@ Same 12 pages again, `kind: 'industry'`, `twin: '<india slug>'`, hreflang throug
   jewellery buying habits (Dubai Gold, 18K/21K/22K), oud and Arabic perfume culture, Amazon.ae, Noon, Namshi, Talabat
   and quick-commerce, Ramadan, Eid, White Friday, Dubai Shopping Festival, National Day, COD and Tabby/Tamara BNPL,
   GCC expansion (KSA), AED quotes, delivered remotely from Chennai (no UAE office).
+
+## Chennai and Bangalore versions
+
+Same 12 pages as city location pages (India market, no `market`, no `twin` — same language and country, so they
+must stand on their own keyword instead of hreflang): `kind: 'location'` with a `local` block (city, areas, note) as in
+`chennai-meta.ts` / `bangalore-meta.ts`, breadcrumb `[{ label: 'Industries', href: '/industries/' }]`.
+- Chennai: slug `chennai/<slug>` (e.g. `chennai/skincare-marketing-agency`), primary keyword "<india keyword> in Chennai".
+  Head office in Chennai; meet in person. Local angle: Tamil and English creative, Tamil Nadu brands (T. Nagar retail,
+  Coimbatore/Tiruppur/Erode makers where relevant), Pongal, Deepavali, Aadi sales, wedding season, Chennai buyers.
+- Bangalore: slug `bangalore/<slug>`, primary keyword "<india keyword> in Bangalore", Bengaluru office; meet in person.
+  Local angle: funded D2C startups, Kannada and English creative, quick commerce density (Blinkit/Zepto/Instamart started
+  or are strong there), Koramangala/HSR/Indiranagar/Whitefield, Ugadi, Deepavali, Dasara, tech-savvy buyers.
+The India page owns the plain keyword; the city pages must not use it as a heading or anchor without the city name,
+and must link to the India page (e.g. "Skincare brands across India").
