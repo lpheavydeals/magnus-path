@@ -36,7 +36,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       { title: 'Classification check first', body: 'Before any copy is written we confirm with you whether each product is a listed complementary medicine, a food-type sports supplement or something else, because that decides which claims apply.' },
       { title: 'Indication-led ad creative', body: 'Meta, TikTok and Google ads built around the permitted indications on your listing, plus taste, format, dosage and routine, with each claim traced back to its source.' },
       { title: 'Product pages that show the label', body: 'Ingredients and amounts per serve, directions, warnings and the AUST L number where one applies, plus FAQs on who should speak to a GP or pharmacist first.' },
-      { title: 'Amazon AU and marketplaces', body: 'Listings, A+ content and Sponsored Products on Amazon AU, with eBay AU, Catch, Kogan and TikTok Shop added where your range and margins suit them.' },
+      { title: 'Amazon AU and marketplaces', body: 'Listings, A+ content and Sponsored Products on Amazon AU, with eBay AU, Kogan and TikTok Shop added where your range and margins suit them.' },
       { title: 'Subscriptions and refill reminders', body: 'Subscribe-and-save on Shopify with easy skip and pause, Afterpay on larger bundles, and emails and SMS timed to the servings left in each pack.' },
       { title: 'Creator briefs within the rules', body: 'Briefs that keep influencers on taste, routine and how they use the product, with clear ad disclosure and no personal health stories presented as results.' },
       { title: 'Seasonal planning', body: 'New Year, the cooler months, EOFY clearance in June, Father’s Day bundles in September, then Black Friday and Christmas, all on one calendar with stock ready early.' },
@@ -94,7 +94,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Amazon AU, TikTok Shop and pharmacy competition',
         paragraphs: [
-          'Australians compare supplements in pharmacy chains such as Chemist Warehouse, in supermarkets and online, so a direct brand competes with familiar names on price and trust. Amazon AU is a useful place to be found, particularly for sports nutrition and repeat purchases; strong listings, clear label images and genuine reviews matter more than bids. eBay AU, Catch and Kogan can move volume, and TikTok Shop suits creator-led launches, but every channel needs the same compliant wording.',
+          'Australians compare supplements in pharmacy chains such as Chemist Warehouse, in supermarkets and online, so a direct brand competes with familiar names on price and trust. Amazon AU is a useful place to be found, particularly for sports nutrition and repeat purchases; strong listings, clear label images and genuine reviews matter more than bids. eBay AU and Kogan can move volume, and TikTok Shop suits creator-led launches, but every channel needs the same compliant wording.',
           'Your own Shopify store remains the home of subscriptions, bundles and customer data. Keep AUD prices aligned across channels, show GST-inclusive prices, and offer Afterpay or Zip on bigger bundles where it helps people commit.',
           'Search matters as well. Many buyers type questions such as “plant or whey protein” or “what is in a multivitamin” into Google.com.au or an AI assistant before they shop. Careful ingredient guides that stay within your permitted claims can rank for those questions and be cited in AI answers, without turning into disguised advertising for a health benefit.',
         ],
@@ -130,7 +130,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       { q: 'What is the difference between a listed medicine and a sports supplement?', a: 'In broad terms, a listed complementary medicine is entered on the ARTG with an AUST L number, may only use permitted indications and is advertised under the TGA’s rules. Many protein powders and sports foods are regulated as foods under the Food Standards Code instead. Some ingredients or claims change the category, so confirm with a regulatory adviser.' },
       { q: 'Can influencers promote our supplements in Australia?', a: 'Yes, with care. Paid posts must be clearly identifiable as advertising under the AANA code. For listed medicines, the therapeutic goods advertising rules restrict testimonials and endorsements, including from people you pay or gift product to. Brief creators to show routine, taste and format, and review scripts before anything is filmed.' },
       { q: 'Why do our supplement ads get rejected on Meta or Google?', a: 'Usually because of claims or targeting. Ads that suggest a product treats a condition, focus on someone’s weight or body, use dramatic before-and-after images or name restricted ingredients are often rejected. Rewriting around permitted indications, ingredients, taste and routine, and running to adult audiences, fixes most cases.' },
-      { q: 'Should we sell on Amazon AU or only on our own store?', a: 'Most brands use both. Amazon AU helps buyers find and reorder you, while your own Shopify store holds subscriptions, bundles and customer data. Keep AUD prices and claims consistent across both, watch for unauthorised sellers, and add eBay AU, Catch, Kogan or TikTok Shop only where margins allow.' },
+      { q: 'Should we sell on Amazon AU or only on our own store?', a: 'Most brands use both. Amazon AU helps buyers find and reorder you, while your own Shopify store holds subscriptions, bundles and customer data. Keep AUD prices and claims consistent across both, watch for unauthorised sellers, and add eBay AU, Kogan or TikTok Shop only where margins allow.' },
       { q: 'Do you have an office in Australia?', a: 'No. Magnus Path is based in Chennai, with offices in Bengaluru and London, and we serve Australian brands remotely. The east coast is 4.5 hours ahead of India, or 5.5 hours in daylight saving, so calls suit your afternoon and replies usually reach you the same day.' },
     ],
   },
@@ -167,7 +167,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       { title: 'Pages that answer fit and freight', body: 'Dimensions, packed carton sizes, doorway and stair notes, materials, care, assembly time, anchoring hardware and delivery cost and timing by postcode.' },
       { title: 'Long-journey ads', body: 'Meta, Pinterest and Google campaigns that inspire first, then follow people who saved or viewed products with reviews, swatches and delivery dates.' },
       { title: 'Shopify, feeds and swatches', body: 'Collections by room and style, variants for sizes, fabrics and finishes, swatch requests and a Google Shopping feed with GST-inclusive AUD prices.' },
-      { title: 'Marketplaces where they fit', body: 'Amazon AU, eBay AU, Catch and Kogan for smaller homewares and flat-pack items, where fees and freight still leave a healthy margin.' },
+      { title: 'Marketplaces where they fit', body: 'Amazon AU, eBay AU and Kogan for smaller homewares and flat-pack items, where fees and freight still leave a healthy margin.' },
       { title: 'Seasonal campaigns', body: 'EOFY, spring refreshes, Click Frenzy, Black Friday, Christmas hosting, Boxing Day and summer outdoor living on one calendar, with stock and freight booked early.' },
     ],
     process: [
@@ -264,7 +264,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       { q: 'How much does home decor marketing cost in Australia?', a: 'We quote a monthly fee in AUD after a free audit. It depends on catalogue size, the channels you use, how much creative and photography support you need and whether store work is included. Ad spend is paid directly to Meta, Google, Pinterest or the marketplaces from your accounts, and the quote lists scope and exclusions.' },
       { q: 'How should we show delivery costs for bulky furniture?', a: 'Show an estimate by postcode on the product page instead of revealing it only at checkout, and say plainly which areas you deliver to. Zone-based charges for large items are usually clearer than inflated product prices. State delivery times, whether the courier carries items inside and how damage claims are handled.' },
       { q: 'Do toppling furniture rules affect our marketing?', a: 'They can. Mandatory requirements for toppling furniture cover stability and warning labels for items such as chests of drawers and bookcases, with a transition period. Product pages should show anchoring hardware and warnings, and ads should never show unsafe use. Confirm which requirements apply to each product with a qualified adviser.' },
-      { q: 'Should furniture brands sell on Amazon AU, eBay or Catch?', a: 'Smaller homewares and flat-pack items often sell well there. Large furniture depends on each marketplace’s bulky delivery options and your margin after fees and freight. Many brands use marketplaces for smaller lines and keep high-value pieces on their own store, where they control delivery promises and customer contact.' },
+      { q: 'Should furniture brands sell on Amazon AU or eBay?', a: 'Smaller homewares and flat-pack items often sell well there. Large furniture depends on each marketplace’s bulky delivery options and your margin after fees and freight. Many brands use marketplaces for smaller lines and keep high-value pieces on their own store, where they control delivery promises and customer contact.' },
       { q: 'Is Pinterest worth it for Australian decor brands?', a: 'Often, yes. Pinterest is built around saving ideas for rooms, and organic boards with good room photos can bring steady visits. Pinterest ads run in Australia and suit inspiration-led campaigns, though Meta and Google Shopping usually carry most of the paid budget for furniture and homewares.' },
       { q: 'When should we start EOFY and Christmas campaigns?', a: 'Plan six to eight weeks ahead for furniture, because stock and freight need lead time and buyers decide early. Smaller homewares and gifting can start later. Have room sets, landing pages and delivery cut-off dates ready before ads begin, especially before Christmas when couriers are at their busiest.' },
     ],
@@ -303,7 +303,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       { title: 'Life-stage email and SMS', body: 'With consent and the Privacy Act in mind, flows that suggest the next nappy size, clothing size or toy stage at the right moment.' },
       { title: 'Subscriptions for essentials', body: 'Subscribe-and-save for nappies, wipes, baby wash and cream, with reminders timed to how quickly a family gets through each pack.' },
       { title: 'Gifting and baby showers', body: 'Gift sets, hampers, wrapping and landing pages for baby showers, first birthdays, Christmas and presents sent by grandparents interstate.' },
-      { title: 'Amazon AU and marketplaces', body: 'Amazon AU listings and sponsored ads for essentials and toys, with eBay AU, Catch, Kogan or TikTok Shop where your range and margins suit them.' },
+      { title: 'Amazon AU and marketplaces', body: 'Amazon AU listings and sponsored ads for essentials and toys, with eBay AU, Kogan or TikTok Shop where your range and margins suit them.' },
     ],
     process: [
       { title: 'Audit pages, claims and audiences', body: 'We review product pages, safety details, past ads, audiences and marketplace listings, and flag anything that could break platform rules or the AANA codes.' },
@@ -425,7 +425,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
     includes: [
       { title: 'Store built for repeat buying', body: 'Shopify or WooCommerce with pack sizes by pet weight, subscribe-and-save, one-tap reorders, Afterpay on larger orders and feeding guides on every product.' },
       { title: 'Meta and TikTok ads with real pets', body: 'Creative built around real dogs and cats eating, playing and being groomed, with customer videos and creator content tested weekly against purchases.' },
-      { title: 'Amazon AU and marketplaces', body: 'Listings, A+ content and sponsored ads on Amazon AU, with eBay AU, Catch, Kogan and TikTok Shop where margins and delivery costs allow.' },
+      { title: 'Amazon AU and marketplaces', body: 'Listings, A+ content and sponsored ads on Amazon AU, with eBay AU, Kogan and TikTok Shop where margins and delivery costs allow.' },
       { title: 'Label-led product pages', body: 'Ingredient lists, the nutrient analysis panel, feeding amounts by weight, life-stage suitability and where key ingredients come from, shown clearly.' },
       { title: 'Breed, size and life-stage content', body: 'Guides, collections and ads for puppies, kittens, adult and senior pets and small and large breeds, written for Google.com.au and AI answers.' },
       { title: 'Reorder and subscription journeys', body: 'Email and SMS reminders timed to how long a pack lasts, plus win-back offers for lapsed buyers, measured on repeat rate.' },
@@ -491,7 +491,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Amazon AU, marketplaces and your own store',
         paragraphs: [
-          'Amazon AU is strong for pet products people research and compare: premium food, treats, grooming tools, beds and accessories. Variations by size and flavour, A+ content and a steady flow of genuine reviews matter as much as bids. eBay AU, Catch, Kogan and TikTok Shop can add reach, but watch fees and the cost of shipping heavy items.',
+          'Amazon AU is strong for pet products people research and compare: premium food, treats, grooming tools, beds and accessories. Variations by size and flavour, A+ content and a steady flow of genuine reviews matter as much as bids. eBay AU, Kogan and TikTok Shop can add reach, but watch fees and the cost of shipping heavy items.',
           'Your own store is where you keep the customer relationship and the data for reminders. Subscriptions, bundles, new launches and loyalty offers belong there. Keep AUD prices consistent across channels so you never undercut yourself.',
           'TikTok and Instagram creators with dogs and cats are a natural fit for this category. Brief them to show real feeding, play and grooming, label paid posts clearly as advertising, and keep them away from claims about health outcomes. With permission, their clips can then be reused as ads and on product pages.',
         ],
@@ -556,7 +556,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
       { title: 'Fit-first product pages', body: 'Size charts by foot length in centimetres with AU, UK, US and EU sizes, width and fit notes, sole and upper details and simple how-to-measure help.' },
       { title: 'Catalogue and video ads on Meta', body: 'Catalogue ads synced with live stock by size, plus on-foot videos, walking shots and creator try-ons, judged on purchases after exchanges.' },
       { title: 'Google Shopping and search', body: 'Feeds with size, colour, gender, age group and material, GST-inclusive AUD prices and search campaigns for terms such as “wide fit work boots”.' },
-      { title: 'Amazon AU, TikTok Shop and marketplaces', body: 'Listings with accurate size charts and images on Amazon AU, eBay AU and Catch, plus TikTok Shop for creator-led drops.' },
+      { title: 'Amazon AU, TikTok Shop and marketplaces', body: 'Listings with accurate size charts and images on Amazon AU and eBay AU, plus TikTok Shop for creator-led drops.' },
       { title: 'Exchange and return reporting', body: 'Exchanges, refunds and their reasons reported by style, size and campaign, so ads stop pushing shoes that keep coming back.' },
       { title: 'Launch and season calendar', body: 'Sneaker drops, summer sandals, winter boots, back-to-school in late January, EOFY, Father’s Day and Boxing Day planned on one calendar.' },
     ],
@@ -622,7 +622,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
         paragraphs: [
           'Footwear catalogues are large, so catalogue ads on Meta and Google Shopping turn the range into ads automatically, but only if the feed is clean: size, colour, gender, age group, material and GST-inclusive AUD prices filled in, and sold-out sizes removed quickly. Short walking clips, sole close-ups and creator try-ons usually outperform still images.',
           'Search content supports all of this. Guides such as how to measure your foot at home, what width means on a shoe label or how to choose school shoes rank on Google.com.au, get quoted by AI assistants and send buyers to the right size chart before they order.',
-          'Amazon AU suits everyday, sports and kids’ shoes, eBay AU and Catch can move older stock, and TikTok Shop works well for creator-led sneaker and sandal launches. Department stores such as Myer shape what buyers expect on price and presentation. Keep the same size chart, photos and fit notes on every channel, and offer Afterpay, which many Australian shoppers look for on higher-priced pairs.',
+          'Amazon AU suits everyday, sports and kids’ shoes, eBay AU can move older stock, and TikTok Shop works well for creator-led sneaker and sandal launches. Department stores such as Myer shape what buyers expect on price and presentation. Keep the same size chart, photos and fit notes on every channel, and offer Afterpay, which many Australian shoppers look for on higher-priced pairs.',
         ],
       },
       {
@@ -712,7 +712,7 @@ export const auIndustryProductsPages: ServicePageData[] = [
         paragraphs: [
           'Buying a gadget online is research. Australian shoppers compare battery life, connectivity, wattage and compatibility, read reviews, watch videos and check that the product has the right plug and compliance marks before they commit. Many start with a question, such as which earbuds suit calls on a noisy train or which charger is safe for a particular phone, rather than with a brand name.',
           'A consumer electronics marketing agency has to answer those questions better than the products listed next to yours. Familiar retailers such as JB Hi-Fi set expectations on price, range and after-sales help, so a direct brand needs clear specs, honest comparisons, proof from real users and support information that is easy to find.',
-          'Marketplaces carry much of the volume. Amazon AU is often the first place people compare gadgets, with eBay AU, Kogan and Catch also important in some categories. Your own store still matters for the full range, bundles, support content and brand searches on Google.com.au.',
+          'Marketplaces carry much of the volume. Amazon AU is often the first place people compare gadgets, with eBay AU and Kogan also important in some categories. Your own store still matters for the full range, bundles, support content and brand searches on Google.com.au.',
         ],
       },
       {

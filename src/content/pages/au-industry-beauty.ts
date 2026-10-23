@@ -114,7 +114,7 @@ export const auIndustryBeautyPages: ServicePageData[] = [
       {
         heading: 'Your store, Amazon AU and TikTok Shop',
         paragraphs: [
-          'Amazon.com.au is a regular stop for buyers who want quick delivery and plenty of reviews in one place, and TikTok Shop suits products that look good on camera, such as textures, swatches and routines. eBay AU and Catch can move older lines, though they rarely build a brand. Each listing needs the same ingredient detail as your own page, with GST-inclusive AUD prices that do not undercut your store.',
+          'Amazon.com.au is a regular stop for buyers who want quick delivery and plenty of reviews in one place, and TikTok Shop suits products that look good on camera, such as textures, swatches and routines. eBay AU can move older lines, though they rarely build a brand. Each listing needs the same ingredient detail as your own page, with GST-inclusive AUD prices that do not undercut your store.',
           'Your website remains the home of routines, bundles, subscriptions and customer data. Wider retail ranging can come later, and a strong direct channel is useful evidence of demand when that conversation starts.',
         ],
       },

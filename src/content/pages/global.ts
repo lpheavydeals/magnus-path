@@ -235,7 +235,7 @@ export const globalPages: ServicePageData[] = [
       {
         heading: 'What an ecommerce marketing agency should cover for Australian stores',
         paragraphs: [
-          'A good ecommerce marketing agency looks at the whole business, not one channel. Most Australian D2C brands sell through their own Shopify store and Amazon.com.au, sometimes with Catch or eBay alongside. Traffic comes from Meta, Google, organic search, email and, increasingly, AI answers, and each channel affects the others.',
+          'A good ecommerce marketing agency looks at the whole business, not one channel. Most Australian D2C brands sell through their own Shopify store and Amazon.com.au, sometimes with eBay or Kogan alongside. Traffic comes from Meta, Google, organic search, email and, increasingly, AI answers, and each channel affects the others.',
           'The store itself needs local detail. Prices should be shown in AUD including GST, delivery costs and times should be clear before checkout, and buy now, pay later options such as Afterpay, Zip or Klarna should be available if your customers use them. Shipping rates from Australia Post, Sendle or a courier should match what actually arrives at the door.',
           'The trading calendar is local too. Click Frenzy, EOFY sales in June, Black Friday, Cyber Monday and Boxing Day each need landing pages, stock, ad budgets and email ready weeks ahead, and winter ranges launch while the northern hemisphere is heading into summer.',
         ],
@@ -277,6 +277,12 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency Australia', href: '/australia/skincare-marketing-agency/' },
+      { label: 'Haircare marketing agency Australia', href: '/australia/haircare-marketing-agency/' },
+      { label: 'Jewellery marketing agency Australia', href: '/australia/jewellery-marketing-agency/' },
+      { label: 'Supplement marketing agency Australia', href: '/australia/supplement-marketing-agency/' },
+      { label: 'Home decor marketing agency Australia', href: '/australia/home-decor-marketing-agency/' },
+      { label: 'Pet brand marketing agency Australia', href: '/australia/pet-brand-marketing-agency/' },
       { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
       { label: 'Facebook advertising agencies in Australia', href: '/australia/facebook-advertising-agencies/' },
       { label: 'Facebook ads agency in Australia', href: '/australia/facebook-ads-agency/' },
@@ -416,6 +422,12 @@ export const globalPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency in Dubai', href: '/uae/skincare-marketing-agency-dubai/' },
+      { label: 'Perfume marketing agency in Dubai', href: '/uae/perfume-marketing-agency-dubai/' },
+      { label: 'Jewellery marketing agency in Dubai', href: '/uae/jewellery-marketing-agency-dubai/' },
+      { label: 'Cosmetics marketing agency in Dubai', href: '/uae/cosmetics-marketing-agency-dubai/' },
+      { label: 'Supplement marketing agency in Dubai', href: '/uae/supplement-marketing-agency-dubai/' },
+      { label: 'Home decor marketing agency in Dubai', href: '/uae/home-decor-marketing-agency-dubai/' },
       { label: 'Ecommerce sale calendar 2027', href: '/resources/sale-calendar/' },
       { label: 'Meta ads agency in Sharjah', href: '/uae/meta-ads-agency-sharjah/' },
       { label: 'Meta ads agency in Abu Dhabi', href: '/uae/meta-ads-agency-abu-dhabi/' },
