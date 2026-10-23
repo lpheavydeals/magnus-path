@@ -104,14 +104,14 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
         heading: 'Ramadan, both Eids and the rest of the year',
         paragraphs: [
           'During Ramadan, meals move to suhoor and iftar, working hours shorten and many people train late at night. Interest turns to hydration, gentle daily vitamins and protein that fits a short eating window. The tone should be practical and respectful, with no dieting angles while people fast, and ad schedules shift later into the evening when browsing peaks.',
-          'Eid al-Fitr and Eid al-Adha bring family gatherings and then a return to routine. Back to school in late August suits children’s vitamins and family packs, White Friday in November rewards bundles, and UAE National Day on 2 December can carry an Arabic-led story if it fits your brand. Summer is quieter as many families travel, which makes it a sensible time to fix product pages and build refill flows.',
+          'Both Eids, al-Fitr and al-Adha, bring family gatherings and then a return to routine. Back to school in late August suits children’s vitamins and family packs, White Friday in November rewards bundles, and UAE National Day on 2 December can carry an Arabic-led story if it fits your brand. Summer is slower, with many families abroad, so it suits fixing product pages and building refill flows.',
         ],
       },
       {
         heading: 'Marketplaces, quick commerce, social and your own store',
         paragraphs: [
           'Many Abu Dhabi shoppers check Amazon.ae and Noon before buying, so listings need clear label photos, an ingredient breakdown and pack-size variations. Talabat and Careem quick commerce suit bars, electrolytes and gummies bought on impulse after a session. Instagram is where people research a brand, while Snapchat and TikTok reach younger Emirati audiences quickly, often through Arabic-speaking creators.',
-          'Your own store holds subscriptions, bundles and customer data. Cash on delivery is still common, so we report results on delivered, paid orders rather than placed ones, and we show Tabby and Tamara instalments on larger family bundles. First-time buyers are invited to opt in to WhatsApp refill reminders.',
+          'Subscriptions, bundles and customer data sit on your own store. Cash on delivery is still common, so we report results on orders that were delivered and paid for, not just placed, and we show Tabby and Tamara instalments on larger family bundles. First-time buyers are invited to opt in to WhatsApp refill reminders.',
         ],
       },
       {
@@ -124,8 +124,8 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Working with a supplement marketing agency in Abu Dhabi remotely',
         paragraphs: [
-          'Magnus Path has no office in the UAE. Our head office is in Chennai, with further offices in Bengaluru and London, and your account is run from Chennai. UAE time is 1.5 hours behind India, so our working days overlap almost entirely, and reviews happen over video rather than in person.',
-          'When you compare any supplement marketing agency in Abu Dhabi, ask three questions: how it checks claims against your label, who writes the Arabic creative, and whether it reports on delivered orders. Our fee is quoted in AED after a free audit, and ad spend is paid directly to each platform from your own accounts.',
+          'Magnus Path has no office in the UAE. Our head office is in Chennai, with further offices in Bengaluru and London, and your account is run from Chennai. UAE time is 1.5 hours behind India, so nearly all of our working hours coincide, and reviews happen over video rather than in person.',
+          'Before you choose a supplement marketing agency in Abu Dhabi, ask three questions: how it checks claims against your label, who writes the Arabic creative, and whether it reports on delivered orders. Our fee is quoted in AED after a free audit, and ad spend is paid directly to each platform from your own accounts.',
         ],
       },
     ],
@@ -140,12 +140,12 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       uaeHubLink,
     ],
     faqs: [
-      { q: 'What does a supplement marketing agency in Abu Dhabi do?', a: 'It plans and runs the marketing that sells vitamins, protein and sports nutrition online in the capital: claim-checked ads in Arabic and English, Amazon.ae and Noon listings, quick-commerce placement and refill reminders. The aim is a household that keeps reordering, not a single discounted first order.' },
-      { q: 'Do supplements need registration before they are advertised in Abu Dhabi?', a: 'Generally, yes. Supplements are usually registered with the relevant federal authority before sale, and some categories may also involve the Abu Dhabi Department of Health or ADAFSA. Requirements depend on the product and change over time, so confirm your status with a distributor or adviser. We schedule launches around the date you confirm.' },
-      { q: 'Should supplement ads in Abu Dhabi run in Arabic or English?', a: 'Usually both, with Arabic leading for Emirati audiences and English versions for expat buyers. We write the two side by side rather than translating at the end, and a fluent Arabic writer drafts or checks every Arabic headline, caption and creator script. Each version should open a product page in the same language.' },
-      { q: 'How should we market supplements during Ramadan?', a: 'Shift the message to suhoor and iftar routines, hydration and late-evening training, and keep the tone calm, with no dieting angles while people fast. Move ad schedules later into the night, and prepare Eid bundles and post-Eid fitness content in advance so campaigns are ready when routines return.' },
+      { q: 'What does a supplement marketing agency in Abu Dhabi do?', a: 'It handles the marketing that sells vitamins, protein and sports nutrition online in the capital: claim-checked ads in Arabic and English, Amazon.ae and Noon listings, quick-commerce placement and refill reminders. The aim is a household that keeps reordering, not a single discounted first order.' },
+      { q: 'Do supplements need registration before they are advertised in Abu Dhabi?', a: 'Generally, yes. Supplements are usually registered with the relevant federal authority before sale, and some categories may also involve the Abu Dhabi Department of Health or ADAFSA. Requirements vary from product to product and are revised now and then, so confirm your status with a distributor or adviser. We schedule launches around the date you confirm.' },
+      { q: 'Should supplement ads in Abu Dhabi run in Arabic or English?', a: 'Usually both, with Arabic leading for Emirati audiences and English versions for expat buyers. We write the two together rather than translating once the English is finished, and a fluent Arabic writer drafts or checks every Arabic headline, caption and creator script. Each version should open a product page in the same language.' },
+      { q: 'How should we market supplements during Ramadan?', a: 'Shift the message to suhoor and iftar routines, hydration and late-evening training, and keep the tone calm, with no dieting angles while people fast. Move ad schedules later into the night, and prepare Eid bundles and post-Eid fitness content early, so campaigns are live as routines return.' },
       { q: 'Is Al Ain worth targeting separately?', a: 'Often, yes. Al Ain has its own villa communities, a strong Emirati base and longer delivery distances from most warehouses. Running it as a separate audience lets you check delivery promises, test Arabic-only creative and see results that would otherwise be hidden inside the capital’s numbers.' },
-      { q: 'How much does supplement marketing in Abu Dhabi cost?', a: 'It depends on the channels, the number of products, how much Arabic and English creative you need and whether marketplace management is included. We do not publish prices. After a free audit we send a written AED quote listing scope, timeline and exclusions, and ad spend is paid directly to the platforms.' },
+      { q: 'How much does supplement marketing in Abu Dhabi cost?', a: 'It depends on the channels, the number of products, how much Arabic and English creative you need and whether marketplace management is included. We do not publish prices. Following a free audit, you get a written AED quote listing scope, timeline and exclusions, and the platforms bill ad spend to your own accounts.' },
       { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office anywhere in the UAE. Supplement brands in Abu Dhabi are served remotely from our Chennai head office, and every meeting is a video call. With the UAE 1.5 hours behind India, our working days run almost side by side, so same-day replies are realistic.' },
     ],
   },
@@ -215,7 +215,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
         heading: 'What a home decor marketing agency in Abu Dhabi needs to understand',
         paragraphs: [
           'Homes in the capital are often larger than shoppers elsewhere in the UAE expect. Many Emirati families live in villas in Khalifa City, Mohammed Bin Zayed City, Al Shamkha or Al Ain, with several living areas, a formal majlis and room for extended family. Government and corporate employees on stable contracts also move into new apartments and townhouses on Al Reem Island, Yas Island and Al Raha. A home decor marketing agency in Abu Dhabi plans for both: the villa that needs a full room set and the apartment that needs one well-chosen sofa.',
-          'Large retailers such as IKEA and Home Centre shape what shoppers expect on range, price and delivery. A smaller or specialist brand wins by being clearer about materials, finish and craftsmanship, by showing products at real scale, and by answering the delivery question before anyone has to ask it.',
+          'Big-box retailers like IKEA and Home Centre shape what shoppers expect on range, price and delivery. A smaller or specialist brand wins by being clearer about materials, finish and craftsmanship, by showing products at real scale, and by answering the delivery question before anyone has to ask it.',
         ],
       },
       {
@@ -257,7 +257,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
         heading: 'Seasons, and working with a home decor marketing agency in Abu Dhabi remotely',
         paragraphs: [
           'Beyond Ramadan and Eid, the cooler months bring demand for terrace and garden furniture, UAE National Day on 2 December suits locally inspired designs, and White Friday in November rewards bundles. Summer is quieter as many families travel, though people moving home before the school year starts in late August still furnish in July and August.',
-          'Magnus Path has no office in the UAE; your campaigns are run from our Chennai head office, and reviews happen over video. UAE time is 1.5 hours behind India, so our days overlap almost entirely. As a home decor marketing agency in Abu Dhabi working remotely, we quote our fee in AED after a free audit, and ad spend is paid directly to each platform.',
+          'Magnus Path has no office in the UAE; your campaigns are run from our Chennai head office, and reviews happen over video. UAE time is 1.5 hours behind India, so our hours and yours largely coincide. As a home decor marketing agency in Abu Dhabi working remotely, we quote our fee in AED after a free audit, and ad spend is paid directly to each platform.',
         ],
       },
     ],
@@ -277,7 +277,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       { q: 'When should furniture brands start Ramadan and Eid campaigns?', a: 'Work back from your lead times. If a sofa takes four weeks to make and deliver, the campaign has to run well before that, so most brands start several weeks ahead of Ramadan. Smaller items such as linen, lanterns and serveware can follow closer to the date.' },
       { q: 'Should large furniture be sold on Amazon.ae and Noon?', a: 'Usually not first. Marketplaces suit smaller, easily shipped items such as cushions, rugs, lighting and tableware. Large or made-to-order furniture sells better on your own store, where you control room photos, delivery booking and assembly details. Many brands use marketplaces to introduce shoppers to the brand.' },
       { q: 'How should we handle delivery to Al Ain in our ads?', a: 'State it honestly. If you deliver to Al Ain on certain days or with a longer window, say so in the ad and on the product page, and run Al Ain as its own audience. If you cannot deliver there reliably yet, exclude it from targeting rather than risk refused orders.' },
-      { q: 'How much does home decor marketing in Abu Dhabi cost?', a: 'It depends on catalogue size, the number of channels, how much photo and video creative is needed and whether feeds or product pages need rebuilding. We do not list prices. After a free audit you receive a written AED quote with scope, timeline and exclusions; ad spend is paid directly to the platforms.' },
+      { q: 'How much does home decor marketing in Abu Dhabi cost?', a: 'It depends on catalogue size, the number of channels, how much photo and video creative is needed and whether feeds or product pages need rebuilding. We do not list prices. After a free audit you receive a written AED quote with scope, timeline and exclusions; the platforms bill ad spend to your own accounts.' },
       { q: 'Do you meet clients in Abu Dhabi?', a: 'No. We have no office in the UAE and do not hold in-person meetings there. Home decor brands in Abu Dhabi work with our Chennai head office over video and WhatsApp. UAE time is 1.5 hours behind India, so our hours overlap with yours for almost the whole day.' },
     ],
   },
@@ -352,14 +352,14 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Arabic labelling, conformity and what to confirm',
         paragraphs: [
-          'Products for babies and children are closely watched in the UAE. In general, toys and many children’s products fall under federal conformity schemes run by the Ministry of Industry and Advanced Technology (MOIAT), labels are expected to include Arabic, and baby food and formula follow food safety rules, which in the emirate involve the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA). Car seats, cots and electrical items may have their own standards. The exact requirements depend on the product and change over time, so confirm them with your distributor or a compliance adviser. We are not lawyers.',
+          'Products for babies and children are closely watched in the UAE. In general, toys and many children’s products fall under federal conformity schemes run by the Ministry of Industry and Advanced Technology (MOIAT), labels are expected to include Arabic, and baby food and formula follow food safety rules, which in the emirate involve the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA). Car seats, cots and electrical items may have their own standards. The details vary by product and are revised from time to time, so check them with your distributor or a compliance adviser. We are not lawyers.',
           'Our part is to keep marketing in step with the paperwork:',
         ],
         bullets: [
           'No product advertised until you confirm it may be sold in the UAE',
           'Age guidance, warnings and safety notes shown on the product page exactly as on the pack',
           'No wording that suggests a health or development benefit the label does not support',
-          'Arabic and English copy that say the same thing, written or checked by a fluent Arabic writer',
+          'Arabic and English wording that makes identical statements, written or checked by a fluent Arabic writer',
         ],
       },
       {
@@ -379,7 +379,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Seasons: Ramadan, Eid, back to school and summer',
         paragraphs: [
-          'Ramadan changes the household rhythm, with evenings busy and browsing moving late into the night. Eid al-Fitr and Eid al-Adha bring new clothes and gifts for children, and family visits that lift demand for gift sets. Back to school in late August suits lunch boxes, bottles, bags and nursery essentials. White Friday in November rewards bulk packs of nappies and wipes, and UAE National Day on 2 December brings themed children’s clothing and accessories.',
+          'Ramadan changes the household rhythm, with evenings busy and browsing moving late into the night. Both Eids, al-Fitr and al-Adha, bring new clothes and gifts for children, and family visits that lift demand for gift sets. Back to school in late August suits lunch boxes, bottles, bags and nursery essentials. White Friday in November rewards bulk packs of nappies and wipes, and UAE National Day on 2 December brings themed children’s clothing and accessories.',
           'Summer is quieter as many families travel abroad, so plan lighter spend, focus on refills from existing customers and use the time to fix listings and set up life-stage reminders.',
         ],
       },
@@ -393,8 +393,8 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Payments, delivery and working with us remotely',
         paragraphs: [
-          'Cash on delivery remains common for baby essentials, and refused parcels hurt margins on low-priced first orders. Tabby and Tamara instalments help with prams, car seats and cots. We report results on delivered, paid orders, split by payment method, so you can see which offers truly pay back.',
-          'Magnus Path has no office in the UAE. As a baby products marketing agency in Abu Dhabi clients work with remotely, we run accounts from our Chennai head office, and UAE time is 1.5 hours behind India, so our days overlap almost completely. Meetings are by video. Our fee is quoted in AED after a free audit, and ad spend is paid directly to each platform.',
+          'Cash on delivery remains common for baby essentials, and a refused parcel can wipe out the margin on a small first order. Tabby and Tamara instalments help with prams, car seats and cots. We report results on delivered, paid orders, split by payment method, so you can see which offers truly pay back.',
+          'Magnus Path has no office in the UAE. As a baby products marketing agency in Abu Dhabi clients work with remotely, we run accounts from our Chennai head office, and UAE time is 1.5 hours behind India, so most of our day is shared. Meetings are by video. Our fee is quoted in AED after a free audit, and ad spend is paid directly to each platform.',
         ],
       },
     ],
@@ -405,7 +405,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       adHomeDecor,
       adFootwear,
       { label: 'Meta ads agency in Abu Dhabi for Instagram and WhatsApp', href: '/uae/meta-ads-agency-abu-dhabi/' },
-      { label: 'Amazon.ae and Noon agency for baby essentials', href: '/uae/amazon-noon-agency/' },
+      { label: 'Marketplace management on Amazon.ae and Noon for baby brands', href: '/uae/amazon-noon-agency/' },
       uaeHubLink,
     ],
     faqs: [
@@ -414,7 +414,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       { q: 'How do we reach people buying newborn gifts?', a: 'Treat them as a separate audience. Show gift sets and hampers with wrapping, offer a short message in Arabic or English, and state delivery times to the family home clearly. Target relatives and friends with gifting creative rather than the everyday product ads you show to parents.' },
       { q: 'Should baby brands sell through quick commerce in Abu Dhabi?', a: 'For essentials, often yes. Nappies, wipes and formula are frequently needed at short notice, and Talabat and Careem quick commerce can deliver within the hour where your distributor holds stock. Larger items and gift sets usually sell better through your own store and marketplaces.' },
       { q: 'Should we advertise in Arabic or English?', a: 'Both, aimed at different parents. Emirati families often respond to Arabic-led creative, while expat parents may prefer English. We write the two versions side by side, with Arabic drafted or checked by a fluent Arabic writer, and send each to a product page in the same language.' },
-      { q: 'How much does baby products marketing in Abu Dhabi cost?', a: 'It depends on the number of products and channels, how much creative is needed in each language, and whether marketplace management is included. We do not publish prices. After a free audit we send a written quote in AED listing scope, timeline and exclusions; ad spend goes directly to the platforms.' },
+      { q: 'How much does baby products marketing in Abu Dhabi cost?', a: 'It depends on the number of products and channels, how much creative is needed in each language, and whether marketplace management is included. We do not publish prices. A free audit comes first; the written AED quote that follows sets out scope, timeline and exclusions; the platforms bill ad spend to you directly.' },
       { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no UAE office and does not meet clients in person there. Baby brands in Abu Dhabi are served remotely from our Chennai head office over video, email and WhatsApp. Because the UAE is only 1.5 hours behind India, our working hours overlap closely with yours.' },
     ],
   },
@@ -490,7 +490,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Import and pet food rules, described simply',
         paragraphs: [
-          'Pet food and treats brought into the UAE generally go through import controls at federal level, handled by the Ministry of Climate Change and Environment, and feed and pet food in the emirate may also fall under the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA). Labels are normally expected to carry Arabic, and some ingredients or countries of origin face extra checks. Grooming products and supplements for pets can follow different routes again. These rules change, so confirm the position for each product with your importer or a regulatory adviser. We are not lawyers.',
+          'Pet food and treats brought into the UAE generally go through import controls at federal level, handled by the Ministry of Climate Change and Environment, and feed and pet food in the emirate may also fall under the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA). Labels are normally expected to carry Arabic, and some ingredients or countries of origin face extra checks. Grooming products and supplements for pets can follow different routes again. These rules change, so check each product’s position with your importer or a regulatory adviser. We are not lawyers.',
           'In marketing terms, we keep three habits: we never advertise a product before you confirm it can be sold and delivered, we keep claims to what the label supports, and we avoid any wording that sounds like veterinary treatment.',
         ],
       },
@@ -505,7 +505,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
         heading: 'Marketplaces, quick commerce and your own store',
         paragraphs: [
           'Many owners buy pet food on Amazon.ae and Noon, comparing ingredients, bag sizes and reviews. Listings need clear feeding tables, ingredient photos and honest descriptions of who the food suits. Talabat and Careem quick commerce matter for food and litter bought at short notice, so check which dark stores carry your range and keep it in stock.',
-          'Your own store is where subscriptions, bundles and customer data live. Subscribe-and-save with an easy pause, multi-pet bundles for villa households and WhatsApp reminders sent with consent all lift repeat orders. Keep AED prices aligned across channels so a marketplace never undercuts your subscription offer.',
+          'Subscriptions, multi-pet bundles and customer records belong on your own store. Subscribe-and-save with an easy pause, multi-pet bundles for villa households and WhatsApp reminders sent with consent all lift repeat orders. Keep AED prices aligned across channels so a marketplace never undercuts your subscription offer.',
         ],
       },
       {
@@ -537,7 +537,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       adBaby,
       adHomeDecor,
       { label: 'Catalogue and sales ads for online stores in Abu Dhabi', href: '/uae/ecommerce-meta-ads-agency-abu-dhabi/' },
-      { label: 'Amazon.ae and Noon agency for pet food listings', href: '/uae/amazon-noon-agency/' },
+      { label: 'Amazon.ae and Noon account management for pet brands', href: '/uae/amazon-noon-agency/' },
       uaeHubLink,
     ],
     faqs: [
@@ -546,8 +546,8 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       { q: 'How should pet brands market during the Abu Dhabi summer?', a: 'Follow what owners actually do. Walks move to early morning and late evening, so promote cooling mats, indoor toys, hydrating food and paw care. Keep reorder reminders running for existing customers, spend less on new-customer campaigns, and prepare cooler-season creative for walks, training and travel.' },
       { q: 'Should pet food be sold through Talabat and Careem?', a: 'For food and litter, usually yes. Owners often run out at short notice and order from whichever app delivers fastest. Being in stock on quick commerce protects your repeat sales, while your own store handles subscriptions and bundles that bring higher value per customer.' },
       { q: 'Do pet brands need Arabic creative in Abu Dhabi?', a: 'Increasingly, yes. Many Emirati families keep pets, and Arabic creative written by a fluent Arabic writer reaches them more naturally than translated English. Expat owners still respond to English ads, so we run both versions and compare results by language.' },
-      { q: 'How much does pet brand marketing in Abu Dhabi cost?', a: 'It depends on the range size, the channels involved, how much creative is needed in each language and whether marketplace and quick-commerce management are included. We do not publish prices. After a free audit we send a written AED quote listing scope, timeline and exclusions; ad spend is paid to the platforms directly.' },
-      { q: 'Can we meet your team in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE and does not hold in-person meetings there. Pet brands in Abu Dhabi work with our Chennai head office over video and WhatsApp. UAE time is 1.5 hours behind India, so our working days overlap almost completely.' },
+      { q: 'How much does pet brand marketing in Abu Dhabi cost?', a: 'It depends on the range size, the channels involved, how much creative is needed in each language and whether marketplace and quick-commerce management are included. We do not publish prices. Following a free audit, you get a written AED quote listing scope, timeline and exclusions; ad spend is paid to the platforms directly.' },
+      { q: 'Can we meet your team in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE and does not hold in-person meetings there. Pet brands in Abu Dhabi work with our Chennai head office over video and WhatsApp. UAE time is 1.5 hours behind India, so our working days line up for most of the day.' },
     ],
   },
 
@@ -662,7 +662,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Seasons, and working with a footwear marketing agency in Abu Dhabi remotely',
         paragraphs: [
-          'Eid al-Fitr and Eid al-Adha bring new outfits and new shoes for the whole family, so plan Eid creative weeks ahead. UAE National Day on 2 December suits sandals and accessories in national colours, White Friday in November rewards trainer and family bundles, and the cooler months lift running and outdoor footwear. Summer is quieter until the school rush.',
+          'Both Eids, al-Fitr and al-Adha, bring new outfits and new shoes for the whole family, so plan Eid creative weeks ahead. UAE National Day on 2 December suits sandals and accessories in national colours, White Friday in November rewards trainer and family bundles, and the cooler months lift running and outdoor footwear. Summer is quieter until the school rush.',
           'Magnus Path has no office in the UAE; accounts are run from our Chennai head office, with UAE time 1.5 hours behind India. Reviews happen over video. As a footwear marketing agency in Abu Dhabi working remotely, we quote our fee in AED after a free audit, and ad spend is paid directly to each platform.',
         ],
       },
@@ -674,7 +674,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       adSupplement,
       adElectronics,
       { label: 'Ecommerce Meta ads agency in Abu Dhabi', href: '/uae/ecommerce-meta-ads-agency-abu-dhabi/' },
-      { label: 'Amazon.ae and Noon agency for footwear listings', href: '/uae/amazon-noon-agency/' },
+      { label: 'Amazon.ae and Noon selling for footwear brands', href: '/uae/amazon-noon-agency/' },
       uaeHubLink,
     ],
     faqs: [
@@ -683,7 +683,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       { q: 'How should traditional sandals be marketed online?', a: 'Show them worn with the kandura, close up on leather and stitching, and explain comfort in the heat and how the leather ages. Write Arabic copy using the terms buyers search for, with a fluent Arabic writer, and run Arabic-led campaigns for Emirati audiences.' },
       { q: 'When should school-shoe campaigns start in Abu Dhabi?', a: 'Early August. Many families return from summer travel shortly before school starts in late August, so the buying window is short. Ads should state uniform colours, sizes and a delivery cut-off before the first day, with offers for families buying for several children.' },
       { q: 'Should footwear brands sell on Namshi, Amazon.ae and Noon?', a: 'Most should test at least one. Many UAE shoppers compare footwear on these marketplaces, so listings with consistent sizing and good photos widen reach. Your own store remains the place for full size guidance, bundles and customer data, and prices should stay aligned across channels.' },
-      { q: 'How much does footwear marketing in Abu Dhabi cost?', a: 'It depends on range size, the number of marketplaces and ad channels, how much photo and video work is needed and whether size guides and pages need rebuilding. We do not publish prices. After a free audit we send a written AED quote with scope, timeline and exclusions.' },
+      { q: 'How much does footwear marketing in Abu Dhabi cost?', a: 'It depends on range size, the number of marketplaces and ad channels, how much photo and video work is needed and whether size guides and pages need rebuilding. We do not publish prices. Following a free audit, you get a written AED quote with scope, timeline and exclusions.' },
       { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE and does not meet clients in person there. Footwear brands in Abu Dhabi work with our Chennai head office over video, email and WhatsApp. UAE time is 1.5 hours behind India, so replies on the same working day are realistic.' },
     ],
   },
@@ -754,13 +754,13 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
         heading: 'What a consumer electronics marketing agency in Abu Dhabi deals with',
         paragraphs: [
           'Electronics buyers in the capital research carefully. Many are government and corporate employees buying laptops, phones and smart home devices for large villa households, and Emirati families often buy several devices at once for different family members. They compare specs, read reviews in Arabic and English and check who stands behind the warranty before they compare price.',
-          'Large retailers such as Sharaf DG and Carrefour set expectations on range, price and in-store service, and marketplaces carry almost everything. A consumer electronics marketing agency in Abu Dhabi helps a brand compete with clear, approved products, honest warranty terms, content that answers real questions and campaigns timed to the moments when people actually buy.',
+          'Big retailers like Sharaf DG and Carrefour set expectations on range, price and in-store service, and marketplaces carry almost everything. A consumer electronics marketing agency in Abu Dhabi helps a brand compete with clear, approved products, honest warranty terms, content that answers real questions and campaigns timed to the moments when people actually buy.',
         ],
       },
       {
         heading: 'MOIAT conformity and TDRA type approval, in plain terms',
         paragraphs: [
-          'In general, many electrical and electronic products sold in the UAE fall under conformity schemes run by the Ministry of Industry and Advanced Technology (MOIAT), and devices that use radio or telecom functions, such as phones, routers, smartwatches, earbuds and smart speakers, usually need type approval from the Telecommunications and Digital Government Regulatory Authority (TDRA). Arabic labelling and manuals are commonly expected. Which schemes apply depends on the product and its features, and the rules are updated, so confirm your position with your distributor or a compliance adviser. We are not lawyers.',
+          'In general, a wide range of electrical goods offered in the UAE come under conformity schemes run by the Ministry of Industry and Advanced Technology (MOIAT), and devices that use radio or telecom functions, such as phones, routers, smartwatches, earbuds and smart speakers, usually need type approval from the Telecommunications and Digital Government Regulatory Authority (TDRA). Arabic labelling and manuals are commonly expected. Which schemes apply depends on the product and its features, and the rules are updated, so confirm your position with your distributor or a compliance adviser. We are not lawyers.',
           'Marketplaces may ask for these documents before a listing goes live. Our role is to plan launches around the status you confirm, so ad spend never starts before a product can be listed and delivered.',
         ],
       },
@@ -780,7 +780,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Channels: marketplaces, search and social',
         paragraphs: [
-          'Amazon.ae and Noon are where many electronics purchases start, so listings need precise specs, compatibility notes, comparison charts in A+ content and genuine reviews. Google Shopping and search catch buyers with a clear plan, while YouTube and TikTok suit unboxing, set-up and comparison videos. Instagram and Snapchat reach younger Emirati buyers quickly, especially for audio and wearables.',
+          'Plenty of electronics purchases begin on Amazon.ae and Noon, so listings need precise specs, compatibility notes, comparison charts in A+ content and genuine reviews. Google Shopping and search catch buyers with a clear plan, while YouTube and TikTok suit unboxing, set-up and comparison videos. Instagram and Snapchat reach younger Emirati buyers quickly, especially for audio and wearables.',
           'Talabat and Careem quick commerce can carry chargers, cables, power banks and earbuds bought on the spot. Your own store holds bundles, extended warranty offers and customer data. Cash on delivery is still used, so we report on delivered, kept orders, and Tabby and Tamara help with higher-value items.',
         ],
       },
@@ -801,8 +801,8 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Working with a consumer electronics marketing agency in Abu Dhabi remotely',
         paragraphs: [
-          'Magnus Path has no office in the UAE. Your account is run from our Chennai head office, with further offices in Bengaluru and London, and UAE time is 1.5 hours behind India, so our working days overlap almost entirely. Every meeting is by video.',
-          'When you compare any consumer electronics marketing agency in Abu Dhabi, ask how it handles approvals, warranty content and unauthorised sellers, and whether it reports on delivered orders. We quote our fee in AED after a free audit, and ad spend is paid directly to each platform from your own accounts.',
+          'Magnus Path has no office in the UAE. Your account is run from our Chennai head office, with further offices in Bengaluru and London, and UAE time is 1.5 hours behind India, so nearly all of our working hours coincide. Every meeting is by video.',
+          'Before you choose a consumer electronics marketing agency in Abu Dhabi, ask how it handles approvals, warranty content and unauthorised sellers, and whether it reports on delivered orders. We quote our fee in AED after a free audit, and ad spend is paid directly to each platform from your own accounts.',
         ],
       },
     ],
@@ -813,17 +813,17 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       adFootwear,
       adPet,
       { label: 'Google Ads agency in Dubai for Shopping campaigns', href: '/uae/google-ads-agency-dubai/' },
-      { label: 'Amazon.ae and Noon agency for electronics listings', href: '/uae/amazon-noon-agency/' },
+      { label: 'Amazon.ae and Noon management for gadget brands', href: '/uae/amazon-noon-agency/' },
       uaeHubLink,
     ],
     faqs: [
       { q: 'What does a consumer electronics marketing agency in Abu Dhabi do?', a: 'It markets phones, audio, wearables, smart home devices and accessories online in the capital: approval-aware launch plans, spec-led Amazon.ae and Noon listings, Google Shopping, video in Arabic and English, warranty content and campaigns for White Friday and back to school. Results are measured on delivered orders.' },
-      { q: 'Do electronics need approval before they are sold in the UAE?', a: 'Many do. Electrical products often fall under MOIAT conformity schemes, and devices with radio or telecom functions usually need TDRA type approval. Requirements depend on the product and change over time, so confirm yours with a distributor or compliance adviser. We plan launches around the status you confirm.' },
+      { q: 'Which approvals does an electronic device need in the UAE?', a: 'Many do. Electrical products often fall under MOIAT conformity schemes, and devices with radio or telecom functions usually need TDRA type approval. Requirements vary from product to product and are revised now and then, so confirm yours with a distributor or compliance adviser. We plan launches around the status you confirm.' },
       { q: 'How do we deal with grey imports on marketplaces?', a: 'Make your authorised offer clearly better: local warranty stated everywhere, Arabic documentation and responsive support. Monitor Amazon.ae and Noon for unauthorised sellers and report them through each platform’s brand tools. Ads and listings should explain why buying from an authorised seller matters.' },
       { q: 'When is the peak season for electronics in Abu Dhabi?', a: 'White Friday in November is the largest, followed by Ramadan and both Eids for gifting, UAE National Day in December and back to school in late August. Plan stock, bundles and creative several weeks ahead of each, and use the quieter summer months to fix listings and feeds.' },
-      { q: 'Should electronics content be in Arabic?', a: 'Yes, alongside English. Many Emirati buyers prefer Arabic product information, especially for set-up and warranty details. We write Arabic and English versions side by side, with Arabic drafted or checked by a fluent Arabic writer, and keep specs identical in both.' },
+      { q: 'Should electronics content be in Arabic?', a: 'Yes, alongside English. Many Emirati buyers prefer Arabic product information, especially for set-up and warranty details. We draft Arabic and English versions together, with Arabic drafted or checked by a fluent Arabic writer, and keep specs identical in both.' },
       { q: 'How much does electronics marketing in Abu Dhabi cost?', a: 'It depends on the number of products, the marketplaces and ad channels involved, the amount of video and listing content and whether brand protection work is included. We do not publish prices. After a free audit you receive a written AED quote with scope, timeline and exclusions.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE and does not hold in-person meetings there. Electronics brands in Abu Dhabi are served remotely from our Chennai head office over video and WhatsApp. UAE time is 1.5 hours behind India, so our working days overlap almost completely.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE and does not hold in-person meetings there. Electronics brands in Abu Dhabi are served remotely from our Chennai head office over video and WhatsApp. UAE time is 1.5 hours behind India, so our working days line up for most of the day.' },
     ],
   },
 ];

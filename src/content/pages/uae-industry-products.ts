@@ -118,6 +118,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Supplement marketing agency in Abu Dhabi', href: '/uae/supplement-marketing-agency-abu-dhabi/' },
       { label: 'Ecommerce marketing agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Amazon.ae and Noon agency for supplement listings', href: '/uae/amazon-noon-agency/' },
       { label: 'Ecommerce Meta ads agency in Dubai', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
@@ -252,6 +253,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Home decor marketing agency in Abu Dhabi', href: '/uae/home-decor-marketing-agency-abu-dhabi/' },
       { label: 'Ecommerce marketing agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Ecommerce Meta ads agency in Dubai for catalogue ads', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
       { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },
@@ -380,6 +382,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Baby products marketing agency in Abu Dhabi', href: '/uae/baby-products-marketing-agency-abu-dhabi/' },
       { label: 'Ecommerce marketing agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Amazon.ae and Noon agency for baby essentials', href: '/uae/amazon-noon-agency/' },
       { label: 'Meta ads agency in Dubai for Facebook, Instagram and WhatsApp', href: '/uae/meta-ads-agency-dubai/' },
@@ -514,6 +517,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Pet brand marketing agency in Abu Dhabi', href: '/uae/pet-brand-marketing-agency-abu-dhabi/' },
       { label: 'Ecommerce marketing agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Amazon.ae and Noon agency for pet food listings', href: '/uae/amazon-noon-agency/' },
       { label: 'Ecommerce Meta ads agency in Dubai', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
@@ -647,6 +651,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Footwear marketing agency in Abu Dhabi', href: '/uae/footwear-marketing-agency-abu-dhabi/' },
       { label: 'Ecommerce marketing agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Ecommerce Meta ads agency in Dubai for catalogue ads', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
       { label: 'Ecommerce PPC agency in Dubai for Google Shopping', href: '/uae/ecommerce-ppc-agency-dubai/' },
@@ -777,6 +782,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Consumer electronics marketing agency in Abu Dhabi', href: '/uae/electronics-marketing-agency-abu-dhabi/' },
       { label: 'Ecommerce marketing agency for UAE brands', href: '/uae/ecommerce-marketing-agency/' },
       { label: 'Amazon.ae and Noon agency for electronics sellers', href: '/uae/amazon-noon-agency/' },
       { label: 'Google Ads agency in Dubai', href: '/uae/google-ads-agency-dubai/' },

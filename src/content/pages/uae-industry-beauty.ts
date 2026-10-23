@@ -111,6 +111,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency in Abu Dhabi', href: '/uae/skincare-marketing-agency-abu-dhabi/' },
       { label: 'Haircare marketing agency in Dubai', href: '/uae/haircare-marketing-agency-dubai/' },
       { label: 'Cosmetics and makeup marketing in Dubai', href: '/uae/cosmetics-marketing-agency-dubai/' },
       { label: 'Ecommerce Meta ads for UAE beauty stores', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
@@ -238,6 +239,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Haircare marketing agency in Abu Dhabi', href: '/uae/haircare-marketing-agency-abu-dhabi/' },
       { label: 'Skincare marketing agency in Dubai', href: '/uae/skincare-marketing-agency-dubai/' },
       { label: 'Cosmetics and makeup marketing in Dubai', href: '/uae/cosmetics-marketing-agency-dubai/' },
       { label: 'Ayurveda and herbal hair oil brands in Dubai', href: '/uae/ayurveda-marketing-agency-dubai/' },
@@ -366,6 +368,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Cosmetics marketing agency in Abu Dhabi', href: '/uae/cosmetics-marketing-agency-abu-dhabi/' },
       { label: 'Skincare marketing agency in Dubai', href: '/uae/skincare-marketing-agency-dubai/' },
       { label: 'Haircare marketing agency in Dubai', href: '/uae/haircare-marketing-agency-dubai/' },
       { label: 'Perfume and oud marketing in Dubai', href: '/uae/perfume-marketing-agency-dubai/' },
@@ -495,6 +498,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ayurveda marketing agency in Abu Dhabi', href: '/uae/ayurveda-marketing-agency-abu-dhabi/' },
       { label: 'Ayurveda marketing agency for brands in India', href: '/industries/ayurveda-marketing-agency/' },
       { label: 'Haircare marketing agency in Dubai', href: '/uae/haircare-marketing-agency-dubai/' },
       { label: 'Skincare marketing agency in Dubai', href: '/uae/skincare-marketing-agency-dubai/' },
@@ -624,6 +628,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Perfume marketing agency in Abu Dhabi', href: '/uae/perfume-marketing-agency-abu-dhabi/' },
       { label: 'Jewellery marketing agency in Dubai', href: '/uae/jewellery-marketing-agency-dubai/' },
       { label: 'Cosmetics and makeup marketing in Dubai', href: '/uae/cosmetics-marketing-agency-dubai/' },
       { label: 'Skincare marketing agency in Dubai', href: '/uae/skincare-marketing-agency-dubai/' },
@@ -752,6 +757,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Jewellery marketing agency in Abu Dhabi', href: '/uae/jewellery-marketing-agency-abu-dhabi/' },
       { label: 'Perfume and oud marketing in Dubai', href: '/uae/perfume-marketing-agency-dubai/' },
       { label: 'Cosmetics and makeup marketing in Dubai', href: '/uae/cosmetics-marketing-agency-dubai/' },
       { label: 'Ecommerce Meta ads with catalogue feeds in Dubai', href: '/uae/ecommerce-meta-ads-agency-dubai/' },
