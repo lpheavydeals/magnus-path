@@ -114,6 +114,7 @@ export const industryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency in Coimbatore', href: '/coimbatore/skincare-marketing-agency/' },
       { label: 'Skincare marketing agency in Chennai', href: '/chennai/skincare-marketing-agency/' },
       { label: 'Skincare marketing agency in Bangalore', href: '/bangalore/skincare-marketing-agency/' },
       { label: 'Beauty and Ayurveda brands', href: '/industries/beauty-ayurveda/' },
@@ -243,6 +244,7 @@ export const industryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Haircare marketing agency in Coimbatore', href: '/coimbatore/haircare-marketing-agency/' },
       { label: 'Haircare marketing agency in Chennai', href: '/chennai/haircare-marketing-agency/' },
       { label: 'Haircare marketing agency in Bangalore', href: '/bangalore/haircare-marketing-agency/' },
       { label: 'Beauty and Ayurveda brands', href: '/industries/beauty-ayurveda/' },
@@ -376,6 +378,7 @@ export const industryBeautyPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Cosmetics marketing agency in Coimbatore', href: '/coimbatore/cosmetics-marketing-agency/' },
       { label: 'Cosmetics marketing agency in Chennai', href: '/chennai/cosmetics-marketing-agency/' },
       { label: 'Cosmetics marketing agency in Bangalore', href: '/bangalore/cosmetics-marketing-agency/' },
       { label: 'Beauty and Ayurveda brands', href: '/industries/beauty-ayurveda/' },

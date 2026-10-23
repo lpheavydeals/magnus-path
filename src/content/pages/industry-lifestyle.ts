@@ -114,6 +114,7 @@ export const industryLifestylePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ayurveda marketing agency in Coimbatore', href: '/coimbatore/ayurveda-marketing-agency/' },
       { label: 'Ayurveda marketing agency in Chennai', href: '/chennai/ayurveda-marketing-agency/' },
       { label: 'Ayurveda marketing agency in Bangalore', href: '/bangalore/ayurveda-marketing-agency/' },
       { label: 'Beauty and Ayurveda brand marketing hub', href: '/industries/beauty-ayurveda/' },
@@ -248,6 +249,7 @@ export const industryLifestylePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Perfume marketing agency in Coimbatore', href: '/coimbatore/perfume-marketing-agency/' },
       { label: 'Perfume marketing agency in Chennai', href: '/chennai/perfume-marketing-agency/' },
       { label: 'Perfume marketing agency in Bangalore', href: '/bangalore/perfume-marketing-agency/' },
       { label: 'Beauty and Ayurveda brand marketing hub', href: '/industries/beauty-ayurveda/' },
@@ -377,6 +379,7 @@ export const industryLifestylePages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Jewellery marketing agency in Coimbatore', href: '/coimbatore/jewellery-marketing-agency/' },
       { label: 'Jewellery marketing agency in Chennai', href: '/chennai/jewellery-marketing-agency/' },
       { label: 'Jewellery marketing agency in Bangalore', href: '/bangalore/jewellery-marketing-agency/' },
       { label: 'Beauty and Ayurveda brand marketing hub', href: '/industries/beauty-ayurveda/' },

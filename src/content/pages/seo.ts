@@ -937,6 +937,10 @@ export const seoPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Ayurveda marketing agency in Coimbatore', href: '/coimbatore/ayurveda-marketing-agency/' },
+      { label: 'Supplement marketing agency in Coimbatore', href: '/coimbatore/supplement-marketing-agency/' },
+      { label: 'Footwear marketing agency in Coimbatore', href: '/coimbatore/footwear-marketing-agency/' },
+      { label: 'Perfume marketing agency in Coimbatore', href: '/coimbatore/perfume-marketing-agency/' },
       { label: 'Facebook advertising agencies in Coimbatore', href: '/coimbatore/facebook-advertising-agencies/' },
       { label: 'Ecommerce Meta ads agency in Coimbatore', href: '/coimbatore/ecommerce-meta-ads-agency/' },
       { label: 'Facebook ads agency in Coimbatore', href: '/coimbatore/facebook-ads-agency/' },

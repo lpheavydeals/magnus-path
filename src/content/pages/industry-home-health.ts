@@ -116,6 +116,7 @@ export const industryHomeHealthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Supplement marketing agency in Coimbatore', href: '/coimbatore/supplement-marketing-agency/' },
       { label: 'Supplement marketing agency in Chennai', href: '/chennai/supplement-marketing-agency/' },
       { label: 'Supplement marketing agency in Bangalore', href: '/bangalore/supplement-marketing-agency/' },
       { label: 'LTV and CAC calculator for supplement brands', href: '/tools/ltv-cac-calculator/' },
@@ -252,6 +253,7 @@ export const industryHomeHealthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Home decor marketing agency in Coimbatore', href: '/coimbatore/home-decor-marketing-agency/' },
       { label: 'Home decor marketing agency in Chennai', href: '/chennai/home-decor-marketing-agency/' },
       { label: 'Home decor marketing agency in Bangalore', href: '/bangalore/home-decor-marketing-agency/' },
       { label: 'Shopify development for furniture and decor stores', href: '/shopify-development/' },
@@ -381,6 +383,7 @@ export const industryHomeHealthPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Baby products marketing agency in Coimbatore', href: '/coimbatore/baby-products-marketing-agency/' },
       { label: 'Baby products marketing agency in Chennai', href: '/chennai/baby-products-marketing-agency/' },
       { label: 'Baby products marketing agency in Bangalore', href: '/bangalore/baby-products-marketing-agency/' },
       { label: 'LTV and CAC calculator', href: '/tools/ltv-cac-calculator/' },

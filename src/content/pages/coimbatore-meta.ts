@@ -114,6 +114,12 @@ export const coimbatoreMetaPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Skincare marketing agency in Coimbatore', href: '/coimbatore/skincare-marketing-agency/' },
+      { label: 'Haircare marketing agency in Coimbatore', href: '/coimbatore/haircare-marketing-agency/' },
+      { label: 'Jewellery marketing agency in Coimbatore', href: '/coimbatore/jewellery-marketing-agency/' },
+      { label: 'Home decor marketing agency in Coimbatore', href: '/coimbatore/home-decor-marketing-agency/' },
+      { label: 'Baby products marketing agency in Coimbatore', href: '/coimbatore/baby-products-marketing-agency/' },
+      { label: 'Consumer electronics marketing agency in Coimbatore', href: '/coimbatore/electronics-marketing-agency/' },
       { label: 'Instagram, Messenger and WhatsApp advertising for Coimbatore businesses', href: '/coimbatore/meta-ads-agency/' },
       { label: 'Facebook lead ads for Coimbatore clinics, coaching centres and factories', href: '/coimbatore/facebook-ads-agency/' },
       { label: 'How to compare Facebook ad agencies in Coimbatore', href: '/coimbatore/facebook-advertising-agencies/' },

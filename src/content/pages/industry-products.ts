@@ -112,6 +112,7 @@ export const industryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Pet brand marketing agency in Coimbatore', href: '/coimbatore/pet-brand-marketing-agency/' },
       { label: 'Pet brand marketing agency in Chennai', href: '/chennai/pet-brand-marketing-agency/' },
       { label: 'Pet brand marketing agency in Bangalore', href: '/bangalore/pet-brand-marketing-agency/' },
       { label: 'Quick commerce marketing for pet food brands', href: '/quick-commerce-marketing/' },
@@ -245,6 +246,7 @@ export const industryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Footwear marketing agency in Coimbatore', href: '/coimbatore/footwear-marketing-agency/' },
       { label: 'Footwear marketing agency in Chennai', href: '/chennai/footwear-marketing-agency/' },
       { label: 'Footwear marketing agency in Bangalore', href: '/bangalore/footwear-marketing-agency/' },
       { label: 'Fashion and apparel brand marketing', href: '/industries/fashion-apparel/' },
@@ -373,6 +375,7 @@ export const industryProductsPages: ServicePageData[] = [
       },
     ],
     related: [
+      { label: 'Consumer electronics marketing agency in Coimbatore', href: '/coimbatore/electronics-marketing-agency/' },
       { label: 'Consumer electronics marketing agency in Chennai', href: '/chennai/electronics-marketing-agency/' },
       { label: 'Consumer electronics marketing agency in Bangalore', href: '/bangalore/electronics-marketing-agency/' },
       { label: 'Amazon account management for electronics brands', href: '/amazon-account-management/' },
