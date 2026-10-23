@@ -53,3 +53,24 @@ Market substance to localise (described generally and hedged, no legal advice):
 - US: FTC advertising and endorsement rules, FDA cosmetics (MoCRA), DSHEA structure/function claims and disclaimer,
   CPSC/CPSIA for children's products, FCC for electronics, AAFCO and state rules for pet food, Amazon US, Walmart,
   Target, TikTok Shop, Ulta/Sephora as context only, USD quotes, delivered remotely (no US office).
+
+## Australia and UAE versions
+
+Same 12 pages again, `kind: 'industry'`, `twin: '<india slug>'`, hreflang through `twin`.
+- Australia: `market: 'AU'`, slug `australia/<slug>` (e.g. `australia/skincare-marketing-agency`), same primary keyword
+  as the India page, Australian spelling (jewellery), breadcrumb as in `au-meta.ts`. Market substance (general, hedged):
+  ACCC and Australian Consumer Law (consumer guarantees, misleading claims), AANA code and Ad Standards, TGA for
+  therapeutic goods (listed medicines and complementary medicines, sunscreens, therapeutic claims), AICIS for cosmetic
+  ingredient importers, cosmetics ingredient labelling, mandatory product safety standards (e.g. toppling furniture,
+  button batteries, children's products), AAFCO-style rules not used; pet food standard AS 5812, electrical safety (RCM),
+  Amazon AU, eBay AU, Catch, TikTok Shop, Myer/David Jones/Mecca/Priceline/Chemist Warehouse/Bunnings only as context,
+  Click Frenzy, EOFY sales, Boxing Day, Black Friday, Mother's Day in May, Afterpay/BNPL, AUD quotes, delivered
+  remotely (no Australian office) with time overlap.
+- UAE: `market: 'UAE'`, slug `uae/<slug>-dubai` (e.g. `uae/skincare-marketing-agency-dubai`), primary keyword
+  "<india keyword> in Dubai" (e.g. "skincare marketing agency in Dubai"), breadcrumb as in `uae-meta.ts`. Market
+  substance (general, hedged): Dubai Municipality product registration (Montaji) for cosmetics and personal care, MOIAT
+  and ECAS/ECAS-style conformity for electronics and some products, Ministry of Health for supplements/health products,
+  NMC/UAE media regulations and the advertiser permit for influencers, Arabic and English creative, Gulf gold souk and
+  jewellery buying habits (Dubai Gold, 18K/21K/22K), oud and Arabic perfume culture, Amazon.ae, Noon, Namshi, Talabat
+  and quick-commerce, Ramadan, Eid, White Friday, Dubai Shopping Festival, National Day, COD and Tabby/Tamara BNPL,
+  GCC expansion (KSA), AED quotes, delivered remotely from Chennai (no UAE office).
