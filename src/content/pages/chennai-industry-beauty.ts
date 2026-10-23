@@ -47,7 +47,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       note: 'Our head office is in Chennai, so skincare founders can meet the team by appointment for the audit walk-through, shoot and creator planning before a season, or the monthly review. Brands elsewhere in Tamil Nadu and India work with us online.',
     },
     figures: [
-      { type: 'venn', caption: 'Skincare content for Chennai buyers works where the climate and local habits meet.', after: 0, left: { title: 'Humid, sunny weather', body: 'Light gels, sweat-resistant sunscreen, oil control, no white cast' }, right: { title: 'Tamil Nadu habits', body: 'Manjal, gram flour, rose water and family remedies' }, overlap: 'Routines buyers will keep' },
+      { type: 'venn', caption: 'Skincare content for Chennai buyers works where the climate and local habits meet.', after: 0, left: { title: 'Humid, sunny weather', body: 'Light gels, sweat-resistant SPF, oil control, no white cast' }, right: { title: 'Tamil Nadu habits', body: 'Manjal, gram flour, rose water and family remedies' }, overlap: 'Routines buyers will keep' },
       { type: 'steps', caption: 'A skincare year in Tamil Nadu: plan creative and stock for each moment in advance.', after: 4, steps: [
         { title: 'Pongal', body: 'Gift boxes and new-year routine starts' },
         { title: 'Tamil New Year', body: 'Summer sunscreen and oil-control push' },
@@ -90,12 +90,18 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
           'Skincare sold in Chennai follows the same national rules as anywhere in India: the Drugs and Cosmetics Act and the Cosmetics Rules for products, and the ASCI code for advertising. In this market the most common trouble spots are tan removal, pimple and dark spot copy, and anything that treats a darker complexion as a problem. Meta and Google add their own limits on personal-attribute hooks and before-and-after images.',
           'We write around texture, routine and what the ingredient does for the look of skin. Tamil copy gets the same review as English, because a phrase that sounds harmless in translation can still read as a cure claim. This is general guidance, not legal advice, so a regulatory adviser should approve your claims list.',
         ],
+        bullets: [
+          'Say “helps reduce the look of tan” rather than promising tan removal',
+          'Name the active and its job instead of naming the buyer’s pimples',
+          'Show glowing skin across shades without calling darker skin dull',
+          'Keep SPF and test results backed by a report you hold',
+        ],
       },
       {
         heading: 'Instagram, WhatsApp and quick commerce in Chennai',
         paragraphs: [
-          'Most skincare discovery here happens on Instagram, through Reels from Chennai, Coimbatore and Madurai creators, followed by a WhatsApp question before the first order. Treat WhatsApp as part of the funnel: quick answers on skin type and usage, links back to the product page, and a reorder reminder timed to when a bottle usually runs out.',
-          'Quick commerce apps deliver across most of Chennai within minutes, which suits sunscreen, face wash and lip balm bought on impulse or in a hurry. Keep hero products in stock on those apps, run small search ads around them, and watch whether quick commerce buyers later come to your own store for bundles and refills.',
+          'For a skincare marketing agency in Chennai, most of the work happens on Instagram, where discovery starts with Reels from Chennai, Coimbatore and Madurai creators, followed by a WhatsApp question before the first order. Treat WhatsApp as part of the funnel: quick answers on skin type and usage, links back to the product page, and a reorder reminder timed to when a bottle usually runs out.',
+          'Quick commerce apps deliver across most of Chennai within minutes, which suits sunscreen, face wash and lip balm bought on impulse or in a hurry. Keep hero products in stock on those apps, run small search ads around them, and watch whether quick commerce buyers later come to your own store for bundles and refills. Prices should match across apps, marketplaces and your site, or buyers learn to wait for the cheapest channel.',
         ],
       },
       {
@@ -117,12 +123,12 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       { label: 'LTV to CAC calculator for repeat beauty buyers', href: '/tools/ltv-cac-calculator/' },
     ],
     faqs: [
-      { q: 'What does a skincare marketing agency in Chennai do?', a: 'It plans and runs the marketing that sells skincare to Chennai and Tamil Nadu buyers: Tamil and English creative, product content written for humid weather, claims checked against Indian rules, Instagram and WhatsApp selling, marketplace and quick commerce listings, and reviews of new customers and reorders. Ideally you can meet the team in person.' },
+      { q: 'What does a skincare marketing agency in Chennai do?', a: 'It handles everything that gets skincare in front of Chennai and Tamil Nadu buyers and turns them into regular customers: Tamil and English creative, product content written for humid weather, claims checked against Indian rules, Instagram and WhatsApp selling, marketplace and quick commerce listings, and reviews of new customers and reorders. Ideally you can meet the team in person.' },
       { q: 'Should our skincare ads be in Tamil or English?', a: 'Usually both. English works for buyers who compare ingredients and strengths, while Tamil and Tanglish reach people who scroll and search in their own language, especially outside central Chennai. We test versions side by side, with every Tamil line written or checked by a fluent Tamil writer, and keep what brings delivered orders.' },
-      { q: 'Can we advertise tan removal or pimple products?', a: 'Yes, with care. Describe what the product does for the look and feel of skin, name the ingredient and its role, and avoid cure language, implied personal conditions and framing darker skin as a flaw. Tamil copy needs the same checks as English. A regulatory adviser should sign off on your final claims.' },
-      { q: 'Does Chennai’s climate really change how skincare is marketed?', a: 'It does. Heat, humidity and strong sun shape what buyers want: light textures, sweat-resistant sunscreen, oil control and products that do not feel sticky. Showing how a product behaves in that weather, on real local skin tones, answers the questions Chennai buyers ask before they order.' },
+      { q: 'Can we advertise tan removal or pimple products?', a: 'Yes, with care. Talk about how skin looks and feels after use, name the ingredient and its role, and avoid cure language, implied personal conditions and framing darker skin as a flaw. Tamil copy needs the same checks as English. A regulatory adviser should sign off on your final claims.' },
+      { q: 'Does Chennai’s climate really change how skincare is marketed?', a: 'It does. Heat, humidity and strong sun shape what buyers want: light textures, sweat-resistant sunscreen, oil control and products that do not feel sticky. Showing how a product behaves in that weather, on real local skin tones, answers the questions Chennai buyers ask before they order, and it is the first thing a skincare marketing agency in Chennai should get right.' },
       { q: 'Should a Chennai skincare brand sell on quick commerce apps?', a: 'For impulse and urgent buys such as sunscreen, face wash and lip care, often yes. Quick commerce reaches many Chennai pin codes fast. Keep a few hero products in stock there, run small search ads, and use your own store for bundles, subscriptions and customer data.' },
-      { q: 'How much does skincare marketing in Chennai cost?', a: 'It depends on the channels you use, how many products you sell, how much Tamil and English creative you need and whether marketplace management is included. Ad spend is paid directly to the platforms from your accounts. Our fee is quoted separately as a fixed written quote after a free audit.' },
+      { q: 'How much does skincare marketing in Chennai cost?', a: 'Cost is driven by the channels you use, how many products you sell, how much Tamil and English creative you need and whether we manage Nykaa, Amazon or quick commerce too. Your ad budget goes straight to each platform from your own accounts. Our fee is separate, set out in a fixed written quote following a free audit.' },
       { q: 'Can we meet your team at the Chennai office?', a: 'Yes. Chennai is our head office and main delivery team. Skincare founders can book an appointment for the audit walk-through, seasonal planning or a monthly review. Brands in Coimbatore, Madurai and the rest of India usually work with us on video calls, with visits when they help.' },
     ],
   },
@@ -158,7 +164,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       { title: 'Careful hair fall messaging', body: 'Copy built around care, ingredients and routine rather than regrowth promises, reviewed against ASCI and platform rules.' },
       { title: 'Retention through the slow weeks', body: 'WhatsApp and email nudges during the first weeks of use, with tips, check-ins and a reorder reminder when the bottle runs low.' },
       { title: 'Creators and salons', body: 'Tamil Nadu creators for honest wash-day content, and salon tie-ups in Chennai where professional use suits your range.' },
-      { title: 'Quick commerce and marketplaces', body: 'Listings and ads on quick commerce apps, Amazon and Flipkart for shampoos and oils, with prices kept in line with your store.' },
+      { title: 'Quick commerce and marketplaces', body: 'Quick commerce, Amazon and Flipkart listings and ads, for shampoos and oils, priced the same as your own store.' },
     ],
     process: [
       { title: 'Free haircare audit', body: 'We review your products, claims, store, ads and reviews, and walk you through what to fix at our Chennai office or online.' },
@@ -198,7 +204,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
         heading: 'Hibiscus, curry leaf and shikakai: tradition with proof',
         paragraphs: [
           'Sembaruthi, karuveppilai, vendhayam, seeyakkai and coconut oil are familiar names here, which makes them both an asset and a trap. Buyers recognise them instantly, but every competitor uses the same words. The difference has to come from detail: how the oil is made, the base oil you use, how much of each herb goes in, where you source it, and what the bottle actually feels like on the scalp.',
-          'Show the making where you can. A short video from your unit near Coimbatore or Erode, or from a small kitchen-scale batch, answers the trust question better than any slogan. If you hold lab reports or stability tests, say so plainly. If you do not, describe the ingredient and its traditional use without implying a medical effect.',
+          'A haircare marketing agency in Chennai should push you to show the making where you can. A short video from your unit near Coimbatore or Erode, or from a small kitchen-scale batch, answers the trust question better than any slogan. If you hold lab reports or stability tests, say so plainly. If you do not, describe the ingredient and its traditional use without implying a medical effect.',
         ],
       },
       {
@@ -225,7 +231,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
         heading: 'Quick commerce, marketplaces and salons in Chennai',
         paragraphs: [
           'Shampoo and hair oil are classic top-up purchases, and quick commerce apps deliver them across Chennai in minutes. Get listed in the pin codes where your buyers live, keep stock steady, and use small search ads on those apps for your hero products. Amazon and Flipkart suit buyers outside the city and larger packs.',
-          'Salons in Chennai can help with professional ranges and serums, and a stylist’s recommendation still carries weight. Track salon-led sales separately so you know whether the partnership pays back. Keep your own store for combo packs, subscriptions and the customer data that makes reorder reminders possible.',
+          'Salons in Chennai can help with professional ranges and serums, and a stylist’s recommendation still carries weight. Track salon-led sales separately so you know whether the partnership pays back. Keep your own store for combo packs, subscriptions and the customer data that makes reorder reminders possible. Buyers in Coimbatore, Madurai and Tiruchirappalli often order from Chennai brands online, so plan delivery times and courier partners for the rest of Tamil Nadu too.',
         ],
       },
       {
@@ -233,6 +239,11 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Results in haircare take weeks, so the first month decides whether a buyer stays. Send a how-to video when the order arrives, a tip in the first week, a check-in around the third week and a reorder nudge when the bottle is nearly empty. Plan bigger pushes for summer frizz, the monsoon dandruff months, the Aadi sales and the oil bath before Deepavali.',
           'When choosing a haircare marketing agency in Chennai, ask how they handle hair fall claims, who writes the Tamil creative and how they measure reorders. Your accounts should stay in your name. Our fee is quoted after a free audit, based on channels, products and content volume, and you can meet us at our Chennai office first.',
+        ],
+        bullets: [
+          'Measure second orders and the gap between orders, not only first-order returns',
+          'Compare reorder rates for oils, shampoos and hair packs separately',
+          'Read reviews after the third or fourth week, when real results show',
         ],
       },
     ],
@@ -252,7 +263,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       { q: 'Do Tamil-language ads work for haircare?', a: 'Often very well, because so many haircare questions are asked in Tamil and Tanglish and the rituals are deeply local. We test Tamil, English and mixed versions side by side. Every Tamil line is written or checked by a fluent Tamil writer so it sounds natural, not translated.' },
       { q: 'How do we stop buyers quitting before they see results?', a: 'Set honest expectations on the product page, then support the first month: a how-to video when the order arrives, a tip in week one, a check-in around week three and a reorder reminder when the bottle runs low. WhatsApp works well for this in Tamil Nadu.' },
       { q: 'Should Chennai haircare brands sell on quick commerce?', a: 'For shampoos and everyday oils, it is worth testing. Buyers in Chennai often top up these products at short notice, and quick commerce apps reach many pin codes fast. Keep stock steady, use small search ads, and keep your own store for combo packs and subscriptions.' },
-      { q: 'How much does haircare marketing in Chennai cost?', a: 'It depends on the number of products and channels, the volume of Tamil and English creative, creator or salon work and whether marketplaces are included. Ad spend goes directly to the platforms from your accounts, and our fee is quoted separately as a fixed written quote after a free audit.' },
+      { q: 'How much does haircare marketing in Chennai cost?', a: 'The main cost drivers are your product count and channels, the volume of Tamil and English creative, any creator or salon work and whether marketplaces are part of the brief. Ad spend goes directly to the platforms from your accounts, and our fee is quoted separately as a fixed written quote after a free audit.' },
       { q: 'Can we meet the team in Chennai?', a: 'Yes. Chennai is our head office and main delivery team, and haircare founders can meet us by appointment for the audit walk-through, shoot planning or monthly reviews. Brands from Coimbatore, Erode, Madurai and elsewhere can work with us online, with visits when needed.' },
     ],
   },
@@ -266,7 +277,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
     primaryKeyword: 'cosmetics marketing agency in Chennai',
     navLabel: 'Cosmetics Chennai',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
-    eyebrow: 'Makeup and cosmetics brands in Chennai',
+    eyebrow: 'Makeup brands in Chennai and Tamil Nadu',
     h1: 'Cosmetics Marketing Agency in Chennai for *Makeup That Lasts the Day*',
     intro: 'Magnus Path is a cosmetics marketing agency in Chennai for brands selling kajal, lipstick, foundation, compact and bridal kits. Makeup here has to survive humidity, sweat and long wedding days, and shades must flatter medium and deep skin tones. We plan Tamil and English creator content, shade-led product pages and wedding and Deepavali campaigns, with reviews at our Chennai head office.',
     icon: 'social',
@@ -347,8 +358,8 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       {
         heading: 'Creators and UGC in Tamil and English',
         paragraphs: [
-          'Makeup sells through faces. Tamil Nadu has a large community of beauty creators on Instagram and YouTube, from mass-market reviewers to bridal artists, and many speak Tamil on camera. Brief them on the shade, the finish and the wear test you want shown, then let them speak in their own style. Scripted lines rarely sound natural on camera.',
-          'Under ASCI’s influencer guidelines, paid or gifted posts need a clear disclosure label, and creators must have actually used the product. Every Tamil caption from the brand side should be written or checked by a fluent Tamil writer. Collect creator videos with permission so they can run as ads later.',
+          'Makeup sells through faces, and a cosmetics marketing agency in Chennai should know the local creator scene well. Tamil Nadu has a large community of beauty creators on Instagram and YouTube, from mass-market reviewers to bridal artists, and many speak Tamil on camera. Brief them on the shade, the finish and the wear test you want shown, then let them speak in their own style. Scripted lines rarely sound natural on camera.',
+          'Under ASCI’s influencer guidelines, paid or gifted posts need a clear disclosure label, and creators must have actually used the product. Every Tamil caption from the brand side should be written or checked by a fluent Tamil writer. Collect creator videos with permission so they can run as ads later. Small Tamil creators with engaged followers in one city often bring more orders than a single large name, so spread the budget and compare results by creator.',
         ],
       },
       {
@@ -362,6 +373,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
         heading: 'Rules and choosing a cosmetics marketing agency in Chennai',
         paragraphs: [
           'Makeup falls under the Cosmetics Rules for labelling and ingredients, and imported cosmetics need registration before sale in India. Claims such as waterproof, smudge-proof or long-wear should be backed by your own tests. Meta and Google limit edited before-and-after visuals. This is general guidance, not legal advice.',
+          'Measure makeup by shade as well as by campaign. Watch which shades sell, which come back as returns and which bring repeat orders, then adjust stock, swatch content and ad spend. A shade that sells well in Chennai may not lead elsewhere, so compare cities if you sell across India.',
           'When you compare a cosmetics marketing agency in Chennai, ask how they show shades on deeper skin, how they prove wear claims and who manages Tamil creators. Accounts and creator content should belong to you. Our fee is quoted after a free audit based on shades, channels and content volume, and you are welcome to meet us at our Chennai office.',
         ],
       },
@@ -373,7 +385,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       { label: 'Social media marketing agency in Chennai', href: '/chennai/social-media-marketing-agency/' },
       { label: 'Ecommerce Meta ads agency in Chennai', href: '/chennai/ecommerce-meta-ads-agency/' },
       { label: 'Ecommerce website development in Chennai', href: '/chennai/ecommerce-website-development/' },
-      { label: 'Beauty and Ayurveda brands', href: '/industries/beauty-ayurveda/' },
+      { label: 'Beauty, makeup and herbal brand marketing', href: '/industries/beauty-ayurveda/' },
       { label: 'ROAS calculator for beauty ads', href: '/tools/roas-calculator/' },
     ],
     faqs: [
@@ -382,7 +394,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       { q: 'Can we call our makeup sweat-proof or long-wear?', a: 'Only if your own tests support it. Chennai buyers will test it in real heat, and a claim that fails turns into returns and bad reviews. Film wear tests over a real day, keep test reports on file and phrase claims to match what the evidence shows.' },
       { q: 'Do Tamil makeup creators need to disclose paid posts?', a: 'Yes. ASCI’s influencer guidelines expect a clear label on any paid, gifted or otherwise rewarded post, and the creator should have used the product. We brief creators on disclosure along with the shade and finish we want shown, and keep the videos for later ad use with permission.' },
       { q: 'When should a makeup brand plan for the wedding season?', a: 'Start two to three months before the Thai, Vaikasi or Aavani wedding months. Bridal kits, creator bookings with makeup artists, shoots and stock all take time. Deepavali needs similar lead time for gift sets and festive shades, as ad costs rise when every beauty brand bids at once.' },
-      { q: 'How much does cosmetics marketing in Chennai cost?', a: 'It depends on the number of shades and products, creator volume, channels and whether marketplace management is included. Ad spend is paid straight to Meta, Google or the marketplaces from your accounts. Our fee is quoted separately, as a fixed written quote after a free audit.' },
+      { q: 'How much does cosmetics marketing in Chennai cost?', a: 'Your shade and product count, creator volume, channels and any Nykaa or Myntra management set the scope. Ad budgets are paid straight to Meta, Google or the marketplaces from your accounts. Our fee is quoted separately, as a fixed written quote after a free audit.' },
       { q: 'Can we meet you in person in Chennai?', a: 'Yes. Our head office and main delivery team are in Chennai, and makeup brands can meet us by appointment to plan shoots, review creators or go through monthly results. Brands elsewhere in Tamil Nadu and India usually work with us on video calls.' },
     ],
   },
@@ -438,7 +450,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
         { title: 'Check the licence', body: 'Ayurvedic, Siddha or cosmetic category' },
         { title: 'Read the label', body: 'Indications match the ad copy' },
         { title: 'Remove cure words', body: 'No disease or promised-effect lines' },
-        { title: 'Check both languages', body: 'Tamil copy reviewed like English' },
+        { title: 'Check Tamil copy', body: 'Tamil lines reviewed like English' },
         { title: 'Keep evidence', body: 'Texts or tests for every claim' },
       ] },
     ],
@@ -453,7 +465,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       {
         heading: 'How Tamil buyers research herbal products online',
         paragraphs: [
-          'Herbal purchases often start with a family conversation, then move online. Buyers search in Tamil and Tanglish for herb names, home remedies and how to take a formulation, watch Tamil YouTube explainers, and ask questions on WhatsApp before ordering. They want to know where the herbs come from, who prepared the product and how long it takes to use up a pack.',
+          'Herbal purchases often start with a family conversation, then move online. A grandmother’s recommendation, a neighbour’s experience or a vaidyar’s advice usually comes first, and the search only confirms it. Buyers search in Tamil and Tanglish for herb names, home remedies and how to take a formulation, watch Tamil YouTube explainers, and ask questions on WhatsApp before ordering. They want to know where the herbs come from, who prepared the product and how long it takes to use up a pack.',
           'Content that answers those questions in Tamil earns trust that English-only brands find hard to match. Name the herbs in Tamil and English, cite the classical text where a formulation comes from one, and show the preparation. Every Tamil line should come from a fluent Tamil writer, because buyers in this category notice clumsy wording immediately.',
         ],
         bullets: [
@@ -466,14 +478,14 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       {
         heading: 'Licences, labels and what the law allows',
         paragraphs: [
-          'Ayurvedic and Siddha medicines are licensed under the Drugs and Cosmetics Act as ASU drugs, through the state licensing authority. Your ads should match what the licence and label say. The Drugs and Magic Remedies (Objectionable Advertisements) Act bars ads that claim to treat a long list of diseases, and the ASCI code expects every claim to be truthful and supported.',
-          'Meta and Google add their own limits on health claims and personal-attribute hooks. A product licensed as a cosmetic, such as a herbal face pack, follows the Cosmetics Rules instead, and cannot borrow medicinal language. We check Tamil copy as strictly as English. This is general guidance, not legal advice; your regulatory adviser should approve claims.',
+          'Ayurvedic and Siddha medicines are licensed under the Drugs and Cosmetics Act as ASU drugs, through the state licensing authority. Your ads should match what the licence and label say. The Drugs and Magic Remedies Act of 1954 bars ads that claim to treat a long list of diseases, and the ASCI code expects every claim to be truthful and supported.',
+          'Meta and Google add their own limits on health claims and personal-attribute hooks. A product licensed as a cosmetic, such as a herbal face pack, follows the Cosmetics Rules instead, and cannot borrow medicinal language. We check Tamil copy as strictly as English. Treat this as a general outline rather than legal advice, and have a regulatory adviser approve the final claims.',
         ],
       },
       {
         heading: 'Turning tradition into content that sells',
         paragraphs: [
-          'Tradition is your strongest story, but it needs detail to work online. Show the raw herbs, the drying, the grinding or the slow cooking of an oil. Explain the classical reference in plain words. If a Siddha or Ayurvedic practitioner works with you, introduce them by name and qualification and let them talk about daily habits, seasons and food, not cures.',
+          'Tradition is your strongest story, but it needs detail to work online, and this is where an ayurveda marketing agency in Chennai earns its keep. Show the raw herbs, the drying, the grinding or the slow cooking of an oil. Explain the classical reference in plain words. If a Siddha or Ayurvedic practitioner works with you, introduce them by name and qualification and let them talk about daily habits, seasons and food, not cures.',
           'Seasons give natural hooks. Many households reach for kashayam and herbal teas during the northeast monsoon; that is a moment to educate about ingredients and routine, not to promise protection. Pongal, Tamil New Year and Deepavali suit gift hampers of herbal teas, oils and balms.',
         ],
       },
@@ -481,7 +493,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
         heading: 'Store, marketplaces, WhatsApp and quick commerce',
         paragraphs: [
           'Your own store should hold the full education: herb pages, usage videos and practitioner content. Amazon and Flipkart bring buyers from other states who compare reviews. Quick commerce suits everyday items such as herbal teas, balms and hair oils that Chennai buyers want the same day. Keep claims identical across every channel; a bolder line on a marketplace listing is still your responsibility.',
-          'WhatsApp is often where the sale is decided. Buyers ask how to take a choornam or whether a balm suits an elderly parent. Answer usage questions clearly, refer medical questions to a qualified practitioner, and use reorder reminders for products taken daily.',
+          'WhatsApp is often where the sale is decided. Buyers ask how to take a choornam or whether a balm suits an elderly parent. Answer usage questions clearly, refer medical questions to a qualified practitioner, and use reorder reminders for products taken daily. Keep replies in the language the buyer used; an elderly customer who writes in Tamil should get a reply in Tamil, not a template in English.',
         ],
       },
       {
@@ -490,13 +502,19 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
           'Ask any ayurveda marketing agency in Chennai how it checks claims against licences, who writes the Tamil content and whether it understands Siddha as well as Ayurveda. Ask how it measures reorders, not just first orders, because herbal products are usually bought again and again once trusted.',
           'Your ad accounts, store and customer data should stay in your name. Our fee is quoted after a free audit, based on the number of products, channels and content volume. You are welcome to visit our Chennai head office to talk it through before deciding.',
         ],
+        bullets: [
+          'Check that every claim matches the product’s licence and label',
+          'Ask for Tamil samples written by a fluent Tamil writer',
+          'Look for reporting on reorders and buyer questions, not only clicks',
+          'Make sure accounts, content and customer lists stay in your name',
+        ],
       },
     ],
     related: [
       { label: 'Ayurveda brands across India', href: '/industries/ayurveda-marketing-agency/' },
       { label: 'Haircare marketing agency in Chennai', href: '/chennai/haircare-marketing-agency/' },
       { label: 'Skincare marketing agency in Chennai', href: '/chennai/skincare-marketing-agency/' },
-      { label: 'Beauty and Ayurveda brands', href: '/industries/beauty-ayurveda/' },
+      { label: 'Beauty and herbal wellness brand marketing', href: '/industries/beauty-ayurveda/' },
       { label: 'Digital marketing agency in Chennai', href: '/chennai/digital-marketing-agency/' },
       { label: 'SEO company in Chennai for Tamil and English searches', href: '/chennai/seo-company/' },
       { label: 'Ecommerce website development in Chennai', href: '/chennai/ecommerce-website-development/' },
@@ -508,7 +526,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       { q: 'Can we say our herbal product cures a disease?', a: 'Generally no. The Drugs and Magic Remedies Act bars ads that claim to treat many listed diseases, the ASCI code expects evidence for every claim, and ad platforms restrict health claims. Focus on ingredients, tradition and daily use. A regulatory adviser should approve your final claims.' },
       { q: 'Is Tamil content worth it for an Ayurvedic brand?', a: 'For Tamil Nadu buyers, very often yes. Herbal products are researched in Tamil, discussed in families and asked about on WhatsApp. Pages, videos and replies in clear Tamil, written by a fluent Tamil writer, build trust that English-only content struggles to reach in this category.' },
       { q: 'Should herbal brands sell on quick commerce apps in Chennai?', a: 'For everyday items such as herbal teas, balms and hair oils, it can work well, because Chennai buyers often want them the same day. Medicinal formulations that need guidance usually sell better through your own store and WhatsApp, where you can explain usage properly.' },
-      { q: 'How much does Ayurveda and Siddha marketing in Chennai cost?', a: 'It depends on the number of products, the channels, the volume of Tamil and English content and how much claims work is needed. Ad spend is paid directly to the platforms from your accounts. Our fee is quoted separately, as a fixed written quote after a free audit.' },
+      { q: 'How much does Ayurveda and Siddha marketing in Chennai cost?', a: 'Scope depends on how many products you sell, which channels you use, the volume of Tamil and English content and how much claims review is needed. Any ad budget is billed by the platforms to your own accounts. Our fee is quoted separately, as a fixed written quote after a free audit.' },
       { q: 'Can we meet your team in Chennai?', a: 'Yes. Chennai is our head office, and herbal brands can meet us by appointment to go through licences, claims and content plans in person. Brands from Madurai, Kanyakumari, Kerala and the rest of India usually work with us online, with visits when useful.' },
     ],
   },
@@ -596,21 +614,21 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       {
         heading: 'Sampling and discovery sets for Tamil Nadu buyers',
         paragraphs: [
-          'A full bottle is a big step for a scent the buyer has never smelt. Paid sample vials and discovery boxes lower that risk. Group samples by mood or occasion, such as fresh office scents, festive florals and wedding evening scents, so the buyer is choosing a feeling rather than decoding notes.',
-          'The follow-up decides whether sampling pays. A WhatsApp message after a week asking which vial they liked, with a credit toward the full bottle, turns curiosity into an order. Track which discovery sets lead to full-bottle orders and put the sampling budget behind those.',
+          'A full bottle is a big step for a scent the buyer has never smelt, so a perfume marketing agency in Chennai should treat sampling as a core channel. Paid sample vials and discovery boxes lower that risk. Group samples by mood or occasion, such as fresh office scents, festive florals and wedding evening scents, so the buyer is choosing a feeling rather than decoding notes.',
+          'The follow-up decides whether sampling pays. A WhatsApp message after a week asking which vial they liked, with a credit toward the full bottle, turns curiosity into an order. Track which discovery sets lead to full-bottle orders and put the sampling budget behind those. Pop-ups at Chennai malls, college fests and wedding exhibitions can add a physical sniff test; give visitors a QR code that brings them back to your store with the same sample credit.',
         ],
       },
       {
         heading: 'Gifting seasons across Chennai’s communities',
         paragraphs: [
           'Chennai celebrates many festivals, and fragrance fits most of them. Deepavali brings gift boxes and family orders. Ramzan and Eid are important for attar and oud-led scents, Christmas matters for many families in the city, and Valentine’s Day suits younger buyers. The Thai, Vaikasi and Aavani wedding months bring gifting for couples and return gifts for guests.',
-          'Plan each season early: gift sets photographed in festive settings, delivery cut-off dates clear on every page, and creative ready weeks before costs rise. Pongal and Tamil New Year suit smaller gift sets and home fragrance such as incense, sambrani cups and room sprays.',
+          'Plan each season early: gift sets photographed in festive settings, delivery cut-off dates clear on every page, and creative ready weeks before costs rise. Pongal and Tamil New Year suit smaller gift sets and home fragrance such as incense, sambrani cups and room sprays. Corporate gifting from Chennai’s IT and manufacturing companies is another steady source of bulk orders around Deepavali and the year end, so keep a simple bulk enquiry form and a WhatsApp number for it.',
         ],
       },
       {
         heading: 'Inspired-by scents, trademarks and shipping rules',
         paragraphs: [
-          'Inspired-by and dupe brands must be careful. Using a designer brand’s name in ads, keywords or listings can lead to rejected ads, removed listings and legal complaints. Describe your scent on its own terms instead. Packaged perfume also needs proper labelling under the Legal Metrology rules, including the quantity and maximum retail price on the pack.',
+          'Inspired-by and dupe brands must be careful. Naming a designer house in ad copy, search keywords or marketplace titles can lead to rejected ads, removed listings and legal complaints. Describe your scent on its own terms instead. Packaged perfume also needs proper labelling under the Legal Metrology rules, including the quantity and maximum retail price on the pack.',
           'Many couriers treat alcohol-based perfume as restricted goods, and some do not carry it by air. Check your courier and marketplace rules before running ads to buyers far from Chennai. Quick commerce suits small deodorants, body mists and attar rollers more than large glass bottles.',
         ],
       },
@@ -619,6 +637,12 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Ask any perfume marketing agency in Chennai how it would describe your hero scent to a Tamil Nadu buyer, how it plans sampling and how it handles the gifting calendar. Ask who writes the Tamil creative; it should be a fluent Tamil writer, because scent language is subtle.',
           'Accounts, creative files and customer data should stay in your name. Our fee is quoted after a free audit, based on the number of scents, channels and creative volume. Bring a few samples to our Chennai head office and we can talk through the plan in person.',
+        ],
+        bullets: [
+          'Measure sample-to-full-bottle rates by scent and by discovery set',
+          'Compare gifting season orders with steady months to plan the year',
+          'Read reviews for longevity complaints and adjust descriptions',
+          'Track repeat purchases of the same scent as a sign of a signature fragrance',
         ],
       },
     ],
@@ -638,7 +662,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       { q: 'Does Chennai’s humidity affect how we market perfume?', a: 'Yes. Heat and humidity change how long a scent lasts and how it projects. Buyers ask whether a perfume survives a hot day or a crowded wedding hall. Test your range locally, describe longevity by concentration and occasion, and avoid fixed hour counts your tests do not support.' },
       { q: 'When are the main fragrance gifting seasons in Chennai?', a: 'Deepavali, Ramzan and Eid, Christmas, Valentine’s Day and the Thai, Vaikasi and Aavani wedding months are the main ones. Pongal and Tamil New Year suit smaller gift sets and home fragrance. Plan creative, stock and delivery cut-offs several weeks before each peak.' },
       { q: 'Can an inspired-by brand mention the designer perfume in ads?', a: 'It is risky. Using another brand’s trademark in ads, keywords or listings can lead to rejected ads, removed listings and legal complaints. Describe your scent on its own merits, with its notes, mood and occasion. Take legal advice if you are unsure how far comparisons can go.' },
-      { q: 'How much does perfume marketing in Chennai cost?', a: 'It depends on the number of scents, channels, creator and creative volume, and whether sampling and marketplace management are included. Ad spend goes directly to the platforms from your accounts. Our fee is quoted separately, as a fixed written quote after a free audit.' },
+      { q: 'How much does perfume marketing in Chennai cost?', a: 'Scope is set by your number of scents, channels, creator and creative volume, and whether sampling and marketplace work are included. Ad budgets go directly to the platforms from your accounts. Our fee is quoted separately, as a fixed written quote after a free audit.' },
       { q: 'Can we meet you in Chennai with our samples?', a: 'Yes. Chennai is our head office, and fragrance brands can meet us by appointment and bring samples, which helps us write scent stories that match the real thing. Brands elsewhere in India can courier samples and work with us on video calls.' },
     ],
   },
@@ -673,7 +697,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       { title: 'Tamil and English video', body: 'Close-up and on-body reels, thaali and temple set walkthroughs and live video calls, with Tamil scripts from a fluent Tamil writer.' },
       { title: 'WhatsApp enquiry flows', body: 'Quick replies for weight, rate and design questions, video call bookings and order updates, tracked back to the ad that started them.' },
       { title: 'Store visit campaigns', body: 'Local search ads, Google Business Profile and appointment booking for showrooms, measured alongside online orders.' },
-      { title: 'Wedding and festive planning', body: 'Bridal, Akshaya Tritiya, Aadi, Deepavali and Karthigai campaigns planned months ahead, with designs, stock and creative ready.' },
+      { title: 'Wedding and festival calendar', body: 'Bridal, Akshaya Tritiya, Aadi, Deepavali and Karthigai campaigns planned months ahead, with designs, stock and creative ready.' },
       { title: 'Tamil and English design SEO', body: 'Collection pages for searches such as temple jewellery, thaali chain designs and light-weight gold sets, in Tamil and English.' },
     ],
     process: [
@@ -735,14 +759,15 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
         heading: 'Wedding seasons, thaali and festive planning',
         paragraphs: [
           'Weddings drive the largest purchases. The Thai month after Pongal, Vaikasi and Aavani are busy wedding months, while Aadi is traditionally quiet for weddings but busy with offers and gold savings schemes. Akshaya Tritiya brings coin and light-weight gold demand, and Deepavali and Karthigai bring festive and gifting purchases.',
-          'Bridal buyers often start months ahead, choosing the thaali, the main necklace and temple sets with the whole family. Campaigns should start before they do, with bridal collections, appointment booking and video consultations ready.',
+          'Bridal buyers often start months ahead, choosing the thaali, the main necklace and temple sets with the whole family. Campaigns should start before they do, with bridal collections, appointment booking and video consultations ready. Many Tamil Nadu families living abroad buy wedding jewellery from Chennai brands, so time calls and video consultations for buyers in Singapore, the Gulf, the UK and the US as well.',
+          'Karthigai, with its lamps and family gatherings, suits smaller gifting pieces such as earrings, kids’ jewellery and silver lamps. Aadi offers work well for gold savings schemes, where families pay monthly toward a later purchase; explain the scheme terms clearly and keep them consistent across ads, store and WhatsApp.',
         ],
       },
       {
         heading: 'Video, WhatsApp and store visits',
         paragraphs: [
           'Most jewellery decisions in Chennai involve a conversation. Instagram reels and YouTube videos in Tamil and English bring the first interest, then buyers move to WhatsApp to ask about weight, rate and design changes. A live video call that shows the piece from every angle often closes the sale. Track each enquiry back to the ad or post that started it.',
-          'For brands with showrooms, the store visit is often the real conversion. Use local search ads, an up-to-date Google Business Profile with photos and appointment booking. Measure visits and in-store sales alongside online orders, so budget is judged on the full picture.',
+          'For brands with showrooms, the store visit is often the real conversion. Use local search ads, an up-to-date Google Business Profile with photos and appointment booking. Measure visits and in-store sales alongside online orders, so budget is judged on the full picture. A jewellery marketing agency in Chennai that reports only clicks and online orders will undervalue the ads that fill your showroom.',
         ],
       },
       {
@@ -769,7 +794,7 @@ export const chennaiIndustryBeautyPages: ServicePageData[] = [
       { q: 'What is HUID and why should it be on our product pages?', a: 'HUID is the six-character code on hallmarked gold jewellery in India. Buyers can verify it with the BIS CARE app. Showing hallmark and HUID details, and explaining how to check them, answers the fear of impure gold, especially for buyers ordering from a brand they have not visited.' },
       { q: 'When should jewellery brands plan wedding season campaigns?', a: 'Start two to three months before the Thai, Vaikasi or Aavani wedding months, because families shop early for the thaali and bridal sets. Akshaya Tritiya, Aadi offers, Deepavali and Karthigai also need their own plans, with designs, stock and creative ready before demand rises.' },
       { q: 'Can we track store visits from online ads?', a: 'Partly. Google Business Profile shows calls and direction requests, appointment bookings can be tracked, and WhatsApp enquiries can be tagged by source. Asking buyers how they found you at the counter fills gaps. We combine these to judge ads on store sales as well as online orders.' },
-      { q: 'How much does jewellery marketing in Chennai cost?', a: 'It depends on the number of collections, channels, video and photo volume, and whether showroom campaigns are included. Ad spend is paid directly to Meta and Google from your accounts. Our fee is quoted separately, as a fixed written quote after a free audit.' },
+      { q: 'How much does jewellery marketing in Chennai cost?', a: 'Your collections, channels, video and photo volume, and whether showroom campaigns are part of the work all shape the scope. Ad budgets are paid directly to Meta and Google from your accounts. Our fee is quoted separately, as a fixed written quote after a free audit.' },
       { q: 'Can we meet your team at the Chennai office?', a: 'Yes. Chennai is our head office, and jewellery brands can meet us by appointment for the audit walk-through, wedding season planning or monthly reviews. Makers in Coimbatore, Madurai, Nagercoil and elsewhere usually work with us online, with visits when useful.' },
     ],
   },
