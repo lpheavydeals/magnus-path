@@ -12,11 +12,11 @@ twin: "how-to-sell-perfume-online"
 summary: "Selling perfume online in the US comes down to three jobs. Help shoppers picture a scent they cannot smell, with notes in plain words, honest performance details, video and a paid discovery set that credits toward a full bottle. Treat alcohol-based perfume as hazmat: ship by ground with the right markings and expect Amazon's dangerous goods review. Keep your own scent names rather than designer ones, follow US cosmetic rules, and plan stock around the holidays, Valentine's Day and Mother's Day."
 faqs:
   - q: "Is perfume considered hazmat when shipping in the US?"
-    a: "Most alcohol-based perfumes are flammable liquids under US transport rules, so they are hazardous materials for shipping. Small retail bottles can often move by ground under limited-quantity provisions with the correct box markings, while air services are restricted. USPS, UPS and FedEx each publish their own conditions, so confirm current rules with your carrier and fulfillment partner before launch."
+    a: "Most alcohol-based perfumes are flammable liquids under US transport rules, so they are hazardous materials for shipping. Retail-size bottles usually travel by ground as limited quantities, with marked outer boxes, and air options are tightly restricted. USPS, UPS and FedEx each publish their own conditions, so get current conditions in writing from your carrier and 3PL before launch."
   - q: "How long does Amazon's dangerous goods review take for perfume?"
     a: "It varies. Amazon reviews many fragrance products as potential dangerous goods and usually asks for a safety data sheet or exemption sheet before stock can be received at its warehouses. Reviews can take days and can be repeated if documents are unclear. Upload complete, matching documents early and build the review into your launch plan."
   - q: "Do I need FDA approval to sell perfume in the US?"
-    a: "No. Perfume is generally regulated as a cosmetic, and cosmetics do not need FDA approval before sale. They must still be safe, properly labeled and free of drug claims. Under the newer federal cosmetics law, many businesses also have facility registration, product listing, safety substantiation and adverse event reporting duties. Check which apply to you with an adviser."
+    a: "No. Perfume is generally regulated as a cosmetic, and cosmetics do not need FDA approval before sale. They must still be safe, properly labeled and free of drug claims. Under the newer federal cosmetics law, many businesses must register facilities, list products, hold evidence of safety and report serious adverse events. Check which apply to you with an adviser."
   - q: "Can I sell dupes or inspired-by perfumes in the US?"
     a: "Making an original scent with a similar profile is common, but using a designer's trademarked name in your product names, titles, ads, keywords or hashtags can lead to complaints, takedowns and legal claims. Copying a bottle shape or packaging adds more risk. Name every scent yourself, describe it by notes and mood, and have a trademark lawyer review your approach."
   - q: "What sizes should a new US perfume brand offer?"
@@ -60,7 +60,7 @@ figures:
       - { title: "Easiest to send", body: "Good for samples, add-ons and last-minute gifts" }
 ---
 
-If you are working out how to sell perfume online (USA customers, US carriers, US marketplaces), the core problem is the same one every fragrance brand faces: the shopper cannot smell the product. In a department store or at a Sephora counter they spray a strip, walk around and decide. Online they see a bottle, a price and a list of notes. This guide covers the formats to launch with, US cosmetic rules, scent descriptions, sampling, hazmat shipping, marketplaces, "inspired by" ranges, the American gifting calendar and the costs to plan for.
+If you are working out how to sell perfume online (USA customers, US carriers, US marketplaces), the core problem is the same one every fragrance brand faces: the shopper cannot smell the product. In a department store or at a Sephora counter they spray a strip, walk around and decide. Online, all they get is a photo, a price and a note list. This guide covers the formats to launch with, US cosmetic rules, scent descriptions, sampling, hazmat shipping, marketplaces, "inspired by" ranges, the American gifting calendar and the costs to plan for.
 
 We are an ecommerce growth team, not lawyers or shipping compliance specialists. Confirm the regulatory, carrier and trademark points with qualified advisers.
 
@@ -76,11 +76,11 @@ We are an ecommerce growth team, not lawyers or shipping compliance specialists.
 | Travel spray | Small refillable or disposable atomizer | Gifting, repeat buyers, trying a second scent |
 | Discovery set | Several small vials | The entry product for new customers |
 
-A short range is easier to explain and stock. Many new brands launch with four to eight scents spread across clear families (fresh, floral, woody, amber, gourmand) and one discovery set that holds them all.
+A short range is easier to explain and stock. A first collection of four to eight scents, spread across clear families (fresh, floral, woody, amber, gourmand) with one discovery set that holds them all, is a common starting point.
 
 ## US cosmetic rules for fragrance
 
-Perfume is generally regulated as a cosmetic in the US. Cosmetics do not need FDA approval before sale, but they must be safe for their intended use and correctly labeled. The Modernization of Cosmetics Regulation Act (MoCRA) added duties for many businesses: facility registration, product listing, keeping evidence that products are safe, and reporting serious adverse events. Fragrance allergen labeling rules are also expected, so watch for FDA updates.
+Under US law, perfume generally counts as a cosmetic. Cosmetics do not need FDA approval before sale, but they must be safe for their intended use and correctly labeled. The Modernization of Cosmetics Regulation Act (MoCRA) added duties for many businesses: facility registration, product listing, keeping evidence that products are safe, and reporting serious adverse events. Fragrance allergen labeling rules are also expected, so watch for FDA updates.
 
 Two practical points:
 
@@ -93,7 +93,7 @@ Many fragrance houses and oil suppliers also follow the IFRA Standards, the indu
 
 ### Translate the notes
 
-List the top, heart and base notes, then say what they mean in ordinary words: a sharp grapefruit opening that softens into jasmine, then settles into warm cedar by the afternoon. Keep the list to the notes a buyer will actually notice.
+Name the opening, heart and drydown notes, and then describe the experience in ordinary words: a sharp grapefruit opening that softens into jasmine, then settles into warm cedar by the afternoon. Keep the list to the notes a buyer will actually notice.
 
 ### Be honest about performance
 
@@ -101,7 +101,7 @@ State the concentration and give a typical wear time and how far the scent carri
 
 ### Compare without borrowing names
 
-Point buyers by preference rather than by someone else's brand: "if you reach for fresh, clean scents in summer, start here." A short scent quiz that asks about moods, seasons and occasions can recommend two or three of your scents and lead to the discovery set.
+Point buyers by preference rather than by someone else's brand: "if you reach for fresh, clean scents in summer, start here." A short quiz on favorite smells, seasons and plans can narrow your range to a shortlist and lead to the discovery set.
 
 ### Use video and reviews
 
@@ -109,14 +109,14 @@ Short videos of real people wearing a scent across a day, from first spray to ev
 
 ## Sampling: discovery sets and credits
 
-Sampling is the most dependable way to lower the risk of a first purchase.
+Nothing lowers first-order risk as reliably as letting people try the scent at home.
 
 - **Paid discovery set.** Priced as a fair trial, so it attracts serious buyers.
-- **Credit toward a full bottle.** The set's cost comes off a later full-size order, so the sample feels like a first step.
-- **A vial in every order.** Add a different scent to each parcel, chosen to match what the customer bought.
-- **A timed follow-up.** An email or text near the end of the set asks which scent they liked and links straight to that bottle with the credit applied.
+- **Credit toward a full bottle.** The set's cost comes off a later full-size order, so trying feels like progress toward the bottle rather than a separate cost.
+- **A vial in every order.** Slip in a vial of a neighboring scent, picked to suit what was ordered.
+- **A timed follow-up.** An email or text near the end of the set asks for their favorite and sends them directly to it as a full bottle, credit included.
 
-Track how many discovery-set buyers buy a full bottle within two months, by channel. That rate tells you how much you can afford to pay to acquire a sample buyer.
+Track how many discovery-set buyers buy a full bottle within two months, by channel. That rate sets your ceiling on what a sample buyer is worth acquiring.
 
 ## Shipping alcohol-based perfume in the US
 
@@ -139,17 +139,17 @@ Ground-only rules make Alaska, Hawaii, US territories and military addresses har
 - A sealed bag around each bottle in case of leaks
 - A third-party logistics provider that is set up to handle hazmat parcels
 
-Glass is heavy, and ground shipping is slower in peak season. Our [free shipping threshold calculator](/tools/free-shipping-threshold-calculator/) helps you set a threshold that covers those costs.
+Glass is heavy, and ground shipping is slower in peak season. Use our [free shipping threshold calculator](/tools/free-shipping-threshold-calculator/) to find a free-shipping level that still protects margin.
 
 ### Returns
 
-Opened perfume usually cannot be resold. Many brands accept returns of unopened bottles, replace damaged or leaking items, and lean on sampling to prevent disappointment returns. Returned perfume is still hazmat, so give customers clear instructions.
+Once a bottle has been sprayed, it cannot go back on sale. Many brands accept returns of unopened bottles, replace damaged or leaking items, and lean on sampling to prevent disappointment returns. Returned perfume is still hazmat, so give customers clear instructions.
 
 ## Choose your US channels
 
 | Channel | Good for | Watch out for |
 |---|---|---|
-| Your Shopify store | Discovery sets, credits, gifting, customer data | You bring all the traffic |
+| Your Shopify store | Sample sets, credits, gift options, first-party data | Every visitor is yours to find |
 | Amazon US | Search-led and gift demand | Dangerous goods review, safety data sheets, counterfeit sellers |
 | TikTok Shop | Creator-led discovery and live selling | Category approvals, shipping and claim rules |
 | Walmart Marketplace | Broad reach once operations are steady | Hazmat compliance documents |
@@ -183,13 +183,13 @@ Because ground shipping is slower, publish order-by dates on product pages and i
 
 ## Know your costs per bottle
 
-Before you set prices, add up the bottle, atomizer, cap and box (which often cost more than the juice), fragrance oil and alcohol, samples given away or sold below cost, hazmat-ready fulfillment, breakage and leaks, marketplace fees, returns and the advertising needed to reach someone who has never smelled your work. Then compare one-off gift buyers with self-buyers who move from a discovery set to a full bottle and reorder; the second group can justify a higher acquisition cost.
+Before you set prices, add up the bottle, atomizer, cap and box (often pricier than the fragrance inside), fragrance oil and alcohol, samples given away or sold below cost, hazmat-ready fulfillment, breakage and leaks, marketplace fees, returns and the advertising needed to reach someone who has never smelled your work. Then compare one-off gift buyers with self-buyers who move from a discovery set to a full bottle and reorder; the second group can justify a higher acquisition cost.
 
 ## How to sell perfume online (USA): a launch checklist
 
 - Four to eight scents in clear families, plus a discovery set and travel sizes
 - Labels, safety documents and MoCRA duties reviewed with an adviser
-- Every scent named by you, with no designer names in titles, ads, keywords or tags
+- Original names for every scent, with designer marks kept out of titles, ads, keywords and tags
 - Product pages with plain-word notes, concentration, honest wear time and occasions
 - Discovery-set credit and follow-up messages live before ads start
 - Carrier hazmat conditions confirmed in writing and packaging tested
@@ -199,4 +199,4 @@ Before you set prices, add up the bottle, atomizer, cap and box (which often cos
 
 ## Next step
 
-Launching a fragrance brand in the US, or getting traffic that does not turn into orders? Ask for a [free store audit](/free-ecommerce-audit/). Our team in Chennai reviews your product pages, sampling offer and channels remotely and walks you through the findings on a call in your morning, when India and US working hours overlap.
+Launching a fragrance brand in the US, or getting traffic that does not turn into orders? Ask for a [free store audit](/free-ecommerce-audit/). Our team in Chennai reviews your scent pages, sample offer and sales channels remotely and explains what to fix first on a video call early in your day, when our evening meets your morning.

@@ -16,7 +16,7 @@ faqs:
   - q: "How should jewelry brands work with influencers in the US?"
     a: "Choose creators whose audience buys at your price point and whose style suits your pieces. Brief them on accurate metal and stone wording, including lab-grown disclosure, and require clear FTC disclosure for gifted, paid or affiliate posts. Agree usage rights in writing so strong videos can run as ads, and measure sales rather than views."
   - q: "When should jewelry brands start holiday campaigns?"
-    a: "Plan in late summer and start warming audiences in October. Gift guides, engraving cut-offs, stock and creative should be ready before Black Friday, because the holiday period is also proposal season and the busiest weeks of the year. Publish clear order-by dates for engraved and made-to-order pieces, and offer gift cards for late shoppers."
+    a: "Start building gift guides, engraving capacity and creative by late summer, then begin warming audiences in October. The weeks from Black Friday to Christmas are also proposal season, so engagement content and gift campaigns run side by side. Publish clear order-by dates for engraved and made-to-order pieces, and offer gift cards for late shoppers."
   - q: "Are Google Shopping ads good for jewelry?"
     a: "They are often the main paid channel, because jewelry search is visual and specific. Results depend heavily on the product feed: accurate metal, stone, color, size and gender attributes, clean images and titles that match how people search. Keep feed wording as accurate as your product pages, since a misleading title in a feed is still advertising."
   - q: "How can jewelry brands get repeat customers?"
@@ -40,7 +40,7 @@ related:
     href: "/tools/roas-calculator/"
 figures:
   - type: mindmap
-    caption: "Jewelry marketing ideas for US brands, grouped by the job each one does."
+    caption: "Jewelry marketing ideas for US brands, sorted by what each idea is for."
     center: "US jewelry marketing"
     branches:
       - label: "Trust"
@@ -88,7 +88,7 @@ Film the bench: casting, setting, polishing, engraving. Craft content gives inde
 
 A box people want to keep, a care card and a handwritten note turn deliveries into unboxing videos you did not have to pay for.
 
-## Ideas that show the piece clearly
+## Ideas that make pieces easy to see
 
 ### 7. Daylight video loops
 
@@ -233,7 +233,7 @@ Rotate creative every few weeks during peaks. Jewelry ads tire quickly when the 
 
 ## Following up on high-value pieces
 
-Engagement rings and fine pieces are rarely bought on the first visit. A shopper may return five or six times over several weeks. Retarget with close-up video, the grading report, your return terms and an invitation to book a consultation, rather than a discount that cheapens the piece. Save-for-later and wishlist emails help too, and they tell you which designs are drawing serious interest.
+Engagement rings and fine pieces are rarely bought on the first visit. A shopper may return five or six times over several weeks. Retarget using detail video, the stone's grading report, your return terms and an invitation to book a consultation, rather than a discount that cheapens the piece. Save-for-later and wishlist emails help too, and they tell you which designs are drawing serious interest.
 
 ## Measuring what works
 
@@ -247,4 +247,4 @@ Review after each major occasion and move budget toward ideas that brought profi
 
 ## Next step
 
-Not sure which jewelry marketing ideas to start with? Ask for a [free store audit](/free-ecommerce-audit/). Our Chennai team reviews your product wording, photos, feed and campaigns remotely and walks you through the findings on a call in your morning, when India and US working hours overlap.
+Not sure which jewelry marketing ideas to start with? Ask for a [free store audit](/free-ecommerce-audit/). Our Chennai team reviews your product wording, photos, feed and campaigns remotely and picks the first five ideas with you on a video call early in your day, when our evening overlaps your morning.

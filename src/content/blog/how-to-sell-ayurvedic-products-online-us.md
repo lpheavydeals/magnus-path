@@ -14,9 +14,9 @@ faqs:
   - q: "Do I need FDA approval to sell Ayurvedic supplements online in the US?"
     a: "Dietary supplements do not need FDA approval before they are sold, but that does not mean they are unregulated. The product must be made under the supplement manufacturing rules, labeled with a Supplement Facts panel, and limited to structure/function claims with the FDA disclaimer. New dietary ingredients can need a premarket notification. A regulatory adviser should confirm what applies to each product."
   - q: "Can I describe the traditional uses of an herb on my US store?"
-    a: "You can describe tradition as tradition, such as how a blend has been used in Ayurvedic routines, but be careful when tradition names a disease. A sentence saying an herb was used for joint pain or diabetes can still read as a disease claim on a product page. Keep outcomes to permitted structure/function or cosmetic wording and have an adviser review the copy."
+    a: "You can describe tradition as tradition, such as how a blend has been used in Ayurvedic routines, but be careful when tradition names a disease. A sentence saying an herb was used for joint pain or diabetes can still read as a disease claim on a product page. Limit promised results to structure/function or cosmetic language, and ask an adviser to check the page."
   - q: "Why do US buyers ask about heavy metals in Ayurvedic products?"
-    a: "The FDA has warned consumers about lead, mercury and arsenic found in some Ayurvedic products, especially certain imports, and news coverage has repeated those warnings. Cautious buyers have read them. The practical response is independent testing of every batch, results matched to the lot code on the pack, and a plain page explaining what you test for and how often."
+    a: "FDA consumer advisories have named lead, mercury and arsenic detected in certain Ayurvedic preparations, many of them imported, and the press has picked those advisories up. Cautious buyers have read them. The practical response is independent testing of every batch, results matched to the lot code on the pack, and a plain page explaining what you test for and how often."
   - q: "Is Amazon US a good place to start for an Ayurvedic brand?"
     a: "It is often where Indian-American shoppers look first, so it can bring early sales. It is also strict: Amazon asks supplement sellers for documents such as third-party test results and clear label images, and listings with disease claims or missing paperwork can be suppressed. Prepare those files before launch and keep your own store as the place where you explain the brand."
   - q: "Can Ayurvedic oils and skincare be sold as cosmetics?"
@@ -89,7 +89,7 @@ Naming a disease or its typical symptoms in a way that suggests treatment is a d
 
 ### Evidence for advertising
 
-The FTC regulates advertising and expects health-related claims to be backed by competent and reliable scientific evidence that matches what the claim actually says. A sentence about tradition should be framed as tradition, without implying a proven outcome.
+The FTC regulates advertising and asks for competent and reliable scientific evidence behind health-related claims, measured against what the claim actually says. A sentence about tradition should be framed as tradition, without implying a proven outcome.
 
 | Risky wording | Safer direction |
 |---|---|
@@ -102,7 +102,7 @@ The FTC regulates advertising and expects health-related claims to be backed by 
 
 ## Purity, heavy metals and batch testing
 
-Anyone researching Ayurveda in the US quickly meets FDA consumer warnings about lead, mercury and arsenic found in some Ayurvedic products, particularly certain imports. Some classical rasa shastra preparations include metals or minerals by design, and many US sellers simply leave those out of their range. Your marketing cannot pretend the concern does not exist. It can show how your own products are handled.
+Search for Ayurveda in the US and FDA advisories about heavy metals, including lead, mercury and arsenic detected in certain preparations, appear early in the results. Some classical rasa shastra preparations include metals or minerals by design, and many US sellers simply leave those out of their range. Your marketing cannot pretend the concern does not exist. It can show how your own products are handled.
 
 - **Test every batch.** Use an independent lab for heavy metals and microbes, and for pesticide residues on botanicals where relevant.
 - **Link results to the pack.** Print a lot code and let buyers look up the matching certificate of analysis on your site.
@@ -143,7 +143,7 @@ People ask Google and AI assistants questions such as "what is triphala", "how t
 | TikTok Shop | Discovery through creators | Strict health-claim review, careful creator briefs |
 | Etsy | Handmade soaps, balms and herbal skincare | Cosmetic claims only; Etsy restricts medical claims |
 
-On Amazon US, supplement sellers are asked for documents such as third-party test results and label images that match the listing. Missing files, restricted ingredients or disease wording in a title can get a listing suppressed. Read the current category rules in Seller Central before you send stock, because they change. Walmart Marketplace has its own approval steps, so treat it as a second marketplace rather than a launch channel.
+On Amazon US, supplement sellers are asked for documents such as third-party test results and label images that match the listing. Missing files, restricted ingredients or disease wording in a title can get a listing suppressed. Read the current category rules in Seller Central before you send stock, because they change. Walmart Marketplace runs a separate seller approval, so it fits better once your first channel runs smoothly.
 
 ## Fulfillment, shelf life and returns
 
@@ -162,7 +162,7 @@ Ayurvedic products are usually daily habits, so the business is built on the sec
 
 ### Acquisition
 
-Search ads on herb names and routine terms, Meta and TikTok ads that teach rather than promise, and creators who already talk about wellness routines. Creators must disclose paid, gifted or affiliate relationships clearly under the FTC's endorsement rules, and they should not make claims you could not make yourself. Ad platforms also restrict health claims and some supplement ingredients, so expect reviews and plan alternatives.
+Search ads on herb names and routine terms, Meta and TikTok ads that teach rather than promise, and creators who already talk about wellness routines. Creators must disclose paid, gifted or affiliate relationships clearly under the FTC's endorsement rules, and anything a creator says for you must stay inside the claims your own label could carry. Ad platforms also restrict health claims and some supplement ingredients, so expect reviews and plan alternatives.
 
 ### Retention
 
@@ -193,4 +193,4 @@ Track reorder rate, subscription retention after three and six months, refund re
 
 ## Next step
 
-If you already sell Ayurvedic products in the US and want a second opinion, request a [free store audit](/free-ecommerce-audit/). Our team in Chennai reviews your store, listings and claims remotely and walks you through the findings on a call in your morning, during the short overlap between India and US time zones.
+If you already sell Ayurvedic products in the US and want a second opinion, request a [free store audit](/free-ecommerce-audit/). Our team in Chennai reviews your store, listings and claims remotely and goes over what we found on a video call early in your day, in the short window when India and US working hours meet.

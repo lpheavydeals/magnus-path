@@ -39,13 +39,13 @@ related:
 figures:
   - type: matrix
     caption: "Which Ayurvedic products to bring into the US first, by US category and what is inside."
-    cols: ["Plant-only formula", "Minerals or complex"]
-    rows: ["Food or cosmetic in US", "Supplement in US"]
+    cols: ["Herbs only", "Contains minerals"]
+    rows: ["Sold as food or cosmetic", "Sold as a supplement"]
     cells:
       - { title: "Launch first", body: "Teas, spice blends, oils, soaps: simpler labels and tests" }
       - { title: "Check each input", body: "Confirm every ingredient and color is allowed in the US" }
       - { title: "Launch with care", body: "Single herbs from a maker that follows US supplement rules" }
-      - { title: "Leave for later", body: "Heavy-metal risk and import alerts make these the hardest" }
+      - { title: "Hold back", body: "Heavy-metal risk and import alerts make these hardest" }
   - type: steps
     caption: "A cautious path for getting Ayurvedic products from India onto US shelves and screens."
     steps:
@@ -112,7 +112,7 @@ Tariff rates on goods from India, and the treatment of low-value parcels sent st
 
 ## Test every batch before it ships
 
-Heavy metals are the issue US regulators, journalists and careful shoppers raise first. The FDA has warned about lead, mercury and arsenic in some Ayurvedic products, so testing is the foundation of a US business, not an extra.
+Heavy metals are the issue US regulators, journalists and careful shoppers raise first. FDA advisories on heavy metals in certain Ayurvedic preparations are easy to find, so batch testing is where a US business starts, not an optional extra.
 
 - Test each batch at an independent lab for lead, mercury, arsenic and cadmium, plus microbes.
 - For botanicals, add pesticide residues and, for some ingredients, aflatoxins.
@@ -190,4 +190,4 @@ Our [marketplace profit calculator](/tools/marketplace-profit-calculator/) helps
 
 ## Next step
 
-Planning a US launch or already importing and not seeing the sales you expected? Ask for a [free store audit](/free-ecommerce-audit/). Our Chennai team reviews your store, listings and positioning remotely and talks through the results on a call in your morning, when India and US working hours overlap.
+Planning a US launch or already importing and not seeing the sales you expected? Ask for a [free store audit](/free-ecommerce-audit/). Our Chennai team reviews your store, listings and positioning remotely and shares the findings on a video call at the start of your US workday, when our evening overlaps your morning.

@@ -1,7 +1,7 @@
 ---
 title: "How to Sell Jewelry Online: USA Guide to FTC Rules, Photos and Trust"
 metaTitle: "How to Sell Jewelry Online: USA Guide for Brand Owners"
-description: "How to sell jewelry online, USA edition: describe metals and stones the FTC way, disclose lab-grown clearly, shoot for scale, ship insured, plan gifting peaks."
+description: "How to sell jewelry online, USA edition: word metals and stones to FTC standards, disclose lab-grown clearly, shoot for scale, ship insured, plan gifting peaks."
 primaryKeyword: "how to sell jewelry online usa"
 category: "Industries"
 publishDate: 2026-10-25
@@ -16,13 +16,13 @@ faqs:
   - q: "Can I call gold-plated jewelry gold?"
     a: "Not on its own. Pieces with a thin gold layer over another metal should be described as gold plated or gold electroplate, heavier bonded layers as gold filled, and gold over sterling silver as vermeil only when it meets the Guides' meaning. Solid gold should be described by karat. Accuracy matters in titles, ads and feeds, not only on the product page."
   - q: "How should lab-grown diamonds be described?"
-    a: "Use clear words such as laboratory-grown, laboratory-created or the maker's name followed by created, placed close to the word diamond so nobody could think the stone was mined. Do not describe it as natural or imply mined origin with words like real or genuine. Keep the disclosure in titles, ads, product feeds, creator posts and packaging."
+    a: "Put an origin term right next to the word diamond, for example laboratory-grown or laboratory-created, or the producer's name plus 'created', so no shopper assumes it came from a mine. Do not describe it as natural or imply mined origin with words like real or genuine. Keep the disclosure in titles, ads, product feeds, creator posts and packaging."
   - q: "Do I need to test children's jewelry in the US?"
     a: "Generally yes. Jewelry designed mainly for children 12 and under is a children's product, which brings federal lead limits, third-party testing at a lab accepted by the Consumer Product Safety Commission, and a Children's Product Certificate. Some states also restrict cadmium. Check the current requirements with a product safety adviser before advertising to parents."
   - q: "How do I reduce returns when selling jewelry online?"
-    a: "Close the gap between photo and piece. Show every item on a hand, ear or neck for scale, give dimensions in inches and millimeters, add natural-light photos and short video, and describe metal color honestly. Offer a ring sizer and explain resizing. Then track returns by product to find listings that set the wrong expectations."
+    a: "Close the gap between photo and piece. Photograph every item being worn so shoppers can judge size, give dimensions in inches and millimeters, add natural-light photos and short video, and describe metal color honestly. Offer a ring sizer and explain resizing. Then review return reasons by SKU to spot listings that mislead."
   - q: "Should I sell jewelry on Etsy, Amazon or my own store?"
-    a: "It depends on the piece. Etsy suits handmade, personalized and name jewelry. Amazon US suits gifting and fashion pieces and requires approval for fine jewelry. TikTok Shop and Pinterest help discovery. Fine and bridal pieces usually sell on your own store, supported by Google Shopping, search ads and video consultations."
+    a: "Match the channel to the piece. Personalized and handmade work fits Etsy shoppers. Fashion and gift items do well on Amazon US, where fine jewelry needs category approval. TikTok Shop and Pinterest drive discovery. Fine and bridal pieces tend to close on your own site, fed by Shopping ads, search and booked video calls."
 related:
   - label: "Jewelry marketing agency for US online brands"
     href: "/us/jewelry-marketing-agency/"
@@ -50,7 +50,7 @@ figures:
       - label: "Safety net"
         items: ["Insured, signed delivery", "Returns and resizing", "Clear warranty terms"]
   - type: matrix
-    caption: "How the online path changes with who the piece is for and how much it costs."
+    caption: "Gift or self-purchase, everyday or high value: each pairing needs a different online path."
     cols: ["Everyday price point", "High-value piece"]
     rows: ["Bought as a gift", "Bought for themselves"]
     cells:
@@ -60,7 +60,7 @@ figures:
       - { title: "Consult first", body: "Video call, financing info, follow-up over weeks" }
 ---
 
-This guide is a practical answer to how to sell jewelry online (USA shoppers, FTC rules, US marketplaces). It is for founders selling fine, demi-fine, lab-grown, fashion or handmade jewelry to American buyers, whether you design in Brooklyn, run a family workshop or produce in India and sell into the US. We cover choosing a segment, describing metals and stones the way the FTC expects, children's jewelry rules, product pages, photography, payments and fraud, insured shipping, returns, channels and the US gifting calendar.
+This guide is a practical answer to how to sell jewelry online (USA shoppers, FTC rules, US marketplaces). It is for founders selling fine, demi-fine, lab-grown, fashion or handmade jewelry to American buyers, whether you design in Brooklyn, run a family workshop or produce in India and sell into the US. We cover choosing a segment, wording metals and stones to FTC standards, children's jewelry rules, product pages, photography, payments and fraud, insured shipping, returns, channels and the US gifting calendar.
 
 We are an ecommerce growth team, not lawyers. Have a qualified adviser review your product wording and compliance before launch.
 
@@ -77,9 +77,9 @@ Each segment sells differently, so decide where you sit before building pages or
 | Handmade and personalized | Name necklaces, birthstones, engraving | Etsy and gifting, made-to-order timelines |
 | Men's jewelry | Chains, rings, cufflinks | Growing interest, needs its own creative |
 
-## Describe metals and stones the way the FTC expects
+## Word metals and stones to FTC standards
 
-The FTC's Guides for the Jewelry, Precious Metals, and Pewter Industries, usually called the Jewelry Guides, set out how to describe jewelry without misleading buyers. They are guidance rather than a statute, but the FTC relies on them when it looks at deceptive advertising, so treat them as the standard. The points below are a summary, not legal advice.
+The FTC's Guides for the Jewelry, Precious Metals, and Pewter Industries, usually called the Jewelry Guides, explain which jewelry descriptions the agency considers fair. They are not a statute, yet the FTC leans on them in deception cases, which makes them the working standard for US sellers. The points below are a summary, not legal advice.
 
 ### Gold
 
@@ -100,7 +100,7 @@ The FTC's Guides for the Jewelry, Precious Metals, and Pewter Industries, usuall
 
 ### Lab-grown diamonds and gemstones
 
-Lab-grown diamonds are real diamonds chemically, and many buyers choose them knowingly. The FTC expects their origin to be disclosed clearly with words such as laboratory-grown, laboratory-created or the maker's name followed by created, placed close to the word diamond. Do not call them natural, and be careful with real and genuine where they could imply mined origin.
+Lab-grown diamonds are real diamonds chemically, and many buyers choose them knowingly. The FTC wants the origin made plain, using terms like laboratory-grown or laboratory-created (or the producer's name plus 'created'), positioned next to the word diamond. Do not call them natural, and be careful with real and genuine where they could imply mined origin.
 
 ### Every place counts
 
@@ -134,7 +134,7 @@ Most jewelry returns come from surprises: smaller than expected, warmer or paler
 ### Shoot for every hero piece
 
 - White-background shots for marketplaces and feeds
-- The piece on a hand, ear, wrist or neck for true scale
+- The piece being worn, so size is obvious at a glance
 - Natural daylight as well as studio light
 - Close-ups of clasps, backs, settings and stamps
 - A short video showing movement and sparkle
@@ -187,7 +187,7 @@ Set engraving and shipping cut-off dates early and publish them on product pages
 
 ## Getting your first buyers
 
-Start with your own audience and people who already know your work. Collect photo reviews from early buyers, and ask creators to style pieces honestly with clear FTC disclosures for gifted, paid or affiliate posts. Never buy or fake reviews. Search ads on specific terms, such as a ring style plus a metal, usually convert better than broad terms.
+Start with your own audience and people who already know your work. Collect photo reviews from early buyers, and ask creators to style pieces honestly and to disclose gifts, payments and affiliate links plainly, as the FTC requires. Never buy or fake reviews. Search ads on precise phrases, like "oval solitaire in 14K white gold", usually convert better than broad terms.
 
 ## How to sell jewelry online (USA): a launch checklist
 
@@ -203,4 +203,4 @@ Start with your own audience and people who already know your work. Collect phot
 
 ## Next step
 
-Selling jewelry in the US and seeing views but too few orders? Ask for a [free store audit](/free-ecommerce-audit/). Our Chennai team reviews your product wording, photos, feed and channels remotely and walks you through what to fix first on a call in your morning, when India and US time zones overlap.
+Selling jewelry in the US and seeing views but too few orders? Ask for a [free store audit](/free-ecommerce-audit/). Our Chennai team reviews your product wording, photos, feed and channels remotely and sets out what to fix first on a video call early in your day, when our evening overlaps your morning.
