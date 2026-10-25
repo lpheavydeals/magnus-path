@@ -9,7 +9,7 @@ readingMinutes: 9
 author: "Billion Ecommerce Agency Team"
 market: "AU"
 twin: "how-to-sell-hair-oil-online"
-summary: "To sell hair oil online in Australia, keep it a cosmetic by describing shine, softness and scalp comfort rather than regrowth, which can make it a therapeutic good. Check AICIS duties if you import oils, list ingredients on the pack and add any warnings your essential oils need. Use leak-proof, heat-tolerant packaging, write pages by hair type and climate, sell on your Shopify store, Amazon AU and TikTok Shop, and earn reorders with refill sizes and timed reminders."
+summary: "Selling hair oil online in Australia works most smoothly when the oil stays a cosmetic: talk about shine, softness and a comfortable scalp, because regrowth wording can turn it into a therapeutic good. Check AICIS duties if you import oils, list ingredients on the pack and add any warnings your essential oils need. Use leak-proof, heat-tolerant packaging, write pages by hair type and climate, sell on your Shopify store, Amazon AU and TikTok Shop, and earn reorders with refill sizes and timed reminders."
 faqs:
   - q: "Do I need TGA approval to sell hair oil in Australia?"
     a: "Not usually, if it is a cosmetic sold for conditioning, shine, softness or how the scalp feels. Claims about regrowing hair, stopping hair loss or treating a scalp condition can make a product a therapeutic good, which needs ARTG inclusion and follows the TGA advertising code. Keep wording cosmetic and confirm borderline products with a regulatory adviser."
@@ -18,11 +18,11 @@ faqs:
   - q: "What packaging works for shipping hair oil around Australia?"
     a: "Use bottles with induction seals or shrink bands, screw caps rather than loose droppers for transit, and a sealed bag inside the carton. Parcels can sit in hot vans for days in summer, especially on longer routes to WA or the NT, so test packs in warm conditions and pad glass well."
   - q: "Should I sell hair oil on Amazon AU?"
-    a: "Often yes, for one or two hero oils once you have reviews and reliable packaging. Amazon.com.au suits buyers who search by ingredient and want quick delivery. Keep larger refill sizes, bundles and subscriptions on your own store, and keep GST-inclusive prices consistent so returning customers are not tempted elsewhere."
+    a: "Often yes, for one or two hero oils once you have reviews and reliable packaging. Amazon.com.au suits buyers who search by ingredient and want quick delivery. Save refill sizes, bundles and subscriptions for your own site, and match GST-inclusive prices across channels so returning buyers have no reason to switch."
   - q: "What do I owe a customer whose bottle arrived leaking?"
-    a: "A leaking or damaged bottle is a problem you need to fix. Customers have consumer rights under the Australian Consumer Law when goods are faulty or not as described, whatever your returns policy says. Replace or refund promptly, ask for a photo, and use the reports to improve your packaging and courier choice."
+    a: "A leaking or damaged bottle is a problem you need to fix. Whatever your returns policy says, buyers have consumer rights under the Australian Consumer Law when a product arrives faulty or differs from its description. Replace or refund promptly, ask for a photo, and use the reports to improve your packaging and courier choice."
   - q: "How long should I tell buyers to use a hair oil before judging it?"
-    a: "Only what your evidence supports. Feel and shine are noticeable after the first use, while changes in how hair handles breakage or dryness take regular use over several weeks. Put an honest timeline on the product page and in follow-up emails, and never promise growth or thickness by a set date."
+    a: "Only what your evidence supports. Feel and shine are noticeable after the first use, while changes in how hair handles breakage or dryness take regular use over several weeks. Write a realistic timeline into the product page and the follow-up emails, and steer clear of any promise about growth or thickness by a certain day."
 related:
   - label: "Haircare marketing agency for Australian brands"
     href: "/australia/haircare-marketing-agency/"
@@ -71,7 +71,7 @@ Rosemary and other botanical oils have been heavily discussed on social media as
 ## Step 2: Check ingredients, AICIS and labels
 
 - **AICIS registration.** If your business imports or manufactures cosmetic ingredients or finished cosmetics, you may need to register with the Australian Industrial Chemicals Introduction Scheme and categorise what you bring in. This matters if you import oils or blends from overseas suppliers. Confirm who holds the duty if you use a contract manufacturer.
-- **Ingredient list.** Most cosmetics sold in Australia must list their ingredients under a mandatory information standard. Put the same list on your product page.
+- **Ingredient list.** Australia's mandatory information standard for cosmetic ingredient labelling covers most products, so print the list on the pack and repeat it on your product page.
 - **Essential oil warnings.** Some essential oils and fragrance components carry extra labelling or packaging requirements at certain strengths, such as warnings or child-resistant closures. Ask your adviser to review the formula against current scheduling rules.
 - **Origin and quantity.** Show net contents correctly, and make sure any "Australian made" claim is accurate under consumer law.
 
@@ -79,7 +79,7 @@ Rosemary and other botanical oils have been heavily discussed on social media as
 
 Hair oil leaks are the fastest route to refunds and poor reviews. Australian distances and summer temperatures make packaging harder than in many markets.
 
-- Use induction seals or shrink bands under the cap.
+- Add an induction seal or shrink band beneath every cap.
 - Ship with a screw cap, and include the dropper or pump separately if needed.
 - Put each bottle in a sealed bag inside the carton, so one leak does not ruin a whole order.
 - Pad glass well, or use sturdy PET if your formula suits it.
@@ -115,7 +115,7 @@ Gift buyers matter here too. Partners and family often buy grooming oils for Fat
 
 | Channel | Who you reach | How to use it |
 |---|---|---|
-| Own Shopify store | Buyers who know your brand | Full range, refill sizes, bundles, subscriptions |
+| Own Shopify store | Returning buyers and people who found you on social | Whole range, refill pouches, bundles, subscribe and save |
 | Amazon AU | Shoppers searching by ingredient and delivery speed | One or two hero oils with strong reviews |
 | TikTok Shop | Buyers who discover through video, where available to your business | Massage and styling demos, creator affiliates |
 | eBay AU | Value-minded buyers | Multi-packs and older packaging |
@@ -139,7 +139,7 @@ Use our [free shipping threshold calculator](/tools/free-shipping-threshold-calc
 
 ### What the rules expect
 
-Under the Australian Consumer Law, claims and images must not mislead. Before-and-after hairline photos taken in different light or edited to look thicker can mislead, and they also clash with Meta and TikTok policies on personal attributes. The AANA codes apply to advertising generally, and Ad Standards hears complaints. Paid, gifted and affiliate creator posts must be clearly disclosed as advertising.
+Under the Australian Consumer Law, claims and images must not mislead. Side-by-side hairline shots in mismatched lighting, or touched up to suggest density, risk misleading buyers and run against Meta and TikTok rules on personal attributes. The AANA codes apply to advertising generally, and Ad Standards hears complaints. Paid, gifted and affiliate creator posts must be clearly disclosed as advertising.
 
 ### Creative that works and stays safe
 
@@ -152,7 +152,7 @@ On Google, target searches by oil type and use, such as "argan oil for frizzy ha
 
 ## Step 8: Delivery, returns and consumer rights
 
-Set a clear change-of-mind policy for opened oils on hygiene grounds, and explain it before purchase. That policy cannot override consumer rights under the Australian Consumer Law, which give customers remedies when a product is faulty, unsafe or not as described. A leaking bottle is your problem to fix. Handle customer data in line with the Privacy Act where it applies, and keep consent records for email and SMS.
+Set a clear change-of-mind policy for opened oils on hygiene grounds, and explain it before purchase. Whatever that policy says, buyers still hold consumer rights under the Australian Consumer Law if an oil turns out faulty, unsafe or unlike its description. A leaking bottle is your problem to fix. Handle customer data in line with the Privacy Act where it applies, and keep consent records for email and SMS.
 
 ## Step 9: Keep buyers using the oil, then win the refill
 
@@ -164,7 +164,7 @@ A hair oil needs regular use before many buyers form a view. Without follow-up, 
 - Ask for a review once regular use has had a fair go.
 - Time a refill reminder to how long a bottle actually lasts.
 
-Offer refill pouches or larger bottles on your own store, and a subscription with an easy pause. Plan offers for Click Frenzy, Black Friday, Christmas gift sets, Mother's Day in May and EOFY in June. If you would like a team to run this, our [haircare marketing agency for Australian brands](/australia/haircare-marketing-agency/) covers pages, ads, marketplaces and retention.
+Offer refill pouches or larger bottles on your own store, and a subscription with an easy pause. Plan offers for Click Frenzy, Black Friday, Christmas gift sets, Mother's Day in May and EOFY in June. For hands-on help with the whole journey, see our [haircare marketing agency for Australian brands](/australia/haircare-marketing-agency/).
 
 ## Common mistakes new hair oil brands make
 
@@ -189,4 +189,4 @@ Offer refill pouches or larger bottles on your own store, and a subscription wit
 
 ## Next step
 
-Want someone to look over your hair oil store before you spend more on ads? Ask for a [free store audit](/free-ecommerce-audit/). Our remote team in India, a few hours behind the east coast, will check your product pages, listings, ads and checkout and explain the findings on a video call during your afternoon.
+Want someone to look over your hair oil store before you spend more on ads? Ask for a [free store audit](/free-ecommerce-audit/). We are a remote team in India, a few hours behind the east coast. We will go through your product pages, marketplace listings, ads and checkout, then share what we find on a video call in your afternoon.
