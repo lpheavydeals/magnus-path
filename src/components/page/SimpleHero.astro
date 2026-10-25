@@ -10,7 +10,6 @@ const { eyebrow, h1, intro, trail = [], current } = Astro.props;
   <span class="plus" style="left:6%;top:40%">+</span><span class="plus" style="right:10%;top:30%">+</span>
   <div class="wrap sh__copy">
     <Breadcrumbs trail={trail} current={current} />
-    <p class="label" data-reveal>{eyebrow}</p>
     <h1><Words text={h1} /></h1>
     <p class="lede" data-reveal>{intro}</p>
     <slot />
