@@ -1,7 +1,5 @@
 // Scroll & interaction motion. Progressive enhancement only: every element is fully visible without this file.
-import Lenis from 'lenis';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// GSAP and Lenis are loaded lazily, after the page is idle, so they never delay the first paint or input.
 
 const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $$ = <T extends Element = HTMLElement>(sel: string, root: ParentNode = document) => Array.from(root.querySelectorAll<T>(sel as any)) as T[];
@@ -17,7 +15,8 @@ if (reduce || !('IntersectionObserver' in window)) {
   revealEls.forEach((el) => io.observe(el));
 }
 
-if (!reduce) {
+async function enhance() {
+  const [{ default: Lenis }, { gsap }, { ScrollTrigger }] = await Promise.all([import('lenis'), import('gsap'), import('gsap/ScrollTrigger')]);
   gsap.registerPlugin(ScrollTrigger);
 
   // Smooth scrolling
@@ -90,5 +89,11 @@ if (!reduce) {
     document.documentElement.addEventListener('pointerleave', () => c.classList.remove('on'));
   }
 
-  window.addEventListener('load', () => ScrollTrigger.refresh());
+  ScrollTrigger.refresh();
+}
+
+if (!reduce) {
+  const start = () => { enhance(); };
+  if (document.readyState === 'complete') ('requestIdleCallback' in window ? requestIdleCallback(start, { timeout: 2000 }) : setTimeout(start, 200));
+  else window.addEventListener('load', () => ('requestIdleCallback' in window ? requestIdleCallback(start, { timeout: 2000 }) : setTimeout(start, 200)), { once: true });
 }
