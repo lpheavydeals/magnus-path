@@ -112,3 +112,30 @@ Blinkit/Zepto guide, digital-marketing-cost-in-chennai, website-design-cost-in-b
 | Bangalore | ugadi-and-dasara-sale-marketing-guide | ugadi sale marketing | bangalore/digital-marketing-agency, bangalore/ecommerce-meta-ads-agency, resources/sale-calendar |
 
 (Industry page slugs are `<city>/<industry>-marketing-agency`, e.g. `chennai/cosmetics-marketing-agency`.)
+
+## Coimbatore and London local-topic guides
+
+Same approach as Chennai/Bangalore: genuinely local topics, not copies. Coimbatore guides are India market (no
+`market`/`twin`). London guides set `market: "UK"` (for en-GB) but NO `twin`. Category "Industries" (or "Ads"/"Export"
+where better). Map each to the listed pages in `src/data/guide-map.ts`.
+
+| City | Slug | Primary keyword | Link to |
+|---|---|---|---|
+| Coimbatore | how-to-start-a-d2c-brand-in-coimbatore | how to start a d2c brand in coimbatore | coimbatore/ecommerce-meta-ads-agency, coimbatore/seo-services, coimbatore/meta-ads-agency |
+| Coimbatore | how-to-sell-wet-grinders-online | how to sell wet grinders online | coimbatore/electronics, industries/electronics, b2b-digital-marketing |
+| Coimbatore | how-to-sell-coconut-oil-online | how to sell coconut oil online | coimbatore/haircare, industries/food-fmcg, coimbatore/supplement |
+| Coimbatore | how-to-sell-home-textiles-online | how to sell home textiles online | coimbatore/home-decor, industries/home-decor, chennai/home-decor |
+| Coimbatore | how-to-sell-turmeric-and-spices-online | how to sell spices online | industries/food-fmcg, coimbatore/supplement, quick-commerce-marketing |
+| Coimbatore | how-to-sell-handloom-sarees-online | how to sell handloom sarees online | industries/fashion-apparel, coimbatore/meta-ads-agency, coimbatore/ecommerce-meta-ads-agency |
+| Coimbatore | how-to-sell-pumps-and-motors-online | how to sell pumps online | b2b-digital-marketing, coimbatore/electronics, coimbatore/seo-services |
+| Coimbatore | how-to-sell-nilgiris-tea-online | how to sell tea online | industries/food-fmcg, coimbatore/ecommerce-meta-ads-agency, coimbatore/perfume |
+| London | how-to-launch-a-dtc-brand-in-london | how to launch a dtc brand in london | london/ecommerce-agency, london/shopify-agency, london/ecommerce-meta-ads-agency |
+| London | how-to-sell-indian-products-in-the-uk | how to sell indian products in the uk | london/ecommerce-agency, uk/ecommerce-marketing-agency, london/amazon-agency |
+| London | how-to-run-a-pop-up-shop-in-london | how to run a pop up shop in london | london/ecommerce-agency, london/ecommerce-meta-ads-agency, london/skincare |
+| London | how-to-sell-on-tiktok-shop-uk | how to sell on tiktok shop uk | london/meta-ads-agency, uk/ecommerce-marketing-agency, london/ecommerce-agency |
+| London | how-to-sell-south-asian-fashion-online-in-the-uk | sell south asian fashion online uk | london/ecommerce-agency, london/jewellery, industries/fashion-apparel |
+| London | diwali-and-eid-marketing-uk | diwali marketing uk | london/ecommerce-meta-ads-agency, london/ecommerce-agency, london/perfume |
+| London | same-day-delivery-london-ecommerce | same day delivery london ecommerce | london/ecommerce-agency, london/shopify-agency, london/home-decor |
+| London | how-to-sell-afro-hair-products-online-uk | how to sell afro hair products online | london/haircare, uk/haircare, london/cosmetics |
+
+(Industry slugs: `<city>/<industry>-marketing-agency`, e.g. `coimbatore/electronics-marketing-agency`, `london/skincare-marketing-agency`.)
