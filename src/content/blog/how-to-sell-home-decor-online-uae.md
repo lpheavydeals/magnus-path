@@ -16,7 +16,7 @@ faqs:
   - q: "Do customers expect free delivery and assembly in the UAE?"
     a: "Many shoppers expect quick delivery in Dubai and Abu Dhabi, and large retailers have set high expectations for furniture assembly. You do not have to offer everything free, but you must say clearly what is included, what costs extra, which emirates you cover and how long each option takes. Hidden charges at checkout lose more sales than an honest fee shown early."
   - q: "What returns policy should a UAE home decor store have?"
-    a: "Write a policy that covers change-of-mind returns, damaged deliveries, made-to-order pieces and opened textiles, and show it before checkout. UAE consumer protection rules expect clear terms for returns and exchanges, so check current requirements with an adviser. Ask customers to report damage with photos within a short window, which speeds up courier claims."
+    a: "Set out separate terms for buyers who change their minds, for items that arrive broken, for bespoke pieces and for bedding or cushions once unwrapped, and make them visible on the product page. The UAE's consumer protection framework expects return and exchange terms to be stated clearly, so have an adviser confirm what is required now. Ask customers to report damage with photos within a short window, which speeds up courier claims."
   - q: "Should I sell home decor on Amazon.ae and Noon?"
     a: "For smaller and lower-priced pieces such as cushions, frames, candles and tableware, both can add reach and trust. For large furniture, marketplaces give you less control over delivery, assembly and returns, so many brands keep big pieces on their own store. Keep AED prices aligned across channels so you do not undercut your own site."
   - q: "How do Ramadan and Eid affect home decor sales in the UAE?"
@@ -58,7 +58,7 @@ figures:
 
 Learning how to sell home decor online UAE households will trust means planning for homes that change often and are furnished in a hurry. Many residents move every year or two, new villa communities hand over keys in batches, and families host large gatherings during Ramadan and Eid. Shoppers expect quick delivery, clear assembly promises and the option to pay on delivery or in instalments. This guide covers the decisions that matter most, from the first product photo to the returned parcel.
 
-We are an ecommerce growth team, not lawyers. Where rules come up below, they are described in general terms. Check your own position with a qualified adviser before you publish policies or import new ranges.
+Our expertise is selling online, not law. Where rules come up below, they are described in general terms. Check your own position with a qualified adviser before you publish policies or import new ranges.
 
 ## Pick products that work online
 
@@ -84,7 +84,7 @@ A sofa shot in a cramped European flat tells a Dubai buyer very little. Shoot in
 
 - A clean cut-out on a plain background for marketplaces.
 - A room shot that shows the piece in use.
-- A scale shot with a person or a familiar object.
+- A size reference, such as someone sitting on the sofa or a coffee cup beside the vase.
 - Close-ups of fabric, grain and finish.
 - A short video walking around the piece, filmed in daylight.
 
@@ -97,14 +97,14 @@ Buyers in towers worry about lifts and corridors, and villa owners worry whether
 | Detail | What to include |
 |---|---|
 | Dimensions | Height, width, depth, seat height and weight |
-| Packed size | Box sizes and the narrowest gap the item can pass through |
+| Packed size | Carton measurements, and whether it fits a standard tower lift |
 | Materials | Solid wood, veneer, metal, fabric make-up and finish |
 | Heat and sun | How the material copes with sun, heat and air conditioning |
 | Humidity | Advice for coastal homes and outdoor use |
 | Care | Cleaning, fabric care and how to protect surfaces |
 | Assembly | Whether needed, who does it and how long it takes |
 
-Some goods sold in the UAE, such as certain electrical items including lighting, may fall under conformity schemes run by the Ministry of Industry and Advanced Technology (MOIAT), and packaged goods are generally expected to carry Arabic labelling. Confirm what applies to your range with your supplier or an adviser before you import.
+Lamps and other electrical pieces may need to pass a national conformity process overseen by MOIAT, the Ministry of Industry and Advanced Technology, and packaged consumer goods are normally expected to show Arabic on the label. Confirm what applies to your range with your supplier or an adviser before you import.
 
 ## Plan delivery and assembly properly
 
@@ -138,7 +138,7 @@ UAE consumer protection rules expect clear terms for returns and exchanges. Show
 
 Home decor is a visual, considered purchase, and many UAE shoppers have been let down by a rug that looked richer online or a sofa that arrived in the wrong shade. Reviews with photos from real homes do more to settle those doubts than any studio shot.
 
-- Ask for a review a week or two after delivery, once the piece is in place, and invite a photo.
+- Send the review request about ten days after the delivery team leaves, with a prompt to upload a picture of the room.
 - Ask specific questions: did the colour match, how was the delivery team, was assembly easy?
 - Show reviews in the language they were written in, and let shoppers filter by Arabic or English.
 - Reply to negative reviews calmly and say what you changed.
@@ -148,15 +148,15 @@ Delivery and assembly reviews deserve as much attention as product reviews. If a
 
 ## Price for delivery, payment and basket size
 
-Show AED prices including 5% VAT, and put delivery and assembly charges on the product page so nobody is surprised at checkout. A free delivery threshold set just above your typical basket encourages buyers to add a cushion or a vase. Our free [free shipping threshold calculator](/tools/free-shipping-threshold-calculator/) helps you find a level that lifts order value without eroding margin.
+Show AED prices including 5% VAT, and put delivery and assembly charges on the product page so nobody is surprised at checkout. Pitch the free delivery level slightly higher than what most people spend, and many will add a throw or a candle holder to reach it. To test different levels against your margins, try our [free shipping threshold calculator](/tools/free-shipping-threshold-calculator/).
 
-Cash on delivery is still common in the UAE, but a refused sofa is costly. Many stores offer COD on small items and ask for prepayment or a deposit on large or made-to-order pieces. Tabby and Tamara instalments make big purchases easier to commit to.
+Paying the driver remains popular, yet a sofa that is turned away at the villa gate has to travel back at your expense. Many stores offer COD on small items and ask for prepayment or a deposit on large or made-to-order pieces. Tabby and Tamara instalments make big purchases easier to commit to.
 
 ## Choose your UAE sales channels
 
 ### Your own Shopify store
 
-Your store carries full room sets, delivery booking, assembly options and your returns policy in your own words. Build Arabic and English versions with a proper right-to-left layout, and add WhatsApp for questions about sizes and fabrics. Our [home decor marketing agency in Dubai](/uae/home-decor-marketing-agency-dubai/) page explains how we connect store, ads and marketplaces for decor brands.
+Your store carries full room sets, delivery booking, assembly options and your returns policy in your own words. Build Arabic and English versions with a proper right-to-left layout, and add WhatsApp for questions about sizes and fabrics. For how we plan this for decor and furniture brands, see our [home decor marketing agency in Dubai](/uae/home-decor-marketing-agency-dubai/) page.
 
 ### Amazon.ae and Noon
 
@@ -186,7 +186,7 @@ Ramadan moves about eleven days earlier each year, so set your stock dates again
 ## How to sell home decor online UAE: launch checklist
 
 - [ ] Products scored for photography, shipping, returns and margin.
-- [ ] Cut-out, room, scale, close-up and video assets for each hero product.
+- [ ] Every lead product has a white-background image, a styled room shot, a size reference, detail shots and a short video.
 - [ ] Sizes, packed dimensions, materials, heat, humidity and care advice on every page.
 - [ ] Conformity and Arabic labelling checked for relevant items.
 - [ ] Delivery coverage, slots, building access notes and assembly options published.
@@ -201,4 +201,4 @@ Saudi Arabia and the rest of the GCC are natural next steps for many decor brand
 
 ## Next step
 
-If your decor store gets traffic but too few orders, or returns are eating your margin, ask for a [free store audit](/free-ecommerce-audit/). Our team reviews your product pages, delivery promises, returns terms and ads remotely from Chennai, then walks you through the findings on a video call. UAE time is just 1.5 hours behind India, so the call fits neatly into your working day.
+Visitors arriving but not buying? Returns cutting into profit? Book a [free store audit](/free-ecommerce-audit/). Our team reviews your product pages, delivery promises, returns terms and ads remotely from Chennai, then walks you through the findings on a video call. As India runs 1.5 hours ahead of the Emirates, finding a convenient time in your day is simple.

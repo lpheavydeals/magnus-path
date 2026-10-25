@@ -18,9 +18,9 @@ faqs:
   - q: "Do sunscreen ads in Australia follow different rules?"
     a: "Often, yes. Products mainly for sun protection are usually therapeutic goods, so their advertising must follow the TGA advertising code as well as consumer law. That includes limits on testimonials and requirements around SPF and water resistance wording. Moisturisers with a lower SPF may be cosmetics instead. Confirm each product's status with your sponsor or adviser."
   - q: "Are creators worth it for Australian skincare brands?"
-    a: "They can be, if you treat them as a steady programme rather than one-off posts. Choose creators whose audience matches your buyer, brief them on disclosure and honest claims, get written rights to reuse content in ads, and judge them on the orders and repeat buyers they bring, not on views alone."
+    a: "They can be, when you run them as an ongoing programme instead of a string of single posts. Choose creators whose audience matches your buyer, brief them on disclosure and honest claims, get written rights to reuse content in ads, and judge them on the orders and repeat buyers they bring, not on views alone."
   - q: "Should we sell on Amazon AU as part of our strategy?"
-    a: "Usually, for a few hero products once your own store has reviews and steady demand. Amazon.com.au catches shoppers who search by ingredient and want quick delivery. Keep routines, subscriptions and bundles on your own store, and keep GST-inclusive prices aligned across channels so you do not train loyal buyers to leave."
+    a: "Usually, for a few hero products once your own store has reviews and steady demand. Amazon.com.au catches shoppers who search by ingredient and want quick delivery. Hold routines, subscriptions and bundles back for your own site, and match GST-inclusive prices everywhere so regulars are never rewarded for shopping elsewhere."
   - q: "How do we know if our skincare marketing is working?"
     a: "Look past return on ad spend. Track cost per first order, mini-to-full-size rate, repeat purchase rate at 60 and 90 days, refund reasons and profit per customer over time, all by product. A strategy is working when first orders turn into reorders at a cost your margin can carry."
 related:
@@ -55,7 +55,7 @@ figures:
       - { title: "Weeks 11 to 13", body: "Shift budget to products people rebuy" }
 ---
 
-When you sit down to write a skincare brand marketing strategy, Australia gives you an unusual starting point. Most buyers grew up with sun safety campaigns, check SPF numbers closely and can find a decent serum at the supermarket. That makes them easy to talk to about ingredients and hard to impress with vague promises. This guide sets out a practical plan for an independent label: where to stand, who to talk to, which channels to use, what the rules expect and how to measure whether it is working.
+When you sit down to write a skincare brand marketing strategy, Australia gives you an unusual starting point. Most buyers grew up with sun safety campaigns, check SPF numbers closely and can find a decent serum at the supermarket. That makes them easy to talk to about ingredients and hard to impress with vague promises. Below is a working plan for an independent label, covering where to stand, who to talk to, which channels to use, what the rules expect and how to measure whether it is working.
 
 It is general guidance, not legal advice. Check product-specific questions with your regulatory adviser.
 
@@ -73,7 +73,7 @@ A position is the sentence a customer would use to describe you to a friend. If 
 
 ### Check the position against what you can prove
 
-Write down each claim your position relies on, then list the evidence beside it. Under the Australian Consumer Law, claims must not mislead, whether they appear in an ad, on a page or in a creator's caption. Green and ethical claims get particular attention from the ACCC. If the evidence is thin, change the wording before you build a campaign around it.
+Write down each claim your position relies on, then list the evidence beside it. The Australian Consumer Law applies the same test to an ad, a product page and a creator's caption: none of them may mislead. Green and ethical claims get particular attention from the ACCC. If the evidence is thin, change the wording before you build a campaign around it.
 
 ## Know which buyers you are serving
 
@@ -95,7 +95,7 @@ Paid traffic is expensive when it lands on a page that cannot answer questions. 
 
 ### Product pages
 
-Each hero product page should explain the key ingredients and their role, the skin types it suits, how to use it, what to avoid pairing it with and what someone might notice over a few weeks. Add a short texture video and reviews that mention skin type.
+On every hero page, cover the main ingredients and why they are there, which skin types the product is for, how to apply it, which actives to keep apart from it and what a buyer could reasonably expect to see after several weeks. Add a short texture video and reviews that mention skin type.
 
 ### Guides and search
 
@@ -127,18 +127,18 @@ Creators can carry a skincare launch, but the rules on disclosure are clear.
 
 - **Disclose clearly.** The AANA code expects advertising to be distinguishable as advertising, which covers paid, gifted and affiliate posts. Ad Standards hears complaints.
 - **Keep claims honest.** A creator's words count as your advertising. Brief them on what the product does and does not do.
-- **Watch sunscreen testimonials.** If a product is a therapeutic good, the TGA advertising code restricts testimonials, including from paid creators.
+- **Watch sunscreen testimonials.** For therapeutic goods, which include most primary sunscreens, the TGA advertising code limits testimonials, and paid creators are no exception.
 - **Handle reviews properly.** Never write, buy or selectively hide reviews. The ACCC treats fake and filtered reviews as misleading.
 
 Get written agreements that cover disclosure, content reuse in ads and how long you can use each piece.
 
-## Use paid sampling to lower the risk of trying
+## Make trying the product feel safe with paid minis
 
 A buyer with reactive skin is reluctant to spend on a full bottle. A small paid mini or discovery kit lowers that risk without filling your list with people who only want freebies.
 
-The sample is only half the plan. Follow it with usage tips in the first few days, a check-in before the mini runs out and a credit towards the full size. Measure mini-to-full-size conversion by product and by the channel that sold the mini, then put budget behind the kits that convert.
+The sample is only half the plan. Send practical tips while the mini is new, get in touch again shortly before it is finished, and offer the trial price back against a full-size purchase. Track how many mini buyers step up to full size, split by product and by where the mini was sold, and fund the kits that earn that step.
 
-## Plan for the second order from day one
+## Design for the second order before the first ships
 
 Repeat orders decide whether a skincare brand makes money. Build them into the plan.
 
