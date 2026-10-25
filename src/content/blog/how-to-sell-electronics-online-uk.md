@@ -70,7 +70,7 @@ Products sold to UK consumers also need the manufacturer's or importer's name an
 
 ### WEEE and batteries
 
-Businesses that sell electrical and electronic equipment have duties under the WEEE regulations. In general, sellers must offer customers a free way to return old equipment when they buy a similar new item, either through their own take-back service or by joining a recognised scheme, and must tell customers how. Products should carry the crossed-out wheelie bin symbol. Battery rules add separate duties on take-back, labelling and, for producers, registration.
+Businesses that sell electrical and electronic equipment have duties under the WEEE regulations. In general, sellers must offer customers a free way to return old equipment when they buy a similar new item, by running a take-back service themselves or by joining an approved scheme, and must explain the route to customers. Products should carry the crossed-out wheelie bin symbol. Battery rules add separate duties on take-back, labelling and, for producers, registration.
 
 ### Security for connected devices
 

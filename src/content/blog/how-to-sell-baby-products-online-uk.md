@@ -12,7 +12,7 @@ twin: "how-to-sell-baby-products-online"
 summary: "To sell baby products online in the UK, start with product safety: confirm which rules apply to each item, from toy safety and UKCA or CE marking to cosmetics rules for baby toiletries and general product safety for the rest. Understand the tight limits on infant formula advertising. Then build product pages that answer every safety and ingredient question, choose channels by product type, handle parents' data carefully under UK GDPR and plan refills, life stages and gifting."
 faqs:
   - q: "What safety rules apply to baby products sold online in the UK?"
-    a: "It depends on the product. Toys generally need to meet toy safety rules and carry a UKCA mark, or a CE mark where accepted. Cots, car seats, pushchairs and similar nursery items have specific standards. Baby toiletries fall under cosmetics rules, and general product safety law covers everything else. Confirm what applies to each item with a test house or adviser."
+    a: "It depends on the product. For toys, expect the toy safety regulations and UKCA marking to apply, with CE marking still recognised in many cases. Cots, car seats, pushchairs and similar nursery items have specific standards. Toiletries are cosmetics in law, and anything not covered by a specific regime still has to satisfy general product safety duties. Confirm what applies to each item with a test house or adviser."
   - q: "Can I advertise infant formula online in the UK?"
     a: "Advertising infant formula is generally prohibited in the UK, and promotion of follow-on formula is tightly restricted so it cannot be confused with infant formula. Price promotions and free samples of infant formula are also limited. These rules are strict and enforced, so if your range includes formula, take specialist legal advice before you list or promote it anywhere."
   - q: "Which marketplaces suit UK baby brands?"
@@ -66,7 +66,7 @@ A note on scope: we help brands sell online and do not give legal or product saf
 
 Different baby products sit under different rules. In broad terms:
 
-- **Toys** sold in Great Britain generally need to meet toy safety regulations, carry a UKCA mark or a CE mark where still accepted, and show the responsible business's name and address.
+- **Toys** placed on the market in Great Britain are covered by the toy safety regulations. Expect to need conformity paperwork, a UKCA mark (or a CE mark where that is still recognised) and the name and address of the business responsible.
 - **Nursery products** such as cots, cot mattresses, high chairs, baby walkers, car seats and pushchairs are tested against specific standards. Car seats also have their own approval system.
 - **Baby toiletries**, including wash, cream and wipes with cosmetic claims, fall under UK cosmetics rules, which require a responsible person, a safety assessment and notification before sale.
 - **Clothing and textiles** must meet general product safety and labelling rules, with extra care around cords and drawstrings on children's clothing and nightwear flammability.
@@ -80,7 +80,7 @@ Parents look closely at materials. Be precise: food-grade silicone, organic cott
 
 ### Age grading and warnings
 
-Show age suitability clearly, with small-parts warnings such as "not suitable for children under 36 months" where relevant, supervision advice and assembly instructions. Make these visible on the product page, not only on the packaging.
+Show age suitability clearly, with choking and small-parts warnings for under-threes where the rules call for them, supervision advice and assembly instructions. Make these visible on the product page, not only on the packaging.
 
 ## Step 2: Understand the rules on infant feeding and claims
 
@@ -94,7 +94,7 @@ Baby foods have their own composition and labelling rules. Rules restricting onl
 
 ### Claims on toiletries and wellness products
 
-Do not say a cream treats eczema or that a product prevents nappy rash unless it is properly authorised as a medicine for that purpose. Describe ingredients, texture, fragrance and how to use the product, and point to NHS guidance for health questions. The CAP code covers these claims on your own website as well as in ads.
+Do not say a cream treats eczema or that a product prevents nappy rash unless it is properly authorised as a medicine for that purpose. Describe ingredients, texture, fragrance and how to use the product, and send parents to the NHS website when the question is really a medical one. The CAP code covers these claims on your own website as well as in ads.
 
 ## Step 3: Build product pages that answer parents' questions
 
@@ -157,15 +157,15 @@ Baby brands often collect due dates, children's birthdays and sizes. Under UK GD
 
 ### Repeat essentials
 
-Nappies, wipes, toiletries and feeding supplies are used at a steady rate. Offer subscribe-and-save with easy size changes and pauses, and time reminders to pack size.
+A family gets through nappies, wipes and wash in a fairly predictable number of weeks. Build a subscription around that rhythm, let parents swap sizes or pause from their account, and send a nudge shortly before a pack should run out.
 
 ### Life stages
 
-Children change size and stage quickly. With consent, use a child's age to suggest the next nappy size, clothing size, weaning kit or toy stage at the right time.
+Children change size and stage quickly. If a parent has shared their child's birth date and agreed to marketing, you can time messages to the moves they are about to make: up a nappy size, into bigger sleepsuits, onto weaning spoons, towards the next set of toys.
 
 ### Gifting
 
-Baby showers, christenings, first birthdays and Christmas bring gift buyers who want ready-made sets, wrapping, a message card and a firm delivery date. Back to school adds a later moment for uniform basics, lunch kits and name labels.
+Relatives and friends buying for a shower, a naming day, a first birthday or Christmas want a set that is ready to give, a note they can personalise and confidence that it will arrive on time. Back to school adds a later moment for uniform basics, lunch kits and name labels.
 
 Our [LTV and CAC calculator](/tools/ltv-cac-calculator/) helps you see how much you can spend to win a family once repeat orders are counted.
 

@@ -18,11 +18,11 @@ faqs:
   - q: "What business setup does a US cosmetics brand need?"
     a: "Most founders form an LLC or corporation, get an EIN, open a business bank account, register for sales tax where required and buy product liability insurance, which many retailers and marketplaces ask for. File a trademark with the USPTO early, since Amazon Brand Registry needs one. An accountant and adviser can confirm what fits your state."
   - q: "Can I call my cosmetics clean, vegan or cruelty-free?"
-    a: "You can if you can support it. Clean has no legal definition in the US, so define what it means for your brand on your site. Vegan and cruelty-free claims need supplier records, and using a third-party logo means meeting that program's terms. The FTC expects all such claims to be truthful and backed before they appear."
+    a: "You can if you can support it. US law does not define clean, so publish your own definition, such as the ingredients you leave out. Vegan and cruelty-free claims need supplier records, and using a third-party logo means meeting that program's terms. The FTC expects all such claims to be truthful and backed before they appear."
   - q: "How many products should a new cosmetics brand launch with?"
     a: "Fewer than most founders expect. One hero product in a focused shade range, or three to five products around one look or concern, is easier to fund, photograph and market. Every extra shade multiplies stock, swatches and the risk of sitting on slow sellers. Expand once you know which shades and products reorder."
   - q: "Should a new US cosmetics brand sell on Amazon or TikTok Shop first?"
-    a: "For a visual, shade-led product, TikTok Shop often gives faster discovery because creators can show color and finish on camera. Amazon suits products people already search for and rewards reviews and steady stock. Most new brands launch on their own store plus one marketplace, then add the other once operations are steady."
+    a: "It depends on the product. Bold colors and finishes that look striking on camera often take off faster on TikTok Shop through creator demos. Everyday staples that shoppers type into a search bar suit Amazon, where ratings and reliable stock carry weight. A common path is your own store plus one of the two, with the second added later."
 related:
   - label: "Cosmetics marketing agency for US makeup brands"
     href: "/us/cosmetics-marketing-agency/"
@@ -58,7 +58,7 @@ figures:
 
 This is a practical guide to how to start a cosmetics brand: USA rules, suppliers, money and launch, in the order you will need them. The US beauty market is large and crowded, and new makeup brands now launch on TikTok as often as in stores. That makes starting easier than it was, and standing out harder. The steps below cover niche, manufacturing, compliance, packaging, brand, unit economics, channels, launch and operations, so you spend your first budget where it counts.
 
-## Step 1: Choose a niche and a first range
+## Step 1: Pick a niche and a starter range
 
 ### Pick a clear buyer
 
@@ -99,7 +99,7 @@ Most founders form an LLC or corporation, get an EIN, open a business bank accou
 
 ### FDA, MoCRA and color additives
 
-Cosmetics do not need FDA approval before sale, but MoCRA added duties: facility registration, product listing, safety substantiation, serious adverse event reporting and a US contact on the label for those reports, with exemptions for some small businesses. Color additives are the exception to "no approval". They must be approved for their intended use, some need FDA batch testing, and some colors allowed in lipstick are not allowed near the eyes. If you sell one product for lips, cheeks and eyes, every color in it must be allowed for all three.
+The FDA does not approve cosmetics before launch, yet MoCRA brought in obligations: facility registration, product listing, safety substantiation, serious adverse event reporting and a US contact on the label for those reports, with exemptions for some small businesses. Color additives are the exception to "no approval". They must be approved for their intended use, some need FDA batch testing, and some colors allowed in lipstick are not allowed near the eyes. If you sell one product for lips, cheeks and eyes, every color in it must be allowed for all three.
 
 ### Labels
 
@@ -113,7 +113,7 @@ California requires warnings for products that expose buyers to listed chemicals
 
 The FTC expects claims to be truthful and supported before they appear. "Long-wear", "waterproof", "non-comedogenic", "vegan" and "cruelty-free" all need evidence on file. "Made in USA" claims follow FTC rules that generally require all or virtually all of the product to be made in the US.
 
-## Step 4: Design packaging that sells and ships
+## Step 4: Design packaging for camera and courier
 
 Makeup packaging has to look good on camera and survive parcel networks.
 
@@ -219,4 +219,4 @@ When you are ready to grow, our [cosmetics marketing agency for US makeup brands
 
 ## Next step
 
-Thinking about launching or already live? Request a [free ecommerce audit](/free-ecommerce-audit/). Our team works remotely from India, reviews your store and listings during your night, and walks you through the findings on a call in your morning, when our time zones overlap.
+Planning a launch or already selling? Ask for a [free ecommerce audit](/free-ecommerce-audit/). We are an India-based team that serves US beauty founders remotely, so we study your store, listings and launch plan overnight for you, then share the priorities on a short call early in your US morning, when our working hours overlap.

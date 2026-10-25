@@ -69,7 +69,7 @@ These footwear marketing ideas UK shoe brands can use are built around one fact:
 
 Turn the size guide into a short video and an illustrated page: how to measure at home, how your lasts compare, how to pick between half sizes. Link it from every product page, the dispatch email and your ads.
 
-### 2. Publish fit notes from real feedback
+### 2. Let buyers' feedback write your fit notes
 
 Read returns reasons and reviews each month and update a one-line fit note on every style: "runs half a size small", "roomy toe box". Shoppers trust notes that clearly come from other buyers.
 
@@ -126,7 +126,7 @@ Black Friday on Amazon UK and promotions on TikTok Shop UK reward brands that pr
 
 Run Meta catalogue ads and Google Shopping from a feed that updates stock by size. Leave out styles whose size runs have gaps, because a click on a sold-out size is money spent for nothing. Use the [ad budget planner](/tools/ad-budget-planner/) to split spend between prospecting and retargeting before a peak.
 
-### 13. Retarget with the right message
+### 13. Match retargeting to the shopper's doubt
 
 Someone who viewed the size guide but did not buy needs reassurance about fit and returns, not a discount. Someone who added to basket and left might need a reminder about delivery dates. Match the message to the step they reached.
 

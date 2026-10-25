@@ -9,7 +9,7 @@ readingMinutes: 9
 author: "Billion Ecommerce Agency Team"
 market: "UK"
 twin: "how-to-start-a-pet-food-brand-in-india"
-summary: "Start small and specific. Choose one species, one format and one owner need, then develop the recipe with an experienced co-packer and a qualified animal nutritionist. Register as a feed business with your local authority, check your labels against the pet food labelling rules and UK Pet Food guidance, and keep claims away from anything medicinal. Launch on your own store and Amazon UK, then add subscriptions, TikTok Shop and other marketplaces once owners start reordering."
+summary: "Start small and specific. Choose one species, one format and one owner need, then develop the recipe with an experienced co-packer and a qualified animal nutritionist. Register as a feed business with your local authority, check your labels against the pet food labelling rules and UK Pet Food guidance, and keep claims away from anything medicinal. Go live on a Shopify store and Amazon UK first, and bring in subscriptions, TikTok Shop and other marketplaces once owners start reordering."
 faqs:
   - q: "Do I need to register to sell pet food in the UK?"
     a: "In most cases, yes. Businesses that make, import, store or sell pet food usually need to register as a feed business with their local authority, often through trading standards. Some manufacturers also need approval for certain processes or animal by-products. Your co-packer may hold its own registration, but you may still need one. Check your exact set-up with the council or a specialist adviser."
@@ -107,7 +107,7 @@ In broad terms, businesses that make, import, store or sell pet food in Great Br
 
 Pet food labels follow their own set of rules, which differ from the rules for food sold to people. A typical label needs to show:
 
-- Whether the product is complete or complementary, and which species and life stage it is for.
+- Whether it is a complete or complementary food, plus the animal and age group it is intended for.
 - The composition, listing ingredients or categories in the required way.
 - Analytical constituents, such as protein, fat, fibre, ash and moisture.
 - Additives where they must be declared.

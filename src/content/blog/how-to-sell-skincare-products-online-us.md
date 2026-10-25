@@ -12,7 +12,7 @@ twin: "how-to-sell-skincare-products-online"
 summary: "To sell skincare products online in the USA, first decide whether each product is a cosmetic or an OTC drug, then handle MoCRA registration and listing, labels and claims. Launch a short routine on your own Shopify store with ingredient-rich pages, add Amazon US or TikTok Shop for reach, and run ads that clear beauty policies and FTC rules. Profit comes from the second order, so plan refills, subscriptions and honest reviews from day one."
 faqs:
   - q: "Do I need FDA approval to sell skincare online in the USA?"
-    a: "Cosmetics do not need FDA approval before sale, but MoCRA added duties such as facility registration, product listing, safety substantiation and reporting serious adverse events. Products sold as OTC drugs, such as sunscreens and many acne treatments, follow drug rules instead, including set active ingredients and Drug Facts labels. A regulatory adviser should confirm which rules apply to each product."
+    a: "There is no FDA pre-market approval for cosmetics, although MoCRA now expects facilities to register, products to be listed, safety to be substantiated and serious adverse events to be reported. Products sold as OTC drugs, such as sunscreens and many acne treatments, follow drug rules instead, including set active ingredients and Drug Facts labels. A regulatory adviser should confirm which rules apply to each product."
   - q: "Is sunscreen a cosmetic or a drug in the US?"
     a: "A product that claims sun protection or carries an SPF value is regulated as an over-the-counter drug in the US. That brings rules on permitted active ingredients, testing, Drug Facts labeling and drug establishment registration. A moisturizer with SPF falls under the same rules. Many brands work with a contract manufacturer that already produces OTC products to handle this."
   - q: "Should a new skincare brand start on Amazon or its own Shopify store?"
@@ -22,7 +22,7 @@ faqs:
   - q: "Do I have to collect sales tax on skincare sold online?"
     a: "Probably in some states. After the Wayfair decision, most states require out-of-state sellers to collect sales tax once they pass that state's economic nexus threshold, and each state sets its own threshold and rules. Marketplaces such as Amazon and Walmart usually collect tax on their own sales. Ask a US tax adviser to map where you have nexus."
   - q: "How many products should a US skincare launch include?"
-    a: "A short routine is easier to explain, stock and advertise. Three to five products that work together, such as a cleanser, a treatment serum, a moisturizer and possibly an SPF, give buyers a reason to buy more than one item. Keep any OTC product, like the SPF, on its own timeline, because its compliance work takes longer."
+    a: "A short routine is easier to explain, stock and advertise. A cleanser, one treatment serum, a moisturizer and perhaps an SPF form a set that buyers can follow, and that encourages a second item in the cart. Keep any OTC product, like the SPF, on its own timeline, because its compliance work takes longer."
 related:
   - label: "Skincare marketing agency for US DTC brands"
     href: "/us/skincare-marketing-agency/"
@@ -32,7 +32,7 @@ related:
     href: "/us/amazon-account-management/"
   - label: "Hire a Shopify developer for your US store"
     href: "/us/hire-shopify-developer/"
-  - label: "Ecommerce Meta ads agency for US stores"
+  - label: "Meta ads for US skincare stores"
     href: "/us/ecommerce-meta-ads-agency/"
   - label: "Marketplace profit calculator for Amazon and Walmart sellers"
     href: "/tools/marketplace-profit-calculator/"
@@ -60,7 +60,7 @@ The first question in US skincare is not "who is my customer?" but "what am I le
 
 ### The cosmetic vs drug line
 
-The FDA looks at intended use, and intended use is largely read from your claims. A product meant to cleanse, moisturize or improve appearance is generally a cosmetic. A product meant to treat or prevent a condition, or to affect how the skin functions, can be classed as a drug, even if the formula is identical to a cosmetic you already sell. A single sentence in an ad or on a product page can move it across that line.
+The FDA looks at intended use, and intended use is largely read from your claims. A product meant to cleanse, moisturize or improve appearance is generally a cosmetic. Promise to treat or prevent a condition, or to change how skin functions, and the same formula can be classed as a drug. A single sentence in an ad or on a product page can move it across that line.
 
 ### OTC sunscreen and acne products
 
@@ -68,7 +68,7 @@ Anything with an SPF value or a sun-protection claim is an over-the-counter drug
 
 ### MoCRA duties for cosmetics
 
-The Modernization of Cosmetics Regulation Act of 2022 (MoCRA) gave the FDA more oversight of cosmetics. In broad terms it covers facility registration, product listing, safety substantiation, reporting serious adverse events and keeping records of them, plus a US contact on the label for those reports. Some small businesses are exempt from parts of it. Your manufacturer and adviser should tell you who registers what.
+MoCRA, the cosmetics law Congress passed in 2022, widened what the FDA can ask of cosmetic brands. In broad terms it covers facility registration, product listing, safety substantiation, reporting serious adverse events and keeping records of them, plus a US contact on the label for those reports. Some small businesses are exempt from parts of it. Your manufacturer and adviser should tell you who registers what.
 
 ### Labels and color additives
 
@@ -80,7 +80,7 @@ California's Proposition 65 requires a warning when a product can expose people 
 
 ## Step 2: Build a short routine, not a catalog
 
-A US launch with twenty products spreads budget too thin. A focused range is easier to explain and much easier to fund.
+A US launch with twenty products spreads budget too thin. Fewer products mean clearer messages and less cash tied up in stock.
 
 - **Sell a routine.** Three to five products that work together give buyers a reason to add a second item.
 - **Pick one clear angle.** A single active at a stated strength, a skin concern, a texture or a sensitive-skin promise.
@@ -91,11 +91,11 @@ Work out unit economics for each size before you commit to packaging. Include co
 
 ## Step 3: Build a Shopify store that answers label readers
 
-Your own store is where you control the story, the price and the customer data. Shopify is a common choice for US beauty brands because subscriptions, reviews, quizzes and fast checkouts are easy to add.
+On your own store you set the price, tell the full story and keep the customer relationship. Shopify is a common choice for US beauty brands because subscriptions, reviews, quizzes and fast checkouts are easy to add.
 
 ### What a skincare product page needs
 
-- The key active, its percentage and what it does for the look and feel of skin.
+- The key active, its percentage and the visible change it is designed to deliver.
 - Which skin types and concerns it suits, and who should skip it.
 - Texture, finish and scent, with a short video in natural light.
 - Where it sits in a morning or evening routine and what not to layer it with.
@@ -125,7 +125,7 @@ Marketplaces put you where many US shoppers already start. Each plays a differen
 
 Sephora and Ulta shape what shoppers expect from ingredient detail, sampling and returns, even if you never sell there. Read their product pages as a benchmark for your own.
 
-Keep prices consistent across channels so buyers do not learn to wait for a marketplace coupon. Register your trademark and enroll in Amazon Brand Registry to protect listings, and watch for unauthorized resellers, since expired or diverted stock can wreck your ratings. TikTok Shop and Amazon may ask for extra documents for beauty categories, including safety data sheets and proof of compliance, so keep a document pack ready.
+Keep prices consistent across channels so buyers do not learn to wait for a marketplace coupon. File a trademark so you can join Amazon Brand Registry, and keep an eye on third-party sellers offering your products, because old or diverted units can drag down your rating. TikTok Shop and Amazon may ask for extra documents for beauty categories, including safety data sheets and proof of compliance, so keep a document pack ready.
 
 ## Step 5: Advertise within FTC rules and platform policies
 
@@ -133,7 +133,7 @@ Paid ads bring most new skincare brands their first steady orders, and they are 
 
 ### Claims in ads
 
-The FTC expects advertising claims to be truthful and backed by evidence before the ad runs. "Clinically shown", "dermatologist tested" and any number, such as hydration after a set number of hours, need a test report behind them. Keep cosmetic products to appearance claims, and save "treats acne" or SPF claims for products actually sold as OTC drugs.
+Under FTC truth-in-advertising rules, you need evidence in hand before a claim goes live, not after a complaint. Phrases like "clinically shown" or "dermatologist tested", and any figure such as hours of hydration, should map to a specific study in your file. Keep cosmetic products to appearance claims, and save "treats acne" or SPF claims for products actually sold as OTC drugs.
 
 ### Meta, TikTok and Google
 
@@ -143,7 +143,7 @@ On Meta and TikTok, short videos showing texture, application and routine perfor
 
 Under the FTC Endorsement Guides, creators who get free product, payment or affiliate commission should disclose it clearly in the post itself. Brands are expected to brief creators and monitor what they post. Put the disclosure wording in every brief and keep a log of posts.
 
-Judge ads by product, not only by campaign. A serum that sells cheaply once but rarely reorders can be worth less than a cleanser that costs more to acquire but comes back every two months.
+Judge ads by product, not only by campaign. A cheap-to-win serum buyer who never returns is often worth less than a pricier-to-win cleanser buyer who reorders on a steady cycle.
 
 ## Step 6: Fulfillment, returns and sales tax
 
@@ -161,18 +161,18 @@ Skincare is a routine purchase, and the second order is where the profit is.
 
 ### A post-purchase journey
 
-1. Days 1–3: how to use the product and where it fits in the routine.
+1. First few days: application tips and the routine step it belongs to.
 2. Week 2: a check-in and a link to a layering or routine guide.
 3. Before the bottle runs out: a refill reminder, by email or by SMS for customers who opted in.
 4. After the reorder: a review request with photo upload.
 
 ### Subscriptions and sampling
 
-Subscribe-and-save on your store and on Amazon keeps routines going, as long as skipping or cancelling stays simple, which regulators watch closely. Paid minis or discovery kits with a credit toward full size bring in buyers who mean it; free samples mostly attract collectors.
+Subscribe-and-save on your store and on Amazon keeps routines going, as long as skipping or cancelling stays simple, which regulators watch closely. Charge something for minis and credit it toward the full size; giveaways tend to pull in freebie hunters rather than future customers.
 
 ### Reviews within the rules
 
-The FTC rule on fake reviews and testimonials bans buying, faking or suppressing reviews. Ask every verified buyer, not only happy ones, and ask after they have used the product long enough to judge it.
+The FTC rule on fake reviews and testimonials bans buying, faking or suppressing reviews. Send the request to all verified buyers, once enough time has passed for them to form a fair view.
 
 ## Plan around the US skincare calendar
 
@@ -185,7 +185,7 @@ Tick these off before you spend on ads.
 - [ ] Each product classified as cosmetic or OTC drug, with adviser sign-off
 - [ ] MoCRA registration and listing handled by you or your manufacturer
 - [ ] Labels checked, including color additives and any Prop 65 warning
-- [ ] Three to five hero products with unit economics worked out
+- [ ] A short hero routine with margins checked for every size and channel
 - [ ] Shopify store with detailed pages, reviews and a fast checkout
 - [ ] Trademark filed and Amazon Brand Registry in place
 - [ ] Ads and creator briefs reviewed for claims and disclosures
@@ -193,8 +193,8 @@ Tick these off before you spend on ads.
 - [ ] Refill and review journey switched on
 - [ ] Weekly report on sales, returns and reorders by product
 
-Brands that classify their products correctly, explain them honestly and look after the second order tend to outlast those that chase the first sale. If you want help planning this, see our [skincare marketing agency for US brands](/us/skincare-marketing-agency/).
+Getting classification right, explaining each product plainly and planning for the reorder is what separates lasting US skincare brands from one-season launches. If you want help planning this, see our [skincare marketing agency for US brands](/us/skincare-marketing-agency/).
 
 ## Next step
 
-Want a second opinion on your skincare store? Request a [free ecommerce audit](/free-ecommerce-audit/). Our team works remotely from India, so we review your pages, listings, ads and checkout while you sleep and walk you through the findings on a call in your morning, when our time zones overlap.
+Planning a launch or fixing a store that has stalled? Ask for a [free ecommerce audit](/free-ecommerce-audit/). We are based in India and work with US brands remotely: we check your product pages, Amazon or TikTok Shop listings, ads and checkout during your night, then share what to fix first on a short call early in your US morning, when our working days overlap.

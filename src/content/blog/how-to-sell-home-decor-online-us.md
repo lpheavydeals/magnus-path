@@ -11,7 +11,7 @@ market: "US"
 twin: "how-to-sell-home-decor-online"
 summary: "To sell home decor online in the US, choose products that ship well, photograph them in real rooms with a scale reference, and list exact product and carton sizes. Decide parcel or freight for each item, explain delivery levels from curbside to white glove, and publish a returns policy that covers return freight. Check rules such as the CPSC tip-over standard and upholstery flammability labels, then sell through your own store, Amazon US, Wayfair and Walmart."
 faqs:
-  - q: "What home decor products sell well online in the US?"
+  - q: "Which home decor products are easiest to sell online in the US?"
     a: "Items that ship safely in a parcel and are easy to judge from photos tend to start well: throw pillows, blankets, wall art, mirrors in sturdy packaging, lamps, planters and small rugs. Furniture can sell strongly too, but it needs freight planning, detailed dimensions and a stronger returns process, so many brands add it once smaller decor is working."
   - q: "Do I need to follow US safety rules for furniture sold online?"
     a: "Often, yes. Dressers and other clothing storage units fall under a mandatory CPSC stability standard aimed at tip-overs, and upholstered furniture generally needs a flammability compliance label. Some states add their own rules, and California's Proposition 65 may require warnings. Requirements depend on the product, so confirm them with a testing lab or counsel before you list."
@@ -22,7 +22,7 @@ faqs:
   - q: "How do I handle returns on bulky furniture?"
     a: "Write the policy before you launch. State the return window, who pays return freight, whether a restocking fee applies, which items cannot be returned, such as custom orders, and how damage claims work. Ask for photos of any damage at delivery, and track returns by product so you can fix packaging or descriptions on the items that come back most."
   - q: "When do US shoppers buy the most furniture and decor?"
-    a: "Holiday weekends are the big moments: Presidents' Day, Memorial Day, Fourth of July and Labor Day, plus Black Friday, Cyber Monday and the run-up to the holidays. Spring and summer moving season brings new-home buyers. Freight items need campaigns and stock in place several weeks before each sale."
+    a: "Demand peaks around the long holiday weekends, from Presidents' Day and Memorial Day to the Fourth of July and Labor Day, and again from Black Friday through December. House moves and new leases in spring and summer add another lift. Because freight takes longer, line up stock and campaigns well before each date."
 related:
   - label: "Home decor marketing agency for US brands"
     href: "/us/home-decor-marketing-agency/"
@@ -60,7 +60,7 @@ Anyone researching how to sell home decor online, USA delivery is the first surp
 
 We are an e-commerce marketing team, not lawyers or safety consultants. Treat the rules section as a general orientation and check your own products with qualified advisors.
 
-## Choose products that suit online selling
+## Start with products that ship and photograph well
 
 Not every piece in a range is ready for e-commerce on day one. Start with products that ship well and are easy to judge from photos, then add the harder ones.
 
@@ -70,9 +70,9 @@ Not every piece in a range is ready for e-commerce on day one. Start with produc
 
 For each product, write down its packed size and weight, whether it can ship by parcel carrier, its likely damage risk and its margin after shipping. That list decides which items carry your first ads.
 
-## Photograph products in real rooms
+## Shoot products in rooms that look like your buyer's
 
-Shoppers cannot touch the fabric or sit on the chair, so images carry the sale. A single white-background photo is not enough. US homes vary widely, from compact city apartments to large suburban living rooms, so show your products in settings that match your buyer.
+Online, nobody can run a hand over the fabric or test the seat, so images do the selling. A single white-background photo is not enough. US homes vary widely, from compact city apartments to large suburban living rooms, so show your products in settings that match your buyer.
 
 ### The image set to aim for
 
@@ -132,7 +132,7 @@ A few federal and state rules matter for many decor and furniture brands. In gen
 
 Rules change and details depend on the product, so confirm them with a testing lab or counsel. Never describe a product as meeting a standard unless you hold the test results.
 
-## Write a clear returns policy
+## Set a returns policy shoppers can understand
 
 US shoppers expect easy returns on small decor, and they read the fine print on furniture. Your policy should cover:
 
@@ -144,17 +144,17 @@ US shoppers expect easy returns on small decor, and they read the fine print on 
 
 Put a short summary on every product page and the full policy one click away.
 
-## Build trust with reviews and customer photos
+## Let customer photos do the persuading
 
 Photo reviews are especially persuasive in home decor, because they show the product in ordinary homes rather than a studio. Ask for a review a week or two after delivery, invite customers to add a photo, and respond publicly and calmly to problems. Gather reviews honestly; the FTC prohibits fake or bought reviews.
 
-## Price for shipping and order value
+## Set prices with shipping in mind
 
 Shipping costs shape how home decor should be priced. For parcel items, free shipping above a sensible order value usually lifts average order size; our [free shipping threshold calculator](/tools/free-shipping-threshold-calculator/) helps you test where that line should sit. For freight items, a clear flat delivery charge or delivery built into the price often converts better than a variable fee revealed at checkout. If you offer buy now, pay later, use your provider's required disclosure wording.
 
 ## Pick your US channels
 
-### Your own Shopify store
+### Your own storefront on Shopify
 
 Your store is where the brand story, room sets, bundles and customer relationships live. It also gives you full control over delivery promises and returns.
 
@@ -193,14 +193,14 @@ Track sales, returns and damage claims by product, not only by channel. A sofa t
 - **Memorial Day (May) and Fourth of July:** big furniture and outdoor sales.
 - **Prime Day (July):** deal-led shoppers for smaller decor on Amazon.
 - **Labor Day (September):** another major furniture weekend.
-- **Black Friday, Cyber Monday and the holidays:** gifts, small decor and furniture that must arrive before family visits.
+- **Late November through December:** Black Friday and Cyber Monday deals, then gifts, small decor and furniture that has to arrive before relatives do.
 
 Freight lead times mean you need stock, creative and delivery cut-offs ready several weeks before each event.
 
 ## How to sell home decor online: USA launch checklist
 
 - [ ] Product list split into parcel and freight items with margins after shipping.
-- [ ] Clean, room, scale and detail photos for every hero product.
+- [ ] Four image types (clean, room, scale, detail) on each lead product.
 - [ ] Dimensions, carton sizes, materials, care and assembly on each page.
 - [ ] Delivery level, lead time and cost shown before checkout.
 - [ ] Packaging drop-tested for fragile pieces.

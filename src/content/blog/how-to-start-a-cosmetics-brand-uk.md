@@ -38,9 +38,9 @@ related:
     href: "/tools/profit-margin-calculator/"
 figures:
   - type: steps
-    caption: "The main stages of starting a cosmetics brand in the UK, in order."
+    caption: "From idea to first orders: the stages of a new UK cosmetics brand."
     steps:
-      - { title: "Niche and range", body: "One clear buyer and a few hero products" }
+      - { title: "Niche and range", body: "A defined customer and a short first range" }
       - { title: "Manufacturer", body: "GMP partner, samples, stability tests" }
       - { title: "UK compliance", body: "Safety report, Responsible Person, SCPN" }
       - { title: "Business setup", body: "Company, trademark, insurance, VAT plan" }
@@ -60,7 +60,7 @@ Working out how to start a cosmetics brand, UK style, means dealing with two thi
 
 Treat the regulatory sections as general guidance, not legal advice, and confirm the details with your Responsible Person or adviser.
 
-## Step 1: Choose a niche and a first range
+## Step 1: Define your niche and your launch range
 
 ### Pick a clear buyer
 
@@ -112,7 +112,7 @@ A UK-based Responsible Person must be named for each product placed on the GB ma
 
 ### SCPN notification
 
-Each product is notified through the government's Submit Cosmetic Product Notification service before it goes on sale.
+Every product has to be registered on the government's Submit Cosmetic Product Notification service (SCPN) ahead of its first sale.
 
 ### Labels
 
@@ -165,7 +165,7 @@ For every product and shade, list:
 
 Our [profit margin calculator](/tools/profit-margin-calculator/) helps you see the margin left on each product before you commit to a price. Many new brands find they need either a higher price or larger orders, through sets and bundles, to fund advertising.
 
-## Step 7: Build your store and listings
+## Step 7: Set up your store and marketplace listings
 
 ### Your own Shopify store
 
@@ -223,4 +223,4 @@ Starting a cosmetics brand takes patience and paperwork as well as creativity. I
 
 ## Next step
 
-Getting ready to launch or relaunch your cosmetics brand? Request a [free store audit](/free-ecommerce-audit/). We will review your store, shade content, listings and launch plan and tell you what to fix first. We can talk it through on a video call or at our London office.
+Getting ready to launch or relaunch your cosmetics brand? Request a [free store audit](/free-ecommerce-audit/). We will look at your store, shade content, listings and launch plan and flag what needs attention first. Talk it through with us over video or in person at our London office.

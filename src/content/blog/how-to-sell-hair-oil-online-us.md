@@ -109,7 +109,7 @@ Oil is one of the hardest products to ship. A leaking bottle ruins the parcel, t
 
 If you plan to use Fulfillment by Amazon, check prep rules for liquids and whether your product needs dangerous goods review. Oils with fragrance or essential oils are more likely to be flagged, and Amazon may ask for a safety data sheet. Plan this before you book inbound shipments, because a rejected shipment around Prime Day is costly.
 
-## Step 4: Build product pages by hair type
+## Step 4: Write product pages for each hair type
 
 Hair oil shoppers want to know if it suits their hair. A page aimed at "all hair types" convinces no one in particular.
 
@@ -182,7 +182,7 @@ The first bottle rarely proves much beyond shine and softness. The second and th
 
 Oils are used on a schedule, so subscribe-and-save fits them well, both on your store and through Amazon's Subscribe & Save. Let customers choose the interval, remind them before each charge and make skipping or cancelling simple, which regulators expect for subscriptions. Bundles of an oil with a matching shampoo, a scalp brush or a silk scrunchie raise order value and help new customers build a routine around the product.
 
-Ask every buyer for a review once they have used the oil long enough to judge it. The FTC rule on fake reviews bans buying or faking reviews and rewarding only positive ones.
+Request a review from every buyer after a few weeks of use, when they can judge more than the scent. The FTC rule on fake reviews bans buying or faking reviews and rewarding only positive ones.
 
 ## Common mistakes new hair oil brands make
 
@@ -204,7 +204,7 @@ Gift sets sell around Black Friday, Cyber Monday and the holidays. Valentine's D
 - [ ] Labels checked, including any Prop 65 warning
 - [ ] Bottles sealed, bagged and drop-tested
 - [ ] Amazon prep and hazmat requirements checked
-- [ ] Product pages by hair type, with honest timelines
+- [ ] Pages written per texture, each with a realistic timeline
 - [ ] Unit economics worked out for each size and channel
 - [ ] Creator briefs with FTC disclosure wording
 - [ ] Post-purchase and refill journey switched on
@@ -213,4 +213,4 @@ For help with any of these steps, see our [haircare marketing agency for US bran
 
 ## Next step
 
-Want a second opinion on your hair oil store or listings? Request a [free ecommerce audit](/free-ecommerce-audit/). We are a remote team in India, so the review happens during your night and we go through the findings on a call in your morning, when our time zones overlap.
+Want a second opinion on your hair oil store or Amazon listings? Ask for a [free ecommerce audit](/free-ecommerce-audit/). Our team is based in India and works with US brands remotely, so we dig into your pages, claims and listings overnight and share the priorities on a short call early in your US day, when our hours overlap.

@@ -38,7 +38,7 @@ related:
     href: "/tools/ltv-cac-calculator/"
 figures:
   - type: mindmap
-    caption: "Four parts of a UK skincare marketing strategy and what each one covers."
+    caption: "The four building blocks of a UK skincare marketing strategy."
     center: "UK skincare strategy"
     branches:
       - label: "Stand for"
@@ -135,7 +135,7 @@ Creators drive a large share of skincare discovery in the UK, and they carry ris
 
 ## Use paid minis to lower the risk of trying
 
-Many UK buyers will not risk a full-size serum on an unknown brand. Paid minis and discovery kits at a fair price attract people who are genuinely curious; free samples tend to attract people who are only collecting freebies. Follow every mini with how-to-use tips, a check-in before it runs out and a credit towards the full size. Measure how many trial buyers become full-size customers, by product and by channel.
+Many UK buyers will not risk a full-size serum on an unknown brand. Paid minis and discovery kits at a fair price attract people who are genuinely curious; free samples tend to attract people who are only collecting freebies. After each mini ships, send application tips, a nudge as it nears empty and an offer that knocks the mini's cost off a full-size order. Measure how many trial buyers become full-size customers, by product and by channel.
 
 ## Plan for the second order
 
@@ -176,7 +176,7 @@ First-order return on ad spend tells you very little on its own. Track these, by
 - Mini-to-full-size conversion.
 - Refund and complaint reasons.
 
-Our [LTV to CAC calculator](/tools/ltv-cac-calculator/) helps you see how much you can afford to spend to win a customer once you know what they are worth over time.
+Our [LTV to CAC calculator](/tools/ltv-cac-calculator/) shows the ceiling on acquisition spend once you know roughly what a customer brings in over a year or two.
 
 ## Work with the UK calendar
 
@@ -208,4 +208,4 @@ Write the strategy on one page: your position, two or three buyers, the claims y
 
 ## Next step
 
-Unsure where your skincare marketing is leaking money? Request a [free store audit](/free-ecommerce-audit/). We will look at your pages, claims, ads and repeat-order numbers and send a short list of priorities. You are welcome to go through it with us at our London office or on a video call.
+Not sure which part of your skincare marketing is underperforming? Request a [free store audit](/free-ecommerce-audit/). We will look at your pages, claims, ads and repeat-order numbers and send a short list of priorities. You are welcome to go through it with us at our London office or on a video call.

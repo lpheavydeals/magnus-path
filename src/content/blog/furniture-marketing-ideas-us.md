@@ -16,9 +16,9 @@ faqs:
   - q: "How long do US shoppers take to buy furniture online?"
     a: "It varies by price and item, but sofas, beds and dining sets are often researched over weeks, with several visits, comparisons and conversations at home. That is why campaigns judged only on a seven-day window tend to undervalue prospecting. Look at the time from first visit to order in your own analytics and set reporting windows to match."
   - q: "Is Pinterest worth it for furniture marketing in the USA?"
-    a: "For most furniture and decor brands, yes. People use Pinterest to plan rooms and save ideas, often long before they buy. Organic Pins from your room photography bring steady visits, and catalog-based ads can reach planners early. Judge Pinterest on assisted sales and saves over several weeks rather than last-click orders alone."
+    a: "For most furniture and decor brands, yes. People use Pinterest to plan rooms and save ideas, often long before they buy. Your room photos keep earning visits as Pins long after you post them, and ads built from your catalog can catch planners before they pick a store. Judge Pinterest on assisted sales and saves over several weeks rather than last-click orders alone."
   - q: "When are the big furniture sales in the US?"
-    a: "The major moments are holiday weekends: Presidents' Day in February, Memorial Day in May, Fourth of July and Labor Day in September, plus Black Friday, Cyber Monday and the holiday season. Spring and summer moving season also lifts demand. Freight lead times mean campaigns and stock checks should start several weeks before each date."
+    a: "Sales cluster on long weekends: Presidents' Day in February, Memorial Day in May, the Fourth of July and Labor Day in September, then Black Friday, Cyber Monday and December. Moving season in spring and summer adds steady demand. Freight lead times mean campaigns and stock checks should start several weeks before each date."
   - q: "Should furniture ads mention delivery and assembly?"
     a: "Yes, especially in retargeting. Once a shopper has seen the piece, the remaining doubts are usually practical: when it will arrive, whether it fits through the door, who assembles it and what happens if it is damaged. Ads and landing pages that answer those questions directly often convert better than another lifestyle image."
 related:
@@ -36,15 +36,15 @@ related:
     href: "/tools/ad-budget-planner/"
 figures:
   - type: steps
-    caption: "A US furniture buyer's journey, and the marketing that fits each stage."
+    caption: "How a US furniture shopper moves from idea to order, with the marketing for each stage."
     steps:
       - { title: "Dream", body: "Pins, room Reels, style quizzes" }
       - { title: "Compare", body: "Sizes, fabrics, reviews, swatches" }
       - { title: "Reassure", body: "Freight level, assembly, returns, chat" }
       - { title: "Order", body: "Holiday weekend offer, delivery date" }
-      - { title: "Share", body: "Photo review, matching pieces, referral" }
+      - { title: "Share", body: "Photo reviews, add-on pieces, referrals" }
   - type: mindmap
-    caption: "Four groups of furniture marketing ideas covered in this guide."
+    caption: "The four kinds of furniture marketing ideas in this USA guide."
     center: "US furniture marketing"
     branches:
       - label: "Picture it"
@@ -52,20 +52,20 @@ figures:
       - label: "Stay close"
         items: ["Catalog retargeting", "Saved-cart emails", "Live chat and video"]
       - label: "Get found"
-        items: ["Pinterest boards", "Room and style pages", "Marketplace listings"]
+        items: ["Pinterest by room", "Collection pages", "Wayfair and Amazon"]
       - label: "Time it"
         items: ["Holiday weekends", "Moving season", "BFCM and holidays"]
 ---
 
 Looking for furniture marketing ideas? USA shoppers set the pace, and the ideas that work all respect how slowly people buy. A shopper choosing a sectional may save Pins in March, measure the living room in April, compare three brands in May and finally order over Memorial Day weekend. The ideas below are grouped by the job they do, from helping buyers picture a piece to timing your offers, so you can pick the ones that fit your range and budget.
 
-## Ideas that help buyers picture the piece
+## Ideas that make the piece easy to imagine at home
 
-### 1. Shoot every hero product in a real room
+### 1. Style hero pieces in lived-in rooms
 
 Studio shots show detail, but room shots sell. Style each hero piece in a room that looks like your buyer's home, with natural light and believable clutter. Show apartment-sized spaces as well as large suburban rooms.
 
-### 2. Add a scale shot to every listing
+### 2. Give every listing a size reference
 
 Put a person, a bed or a familiar object beside the piece. Pair it with dimensions in inches on the image itself, so shoppers who skip the specs still see the size.
 
@@ -73,7 +73,7 @@ Put a person, a bed or a familiar object beside the piece. Pair it with dimensio
 
 A 15-second video of a chair turning, a drawer opening or a sofa bed unfolding answers more questions than a paragraph. Where your platform supports 3D or augmented reality previews, offer them on large items.
 
-### 4. Show materials up close
+### 4. Get close to fabric, grain and hardware
 
 Shoot fabric weaves, wood grain, joinery and hardware in daylight so colors look true. Offer swatches for upholstery, and send them quickly; a swatch request is one of the strongest buying signals you will see.
 
@@ -81,17 +81,17 @@ Shoot fabric weaves, wood grain, joinery and hardware in daylight so colors look
 
 Many US buyers live in apartments or starter homes. Content such as "five ways to fit a dining table into a 10-by-12 room" brings in planners who need practical answers.
 
-## Ideas that follow a long buying journey
+## Ideas for a buying journey that lasts weeks
 
-### 6. Plan ads in layers
+### 6. Stack inspiration, retargeting and search
 
 Use Pinterest and Meta to reach people collecting ideas, then catalog ads to follow those who viewed or saved specific pieces. Google Search and Shopping catch the shopper who already types "performance fabric sofa 84 inch". Each layer has a different job, so judge them differently.
 
-### 7. Judge campaigns on a longer window
+### 7. Stretch your reporting window
 
 If your average buyer takes three weeks, a seven-day attribution window will make prospecting look weak and retargeting look brilliant. Check the time from first visit to order in your own data and set reporting windows to match. Our [ad budget planner](/tools/ad-budget-planner/) helps you split spend across these layers.
 
-### 8. Send saved-item and browse reminders
+### 8. Follow up on saved items and carts
 
 With consent, send emails to shoppers who saved items, left a cart or viewed the same product several times. Lead with the piece they looked at, then add reviews, delivery details and matching items.
 
@@ -103,25 +103,25 @@ High-ticket buyers have specific questions: will this fit up a narrow staircase,
 
 Photos of your furniture in ordinary US homes reassure shoppers more than any studio image. Ask for them a week or two after delivery and show them on product pages and in retargeting ads. Collect reviews honestly; the FTC prohibits fake or bought reviews.
 
-## Ideas that help buyers find you
+## Ideas that put you where planners look
 
-### 11. Build Pinterest boards by room and style
+### 11. Organize Pinterest by room and style
 
 Create boards for living rooms, bedrooms, home offices and styles such as mid-century or modern farmhouse. Pin every room shot with a clear title and a link to the product. Test Pinterest catalog ads once your feed is clean.
 
-### 12. Create search pages by room, style and material
+### 12. Build collection pages that match searches
 
 Collection pages such as "solid wood dining tables" or "sofas for small living rooms" match how people search. Add a short buying guide to each page and keep product data structured so Google and AI assistants can read it.
 
 ### 13. Choose marketplace roles deliberately
 
-Wayfair reaches shoppers already browsing furniture, Amazon US suits smaller pieces and decor, and Walmart Marketplace reaches value-focused buyers. Target Plus is invitation-only. Decide which products belong on each, check margins after fees and freight, and keep exclusive pieces or bundles on your own store.
+Wayfair reaches shoppers already browsing furniture, Amazon US suits smaller pieces and decor, and Walmart Marketplace reaches value-focused buyers. Target Plus works by invitation only. Decide which products belong on each, check margins after fees and freight, and keep exclusive pieces or bundles on your own store.
 
 ### 14. Work with home creators and designers
 
 Home creators on Instagram, TikTok and YouTube can show your furniture in a real room makeover. Interior designers buy repeatedly for clients. A simple trade program with a designer contact and lead-time sheet can bring steady orders. Creators must disclose paid relationships clearly in the content itself.
 
-## Ideas that time your campaigns
+## Ideas that get the timing right
 
 ### 15. Own the holiday weekends
 
@@ -153,7 +153,7 @@ Where your furniture is made, the wood you use and how the joints are cut all ma
 
 Offer room sets, such as a bed, two nightstands and a dresser, with clear delivery for the whole set in one shipment. Bundles lift order value and solve the "will these match?" worry.
 
-## Ideas for made-to-order furniture
+## Extra ideas for custom and made-to-order pieces
 
 Made-to-order pieces bring extra questions. These ideas help:
 
@@ -163,11 +163,11 @@ Made-to-order pieces bring extra questions. These ideas help:
 - State that custom items cannot usually be returned, before checkout.
 - Use the waiting time to suggest matching pieces.
 
-## If you also have a showroom
+## Using a showroom to support online sales
 
 A physical showroom in your home city is a strong asset online. Promote "see it in person" on product pages for local shoppers, run local inventory or store visit campaigns where available, and offer appointment booking. Video tours of the showroom help buyers in other states feel the space.
 
-## Make delivery part of your marketing
+## Turn freight and assembly into selling points
 
 Freight is often where a furniture sale is won or lost. Market it openly:
 
@@ -186,7 +186,7 @@ Furniture brands often post in bursts around sales, then go quiet. A steady cale
 - **Quarterly:** a seasonal lookbook tied to the next holiday weekend.
 - **Always on:** customer photo reviews shared with permission.
 
-## Compare channels at a glance
+## US furniture channels side by side
 
 | Channel | Main job | Watch out for |
 |---|---|---|
@@ -197,7 +197,7 @@ Furniture brands often post in bursts around sales, then go quiet. A steady cale
 | Amazon US | Smaller pieces and decor | Oversize fulfillment costs |
 | Email and SMS | Saved items and post-purchase | Consent and frequency |
 
-## Measure what matters for furniture
+## Furniture metrics worth tracking
 
 - Time from first visit to order, by category.
 - Swatch requests and saved items, as early buying signals.

@@ -9,16 +9,16 @@ readingMinutes: 9
 author: "Billion Ecommerce Agency Team"
 market: "UK"
 twin: "makeup-brand-marketing-ideas"
-summary: "The makeup marketing ideas that work in the UK help buyers choose the right shade online and trust what they see. Show swatches on many skin tones without filters, offer shade finders and sample cards, work with creators who label their ads, run launches as drops with a waitlist, use TikTok Shop and Amazon UK for discovery and reorders, and plan gift sets for Black Friday, Christmas, Valentine's and Mother's Day well in advance."
+summary: "The makeup marketing ideas that work in the UK help buyers pick the right shade online and believe the images. Show unfiltered swatches across a wide range of skin tones, offer shade finders and sample cards, work with creators who label their ads, run launches as drops with a waitlist, use TikTok Shop and Amazon UK for discovery and reorders, and plan gift sets for Black Friday, Christmas, Valentine's and Mother's Day well in advance."
 faqs:
   - q: "How can a small makeup brand compete with big UK beauty brands?"
     a: "Pick a buyer the big brands serve poorly, such as deep skin tones, mature skin or sensitive eyes, and serve them thoroughly. Show your products honestly on real skin, build a close relationship through email and community, and launch in focused drops rather than sprawling ranges. Being specific is cheaper than trying to outspend larger brands."
   - q: "What does the ASA say about filters in makeup ads?"
-    a: "The ASA has ruled against beauty ads that used filters to exaggerate how a product performs. In general, filters should not be applied to images that show the effect of the product being promoted. Keep footage unfiltered and unretouched where it shows the product, and make sure creators follow the same rule."
+    a: "The ASA has upheld complaints about beauty ads in which a filter made the product look more effective than it is. In general, filters should not be applied to images that show the effect of the product being promoted. Keep footage unfiltered and unretouched where it shows the product, and make sure creators follow the same rule."
   - q: "Is TikTok Shop good for makeup brands in the UK?"
     a: "It suits makeup well because products show a visible result in seconds. Live selling, short tutorials and affiliate creators drive sales there. Commissions and offers squeeze margins, so plan prices carefully and use TikTok Shop mainly to find new buyers, then bring them to your store for shade history, sets and loyalty rewards."
   - q: "How do I reduce shade-related returns?"
-    a: "Show each shade on several skin tones in natural light, explain undertones in simple terms, add a shade finder and offer sample cards or minis. Track returns by shade: if one is returned often, its photos or description may be misleading. Follow up after purchase to help buyers who are unsure."
+    a: "Photograph every shade on a spread of skin tones in daylight, describe undertones simply, add a shade finder and offer sample cards or minis. Track returns by shade: if one is returned often, its photos or description may be misleading. Follow up after purchase to help buyers who are unsure."
   - q: "When should UK makeup brands plan gift sets?"
     a: "Start planning Christmas sets in late spring or early summer, because components and filling take time. Sets should be on sale before Black Friday. Valentine's and Mother's Day in March need stock ready by January. Advent calendars are popular in the UK but need very early planning and careful costing."
   - q: "Do I need to label gifted makeup posts as ads?"
@@ -39,19 +39,19 @@ related:
 figures:
   - type: matrix
     caption: "Matching UK makeup marketing ideas to what is stopping a purchase."
-    cols: ["Unsure of the shade", "Unsure of the brand"]
+    cols: ["Shade worries", "Brand worries"]
     rows: ["New to your brand", "Has bought before"]
     cells:
       - { title: "Shade help", body: "Unfiltered swatches, undertone guide, sample cards" }
       - { title: "Matched creators", body: "Honest tutorials on similar skin, labelled as ads" }
-      - { title: "Shade memory", body: "Remind buyers of their shade and suggest matching items" }
+      - { title: "Shade memory", body: "Save each buyer's shade and suggest products that match it" }
       - { title: "First access", body: "Waitlist priority, loyalty points, new-shade previews" }
   - type: steps
     caption: "A simple run-up for a new UK makeup launch."
     steps:
       - { title: "Show textures", body: "Close-ups and unfiltered swatches" }
-      - { title: "Open a waitlist", body: "Early access for past buyers" }
-      - { title: "Seed creators", body: "Products out a few weeks ahead" }
+      - { title: "Open a waitlist", body: "Past customers get first pick" }
+      - { title: "Seed creators", body: "Send samples before launch day" }
       - { title: "Go live together", body: "Store, TikTok Shop, ads, email" }
       - { title: "Restock early", body: "Track sell-through by shade" }
 ---
@@ -68,7 +68,7 @@ Use the same lighting, camera and framing for every swatch so shades can be comp
 
 ### 2. Explain undertones in plain English
 
-Many buyers do not know if they are warm, cool or neutral. A short guide with simple tests, such as how silver and gold jewellery look against the skin, helps them narrow the range before choosing. Name shades in a way that hints at depth and undertone, so a buyer can tell at a glance whether a shade is light, medium or deep and warm, cool or neutral.
+Plenty of shoppers cannot say whether their undertone is warm, cool or neutral. An easy self-test, such as comparing silver and gold jewellery against the skin, helps them narrow the range before choosing. Name shades in a way that hints at depth and undertone, so a buyer can tell at a glance whether a shade is light, medium or deep and warm, cool or neutral.
 
 ### 3. Add a shade finder
 
@@ -80,7 +80,7 @@ Paid sample cards or deluxe minis let buyers try two or three shades before comm
 
 ## Ideas for creators and content
 
-### 5. Build a steady creator roster
+### 5. Keep a regular group of creators
 
 Work with a small group of creators over months rather than one-off posts. Repeated, genuine use builds more trust than a single glowing review.
 
@@ -149,7 +149,7 @@ A makeup brand with a community spends less to win each buyer, because customers
 - **Pop-ups and masterclasses** in UK cities, even small ones, where people can try shades in person and meet the founders.
 - **Shade requests**, where buyers vote on the next shade or finish. It turns launches into something customers feel part of.
 
-## Your own website: small changes with big effects
+## Quick fixes for your own website
 
 Before scaling ads, check that your Shopify store:
 
@@ -194,12 +194,12 @@ A shade that sells well but is often returned may need new photos, not more ad s
 
 ## Claims and compliance
 
-Makeup sold in Great Britain falls under the UK Cosmetics Regulation, with a Responsible Person, safety report and SCPN notification needed before sale. Ads and creator posts fall under the CAP Code, enforced by the ASA, and consumer protection law covers misleading pricing and fake reviews. Keep long-wear, waterproof and coverage claims tied to tests you hold, avoid medical wording for products marketed as suitable for skin conditions, and label every paid or gifted post. This is general guidance; check final wording with your adviser.
+In Great Britain, makeup is covered by the UK Cosmetics Regulation, with a Responsible Person, safety report and SCPN notification needed before sale. The ASA applies the CAP Code to ads and creator posts, and consumer protection law covers misleading pricing and fake reviews. Keep long-wear, waterproof and coverage claims tied to tests you hold, avoid medical wording for products marketed as suitable for skin conditions, and label every paid or gifted post. This is general guidance; check final wording with your adviser.
 
-## Putting these makeup brand marketing ideas to work
+## Turning these ideas into a plan
 
 Write a simple plan: the buyer you serve, the problems stopping them buying, the ideas that solve those problems and the numbers you will watch. Run it for a full season, then keep what moved sales and repeat orders. If you would like help planning shade content, creators, launches and ads, our [UK cosmetics marketing agency](/uk/cosmetics-marketing-agency/) team works across all of them.
 
 ## Next step
 
-Curious where your makeup store is losing buyers? Request a [free store audit](/free-ecommerce-audit/). We will review your shade pages, creator content, ads and returns and send a short list of priorities. You can go through it with us by video or at our London office.
+Curious where your makeup store is losing buyers? Request a [free store audit](/free-ecommerce-audit/). We will examine your shade pages, creator content, ads and returns and send back the changes worth making first. You can go through it with us by video or at our London office.

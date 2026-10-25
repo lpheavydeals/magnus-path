@@ -22,7 +22,7 @@ faqs:
   - q: "When should a UK haircare brand run its biggest campaigns?"
     a: "Black Friday through Christmas is the main gifting window for sets and tools. January suits new-routine messages, Valentine's and Mother's Day in March suit gifts, and summer brings holiday, swimming and festival hair care. Plan stock and creative at least a month before each peak so ads are not waiting on deliveries."
   - q: "How do I measure whether haircare marketing is working?"
-    a: "Look beyond first-order return on ad spend. Track cost to win a customer, second-order rate, time between orders and revenue per customer over several months, by product. A conditioner that brings buyers back every six weeks can justify more ad spend than a styling product bought once. Review the numbers monthly."
+    a: "Look beyond first-order return on ad spend. Track cost to win a customer, second-order rate, time between orders and how much each customer spends across the first six months, product by product. A conditioner that brings buyers back every six weeks can justify more ad spend than a styling product bought once. Review the numbers monthly."
 related:
   - label: "Haircare marketing agency for UK hair brands"
     href: "/uk/haircare-marketing-agency/"
@@ -38,7 +38,7 @@ related:
     href: "/tools/roas-calculator/"
 figures:
   - type: mindmap
-    caption: "UK haircare marketing ideas grouped by the job each one does."
+    caption: "UK haircare marketing ideas sorted into four jobs."
     center: "UK haircare marketing"
     branches:
       - label: "Teach"
@@ -54,16 +54,16 @@ figures:
     steps:
       - { title: "On delivery", body: "How much, how often, how to rinse" }
       - { title: "First wash day", body: "A short routine video for their hair" }
-      - { title: "Weeks 3-4", body: "Check-in and when to judge results" }
+      - { title: "Weeks 3-4", body: "A check-in on progress so far" }
       - { title: "Nearly empty", body: "Refill reminder and a larger size" }
-      - { title: "After reorder", body: "Review request and next product" }
+      - { title: "After reorder", body: "Ask for a review, suggest a pairing" }
 ---
 
 These haircare brand marketing ideas UK founders can put to work start from a simple observation: hair is personal, and British hair has British problems. Hard water in much of the country, drizzle that turns blow-dries to frizz, central heating that dries out lengths and a population with every hair type from fine and straight to tightly coiled. A brand that speaks to one of those problems clearly will always beat one that promises everything to everyone. Below are sixteen ideas, grouped by job, plus how to choose and measure them.
 
 ## Haircare brand marketing ideas for content
 
-### 1. Build guides by hair type and concern
+### 1. Write a routine guide for each hair type
 
 Write separate guides for fine hair, thick hair, waves, curls, coils, coloured hair and grey hair, each with a routine that uses your products where they genuinely fit. Buyers search for their own hair, not for your ingredient.
 
@@ -75,7 +75,7 @@ Large parts of the UK have hard water, and many people notice dull, stiff or tan
 
 ### 3. Publish honest result timelines
 
-State what someone might notice after one wash and what takes weeks of regular use. Honest timelines reduce disappointed reviews and refund requests, and they keep buyers using the product long enough to judge it.
+State what someone might notice after one wash and what takes weeks of regular use. Honest timelines reduce disappointed reviews and refund requests, and they encourage buyers to keep going until a fair trial is complete.
 
 ### 4. Answer the questions people ask AI assistants
 
@@ -129,7 +129,7 @@ Plan live sessions around a theme, such as a frizz test on a wet day or a full w
 
 ### 14. Keep core products in stock on Amazon UK
 
-When someone wants to reorder quickly, they often go to Amazon UK. If your listing is out of stock, the reorder goes to a rival. Keep core sizes stocked and prices in line with your own store.
+When someone wants to reorder quickly, they often go to Amazon UK. An empty listing at that moment hands the sale to a competitor. Keep core sizes stocked and prices in line with your own store.
 
 ## Ideas for retention
 
@@ -192,7 +192,7 @@ A product with a strong second-order rate deserves more budget, even if its firs
 
 ## Claims and compliance in the UK
 
-Haircare sits under the UK Cosmetics Regulation, with a Responsible Person, safety assessment and SCPN notification needed before sale. Advertising falls under the CAP Code, enforced by the ASA. Hair loss is the area to watch: claims to stop shedding or regrow hair can make a product look like a medicine, which the MHRA regulates. Hair dyes carry their own warning and patch-test requirements. Creator posts must be labelled as ads. This is general guidance; check final wording with your Responsible Person or adviser.
+Haircare sits under the UK Cosmetics Regulation, with a Responsible Person, safety assessment and SCPN notification needed before sale. Ads and social posts are judged against the CAP Code, which the ASA applies. Hair loss is the area to watch: claims to stop shedding or regrow hair can make a product look like a medicine, which the MHRA regulates. Hair dyes carry their own warning and patch-test requirements. Creator posts must be labelled as ads. This is general guidance; check final wording with your Responsible Person or adviser.
 
 ## Putting these haircare brand marketing ideas to work
 
@@ -200,4 +200,4 @@ Choose three or four ideas that fit your stage, give each a clear owner and a nu
 
 ## Next step
 
-Want an outside view of your haircare store and ads? Ask for a [free store audit](/free-ecommerce-audit/). We will review your pages, claims, ads and repeat-order numbers and send you a short priority list. Meet us at our London office or on a video call to go through it.
+Want an outside view of your haircare store and ads? Ask for a [free store audit](/free-ecommerce-audit/). We will study your pages, claims, ads and repeat-order numbers and send back a short list of priorities. Meet us at our London office or on a video call to go through it.

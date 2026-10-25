@@ -17,7 +17,7 @@ faqs:
     a: "Be very careful. Saying an oil regrows hair or stops hair loss is a medicinal claim, and the ASA and MHRA can act on it even if the idea is popular online. Describe what you can support, such as a nourished-feeling scalp or softer, shinier lengths, and hold evidence for any test result you quote."
   - q: "Do I need to list essential oils on the label?"
     a: "Essential oils appear in the ingredient list, and many contain fragrance allergens that must be named individually above certain levels in leave-on and rinse-off products. Your safety assessor will check concentrations and any warnings needed. Getting this wrong can lead to Trading Standards action or marketplace listings being blocked, so check before printing labels."
-  - q: "How do I stop hair oil bottles leaking in the post?"
+  - q: "How can I stop hair oil from leaking in transit?"
     a: "Use a bottle and closure designed to seal, add an induction seal or shrink band, and close droppers with a screw cap for transit. Bag each bottle, pack it upright with padding and test-ship a few orders through the couriers you plan to use. Photograph a test parcel on arrival to check the packing holds."
   - q: "Where should a new UK hair oil brand sell first?"
     a: "Start with your own Shopify store, which holds the full story, bundles and customer data. Add Amazon UK for shoppers who search by ingredient and hair type, and TikTok Shop if your oil shows well on video. Etsy suits genuinely handmade, small-batch oils. Stockists and salons can follow once reviews and repeat orders build."
@@ -47,10 +47,10 @@ figures:
     cols: ["Trial and gifting", "Regular use"]
     rows: ["Your own store", "Marketplaces"]
     cells:
-      - { title: "Paid minis", body: "Trial bottles with a credit towards the full size" }
+      - { title: "Paid minis", body: "Small trial bottles, with money off the first large one" }
       - { title: "Large and sets", body: "Bigger bottles, wash-day sets and subscriptions" }
       - { title: "Small bottles", body: "Low-risk first buys on TikTok Shop and Amazon UK" }
-      - { title: "Core sizes", body: "Always in stock so the reorder stays with you" }
+      - { title: "Core sizes", body: "Never out of stock, so loyal buyers do not switch" }
 ---
 
 Anyone looking into how to sell hair oil online, UK edition, will notice how crowded the shelf has become. Rosemary oil went viral, traditional South Asian oiling rituals found new fans, and textured-hair buyers have long relied on oils that the high street barely stocked. That interest is real, but it has also brought copycat products and risky claims. This guide covers the steps to launch and grow a hair oil brand in the UK properly: rules, formula, packaging, product pages, channels, pricing, ads and repeat orders.
@@ -99,16 +99,16 @@ Oil finds every gap. A leaking parcel ruins the bottle, the box and often other 
 - Choose amber glass or opaque PET to protect light-sensitive oils, and weigh up glass breakage against plastic's look.
 - Check how your parcel size affects postage band and whether it fits a letterbox.
 
-## Step 4: Build product pages by hair type
+## Step 4: Write product pages for each hair type
 
-Hair oil buyers want to know whether it will suit their hair. Page structure should help them decide quickly.
+The first question every shopper has is whether this oil will work on their hair. Page structure should help them decide quickly.
 
 ### What to include
 
 - Which hair types and textures it suits, from fine and straight to tight coils.
 - How heavy it feels, and whether it works as a pre-wash treatment, a scalp oil or a finishing oil.
 - How much to use and how often, with a short video.
-- Key ingredients and why they are there, in plain English.
+- The main oils and extracts, and what each one adds, in everyday words.
 - A realistic timeline: what someone may notice after one use versus a few weeks.
 - Patch test advice and who should check with a pharmacist first.
 - Reviews tagged by hair type.
@@ -218,4 +218,4 @@ Hair oil rewards brands that are patient and honest with buyers. For help planni
 
 ## Next step
 
-Want to know what is holding your hair oil sales back? Book a [free store audit](/free-ecommerce-audit/). We will review your product pages, claims, listings and ads and suggest what to fix first, over video or face to face at our London office.
+Want to know what is holding your hair oil sales back? Book a [free store audit](/free-ecommerce-audit/). We will look over your product pages, claims, listings and ads and suggest the first fixes, over video or face to face at our London office.

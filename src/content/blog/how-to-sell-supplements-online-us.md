@@ -91,7 +91,7 @@ Keep one shared folder with specifications, certificates of analysis, batch reco
 
 The label is the anchor for every word you publish online. It needs a statement of identity, net quantity, a Supplement Facts panel with serving size and amounts per serving, the other ingredients, allergen information where it applies, and the name and place of business of the manufacturer, packer or distributor.
 
-### Structure/function claims and the FDA disclaimer
+### What structure/function claims allow
 
 Supplements may carry structure/function claims, such as "supports a healthy immune system" or "helps maintain energy levels". They may not claim to diagnose, treat, cure, mitigate or prevent a disease. When a structure/function claim appears on a label, it generally needs the standard disclaimer that the FDA has not evaluated the statement and that the product is not intended to diagnose, treat, cure or prevent any disease. Brands are also expected to notify the FDA within 30 days of first marketing a product with such a claim.
 
@@ -118,7 +118,7 @@ Page speed matters as much as copy, because most supplement traffic arrives on a
 
 ## Step 5: Pick your US sales channels
 
-### Your own Shopify store
+### Your Shopify store
 
 Your store is where subscriptions, bundles, customer data and education live. It is also the only channel where you set the rules for presentation and follow-up. Expect to pay for most of your early traffic; the store becomes profitable as reorders build.
 
@@ -128,7 +128,7 @@ Many shoppers start a supplement search on Amazon, compare ratings and buy in on
 
 ### Walmart Marketplace
 
-Walmart Marketplace reaches a different shopper and is often less crowded for newer supplement brands. It has its own approval process and content rules for the category. Many sellers add it once Amazon is stable, using the same documents and images.
+Walmart Marketplace draws a more value-minded crowd, and some supplement niches there have fewer established sellers. It has its own approval process and content rules for the category. Many sellers add it once Amazon is stable, using the same documents and images.
 
 ### TikTok Shop
 
@@ -170,7 +170,7 @@ Use our free [LTV and CAC calculator](/tools/ltv-cac-calculator/) to see how muc
 - **August and September.** Back to school brings routine resets for students and parents.
 - **November and December.** Black Friday, Cyber Monday and the holidays suit bundles, gift sets and subscriber offers more than deep single-bottle discounts.
 
-## How to sell supplements online: USA launch checklist
+## How to sell supplements online: USA pre-launch checklist
 
 - [ ] Formula reviewed for ingredient status and any new dietary ingredient question.
 - [ ] Manufacturer chosen with supplement cGMP records you have seen.

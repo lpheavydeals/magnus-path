@@ -14,7 +14,7 @@ faqs:
   - q: "What are the most effective makeup brand marketing ideas for a new US brand?"
     a: "Start with shade confidence, because it decides whether a visitor buys: swatches on many skin tones, undertone guidance and a shade quiz. Then build a small, steady creator roster, plan your launch as a drop with a second wave, and put paid ads behind the creator videos that performed. Retention ideas come next, once you have buyers."
   - q: "Do makeup creators in the US have to disclose gifted products?"
-    a: "Yes. Under the FTC Endorsement Guides, free products, payment and affiliate links or codes are connections that should be disclosed clearly in the post itself, in the video and the caption where possible. Brands are expected to brief creators on this and to monitor what they publish, so include disclosure wording in every seeding brief."
+    a: "Yes. The FTC Endorsement Guides treat a free palette, a fee or an affiliate code as a material connection, and the creator should state it plainly in the post, ideally both on screen and in the caption. Brands are expected to brief creators on this and to monitor what they publish, so include disclosure wording in every seeding brief."
   - q: "Can makeup brands use filters or editing in ads?"
     a: "Be careful. Filters or retouching that change how a product looks on skin can make an ad misleading, especially for foundation, concealer and mascara. The FTC expects ads to show what the product actually does, and many shoppers now ask for unfiltered swatches. Use consistent daylight, avoid editing the product's effect and say when a look combines several products."
   - q: "Is TikTok Shop worth it for makeup brands?"
@@ -28,7 +28,7 @@ related:
     href: "/blog/how-to-start-a-cosmetics-brand-us/"
   - label: "Ecommerce Meta ads agency for US beauty stores"
     href: "/us/ecommerce-meta-ads-agency/"
-  - label: "Ecommerce PPC agency for Google Shopping in the US"
+  - label: "Google Shopping ads for US makeup brands"
     href: "/us/ecommerce-ppc-agency/"
   - label: "Amazon PPC agency for US makeup sellers"
     href: "/us/amazon-ppc-agency/"
@@ -47,10 +47,10 @@ figures:
   - type: steps
     caption: "A US makeup launch planned as a drop, with a second wave."
     steps:
-      - { title: "Seed creators", body: "Products out a few weeks before launch" }
-      - { title: "Open a waitlist", body: "Email and SMS sign-ups with consent" }
+      - { title: "Seed creators", body: "Ship shades to creators weeks ahead" }
+      - { title: "Open a waitlist", body: "Opt-in email and text sign-ups" }
       - { title: "Drop day", body: "Creator posts, a live session, paid support" }
-      - { title: "Second wave", body: "New creators, new looks, restock news" }
+      - { title: "Second wave", body: "Fresh creators and looks, back-in-stock news" }
 ---
 
 These makeup brand marketing ideas, USA edition, start from one fact: online, shoppers cannot swatch. A US buyer choosing a foundation online has no tester, no counter and no daylight by the store window. They rely on swatches, creator videos and reviews, and if those do not help them pick, they leave or buy two shades and return one. The fifteen ideas below cover shade confidence, creators, launches and paid ads, then seasons, gifting and repeat orders, with notes on your store, measurement and compliance.
@@ -91,7 +91,7 @@ Get-ready-with-me videos show the product in a real routine; wear tests show how
 
 Prom, weddings, office, festival, a soft everyday look: different moments need different products. Build content around the occasions your customers plan for, using creators whose style fits each one.
 
-Every gifted, paid or affiliate post needs clear disclosure under the FTC Endorsement Guides, in the video and the caption. Put the disclosure wording in every brief, keep a log of posts and follow up on any that miss it.
+Whether a creator was gifted, paid or given an affiliate code, the FTC Endorsement Guides expect a plain disclosure on screen and in the caption. Write the exact wording into each brief, track every post in a shared sheet and chase any that go live without it.
 
 ## Ideas for launches and paid ads
 
@@ -137,7 +137,7 @@ Reviews carry extra weight in makeup because they answer the question a photo ca
 
 A small community, such as a close-friends list on Instagram or a Discord for your most engaged buyers, can give early feedback on shades before launch and turn your keenest customers into your first reviewers.
 
-## Your own website: small changes with big effects
+## Quick wins on your own store
 
 - Show the full shade range on one page, with swatches on hover or tap
 - Filter reviews by shade and skin type
@@ -173,14 +173,14 @@ Track a few numbers by product and by shade:
 
 ## Claims and compliance
 
-Makeup is regulated as a cosmetic in the US. MoCRA added duties such as facility registration, product listing, safety substantiation and reporting of serious adverse events. Color additives must be approved for their intended use, and some colors allowed on lips are not allowed near the eyes, which matters when you market a product for lips, cheeks and eyes.
+US law treats makeup as a cosmetic, and since MoCRA that brings duties around registering facilities, listing products, documenting safety and reporting serious adverse events. Color additives must be approved for their intended use, and some colors allowed on lips are not allowed near the eyes, which matters when you market a product for lips, cheeks and eyes.
 
 In marketing, the FTC expects claims such as "24-hour wear", "waterproof", "non-comedogenic", "vegan" and "cruelty-free" to be supported before they appear. "Clean" has no legal definition, so define it on your site. The FTC rule on fake reviews and testimonials bans buying or faking reviews and rewarding only positive ones. Some products may need California Prop 65 warnings. We are not lawyers, so have your regulatory adviser review claims and labels.
 
-## Putting these makeup brand marketing ideas to work
+## Turning these makeup brand marketing ideas into a plan
 
 Makeup brands that grow in the US make shade choice easy, let real people show real results, plan launches beyond day one and remember what each customer bought. For a fuller view of how we approach this, see our [cosmetics marketing agency for US brands](/us/cosmetics-marketing-agency/) page.
 
 ## Next step
 
-Want to know which of these ideas would help your store first? Request a [free ecommerce audit](/free-ecommerce-audit/). Our team works remotely from India, so we review your shade pages, ads and listings while you sleep and go through the findings on a call in your morning, when our time zones overlap.
+Wondering which idea would lift your sales first? Ask for a [free ecommerce audit](/free-ecommerce-audit/). Our India-based team works with US makeup brands remotely, reviewing shade pages, ads and listings during your night, then talking through the priorities on a short call early in your US morning, when our working hours overlap.

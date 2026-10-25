@@ -18,7 +18,7 @@ faqs:
   - q: "How do FTC rules affect skincare influencer marketing?"
     a: "The FTC Endorsement Guides expect creators to disclose free products, payment or affiliate commission clearly in the post. Brands are expected to tell creators this and monitor what goes live. Creators also cannot make claims the brand could not make itself, so a creator saying a cosmetic serum treats acne is still a problem for the brand."
   - q: "Are free samples worth it for skincare brands in the US?"
-    a: "Free samples sent to anyone tend to attract people collecting freebies. Paid minis or discovery kits, with a credit toward the full-size product, usually bring in buyers who intend to continue. Follow every trial with usage tips and a timed offer, and track how many trial buyers go on to buy the full size."
+    a: "Free samples sent to anyone tend to attract people collecting freebies. Charging a little for a mini or discovery kit, and crediting it against the full size, filters for people who plan to keep using it. Send usage tips with each kit, time a full-size offer to when it runs out, and measure what share of trial buyers convert."
   - q: "How do you measure a skincare marketing strategy?"
     a: "Look past first-order cost. Track customer acquisition cost by channel, the share of trial buyers who buy full size, time to second order, repeat rate over several months and subscription retention, all split by product. A product that is cheap to sell once but rarely reorders may deserve less budget than it seems."
   - q: "Can a skincare brand use before-and-after photos in US ads?"
@@ -34,7 +34,7 @@ related:
     href: "/us/shopify-seo-agency/"
   - label: "Generative engine optimization for AI answers"
     href: "/us/generative-engine-optimization-agency/"
-  - label: "LTV to CAC calculator for repeat products"
+  - label: "LTV to CAC calculator for skincare reorders"
     href: "/tools/ltv-cac-calculator/"
 figures:
   - type: mindmap
@@ -145,7 +145,7 @@ Reviews often decide a skincare sale, especially on Amazon and TikTok Shop, wher
 - **Reply in public.** Answer complaints about texture, scent or irritation calmly and point to support. Future shoppers read the replies.
 - **Never gate rewards on stars.** Points or entries can reward any honest review, not only positive ones.
 
-## Use sampling to lower the risk of trying
+## Make trying the product low-risk
 
 Skincare is personal, and fear of a breakout or a bad texture stops many first orders. Sampling reduces that fear, but only if it is designed to lead to a sale.
 
@@ -160,7 +160,7 @@ The first order often barely breaks even after ad costs. Profit comes from the c
 
 ### Refill reminders
 
-Work out how long each product lasts with typical use and send a reminder shortly before it runs out. Use email for everyone who signed up and SMS only for customers who opted in, since US texting rules require consent.
+Work out how long each product lasts with typical use and send a reminder shortly before it runs out. Email can go to every subscriber; text messages need the customer's prior consent under US rules, so keep SMS to opted-in buyers.
 
 ### Bundles and routines
 
@@ -203,4 +203,4 @@ Write the plan on one page: your position and the proof behind it, your core cus
 
 ## Next step
 
-Want an outside view of your skincare marketing? Request a [free ecommerce audit](/free-ecommerce-audit/). We are a remote team based in India, so we review your store, ads and listings during your night and walk you through the findings on a call in your morning, where our working hours overlap.
+Want an outside view of your skincare marketing? Ask for a [free ecommerce audit](/free-ecommerce-audit/). Our India-based team serves US brands remotely, so the review of your store, ads and listings happens overnight for you, and we talk it through in the early US morning, when our schedules overlap.

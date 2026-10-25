@@ -14,7 +14,7 @@ faqs:
   - q: "What are good haircare brand marketing ideas for a small US brand?"
     a: "Start with ideas that cost effort rather than budget: guides by hair type, honest result timelines on product pages, a small roster of creators who share your customers' hair texture, and a post-purchase email sequence. Once those convert, add paid social behind the creator videos that performed and search ads for ingredient and concern keywords."
   - q: "Can haircare ads mention hair loss in the US?"
-    a: "Carefully. Claims to stop hair loss or regrow hair are drug claims in the US, so a cosmetic product should describe appearance, such as fuller-looking hair or less breakage. Ad platforms also restrict hair-loss content and before-and-after images. Supplements follow separate structure/function rules. A regulatory adviser should check any hair-loss wording."
+    a: "Carefully. US rules treat stopping hair loss or regrowing hair as drug claims, so keep cosmetic ads to how hair looks and behaves, for example fuller-looking or less prone to breakage. Ad platforms also restrict hair-loss content and before-and-after images. Supplements follow separate structure/function rules. A regulatory adviser should check any hair-loss wording."
   - q: "How should a haircare brand work with US creators?"
     a: "Pick creators whose hair matches your target texture and whose audience trusts their routines. Brief them on how to use the product, which claims to avoid and the disclosure the FTC Endorsement Guides expect for gifted or paid posts. Agree usage rights in writing before running their videos as ads, and keep a log of what was posted."
   - q: "Is TikTok Shop useful for haircare brands?"
@@ -26,11 +26,11 @@ related:
     href: "/us/haircare-marketing-agency/"
   - label: "How to sell hair oil online in the USA"
     href: "/blog/how-to-sell-hair-oil-online-us/"
-  - label: "Ecommerce Meta ads agency for US stores"
+  - label: "Meta ads for US haircare brands"
     href: "/us/ecommerce-meta-ads-agency/"
   - label: "Amazon PPC agency for US haircare sellers"
     href: "/us/amazon-ppc-agency/"
-  - label: "Ecommerce PPC agency for Google Shopping in the US"
+  - label: "Google Shopping and search ads for US hair brands"
     href: "/us/ecommerce-ppc-agency/"
   - label: "Ad budget planner for seasonal campaigns"
     href: "/tools/ad-budget-planner/"
@@ -66,7 +66,7 @@ Many US haircare shoppers already check labels for silicones, sulfates, proteins
 
 ### 3. Publish honest result timelines
 
-Say on every product page what a buyer may notice on the first wash and what takes weeks. A clarifying shampoo works straight away; a bond-building treatment or scalp serum may take a month of regular use. Clear timelines reduce refunds and one-star reviews.
+Each product page should separate what changes after one wash from what needs a month of use. A clarifying shampoo works straight away; a bond-building treatment or scalp serum may take a month of regular use. Clear timelines reduce refunds and one-star reviews.
 
 ### 4. Show wash-day and styling routines
 
@@ -188,4 +188,4 @@ The haircare brands that grow in the US tend to do a few things well: they speak
 
 ## Next step
 
-Want to know which of these ideas would move your numbers first? Request a [free ecommerce audit](/free-ecommerce-audit/). We work remotely from India, review your store, ads and listings while you sleep, and go through the findings on a call in your morning, when our working hours overlap.
+Not sure which of these ideas to try first? Ask for a [free ecommerce audit](/free-ecommerce-audit/). We are an India-based team serving US hair brands remotely: we look at your pages, ads and marketplace listings during your night and agree the priorities with you on a short call early in your US morning, when our hours overlap.

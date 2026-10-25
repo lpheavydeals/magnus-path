@@ -16,9 +16,9 @@ faqs:
   - q: "Can I make skincare at home and sell it online?"
     a: "You can, but home-made products face the same rules as factory-made ones. You still need a safety assessment from a qualified assessor, a Responsible Person, SCPN notification, correct labels and good manufacturing practice. Many small brands start at home with a narrow range and move to a contract manufacturer once orders become regular. Insurance is worth arranging early."
   - q: "Should I start on Amazon UK or my own website?"
-    a: "Most brands use both for different jobs. Your own Shopify store carries the full ingredient story, bundles, subscriptions and customer data, which is where repeat orders become profitable. Amazon UK and TikTok Shop reach shoppers already comparing products there. Put two or three hero products on marketplaces first and keep the full range on your site."
+    a: "Most brands use both for different jobs. Your own Shopify store carries the full ingredient story, bundles, subscriptions and customer data, which is where repeat orders become profitable. Amazon UK and TikTok Shop reach shoppers already comparing products there. List two or three hero products on marketplaces to begin with, and hold the complete range back for your own store."
   - q: "What claims can I make about my skincare in UK adverts?"
-    a: "Stick to cosmetic effects: cleanses, hydrates, protects, improves the look or feel of skin. Wording that suggests treating acne, eczema, rosacea or another condition can be read as a medicinal claim, which may bring in the MHRA as well as the ASA. Hold evidence for every claim and keep before-and-after images unfiltered."
+    a: "Stick to cosmetic effects: cleanses, hydrates, protects, improves the look or feel of skin. Wording that hints at treating acne, eczema, rosacea or any other condition risks being treated as a medicinal claim, which may bring in the MHRA as well as the ASA. Hold evidence for every claim and keep before-and-after images unfiltered."
   - q: "Do UK customers have the right to return opened skincare?"
     a: "Online buyers generally have a cancellation period under consumer law, but sealed goods that are unsealed after delivery and are unsuitable for return for hygiene reasons can be an exception, if you explain this before purchase. Faulty or misdescribed products are a separate matter. Write your policy clearly and check it against current guidance."
   - q: "When do I need to register for VAT?"
@@ -51,7 +51,7 @@ figures:
     rows: ["Used up and rebought", "Bought now and then"]
     cells:
       - { title: "Cleanser, SPF", body: "Amazon UK and your store, with timed refill reminders" }
-      - { title: "Active serums", body: "Your store first, with routine guides and paid minis" }
+      - { title: "Active serums", body: "Sell on your own site first, backed by guides and minis" }
       - { title: "Lip balm, minis", body: "Checkout add-ons and low-risk TikTok Shop trials" }
       - { title: "Masks, gift sets", body: "Bundles for Black Friday, Christmas and Mother's Day" }
 ---
@@ -84,7 +84,7 @@ UK labels typically need the Responsible Person's name and address, the nominal 
 
 A UK brand does not need twenty products at launch. It needs a reason to exist next to the cheap own-label serums in every supermarket.
 
-- **Sell a routine.** Three to five products that work together, such as a cleanser, a treatment serum, a moisturiser and a daily SPF, make it natural to buy more than one item.
+- **Sell a routine.** A cleanser, a treatment serum, a moisturiser and a daily SPF that are designed to be used together give shoppers a natural reason to add a second item.
 - **Own one angle.** A specific active at a stated strength, sensitive skin, mature skin, a fragrance-free line or skin that suffers in central heating all give buyers something to remember.
 - **Include a replenishment product.** Cleanser and sunscreen run out regularly. Masks and treatments do not, so a range built only on occasional products struggles to grow.
 - **Plan sizes for trial and value.** Minis lower the risk of a first purchase. Larger sizes and duos raise order value on your own store.
@@ -117,7 +117,7 @@ Write guides on how to introduce retinol, why SPF matters with exfoliating acids
 
 ## Step 4: Add Amazon UK, TikTok Shop and other marketplaces
 
-Marketplaces put you in front of people who are already buying. Each one plays a different part.
+Each marketplace reaches a different kind of shopper, so give each one a specific job.
 
 | Channel | Who you reach | How to use it |
 |---|---|---|
@@ -133,11 +133,11 @@ Keep prices aligned across channels. If your store always costs more than Amazon
 
 ## Step 5: Advertise inside the rules
 
-Paid social and search bring most young skincare brands their first steady orders. They are also where rejected ads and complaints start.
+For most young skincare brands, paid social and search are where regular orders first come from. They are also where rejected ads and complaints tend to begin.
 
 ### Meta and TikTok ads
 
-Show texture, application and a real morning or evening routine. Avoid language that points at personal characteristics ("Got acne?"), dramatic before-and-after shots and filtered faces. The ASA has ruled against beauty ads that used filters to exaggerate results, so keep footage honest. Paid and gifted creator posts must be clearly labelled as ads.
+Show texture, application and a real morning or evening routine. Avoid language that points at personal characteristics ("Got acne?"), dramatic before-and-after shots and filtered faces. The ASA has upheld complaints where a filter made a beauty product look more effective than it is, so keep footage honest. Paid and gifted creator posts must be clearly labelled as ads.
 
 ### Google Search and Shopping
 
@@ -178,18 +178,18 @@ Skincare is a replenishment category. The second and third orders are where prof
 
 ### A simple post-purchase journey
 
-1. Days 1–3: how to use the product and where it sits in a routine.
+1. Days 1–3: application tips and the right moment in a routine to use it.
 2. Week 2: a friendly check-in and links to useful guides.
-3. Shortly before it runs out: a refill reminder with a small loyalty reward.
+3. Shortly before it runs out: a reorder nudge, with loyalty points for coming back.
 4. After the reorder: a review request with photo upload.
 
 ### Minis that lead to full size
 
-Paid minis and discovery kits work when you follow up with usage tips and a credit towards the full size. Free samples handed to deal hunters rarely convert.
+Paid minis and discovery kits pay off when each one is followed by usage tips and money off the full-size version. Free samples handed to deal hunters rarely convert.
 
 ### Honest reviews
 
-Ask for a review once the buyer has used the product long enough to judge it. UK consumer law now treats fake or incentivised reviews that mislead buyers seriously, so never buy reviews or hide negative ones.
+Request reviews a few weeks after delivery, when the customer has had time to form a view. UK consumer law now treats fake or incentivised reviews that mislead buyers seriously, so never buy reviews or hide negative ones.
 
 ### Customer service
 
@@ -208,11 +208,11 @@ Tick off each item before you spend on ads:
 - [ ] Shopify store with full product pages, VAT-inclusive prices and clear returns
 - [ ] Amazon UK and TikTok Shop listings for hero products
 - [ ] Meta, TikTok and Google campaigns with unfiltered creative
-- [ ] Post-purchase and refill journey switched on
+- [ ] Emails for the first weeks after purchase, plus refill reminders, live
 - [ ] Monthly view of sales, refunds and reorders by product
 
 Learning how to sell skincare in the UK is mostly patient, careful work: compliance done properly, products explained honestly and customers looked after once they have bought. If you would like a team to plan it with you, our [skincare marketing agency for UK brands](/uk/skincare-marketing-agency/) covers pages, ads, marketplaces and retention.
 
 ## Next step
 
-Want a fresh pair of eyes on your skincare store? Ask for a [free store audit](/free-ecommerce-audit/). We will review your product pages, listings, ads and checkout and tell you what to fix first, by video call or in person at our London office.
+Want a fresh pair of eyes on your skincare store? Ask for a [free store audit](/free-ecommerce-audit/). We will go through your product pages, listings, ads and checkout and point out the changes that matter most, by video call or in person at our London office.

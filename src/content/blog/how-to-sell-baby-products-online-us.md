@@ -22,7 +22,7 @@ faqs:
   - q: "Which marketplaces work for baby products in the US?"
     a: "Amazon US is the largest, with its own children's product compliance checks and a widely used baby registry. Walmart Marketplace reaches value-focused families, Target Plus is invitation-only, and TikTok Shop suits visual products but restricts some baby categories. Your own Shopify store holds subscriptions, bundles and customer relationships."
   - q: "How do baby brands get repeat orders online?"
-    a: "Essentials such as diapers, wipes and baby wash run out on a schedule, so subscribe-and-save with easy size changes works well. With consent, life-stage emails can suggest the next size or stage. Gift sets and registry-friendly bundles bring new families in through friends and relatives, who often become customers themselves."
+    a: "Essentials such as diapers, wipes and baby wash run out on a schedule, so subscribe-and-save with easy size changes works well. If parents opt in, emails timed to the child's age can prompt the next size or stage. Gift sets and registry-friendly bundles bring new families in through friends and relatives, who often become customers themselves."
 related:
   - label: "Baby products marketing agency for US brands"
     href: "/us/baby-products-marketing-agency/"
@@ -38,7 +38,7 @@ related:
     href: "/tools/ltv-cac-calculator/"
 figures:
   - type: steps
-    caption: "The order to work in before you sell baby products online in the US."
+    caption: "A sensible sequence for US baby brands, from rules check to repeat orders."
     steps:
       - { title: "Rules check", body: "Which CPSC and FDA rules apply" }
       - { title: "Testing", body: "Accepted lab, certificate, tracking label" }
@@ -47,7 +47,7 @@ figures:
       - { title: "Repeat orders", body: "Subscriptions, sizes and gifting" }
   - type: matrix
     caption: "How different baby product types tend to sell in the US, and what each needs most."
-    cols: ["Bought often", "Bought occasionally"]
+    cols: ["Repeat purchase", "One-off purchase"]
     rows: ["Lower safety complexity", "Higher safety complexity"]
     cells:
       - { title: "Essentials", body: "Diapers, wipes: subscriptions, bulk packs, Amazon" }
@@ -60,7 +60,7 @@ Before you work out how to sell baby products online, USA safety law needs your 
 
 We are an e-commerce marketing team, not lawyers or product safety consultants. Use this as a general guide and confirm the requirements for your own products with a testing lab or qualified counsel.
 
-## Step 1: Get product safety right first
+## Step 1: Settle product safety before anything else
 
 ### Know which rules apply
 
@@ -84,7 +84,7 @@ Even where no specific rule applies, parents ask about materials. Know what ever
 
 Infant formula is a separately regulated FDA category, with strict requirements on nutrients, manufacturing, labeling and notification. Baby foods face growing scrutiny of heavy metals, and some states, California among them, now require testing and disclosure. If you plan to sell formula or baby food, bring in specialist regulatory counsel before anything else.
 
-### Claims on skincare and wellness products
+### Claims on lotions, washes and balms
 
 Baby lotions, washes and balms are generally cosmetics in the US, and cosmetic claims must not cross into drug claims, such as treating eczema or diaper rash, unless the product is marketed as an over-the-counter drug that follows the relevant rules. The FTC also expects claims such as "hypoallergenic", "pediatrician recommended" or "dermatologist tested" to be truthful and backed by evidence.
 
@@ -92,7 +92,7 @@ Baby lotions, washes and balms are generally cosmetics in the US, and cosmetic c
 
 California's Proposition 65 may require a warning where a product can expose people to listed chemicals. Work with counsel to decide whether a warning applies and how it should appear on your site and marketplace listings.
 
-## Step 3: Build product pages that answer parents' questions
+## Step 3: Write product pages for careful parents
 
 Parents read baby product pages closely. A strong page includes:
 
@@ -105,13 +105,13 @@ Parents read baby product pages closely. A strong page includes:
 - **Honest FAQs** about fit, sizing, cleaning and what is in the box.
 - **Reviews from real parents**, collected honestly and shown in full.
 
-### Photos and content parents trust
+### Images that show safe, real use
 
 Show the product in real use with a baby or toddler of the right age, in safe settings that follow sleep and supervision guidance. A photo of a baby asleep with loose blankets or a pillow will draw criticism and may break platform rules. Short videos of folding, fastening or cleaning answer practical questions quickly.
 
 ## Step 4: Choose your US sales channels
 
-### Your own Shopify store
+### A Shopify store of your own
 
 Your store is where subscriptions, bundles, gift sets and customer relationships live. It is also where you can explain safety and materials in full.
 
@@ -141,7 +141,7 @@ Babylist, Amazon Baby Registry and Target's registry shape how many US families 
 
 Our [US baby products marketing agency](/us/baby-products-marketing-agency/) page explains how we plan ads and content within these limits.
 
-## Step 6: Plan repeat orders, life stages and gifting
+## Step 6: Plan for refills, growth spurts and gifts
 
 ### Repeat essentials
 
@@ -155,7 +155,7 @@ With the parent's consent, send emails that match the child's stage: the next di
 
 Gift buyers want age guidance, gift-ready packaging, a message option and a reliable delivery date. Build gift sets for baby showers, first birthdays and the holidays.
 
-## Step 7: Handle operations with care
+## Step 7: Run operations with recalls in mind
 
 - **Recalls.** Have a plan for contacting customers and marketplaces quickly if a safety issue appears.
 - **Batch tracking.** Link orders to batches so you can identify affected customers.
@@ -188,7 +188,7 @@ Once sales start, track a short list of numbers every month: acquisition cost by
 
 Prime Day in July and Amazon's fall deal event bring families stocking up on essentials and gear. Back to school matters for toddler and kids clothing. Black Friday, Cyber Monday and the holidays drive toys and gifts, and spring is a busy baby shower season.
 
-## Common mistakes when selling baby products online
+## Mistakes US baby brands make online
 
 - Listing products before testing and the CPC are complete.
 - Using "non-toxic", "chemical-free" or "safe" without evidence.

@@ -63,7 +63,7 @@ If you want to know how to sell shoes online, UK shoppers will tell you what mat
 Different footwear buyers decide in different ways:
 
 - **Trainer buyers** care about colourways, limited releases and how the shoe looks on foot.
-- **Walking and running buyers** care about support, grip, waterproofing and width.
+- **Walkers and runners** judge a shoe on cushioning, grip on wet ground, waterproofing and whether a wide option exists.
 - **Parents** shopping for the new term want sturdy school shoes with room to grow, delivered before September.
 - **Occasion buyers** for weddings, races and parties care about delivery dates and easy size swaps.
 - **Comfort buyers** look for wide fittings, removable insoles and room for orthotics.

@@ -16,7 +16,7 @@ faqs:
   - q: "How do I keep supplement ads compliant in the US?"
     a: "Keep every claim within what your label already says, avoid disease language and condition names as hooks, and hold evidence for each benefit before it appears. Skip before-and-after images and body-focused openers. Make sure the landing page matches the ad. Read current platform policies before each launch and ask counsel about any wording you are unsure of."
   - q: "Do supplement influencers need to disclose sponsorships?"
-    a: "Yes. The FTC's endorsement guidance expects anyone paid, gifted product or connected to the brand to disclose that relationship clearly in the content itself, not hidden in a profile or behind a link. Creators also cannot make claims your brand could not make. Brief them with approved wording and review scripts before filming."
+    a: "Yes. The FTC's endorsement guidance expects anyone paid, gifted product or connected to the brand to disclose that relationship clearly in the content itself, not hidden in a profile or behind a link. Nor can a creator say anything your own label and evidence would not support. Brief them with approved wording and review scripts before filming."
   - q: "When is the busiest season for supplement marketing in the US?"
     a: "January is usually the biggest month, driven by New Year resolutions and gym sign-ups. Prime Day in July and Black Friday through Cyber Monday are the main deal periods, and back to school brings a smaller routine reset. Prepare creative, stock and landing pages several weeks ahead, especially for January, when ad costs rise."
   - q: "Which metrics matter most for a supplement brand?"
@@ -51,7 +51,7 @@ figures:
         items: ["Refill timing", "Fair subscriptions", "Stacks and bundles"]
   - type: matrix
     caption: "Ad angles that usually clear US platform review, and the ones that tend to get rejected."
-    cols: ["Lower policy risk", "Higher policy risk"]
+    cols: ["Usually approved", "Often rejected"]
     rows: ["Talks about the product", "Talks about the person"]
     cells:
       - { title: "Formula detail", body: "Grams per scoop, ingredient form, testing, flavor, mixability" }
@@ -64,7 +64,7 @@ Building a supplement marketing strategy? USA shoppers make it a two-part job. Y
 
 We are an e-commerce marketing team, not lawyers. Where we mention regulations, treat it as a general overview and check specifics with counsel.
 
-## Start with one buyer and one promise
+## Pick one buyer and one promise to start
 
 Most new supplement brands try to talk to everyone: athletes, busy parents, older adults, people who want better sleep. The result is vague copy and expensive ads. A sharper plan picks one buyer and one hero product first.
 
@@ -77,7 +77,7 @@ Answer these questions in writing:
 
 Write a one-page claims sheet that lists approved benefit statements, the evidence behind each, and words nobody may use. Share it with everyone who writes for the brand.
 
-## Build trust before you buy reach
+## Earn trust before you pay for reach
 
 US shoppers judge supplements on trust signals long before price. Fix these before you raise ad budgets:
 
@@ -88,7 +88,7 @@ US shoppers judge supplements on trust signals long before price. Fix these befo
 - **Genuine reviews**. The FTC's rule on consumer reviews prohibits fake or bought reviews and suppressing negative ones, so collect them honestly and show the mix.
 - **Reachable support**: a real email address, an order-tracking page and a returns policy in plain words.
 
-## Write claim-safe ads
+## Write ads that clear review
 
 US supplement ads sit under two layers of oversight. The FTC looks at the overall impression an ad creates and expects evidence that matches the claim, the dose and the audience. The platforms add their own rules on top.
 
@@ -100,7 +100,7 @@ US supplement ads sit under two layers of oversight. The FTC looks at the overal
 - Promised results within a set time.
 - Certain ingredients that Google or TikTok will not advertise at all.
 
-### Angles that usually work
+### Angles that tend to pass
 
 - Formula transparency: what is inside, how much, in which form.
 - Routine: the morning scoop, the desk-drawer bottle, the travel pack.
@@ -112,11 +112,11 @@ For a deeper look at how we align ads, pages and labels, see our [US supplement 
 
 ## Plan the US channel mix
 
-### Meta (Facebook and Instagram)
+### Facebook and Instagram
 
 Meta remains the main discovery channel for many direct-to-consumer supplement brands. Use broad audiences with strong creative rather than narrow targeting, and rotate new hooks every few weeks. Expect occasional rejections and keep an appeal log.
 
-### Google Search and Shopping
+### Google Search and Google Shopping
 
 Search catches people who already know what they want: "creatine monohydrate gummies" or "magnesium glycinate 200 mg". Shopping ads need a clean feed with accurate titles and images. Brand search protects your name from resellers and competitors.
 
@@ -148,7 +148,7 @@ Creators work well for supplements because shoppers want to see a real person us
 
 Do not ask creators to share weight-loss figures, lab results or medical stories. If one does it anyway, ask for an edit or remove the content from your ads.
 
-## Publish content that answers real questions
+## Answer the questions shoppers search
 
 Supplement shoppers search before they buy: which form of an ingredient absorbs well, whether to take it in the morning or evening, how it compares with a similar product. Clear answers to these questions bring organic traffic and are increasingly quoted in AI answers from Google and chat assistants.
 
@@ -162,7 +162,7 @@ Good supplement content:
 
 ## Make retention the center of the strategy
 
-A supplement brand rarely profits on the first order once ad costs are counted. The business works when customers finish the bottle and buy again.
+A supplement brand rarely profits on the first order once ad costs are counted. Profit arrives when people empty the first bottle and come back for another.
 
 ### Retention checklist
 
@@ -196,9 +196,9 @@ Customer service notes are also a source of creative. The questions people ask b
 - **Black Friday and Cyber Monday.** Bundles and gift sets protect margin better than deep single-bottle discounts.
 - **Holidays.** Gift-ready stacks and subscriber-only offers reward loyalty.
 
-## Measure what actually matters
+## The numbers to review each month
 
-| Metric | Why it matters |
+| Metric | What it tells you |
 |---|---|
 | Cost per first order | Shows what acquisition really costs by channel |
 | Second-order rate | The clearest early sign of product-market fit |
@@ -217,7 +217,7 @@ Review these monthly by product. Move budget toward the products people keep tak
 - Discounting so often that full price stops selling.
 - Ignoring Amazon resellers until reviews turn negative.
 
-## A 90-day plan
+## A first-quarter rollout
 
 1. **Days 1 to 30.** Write the claims sheet, fix product pages, set up subscriptions and reminders, and confirm Amazon documents.
 2. **Days 31 to 60.** Launch Meta and Google with three to five creative angles, start Amazon Sponsored Products and brief the first creators.
