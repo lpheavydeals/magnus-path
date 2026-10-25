@@ -173,4 +173,13 @@ export const guideMap: Record<string, string[]> = {
   'diwali-and-eid-marketing-uk': ['london/ecommerce-meta-ads-agency', 'london/ecommerce-agency', 'london/perfume-marketing-agency'],
   'same-day-delivery-london-ecommerce': ['london/ecommerce-agency', 'london/shopify-agency', 'london/home-decor-marketing-agency'],
   'how-to-sell-afro-hair-products-online-uk': ['london/haircare-marketing-agency', 'uk/haircare-marketing-agency', 'london/cosmetics-marketing-agency'],
+  // Abu Dhabi local-topic guides
+  'how-to-start-an-ecommerce-business-in-abu-dhabi': ['uae/ecommerce-meta-ads-agency-abu-dhabi', 'uae/meta-ads-agency-abu-dhabi', 'uae/ecommerce-marketing-agency'],
+  'arabic-ad-copy-for-ecommerce': ['uae/meta-ads-agency-abu-dhabi', 'uae/facebook-ads-agency-abu-dhabi', 'uae/google-ads-agency-dubai'],
+  'ramadan-marketing-ideas-uae': ['uae/ecommerce-meta-ads-agency-abu-dhabi', 'uae/meta-ads-agency-abu-dhabi', 'uae/perfume-marketing-agency-abu-dhabi'],
+  'how-to-sell-dates-online-uae': ['uae/ecommerce-marketing-agency', 'uae/amazon-noon-agency', 'uae/supplement-marketing-agency-abu-dhabi'],
+  'how-to-sell-modest-fashion-online-uae': ['uae/ecommerce-meta-ads-agency-abu-dhabi', 'uae/footwear-marketing-agency-abu-dhabi', 'uae/jewellery-marketing-agency-abu-dhabi'],
+  'how-to-sell-online-in-al-ain': ['uae/ecommerce-meta-ads-agency-abu-dhabi', 'uae/meta-ads-agency-abu-dhabi', 'uae/home-decor-marketing-agency-abu-dhabi'],
+  'how-to-expand-ecommerce-from-uae-to-saudi-arabia': ['uae/ecommerce-marketing-agency', 'uae/amazon-noon-agency', 'uae/ecommerce-meta-ads-agency-abu-dhabi'],
+  'how-to-reduce-cod-returns-in-the-uae': ['uae/ecommerce-meta-ads-agency-abu-dhabi', 'uae/ecommerce-ppc-agency-dubai', 'uae/ecommerce-marketing-agency'],
 };

@@ -17,7 +17,7 @@ faqs:
   - q: "How do I target Arabic speakers with Meta ads?"
     a: "In Meta Ads Manager you can add Arabic under the languages option in the ad set's audience, which narrows delivery to people using Facebook or Instagram in Arabic. Many bilingual users browse in English, so also test broad audiences with Arabic creative. Keep Arabic and English ads in separate ad sets or use Meta's multi-language feature so results stay readable."
   - q: "Do Google Ads campaigns need separate Arabic campaigns?"
-    a: "Usually yes. Google matches language targeting to signals such as the user's language settings and the query, so an Arabic search ad works best in a campaign targeting Arabic with Arabic keywords and an Arabic landing page. Keep English campaigns separate. Shoppers also search for some brands and products in Latin letters, so review your search terms report regularly."
+    a: "Usually yes. Google matches language targeting to signals such as the user's language settings and the query, so an Arabic search ad performs more reliably in a campaign targeting Arabic with Arabic keywords and an Arabic landing page. Keep English campaigns separate. Shoppers also search for some brands and products in Latin letters, so review your search terms report regularly."
   - q: "Is Arabic or English ad copy more effective in the UAE?"
     a: "It depends on your audience and category, so test rather than assume. Emirati families and Arab expats often respond to Arabic, while many other residents shop in English. Run both on the same offer, product and budget, then compare cost per purchase and refusal rates, not just clicks. The answer can also change by season, so retest before Ramadan."
   - q: "What should I avoid in Arabic adverts?"
