@@ -139,3 +139,18 @@ where better). Map each to the listed pages in `src/data/guide-map.ts`.
 | London | how-to-sell-afro-hair-products-online-uk | how to sell afro hair products online | london/haircare, uk/haircare, london/cosmetics |
 
 (Industry slugs: `<city>/<industry>-marketing-agency`, e.g. `coimbatore/electronics-marketing-agency`, `london/skincare-marketing-agency`.)
+
+## Abu Dhabi local-topic guides
+
+Same approach: local topics, not copies of the UAE guides. `market: "UAE"`, NO `twin`. Remote delivery (no UAE office).
+
+| Slug | Primary keyword | Link to |
+|---|---|---|
+| how-to-start-an-ecommerce-business-in-abu-dhabi | how to start an ecommerce business in abu dhabi | uae/ecommerce-meta-ads-agency-abu-dhabi, uae/meta-ads-agency-abu-dhabi, uae/ecommerce-marketing-agency |
+| arabic-ad-copy-for-ecommerce | arabic ad copy | uae/meta-ads-agency-abu-dhabi, uae/facebook-ads-agency-abu-dhabi, uae/google-ads-agency-dubai |
+| ramadan-marketing-ideas-uae | ramadan marketing ideas | uae/ecommerce-meta-ads-agency-abu-dhabi, uae/meta-ads-agency-abu-dhabi, uae/perfume-marketing-agency-abu-dhabi |
+| how-to-sell-dates-online-uae | how to sell dates online | uae/ecommerce-marketing-agency, uae/amazon-noon-agency, uae/supplement-marketing-agency-abu-dhabi |
+| how-to-sell-modest-fashion-online-uae | how to sell modest fashion online | uae/ecommerce-meta-ads-agency-abu-dhabi, uae/footwear-marketing-agency-abu-dhabi, uae/jewellery-marketing-agency-abu-dhabi |
+| how-to-sell-online-in-al-ain | how to sell online in al ain | uae/ecommerce-meta-ads-agency-abu-dhabi, uae/meta-ads-agency-abu-dhabi, uae/home-decor-marketing-agency-abu-dhabi |
+| how-to-expand-ecommerce-from-uae-to-saudi-arabia | expand ecommerce from uae to saudi arabia | uae/ecommerce-marketing-agency, uae/amazon-noon-agency, uae/ecommerce-meta-ads-agency-abu-dhabi |
+| how-to-reduce-cod-returns-in-the-uae | how to reduce cod returns in uae | uae/ecommerce-meta-ads-agency-abu-dhabi, uae/ecommerce-ppc-agency-dubai, uae/ecommerce-marketing-agency |
