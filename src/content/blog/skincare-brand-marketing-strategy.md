@@ -72,6 +72,8 @@ Common positions that work:
 
 Write your position in one sentence. If your team cannot say it the same way, your customers will not remember it.
 
+Test the position before you commit your whole budget to it. Run a few ads with different angles, such as the active, the skin type and the climate, and see which one earns more clicks, saves and comments from the right audience. Read the comments too: they often show which promise buyers believe and which one they doubt. Then build your packaging copy, product pages and creator briefs around the angle that wins.
+
 ### Check what you can prove
 
 Every position needs proof: test reports, stability data, dermatological testing, ingredient sourcing details or expert input. List what you have. Your claims, ads and creator briefs should never go beyond it.

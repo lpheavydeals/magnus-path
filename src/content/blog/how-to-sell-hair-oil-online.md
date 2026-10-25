@@ -79,7 +79,7 @@ Most new brands use a contract manufacturer rather than building a factory.
 - Clarify who owns the formula and whether they can sell it to other brands.
 - Ask for batch records and certificates of analysis for each batch.
 
-Choose a clear point of difference. It might be a specific herb blend, a cold-pressed base oil, a non-sticky texture, a fragrance-free option, a regional recipe or an oil for a particular hair type.
+Choose a clear point of difference. Buyers already have a family favourite, so "another coconut oil" will struggle. It might be a specific herb blend, a cold-pressed base oil, a non-sticky texture, a fragrance-free option, a regional recipe or an oil for a particular hair type.
 
 ## Step 3: Get packaging right for couriers
 
@@ -174,6 +174,8 @@ Hair oil is judged over weeks. Buyers who stop early often leave poor reviews an
 5. Offer subscribe-and-save or a larger bottle on reorder.
 
 Pair the oil with a shampoo or hair mask later to build a routine and lift order value.
+
+Watch your reviews closely in the first months. Complaints about smell, stickiness or leaking caps are easy to fix early and expensive to ignore, because they stay on your marketplace listings for a long time. Reply to every critical review politely, explain what you changed, and use the feedback to improve the next batch.
 
 ## Common mistakes new hair oil brands make
 

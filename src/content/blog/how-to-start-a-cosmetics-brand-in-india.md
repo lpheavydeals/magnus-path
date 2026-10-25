@@ -76,7 +76,7 @@ Three to eight products are enough to launch. A lip range in several shades, a k
 
 ### Check the market
 
-Read reviews of similar products on Nykaa, Amazon and Myntra. What do buyers complain about: patchy shades, dry finish, poor wear, packaging that breaks? Those complaints are your product brief.
+Read reviews of similar products on Nykaa, Amazon and Myntra. What do buyers complain about: patchy shades, dry finish, poor wear, packaging that breaks? Those complaints are your product brief. Note the price band where most buyers shop, too, so your product is designed for a price that works rather than squeezed into it later.
 
 ## Step 2: Find a contract manufacturer
 
@@ -168,6 +168,8 @@ Shopify is a common choice for Indian beauty brands because it handles themes, p
 Nykaa is the core beauty marketplace for many brands. Amazon brings search-led buyers, and Brand Registry helps protect your listings. Myntra Beauty suits fashion-led makeup, and Flipkart reaches value buyers. Each needs shade images, compliant labels and your GST and licence details.
 
 Keep pricing consistent across channels so your own store stays credible.
+
+Plan the photography once and use it everywhere. A single shoot can produce product shots on white, swatches on several skin tones, texture close-ups and lifestyle images. Marketplaces have their own image rules, such as a plain background for the main image, so brief the photographer with every channel's requirements in hand. Good images are one of the cheapest ways to lift conversion and reduce shade returns.
 
 ## Step 8: Plan the launch
 

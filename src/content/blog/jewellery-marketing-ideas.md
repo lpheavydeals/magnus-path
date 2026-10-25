@@ -180,6 +180,24 @@ Clear exchange terms on old gold or past purchases bring buyers back for bigger 
 
 Preview new collections to past buyers before launch. They feel valued and often become your first reviewers.
 
+## Search and marketplace ideas
+
+### 27. Collection pages built around searches
+
+Buyers search by design and occasion: temple jewellery, kada designs for men, lightweight gold chains for daily wear, lab-grown diamond engagement rings. Build a collection page for each important search, with a short introduction, filters and a few helpful questions answered at the bottom. These pages rank in Google and give AI assistants clear answers to quote.
+
+### 28. Search ads on design and occasion terms
+
+Google search ads on design, material and occasion terms reach buyers with clear intent. Pair them with Shopping ads that show the piece, price and purity. Use separate campaigns for fashion, silver, gold and diamond ranges, because their costs and conversion paths differ.
+
+### 29. Marketplace listings that answer questions
+
+On Amazon, Flipkart and Myntra, put metal, purity, plating, weight and size in titles and bullet points, add video where allowed and use A+ content for care and sizing guides. Marketplaces suit fashion, silver and lighter gold pieces; keep high-value pieces on your own store, where you control the consultation and shipping.
+
+### 30. Answer buyer questions in public
+
+Collect the questions buyers ask on WhatsApp and in the showroom, such as "will this tarnish?", "can I wear it daily?" or "how do I check the HUID?", and answer them on product pages, in FAQs and in short videos. Each answer removes a reason to hesitate.
+
 ## Choosing jewellery marketing ideas by segment
 
 Not every idea suits every brand. Match them to how your buyers decide:

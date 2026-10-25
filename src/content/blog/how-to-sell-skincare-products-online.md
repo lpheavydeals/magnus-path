@@ -174,6 +174,10 @@ Minis and trial kits work when they are paid (even a small amount), followed up,
 
 Ask for reviews when the buyer has used the product long enough to judge it, not on the day it arrives. Never buy or fake reviews; marketplaces and consumer law treat this seriously.
 
+### Customer service as marketing
+
+Skincare buyers often message before and after they order: will this suit my skin, can I use it with my prescription cream, why did I break out? Reply quickly on WhatsApp and Instagram, answer within cosmetic limits, and suggest a doctor for anything medical. Log the common questions and add the answers to product pages and FAQs, so the next buyer finds them without asking.
+
 ## Selling skincare abroad
 
 Once your brand works in India, the UK, UAE, US and Australia are common next markets, especially among the Indian diaspora. Each has its own cosmetic rules. The UK and EU require a responsible person and product notification before sale. The US has facility registration and product listing requirements for cosmetics. The UAE requires product registration. Ingredient limits, labelling languages and allowed claims can differ from India, so budget time for a compliance review. Many brands test with Amazon in the target market or international shipping from their own store before investing in local stock.

@@ -67,7 +67,7 @@ Shoppers do not search for "hair products". They search for "shampoo for oily sc
 
 ### 2. Explain ingredients in plain language
 
-Bhringraj, amla, onion, rosemary, keratin, biotin, argan: buyers have heard the names but rarely know what each does or how strong yours is. Write short explainers for each key ingredient, with what it is meant to do and what it cannot do. Honest explainers build more trust than hype.
+Bhringraj, amla, onion, rosemary, keratin, biotin, argan: buyers have heard the names but rarely know what each does or how strong yours is. Write short explainers for each key ingredient, with what it is meant to do and what it cannot do. Honest explainers build more trust than hype. Add a short note on how much of each ingredient is in your formula where you can share it, because informed buyers increasingly compare.
 
 ### 3. Publish honest result timelines
 

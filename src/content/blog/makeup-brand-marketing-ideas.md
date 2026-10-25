@@ -92,6 +92,8 @@ ASCI guidance discourages filters that exaggerate a beauty product's effect, and
 
 GRWM videos show how products fit into a routine. Wear tests, such as a lipstick after lunch or kajal after a humid commute, answer the question buyers care about most: does it last? These formats work on Instagram Reels and YouTube Shorts.
 
+Keep the videos simple and real. Natural light, a phone camera and an honest voiceover often perform better than polished productions, because they look like advice from a friend. Ask creators to show the product in the setting your buyers live in: a hot commute, an office day, a family function. Save the strongest videos for product pages, so shoppers see the same proof whether they arrive from an ad or a search.
+
 ### 8. Use regional creators and looks
 
 Bridal and festive looks differ across India. A Tamil bridal look, a Bengali Durga Puja look and a Punjabi wedding-guest look each speak to a different audience. Regional creators reach buyers that national campaigns miss.
