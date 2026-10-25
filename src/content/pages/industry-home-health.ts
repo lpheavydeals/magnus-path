@@ -5,14 +5,14 @@ export const industryHomeHealthPages: ServicePageData[] = [
   {
     slug: 'industries/supplement-marketing-agency',
     kind: 'industry',
-    title: 'Supplement Marketing Agency for D2C Brands | Magnus Path',
+    title: 'Supplement Marketing Agency for D2C Brands',
     description: 'Supplement marketing agency for protein, gummies and wellness brands: claim-safe Meta and Google ads, Amazon growth, subscriptions and FSSAI-aware listings.',
     primaryKeyword: 'supplement marketing agency',
     navLabel: 'Supplements',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Supplements, protein and nutraceuticals',
     h1: 'Supplement Marketing Agency for Brands That Sell *Without Risky Claims*',
-    intro: 'Magnus Path is a supplement marketing agency for protein, gummies, vitamins and wellness brands. We write ads that respect health-claim policies, build listings and product pages that show what is inside each pack, grow your sales on Amazon and quick commerce, and set up subscriptions so a first tub turns into a monthly order.',
+    intro: 'Billion Ecommerce Agency is a supplement marketing agency for protein, gummies, vitamins and wellness brands. We write ads that respect health-claim policies, build listings and product pages that show what is inside each pack, grow your sales on Amazon and quick commerce, and set up subscriptions so a first tub turns into a monthly order.',
     icon: 'social',
     facts: ['Claim-safe ad creative', 'Amazon and quick commerce', 'Subscriptions from day one'],
     headings: {
@@ -104,7 +104,7 @@ export const industryHomeHealthPages: ServicePageData[] = [
         heading: 'Choosing a nutraceutical marketing agency',
         paragraphs: [
           'When you compare a supplement marketing agency with others, ask how they handle claims and rejected ads, whether they work on Amazon as well as Meta and Google, and how they measure repeat orders. An agency that reports only first-order return on ad spend will push you towards products that sell once and never again.',
-          'At Magnus Path, the team in Chennai, with offices in Bengaluru and London, works with supplement brands across India and remotely abroad. We start with a free audit of your claims, listings and ad accounts, and quote after that.',
+          'At Billion Ecommerce Agency, the team in Chennai, with offices in Bengaluru and London, works with supplement brands across India and remotely abroad. We start with a free audit of your claims, listings and ad accounts, and quote after that.',
         ],
       },
       {
@@ -143,14 +143,14 @@ export const industryHomeHealthPages: ServicePageData[] = [
   {
     slug: 'industries/home-decor-marketing-agency',
     kind: 'industry',
-    title: 'Home Decor Marketing Agency for Furniture Brands | Magnus Path',
+    title: 'Home Decor Marketing Agency for Furniture Brands',
     description: 'Home decor marketing agency for furniture, furnishing and decor brands: room-led ads, Shopify stores, safe delivery messaging and festive and wedding campaigns.',
     primaryKeyword: 'home decor marketing agency',
     navLabel: 'Home decor',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Home decor, furniture and furnishings',
     h1: 'Home Decor Marketing Agency for *High-Value, Slow-Decision* Buyers',
-    intro: 'Magnus Path is a home decor marketing agency for furniture, furnishing, lighting and decor brands. We show your products in real rooms, build stores that answer size, material and delivery questions, run ads that follow a long buying journey, and plan campaigns around housewarming, festive and wedding seasons, in India and abroad.',
+    intro: 'Billion Ecommerce Agency is a home decor marketing agency for furniture, furnishing, lighting and decor brands. We show your products in real rooms, build stores that answer size, material and delivery questions, run ads that follow a long buying journey, and plan campaigns around housewarming, festive and wedding seasons, in India and abroad.',
     icon: 'website',
     facts: ['Room-first creative', 'Long-journey ad plans', 'Delivery and returns clarity'],
     headings: {
@@ -280,14 +280,14 @@ export const industryHomeHealthPages: ServicePageData[] = [
   {
     slug: 'industries/baby-products-marketing-agency',
     kind: 'industry',
-    title: 'Baby Products Marketing Agency for Parents’ Brands | Magnus Path',
+    title: 'Baby Products Marketing Agency for Parents’ Brands',
     description: 'Baby products marketing agency for baby care, kids and toy brands: safety-first pages, ads that reach parents responsibly, subscriptions and gifting campaigns.',
     primaryKeyword: 'baby products marketing agency',
     navLabel: 'Baby and kids',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Baby care, kids and toys',
     h1: 'Baby Products Marketing Agency That Speaks *to Careful Parents*',
-    intro: 'Magnus Path is a baby products marketing agency for baby care, kids clothing, toys and nursery brands. We build product pages that answer safety and ingredient questions, run ads that reach parents and gift buyers within platform rules, time campaigns to each stage of a child’s growth and set up subscriptions for diapers, wipes and other daily essentials.',
+    intro: 'Billion Ecommerce Agency is a baby products marketing agency for baby care, kids clothing, toys and nursery brands. We build product pages that answer safety and ingredient questions, run ads that reach parents and gift buyers within platform rules, time campaigns to each stage of a child’s growth and set up subscriptions for diapers, wipes and other daily essentials.',
     icon: 'social',
     facts: ['Safety and ingredient detail', 'Ads aimed at parents, not children', 'Life-stage timing'],
     headings: {

@@ -1,4 +1,4 @@
-/* Magnus Path design tokens — Roveia-inspired light system in brand orange. See docs/design-direction.md */
+/* Billion Ecommerce Agency design tokens — Roveia-inspired light system in brand orange. See docs/design-direction.md */
 :root {
   --accent: #f16436;
   --accent-ink: #c2410c;       /* orange for text on white (AA) */
@@ -106,3 +106,4 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: hidden; }
 
+a[href^="mailto:"] { overflow-wrap: anywhere; }

@@ -1,12 +1,12 @@
 ---
 title: "Ecommerce Website Cost in India: What It Costs and Why (2026)"
-metaTitle: "Ecommerce Website Cost in India (2026 Guide) | Magnus Path"
+metaTitle: "Ecommerce Website Cost in India (2026 Guide) | Billion Ecommerce Agency"
 description: "What drives ecommerce website cost in India in 2026: Shopify, WooCommerce and custom builds, recurring and hidden costs, and how to compare quotes fairly."
 primaryKeyword: "ecommerce website cost in india"
 category: "Websites"
 publishDate: 2026-10-16
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "Ecommerce website cost in India depends on the route you choose (DIY, a styled template with agency setup, a custom Shopify build or a fully custom store), your catalogue size, integrations, features and content. Budget for the one-time build and for recurring costs such as the platform plan or hosting, domain, payment gateway fees, apps and maintenance, then compare quotes on a written scope."
 faqs:
   - q: "What is the ecommerce website cost in India for a small business?"
@@ -19,7 +19,7 @@ faqs:
     a: "Quotes differ because agencies scope different work. One quote may cover only theme installation, while another includes custom design, product upload, integrations, SEO setup, speed work and training. Ask every agency for a written scope listing pages, features, integrations, revisions and post-launch support, then compare like for like rather than on the headline number."
   - q: "How long does it take to build an ecommerce website in India?"
     a: "A template-based Shopify or WooCommerce store usually takes a few weeks if products, photos and content are ready. Custom Shopify builds and custom or headless stores take longer because of design, development and testing. The biggest cause of delay is usually missing content from the brand, so prepare product data and images early."
-  - q: "How does Magnus Path quote for an ecommerce website?"
+  - q: "How does Billion Ecommerce Agency quote for an ecommerce website?"
     a: "We start with a free audit of your current store or a short scoping call about your plan. Then we send a fixed written quote that lists the scope, the timeline and what is not included, such as third-party app fees. Nothing starts until you approve it, and the store, domain and accounts stay in your name."
 related:
   - label: "Shopify store development in India"

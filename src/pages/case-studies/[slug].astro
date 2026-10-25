@@ -8,7 +8,7 @@ import { breadcrumbSchema } from '../../data/schema';
 export function getStaticPaths() { return cases.map((c) => ({ params: { slug: c.slug }, props: { c } })); }
 const { c } = Astro.props as { c: CaseStudy };
 ---
-<Base title={`${c.client}: ${c.type} | Magnus Path`} description={`${c.summary} ${c.stats.map(([v, l]) => `${v} ${l}`).join(', ')}.`} noindex={c.example} schema={[breadcrumbSchema([{ label: 'Case Studies', href: '/case-studies/' }, { label: c.client, href: `/case-studies/${c.slug}/` }])]}>
+<Base title={`${c.client}: ${c.type} | Billion Ecommerce Agency`} description={`${c.summary} ${c.stats.map(([v, l]) => `${v} ${l}`).join(', ')}.`} noindex={c.example} schema={[breadcrumbSchema([{ label: 'Case Studies', href: '/case-studies/' }, { label: c.client, href: `/case-studies/${c.slug}/` }])]}>
   <section class="cd" style={`--bg:${c.bg}`}>
     <div class="cd__mesh" aria-hidden="true"></div>
     <div class="wrap cd__in">

@@ -82,9 +82,11 @@ const year = new Date().getFullYear();
 <style>
   .ftr { padding: 72px 0 120px; background: #ffe2d3; }
   .ftr__inner { background: var(--white); border-radius: 30px; padding: clamp(28px, 4vw, 56px); box-shadow: var(--shadow); }
-  .ftr__top { display: grid; gap: 48px; }
+  .ftr__top { display: grid; gap: 48px; grid-template-columns: minmax(0, 1fr); }
+  .ftr__brand :global(.logo__word) { white-space: normal; line-height: 1.15; }
   .ftr__brand { display: grid; gap: 18px; max-width: 360px; align-content: start; }
   .ftr__brand p { color: var(--muted); }
+  .ftr__brand a { overflow-wrap: anywhere; }
   address { font-style: normal; color: var(--muted); font-size: 15px; line-height: 1.7; }
   address strong { color: var(--ink); }
   .ftr a { text-decoration: none; color: var(--muted); transition: color .2s ease; }

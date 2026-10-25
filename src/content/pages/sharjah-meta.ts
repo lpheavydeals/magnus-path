@@ -21,7 +21,7 @@ export const sharjahMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Online stores only · Household catalogues · Advantage+ sales · Modest UGC · Sharjah and Ajman delivery',
     h1: 'Ecommerce Meta Ads Agency in Sharjah for *Family Shoppers*',
-    intro: 'Searching for an ecommerce Meta ads agency in Sharjah that gets family shoppers to order and pay? Magnus Path manages Meta ads for online stores remotely from our Chennai head office. We tidy your product catalogue, run Advantage+ sales and catalogue campaigns, brief modest UGC that suits local norms, and judge every campaign on delivered orders once cash-on-delivery refusals and returns are removed.',
+    intro: 'Searching for an ecommerce Meta ads agency in Sharjah that gets family shoppers to order and pay? Billion Ecommerce Agency manages Meta ads for online stores remotely from our Chennai head office. We tidy your product catalogue, run Advantage+ sales and catalogue campaigns, brief modest UGC that suits local norms, and judge every campaign on delivered orders once cash-on-delivery refusals and returns are removed.',
     icon: 'social',
     facts: ['Modest, family-friendly creative', 'ROAS on delivered orders', 'Free audit, then an AED quote'],
     headings: {
@@ -128,7 +128,7 @@ export const sharjahMetaPages: ServicePageData[] = [
         heading: 'The Sharjah shopping year and how we work with you',
         paragraphs: [
           'Plan around the calendar. Ramadan moves browsing late into the night and lifts grocery, home and gifting orders ahead of Eid. Summer is quieter while many families travel, then late August brings back-to-school shopping for uniforms, bags and stationery. In autumn the Sharjah International Book Fair puts books and stationery in the spotlight, and the cooler months bring evenings out around the Sharjah Light Festival. Have product sets and creative ready a few weeks early, then lift budgets in steps rather than all at once.',
-          'There is no Magnus Path office in the UAE. We manage your store’s campaigns from our Chennai head office; UAE time is 1.5 hours behind India, which leaves almost the whole working day shared. Reviews take place by video call rather than in person in Sharjah. Before you appoint an ecommerce Meta ads agency in Sharjah, ask how it will report delivered orders, and who will own the catalogue if you part ways.',
+          'There is no Billion Ecommerce Agency office in the UAE. We manage your store’s campaigns from our Chennai head office; UAE time is 1.5 hours behind India, which leaves almost the whole working day shared. Reviews take place by video call rather than in person in Sharjah. Before you appoint an ecommerce Meta ads agency in Sharjah, ask how it will report delivered orders, and who will own the catalogue if you part ways.',
         ],
       },
     ],
@@ -147,7 +147,7 @@ export const sharjahMetaPages: ServicePageData[] = [
       { q: 'How do you deal with cash-on-delivery refusals?', a: 'Each week ROAS is reported two ways: on prepaid orders, and on cash-on-delivery orders with refused and returned parcels taken out. That shows which campaigns and products bring risky orders. Depending on the results, a small reward for paying by card or a minimum order value for cash on delivery may protect your margin.' },
       { q: 'Do you write ads in Urdu or Malayalam?', a: 'Where your customers use those languages, yes. Urdu, Hindi and Malayalam captions and scripts are written or checked by fluent writers in each language, and Arabic by a fluent Arabic writer. Machine translation alone is never used, and each language has its own line in the weekly report, which shows which communities actually order.' },
       { q: 'When should a Sharjah store raise its Meta budget?', a: 'A few weeks before each busy period, so campaigns have time to learn: Ramadan and Eid, back-to-school in late summer, the autumn book fair season for books and stationery, and the cooler months generally. The quieter summer stretch is a good time to fix the feed and test creative cheaply.' },
-      { q: 'Do you have an office in Sharjah?', a: 'No. There is no Magnus Path office anywhere in the UAE. We serve Sharjah stores remotely from our Chennai head office, and since the UAE is 1.5 hours behind India, our working day sits almost entirely inside yours. All meetings are video calls; we do not meet clients in person in Sharjah.' },
+      { q: 'Do you have an office in Sharjah?', a: 'No. There is no Billion Ecommerce Agency office anywhere in the UAE. We serve Sharjah stores remotely from our Chennai head office, and since the UAE is 1.5 hours behind India, our working day sits almost entirely inside yours. All meetings are video calls; we do not meet clients in person in Sharjah.' },
     ],
   },
 
@@ -163,7 +163,7 @@ export const sharjahMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'WhatsApp in several languages · Instagram Reels and Stories · Facebook · Messenger · Conversions API · Commuter timing',
     h1: 'Meta Ads Agency in Sharjah for a *Commuting, Multilingual* City',
-    intro: 'Hiring a Meta ads agency in Sharjah means giving one team Facebook, Instagram, Messenger and WhatsApp together. Magnus Path handles all four from our Chennai head office, working remotely. We put your Meta Business Suite in your company’s name, connect the Conversions API, time campaigns for residents who commute to Dubai, and open WhatsApp chats in Arabic, English, Urdu or Malayalam.',
+    intro: 'Hiring a Meta ads agency in Sharjah means giving one team Facebook, Instagram, Messenger and WhatsApp together. Billion Ecommerce Agency handles all four from our Chennai head office, working remotely. We put your Meta Business Suite in your company’s name, connect the Conversions API, time campaigns for residents who commute to Dubai, and open WhatsApp chats in Arabic, English, Urdu or Malayalam.',
     icon: 'social',
     facts: ['Four Meta apps, one plan', 'Business portfolio in your name', 'Free audit, quote in AED'],
     headings: {
@@ -298,7 +298,7 @@ export const sharjahMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Instant forms that filter · Lead ads · Marketplace, feed and Reels · Sharjah and Ajman targeting · Lead outcomes · Comment care',
     h1: 'Facebook Ads Agency in Sharjah for *Local Service Firms*',
-    intro: 'A Facebook ads agency in Sharjah should send your team leads from people you can actually reach and serve. Working remotely from our Chennai head office, Magnus Path manages Facebook lead campaigns for workshops, home services, tutors, clinics and local shops. We build instant forms that ask the right questions, choose placements such as Marketplace with care, record which leads turn into paying customers and keep your comment threads tidy.',
+    intro: 'A Facebook ads agency in Sharjah should send your team leads from people you can actually reach and serve. Working remotely from our Chennai head office, Billion Ecommerce Agency manages Facebook lead campaigns for workshops, home services, tutors, clinics and local shops. We build instant forms that ask the right questions, choose placements such as Marketplace with care, record which leads turn into paying customers and keep your comment threads tidy.',
     icon: 'social',
     facts: ['Forms that ask which emirate', 'Leads judged on real customers', 'Free audit, then an AED quote'],
     headings: {
@@ -331,7 +331,7 @@ export const sharjahMetaPages: ServicePageData[] = [
     local: {
       city: 'Sharjah',
       areas: ['Industrial Area', 'Muwaileh', 'Al Qasimia', 'Abu Shagara', 'Al Nahda', 'University City', 'Al Khan', 'Al Rahmaniya', 'Ajman'],
-      note: 'Magnus Path has no UAE office. Service businesses from the Industrial Area to University City, and across the border in Ajman, are handled remotely by our Chennai head office. UAE time runs 1.5 hours behind India’s, so our hours sit side by side; campaign reviews are held over video, and in-person meetings in Sharjah are not part of the service.',
+      note: 'Billion Ecommerce Agency has no UAE office. Service businesses from the Industrial Area to University City, and across the border in Ajman, are handled remotely by our Chennai head office. UAE time runs 1.5 hours behind India’s, so our hours sit side by side; campaign reviews are held over video, and in-person meetings in Sharjah are not part of the service.',
     },
     figures: [
       { type: 'mindmap', caption: 'The moving parts of a Facebook lead campaign for a Sharjah service business.', center: 'Facebook leads, Sharjah', after: 0, branches: [
@@ -400,7 +400,7 @@ export const sharjahMetaPages: ServicePageData[] = [
         paragraphs: [
           'People read the comments before they enquire. We go through ad and page comments on an agreed schedule, reply to routine questions with wording you have signed off, prepared by fluent writers in Arabic, English, Urdu or Malayalam as needed, hide spam, set keyword filters and send complaints straight to your team.',
           'Every form gathers names and numbers, so the UAE Personal Data Protection Law (PDPL) is relevant. In everyday terms: show a clear privacy notice, explain how you will get in touch, and do nothing else with the details. We are not lawyers, so have an adviser look over the wording.',
-          'Magnus Path keeps no UAE office. We run your campaigns from our Chennai head office; UAE time trails India by 1.5 hours, and all our meetings are video calls, with none in person in Sharjah. Ramadan shifts working hours and online activity later, and summer quietens many services while families travel, so we adjust schedules and follow-up cover to match. When you speak to a Facebook ads agency in Sharjah, ask what it does with a lead once the form is sent.',
+          'Billion Ecommerce Agency keeps no UAE office. We run your campaigns from our Chennai head office; UAE time trails India by 1.5 hours, and all our meetings are video calls, with none in person in Sharjah. Ramadan shifts working hours and online activity later, and summer quietens many services while families travel, so we adjust schedules and follow-up cover to match. When you speak to a Facebook ads agency in Sharjah, ask what it does with a lead once the form is sent.',
         ],
       },
     ],
@@ -435,12 +435,12 @@ export const sharjahMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Kinds of help · Fair comparison · Shortlist questions · Warning signs · Audits · Ownership and contracts',
     h1: 'Facebook Advertising Agencies in Sharjah: *A Fair Way to Compare*',
-    intro: 'Comparing Facebook advertising agencies in Sharjah is easier with a clear method. This guide covers the kinds of help on offer, how to weigh them up, the questions and red flags that matter in a conservative, multilingual emirate, what a proper audit should show and how to keep your accounts yours. Magnus Path serves Sharjah remotely from our Chennai head office; our own approach comes last.',
+    intro: 'Comparing Facebook advertising agencies in Sharjah is easier with a clear method. This guide covers the kinds of help on offer, how to weigh them up, the questions and red flags that matter in a conservative, multilingual emirate, what a proper audit should show and how to keep your accounts yours. Billion Ecommerce Agency serves Sharjah remotely from our Chennai head office; our own approach comes last.',
     icon: 'social',
     facts: ['Accounts kept in your name', 'Free written audit first', 'Written scope and AED quote'],
     headings: {
       pains: 'Where hiring help for Facebook ads goes wrong in Sharjah',
-      includes: 'What you can expect from Magnus Path',
+      includes: 'What you can expect from Billion Ecommerce Agency',
       process: 'How we start with a Sharjah business in *4 steps*',
       guide: 'How to weigh up Facebook advertising agencies in Sharjah',
     },
@@ -468,7 +468,7 @@ export const sharjahMetaPages: ServicePageData[] = [
     local: {
       city: 'Sharjah',
       areas: ['Al Majaz', 'Al Khan', 'Al Qasba', 'Al Taawun', 'Industrial Area', 'Muwaileh', 'Aljada', 'Al Nahda', 'Ajman', 'Khor Fakkan'],
-      note: 'Magnus Path has no office anywhere in the UAE. Businesses across Sharjah, Ajman and the east coast work with our Chennai head office remotely. The UAE is 1.5 hours behind India, which leaves nearly the whole working day in common. We present audits, proposals and reviews over video, and in-person meetings in Sharjah are not offered.',
+      note: 'Billion Ecommerce Agency has no office anywhere in the UAE. Businesses across Sharjah, Ajman and the east coast work with our Chennai head office remotely. The UAE is 1.5 hours behind India, which leaves nearly the whole working day in common. We present audits, proposals and reviews over video, and in-person meetings in Sharjah are not offered.',
     },
     figures: [
       { type: 'mindmap', caption: 'What to check about any team before it runs Facebook and Instagram ads for a Sharjah business.', center: 'Before you sign', after: 0, branches: [
@@ -547,9 +547,9 @@ export const sharjahMetaPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'How Magnus Path works with Sharjah businesses',
+        heading: 'How Billion Ecommerce Agency works with Sharjah businesses',
         paragraphs: [
-          'We may be on your shortlist, so here is how we operate. Magnus Path has no office in the UAE. Our Chennai head office looks after Sharjah clients remotely. The UAE is 1.5 hours behind India, which keeps our days closely aligned, and every meeting happens on a video call rather than in person in Sharjah.',
+          'We may be on your shortlist, so here is how we operate. Billion Ecommerce Agency has no office in the UAE. Our Chennai head office looks after Sharjah clients remotely. The UAE is 1.5 hours behind India, which keeps our days closely aligned, and every meeting happens on a video call rather than in person in Sharjah.',
           'Every engagement begins with a free written audit, followed by an AED quote listing scope, timeline and exclusions. Ad spend is billed by Meta to your own ad account, and every asset is registered to your company. The work itself depends on what you sell: catalogue campaigns for online stores, planning across Instagram and WhatsApp when you take bookings, or Facebook lead forms for local services. Apply the same tests to all the Facebook advertising agencies in Sharjah you meet, including us.',
         ],
       },

@@ -5,14 +5,14 @@ export const indiaMetaPages: ServicePageData[] = [
   {
     slug: 'ecommerce-meta-ads-agency',
     kind: 'service',
-    title: 'Ecommerce Meta Ads Agency in India | Catalogue Ads | Magnus Path',
+    title: 'Ecommerce Meta Ads Agency in India | Catalogue Ads',
     description: 'Ecommerce Meta ads agency in India for online stores: Advantage+ sales and catalogue ads, UGC creative tests and ROAS judged after COD refusals and RTO.',
     primaryKeyword: 'ecommerce Meta ads agency in India',
     navLabel: 'Ecommerce Meta Ads',
     breadcrumb: [{ label: 'Ads', href: '/performance-marketing/' }],
     eyebrow: 'Catalogue ads · Advantage+ · UGC creative',
     h1: 'Ecommerce Meta Ads Agency in India for *Online Stores*',
-    intro: 'Magnus Path is an ecommerce Meta ads agency in India that works only with online stores. We run catalogue and Advantage+ sales campaigns on Facebook and Instagram, keep your product catalogue healthy, test UGC-style creatives every week and judge ROAS after COD refusals and returns, so the numbers match what actually reaches your bank account.',
+    intro: 'Billion Ecommerce Agency is an ecommerce Meta ads agency in India that works only with online stores. We run catalogue and Advantage+ sales campaigns on Facebook and Instagram, keep your product catalogue healthy, test UGC-style creatives every week and judge ROAS after COD refusals and returns, so the numbers match what actually reaches your bank account.',
     icon: 'social',
     facts: ['Free audit first', 'Catalogue and pixel in your name', 'ROAS judged after RTO'],
     headings: {
@@ -110,7 +110,7 @@ export const indiaMetaPages: ServicePageData[] = [
         heading: 'Choosing an ecommerce Meta ads agency in India',
         paragraphs: [
           'Ask how the agency handles COD and RTO in its reporting, how often new creatives go live, and who owns the ad account, pixel and catalogue. Ask to see a sample weekly report. You should also know what customer data is sent to Meta and why. In plain terms, India’s Digital Personal Data Protection Act expects you to tell shoppers what you collect, get consent where it is needed and use customer lists only as explained. We are not lawyers, so take legal advice for your case.',
-          'With Magnus Path, the business portfolio, ad account, pixel and catalogue stay in your name, and ad spend is paid directly to Meta from your own account. The management fee is quoted after a free audit. You can meet the team at our Chennai head office or our Bengaluru office by appointment, or work with us remotely from anywhere in India.',
+          'With Billion Ecommerce Agency, the business portfolio, ad account, pixel and catalogue stay in your name, and ad spend is paid directly to Meta from your own account. The management fee is quoted after a free audit. You can meet the team at our Chennai head office or our Bengaluru office by appointment, or work with us remotely from anywhere in India.',
         ],
         bullets: [
           'Ad account, pixel and catalogue owned by you, with agency access only',
@@ -145,14 +145,14 @@ export const indiaMetaPages: ServicePageData[] = [
   {
     slug: 'meta-ads-agency',
     kind: 'service',
-    title: 'Meta Ads Agency in India | Instagram & WhatsApp | Magnus Path',
+    title: 'Meta Ads Agency in India | Instagram & WhatsApp',
     description: 'Meta ads agency in India running Facebook, Instagram Reels, Messenger and click-to-WhatsApp ads, with Conversions API, Advantage+ and accounts in your name.',
     primaryKeyword: 'Meta ads agency in India',
     navLabel: 'Meta Ads',
     breadcrumb: [{ label: 'Ads', href: '/performance-marketing/' }],
     eyebrow: 'Facebook · Instagram · Messenger · WhatsApp',
     h1: 'Meta Ads Agency in India for *Facebook, Instagram and WhatsApp*',
-    intro: 'Magnus Path is a Meta ads agency in India that plans and runs your advertising across the whole Meta platform: Facebook, Instagram Reels, Stories and Explore, Messenger and click-to-WhatsApp ads. We set up Meta Business Suite properly, connect the Conversions API, structure Advantage+ campaigns and keep every asset in your company’s name.',
+    intro: 'Billion Ecommerce Agency is a Meta ads agency in India that plans and runs your advertising across the whole Meta platform: Facebook, Instagram Reels, Stories and Explore, Messenger and click-to-WhatsApp ads. We set up Meta Business Suite properly, connect the Conversions API, structure Advantage+ campaigns and keep every asset in your company’s name.',
     icon: 'social',
     facts: ['Free audit first', 'Business portfolio in your name', 'Conversions API set up'],
     headings: {
@@ -244,7 +244,7 @@ export const indiaMetaPages: ServicePageData[] = [
         heading: 'Choosing a Meta ads agency in India',
         paragraphs: [
           'Ask who will own the business portfolio, pixel and ad account, how the agency sets up the Conversions API, how it splits budget between Facebook, Instagram and WhatsApp, and how often new creative goes live. Plan seasonal peaks such as Navratri, Diwali and the big marketplace sale weeks early, because ad costs rise for everyone then. New creative for each app, UPI-friendly offers and extra cover for WhatsApp replies should all be ready before demand peaks.',
-          'With Magnus Path, every Meta asset stays in your name, ad spend is paid directly to Meta from your own account, and the management fee is quoted after a free audit. You can meet us at our Chennai head office or our Bengaluru office by appointment, or work with us remotely from anywhere in India.',
+          'With Billion Ecommerce Agency, every Meta asset stays in your name, ad spend is paid directly to Meta from your own account, and the management fee is quoted after a free audit. You can meet us at our Chennai head office or our Bengaluru office by appointment, or work with us remotely from anywhere in India.',
         ],
       },
     ],
@@ -272,14 +272,14 @@ export const indiaMetaPages: ServicePageData[] = [
   {
     slug: 'facebook-ads-agency',
     kind: 'service',
-    title: 'Facebook Ads Agency in India | Lead Ads | Magnus Path',
+    title: 'Facebook Ads Agency in India | Lead Ads',
     description: 'Facebook ads agency in India for lead generation: instant forms, local audiences, Marketplace and Reels placements, and leads judged on real customers.',
     primaryKeyword: 'Facebook ads agency in India',
     navLabel: 'Facebook Ads',
     breadcrumb: [{ label: 'Ads', href: '/performance-marketing/' }],
     eyebrow: 'Lead ads · Local audiences · Lead quality',
     h1: 'Facebook Ads Agency in India for *Quality Leads*',
-    intro: 'Magnus Path is a Facebook ads agency in India for businesses that need enquiries, not likes: clinics, coaching institutes, showrooms, service firms and B2B suppliers. We run lead ads with instant forms, feed, Marketplace and Reels placements, and local audiences, judge every campaign on which leads became customers, and keep your page and ad comments clean.',
+    intro: 'Billion Ecommerce Agency is a Facebook ads agency in India for businesses that need enquiries, not likes: clinics, coaching institutes, showrooms, service firms and B2B suppliers. We run lead ads with instant forms, feed, Marketplace and Reels placements, and local audiences, judge every campaign on which leads became customers, and keep your page and ad comments clean.',
     icon: 'social',
     facts: ['Free audit first', 'Page and leads in your name', 'Judged on real customers'],
     headings: {
@@ -371,7 +371,7 @@ export const indiaMetaPages: ServicePageData[] = [
         heading: 'Choosing a Facebook ads agency in India',
         paragraphs: [
           'Ask how the agency defines a qualified lead, whether it judges campaigns on lead outcomes, who answers comments, and who owns the page, ad account and lead forms. Plan busy periods such as admissions season, Navratri, Diwali or the financial year-end ahead of time, because ad costs rise and attention drops in crowded weeks.',
-          'With Magnus Path, the page, ad account and every lead stay in your name, ad spend is paid directly to Meta from your own account, and the management fee is quoted after a free audit. You can meet the team at our Chennai head office or our Bengaluru office by appointment, or work with us remotely from anywhere in India.',
+          'With Billion Ecommerce Agency, the page, ad account and every lead stay in your name, ad spend is paid directly to Meta from your own account, and the management fee is quoted after a free audit. You can meet the team at our Chennai head office or our Bengaluru office by appointment, or work with us remotely from anywhere in India.',
         ],
       },
     ],
@@ -397,19 +397,19 @@ export const indiaMetaPages: ServicePageData[] = [
   {
     slug: 'facebook-advertising-agencies',
     kind: 'service',
-    title: 'Facebook Advertising Agencies in India Compared | Magnus Path',
+    title: 'Facebook Advertising Agencies in India Compared',
     description: 'Comparing Facebook advertising agencies in India? Agency types, questions to ask, red flags, what a real audit covers and how account ownership should work.',
     primaryKeyword: 'Facebook advertising agencies in India',
     navLabel: 'Facebook Advertising Agencies',
     breadcrumb: [{ label: 'Ads', href: '/performance-marketing/' }],
     eyebrow: 'Compare · Ask · Audit · Own your accounts',
     h1: 'Facebook Advertising Agencies in India: *How to Choose* One',
-    intro: 'Comparing Facebook advertising agencies in India is hard when every proposal promises growth. This guide explains the types of agency, how to compare them fairly, the questions to ask, the red flags to watch for and what a proper audit looks like. Then it shows how Magnus Path works, so you can decide with clear eyes.',
+    intro: 'Comparing Facebook advertising agencies in India is hard when every proposal promises growth. This guide explains the types of agency, how to compare them fairly, the questions to ask, the red flags to watch for and what a proper audit looks like. Then it shows how Billion Ecommerce Agency works, so you can decide with clear eyes.',
     icon: 'social',
     facts: ['Free audit first', 'Your accounts stay yours', 'Written quote before work'],
     headings: {
       pains: 'Every proposal looks the same until something goes wrong.',
-      includes: 'What you get when you work with Magnus Path',
+      includes: 'What you get when you work with Billion Ecommerce Agency',
       process: 'How we start with a new client in *4 steps*',
       guide: 'Choosing who runs your Facebook ads: a buyer’s guide',
     },
@@ -506,7 +506,7 @@ export const indiaMetaPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'How Magnus Path works',
+        heading: 'How Billion Ecommerce Agency works',
         paragraphs: [
           'We are an e-commerce growth team headquartered in Chennai, with a second office in Bengaluru. We run Facebook and Instagram advertising for online stores, D2C brands and businesses that need leads, alongside Google ads, store builds and SEO when a client needs them. We plan festive peaks such as Navratri and Diwali well ahead, and we report on kept orders or qualified leads, not reach.',
           'Every engagement starts with a free written audit. Your accounts stay in your name, ad spend is paid directly to Meta from your own account, and the management fee is quoted after the audit in a written quote listing scope, timeline and exclusions. You can meet us at our Chennai head office or our Bengaluru office by appointment, or work with us remotely from anywhere in India.',
@@ -527,7 +527,7 @@ export const indiaMetaPages: ServicePageData[] = [
       { q: 'What are the red flags when choosing an agency?', a: 'Promised results before anyone has seen your account, ads run from the agency’s own ad account, reports built on reach and likes alone, long lock-ins without exit terms, and claims of special access to Meta. Be careful too if nobody can explain how tracking is set up or who will actually do the work.' },
       { q: 'Should our ad account be in our name or the agency’s?', a: 'Always in your company’s name. The business portfolio, ad account, page, pixel and catalogue should belong to you, with the agency added through a role you can remove. That way campaign history, audiences and data stay with your business if you change agencies, and Meta bills ad spend to your own payment method.' },
       { q: 'Is a freelancer or an agency right for our Facebook ads?', a: 'It depends on your needs. A skilled freelancer can work well for a single channel and a modest budget, but cover for leave and creative capacity are limited. An agency brings a team, routines and backups. If you also need Google ads, SEO or a store build, a team that covers those can make planning simpler.' },
-      { q: 'Can we meet Magnus Path before deciding?', a: 'Yes. Our head office is in Chennai and we have an office in Bengaluru, and you can meet the team at either by appointment. For businesses elsewhere in India we hold the discovery call and audit review over video, so you can judge how we work before signing anything.' },
+      { q: 'Can we meet Billion Ecommerce Agency before deciding?', a: 'Yes. Our head office is in Chennai and we have an office in Bengaluru, and you can meet the team at either by appointment. For businesses elsewhere in India we hold the discovery call and audit review over video, so you can judge how we work before signing anything.' },
     ],
   },
 ];

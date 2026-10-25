@@ -9,14 +9,14 @@ export const ukPpcPages: ServicePageData[] = [
     kind: 'global',
     market: 'UK',
     twin: 'ecommerce-ppc-agency',
-    title: 'Ecommerce PPC Agency UK: Shopping & Performance Max | Magnus Path',
+    title: 'Ecommerce PPC Agency UK: Shopping & Performance Max',
     description: 'Ecommerce PPC agency for UK online shops: Google Shopping, Performance Max, Search and Microsoft Ads, with feed work and bids set by margin. Quoted in GBP.',
     primaryKeyword: 'ecommerce PPC agency',
     navLabel: 'Ecommerce PPC Agency UK',
     breadcrumb: ukBreadcrumb,
     eyebrow: 'Google Shopping · Performance Max · Search · Microsoft Ads',
     h1: 'Ecommerce PPC Agency for UK Online Shops That Bids on *Margin, Not Clicks*',
-    intro: 'Magnus Path is an ecommerce PPC agency for UK online shops. We run Google Shopping, Performance Max, Search and Microsoft Advertising, fix your Merchant Center feed and set targets from your real product margins. Your ad accounts stay in your name, ad spend goes straight to Google and Microsoft, and we quote our management fee in GBP after a free audit.',
+    intro: 'Billion Ecommerce Agency is an ecommerce PPC agency for UK online shops. We run Google Shopping, Performance Max, Search and Microsoft Advertising, fix your Merchant Center feed and set targets from your real product margins. Your ad accounts stay in your name, ad spend goes straight to Google and Microsoft, and we quote our management fee in GBP after a free audit.',
     icon: 'social',
     facts: ['Accounts stay in your name', 'London office in E18, meetings by appointment', 'Quoted in GBP after a free audit'],
     headings: {
@@ -72,7 +72,7 @@ export const ukPpcPages: ServicePageData[] = [
         paragraphs: [
           'PPC for an online shop is a different job from PPC for a local service business. Most of the money goes through Google Shopping and Performance Max, the product feed matters as much as the ads, and success is measured in orders and margin rather than leads. A good ecommerce PPC agency spends its first weeks on the dull parts: tracking, the feed and account structure. Clever ad copy comes later.',
           'This page is about UK-wide campaigns for online retailers. If you are a London business looking for local Google Ads, including service firms that want calls from nearby postcodes, our PPC agency in London page covers that work. Here the focus is selling products to shoppers across England, Scotland, Wales and Northern Ireland.',
-          'Before hiring anyone, check who owns the accounts. With Magnus Path your Google Ads, Merchant Center, Microsoft Advertising and GA4 accounts stay in your name, you pay ad spend directly to Google and Microsoft, and our management fee is a separate line quoted in GBP. If you ever leave, everything stays with you.',
+          'Before hiring anyone, check who owns the accounts. With Billion Ecommerce Agency your Google Ads, Merchant Center, Microsoft Advertising and GA4 accounts stay in your name, you pay ad spend directly to Google and Microsoft, and our management fee is a separate line quoted in GBP. If you ever leave, everything stays with you.',
         ],
       },
       {

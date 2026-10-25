@@ -9,14 +9,14 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
     kind: 'industry',
     market: 'UAE',
     twin: 'industries/skincare-marketing-agency',
-    title: 'Skincare Marketing Agency in Dubai for UAE Brands | Magnus Path',
+    title: 'Skincare Marketing Agency in Dubai for UAE Brands',
     description: 'Skincare marketing agency in Dubai for UAE brands: climate-aware routine pages, Montaji-aware claims, Arabic and English ads, Amazon.ae, Noon and reorders.',
     primaryKeyword: 'skincare marketing agency in Dubai',
     navLabel: 'Skincare UAE',
     breadcrumb: [UAE_HUB],
     eyebrow: 'Skincare brands in Dubai and the UAE',
     h1: 'A Skincare Marketing Agency in Dubai for *Heat, Humidity and Reorders*',
-    intro: 'Looking for a skincare marketing agency in Dubai that understands how UAE shoppers choose serums and sunscreen? Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We build routine pages for skin that lives between strong sun and dry office air, write Arabic and English ads that stay within platform rules, and grow sales on your store, Amazon.ae and Noon.',
+    intro: 'Looking for a skincare marketing agency in Dubai that understands how UAE shoppers choose serums and sunscreen? Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We build routine pages for skin that lives between strong sun and dry office air, write Arabic and English ads that stay within platform rules, and grow sales on your store, Amazon.ae and Noon.',
     icon: 'social',
     facts: ['Arabic and English creative', 'Store, Amazon.ae and Noon', 'Free audit, quote in AED'],
     headings: {
@@ -106,7 +106,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
         heading: 'Seasons, GCC expansion and working with a remote team',
         paragraphs: [
           'Plan the year around local moments rather than a borrowed calendar. Summer suits sun care and lightweight textures, while the cooler months suit richer creams, outdoor events and travel. Ramadan and Eid al-Fitr bring gifting and self-care sets, and Eid al-Adha is a second gifting window. White Friday in November, the Dubai Shopping Festival around the turn of the year, UAE National Day, Valentine’s and Mother’s Day in March all deserve prepared offers, and Diwali matters for the large Indian community.',
-          'Once the UAE is working, Saudi Arabia and the other GCC markets are a natural next step, though each has its own registration and labelling rules, with Saudi Arabia handled by the SFDA. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office. UAE time is 1.5 hours behind India, so our working days almost fully overlap. As your skincare marketing agency in Dubai, we quote our fee in AED after a free audit.',
+          'Once the UAE is working, Saudi Arabia and the other GCC markets are a natural next step, though each has its own registration and labelling rules, with Saudi Arabia handled by the SFDA. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office. UAE time is 1.5 hours behind India, so our working days almost fully overlap. As your skincare marketing agency in Dubai, we quote our fee in AED after a free audit.',
         ],
       },
     ],
@@ -128,7 +128,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       { q: 'Do creators in the UAE need a permit to promote our products?', a: 'The UAE Media Council requires people who advertise on social media to hold an advertiser permit, and the rules have changed in recent years. We ask creators for their permit details before any paid work, brief them on honest claims and make sure paid or gifted posts are labelled as advertising.' },
       { q: 'Should we sell on Amazon.ae and Noon as well as our own store?', a: 'Usually, yes, in that order. Get your own store and hero product pages right, then add Amazon.ae and Noon, where many UAE shoppers search and compare. Keep prices aligned so marketplaces do not undercut your site, and use packaging inserts and WhatsApp opt-ins to bring buyers back to you directly.' },
       { q: 'How much does a skincare marketing agency in Dubai cost?', a: 'It depends on how many products and channels you run, how much Arabic and English creative is needed, whether creators and marketplace management are included, and the state of your tracking. We do not publish prices. After a free audit we send a written quote in AED. Ad spend is paid directly to each platform from your account.' },
-      { q: 'Do you have an office in Dubai?', a: 'No. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office and no in-person meetings there. UAE time is only 1.5 hours behind India, so our working days almost fully overlap, and calls, WhatsApp replies and reviews happen during your office hours.' },
+      { q: 'Do you have an office in Dubai?', a: 'No. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office and no in-person meetings there. UAE time is only 1.5 hours behind India, so our working days almost fully overlap, and calls, WhatsApp replies and reviews happen during your office hours.' },
     ],
   },
 
@@ -145,7 +145,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Hair brands in Dubai and the UAE',
     h1: 'A Haircare Marketing Agency in Dubai for *Hard Water, Heat and Honest Results*',
-    intro: 'Magnus Path is a haircare marketing agency in Dubai for brands selling shampoos, hair oils, masks, scalp serums and styling products to UAE shoppers. We are a Chennai team serving the UAE remotely. We write content around hard water, humidity and covered hair, set realistic timelines for results, run Arabic and English ads, and grow refills on your store, Amazon.ae and Noon.',
+    intro: 'Billion Ecommerce Agency is a haircare marketing agency in Dubai for brands selling shampoos, hair oils, masks, scalp serums and styling products to UAE shoppers. We are a Chennai team serving the UAE remotely. We write content around hard water, humidity and covered hair, set realistic timelines for results, run Arabic and English ads, and grow refills on your store, Amazon.ae and Noon.',
     icon: 'social',
     facts: ['Hair-type and water-aware content', 'Store, Amazon.ae and Noon', 'Free audit, quote in AED'],
     headings: {
@@ -234,7 +234,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
         heading: 'Seasons, GCC growth and our remote set-up',
         paragraphs: [
           'Haircare demand follows the climate and the calendar. Frizz-control and heat-protection content suits the humid summer months; nourishing oils and masks fit the cooler season and travel. Ramadan and Eid al-Fitr bring grooming and gifting sets, Eid al-Adha offers a second window, and White Friday, the Dubai Shopping Festival, UAE National Day, Diwali for the Indian community, Valentine’s and Mother’s Day in March each deserve a prepared offer.',
-          'Saudi Arabia is usually the next market for a UAE haircare brand, with its own SFDA registration and labelling rules, followed by Kuwait, Qatar, Bahrain and Oman. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely; we have no UAE office. UAE time is 1.5 hours behind India, so our days almost fully overlap. As your haircare marketing agency in Dubai, we quote our fee in AED after a free audit.',
+          'Saudi Arabia is usually the next market for a UAE haircare brand, with its own SFDA registration and labelling rules, followed by Kuwait, Qatar, Bahrain and Oman. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely; we have no UAE office. UAE time is 1.5 hours behind India, so our days almost fully overlap. As your haircare marketing agency in Dubai, we quote our fee in AED after a free audit.',
         ],
       },
     ],
@@ -273,7 +273,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Makeup brands in Dubai and the UAE',
     h1: 'A Cosmetics Marketing Agency in Dubai for *Shades, Heat and Launches*',
-    intro: 'Magnus Path is a cosmetics marketing agency in Dubai for makeup brands selling foundations, lipsticks, kohl, palettes and setting sprays to UAE shoppers. As a Chennai team serving the UAE remotely, we help buyers choose shades across a very mixed population, test long-wear claims honestly, plan creator launches with permits checked, and grow sales on your store, Amazon.ae and Noon.',
+    intro: 'Billion Ecommerce Agency is a cosmetics marketing agency in Dubai for makeup brands selling foundations, lipsticks, kohl, palettes and setting sprays to UAE shoppers. As a Chennai team serving the UAE remotely, we help buyers choose shades across a very mixed population, test long-wear claims honestly, plan creator launches with permits checked, and grow sales on your store, Amazon.ae and Noon.',
     icon: 'social',
     facts: ['Shade content for every skin tone', 'Creator launches, permits checked', 'Free audit, quote in AED'],
     headings: {
@@ -363,7 +363,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
         heading: 'Gifting seasons, GCC expansion and how we work',
         paragraphs: [
           'Gift sets carry much of the cosmetics year in the UAE. Eid al-Fitr and Eid al-Adha, Valentine’s, Mother’s Day in March, White Friday in November, UAE National Day and the Dubai Shopping Festival each deserve a set, a gift page and creative prepared weeks ahead, and Diwali is a strong moment for the Indian community. Cash on delivery is common for these orders, so measure campaigns on delivered, paid orders, and offer Tabby or Tamara on larger kits.',
-          'Saudi Arabia is the usual next step, with its own registration and labelling rules, followed by the rest of the GCC. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office. UAE time is 1.5 hours behind India, so our working days almost fully overlap. As your cosmetics marketing agency in Dubai, we quote our fee in AED after a free audit.',
+          'Saudi Arabia is the usual next step, with its own registration and labelling rules, followed by the rest of the GCC. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office. UAE time is 1.5 hours behind India, so our working days almost fully overlap. As your cosmetics marketing agency in Dubai, we quote our fee in AED after a free audit.',
         ],
       },
     ],
@@ -385,7 +385,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       { q: 'Can we call our makeup halal or alcohol-free?', a: 'Only when you can support it. Many UAE shoppers look for halal-friendly or alcohol-free formulations, so the words are valuable, but they need a recognised certificate or clear ingredient evidence behind them. We check every such claim against your documents before it appears in an ad, a listing or a creator brief.' },
       { q: 'How should we handle long-wear and sweat-proof claims in the UAE heat?', a: 'Match each claim to a test you hold, and show the product in real conditions such as an outdoor walk or a long office day. Claims that fail in summer heat reach reviews quickly. Where evidence is limited, describe finish, texture and how to set the product instead.' },
       { q: 'How much does a cosmetics marketing agency in Dubai cost?', a: 'It depends on the size of your shade range, how much swatch and creator content is needed, the channels and languages you run, and whether marketplace management is included. We do not publish prices. After a free audit we send a written quote in AED. Ad spend is paid directly to each platform from your account.' },
-      { q: 'Do you have an office in Dubai?', a: 'No. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office and no in-person meetings there. UAE time is 1.5 hours behind India, so our working days almost fully overlap, and launch calls and creative reviews happen during your office hours.' },
+      { q: 'Do you have an office in Dubai?', a: 'No. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office and no in-person meetings there. UAE time is 1.5 hours behind India, so our working days almost fully overlap, and launch calls and creative reviews happen during your office hours.' },
     ],
   },
 
@@ -402,7 +402,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Ayurvedic, herbal and wellness brands in the UAE',
     h1: 'An Ayurveda Marketing Agency in Dubai for *Herbal Brands Reaching the Gulf*',
-    intro: 'Magnus Path is an Ayurveda marketing agency in Dubai for herbal, Ayurvedic and wellness brands selling to UAE shoppers. We are a Chennai team serving the UAE remotely. We help you sort which products may need registration, write careful copy that ad platforms accept, explain herbs to Indian, Arab and Western buyers in plain words, and grow sales on your store, Amazon.ae and Noon.',
+    intro: 'Billion Ecommerce Agency is an Ayurveda marketing agency in Dubai for herbal, Ayurvedic and wellness brands selling to UAE shoppers. We are a Chennai team serving the UAE remotely. We help you sort which products may need registration, write careful copy that ad platforms accept, explain herbs to Indian, Arab and Western buyers in plain words, and grow sales on your store, Amazon.ae and Noon.',
     icon: 'marketplace',
     facts: ['Registration questions raised early', 'Indian and wider UAE audiences', 'Free audit, quote in AED'],
     headings: {
@@ -532,7 +532,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Perfume, oud and bakhoor brands in the UAE',
     h1: 'A Perfume Marketing Agency in Dubai for *Oud, Layering and Gifting*',
-    intro: 'Magnus Path is a perfume marketing agency in Dubai for fragrance houses, oud and attar makers, bakhoor brands and niche perfumers selling to UAE shoppers. We are a Chennai team serving the UAE remotely. We sell scent online through notes and occasions, layering guides, discovery sets, Arabic and English creative, and gifting campaigns timed to Ramadan, Eid and the wedding season.',
+    intro: 'Billion Ecommerce Agency is a perfume marketing agency in Dubai for fragrance houses, oud and attar makers, bakhoor brands and niche perfumers selling to UAE shoppers. We are a Chennai team serving the UAE remotely. We sell scent online through notes and occasions, layering guides, discovery sets, Arabic and English creative, and gifting campaigns timed to Ramadan, Eid and the wedding season.',
     icon: 'social',
     facts: ['Sampling-led growth', 'Arabic and English creative', 'Free audit, quote in AED'],
     headings: {
@@ -623,7 +623,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
         heading: 'Marketplaces, payment, GCC growth and how we work',
         paragraphs: [
           'Amazon.ae and Noon carry a large share of fragrance searches, and buyers there worry about fakes. Complete listings, authenticity information, consistent prices and quick answers to questions all help. Keep your own store for discovery sets, subscriptions and customer data. Cash on delivery remains common for gifts, so measure campaigns on delivered, paid orders, and offer Tabby or Tamara on larger gift boxes.',
-          'Saudi Arabia is a natural next market for a UAE fragrance brand, with a deep perfume culture and its own registration and labelling rules. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office. UAE time is 1.5 hours behind India, so our working days almost fully overlap. As your perfume marketing agency in Dubai, we quote our fee in AED after a free audit.',
+          'Saudi Arabia is a natural next market for a UAE fragrance brand, with a deep perfume culture and its own registration and labelling rules. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office. UAE time is 1.5 hours behind India, so our working days almost fully overlap. As your perfume marketing agency in Dubai, we quote our fee in AED after a free audit.',
         ],
       },
     ],
@@ -645,7 +645,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       { q: 'Are there rules on shipping perfume in the UAE?', a: 'Alcohol-based perfumes are usually treated as flammable goods, so couriers and marketplaces may set packing, quantity and route limits, particularly for cross-border orders. Summer heat can also affect stored fragrance. Ask your logistics partner about both before planning large campaigns or GCC shipping.' },
       { q: 'Can inspired-by perfume brands mention designer names?', a: 'It is risky. Using designer trademarks in ads, keywords or listings can lead to rejected ads, removed listings and complaints from rights holders. Describe your scents by notes, family and mood instead, and let buyers make their own comparisons in reviews.' },
       { q: 'How much does a perfume marketing agency in Dubai cost?', a: 'It depends on the size of your range, how much sampling and creator content is planned, the channels and languages you run, and whether marketplace management is included. We do not publish prices. After a free audit we send a written quote in AED. Ad spend is paid directly to each platform from your account.' },
-      { q: 'Do you have an office in Dubai?', a: 'No. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office and no in-person meetings there. UAE time is 1.5 hours behind India, so our working days almost fully overlap, and planning calls happen during your office hours.' },
+      { q: 'Do you have an office in Dubai?', a: 'No. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office and no in-person meetings there. UAE time is 1.5 hours behind India, so our working days almost fully overlap, and planning calls happen during your office hours.' },
     ],
   },
 
@@ -662,7 +662,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Gold, diamond and fashion jewellery in the UAE',
     h1: 'A Jewellery Marketing Agency in Dubai That Earns Trust *Online and in the Showroom*',
-    intro: 'Magnus Path is a jewellery marketing agency in Dubai for gold, diamond, silver, demi-fine and fashion jewellery brands selling to UAE shoppers. We are a Chennai team serving the UAE remotely. We make karat, weight and hallmark details easy to find, show pieces in close-up and on-body video, plan Eid, Diwali and wedding campaigns, and bring buyers to your website or showroom.',
+    intro: 'Billion Ecommerce Agency is a jewellery marketing agency in Dubai for gold, diamond, silver, demi-fine and fashion jewellery brands selling to UAE shoppers. We are a Chennai team serving the UAE remotely. We make karat, weight and hallmark details easy to find, show pieces in close-up and on-body video, plan Eid, Diwali and wedding campaigns, and bring buyers to your website or showroom.',
     icon: 'website',
     facts: ['Purity and weight made clear', 'Online orders and showroom visits', 'Free audit, quote in AED'],
     headings: {
@@ -752,7 +752,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
         heading: 'Payment, GCC growth and working with a remote team',
         paragraphs: [
           'Payment shapes jewellery sales online. Many buyers prefer to pay by card or in person, while Tabby and Tamara instalments can help with fashion and demi-fine pieces where the provider allows it. Cash on delivery for high-value gold carries real risk, so most brands limit it to lower-value ranges. Insured delivery and discreet packaging help buyers feel safe ordering online.',
-          'Saudi Arabia and the wider GCC share much of the UAE’s gold culture, each with its own rules on hallmarking and imports, so expand with a tested range and local delivery partners. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office. UAE time is 1.5 hours behind India, so our working days almost fully overlap. As your jewellery marketing agency in Dubai, we quote our fee in AED after a free audit.',
+          'Saudi Arabia and the wider GCC share much of the UAE’s gold culture, each with its own rules on hallmarking and imports, so expand with a tested range and local delivery partners. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office. UAE time is 1.5 hours behind India, so our working days almost fully overlap. As your jewellery marketing agency in Dubai, we quote our fee in AED after a free audit.',
         ],
       },
     ],
@@ -774,7 +774,7 @@ export const uaeIndustryBeautyPages: ServicePageData[] = [
       { q: 'Should we offer cash on delivery for gold jewellery?', a: 'Most brands limit it. Cash on delivery for high-value gold carries real risk of refusals and fraud, so many offer it only on fashion or lower-value pieces and use card payment, instalments where allowed, or showroom collection for gold and diamonds. We measure campaigns on paid orders either way.' },
       { q: 'Can online ads bring people into our showroom?', a: 'Yes. Local campaigns, Google Business Profile updates, appointment booking and click-to-WhatsApp ads can all drive visits. We track enquiries and bookings by campaign and ask your team to log visits, so showroom sales are counted alongside online orders when judging what works.' },
       { q: 'How much does a jewellery marketing agency in Dubai cost?', a: 'It depends on catalogue size, whether price feeds need work, how much video and creator content is planned, the channels you run and whether showroom campaigns are included. We do not publish prices. After a free audit we send a written quote in AED, and ad spend is paid directly to each platform.' },
-      { q: 'Do you have an office in Dubai?', a: 'No. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office and no in-person meetings there. UAE time is 1.5 hours behind India, so our working days almost fully overlap, and calls and campaign reviews happen during your office hours.' },
+      { q: 'Do you have an office in Dubai?', a: 'No. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely, with no UAE office and no in-person meetings there. UAE time is 1.5 hours behind India, so our working days almost fully overlap, and calls and campaign reviews happen during your office hours.' },
     ],
   },
 ];

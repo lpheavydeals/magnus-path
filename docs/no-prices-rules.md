@@ -2,7 +2,7 @@
 
 The client removed all pricing from the site. /pricing/ is deleted. Rules for every page, guide, FAQ, figure and meta tag:
 
-1. Remove every price Magnus Path charges, in any currency (₹, US$, $, £, AED, A$): "from ₹30,000 / month", "starts at
+1. Remove every price Billion Ecommerce Agency charges, in any currency (₹, US$, $, £, AED, A$): "from ₹30,000 / month", "starts at
    US$350", "₹1.5–5 lakh", fee percentages such as "10–15% of ad spend", tier prices, "custom quote above X", etc.
 2. Also remove general market price ranges for agency/website/marketing services ("agencies typically charge ₹25,000 to
    ₹1,50,000"). The three cost guides must contain no currency figures at all.

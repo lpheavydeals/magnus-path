@@ -1,12 +1,12 @@
 ---
 title: "Shopify SEO Checklist: 48 Steps to Rank Your Store in 2026"
-metaTitle: "Shopify SEO Checklist (2026) | Magnus Path"
+metaTitle: "Shopify SEO Checklist (2026) | Billion Ecommerce Agency"
 description: "A practical Shopify SEO checklist for 2026: setup, technical fixes, collection and product pages, content, images, Shopify Markets and AI search readiness."
 primaryKeyword: "shopify seo checklist"
 category: "SEO"
 publishDate: 2026-10-16
 readingMinutes: 10
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "A good Shopify SEO checklist starts with setup (Search Console, sitemap, one primary domain), then fixes technical issues such as collection-based product URLs, slow apps and missing structured data. Next come well-written collection and product pages, a focused blog, strong internal links and optimised images. Brands selling abroad should check Shopify Markets hreflang, and every store should prepare for AI search and follow a monthly routine."
 faqs:
   - q: "Is Shopify good for SEO?"

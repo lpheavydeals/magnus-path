@@ -5,14 +5,14 @@ export const bangaloreMarketingPages: ServicePageData[] = [
   {
     slug: 'bangalore/seo-company',
     kind: 'location',
-    title: 'SEO Company in Bangalore for Startups & Brands | Magnus Path',
+    title: 'SEO Company in Bangalore for Startups & Brands',
     description: 'SEO company in Bangalore for startups, SaaS, D2C brands and local businesses. Technical SEO, content and Google Maps, with a Bengaluru office and a free audit first.',
     primaryKeyword: 'SEO company in Bangalore',
     navLabel: 'SEO Company in Bangalore',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
     eyebrow: 'SEO in Bengaluru · Technical, content and local SEO',
     h1: 'SEO Company in Bangalore for *Startups, Brands and Local Businesses*',
-    intro: 'Magnus Path is an SEO company in Bangalore for startups, SaaS and B2B tech firms, D2C brands and local businesses. We fix technical issues, write content your buyers actually search for and improve your Google Maps visibility area by area. You can meet us at our Bengaluru office, while our Chennai head office team handles much of the delivery.',
+    intro: 'Billion Ecommerce Agency is an SEO company in Bangalore for startups, SaaS and B2B tech firms, D2C brands and local businesses. We fix technical issues, write content your buyers actually search for and improve your Google Maps visibility area by area. You can meet us at our Bengaluru office, while our Chennai head office team handles much of the delivery.',
     icon: 'seo',
     facts: ['Bengaluru office, meet by appointment', 'Technical, content and local SEO', 'Free audit first'],
     headings: {
@@ -136,7 +136,7 @@ export const bangaloreMarketingPages: ServicePageData[] = [
       { label: 'AI search optimisation (GEO)', href: '/ai-search-optimization/' },
     ],
     faqs: [
-      { q: 'How much does an SEO company in Bangalore charge?', a: 'It depends on your site size, the number of locations, how competitive your keywords are and how much content and link building is needed. Magnus Path quotes after a free audit, with a written quote listing the monthly scope, timeline and exclusions, so you can compare offers by the work actually delivered.' },
+      { q: 'How much does an SEO company in Bangalore charge?', a: 'It depends on your site size, the number of locations, how competitive your keywords are and how much content and link building is needed. Billion Ecommerce Agency quotes after a free audit, with a written quote listing the monthly scope, timeline and exclusions, so you can compare offers by the work actually delivered.' },
       { q: 'Do you have an office in Bangalore?', a: 'Yes. We have a Bengaluru office where you can meet the team by appointment for kick-off meetings, planning workshops and reviews. Much of the day-to-day delivery is done by our Chennai head office team, and updates happen over calls, WhatsApp and shared monthly reports.' },
       { q: 'What do your SEO services in Bangalore include?', a: 'Our SEO services in Bangalore cover technical SEO, content and page optimisation, Google Business Profile and local SEO, e-commerce SEO for online stores, AI search optimisation and monthly reporting on leads, calls or orders. The mix depends on your business and what the audit finds.' },
       { q: 'How do I choose an SEO agency in Bangalore?', a: 'Ask who will do the work, what is delivered each month, how links are earned and how results are measured. A good SEO agency in Bangalore explains its plan in plain language, shows sample reports and ties results to enquiries or sales, not only keyword positions.' },
@@ -150,14 +150,14 @@ export const bangaloreMarketingPages: ServicePageData[] = [
   {
     slug: 'bangalore/digital-marketing-agency',
     kind: 'location',
-    title: 'Digital Marketing Company in Bangalore | Magnus Path',
+    title: 'Digital Marketing Company in Bangalore | Billion Ecommerce Agency',
     description: 'Digital marketing company in Bangalore for D2C brands, startups and B2B firms: SEO, Meta, Google and LinkedIn ads, social media and websites. Bengaluru office.',
     primaryKeyword: 'digital marketing company in Bangalore',
     navLabel: 'Digital Marketing in Bangalore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Digital marketing in Bengaluru · Ads, SEO, social and websites',
     h1: 'Digital Marketing Company in Bangalore for *D2C, Startups and B2B*',
-    intro: 'Magnus Path is a digital marketing company in Bangalore that helps D2C brands, startups and B2B firms turn spend into orders and qualified leads. One team runs SEO, Meta, Google and LinkedIn ads, social media and websites. Meet us at our Bengaluru office, while our Chennai head office team handles much of the delivery.',
+    intro: 'Billion Ecommerce Agency is a digital marketing company in Bangalore that helps D2C brands, startups and B2B firms turn spend into orders and qualified leads. One team runs SEO, Meta, Google and LinkedIn ads, social media and websites. Meet us at our Bengaluru office, while our Chennai head office team handles much of the delivery.',
     icon: 'social',
     facts: ['Bengaluru office, meet by appointment', 'Ads, SEO, social and websites', 'Accounts stay in your name'],
     headings: {

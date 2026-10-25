@@ -9,14 +9,14 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
     kind: 'industry',
     market: 'UAE',
     twin: 'industries/supplement-marketing-agency',
-    title: 'Supplement Marketing Agency in Dubai for UAE Brands | Magnus Path',
+    title: 'Supplement Marketing Agency in Dubai for UAE Brands',
     description: 'Supplement marketing agency in Dubai for vitamin, protein and wellness brands: claim-aware Arabic and English ads, Amazon.ae and Noon listings, refill reminders.',
     primaryKeyword: 'supplement marketing agency in Dubai',
     navLabel: 'Supplements Dubai',
     breadcrumb: [UAE_HUB],
     eyebrow: 'Vitamins, protein and wellness · Dubai and the UAE',
     h1: 'Supplement Marketing Agency for UAE Brands, *Registered Before It Is Advertised*',
-    intro: 'Looking for a supplement marketing agency in Dubai that checks registration and claims before it spends a dirham? Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We write claim-aware ads in English and Arabic, build Amazon.ae and Noon listings that show what is in each pack, and plan around Ramadan routines and the gym calendar. We quote in AED after a free audit.',
+    intro: 'Looking for a supplement marketing agency in Dubai that checks registration and claims before it spends a dirham? Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We write claim-aware ads in English and Arabic, build Amazon.ae and Noon listings that show what is in each pack, and plan around Ramadan routines and the gym calendar. We quote in AED after a free audit.',
     icon: 'social',
     facts: ['Claims matched to your registration', 'Amazon.ae, Noon and quick commerce', 'Free audit, quote in AED'],
     headings: {
@@ -112,7 +112,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Working with us from India, and growing into the GCC',
         paragraphs: [
-          'Magnus Path is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap almost completely and same-day replies are normal. When you compare any supplement marketing agency in Dubai, ask how it checks claims, how it measures refills and whether it reports on paid orders.',
+          'Billion Ecommerce Agency is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap almost completely and same-day replies are normal. When you compare any supplement marketing agency in Dubai, ask how it checks claims, how it measures refills and whether it reports on paid orders.',
           'Many UAE brands later expand to Saudi Arabia and other GCC markets, each with its own registration and labelling rules. We plan listings and creative so they can be reused once your product is cleared there.',
         ],
       },
@@ -152,7 +152,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Furniture, decor and homeware · Dubai and the UAE',
     h1: 'Home Decor Marketing Agency for UAE Homes, From *Handover to Majlis*',
-    intro: 'Furniture and decor sell differently in the UAE, where people move often and buy whole rooms at once. Magnus Path works as a home decor marketing agency in Dubai for furniture and decor brands, as a Chennai team serving the UAE remotely. We plan room-led ads, product pages with clear delivery and assembly promises, and campaigns for moves, Ramadan and Eid hosting. We quote in AED after a free audit.',
+    intro: 'Furniture and decor sell differently in the UAE, where people move often and buy whole rooms at once. Billion Ecommerce Agency works as a home decor marketing agency in Dubai for furniture and decor brands, as a Chennai team serving the UAE remotely. We plan room-led ads, product pages with clear delivery and assembly promises, and campaigns for moves, Ramadan and Eid hosting. We quote in AED after a free audit.',
     icon: 'social',
     facts: ['Room-led creative in two languages', 'Delivery and assembly made clear', 'Free audit, quote in AED'],
     headings: {
@@ -248,7 +248,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
         heading: 'Measuring a long purchase, and working with us remotely',
         paragraphs: [
           'Large furniture is researched for weeks, so judging ads on next-day sales switches off the campaigns that start the journey. We report sales by room and category, delivery issues and returns, and the role of each channel across a longer window. The profit margin calculator below helps you see how delivery and assembly costs change each order.',
-          'Magnus Path is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so calls, creative reviews and WhatsApp replies fit your working day. Ask any home decor marketing agency in Dubai how it will reach households before the move, not after.',
+          'Billion Ecommerce Agency is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so calls, creative reviews and WhatsApp replies fit your working day. Ask any home decor marketing agency in Dubai how it will reach households before the move, not after.',
         ],
       },
     ],
@@ -280,14 +280,14 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
     kind: 'industry',
     market: 'UAE',
     twin: 'industries/baby-products-marketing-agency',
-    title: 'Baby Products Marketing Agency in Dubai | Magnus Path',
+    title: 'Baby Products Marketing Agency in Dubai',
     description: 'Baby products marketing agency in Dubai for baby care, feeding and nursery brands: Arabic labelling checks, parent-safe ads, newborn gifting and fast refills.',
     primaryKeyword: 'baby products marketing agency in Dubai',
     navLabel: 'Baby Products Dubai',
     breadcrumb: [UAE_HUB],
     eyebrow: 'Baby care, nursery and gifting · Dubai and the UAE',
     h1: 'Baby Products Marketing Agency for UAE Parents *From Many Countries*',
-    intro: 'Parents in the UAE come from dozens of countries, read every label and expect delivery the same day. Magnus Path works as a baby products marketing agency in Dubai for nursery, feeding and baby care brands, as a Chennai team serving the UAE remotely. We check pages for conformity and Arabic labelling details, run careful ads for parents and gift buyers, and plan refills and newborn gifting. We quote in AED after a free audit.',
+    intro: 'Parents in the UAE come from dozens of countries, read every label and expect delivery the same day. Billion Ecommerce Agency works as a baby products marketing agency in Dubai for nursery, feeding and baby care brands, as a Chennai team serving the UAE remotely. We check pages for conformity and Arabic labelling details, run careful ads for parents and gift buyers, and plan refills and newborn gifting. We quote in AED after a free audit.',
     icon: 'social',
     facts: ['Parent-safe ad targeting', 'Newborn gifting and refills', 'Free audit, quote in AED'],
     headings: {
@@ -377,7 +377,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Choosing a partner, and working with us remotely',
         paragraphs: [
-          'When you compare a baby products marketing agency in Dubai with others, ask how it handles restricted targeting, how it checks claims against your labels and how it measures repeat purchases. Magnus Path is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap and replies come the same day. When you are ready for Saudi Arabia or the wider GCC, we adapt pages and creative to each market’s rules.',
+          'When you compare a baby products marketing agency in Dubai with others, ask how it handles restricted targeting, how it checks claims against your labels and how it measures repeat purchases. Billion Ecommerce Agency is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap and replies come the same day. When you are ready for Saudi Arabia or the wider GCC, we adapt pages and creative to each market’s rules.',
         ],
       },
     ],
@@ -416,7 +416,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Pet food, treats and care · Dubai and the UAE',
     h1: 'Pet Brand Marketing Agency for UAE Owners Who *Plan Around the Heat*',
-    intro: 'Pet ownership has grown across the UAE, and owners here deal with things most markets do not: long summers, apartment living and imported food. Magnus Path works as a pet brand marketing agency in Dubai for food, treats and care brands, as a Chennai team serving the UAE remotely. We plan heat-aware content, Amazon.ae, Noon and quick-commerce sales, and reorder journeys. We quote in AED after a free audit.',
+    intro: 'Pet ownership has grown across the UAE, and owners here deal with things most markets do not: long summers, apartment living and imported food. Billion Ecommerce Agency works as a pet brand marketing agency in Dubai for food, treats and care brands, as a Chennai team serving the UAE remotely. We plan heat-aware content, Amazon.ae, Noon and quick-commerce sales, and reorder journeys. We quote in AED after a free audit.',
     icon: 'social',
     facts: ['Heat-aware content calendar', 'Reorders on WhatsApp and email', 'Free audit, quote in AED'],
     headings: {
@@ -512,7 +512,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Choosing a partner, and how we work',
         paragraphs: [
-          'When you compare any pet brand marketing agency in Dubai, ask how it measures reorders, not just first orders, and how it plans for the summer dip. Magnus Path is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap and replies come the same day. Brands that later expand into Saudi Arabia and the GCC can reuse much of the content, after checking each market’s import rules.',
+          'When you compare any pet brand marketing agency in Dubai, ask how it measures reorders, not just first orders, and how it plans for the summer dip. Billion Ecommerce Agency is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap and replies come the same day. Brands that later expand into Saudi Arabia and the GCC can reuse much of the content, after checking each market’s import rules.',
         ],
       },
     ],
@@ -551,7 +551,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Sandals, trainers and occasion shoes · Dubai and the UAE',
     h1: 'Footwear Marketing Agency for UAE Shoppers Who *Wear Three Size Systems*',
-    intro: 'UAE shoppers grew up with EU, UK and US shoe sizes, wear sandals most of the year and buy new pairs for Eid. Magnus Path works as a footwear marketing agency in Dubai for shoe and sandal brands, as a Chennai team serving the UAE remotely. We fix size charts and feeds, run catalogue and video ads, grow Namshi, Amazon.ae and Noon sales and cut exchanges. We quote in AED after a free audit.',
+    intro: 'UAE shoppers grew up with EU, UK and US shoe sizes, wear sandals most of the year and buy new pairs for Eid. Billion Ecommerce Agency works as a footwear marketing agency in Dubai for shoe and sandal brands, as a Chennai team serving the UAE remotely. We fix size charts and feeds, run catalogue and video ads, grow Namshi, Amazon.ae and Noon sales and cut exchanges. We quote in AED after a free audit.',
     icon: 'social',
     facts: ['Size charts in EU, UK and US', 'Namshi, Amazon.ae and Noon', 'Free audit, quote in AED'],
     headings: {
@@ -646,7 +646,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Choosing a partner, and growing into the GCC',
         paragraphs: [
-          'When you compare a footwear marketing agency in Dubai with others, ask how it reports net sales after exchanges and refusals, and whether it will fix size charts before raising budgets. Magnus Path is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap almost completely. Saudi Arabia and the wider GCC share many sizing habits and fashion marketplaces, so a clean UAE set-up makes expansion much simpler.',
+          'When you compare a footwear marketing agency in Dubai with others, ask how it reports net sales after exchanges and refusals, and whether it will fix size charts before raising budgets. Billion Ecommerce Agency is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap almost completely. Saudi Arabia and the wider GCC share many sizing habits and fashion marketplaces, so a clean UAE set-up makes expansion much simpler.',
         ],
       },
     ],
@@ -678,14 +678,14 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
     kind: 'industry',
     market: 'UAE',
     twin: 'industries/electronics-marketing-agency',
-    title: 'Consumer Electronics Marketing Agency in Dubai | Magnus Path',
+    title: 'Consumer Electronics Marketing Agency in Dubai',
     description: 'Consumer electronics marketing agency in Dubai for gadget brands: spec-led Amazon.ae and Noon listings, clear warranty pages, conformity details and sale plans.',
     primaryKeyword: 'consumer electronics marketing agency in Dubai',
     navLabel: 'Electronics Dubai',
     breadcrumb: [UAE_HUB],
     eyebrow: 'Gadgets, audio and smart devices · Dubai and the UAE',
     h1: 'Consumer Electronics Marketing Agency for UAE Brands That *Stand Behind Their Warranty*',
-    intro: 'In a market full of grey imports and lookalike gadgets, UAE buyers reward the brand that is clearest about specs, approvals and warranty. Magnus Path works as a consumer electronics marketing agency in Dubai for audio, mobile accessory and smart device brands, as a Chennai team serving the UAE remotely. We build spec-led listings, honest warranty pages and sale-event plans for Amazon.ae, Noon and your store. We quote in AED after a free audit.',
+    intro: 'In a market full of grey imports and lookalike gadgets, UAE buyers reward the brand that is clearest about specs, approvals and warranty. Billion Ecommerce Agency works as a consumer electronics marketing agency in Dubai for audio, mobile accessory and smart device brands, as a Chennai team serving the UAE remotely. We build spec-led listings, honest warranty pages and sale-event plans for Amazon.ae, Noon and your store. We quote in AED after a free audit.',
     icon: 'marketplace',
     facts: ['Spec-led listings and A+ content', 'Warranty terms made clear', 'Free audit, quote in AED'],
     headings: {
@@ -777,7 +777,7 @@ export const uaeIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Choosing a partner, and working with us remotely',
         paragraphs: [
-          'When you compare a consumer electronics marketing agency in Dubai with others, ask how it reports by model, how it plans sale events and how it handles warranty and approval details on listings. Magnus Path is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap almost completely and same-day replies are realistic. The marketplace profit calculator below helps you check margins per model before a sale.',
+          'When you compare a consumer electronics marketing agency in Dubai with others, ask how it reports by model, how it plans sale events and how it handles warranty and approval details on listings. Billion Ecommerce Agency is a Chennai team, with offices in Bengaluru and London, serving Dubai and the wider UAE remotely. We have no UAE office, but UAE time is only 1.5 hours behind India, so our working days overlap almost completely and same-day replies are realistic. The marketplace profit calculator below helps you check margins per model before a sale.',
         ],
       },
     ],

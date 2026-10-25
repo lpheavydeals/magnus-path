@@ -5,14 +5,14 @@ export const businessWebsitePages: ServicePageData[] = [
   {
     slug: 'corporate-website-development',
     kind: 'service',
-    title: 'Corporate Website Development Company | Magnus Path',
+    title: 'Corporate Website Development Company | Billion Ecommerce Agency',
     description: 'Corporate website development for manufacturers, exporters, B2B firms and service businesses in India. Fast, secure, SEO-ready company websites, quoted in writing.',
     primaryKeyword: 'corporate website development',
     navLabel: 'Corporate Website Development',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
     eyebrow: 'Corporate websites · Business websites · Custom web design',
     h1: 'Corporate Website Development That *Brings in Enquiries*',
-    intro: 'Magnus Path offers corporate website development for manufacturers, exporters, B2B firms, schools, hospitals and professional service businesses across Tamil Nadu and India. We plan, design and build company websites that explain what you do in seconds, load fast, rank on Google and turn visitors into tracked enquiries your sales team can follow up.',
+    intro: 'Billion Ecommerce Agency offers corporate website development for manufacturers, exporters, B2B firms, schools, hospitals and professional service businesses across Tamil Nadu and India. We plan, design and build company websites that explain what you do in seconds, load fast, rank on Google and turn visitors into tracked enquiries your sales team can follow up.',
     icon: 'website',
     facts: ['Fixed written quote', 'Live in 3–8 weeks', 'Lead tracking built in'],
     headings: {
@@ -133,14 +133,14 @@ export const businessWebsitePages: ServicePageData[] = [
   {
     slug: 'wordpress-website-development',
     kind: 'service',
-    title: 'WordPress Website Design Company India | Magnus Path',
+    title: 'WordPress Website Design Company India | Billion Ecommerce Agency',
     description: 'WordPress website design company in Chennai building fast, secure, easy-to-edit WordPress sites with custom themes, Gutenberg blocks and SEO. Fixed quotes.',
     primaryKeyword: 'wordpress website design company',
     navLabel: 'WordPress Website Development',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
     eyebrow: 'WordPress design · WordPress development',
     h1: 'WordPress Website Design Company for Sites *Your Team Can Run*',
-    intro: 'Magnus Path is a WordPress website design company in Chennai that builds fast, secure WordPress sites for businesses across India and abroad. We design lean custom themes with Gutenberg blocks your team can edit, keep plugins to the essentials and set up SEO, caching and backups so the site stays quick long after launch.',
+    intro: 'Billion Ecommerce Agency is a WordPress website design company in Chennai that builds fast, secure WordPress sites for businesses across India and abroad. We design lean custom themes with Gutenberg blocks your team can edit, keep plugins to the essentials and set up SEO, caching and backups so the site stays quick long after launch.',
     icon: 'website',
     facts: ['Fixed written quote', 'Custom block themes', 'Easy editing for your team'],
     headings: {

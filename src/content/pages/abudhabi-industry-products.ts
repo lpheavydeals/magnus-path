@@ -23,7 +23,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Vitamins, protein and sports nutrition · Abu Dhabi and Al Ain',
     h1: 'Supplement Marketing Agency in Abu Dhabi for *Training, Fasting and Family* Routines',
-    intro: 'Hiring a supplement marketing agency in Abu Dhabi means planning for cyclists at Yas Marina Circuit, runners on Saadiyat and Emirati families buying vitamins for the whole household. Magnus Path serves the capital remotely from our Chennai head office. We check registration status before any ad runs, write Arabic-first creative with English versions alongside, and quote our fee in AED after a free audit.',
+    intro: 'Hiring a supplement marketing agency in Abu Dhabi means planning for cyclists at Yas Marina Circuit, runners on Saadiyat and Emirati families buying vitamins for the whole household. Billion Ecommerce Agency serves the capital remotely from our Chennai head office. We check registration status before any ad runs, write Arabic-first creative with English versions alongside, and quote our fee in AED after a free audit.',
     icon: 'social',
     facts: ['Registration checked before launch', 'Arabic-first creative with English', 'Free audit, quote in AED'],
     headings: {
@@ -124,7 +124,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Working with a supplement marketing agency in Abu Dhabi remotely',
         paragraphs: [
-          'Magnus Path has no office in the UAE. Our head office is in Chennai, with further offices in Bengaluru and London, and your account is run from Chennai. UAE time is 1.5 hours behind India, so nearly all of our working hours coincide, and reviews happen over video rather than in person.',
+          'Billion Ecommerce Agency has no office in the UAE. Our head office is in Chennai, with further offices in Bengaluru and London, and your account is run from Chennai. UAE time is 1.5 hours behind India, so nearly all of our working hours coincide, and reviews happen over video rather than in person.',
           'Before you choose a supplement marketing agency in Abu Dhabi, ask three questions: how it checks claims against your label, who writes the Arabic creative, and whether it reports on delivered orders. Our fee is quoted in AED after a free audit, and ad spend is paid directly to each platform from your own accounts.',
         ],
       },
@@ -146,7 +146,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       { q: 'How should we market supplements during Ramadan?', a: 'Shift the message to suhoor and iftar routines, hydration and late-evening training, and keep the tone calm, with no dieting angles while people fast. Move ad schedules later into the night, and prepare Eid bundles and post-Eid fitness content early, so campaigns are live as routines return.' },
       { q: 'Is Al Ain worth targeting separately?', a: 'Often, yes. Al Ain has its own villa communities, a strong Emirati base and longer delivery distances from most warehouses. Running it as a separate audience lets you check delivery promises, test Arabic-only creative and see results that would otherwise be hidden inside the capital’s numbers.' },
       { q: 'How much does supplement marketing in Abu Dhabi cost?', a: 'It depends on the channels, the number of products, how much Arabic and English creative you need and whether marketplace management is included. We do not publish prices. Following a free audit, you get a written AED quote listing scope, timeline and exclusions, and the platforms bill ad spend to your own accounts.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office anywhere in the UAE. Supplement brands in Abu Dhabi are served remotely from our Chennai head office, and every meeting is a video call. With the UAE 1.5 hours behind India, our working days run almost side by side, so same-day replies are realistic.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office anywhere in the UAE. Supplement brands in Abu Dhabi are served remotely from our Chennai head office, and every meeting is a video call. With the UAE 1.5 hours behind India, our working days run almost side by side, so same-day replies are realistic.' },
     ],
   },
 
@@ -162,7 +162,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Furniture, furnishings and majlis seating · Abu Dhabi and Al Ain',
     h1: 'Home Decor Marketing Agency in Abu Dhabi for *Villas, Majlis and New Homes*',
-    intro: 'A home decor marketing agency in Abu Dhabi has to sell to families furnishing large villas, new owners collecting keys on Reem, Yas and Saadiyat, and hosts preparing the majlis before Ramadan. Magnus Path serves the capital remotely from our Chennai head office. We build Arabic and English room creative, ads that state delivery and assembly plainly, and quote in AED after a free audit.',
+    intro: 'A home decor marketing agency in Abu Dhabi has to sell to families furnishing large villas, new owners collecting keys on Reem, Yas and Saadiyat, and hosts preparing the majlis before Ramadan. Billion Ecommerce Agency serves the capital remotely from our Chennai head office. We build Arabic and English room creative, ads that state delivery and assembly plainly, and quote in AED after a free audit.',
     icon: 'website',
     facts: ['Delivery and assembly shown in ads', 'Arabic and English room creative', 'Free audit, quote in AED'],
     headings: {
@@ -194,7 +194,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
     local: {
       city: 'Abu Dhabi',
       areas: ['Al Reem Island', 'Yas Island', 'Saadiyat Island', 'Khalifa City', 'Mohammed Bin Zayed City', 'Al Raha', 'Al Shamkha', 'Al Ain'],
-      note: 'Magnus Path keeps no office in the UAE. Furniture and decor brands selling across Abu Dhabi and Al Ain are served remotely from our Chennai head office. The UAE is 1.5 hours behind India, so our days overlap closely; catalogue and creative reviews happen on video calls, never in person in Abu Dhabi.',
+      note: 'Billion Ecommerce Agency keeps no office in the UAE. Furniture and decor brands selling across Abu Dhabi and Al Ain are served remotely from our Chennai head office. The UAE is 1.5 hours behind India, so our days overlap closely; catalogue and creative reviews happen on video calls, never in person in Abu Dhabi.',
     },
     figures: [
       { type: 'mindmap', caption: 'What sets off a home decor purchase in Abu Dhabi households.', center: 'Abu Dhabi home buys', after: 0, branches: [
@@ -257,7 +257,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
         heading: 'Seasons, and working with a home decor marketing agency in Abu Dhabi remotely',
         paragraphs: [
           'Beyond Ramadan and Eid, the cooler months bring demand for terrace and garden furniture, UAE National Day on 2 December suits locally inspired designs, and White Friday in November rewards bundles. Summer is quieter as many families travel, though people moving home before the school year starts in late August still furnish in July and August.',
-          'Magnus Path has no office in the UAE; your campaigns are run from our Chennai head office, and reviews happen over video. UAE time is 1.5 hours behind India, so our hours and yours largely coincide. As a home decor marketing agency in Abu Dhabi working remotely, we quote our fee in AED after a free audit, and ad spend is paid directly to each platform.',
+          'Billion Ecommerce Agency has no office in the UAE; your campaigns are run from our Chennai head office, and reviews happen over video. UAE time is 1.5 hours behind India, so our hours and yours largely coincide. As a home decor marketing agency in Abu Dhabi working remotely, we quote our fee in AED after a free audit, and ad spend is paid directly to each platform.',
         ],
       },
     ],
@@ -294,7 +294,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Nappies, feeding, toys and newborn gifts · Abu Dhabi and Al Ain',
     h1: 'Baby Products Marketing Agency in Abu Dhabi for *Large Families and New Parents*',
-    intro: 'A baby products marketing agency in Abu Dhabi should know that many families here are large, births are celebrated with generous gifts and Arabic is often the language of the home. Magnus Path serves the capital remotely from our Chennai head office. We plan Arabic-first creative with English versions, check labelling questions early, and run marketplace, quick-commerce and social campaigns, quoted in AED after a free audit.',
+    intro: 'A baby products marketing agency in Abu Dhabi should know that many families here are large, births are celebrated with generous gifts and Arabic is often the language of the home. Billion Ecommerce Agency serves the capital remotely from our Chennai head office. We plan Arabic-first creative with English versions, check labelling questions early, and run marketplace, quick-commerce and social campaigns, quoted in AED after a free audit.',
     icon: 'marketplace',
     facts: ['Labelling checked before ads', 'Birth-gift and family campaigns', 'Free audit, quote in AED'],
     headings: {
@@ -394,7 +394,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
         heading: 'Payments, delivery and working with us remotely',
         paragraphs: [
           'Cash on delivery remains common for baby essentials, and a refused parcel can wipe out the margin on a small first order. Tabby and Tamara instalments help with prams, car seats and cots. We report results on delivered, paid orders, split by payment method, so you can see which offers truly pay back.',
-          'Magnus Path has no office in the UAE. As a baby products marketing agency in Abu Dhabi clients work with remotely, we run accounts from our Chennai head office, and UAE time is 1.5 hours behind India, so most of our day is shared. Meetings are by video. Our fee is quoted in AED after a free audit, and ad spend is paid directly to each platform.',
+          'Billion Ecommerce Agency has no office in the UAE. As a baby products marketing agency in Abu Dhabi clients work with remotely, we run accounts from our Chennai head office, and UAE time is 1.5 hours behind India, so most of our day is shared. Meetings are by video. Our fee is quoted in AED after a free audit, and ad spend is paid directly to each platform.',
         ],
       },
     ],
@@ -415,7 +415,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       { q: 'Should baby brands sell through quick commerce in Abu Dhabi?', a: 'For essentials, often yes. Nappies, wipes and formula are frequently needed at short notice, and Talabat and Careem quick commerce can deliver within the hour where your distributor holds stock. Larger items and gift sets usually sell better through your own store and marketplaces.' },
       { q: 'Should we advertise in Arabic or English?', a: 'Both, aimed at different parents. Emirati families often respond to Arabic-led creative, while expat parents may prefer English. We write the two versions side by side, with Arabic drafted or checked by a fluent Arabic writer, and send each to a product page in the same language.' },
       { q: 'How much does baby products marketing in Abu Dhabi cost?', a: 'It depends on the number of products and channels, how much creative is needed in each language, and whether marketplace management is included. We do not publish prices. A free audit comes first; the written AED quote that follows sets out scope, timeline and exclusions; the platforms bill ad spend to you directly.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no UAE office and does not meet clients in person there. Baby brands in Abu Dhabi are served remotely from our Chennai head office over video, email and WhatsApp. Because the UAE is only 1.5 hours behind India, our working hours overlap closely with yours.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no UAE office and does not meet clients in person there. Baby brands in Abu Dhabi are served remotely from our Chennai head office over video, email and WhatsApp. Because the UAE is only 1.5 hours behind India, our working hours overlap closely with yours.' },
     ],
   },
 
@@ -431,7 +431,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Pet food, treats, grooming and accessories · Abu Dhabi and Al Ain',
     h1: 'Pet Brand Marketing Agency in Abu Dhabi for *Villa Pets and Hot Summers*',
-    intro: 'A pet brand marketing agency in Abu Dhabi has to understand villa households with gardens, cats and dogs that spend the hottest months indoors, and owners who reorder food on a schedule. Magnus Path serves the capital remotely from our Chennai head office. We plan import-aware launches, Arabic and English creative, marketplace and quick-commerce listings and refill reminders, quoted in AED after a free audit.',
+    intro: 'A pet brand marketing agency in Abu Dhabi has to understand villa households with gardens, cats and dogs that spend the hottest months indoors, and owners who reorder food on a schedule. Billion Ecommerce Agency serves the capital remotely from our Chennai head office. We plan import-aware launches, Arabic and English creative, marketplace and quick-commerce listings and refill reminders, quoted in AED after a free audit.',
     icon: 'social',
     facts: ['Import status checked before ads', 'Summer care content planned', 'Free audit, quote in AED'],
     headings: {
@@ -463,7 +463,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
     local: {
       city: 'Abu Dhabi',
       areas: ['Al Reem Island', 'Yas Island', 'Saadiyat Island', 'Al Raha', 'Khalifa City', 'Al Reef', 'Mohammed Bin Zayed City', 'Al Ain'],
-      note: 'Magnus Path has no office anywhere in the UAE. Pet food and care brands in Abu Dhabi and Al Ain are served remotely from our Chennai head office. UAE time is 1.5 hours behind India, so our working days overlap almost fully; planning and reviews run on video calls, with no in-person meetings in Abu Dhabi.',
+      note: 'Billion Ecommerce Agency has no office anywhere in the UAE. Pet food and care brands in Abu Dhabi and Al Ain are served remotely from our Chennai head office. UAE time is 1.5 hours behind India, so our working days overlap almost fully; planning and reviews run on video calls, with no in-person meetings in Abu Dhabi.',
     },
     figures: [
       { type: 'mindmap', caption: 'Who buys for pets in Abu Dhabi, and where they shop.', center: 'Pet owners in Abu Dhabi', after: 0, branches: [
@@ -526,7 +526,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
         heading: 'Seasons, payments and working with us remotely',
         paragraphs: [
           'Ramadan shifts browsing to late evenings, both Eids bring travel and pet-sitting needs, White Friday in November rewards bulk bags and bundles, and UAE National Day on 2 December suits themed accessories. Summer is quieter for new customers, so focus on refills and fix listings then. Cash on delivery is still common, so we report on delivered, paid orders, and Tabby and Tamara help with larger bundles.',
-          'Magnus Path has no office in the UAE. As a pet brand marketing agency in Abu Dhabi clients reach remotely, we run accounts from our Chennai head office, with UAE time 1.5 hours behind India. Reviews happen over video. Our fee is quoted in AED after a free audit, and ad spend is paid directly to each platform.',
+          'Billion Ecommerce Agency has no office in the UAE. As a pet brand marketing agency in Abu Dhabi clients reach remotely, we run accounts from our Chennai head office, with UAE time 1.5 hours behind India. Reviews happen over video. Our fee is quoted in AED after a free audit, and ad spend is paid directly to each platform.',
         ],
       },
     ],
@@ -547,7 +547,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       { q: 'Should pet food be sold through Talabat and Careem?', a: 'For food and litter, usually yes. Owners often run out at short notice and order from whichever app delivers fastest. Being in stock on quick commerce protects your repeat sales, while your own store handles subscriptions and bundles that bring higher value per customer.' },
       { q: 'Do pet brands need Arabic creative in Abu Dhabi?', a: 'Increasingly, yes. Many Emirati families keep pets, and Arabic creative written by a fluent Arabic writer reaches them more naturally than translated English. Expat owners still respond to English ads, so we run both versions and compare results by language.' },
       { q: 'How much does pet brand marketing in Abu Dhabi cost?', a: 'It depends on the range size, the channels involved, how much creative is needed in each language and whether marketplace and quick-commerce management are included. We do not publish prices. Following a free audit, you get a written AED quote listing scope, timeline and exclusions; ad spend is paid to the platforms directly.' },
-      { q: 'Can we meet your team in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE and does not hold in-person meetings there. Pet brands in Abu Dhabi work with our Chennai head office over video and WhatsApp. UAE time is 1.5 hours behind India, so our working days line up for most of the day.' },
+      { q: 'Can we meet your team in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office in the UAE and does not hold in-person meetings there. Pet brands in Abu Dhabi work with our Chennai head office over video and WhatsApp. UAE time is 1.5 hours behind India, so our working days line up for most of the day.' },
     ],
   },
 
@@ -563,7 +563,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Traditional sandals, modest footwear, trainers and school shoes · Abu Dhabi and Al Ain',
     h1: 'Footwear Marketing Agency in Abu Dhabi from *Traditional Sandals to School Shoes*',
-    intro: 'A footwear marketing agency in Abu Dhabi has to sell traditional sandals worn with the kandura, modest and formal shoes for the office, trainers for runners on Yas and Saadiyat, and school shoes every August. Magnus Path serves the capital remotely from our Chennai head office. We fix size guides across EU, UK and US, build Arabic and English creative, and quote in AED after a free audit.',
+    intro: 'A footwear marketing agency in Abu Dhabi has to sell traditional sandals worn with the kandura, modest and formal shoes for the office, trainers for runners on Yas and Saadiyat, and school shoes every August. Billion Ecommerce Agency serves the capital remotely from our Chennai head office. We fix size guides across EU, UK and US, build Arabic and English creative, and quote in AED after a free audit.',
     icon: 'shopify',
     facts: ['One size guide: EU, UK and US', 'Arabic-first creative with English', 'Free audit, quote in AED'],
     headings: {
@@ -663,7 +663,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
         heading: 'Seasons, and working with a footwear marketing agency in Abu Dhabi remotely',
         paragraphs: [
           'Both Eids, al-Fitr and al-Adha, bring new outfits and new shoes for the whole family, so plan Eid creative weeks ahead. UAE National Day on 2 December suits sandals and accessories in national colours, White Friday in November rewards trainer and family bundles, and the cooler months lift running and outdoor footwear. Summer is quieter until the school rush.',
-          'Magnus Path has no office in the UAE; accounts are run from our Chennai head office, with UAE time 1.5 hours behind India. Reviews happen over video. As a footwear marketing agency in Abu Dhabi working remotely, we quote our fee in AED after a free audit, and ad spend is paid directly to each platform.',
+          'Billion Ecommerce Agency has no office in the UAE; accounts are run from our Chennai head office, with UAE time 1.5 hours behind India. Reviews happen over video. As a footwear marketing agency in Abu Dhabi working remotely, we quote our fee in AED after a free audit, and ad spend is paid directly to each platform.',
         ],
       },
     ],
@@ -684,7 +684,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       { q: 'When should school-shoe campaigns start in Abu Dhabi?', a: 'Early August. Many families return from summer travel shortly before school starts in late August, so the buying window is short. Ads should state uniform colours, sizes and a delivery cut-off before the first day, with offers for families buying for several children.' },
       { q: 'Should footwear brands sell on Namshi, Amazon.ae and Noon?', a: 'Most should test at least one. Many UAE shoppers compare footwear on these marketplaces, so listings with consistent sizing and good photos widen reach. Your own store remains the place for full size guidance, bundles and customer data, and prices should stay aligned across channels.' },
       { q: 'How much does footwear marketing in Abu Dhabi cost?', a: 'It depends on range size, the number of marketplaces and ad channels, how much photo and video work is needed and whether size guides and pages need rebuilding. We do not publish prices. Following a free audit, you get a written AED quote with scope, timeline and exclusions.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE and does not meet clients in person there. Footwear brands in Abu Dhabi work with our Chennai head office over video, email and WhatsApp. UAE time is 1.5 hours behind India, so replies on the same working day are realistic.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office in the UAE and does not meet clients in person there. Footwear brands in Abu Dhabi work with our Chennai head office over video, email and WhatsApp. UAE time is 1.5 hours behind India, so replies on the same working day are realistic.' },
     ],
   },
 
@@ -700,7 +700,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Phones, audio, wearables, smart home and accessories · Abu Dhabi and Al Ain',
     h1: 'Consumer Electronics Marketing Agency in Abu Dhabi for *Approved, Warrantied Products*',
-    intro: 'A consumer electronics marketing agency in Abu Dhabi has to sell against large retailers, marketplace grey imports and shoppers who ask about warranty before price. Magnus Path serves the capital remotely from our Chennai head office. We check conformity and type approval status before launch, build Arabic and English product content, and run marketplace, search and social campaigns, quoted in AED after a free audit.',
+    intro: 'A consumer electronics marketing agency in Abu Dhabi has to sell against large retailers, marketplace grey imports and shoppers who ask about warranty before price. Billion Ecommerce Agency serves the capital remotely from our Chennai head office. We check conformity and type approval status before launch, build Arabic and English product content, and run marketplace, search and social campaigns, quoted in AED after a free audit.',
     icon: 'amazon',
     facts: ['Approval status checked first', 'Warranty stated on every page', 'Free audit, quote in AED'],
     headings: {
@@ -732,7 +732,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
     local: {
       city: 'Abu Dhabi',
       areas: ['Al Reem Island', 'Al Maryah Island', 'Yas Island', 'Khalifa City', 'Mohammed Bin Zayed City', 'Al Raha', 'Masdar City', 'Al Ain'],
-      note: 'Magnus Path keeps no office in the UAE. Electronics brands selling across Abu Dhabi and Al Ain are served remotely from our Chennai head office. UAE time is 1.5 hours behind India, so our days overlap closely; launch planning and reviews take place on video calls, never in person in Abu Dhabi.',
+      note: 'Billion Ecommerce Agency keeps no office in the UAE. Electronics brands selling across Abu Dhabi and Al Ain are served remotely from our Chennai head office. UAE time is 1.5 hours behind India, so our days overlap closely; launch planning and reviews take place on video calls, never in person in Abu Dhabi.',
     },
     figures: [
       { type: 'steps', caption: 'What we confirm before a device is advertised to shoppers in Abu Dhabi.', after: 1, steps: [
@@ -801,7 +801,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       {
         heading: 'Working with a consumer electronics marketing agency in Abu Dhabi remotely',
         paragraphs: [
-          'Magnus Path has no office in the UAE. Your account is run from our Chennai head office, with further offices in Bengaluru and London, and UAE time is 1.5 hours behind India, so nearly all of our working hours coincide. Every meeting is by video.',
+          'Billion Ecommerce Agency has no office in the UAE. Your account is run from our Chennai head office, with further offices in Bengaluru and London, and UAE time is 1.5 hours behind India, so nearly all of our working hours coincide. Every meeting is by video.',
           'Before you choose a consumer electronics marketing agency in Abu Dhabi, ask how it handles approvals, warranty content and unauthorised sellers, and whether it reports on delivered orders. We quote our fee in AED after a free audit, and ad spend is paid directly to each platform from your own accounts.',
         ],
       },
@@ -823,7 +823,7 @@ export const abuDhabiIndustryProductsPages: ServicePageData[] = [
       { q: 'When is the peak season for electronics in Abu Dhabi?', a: 'White Friday in November is the largest, followed by Ramadan and both Eids for gifting, UAE National Day in December and back to school in late August. Plan stock, bundles and creative several weeks ahead of each, and use the quieter summer months to fix listings and feeds.' },
       { q: 'Should electronics content be in Arabic?', a: 'Yes, alongside English. Many Emirati buyers prefer Arabic product information, especially for set-up and warranty details. We draft Arabic and English versions together, with Arabic drafted or checked by a fluent Arabic writer, and keep specs identical in both.' },
       { q: 'How much does electronics marketing in Abu Dhabi cost?', a: 'It depends on the number of products, the marketplaces and ad channels involved, the amount of video and listing content and whether brand protection work is included. We do not publish prices. After a free audit you receive a written AED quote with scope, timeline and exclusions.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE and does not hold in-person meetings there. Electronics brands in Abu Dhabi are served remotely from our Chennai head office over video and WhatsApp. UAE time is 1.5 hours behind India, so our working days line up for most of the day.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office in the UAE and does not hold in-person meetings there. Electronics brands in Abu Dhabi are served remotely from our Chennai head office over video and WhatsApp. UAE time is 1.5 hours behind India, so our working days line up for most of the day.' },
     ],
   },
 ];

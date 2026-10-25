@@ -16,7 +16,7 @@ export const uaeMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'For UAE online stores · Catalogue ads · Advantage+ · UGC creative · COD-aware ROAS',
     h1: 'Ecommerce Meta Ads Agency for UAE Stores, *Run From Your Catalogue*',
-    intro: 'Need an ecommerce Meta ads agency in Dubai that measures the sales you actually get paid for? Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We keep your product catalogue healthy, run catalogue and Advantage+ sales campaigns on Facebook and Instagram, test UGC-style creative in English and Arabic, and report ROAS after cash-on-delivery refusals and returns.',
+    intro: 'Need an ecommerce Meta ads agency in Dubai that measures the sales you actually get paid for? Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We keep your product catalogue healthy, run catalogue and Advantage+ sales campaigns on Facebook and Instagram, test UGC-style creative in English and Arabic, and report ROAS after cash-on-delivery refusals and returns.',
     icon: 'social',
     facts: ['Ad spend paid to Meta by you', 'Catalogue and feed fixed first', 'Free audit, quote in AED'],
     headings: {
@@ -158,7 +158,7 @@ export const uaeMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Facebook · Instagram Reels and Stories · Messenger · WhatsApp · Conversions API',
     h1: 'Meta Ads Agency in Dubai for *Every Meta App* Your Customers Use',
-    intro: 'Hiring a Meta ads agency in Dubai should mean one team planning Facebook, Instagram, Messenger and WhatsApp together, not four separate efforts. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We set up Meta Business Suite properly, connect the Conversions API, and run Advantage+ and click-to-WhatsApp campaigns in English and Arabic.',
+    intro: 'Hiring a Meta ads agency in Dubai should mean one team planning Facebook, Instagram, Messenger and WhatsApp together, not four separate efforts. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We set up Meta Business Suite properly, connect the Conversions API, and run Advantage+ and click-to-WhatsApp campaigns in English and Arabic.',
     icon: 'social',
     facts: ['Business portfolio in your name', 'Click-to-WhatsApp campaigns', 'Free audit, quote in AED'],
     headings: {
@@ -297,7 +297,7 @@ export const uaeMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Lead ads · Instant forms · Feed, Marketplace and Reels · Local audiences · Comment moderation',
     h1: 'Facebook Ads Agency in Dubai for *Leads You Can Use*',
-    intro: 'A Facebook ads agency in Dubai should judge campaigns by the leads your team can actually close, not the number of forms filled. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We build lead ads and instant forms, target local audiences across the emirates, send lead outcomes back to Meta and keep your page comments under control.',
+    intro: 'A Facebook ads agency in Dubai should judge campaigns by the leads your team can actually close, not the number of forms filled. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We build lead ads and instant forms, target local audiences across the emirates, send lead outcomes back to Meta and keep your page comments under control.',
     icon: 'social',
     facts: ['Lead quality tracked weekly', 'Arabic and English forms', 'Free audit, quote in AED'],
     headings: {
@@ -433,7 +433,7 @@ export const uaeMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Agency types · Questions to ask · Red flags · Audits · Contracts and account ownership',
     h1: 'Comparing Facebook Advertising Agencies in Dubai? *Start Here*',
-    intro: 'Comparing Facebook advertising agencies in Dubai is hard when every proposal promises growth. This guide explains the types of agency, the questions that separate them, the red flags, what a proper audit includes and how to keep your accounts in your name. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely, and we explain how we work at the end.',
+    intro: 'Comparing Facebook advertising agencies in Dubai is hard when every proposal promises growth. This guide explains the types of agency, the questions that separate them, the red flags, what a proper audit includes and how to keep your accounts in your name. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely, and we explain how we work at the end.',
     icon: 'social',
     facts: ['Accounts always in your name', 'Free written audit first', 'Scope and AED quote in writing'],
     headings: {
@@ -545,9 +545,9 @@ export const uaeMetaPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'How Magnus Path works with UAE businesses',
+        heading: 'How Billion Ecommerce Agency works with UAE businesses',
         paragraphs: [
-          'We are one of the options you might weigh, so here is how we work. Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We have no Dubai office and do not offer in-person meetings; UAE time is 1.5 hours behind India, so our working days almost fully overlap and calls fit your office hours.',
+          'We are one of the options you might weigh, so here is how we work. Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We have no Dubai office and do not offer in-person meetings; UAE time is 1.5 hours behind India, so our working days almost fully overlap and calls fit your office hours.',
           'Every engagement starts with a free audit. You then get a written quote in AED listing scope, timeline and exclusions. Ad spend is paid directly to Meta from your own account, and everything stays in your company’s name. Depending on your business, we focus on catalogue ads for online stores, the full Meta platform including WhatsApp click-to-chat, or Facebook lead campaigns for services. Whichever of the Facebook advertising agencies in Dubai you choose, insist on the same basics.',
         ],
       },

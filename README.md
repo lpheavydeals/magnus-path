@@ -1,6 +1,6 @@
-# Magnus Path — website
+# Billion Ecommerce Agency — website
 
-Marketing website for Magnus Path, an e-commerce growth agency (websites, ads, SEO) based in Chennai.
+Marketing website for Billion Ecommerce Agency, an e-commerce growth agency (websites, ads, SEO) based in Chennai.
 Built with [Astro](https://astro.build) as a static site for speed and SEO.
 
 ## Run locally

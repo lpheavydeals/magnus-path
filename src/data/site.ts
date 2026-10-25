@@ -1,14 +1,14 @@
 // Single source of truth for business details.
 // Values marked TODO are placeholders — they MUST match the Google Business Profile exactly before launch.
 export const site = {
-  name: 'Magnus Path',
-  legalName: 'Magnus Path', // TODO: registered company name
+  name: 'Billion Ecommerce Agency',
+  legalName: 'Billion Ecommerce Agency', // TODO: registered company name
   tagline: 'E-commerce websites, ads and SEO — one growth team.',
-  url: 'https://www.magnuspath.com', // TODO: live domain
+  url: 'https://www.billionecommerceagency.com', // TODO: live domain
   phone: '+91 80984 25000', // Chennai head office
   phoneHref: 'tel:+918098425000',
-  whatsapp: 'https://wa.me/918098425000?text=Hi%20Magnus%20Path%2C%20I%27d%20like%20a%20free%20store%20audit',
-  email: 'contact@magnuspath.com',
+  whatsapp: 'https://wa.me/918098425000?text=Hi%20Billion%20Ecommerce%20Agency%2C%20I%27d%20like%20a%20free%20store%20audit',
+  email: 'contact@billionecommerceagency.com',
   address: {
     street: 'Street address', // TODO
     locality: 'Chennai',

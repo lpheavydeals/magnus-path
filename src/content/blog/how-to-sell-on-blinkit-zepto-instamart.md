@@ -1,12 +1,12 @@
 ---
 title: "How to Sell on Blinkit, Zepto and Instamart: A Brand's Guide"
-metaTitle: "How to Sell on Blinkit, Zepto & Instamart | Magnus Path"
+metaTitle: "How to Sell on Blinkit, Zepto & Instamart | Billion Ecommerce Agency"
 description: "Learn how to sell on Blinkit, Zepto and Swiggy Instamart: requirements, getting listed, pricing, margins, ads, city-level stock planning and metrics to track."
 primaryKeyword: "how to sell on blinkit"
 category: "Ads"
 publishDate: 2026-10-16
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "To sell on Blinkit, Zepto or Swiggy Instamart, a brand needs GST registration, the right licences (such as FSSAI for food), barcoded products with retail-ready packaging, and a way to supply dark stores, either directly through a platform's brand programme or through a distributor. Success depends on city-level availability, sound margins after platform terms, and steady in-app visibility through ads and good content."
 faqs:
   - q: "How to sell on Blinkit as a new brand?"

@@ -5,14 +5,14 @@ export const bangaloreServicesPages: ServicePageData[] = [
   {
     slug: 'bangalore/website-development-company',
     kind: 'location',
-    title: 'Website Designing Company in Bangalore | Magnus Path',
+    title: 'Website Designing Company in Bangalore | Billion Ecommerce Agency',
     description: 'Website designing company in Bangalore for startups, SaaS, clinics and builders. Business and WordPress sites with fixed written quotes. Meet us in Bengaluru.',
     primaryKeyword: 'website designing company in bangalore',
     navLabel: 'Website Development Company Bangalore',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
     eyebrow: 'Web design and development · Bangalore',
     h1: 'Website Designing Company in Bangalore for *Growing Businesses*',
-    intro: 'Magnus Path is a website designing company in Bangalore that plans, designs and builds business, corporate and WordPress websites. Startups, SaaS and B2B firms, D2C brands, clinics, builders and institutes get a fast, mobile-first site that explains what they do and turns visitors into enquiries. Meet us at our Bengaluru office for workshops and reviews.',
+    intro: 'Billion Ecommerce Agency is a website designing company in Bangalore that plans, designs and builds business, corporate and WordPress websites. Startups, SaaS and B2B firms, D2C brands, clinics, builders and institutes get a fast, mobile-first site that explains what they do and turns visitors into enquiries. Meet us at our Bengaluru office for workshops and reviews.',
     icon: 'website',
     facts: ['Bengaluru office, meetings by appointment', 'Fixed written quote', 'WordPress, Shopify or headless builds'],
     headings: {
@@ -148,14 +148,14 @@ export const bangaloreServicesPages: ServicePageData[] = [
   {
     slug: 'bangalore/performance-marketing-agency',
     kind: 'location',
-    title: 'Performance Marketing Agency in Bangalore | Magnus Path',
+    title: 'Performance Marketing Agency in Bangalore',
     description: 'Performance marketing agency in Bangalore for D2C and B2B brands. Google, Meta, Amazon and quick commerce ads, free audit first. Meet us in Bengaluru.',
     primaryKeyword: 'performance marketing agency in bangalore',
     navLabel: 'Performance Marketing Bangalore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Performance marketing · Bangalore',
     h1: 'Performance Marketing Agency in Bangalore for *D2C and B2B* Brands',
-    intro: 'Magnus Path is a performance marketing agency in Bangalore that runs Google, Meta, Amazon and quick commerce ads for D2C brands and B2B companies. We set ROAS and CPA targets from your margins, fix tracking first and test creative every week, so ad spend grows only when orders and qualified leads grow with it.',
+    intro: 'Billion Ecommerce Agency is a performance marketing agency in Bangalore that runs Google, Meta, Amazon and quick commerce ads for D2C brands and B2B companies. We set ROAS and CPA targets from your margins, fix tracking first and test creative every week, so ad spend grows only when orders and qualified leads grow with it.',
     icon: 'social',
     facts: ['Bengaluru office, meetings by appointment', 'Ad accounts stay in your name', 'Targets set from your margins'],
     headings: {

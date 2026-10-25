@@ -1,9 +1,9 @@
-# Content Brief — Magnus Path landing pages
+# Content Brief — Billion Ecommerce Agency landing pages
 
 Applies to every page in `src/content/pages/*.ts` and every article in `src/content/blog/*.md`.
 
 ## Who we are
-Magnus Path is a new e-commerce growth agency based in Chennai, Tamil Nadu. One team builds e-commerce
+Billion Ecommerce Agency is a new e-commerce growth agency based in Chennai, Tamil Nadu. One team builds e-commerce
 websites (Shopify, WooCommerce, custom), runs e-commerce ads (Amazon, Flipkart, Meta, Google, Blinkit/Zepto/Instamart)
 and does e-commerce SEO (store SEO, marketplace SEO, AI-search optimisation / GEO). It also serves B2B
 manufacturers and exporters (Chennai, Coimbatore, Tiruppur, Hosur). Clients: Tamil Nadu in person, the rest of India
@@ -132,7 +132,7 @@ Same rules as the US/UK/UAE pages above, with these differences:
   /australia/web-development-company/, /australia/wordpress-developer/
 
 ## Offices (updated 17 Oct 2026, overrides every earlier "one office" / "no UK office" rule)
-Magnus Path has three **staffed offices where clients can meet the team by appointment**:
+Billion Ecommerce Agency has three **staffed offices where clients can meet the team by appointment**:
 - **Chennai** (head office and main delivery team), Tamil Nadu, India
 - **Bengaluru**, Karnataka, India
 - **London**: 16 Avondale Court, London E18 2RD, United Kingdom

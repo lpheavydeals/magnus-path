@@ -1,15 +1,15 @@
 # Directory profile texts (copy and paste)
 
-Use these when listing Magnus Path on business directories. Every claim here is true today: no client counts, awards,
+Use these when listing Billion Ecommerce Agency on business directories. Every claim here is true today: no client counts, awards,
 ratings or partner badges. Add those only once they are real (for example, Clutch reviews from actual clients).
 
 **Before you start, fill these in once and use them everywhere, exactly the same way (Google checks for consistency):**
 
 | Field | Value |
 |---|---|
-| Business name | Magnus Path |
-| Website | https://www.magnuspath.com (TODO: confirm live domain) |
-| Email | contact@magnuspath.com |
+| Business name | Billion Ecommerce Agency |
+| Website | https://www.billionecommerceagency.com (TODO: confirm live domain) |
+| Email | contact@billionecommerceagency.com |
 | Chennai (head office) | TODO street, Chennai, Tamil Nadu, TODO PIN · +91 80984 25000 · Mon–Sat 9:30 AM–7:00 PM |
 | Bengaluru office | TODO street, Bengaluru, Karnataka, TODO PIN · +91 80984 25000 · Mon–Sat 9:30 AM–7:00 PM |
 | London office | 16 Avondale Court, London E18 2RD, United Kingdom · TODO phone · Mon–Fri 9:30 AM–6:00 PM |
@@ -34,18 +34,18 @@ Tips:
 E-commerce websites, ads and SEO: one growth team.
 
 ### Short description (about 250 characters)
-Magnus Path is an e-commerce growth agency headquartered in Chennai, with offices in Bengaluru and London. One team builds
+Billion Ecommerce Agency is an e-commerce growth agency headquartered in Chennai, with offices in Bengaluru and London. One team builds
 your store or website, runs your Google, Meta and Amazon ads, and earns your search rankings, reported against sales.
 
 ### Medium description (about 500 characters)
-Magnus Path is an e-commerce growth agency headquartered in Chennai, with offices in Bengaluru and London. We build
+Billion Ecommerce Agency is an e-commerce growth agency headquartered in Chennai, with offices in Bengaluru and London. We build
 Shopify, WooCommerce and WordPress websites, run performance marketing on Google, Meta, Amazon, Flipkart and quick-commerce
 apps, and handle SEO for online stores and service businesses. One team owns all three, so the website, the ads and the
 rankings work towards the same number: sales. Clear starting prices, monthly reports in plain language, and you keep
 ownership of every account.
 
 ### Long description (about 1,000 characters)
-Magnus Path is an e-commerce growth agency headquartered in Chennai, India, with offices in Bengaluru and London.
+Billion Ecommerce Agency is an e-commerce growth agency headquartered in Chennai, India, with offices in Bengaluru and London.
 
 Online brands told us the same story again and again: one agency for the website, another for ads, a freelancer for SEO,
 and nobody responsible for sales. So we built one team that does all three.
@@ -92,7 +92,7 @@ Web development 35% · Pay per click / paid social 35% · SEO 25% · Social medi
 - **Main location:** London office (16 Avondale Court, London E18 2RD), with Chennai and Bengaluru added. Sortlist matches
   buyers by city, and its London lists are what rank.
 - **Description (UK spelling, London-first version):**
-  Magnus Path is an e-commerce growth agency with an office in East London (E18) and our head office and delivery team in
+  Billion Ecommerce Agency is an e-commerce growth agency with an office in East London (E18) and our head office and delivery team in
   Chennai, India. We build Shopify, WooCommerce and WordPress websites, run Google, Meta and Amazon ads, and handle SEO for
   online shops and service businesses. One team owns all three, so the website, the ads and the rankings work towards the
   same goal: sales. UK clients can meet us in London by appointment; work continues in India after UK hours, so requests
@@ -119,23 +119,23 @@ Web development 35% · Pay per click / paid social 35% · SEO 25% · Social medi
 - **Listing 1, Chennai (head office).** Categories: Digital Marketing Services, Website Designers, SEO Services,
   Social Media Marketing. Link to: /chennai/digital-marketing-agency/
   **Description (Chennai):**
-  Magnus Path is a digital marketing and website development company headquartered in Chennai. We build business websites
+  Billion Ecommerce Agency is a digital marketing and website development company headquartered in Chennai. We build business websites
   and online stores (WordPress, Shopify, WooCommerce), run Google, Meta and Amazon ads, and handle SEO and social media for
   Chennai businesses. Business websites from ₹35,000, SEO from ₹25,000 per month, and ads management from ₹30,000 per month
   plus ad spend. Meet our team at the Chennai office by appointment.
 - **Listing 2, Bengaluru.** Same categories. Link to: /bangalore/digital-marketing-agency/
   **Description (Bengaluru):**
-  Magnus Path is a digital marketing and website development company with an office in Bengaluru and our head office in
+  Billion Ecommerce Agency is a digital marketing and website development company with an office in Bengaluru and our head office in
   Chennai. We build business websites and online stores, run Google, Meta and Amazon ads, and handle SEO for Bengaluru
   businesses and D2C brands. Business websites from ₹35,000, SEO from ₹25,000 per month, and ads management from ₹30,000
   per month plus ad spend. Meetings and workshops at our Bengaluru office by appointment.
 - **Tip:** Justdial often calls to upsell paid plans. The free listing is enough for the citation.
 
 ### 8. Yell (yell.com): UK, free listing for the London office
-- **Business name:** Magnus Path · **Address:** 16 Avondale Court, London E18 2RD · **Phone:** UK number (TODO).
+- **Business name:** Billion Ecommerce Agency · **Address:** 16 Avondale Court, London E18 2RD · **Phone:** UK number (TODO).
 - **Categories:** Internet Marketing Services, Web Design, Advertising Agencies.
 - **Description (London):**
-  Magnus Path is an e-commerce and digital marketing agency in East London (E18). We build Shopify, WooCommerce and
+  Billion Ecommerce Agency is an e-commerce and digital marketing agency in East London (E18). We build Shopify, WooCommerce and
   WordPress websites, run Google, Meta and Amazon ads, and handle SEO for UK shops and service businesses. One team owns the
   website, the ads and the rankings, with plain-English monthly reports and accounts kept in your name. Meet us at our
   London office by appointment. We also offer white-label SEO for agencies from £275 per client site per month.

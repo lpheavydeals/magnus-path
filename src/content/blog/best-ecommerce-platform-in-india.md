@@ -1,12 +1,12 @@
 ---
 title: "Best Ecommerce Platform in India: Shopify vs WooCommerce and More"
-metaTitle: "Best Ecommerce Platform in India (2026) | Magnus Path"
+metaTitle: "Best Ecommerce Platform in India (2026) | Billion Ecommerce Agency"
 description: "Compare the best ecommerce platforms in India: Shopify, WooCommerce, Magento, custom builds and Indian store builders, with picks for each type of business."
 primaryKeyword: "best ecommerce platform in india"
 category: "Platforms"
 publishDate: 2026-10-16
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "For most Indian D2C brands, Shopify is the best ecommerce platform because it is hosted, secure and easy to run without a developer, while WooCommerce suits brands that want full control on WordPress. Large or complex catalogues may need Magento/Adobe Commerce or a custom build, and Indian SaaS builders suit very small sellers who want to start quickly on mobile."
 faqs:
   - q: "Which is the best ecommerce platform in India for a new brand?"

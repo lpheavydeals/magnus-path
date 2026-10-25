@@ -1,33 +1,33 @@
-# Magnus Path
+# Billion Ecommerce Agency
 
-> Magnus Path is an e-commerce marketing agency based in Chennai, India. One team builds e-commerce websites (Shopify, WooCommerce, custom), runs e-commerce ads (Amazon, Flipkart, Meta, Google, Blinkit/Zepto/Instamart) and delivers e-commerce SEO (store SEO, marketplace SEO, AI search optimisation) for brands in India, the UK, UAE, Australia and the USA.
+> Billion Ecommerce Agency is an e-commerce marketing agency based in Chennai, India. One team builds e-commerce websites (Shopify, WooCommerce, custom), runs e-commerce ads (Amazon, Flipkart, Meta, Google, Blinkit/Zepto/Instamart) and delivers e-commerce SEO (store SEO, marketplace SEO, AI search optimisation) for brands in India, the UK, UAE, Australia and the USA.
 
 ## Services
-- [E-commerce Website Development](https://www.magnuspath.com/ecommerce-website-development/)
-- [Shopify Development](https://www.magnuspath.com/shopify-development/)
-- [Amazon Advertising Agency](https://www.magnuspath.com/amazon-marketing-agency/)
-- [Amazon Account Management](https://www.magnuspath.com/amazon-account-management/)
-- [Flipkart Account Management](https://www.magnuspath.com/flipkart-account-management/)
-- [E-commerce SEO Services](https://www.magnuspath.com/ecommerce-seo/)
-- [B2B Digital Marketing for Manufacturers & Exporters](https://www.magnuspath.com/b2b-digital-marketing/)
+- [E-commerce Website Development](https://www.billionecommerceagency.com/ecommerce-website-development/)
+- [Shopify Development](https://www.billionecommerceagency.com/shopify-development/)
+- [Amazon Advertising Agency](https://www.billionecommerceagency.com/amazon-marketing-agency/)
+- [Amazon Account Management](https://www.billionecommerceagency.com/amazon-account-management/)
+- [Flipkart Account Management](https://www.billionecommerceagency.com/flipkart-account-management/)
+- [E-commerce SEO Services](https://www.billionecommerceagency.com/ecommerce-seo/)
+- [B2B Digital Marketing for Manufacturers & Exporters](https://www.billionecommerceagency.com/b2b-digital-marketing/)
 
 ## Company
-- [About](https://www.magnuspath.com/about/)
-- [Case Studies](https://www.magnuspath.com/case-studies/)
-- [Free E-commerce Store Audit](https://www.magnuspath.com/free-ecommerce-audit/)
+- [About](https://www.billionecommerceagency.com/about/)
+- [Case Studies](https://www.billionecommerceagency.com/case-studies/)
+- [Free E-commerce Store Audit](https://www.billionecommerceagency.com/free-ecommerce-audit/)
 
 ## Free tools
-- [ROAS & break-even ACoS calculator](https://www.magnuspath.com/tools/roas-calculator/)
-- [Amazon & Flipkart profit calculator](https://www.magnuspath.com/tools/marketplace-profit-calculator/)
+- [ROAS & break-even ACoS calculator](https://www.billionecommerceagency.com/tools/roas-calculator/)
+- [Amazon & Flipkart profit calculator](https://www.billionecommerceagency.com/tools/marketplace-profit-calculator/)
 
 ## Guides
-- [E-commerce website cost in India](https://www.magnuspath.com/blog/ecommerce-website-cost-in-india/)
-- [Best e-commerce platform in India](https://www.magnuspath.com/blog/best-ecommerce-platform-in-india/)
-- [How to find buyers for export](https://www.magnuspath.com/blog/how-to-find-buyers-for-export/)
-- [Amazon PPC guide for India](https://www.magnuspath.com/blog/amazon-ppc-guide-india/)
-- [How to reduce RTO and COD returns](https://www.magnuspath.com/blog/how-to-reduce-rto-cod-returns/)
+- [E-commerce website cost in India](https://www.billionecommerceagency.com/blog/ecommerce-website-cost-in-india/)
+- [Best e-commerce platform in India](https://www.billionecommerceagency.com/blog/best-ecommerce-platform-in-india/)
+- [How to find buyers for export](https://www.billionecommerceagency.com/blog/how-to-find-buyers-for-export/)
+- [Amazon PPC guide for India](https://www.billionecommerceagency.com/blog/amazon-ppc-guide-india/)
+- [How to reduce RTO and COD returns](https://www.billionecommerceagency.com/blog/how-to-reduce-rto-cod-returns/)
 
 ## International
-- [E-commerce agency for UK brands](https://www.magnuspath.com/uk/ecommerce-marketing-agency/)
-- [E-commerce agency for Australian brands](https://www.magnuspath.com/australia/ecommerce-marketing-agency/)
-- [E-commerce agency for UAE brands](https://www.magnuspath.com/uae/ecommerce-marketing-agency/)
+- [E-commerce agency for UK brands](https://www.billionecommerceagency.com/uk/ecommerce-marketing-agency/)
+- [E-commerce agency for Australian brands](https://www.billionecommerceagency.com/australia/ecommerce-marketing-agency/)
+- [E-commerce agency for UAE brands](https://www.billionecommerceagency.com/uae/ecommerce-marketing-agency/)

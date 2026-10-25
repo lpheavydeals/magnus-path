@@ -1,12 +1,12 @@
 ---
 title: "How to Sell on Amazon USA from India: A Step-by-Step 2026 Guide"
-metaTitle: "How to Sell on Amazon USA from India | Magnus Path"
+metaTitle: "How to Sell on Amazon USA from India | Billion Ecommerce Agency"
 description: "How to sell on Amazon USA from India: Global Selling basics, documents, product compliance, FBA vs FBM, logistics, fees, US listings, ads and Brand Registry."
 primaryKeyword: "how to sell on amazon usa from india"
 category: "Export"
 publishDate: 2026-10-16
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "To sell on Amazon USA from India, register through Amazon Global Selling with your identity, IEC, GST and bank details, confirm your products meet US rules, choose between Fulfilled by Amazon and merchant fulfilment, set up shipping and customs, and price after all fees. Then write listings for US buyers, run Sponsored Products ads and protect your brand with a trademark and Brand Registry."
 faqs:
   - q: "Can I sell on Amazon US from India without a US company?"

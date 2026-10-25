@@ -116,7 +116,7 @@ def build_xlsx():
              '5. Fill the Summary sheet from your store\'s own reports; MER is the number to trust when channels overlap.',
              '6. Compare each month with the one before, not with someone else\'s numbers.', '',
              'Blue cells are inputs. Black cells are formulas. Total rows recompute ratios from summed totals, never averages.',
-             'Need help reading your numbers? Request a free audit: https://www.magnuspath.com/free-ecommerce-audit/']
+             'Need help reading your numbers? Request a free audit: https://www.billionecommerceagency.com/free-ecommerce-audit/']
     for i, t in enumerate(lines, 1):
         hw[f'A{i}'] = t
     hw['A1'].font = Font(bold=True, size=14)

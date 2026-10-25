@@ -5,14 +5,14 @@ export const chennaiPpcPages: ServicePageData[] = [
   {
     slug: 'chennai/ppc-agency',
     kind: 'location',
-    title: 'PPC Agency in Chennai | Google Ads for Stores | Magnus Path',
+    title: 'PPC Agency in Chennai | Google Ads for Stores',
     description: 'PPC agency in Chennai for D2C stores and local brands: Google Shopping, Performance Max and Search in Tamil and English, tracked to orders, calls and visits.',
     primaryKeyword: 'PPC agency in Chennai',
     navLabel: 'PPC Agency Chennai',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Google Ads and PPC in Chennai',
     h1: 'PPC Agency in Chennai for *Orders, Calls and Store Visits*',
-    intro: 'Magnus Path is a PPC agency in Chennai that runs Google Ads for online stores, showrooms and B2B firms across Tamil Nadu. We build Shopping, Performance Max and Search campaigns in Tamil and English, fix your Merchant Center feed and tracking, and judge results on profit after COD and returns. Our head office is in Chennai, so you can meet the team.',
+    intro: 'Billion Ecommerce Agency is a PPC agency in Chennai that runs Google Ads for online stores, showrooms and B2B firms across Tamil Nadu. We build Shopping, Performance Max and Search campaigns in Tamil and English, fix your Merchant Center feed and tracking, and judge results on profit after COD and returns. Our head office is in Chennai, so you can meet the team.',
     icon: 'social',
     facts: ['Free Google Ads audit first', 'Accounts stay in your name', 'Meet us at our Chennai office'],
     headings: {

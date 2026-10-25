@@ -5,14 +5,14 @@ export const bangaloreMetaPages: ServicePageData[] = [
   {
     slug: 'bangalore/ecommerce-meta-ads-agency',
     kind: 'location',
-    title: 'Ecommerce Meta Ads Agency in Bangalore | D2C Stores | Magnus Path',
+    title: 'Ecommerce Meta Ads Agency in Bangalore | D2C Stores',
     description: 'Ecommerce Meta ads agency in Bangalore for D2C stores: catalogue and Advantage+ sales campaigns, feed health, UGC creative and ROAS after COD and returns.',
     primaryKeyword: 'ecommerce Meta ads agency in Bangalore',
     navLabel: 'Ecommerce Meta Ads Bangalore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Meta catalogue ads for Bengaluru online stores',
     h1: 'Ecommerce *Meta Ads* Agency in Bangalore for Online Stores',
-    intro: 'Magnus Path is an ecommerce Meta ads agency in Bangalore for online stores and D2C brands. We run catalogue and Advantage+ sales campaigns (previously Advantage+ shopping) on Facebook and Instagram, keep your product feed healthy, test UGC creative every week and judge results on ROAS after COD, RTO and returns, with reviews at our Bengaluru office or on video.',
+    intro: 'Billion Ecommerce Agency is an ecommerce Meta ads agency in Bangalore for online stores and D2C brands. We run catalogue and Advantage+ sales campaigns (previously Advantage+ shopping) on Facebook and Instagram, keep your product feed healthy, test UGC creative every week and judge results on ROAS after COD, RTO and returns, with reviews at our Bengaluru office or on video.',
     icon: 'social',
     facts: ['Free Meta ads audit first', 'Ad account and pixel in your name', 'Catalogue fixed before scaling'],
     headings: {
@@ -144,14 +144,14 @@ export const bangaloreMetaPages: ServicePageData[] = [
   {
     slug: 'bangalore/meta-ads-agency',
     kind: 'location',
-    title: 'Meta Ads Agency in Bangalore | Instagram & WhatsApp | Magnus Path',
+    title: 'Meta Ads Agency in Bangalore | Instagram & WhatsApp',
     description: 'Meta ads agency in Bangalore for Facebook, Instagram Reels, Messenger and WhatsApp click-to-chat ads, with Conversions API and a clean Business Suite set-up.',
     primaryKeyword: 'Meta ads agency in Bangalore',
     navLabel: 'Meta Ads Agency Bangalore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Facebook, Instagram, Messenger and WhatsApp ads',
     h1: 'Meta Ads Agency in Bangalore for *Instagram, Facebook and WhatsApp*',
-    intro: 'Magnus Path is a Meta ads agency in Bangalore that runs the whole Meta platform for startups and brands: Facebook, Instagram Reels and Stories, Messenger and WhatsApp click-to-chat ads. We set up Business Suite and account structure properly, connect the Conversions API and plan creative for each placement, with meetings at our Bengaluru office by appointment.',
+    intro: 'Billion Ecommerce Agency is a Meta ads agency in Bangalore that runs the whole Meta platform for startups and brands: Facebook, Instagram Reels and Stories, Messenger and WhatsApp click-to-chat ads. We set up Business Suite and account structure properly, connect the Conversions API and plan creative for each placement, with meetings at our Bengaluru office by appointment.',
     icon: 'social',
     facts: ['Free Meta account audit', 'Business portfolio stays yours', 'Meet us in Bengaluru'],
     headings: {
@@ -277,14 +277,14 @@ export const bangaloreMetaPages: ServicePageData[] = [
   {
     slug: 'bangalore/facebook-ads-agency',
     kind: 'location',
-    title: 'Facebook Ads Agency in Bangalore | Lead Ads | Magnus Path',
+    title: 'Facebook Ads Agency in Bangalore | Lead Ads',
     description: 'Facebook ads agency in Bangalore for clinics, schools, realtors and service firms: lead ads, instant forms, Marketplace and Reels placements, better lead quality.',
     primaryKeyword: 'Facebook ads agency in Bangalore',
     navLabel: 'Facebook Ads Agency Bangalore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Facebook lead ads for Bengaluru businesses',
     h1: 'Facebook Ads Agency in Bangalore for *Leads and Local Reach*',
-    intro: 'Magnus Path is a Facebook ads agency in Bangalore for service businesses and local brands that need enquiries, not just likes. We build lead ads with instant forms, choose Facebook feed, Marketplace and Reels placements, target the neighbourhoods you serve and track which leads become customers, so campaigns are judged on sales, not form fills.',
+    intro: 'Billion Ecommerce Agency is a Facebook ads agency in Bangalore for service businesses and local brands that need enquiries, not just likes. We build lead ads with instant forms, choose Facebook feed, Marketplace and Reels placements, target the neighbourhoods you serve and track which leads become customers, so campaigns are judged on sales, not form fills.',
     icon: 'social',
     facts: ['Free lead-quality audit', 'Page and ad account in your name', 'Leads judged on real customers'],
     headings: {
@@ -420,7 +420,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'A buyer’s guide to Facebook ad partners',
     h1: 'Facebook Advertising Agencies in Bangalore: *How to Choose* One',
-    intro: 'Comparing Facebook advertising agencies in Bangalore? This guide explains the types you will meet, from freelancers to full-service firms, the questions to ask, the red flags to watch for and what a proper audit should show. It also covers contracts and account ownership, then explains how Magnus Path works, so you can judge us on the same terms.',
+    intro: 'Comparing Facebook advertising agencies in Bangalore? This guide explains the types you will meet, from freelancers to full-service firms, the questions to ask, the red flags to watch for and what a proper audit should show. It also covers contracts and account ownership, then explains how Billion Ecommerce Agency works, so you can judge us on the same terms.',
     icon: 'social',
     facts: ['Free written audit, no obligation', 'Your accounts stay in your name', 'Plain written proposal'],
     headings: {
@@ -533,7 +533,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'How Magnus Path works',
+        heading: 'How Billion Ecommerce Agency works',
         paragraphs: [
           'We hold ourselves to the same checklist. We start with a free written audit, then send a proposal that names the people on your account, the scope and the reporting, with the management fee quoted separately. Your business portfolio, ad account, Page and pixel stay in your name, and ad spend is paid directly to Meta.',
           'We meet clients at our Bengaluru office by appointment, and planning workshops there are part of the scope. Much of the delivery is done by our Chennai head-office team on the same working hours. We work mainly with online stores, D2C startups and service businesses, and plan around Ugadi, Dasara and Diwali, Kannada and English creative, and app versus web goals. Compare us with other Facebook advertising agencies in Bangalore using the questions above.',
@@ -555,7 +555,7 @@ export const bangaloreMetaPages: ServicePageData[] = [
       { q: 'What red flags should I watch for?', a: 'Promised results before anyone has seen your account, ads run from the agency’s own ad account, a pixel or Page created in the agency’s Business Manager, ad spend paid through the agency with an unclear markup, long lock-ins and reports that never mention orders, qualified leads or profit.' },
       { q: 'Who should own the ad account and pixel?', a: 'Your business. The business portfolio, ad account, Page, Instagram profile, pixel and catalogue should all be owned by your company, with your own staff as admins. The agency works through access you grant and can remove, so your data, audiences and history stay with you if you change partners.' },
       { q: 'Is a freelancer or an agency better for Facebook advertising?', a: 'It depends on the job. A capable freelancer can suit a simple offer and a modest budget, provided the accounts stay in your name and there is cover for leave. Brands testing many products, creatives and audiences each week usually need a team with creative and tracking skills alongside campaign management.' },
-      { q: 'How does Magnus Path work with Bengaluru clients?', a: 'We start with a free written audit, then a proposal naming the people on your account, the scope and reporting, with the fee quoted separately. Accounts stay in your name. We meet at our Bengaluru office by appointment, workshops there are in scope, and much of the delivery comes from our Chennai head-office team.' },
+      { q: 'How does Billion Ecommerce Agency work with Bengaluru clients?', a: 'We start with a free written audit, then a proposal naming the people on your account, the scope and reporting, with the fee quoted separately. Accounts stay in your name. We meet at our Bengaluru office by appointment, workshops there are in scope, and much of the delivery comes from our Chennai head-office team.' },
     ],
   },
 ];

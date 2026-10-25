@@ -8,14 +8,14 @@ export const auShopifyPages: ServicePageData[] = [
     kind: 'global',
     market: 'AU',
     twin: 'shopify-development',
-    title: 'Shopify Experts Australia: Agency & Developers | Magnus Path',
+    title: 'Shopify Experts Australia: Agency & Developers',
     description: 'Shopify experts for Australian brands: store builds, migrations, speed and Shopify Plus work with GST pricing, Afterpay and local shipping. Quoted in AUD.',
     primaryKeyword: 'Shopify experts',
     navLabel: 'Shopify Agency (Australia)',
     breadcrumb: auBreadcrumb,
     eyebrow: 'For Australian brands · Builds · Migrations · Shopify Plus',
     h1: 'Shopify Experts for Australian Stores, Ready for *Click Frenzy*',
-    intro: 'Magnus Path gives Australian brands Shopify experts for store builds, redesigns, migrations and Shopify Plus work, without the local agency overheads. We set up GST-inclusive pricing, Afterpay or Zip, Australian shipping and Markets for New Zealand. We are a Chennai team with no Australian office, our morning is your afternoon, and we quote in AUD.',
+    intro: 'Billion Ecommerce Agency gives Australian brands Shopify experts for store builds, redesigns, migrations and Shopify Plus work, without the local agency overheads. We set up GST-inclusive pricing, Afterpay or Zip, Australian shipping and Markets for New Zealand. We are a Chennai team with no Australian office, our morning is your afternoon, and we quote in AUD.',
     icon: 'shopify',
     facts: ['GST, Afterpay and AU shipping set up', 'Markets for Australia and New Zealand', 'Quoted in AUD, no AU office'],
     headings: {
@@ -105,7 +105,7 @@ export const auShopifyPages: ServicePageData[] = [
       {
         heading: 'Working with Shopify experts in Chennai from Australia',
         paragraphs: [
-          'We have no Australian office. Magnus Path is a Chennai team working with Australian brands over video calls, a shared project board and chat. Sydney and Melbourne are 4.5 hours ahead of India on standard time and 5.5 hours during daylight saving, and Perth is 2.5 hours ahead. Our morning is your east-coast afternoon, so calls fit after lunch and finished work usually reaches you by evening.',
+          'We have no Australian office. Billion Ecommerce Agency is a Chennai team working with Australian brands over video calls, a shared project board and chat. Sydney and Melbourne are 4.5 hours ahead of India on standard time and 5.5 hours during daylight saving, and Perth is 2.5 hours ahead. Our morning is your east-coast afternoon, so calls fit after lunch and finished work usually reaches you by evening.',
           'If you are weighing up a local Shopify agency against a remote team, ask both the same questions:',
         ],
         bullets: [
@@ -127,7 +127,7 @@ export const auShopifyPages: ServicePageData[] = [
       { label: 'Free Shopify and e-commerce audit', href: '/free-ecommerce-audit/' },
     ],
     faqs: [
-      { q: 'Are you a Shopify Partner or Shopify Plus Partner?', a: 'No. We do not claim Shopify Partner or Shopify Plus Partner status. Magnus Path is an independent team in Chennai, India, that builds and maintains Shopify and Shopify Plus stores for Australian brands. Judge us on our work, our process and the free audit, not on a badge.' },
+      { q: 'Are you a Shopify Partner or Shopify Plus Partner?', a: 'No. We do not claim Shopify Partner or Shopify Plus Partner status. Billion Ecommerce Agency is an independent team in Chennai, India, that builds and maintains Shopify and Shopify Plus stores for Australian brands. Judge us on our work, our process and the free audit, not on a badge.' },
       { q: 'Do I need a Shopify agency in Australia, or can a remote team do the work?', a: 'A remote team can handle builds, migrations and ongoing development well if it understands GST, Afterpay, Australian shipping and the retail calendar. Our morning is your afternoon, so calls fit after lunch. Choose a local agency if regular in-person workshops matter more to you than cost.' },
       { q: 'How much does a Shopify store cost for an Australian brand?', a: 'We quote in AUD after a free audit, because cost depends on the theme, number of templates, integrations, migration work and whether you sell to New Zealand. You receive a written scope with a fixed price before work starts. Shopify fees and paid apps are separate.' },
       { q: 'Can I hire a Shopify developer for my Australian store by the month?', a: 'Yes. You can hire a Shopify developer from our team on a monthly basis for an agreed number of days, buy a block of hours to draw down, or book a fixed project. All work happens in a duplicate theme or Git branch, and you approve changes before they go live.' },

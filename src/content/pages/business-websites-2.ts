@@ -5,14 +5,14 @@ export const businessWebsitePages2: ServicePageData[] = [
   {
     slug: 'website-maintenance-services',
     kind: 'service',
-    title: 'Website Maintenance Services in India | Magnus Path',
+    title: 'Website Maintenance Services in India | Billion Ecommerce Agency',
     description: 'Website maintenance services with monthly plans: updates, backups, uptime checks, security scans and content changes for WordPress, Shopify and business sites.',
     primaryKeyword: 'website maintenance services',
     navLabel: 'Website Maintenance Services',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
     eyebrow: 'Website maintenance · Monthly support plans',
     h1: 'Website Maintenance Services That *Keep Your Site Working*',
-    intro: 'Magnus Path offers website maintenance services for business websites, WordPress sites and Shopify stores. Each month we update software, take backups, watch uptime, scan for malware, check speed, renew SSL and domains on time and make your content changes, then send a short report on what we did and what needs attention.',
+    intro: 'Billion Ecommerce Agency offers website maintenance services for business websites, WordPress sites and Shopify stores. Each month we update software, take backups, watch uptime, scan for malware, check speed, renew SSL and domains on time and make your content changes, then send a short report on what we did and what needs attention.',
     icon: 'seo',
     facts: ['Free site health check first', 'Monthly report in plain English', 'Reply within one working day'],
     headings: {
@@ -153,14 +153,14 @@ export const businessWebsitePages2: ServicePageData[] = [
   {
     slug: 'chennai/website-development-company',
     kind: 'location',
-    title: 'Website & Web Development Company in Chennai | Magnus Path',
+    title: 'Website & Web Development Company in Chennai',
     description: 'Website and web development company in Chennai building business, corporate and WordPress sites. Fixed written quotes, Tamil and English content, in-person meetings.',
     primaryKeyword: 'website development company in chennai',
     navLabel: 'Website Development Company in Chennai',
     breadcrumb: [{ label: 'Websites', href: '/ecommerce-website-development/' }],
     eyebrow: 'Web design and development · Chennai',
     h1: 'Website Development Company in Chennai for *Growing Businesses*',
-    intro: 'Magnus Path is a website development company in Chennai that designs and builds business websites, corporate sites, WordPress sites and landing pages for local firms. As a web development company in Chennai, we give manufacturers, clinics, schools, builders, consultants and retailers a site that explains what they do, brings in enquiries and is easy to keep up to date.',
+    intro: 'Billion Ecommerce Agency is a website development company in Chennai that designs and builds business websites, corporate sites, WordPress sites and landing pages for local firms. As a web development company in Chennai, we give manufacturers, clinics, schools, builders, consultants and retailers a site that explains what they do, brings in enquiries and is easy to keep up to date.',
     icon: 'website',
     facts: ['Fixed written quote', 'Tamil and English content', 'Meetings at your office'],
     headings: {

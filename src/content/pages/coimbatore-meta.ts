@@ -5,14 +5,14 @@ export const coimbatoreMetaPages: ServicePageData[] = [
   {
     slug: 'coimbatore/ecommerce-meta-ads-agency',
     kind: 'location',
-    title: 'Ecommerce Meta Ads Agency in Coimbatore | Magnus Path',
+    title: 'Ecommerce Meta Ads Agency in Coimbatore',
     description: 'Ecommerce Meta ads agency in Coimbatore for apparel, knitwear and jewellery stores: feed fixes, catalogue ads, UGC tests and ROAS counted after COD and RTO.',
     primaryKeyword: 'ecommerce Meta ads agency in Coimbatore',
     navLabel: 'Ecommerce Meta Ads Coimbatore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Store ads for Coimbatore brands · Served from Chennai',
     h1: 'Ecommerce Meta Ads Agency in Coimbatore for *Stores That Ship*',
-    intro: 'Magnus Path is an ecommerce Meta ads agency in Coimbatore for brands that sell knitwear, apparel, jewellery and home products from their own online store. We repair product feeds, run catalogue and Advantage+ sales campaigns, test UGC creatives in Tamil and English, and count profit only on orders that are delivered and paid. Coimbatore stores are served from our Chennai head office.',
+    intro: 'Billion Ecommerce Agency is an ecommerce Meta ads agency in Coimbatore for brands that sell knitwear, apparel, jewellery and home products from their own online store. We repair product feeds, run catalogue and Advantage+ sales campaigns, test UGC creatives in Tamil and English, and count profit only on orders that are delivered and paid. Coimbatore stores are served from our Chennai head office.',
     icon: 'social',
     facts: ['Free store and feed audit', 'Profit counted on delivered orders', 'Served from our Chennai office'],
     headings: {
@@ -140,14 +140,14 @@ export const coimbatoreMetaPages: ServicePageData[] = [
   {
     slug: 'coimbatore/meta-ads-agency',
     kind: 'location',
-    title: 'Meta Ads Agency in Coimbatore: Instagram & WhatsApp | Magnus Path',
+    title: 'Meta Ads Agency in Coimbatore: Instagram & WhatsApp',
     description: 'Meta ads agency in Coimbatore covering Facebook, Instagram Reels, Messenger and WhatsApp click-to-chat, with clean Business Suite set-up and Conversions API.',
     primaryKeyword: 'Meta ads agency in Coimbatore',
     navLabel: 'Meta Ads Agency Coimbatore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'The full Meta platform for Coimbatore brands',
     h1: 'Meta Ads Agency in Coimbatore Across *Every Meta App*',
-    intro: 'Magnus Path is a Meta ads agency in Coimbatore for brands that want one plan across Facebook, Instagram, Messenger and WhatsApp. We build a clean account structure in Meta Business Suite, set up Events Manager and the Conversions API, and run Reels, Stories and click-to-chat campaigns for textile labels, jewellers, colleges and hospitals. We work from our Chennai head office.',
+    intro: 'Billion Ecommerce Agency is a Meta ads agency in Coimbatore for brands that want one plan across Facebook, Instagram, Messenger and WhatsApp. We build a clean account structure in Meta Business Suite, set up Events Manager and the Conversions API, and run Reels, Stories and click-to-chat campaigns for textile labels, jewellers, colleges and hospitals. We work from our Chennai head office.',
     icon: 'social',
     facts: ['Free Meta account audit', 'Business portfolio stays yours', 'Tamil and English creatives'],
     headings: {
@@ -268,14 +268,14 @@ export const coimbatoreMetaPages: ServicePageData[] = [
   {
     slug: 'coimbatore/facebook-ads-agency',
     kind: 'location',
-    title: 'Facebook Ads Agency in Coimbatore for Leads | Magnus Path',
+    title: 'Facebook Ads Agency in Coimbatore for Leads',
     description: 'Facebook ads agency in Coimbatore for hospitals, coaching centres, jewellers and pump makers: lead forms that filter, local audiences and leads judged on sales.',
     primaryKeyword: 'Facebook ads agency in Coimbatore',
     navLabel: 'Facebook Ads Agency Coimbatore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Facebook lead ads for Coimbatore businesses',
     h1: 'Facebook Ads Agency in Coimbatore for *Leads That Buy*',
-    intro: 'Magnus Path is a Facebook ads agency in Coimbatore for businesses that want enquiries, not likes: hospitals and clinics, coaching centres, jewellers, showrooms, and pump, motor and engineering manufacturers looking for dealers and B2B buyers. We build lead ads and instant forms that filter, choose placements carefully and judge every campaign on leads that became customers. We work from our Chennai head office.',
+    intro: 'Billion Ecommerce Agency is a Facebook ads agency in Coimbatore for businesses that want enquiries, not likes: hospitals and clinics, coaching centres, jewellers, showrooms, and pump, motor and engineering manufacturers looking for dealers and B2B buyers. We build lead ads and instant forms that filter, choose placements carefully and judge every campaign on leads that became customers. We work from our Chennai head office.',
     icon: 'social',
     facts: ['Free lead ads audit', 'Leads judged on real sales', 'Tamil and English lead forms'],
     headings: {
@@ -308,7 +308,7 @@ export const coimbatoreMetaPages: ServicePageData[] = [
     local: {
       city: 'Coimbatore',
       areas: ['Ganapathy', 'Thudiyalur', 'Singanallur', 'Ukkadam', 'Kuniyamuthur', 'Kalapatti', 'Saibaba Colony', 'Gandhipuram', 'Ondipudur'],
-      note: 'There is no Magnus Path office in Coimbatore. We run Facebook campaigns for Coimbatore, Tiruppur, Erode and Pollachi businesses from our Chennai head office, using video calls and WhatsApp, and visit in person when a project needs it, for example to train a sales team on lead follow-up.',
+      note: 'There is no Billion Ecommerce Agency office in Coimbatore. We run Facebook campaigns for Coimbatore, Tiruppur, Erode and Pollachi businesses from our Chennai head office, using video calls and WhatsApp, and visit in person when a project needs it, for example to train a sales team on lead follow-up.',
     },
     figures: [
       { type: 'mindmap', caption: 'The four parts of a Facebook lead campaign that decide whether leads turn into customers.', after: 0, center: 'Facebook leads that buy', branches: [
@@ -401,14 +401,14 @@ export const coimbatoreMetaPages: ServicePageData[] = [
   {
     slug: 'coimbatore/facebook-advertising-agencies',
     kind: 'location',
-    title: 'Facebook Advertising Agencies in Coimbatore | Magnus Path',
+    title: 'Facebook Advertising Agencies in Coimbatore',
     description: 'Comparing Facebook advertising agencies in Coimbatore? Agency types, questions to ask, red flags, what a real audit covers and who should own your ad account.',
     primaryKeyword: 'Facebook advertising agencies in Coimbatore',
     navLabel: 'Compare Facebook Advertising Coimbatore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Choosing help with Facebook ads in Coimbatore',
     h1: 'Facebook Advertising Agencies in Coimbatore: *How to Choose*',
-    intro: 'If you are comparing Facebook advertising agencies in Coimbatore, this page explains the kinds of help on offer, how to compare them fairly, the questions to ask, the warning signs and what a proper audit covers. It ends with how Magnus Path works, from our Chennai head office. Use the checklist whether or not you hire us.',
+    intro: 'If you are comparing Facebook advertising agencies in Coimbatore, this page explains the kinds of help on offer, how to compare them fairly, the questions to ask, the warning signs and what a proper audit covers. It ends with how Billion Ecommerce Agency works, from our Chennai head office. Use the checklist whether or not you hire us.',
     icon: 'social',
     facts: ['Free, written ads audit', 'Accounts stay in your name', 'No lock-in on ad assets'],
     headings: {
@@ -440,7 +440,7 @@ export const coimbatoreMetaPages: ServicePageData[] = [
     local: {
       city: 'Coimbatore',
       areas: ['Race Course', 'Peelamedu', 'Town Hall', 'Vadavalli', 'RS Puram', 'Avinashi Road', 'Saravanampatti', 'Kovaipudur', 'Ganapathy', 'Hope College'],
-      note: 'Magnus Path does not have a Coimbatore office. We serve Coimbatore businesses from our Chennai head office through video calls, shared reports and WhatsApp, and come to Coimbatore for planned visits when a project needs them. Our other offices are in Bengaluru and London.',
+      note: 'Billion Ecommerce Agency does not have a Coimbatore office. We serve Coimbatore businesses from our Chennai head office through video calls, shared reports and WhatsApp, and come to Coimbatore for planned visits when a project needs them. Our other offices are in Bengaluru and London.',
     },
     figures: [
       { type: 'mindmap', caption: 'The four kinds of Facebook ads help a Coimbatore business is likely to be offered.', after: 0, center: 'Who can run your ads', branches: [
@@ -517,7 +517,7 @@ export const coimbatoreMetaPages: ServicePageData[] = [
         heading: 'Contracts, account ownership and how we work',
         paragraphs: [
           'A fair contract lists scope, creatives per month, reporting, meetings, notice period and exclusions. Ad spend should be paid directly to Meta from your own account, with the management fee shown separately. Everything you paid for, including creatives and data, should stay with you if you leave.',
-          'Among Facebook advertising agencies in Coimbatore, Magnus Path is unusual in one way: we have no office in the city. We serve Coimbatore from our Chennai head office, by video call and WhatsApp, and visit when a project needs it. If you are weighing Facebook advertising agencies in Coimbatore, start with our free written audit; our fee is quoted only after it. Whichever partner you choose, keep the checklist on this page and revisit it after the first three months.',
+          'Among Facebook advertising agencies in Coimbatore, Billion Ecommerce Agency is unusual in one way: we have no office in the city. We serve Coimbatore from our Chennai head office, by video call and WhatsApp, and visit when a project needs it. If you are weighing Facebook advertising agencies in Coimbatore, start with our free written audit; our fee is quoted only after it. Whichever partner you choose, keep the checklist on this page and revisit it after the first three months.',
         ],
       },
     ],
@@ -535,7 +535,7 @@ export const coimbatoreMetaPages: ServicePageData[] = [
       { q: 'Is a freelancer or an agency better for Facebook ads?', a: 'It depends on your budget and how complex your sales are. A freelancer can suit one simple local offer. A specialist team suits businesses that need steady creative testing, tracking work and cover during busy seasons. Many businesses combine outside ad management with in-house staff who handle leads and customer follow-up.' },
       { q: 'What are the red flags when hiring help with Facebook ads?', a: 'Running ads from the agency’s own ad account, asking for your password instead of partner access, promising a fixed number of leads or a set return before seeing your account, long lock-ins without exit terms, and reports that show only reach and likes. Each one makes it harder to see or control your results.' },
       { q: 'Who should own our Facebook ad account and page?', a: 'Your business should. The ad account, page, Instagram account, pixel and business portfolio (previously Business Manager) should sit in your company’s name, with at least two admins from your side. Any agency should work through partner access you can remove, and creatives and data should stay with you if you part ways.' },
-      { q: 'Does Magnus Path have an office in Coimbatore?', a: 'No. We serve Coimbatore from our Chennai head office, and our other offices are in Bengaluru and London. Work happens over video calls, shared reports and WhatsApp, and we make planned visits to Coimbatore when a project needs them, such as a kick-off or a creative shoot.' },
+      { q: 'Does Billion Ecommerce Agency have an office in Coimbatore?', a: 'No. We serve Coimbatore from our Chennai head office, and our other offices are in Bengaluru and London. Work happens over video calls, shared reports and WhatsApp, and we make planned visits to Coimbatore when a project needs them, such as a kick-off or a creative shoot.' },
     ],
   },
 ];

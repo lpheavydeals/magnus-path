@@ -5,14 +5,14 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
   {
     slug: 'coimbatore/supplement-marketing-agency',
     kind: 'location',
-    title: 'Supplement Marketing Agency in Coimbatore | Magnus Path',
+    title: 'Supplement Marketing Agency in Coimbatore',
     description: 'Supplement marketing agency in Coimbatore for millet, health mix, coconut and protein brands: claim-safe Kongu Tamil ads, marketplace listings and refill journeys.',
     primaryKeyword: 'supplement marketing agency in Coimbatore',
     navLabel: 'Supplements Coimbatore',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Millet, health mix and nutrition brands · Served from Chennai',
     h1: 'Supplement Marketing Agency in Coimbatore for *Kongu Nutrition* Brands',
-    intro: 'Magnus Path is a supplement marketing agency in Coimbatore for brands built on millets, health mixes, coconut products, turmeric and protein. We turn trade-style product pages into clear, claim-safe listings, write Kongu Tamil and English ads, sell on Amazon, Flipkart and quick commerce, and keep buyers refilling through WhatsApp. Our Chennai team works with you over video calls.',
+    intro: 'Billion Ecommerce Agency is a supplement marketing agency in Coimbatore for brands built on millets, health mixes, coconut products, turmeric and protein. We turn trade-style product pages into clear, claim-safe listings, write Kongu Tamil and English ads, sell on Amazon, Flipkart and quick commerce, and keep buyers refilling through WhatsApp. Our Chennai team works with you over video calls.',
     icon: 'social',
     facts: ['Kongu Tamil and English ads', 'Food, supplement and AYUSH kept apart', 'Served from our Chennai head office'],
     headings: {
@@ -44,7 +44,7 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
     local: {
       city: 'Coimbatore',
       areas: ['RS Puram', 'Saibaba Colony', 'Peelamedu', 'Saravanampatti', 'Vadavalli', 'Singanallur', 'Ganapathy', 'Kovaipudur', 'Sundarapuram'],
-      note: 'There is no Magnus Path office in Coimbatore. Nutrition brands from the city, Pollachi, Erode and Tiruppur are looked after by our Chennai head-office team, who meet you on video calls and stay reachable on WhatsApp. When a project calls for it, such as a product shoot or a label review at your unit, the team comes to Coimbatore.',
+      note: 'There is no Billion Ecommerce Agency office in Coimbatore. Nutrition brands from the city, Pollachi, Erode and Tiruppur are looked after by our Chennai head-office team, who meet you on video calls and stay reachable on WhatsApp. When a project calls for it, such as a product shoot or a label review at your unit, the team comes to Coimbatore.',
     },
     figures: [
       { type: 'mindmap', caption: 'Product families a Coimbatore-region nutrition brand often sells, each with its own wording rules.', after: 0, center: 'Kongu nutrition online', branches: [
@@ -136,14 +136,14 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
   {
     slug: 'coimbatore/home-decor-marketing-agency',
     kind: 'location',
-    title: 'Home Decor Marketing Agency in Coimbatore | Magnus Path',
+    title: 'Home Decor Marketing Agency in Coimbatore',
     description: 'Home decor marketing agency in Coimbatore for bedsheet, towel and curtain makers from Karur and Erode: D2C stores, marketplace listings and Tamil and English ads.',
     primaryKeyword: 'home decor marketing agency in Coimbatore',
     navLabel: 'Home Decor Coimbatore',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Home textiles and furnishings · Served from Chennai',
     h1: 'Home Decor Marketing Agency in Coimbatore for *Home Textile* Makers',
-    intro: 'Magnus Path is a home decor marketing agency in Coimbatore for makers of bedsheets, towels, curtains, cushion covers and table linen from Coimbatore, Karur and Erode. We help export and wholesale firms launch their own online brand, photograph fabric so colour and weave come through, list on Amazon and Flipkart, and run Tamil and English ads. Our Chennai team works with you remotely.',
+    intro: 'Billion Ecommerce Agency is a home decor marketing agency in Coimbatore for makers of bedsheets, towels, curtains, cushion covers and table linen from Coimbatore, Karur and Erode. We help export and wholesale firms launch their own online brand, photograph fabric so colour and weave come through, list on Amazon and Flipkart, and run Tamil and English ads. Our Chennai team works with you remotely.',
     icon: 'website',
     facts: ['Built for export and wholesale makers', 'Tamil and English creative', 'Free audit first'],
     headings: {
@@ -175,7 +175,7 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
     local: {
       city: 'Coimbatore',
       areas: ['Gandhipuram', 'RS Puram', 'Avinashi Road', 'Peelamedu', 'Saravanampatti', 'Singanallur', 'Ukkadam', 'Town Hall', 'Sulur'],
-      note: 'Magnus Path has no Coimbatore office. Home textile makers across Coimbatore, Karur and Erode are served by our Chennai head-office team on video calls and WhatsApp, and the team travels to the region when a project needs it, such as a fabric shoot at your unit or a launch planning day.',
+      note: 'Billion Ecommerce Agency has no Coimbatore office. Home textile makers across Coimbatore, Karur and Erode are served by our Chennai head-office team on video calls and WhatsApp, and the team travels to the region when a project needs it, such as a fabric shoot at your unit or a launch planning day.',
     },
     figures: [
       { type: 'matrix', caption: 'Where a Karur or Coimbatore home textile maker should sell each kind of product online.', after: 1, cols: ['Everyday basics', 'Gift and festive sets'], rows: ['Price-led buyers', 'Quality-led buyers'], cells: [
@@ -267,14 +267,14 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
   {
     slug: 'coimbatore/baby-products-marketing-agency',
     kind: 'location',
-    title: 'Baby Products Marketing Agency in Coimbatore | Magnus Path',
+    title: 'Baby Products Marketing Agency in Coimbatore',
     description: 'Baby products marketing agency in Coimbatore for Tiruppur babywear and kidswear makers: safety-first pages, measured size guides, Tamil ads and gifting seasons.',
     primaryKeyword: 'baby products marketing agency in Coimbatore',
     navLabel: 'Baby Products Coimbatore',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Babywear, kidswear and baby care · Served from Chennai',
     h1: 'Baby Products Marketing Agency in Coimbatore for *Babywear and Kidswear*',
-    intro: 'Magnus Path is a baby products marketing agency in Coimbatore for babywear, kidswear and baby care brands, many of them built on Tiruppur knitting and Coimbatore cotton. We write calm, safety-first product pages, build measured size guides, run Tamil and English ads for parents and grandparents, and plan for naming ceremonies, birthdays and school reopening. Our Chennai team works with you remotely.',
+    intro: 'Billion Ecommerce Agency is a baby products marketing agency in Coimbatore for babywear, kidswear and baby care brands, many of them built on Tiruppur knitting and Coimbatore cotton. We write calm, safety-first product pages, build measured size guides, run Tamil and English ads for parents and grandparents, and plan for naming ceremonies, birthdays and school reopening. Our Chennai team works with you remotely.',
     icon: 'social',
     facts: ['Pages parents can trust', 'Ads for parents and gift buyers', 'Served from our Chennai head office'],
     headings: {
@@ -397,14 +397,14 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
   {
     slug: 'coimbatore/pet-brand-marketing-agency',
     kind: 'location',
-    title: 'Pet Brand Marketing Agency in Coimbatore | Magnus Path',
+    title: 'Pet Brand Marketing Agency in Coimbatore',
     description: 'Pet brand marketing agency in Coimbatore for pet food, treat and care makers: ingredient-first pages, vet-reviewed content, Tamil ads and repeat-order journeys.',
     primaryKeyword: 'pet brand marketing agency in Coimbatore',
     navLabel: 'Pet Brands Coimbatore',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Pet food, treats and care · Served from Chennai',
     h1: 'Pet Brand Marketing Agency in Coimbatore for *Food and Treat* Makers',
-    intro: 'Magnus Path is a pet brand marketing agency in Coimbatore for pet food, treat, grooming and accessory brands across the Kongu region. We help makers with roots in dairy, poultry and food processing build a consumer brand: ingredient-first pages, Tamil and English ads for pet parents, Amazon, Flipkart and quick-commerce listings, and reorder journeys on WhatsApp. Our Chennai team works with you remotely.',
+    intro: 'Billion Ecommerce Agency is a pet brand marketing agency in Coimbatore for pet food, treat, grooming and accessory brands across the Kongu region. We help makers with roots in dairy, poultry and food processing build a consumer brand: ingredient-first pages, Tamil and English ads for pet parents, Amazon, Flipkart and quick-commerce listings, and reorder journeys on WhatsApp. Our Chennai team works with you remotely.',
     icon: 'social',
     facts: ['Ingredient-first pages', 'Tamil and English creative', 'Free audit first'],
     headings: {
@@ -436,7 +436,7 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
     local: {
       city: 'Coimbatore',
       areas: ['RS Puram', 'Race Course', 'Saibaba Colony', 'Peelamedu', 'Saravanampatti', 'Vadavalli', 'Singanallur', 'Kovaipudur', 'Thudiyalur'],
-      note: 'Magnus Path has no office in Coimbatore. Pet brands in Coimbatore, Erode and Namakkal are run by our Chennai head-office team through scheduled video calls and a shared WhatsApp group. Someone from the team makes the trip to Coimbatore when the work needs it, for example a shoot with real pets or a sampling launch.',
+      note: 'Billion Ecommerce Agency has no office in Coimbatore. Pet brands in Coimbatore, Erode and Namakkal are run by our Chennai head-office team through scheduled video calls and a shared WhatsApp group. Someone from the team makes the trip to Coimbatore when the work needs it, for example a shoot with real pets or a sampling launch.',
     },
     figures: [
       { type: 'venn', caption: 'A pet food page earns trust when what the maker knows meets what the owner needs.', after: 1, left: { title: 'What the maker knows', body: 'Sourcing, recipe, processing and quality checks' }, right: { title: 'What the owner asks', body: 'Will my dog eat it, is it safe, how much to feed' }, overlap: 'Ingredient page and feeding chart' },
@@ -523,14 +523,14 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
   {
     slug: 'coimbatore/footwear-marketing-agency',
     kind: 'location',
-    title: 'Footwear Marketing Agency in Coimbatore | Magnus Path',
+    title: 'Footwear Marketing Agency in Coimbatore',
     description: 'Footwear marketing agency in Coimbatore for shoe, sandal and sports goods brands selling to Kongu buyers: size-fit pages, Tamil ads, Myntra and Amazon growth.',
     primaryKeyword: 'footwear marketing agency in Coimbatore',
     navLabel: 'Footwear Coimbatore',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Shoes, sandals and sports goods · Served from Chennai',
     h1: 'Footwear Marketing Agency in Coimbatore for *Shoe and Sports* Brands',
-    intro: 'Magnus Path is a footwear marketing agency in Coimbatore for shoe, sandal, school shoe, safety footwear and sports goods brands that sell to buyers across the Kongu region and beyond. We fix size and fit details, grow sales on Amazon, Flipkart, Myntra and Ajio, run Tamil and English ads, and cut returns and refused COD orders. Our Chennai team works with you remotely.',
+    intro: 'Billion Ecommerce Agency is a footwear marketing agency in Coimbatore for shoe, sandal, school shoe, safety footwear and sports goods brands that sell to buyers across the Kongu region and beyond. We fix size and fit details, grow sales on Amazon, Flipkart, Myntra and Ajio, run Tamil and English ads, and cut returns and refused COD orders. Our Chennai team works with you remotely.',
     icon: 'marketplace',
     facts: ['Fewer size returns', 'Profit counted after COD refusals', 'Served from our Chennai head office'],
     headings: {
@@ -654,14 +654,14 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
   {
     slug: 'coimbatore/electronics-marketing-agency',
     kind: 'location',
-    title: 'Consumer Electronics Marketing Agency in Coimbatore | Magnus Path',
+    title: 'Consumer Electronics Marketing Agency in Coimbatore',
     description: 'Consumer electronics marketing agency in Coimbatore for wet grinder, mixer, pump and motor makers moving to D2C: demo videos, Tamil ads and Amazon growth.',
     primaryKeyword: 'consumer electronics marketing agency in Coimbatore',
     navLabel: 'Electronics Coimbatore',
     breadcrumb: [{ label: 'Industries', href: '/industries/' }],
     eyebrow: 'Appliances, pumps and motors · Served from Chennai',
     h1: 'Consumer Electronics Marketing Agency in Coimbatore for *Appliance Makers*',
-    intro: 'Magnus Path is a consumer electronics marketing agency in Coimbatore for makers of wet grinders, mixer grinders, kitchen appliances, domestic pumps and motors that want to sell direct to households. We build spec-clear product pages and demo videos, grow Amazon and Flipkart sales, run Tamil and English ads, and make warranty and service details easy to find. Our Chennai team works with you remotely.',
+    intro: 'Billion Ecommerce Agency is a consumer electronics marketing agency in Coimbatore for makers of wet grinders, mixer grinders, kitchen appliances, domestic pumps and motors that want to sell direct to households. We build spec-clear product pages and demo videos, grow Amazon and Flipkart sales, run Tamil and English ads, and make warranty and service details easy to find. Our Chennai team works with you remotely.',
     icon: 'amazon',
     facts: ['Built for B2B makers going D2C', 'Demo videos and Tamil explainers', 'Free audit first'],
     headings: {
@@ -693,7 +693,7 @@ export const coimbatoreIndustryProductsPages: ServicePageData[] = [
     local: {
       city: 'Coimbatore',
       areas: ['Ganapathy', 'Kurichi', 'Peelamedu', 'Thudiyalur', 'Singanallur', 'Avinashi Road', 'Saravanampatti', 'Kalapatti', 'Malumichampatti'],
-      note: 'Magnus Path does not have an office in Coimbatore. Appliance, pump and motor makers in the city and its industrial estates are served by our Chennai head-office team over video calls and WhatsApp. We come to Coimbatore when a project needs a visit, most often to film demo videos on your factory floor.',
+      note: 'Billion Ecommerce Agency does not have an office in Coimbatore. Appliance, pump and motor makers in the city and its industrial estates are served by our Chennai head-office team over video calls and WhatsApp. We come to Coimbatore when a project needs a visit, most often to film demo videos on your factory floor.',
     },
     figures: [
       { type: 'mindmap', caption: 'What a Coimbatore appliance or pump brand needs online before ads can pay.', after: 0, center: 'Appliance brand online', branches: [

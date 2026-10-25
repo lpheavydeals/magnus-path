@@ -20,7 +20,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Online stores only · Arabic-first catalogue · Advantage+ sales · COD-aware ROAS · UGC',
     h1: 'Ecommerce Meta Ads Agency in Abu Dhabi for *Stores That Sell in Two Languages*',
-    intro: 'Looking for an ecommerce Meta ads agency in Abu Dhabi that understands Arabic-first shoppers? Magnus Path runs Meta ads for online stores from our Chennai head office, serving the capital remotely. We clean your catalogue in Arabic and English, run Advantage+ sales and catalogue campaigns, test UGC video weekly and report ROAS separately for card and cash-on-delivery orders.',
+    intro: 'Looking for an ecommerce Meta ads agency in Abu Dhabi that understands Arabic-first shoppers? Billion Ecommerce Agency runs Meta ads for online stores from our Chennai head office, serving the capital remotely. We clean your catalogue in Arabic and English, run Advantage+ sales and catalogue campaigns, test UGC video weekly and report ROAS separately for card and cash-on-delivery orders.',
     icon: 'social',
     facts: ['Arabic and English catalogue', 'Prepaid and COD ROAS reported', 'Free audit, then AED quote'],
     headings: {
@@ -125,7 +125,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
         heading: 'The Abu Dhabi selling calendar and how we work remotely',
         paragraphs: [
           'Demand here follows the weather as much as the shopping calendar. Summer is quieter as many families travel, while the cooler months from autumn into spring bring the busiest trading. Ramadan moves browsing late into the night and leads into Eid gifting, and UAE National Day on 2 December brings patriotic ranges and gift sets. Build creative and product sets weeks before each moment, and raise budgets gradually.',
-          'Magnus Path has no office in the UAE. Your account is run from our Chennai head office, and because the UAE is 1.5 hours behind India, our working days overlap almost entirely. Reviews and planning take place over video, never face to face in Abu Dhabi. When you speak to any ecommerce Meta ads agency in Abu Dhabi, ask how it will report paid orders rather than placed ones.',
+          'Billion Ecommerce Agency has no office in the UAE. Your account is run from our Chennai head office, and because the UAE is 1.5 hours behind India, our working days overlap almost entirely. Reviews and planning take place over video, never face to face in Abu Dhabi. When you speak to any ecommerce Meta ads agency in Abu Dhabi, ask how it will report paid orders rather than placed ones.',
         ],
       },
     ],
@@ -151,7 +151,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
       { q: 'Do Advantage+ sales campaigns work for smaller stores?', a: 'They can, once the pixel and Conversions API record purchases reliably and there are enough orders each week for Meta to learn from. With very few sales, a simpler manual set-up is often easier to read. We check your purchase volume during the audit and recommend a structure to match it.' },
       { q: 'Can you target shoppers in Al Ain separately?', a: 'Yes. Al Ain can run as its own audience, with location targeting, its own product sets and delivery messages that match what you can actually fulfil there. Keeping it apart also shows whether those shoppers respond differently, instead of letting results from the capital hide them.' },
       { q: 'When should we raise budgets during the year?', a: 'Most Abu Dhabi stores see quieter summers and busier cooler months, with Ramadan, Eid and UAE National Day as extra gifting moments. Raise spend a few weeks before each peak so campaigns learn early, and use the summer to test creative and fix the catalogue while auctions are calmer.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE. Your store’s ads are managed remotely from our Chennai head office. With the UAE just 1.5 hours behind India, our hours and yours run almost side by side. Every meeting is a video call; we do not meet clients in person in Abu Dhabi.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office in the UAE. Your store’s ads are managed remotely from our Chennai head office. With the UAE just 1.5 hours behind India, our hours and yours run almost side by side. Every meeting is a video call; we do not meet clients in person in Abu Dhabi.' },
     ],
   },
 
@@ -167,7 +167,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Four Meta apps · Business Suite roles · Conversions API · WhatsApp in Arabic and English · Al Ain',
     h1: 'Meta Ads Agency in Abu Dhabi for *Arabic and English* Audiences',
-    intro: 'Choosing a Meta ads agency in Abu Dhabi means trusting one team with Facebook, Instagram, Messenger and WhatsApp at once. Magnus Path manages all four remotely from our Chennai head office. We organise your Meta Business Suite so the right people approve and own each asset, send events through the Conversions API, and plan Advantage+ and WhatsApp chat campaigns for Arabic-first and expat audiences.',
+    intro: 'Choosing a Meta ads agency in Abu Dhabi means trusting one team with Facebook, Instagram, Messenger and WhatsApp at once. Billion Ecommerce Agency manages all four remotely from our Chennai head office. We organise your Meta Business Suite so the right people approve and own each asset, send events through the Conversions API, and plan Advantage+ and WhatsApp chat campaigns for Arabic-first and expat audiences.',
     icon: 'social',
     facts: ['All four Meta apps planned together', 'Arabic checked by a fluent writer', 'Free audit, quote in AED'],
     headings: {
@@ -200,7 +200,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
     local: {
       city: 'Abu Dhabi',
       areas: ['Yas Island', 'Saadiyat Island', 'Al Maryah Island', 'Corniche', 'Al Reem Island', 'Al Raha', 'Masdar City', 'Al Bateen', 'Al Ain'],
-      note: 'Magnus Path keeps no office anywhere in the UAE. Organisations across Abu Dhabi, from Al Maryah Island to Al Ain, are served remotely from our Chennai head office. With the UAE 1.5 hours behind India our days overlap closely; planning, approvals and reviews run on video calls, with no in-person meetings in Abu Dhabi.',
+      note: 'Billion Ecommerce Agency keeps no office anywhere in the UAE. Organisations across Abu Dhabi, from Al Maryah Island to Al Ain, are served remotely from our Chennai head office. With the UAE 1.5 hours behind India our days overlap closely; planning, approvals and reviews run on video calls, with no in-person meetings in Abu Dhabi.',
     },
     figures: [
       { type: 'mindmap', caption: 'The jobs each Meta app can do for an Abu Dhabi business, all bought through one ad account.', center: 'One account, four apps', after: 0, branches: [
@@ -313,7 +313,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Instant forms in two languages · Area targeting · Lead outcomes · Placements · Comments',
     h1: 'Facebook Ads Agency in Abu Dhabi for *Service Businesses*',
-    intro: 'A Facebook ads agency in Abu Dhabi should know whether your leads come from the areas you actually serve. Magnus Path runs Facebook lead campaigns remotely from our Chennai head office for clinics, home services, tutors and local shops. We build Arabic and English instant forms, target the districts you cover, track which leads become customers and moderate your comments.',
+    intro: 'A Facebook ads agency in Abu Dhabi should know whether your leads come from the areas you actually serve. Billion Ecommerce Agency runs Facebook lead campaigns remotely from our Chennai head office for clinics, home services, tutors and local shops. We build Arabic and English instant forms, target the districts you cover, track which leads become customers and moderate your comments.',
     icon: 'social',
     facts: ['Forms in Arabic and English', 'Leads judged on real customers', 'Free audit, quote in AED'],
     headings: {
@@ -452,12 +452,12 @@ export const abuDhabiMetaPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Agency types · Scoring checklist · Questions · Red flags · Audits · Contracts and ownership',
     h1: 'Facebook Advertising Agencies in Abu Dhabi: *How to Choose*',
-    intro: 'Shortlisting Facebook advertising agencies in Abu Dhabi takes more than reading proposals. This guide sets out the kinds of agency available, a simple way to score them, the questions and red flags that matter here, what a real audit contains and how contracts should protect your accounts. Magnus Path serves Abu Dhabi remotely from our Chennai head office; how we work comes last.',
+    intro: 'Shortlisting Facebook advertising agencies in Abu Dhabi takes more than reading proposals. This guide sets out the kinds of agency available, a simple way to score them, the questions and red flags that matter here, what a real audit contains and how contracts should protect your accounts. Billion Ecommerce Agency serves Abu Dhabi remotely from our Chennai head office; how we work comes last.',
     icon: 'social',
     facts: ['Ad accounts stay in your name', 'Written audit before any quote', 'Scope and AED quote in writing'],
     headings: {
       pains: 'Why choosing an ad agency in Abu Dhabi goes wrong',
-      includes: 'What working with Magnus Path includes',
+      includes: 'What working with Billion Ecommerce Agency includes',
       process: 'How we start with an Abu Dhabi client in *4 steps*',
       guide: 'Choosing between Facebook advertising agencies in Abu Dhabi',
     },
@@ -485,7 +485,7 @@ export const abuDhabiMetaPages: ServicePageData[] = [
     local: {
       city: 'Abu Dhabi',
       areas: ['Al Maryah Island', 'Corniche', 'Al Khalidiyah', 'Al Reem Island', 'Al Zahiyah', 'Masdar City', 'Khalifa City', 'Saadiyat Island', 'Al Ain'],
-      note: 'Magnus Path has no office in the UAE. Organisations across Abu Dhabi and Al Ain are served remotely from our Chennai head office; with the UAE 1.5 hours behind India, our working days overlap almost fully. Audits, proposals and reviews are presented on video calls, and we do not offer in-person meetings in Abu Dhabi.',
+      note: 'Billion Ecommerce Agency has no office in the UAE. Organisations across Abu Dhabi and Al Ain are served remotely from our Chennai head office; with the UAE 1.5 hours behind India, our working days overlap almost fully. Audits, proposals and reviews are presented on video calls, and we do not offer in-person meetings in Abu Dhabi.',
     },
     figures: [
       { type: 'mindmap', caption: 'Four things to weigh up before you hand your Facebook and Instagram ads to anyone in Abu Dhabi.', center: 'Comparing ad agencies', after: 0, branches: [
@@ -572,9 +572,9 @@ export const abuDhabiMetaPages: ServicePageData[] = [
         ],
       },
       {
-        heading: 'How Magnus Path works with Abu Dhabi organisations',
+        heading: 'How Billion Ecommerce Agency works with Abu Dhabi organisations',
         paragraphs: [
-          'Magnus Path may be on your list, so here is how we operate. We have no office in the UAE; Abu Dhabi clients are served remotely from our Chennai head office. The UAE is 1.5 hours behind India, so our working days overlap closely and meetings happen on video, not in person.',
+          'Billion Ecommerce Agency may be on your list, so here is how we operate. We have no office in the UAE; Abu Dhabi clients are served remotely from our Chennai head office. The UAE is 1.5 hours behind India, so our working days overlap closely and meetings happen on video, not in person.',
           'Work begins with a free audit, then a written AED quote. Meta charges ad spend to your organisation’s own ad account, and all assets are registered to you. Our scope follows what you sell: product catalogue campaigns for stores, Instagram and WhatsApp work for bookings and enquiries, or Facebook lead forms for service firms. Hold any of the Facebook advertising agencies in Abu Dhabi you meet, us included, to that same standard.',
         ],
       },

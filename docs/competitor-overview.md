@@ -20,7 +20,7 @@ differ slightly). For exact positions, run Semrush **Keyword Overview → SERP A
 1. **Competition is weaker than the volumes suggest.** Many top results are directories, self-ranking listicles, templated
    "city" pages from national agencies, or outright spam (forum posts, pastebins, AI-built sites). A genuine, in-depth page
    from a business with a real local office can beat these.
-2. **Directories rank for almost every keyword.** List Magnus Path on them so we show up inside those results too:
+2. **Directories rank for almost every keyword.** List Billion Ecommerce Agency on them so we show up inside those results too:
    Clutch, GoodFirms, Sortlist, DesignRush, hellodarwin, spurnow, Justdial (India) and Yell (UK).
 3. **Google Business Profiles matter.** Every city keyword shows a Maps pack; competitors with reviews win it. Set up
    Chennai, Bengaluru and London profiles and ask early clients for reviews.

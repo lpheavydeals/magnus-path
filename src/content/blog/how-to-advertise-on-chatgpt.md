@@ -1,12 +1,12 @@
 ---
 title: "How to Advertise on ChatGPT: OpenAI Ads Manager Guide (2026)"
-metaTitle: "How to Advertise on ChatGPT (2026 Guide) | Magnus Path"
+metaTitle: "How to Advertise on ChatGPT (2026 Guide) | Billion Ecommerce Agency"
 description: "How to advertise on ChatGPT in 2026: who is eligible, setting up OpenAI Ads Manager, objectives, contextual targeting, pixel tracking, policies and costs."
 primaryKeyword: "how to advertise on chatgpt"
 category: "Ads"
 publishDate: 2026-10-18
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "To advertise on ChatGPT, create an account in OpenAI Ads Manager at ads.openai.com, if your billing country is eligible. Choose an objective (reach on CPM or clicks on CPC), set a budget and bid, describe what you sell for contextual targeting, then build an ad with a headline, description, image and landing page. Install the OpenAI pixel and Conversions API, and start with a small test judged on cost per order."
 faqs:
   - q: "Can any business advertise on ChatGPT?"
@@ -180,6 +180,6 @@ Paid ads in ChatGPT put you next to the answer. [AI search optimization](/ai-sea
 
 You can learn how to advertise on ChatGPT and run it yourself, especially if you already manage Google or Meta campaigns in-house. Outside help makes sense when tracking is shaky, your category sits near a policy line, or you want ChatGPT judged fairly against your other channels on the same numbers.
 
-Magnus Path runs ChatGPT ads for brands in India, the US and the UK, inside the client's own Ads Manager account, alongside their Google and Meta campaigns. See our [ChatGPT ads agency service](/chatgpt-ads-agency/) or, for US businesses, our [US ChatGPT ads service](/us/chatgpt-ads-agency/).
+Billion Ecommerce Agency runs ChatGPT ads for brands in India, the US and the UK, inside the client's own Ads Manager account, alongside their Google and Meta campaigns. See our [ChatGPT ads agency service](/chatgpt-ads-agency/) or, for US businesses, our [US ChatGPT ads service](/us/chatgpt-ads-agency/).
 
 Whoever runs your account, the basics stay the same: confirm eligibility, set up tracking first, write ads for the conversation, start small and judge every result on cost per order.

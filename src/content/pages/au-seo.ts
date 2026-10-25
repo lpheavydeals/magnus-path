@@ -9,7 +9,7 @@ export const auSeoPages: ServicePageData[] = [
     kind: 'global',
     market: 'AU',
     twin: 'ecommerce-seo',
-    title: 'Ecommerce SEO Australia for Online Stores | Magnus Path',
+    title: 'Ecommerce SEO Australia for Online Stores',
     description: 'Ecommerce SEO for Australian online stores: collection pages, product schema, free listings, faceted navigation and local links. Quoted in AUD after an audit.',
     primaryKeyword: 'ecommerce SEO',
     navLabel: 'Ecommerce SEO Australia',
@@ -106,7 +106,7 @@ export const auSeoPages: ServicePageData[] = [
       {
         heading: 'Choosing an ecommerce SEO agency in Australia',
         paragraphs: [
-          'Whether you hire a local ecommerce SEO agency in Australia or an offshore team, the same questions apply. Magnus Path is a Chennai team with no Australian office. India is 4.5 hours behind Sydney and Melbourne in standard time, 5.5 in daylight saving and 2.5 behind Perth, so our day runs through your afternoon. We quote ecommerce SEO services in AUD after a free audit. Before you sign with anyone, ask:',
+          'Whether you hire a local ecommerce SEO agency in Australia or an offshore team, the same questions apply. Billion Ecommerce Agency is a Chennai team with no Australian office. India is 4.5 hours behind Sydney and Melbourne in standard time, 5.5 in daylight saving and 2.5 behind Perth, so our day runs through your afternoon. We quote ecommerce SEO services in AUD after a free audit. Before you sign with anyone, ask:',
         ],
         bullets: [
           'Who does the work each month, and can I talk to them?',
@@ -133,7 +133,7 @@ export const auSeoPages: ServicePageData[] = [
       { q: 'How do you handle Shopify Markets for Australia and New Zealand?', a: 'We check that each market has its own URLs, currency and en-AU or en-NZ hreflang tags, that the sitemaps include both versions and that Google indexes each one. We also make sure redirects based on location do not stop Googlebot from crawling either version.' },
       { q: 'How long does ecommerce SEO take to show results?', a: 'Technical fixes and better collection pages often show movement within two to four months. Competitive categories and link building take longer, often six to twelve months. We report monthly on which pages and searches are moving, so you can judge progress on evidence rather than promises.' },
       { q: 'How should I choose an ecommerce SEO agency in Australia?', a: 'Ask who does the work, how they handle filters and duplicate URLs on your platform, how they earn links and whether reports show organic revenue. Ask for sample reports and the first ninety days of work in writing. The answers matter more than whether the agency is local or offshore.' },
-      { q: 'Do you have an office in Australia?', a: 'No. Magnus Path is a Chennai team working remotely with Australian stores. India is 4.5 hours behind the east coast in standard time and 5.5 hours in daylight saving, so our working day runs through your afternoon. Calls fit your afternoon and replies arrive by your evening.' },
+      { q: 'Do you have an office in Australia?', a: 'No. Billion Ecommerce Agency is a Chennai team working remotely with Australian stores. India is 4.5 hours behind the east coast in standard time and 5.5 hours in daylight saving, so our working day runs through your afternoon. Calls fit your afternoon and replies arrive by your evening.' },
     ],
   },
 
@@ -143,14 +143,14 @@ export const auSeoPages: ServicePageData[] = [
     kind: 'global',
     market: 'AU',
     twin: 'white-label-seo',
-    title: 'White Label SEO Australia for Digital Agencies | Magnus Path',
+    title: 'White Label SEO Australia for Digital Agencies',
     description: 'White label SEO for Australian digital agencies: unbranded reports, NDAs, local SEO for your clients and work done through your afternoon. Quoted in AUD.',
     primaryKeyword: 'white label SEO',
     navLabel: 'White Label SEO Australia',
     breadcrumb: auBreadcrumb,
     eyebrow: 'For Australian digital agencies · Unbranded · NDA · Quoted in AUD',
     h1: 'White Label SEO for Australian Agencies, *Under Your Brand*',
-    intro: 'White label SEO from Magnus Path gives Australian digital agencies a delivery team without another hire. Our Chennai team handles audits, on-page work, Australian English content, link building and local SEO under your name. We sign an NDA, never contact your clients, and work through your afternoon and evening, so briefs sent after lunch are moving before you log off.',
+    intro: 'White label SEO from Billion Ecommerce Agency gives Australian digital agencies a delivery team without another hire. Our Chennai team handles audits, on-page work, Australian English content, link building and local SEO under your name. We sign an NDA, never contact your clients, and work through your afternoon and evening, so briefs sent after lunch are moving before you log off.',
     icon: 'seo',
     facts: ['NDA and unbranded reports', 'Local SEO for Australian clients', 'Quoted in AUD per site'],
     headings: {
@@ -265,7 +265,7 @@ export const auSeoPages: ServicePageData[] = [
       { q: 'How does the time difference work for agencies?', a: 'Our morning in Chennai is your early afternoon on the east coast, and our day runs into your evening. Send briefs before or after lunch and work is moving the same day. Calls fit your afternoon, and drafts usually arrive by your evening for review next morning.' },
       { q: 'How much does white label SEO cost for Australian agencies?', a: 'We quote per client site in AUD after reviewing the first site, because scope varies from a small local business to a large online store. You get a written monthly scope for each site, so you can set your own client pricing with a clear margin.' },
       { q: 'How do you handle client data and the Privacy Act?', a: 'We work through named user accounts rather than shared passwords, avoid customer personal data wherever SEO work allows, and remove access when a site leaves. We are not lawyers, so check your Privacy Act obligations for overseas providers with your own adviser.' },
-      { q: 'Do you have an office in Australia?', a: 'No. Magnus Path is a Chennai team working remotely with Australian agencies. We meet over video calls in your afternoon and run day-to-day work through your project board and a shared chat channel, with a named contact for each client site.' },
+      { q: 'Do you have an office in Australia?', a: 'No. Billion Ecommerce Agency is a Chennai team working remotely with Australian agencies. We meet over video calls in your afternoon and run day-to-day work through your project board and a shared chat channel, with a named contact for each client site.' },
     ],
   },
 
@@ -275,14 +275,14 @@ export const auSeoPages: ServicePageData[] = [
     kind: 'global',
     market: 'AU',
     twin: 'seo-outsourcing-india',
-    title: 'Outsource SEO Australia: Offshore SEO Team | Magnus Path',
+    title: 'Outsource SEO Australia: Offshore SEO Team',
     description: 'Outsource SEO from Australia to a Chennai team with a written monthly scope, itemised reports and accounts you own. For businesses and agencies, quoted in AUD.',
     primaryKeyword: 'outsource SEO',
     navLabel: 'SEO Outsourcing Australia',
     breadcrumb: auBreadcrumb,
     eyebrow: 'For Australian businesses and agencies · Offshore SEO team · AUD quotes',
     h1: 'Outsource SEO Without *Losing Sight* of the Work',
-    intro: 'If you want to outsource SEO from Australia, the real question is how much of the work you can see. Magnus Path gives Australian businesses and agencies an offshore SEO team in Chennai with a named manager, a written monthly scope and reports listing every task and link. You keep ownership of every account, and we quote in AUD after a free audit.',
+    intro: 'If you want to outsource SEO from Australia, the real question is how much of the work you can see. Billion Ecommerce Agency gives Australian businesses and agencies an offshore SEO team in Chennai with a named manager, a written monthly scope and reports listing every task and link. You keep ownership of every account, and we quote in AUD after a free audit.',
     icon: 'seo',
     facts: ['Written monthly scope', 'You own every account', 'Quoted in AUD after an audit'],
     headings: {
@@ -378,7 +378,7 @@ export const auSeoPages: ServicePageData[] = [
         heading: 'How the time difference works',
         paragraphs: [
           'India is 4.5 hours behind Sydney, Melbourne and Brisbane in standard time and 5.5 hours behind the states using daylight saving. Perth is 2.5 hours ahead of us. Our working morning is your early afternoon on the east coast, and our day runs through your afternoon and evening.',
-          'For most businesses that works well. Brief us in the morning, and the work is under way by early afternoon while you deal with customers. Calls fit your afternoon, questions sent after lunch are picked up the same day, and updates usually arrive by your evening. Magnus Path has no Australian office; we are a Chennai team and quote in AUD after a free audit, so you can compare us with local options before you outsource SEO.',
+          'For most businesses that works well. Brief us in the morning, and the work is under way by early afternoon while you deal with customers. Calls fit your afternoon, questions sent after lunch are picked up the same day, and updates usually arrive by your evening. Billion Ecommerce Agency has no Australian office; we are a Chennai team and quote in AUD after a free audit, so you can compare us with local options before you outsource SEO.',
         ],
       },
     ],
@@ -396,7 +396,7 @@ export const auSeoPages: ServicePageData[] = [
       { q: 'Who owns the accounts and content?', a: 'You do. Your domain, analytics, Search Console, Google Business Profile and CMS stay in your name, and we are added as users. Content written for you is yours. When an engagement ends, you remove our access and keep all your data, history and work.' },
       { q: 'How does the time difference with India work?', a: 'India is 4.5 hours behind the Australian east coast in standard time and 5.5 hours in daylight saving, and 2.5 hours behind Perth. Our day runs through your afternoon and evening, so calls fit your afternoon and replies usually arrive by your evening.' },
       { q: 'How much does SEO outsourcing cost in Australia?', a: 'We quote in AUD after a free audit, because scope depends on your site, competition and goals. You get a written monthly scope listing exactly what each month includes, so you can compare it fairly with local agencies or freelancers before committing.' },
-      { q: 'Do you have an office in Australia?', a: 'No. Magnus Path is a Chennai, India team working remotely with Australian businesses and agencies. We meet over video calls in your afternoon, run work through a shared task board and chat channel, and give every account a named manager.' },
+      { q: 'Do you have an office in Australia?', a: 'No. Billion Ecommerce Agency is a Chennai, India team working remotely with Australian businesses and agencies. We meet over video calls in your afternoon, run work through a shared task board and chat channel, and give every account a named manager.' },
     ],
   },
 ];

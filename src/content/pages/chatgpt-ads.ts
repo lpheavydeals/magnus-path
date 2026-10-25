@@ -4,14 +4,14 @@ export const chatgptAdsPages: ServicePageData[] = [
   {
     slug: 'chatgpt-ads-agency',
     kind: 'service',
-    title: 'ChatGPT Ads Agency for E-commerce & B2B | Magnus Path',
+    title: 'ChatGPT Ads Agency for E-commerce & B2B',
     description: 'ChatGPT ads agency in Chennai for Indian D2C brands, exporters and B2B firms. We set up OpenAI Ads Manager, tracking and careful tests judged on cost per order.',
     primaryKeyword: 'ChatGPT ads agency',
     navLabel: 'ChatGPT Ads',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'ChatGPT advertising · OpenAI Ads Manager',
     h1: 'ChatGPT Ads Agency for *Measured* Tests That Sell',
-    intro: 'Magnus Path is a ChatGPT ads agency that helps Indian D2C brands, exporters and B2B firms test advertising inside ChatGPT without guesswork. We set up your OpenAI Ads Manager account, pixel and Conversions API, write ads for conversational intent, and judge every rupee against your Meta and Google results, so budget goes where orders and leads actually come from.',
+    intro: 'Billion Ecommerce Agency is a ChatGPT ads agency that helps Indian D2C brands, exporters and B2B firms test advertising inside ChatGPT without guesswork. We set up your OpenAI Ads Manager account, pixel and Conversions API, write ads for conversational intent, and judge every rupee against your Meta and Google results, so budget goes where orders and leads actually come from.',
     icon: 'ai',
     facts: ['Set up in your own account', 'Pixel + Conversions API tracking', 'Same team as Meta & Google'],
     headings: {

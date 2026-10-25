@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 import { breadcrumbSchema } from '../../data/schema';
 const posts = (await getCollection('blog')).sort((a, b) => +b.data.publishDate - +a.data.publishDate);
 ---
-<Base title="E-commerce Growth Guides | Magnus Path Blog" description="Practical guides on e-commerce websites, Amazon and Flipkart ads, SEO and export marketing for Indian brands and manufacturers." schema={[breadcrumbSchema([{ label: 'Blog', href: '/blog/' }])]}>
+<Base title="E-commerce Growth Guides | Billion Ecommerce Agency Blog" description="Practical guides on e-commerce websites, Amazon and Flipkart ads, SEO and export marketing for Indian brands and manufacturers." schema={[breadcrumbSchema([{ label: 'Blog', href: '/blog/' }])]}>
   <SimpleHero eyebrow="Guides" h1="Practical Guides to *Grow Online Sales*" intro="Straight answers on what e-commerce websites cost, which platform to choose, how to run marketplace ads and how manufacturers win export buyers online." current="Blog" />
   <section class="section bl">
     <div class="wrap">

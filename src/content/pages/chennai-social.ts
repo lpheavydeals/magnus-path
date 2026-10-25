@@ -5,14 +5,14 @@ export const chennaiSocialPages: ServicePageData[] = [
   {
     slug: 'chennai/social-media-marketing-agency',
     kind: 'location',
-    title: 'Social Media Marketing Agency in Chennai | Magnus Path',
+    title: 'Social Media Marketing Agency in Chennai',
     description: 'Social media marketing agency in Chennai: Instagram and Facebook content in Tamil and English, Meta ads with Conversions API and WhatsApp leads, for sales.',
     primaryKeyword: 'social media marketing agency in Chennai',
     navLabel: 'Social Media Marketing Chennai',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Social media marketing in Chennai',
     h1: 'Social Media Marketing Agency in Chennai for *Sales, Not Likes*',
-    intro: 'Magnus Path is a social media marketing agency in Chennai that plans content and runs paid campaigns to bring orders and enquiries, not just followers. We make reels, carousels and ads in Tamil and English, run Meta ads with proper tracking, and send leads straight to WhatsApp. Our head office is in Chennai, so you can meet the people doing the work.',
+    intro: 'Billion Ecommerce Agency is a social media marketing agency in Chennai that plans content and runs paid campaigns to bring orders and enquiries, not just followers. We make reels, carousels and ads in Tamil and English, run Meta ads with proper tracking, and send leads straight to WhatsApp. Our head office is in Chennai, so you can meet the people doing the work.',
     icon: 'social',
     facts: ['Tamil and English content', 'Meta ads tracked to orders', 'Meet us at our Chennai office'],
     headings: {

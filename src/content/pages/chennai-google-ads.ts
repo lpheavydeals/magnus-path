@@ -5,14 +5,14 @@ export const chennaiGoogleAdsPages: ServicePageData[] = [
   {
     slug: 'chennai/google-ads-agency',
     kind: 'location',
-    title: 'Google Ads Agency in Chennai | Leads and Calls | Magnus Path',
+    title: 'Google Ads Agency in Chennai | Leads and Calls',
     description: 'Google Ads agency in Chennai for clinics, colleges, builders, B2B firms and showrooms: Search and local ads in Tamil and English, judged on qualified leads.',
     primaryKeyword: 'Google Ads agency in Chennai',
     navLabel: 'Google Ads Agency Chennai',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Lead generation with Google Ads',
     h1: 'Google Ads Agency in Chennai for *Enquiries That Convert*',
-    intro: 'Magnus Path is a Google Ads agency in Chennai for businesses that grow through enquiries: hospitals and clinics, colleges and coaching centres, builders, manufacturers, home-service firms and showrooms. We run Search, local and YouTube campaigns in Tamil and English, track every call, form and WhatsApp chat, and feed your sales outcomes back to Google so it learns which leads matter.',
+    intro: 'Billion Ecommerce Agency is a Google Ads agency in Chennai for businesses that grow through enquiries: hospitals and clinics, colleges and coaching centres, builders, manufacturers, home-service firms and showrooms. We run Search, local and YouTube campaigns in Tamil and English, track every call, form and WhatsApp chat, and feed your sales outcomes back to Google so it learns which leads matter.',
     icon: 'social',
     facts: ['Lead quality over lead volume', 'Your account, your billing', 'Chennai head office meetings'],
     headings: {

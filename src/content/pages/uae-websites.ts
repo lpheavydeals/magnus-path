@@ -8,14 +8,14 @@ export const uaeWebsitesPages: ServicePageData[] = [
     kind: 'global',
     market: 'UAE',
     twin: 'corporate-website-development',
-    title: 'Web Development Company UAE for Business Sites | Magnus Path',
+    title: 'Web Development Company UAE for Business Sites',
     description: 'A web development company for UAE business websites: English and Arabic with proper RTL, fast mobile pages and leads sent to WhatsApp or CRM. Quoted in AED.',
     primaryKeyword: 'web development company in the UAE',
     navLabel: 'Web Development Company (UAE)',
     breadcrumb: uaeBreadcrumb,
     eyebrow: 'For UAE companies · Corporate and business websites · English and Arabic',
     h1: 'A Web Development Company for UAE Businesses, *in English and Arabic*',
-    intro: 'Looking for a web development company in the UAE that builds bilingual business websites without the agency overheads? Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We plan, design and build English and Arabic company sites with proper RTL layouts, fast mobile pages and enquiry forms that reach your WhatsApp or CRM. We quote in AED after a free audit.',
+    intro: 'Looking for a web development company in the UAE that builds bilingual business websites without the agency overheads? Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We plan, design and build English and Arabic company sites with proper RTL layouts, fast mobile pages and enquiry forms that reach your WhatsApp or CRM. We quote in AED after a free audit.',
     icon: 'website',
     facts: ['English and Arabic with proper RTL', 'Working hours overlap with UAE time', 'Quoted in AED after a free audit'],
     headings: {
@@ -112,7 +112,7 @@ export const uaeWebsitesPages: ServicePageData[] = [
       {
         heading: 'Working with a remote team from Chennai',
         paragraphs: [
-          'Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We have no office, address or trade licence in the UAE and we do not offer in-person meetings there. India is 1.5 hours ahead of UAE time, so our working days almost fully overlap and same-day replies are realistic. Calls happen on video, progress is shared on a staging site, and you can judge us on the free audit before committing. If you need a web development company in the UAE with a local office for walk-in meetings, we are not the right fit, and we will say so.',
+          'Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We have no office, address or trade licence in the UAE and we do not offer in-person meetings there. India is 1.5 hours ahead of UAE time, so our working days almost fully overlap and same-day replies are realistic. Calls happen on video, progress is shared on a staging site, and you can judge us on the free audit before committing. If you need a web development company in the UAE with a local office for walk-in meetings, we are not the right fit, and we will say so.',
         ],
       },
     ],
@@ -125,7 +125,7 @@ export const uaeWebsitesPages: ServicePageData[] = [
       { label: 'SEO services in Dubai for business websites', href: '/uae/seo-services-dubai/' },
     ],
     faqs: [
-      { q: 'Do you have an office in Dubai?', a: 'No. Magnus Path is a Chennai, India team serving Dubai and the wider UAE remotely. We have no UAE office, address or trade licence. India is 1.5 hours ahead of UAE time, so our working days almost fully overlap, and we run calls on video and share progress on a staging site.' },
+      { q: 'Do you have an office in Dubai?', a: 'No. Billion Ecommerce Agency is a Chennai, India team serving Dubai and the wider UAE remotely. We have no UAE office, address or trade licence. India is 1.5 hours ahead of UAE time, so our working days almost fully overlap, and we run calls on video and share progress on a staging site.' },
       { q: 'How do I choose a website development company in the UAE?', a: 'Ask who will actually build the site, how the Arabic version will be translated and tested, which CMS they recommend for you and why, where enquiries will go and what support follows launch. Check that your company will own the domain, hosting and every account from day one.' },
       { q: 'Can you build a bilingual English and Arabic website?', a: 'Yes. We design both languages together with mirrored right-to-left layouts, Arabic web fonts, separate URLs and hreflang tags. We do not write Arabic copy in-house, so translation comes from your team or a professional translator, and we test every template in both directions on real phones.' },
       { q: 'Should my company website use WordPress or a headless CMS?', a: 'WordPress suits most company websites because editors know it and multilingual plugins are mature. A headless CMS suits large content libraries, several sites or apps sharing content, or strict performance needs. We recommend one after looking at your editors, publishing frequency, languages and integrations, and explain the reasons in writing.' },
@@ -139,14 +139,14 @@ export const uaeWebsitesPages: ServicePageData[] = [
     kind: 'global',
     market: 'UAE',
     twin: 'wordpress-website-development',
-    title: 'WordPress Development Company Dubai | Magnus Path',
+    title: 'WordPress Development Company Dubai | Billion Ecommerce Agency',
     description: 'Need a WordPress development company in Dubai’s working hours? Our Chennai team builds custom themes, bilingual RTL sites and secure, fast WordPress builds.',
     primaryKeyword: 'WordPress development company in Dubai',
     navLabel: 'WordPress Development (Dubai)',
     breadcrumb: uaeBreadcrumb,
     eyebrow: 'For Dubai and UAE businesses · Custom themes · Arabic and English',
     h1: 'WordPress Development for Dubai Sites *Your Team Can Edit*',
-    intro: 'If you need a WordPress development company in Dubai’s working hours, Magnus Path’s Chennai team is just 1.5 hours ahead and serves Dubai and the wider UAE remotely. We build custom themes with Gutenberg blocks and ACF, bilingual Arabic and English sites with proper RTL styling, and keep them fast and secure after launch. We quote in AED after a free audit.',
+    intro: 'If you need a WordPress development company in Dubai’s working hours, Billion Ecommerce Agency’s Chennai team is just 1.5 hours ahead and serves Dubai and the wider UAE remotely. We build custom themes with Gutenberg blocks and ACF, bilingual Arabic and English sites with proper RTL styling, and keep them fast and secure after launch. We quote in AED after a free audit.',
     icon: 'website',
     facts: ['Custom themes, Gutenberg and ACF', 'Arabic and English with RTL styling', 'Quoted in AED after a free audit'],
     headings: {
@@ -236,7 +236,7 @@ export const uaeWebsitesPages: ServicePageData[] = [
       {
         heading: 'Our remote model, explained honestly',
         paragraphs: [
-          'Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We have no office, address or trade licence in the UAE and do not offer in-person meetings there. Because India is 1.5 hours ahead of UAE time and the UAE weekend is Saturday and Sunday, our working days almost fully overlap, so same-day replies are realistic. If you need a WordPress development company in Dubai for walk-in meetings, a local studio will suit you better. If you want a responsive team that works on video calls and a staging site, start with a free audit.',
+          'Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We have no office, address or trade licence in the UAE and do not offer in-person meetings there. Because India is 1.5 hours ahead of UAE time and the UAE weekend is Saturday and Sunday, our working days almost fully overlap, so same-day replies are realistic. If you need a WordPress development company in Dubai for walk-in meetings, a local studio will suit you better. If you want a responsive team that works on video calls and a staging site, start with a free audit.',
         ],
       },
     ],
@@ -248,7 +248,7 @@ export const uaeWebsitesPages: ServicePageData[] = [
       { label: 'Website maintenance services', href: '/website-maintenance-services/' },
     ],
     faqs: [
-      { q: 'Do you have an office in Dubai?', a: 'No. Magnus Path is a Chennai, India team serving Dubai and the wider UAE remotely. We have no UAE office, address or trade licence and do not offer in-person meetings. India is 1.5 hours ahead of UAE time, so our working days almost fully overlap and same-day replies are realistic.' },
+      { q: 'Do you have an office in Dubai?', a: 'No. Billion Ecommerce Agency is a Chennai, India team serving Dubai and the wider UAE remotely. We have no UAE office, address or trade licence and do not offer in-person meetings. India is 1.5 hours ahead of UAE time, so our working days almost fully overlap and same-day replies are realistic.' },
       { q: 'What should I look for in a WordPress development company in Dubai?', a: 'Look for custom themes rather than heavy page builders, a short plugin list with reasons for each, a clear plan for Arabic and RTL, and a tested update routine. Make sure your company owns the domain, hosting, theme code and licences, and that support after launch is agreed in writing.' },
       { q: 'Can you build an Arabic and English WordPress site?', a: 'Yes. We use a multilingual plugin such as WPML or Polylang, write a dedicated RTL stylesheet, load Arabic fonts and give each language its own URLs and hreflang tags. Translation comes from your team or a professional translator, and we test every template in both directions on real phones.' },
       { q: 'Do you use page builders or custom themes?', a: 'We usually build lightweight custom themes with Gutenberg blocks and Advanced Custom Fields, because they load faster and are harder to break. If your site is small and your team already knows a page builder well, we will tell you if keeping it is the more practical choice.' },

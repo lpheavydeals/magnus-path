@@ -1,12 +1,12 @@
 ---
 title: "How to Sell on Etsy from India: A Practical Guide for 2026"
-metaTitle: "How to Sell on Etsy from India (2026) | Magnus Path"
+metaTitle: "How to Sell on Etsy from India (2026) | Billion Ecommerce Agency"
 description: "How to sell on Etsy from India: shop setup, what sells, payments, shipping and customs basics, pricing for overseas buyers and Etsy SEO for Indian sellers."
 primaryKeyword: "how to sell on etsy from india"
 category: "Export"
 publishDate: 2026-10-16
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "To sell on Etsy from India, open a seller account with your Indian bank details, list handmade, vintage or craft products that suit overseas buyers, price in a way that covers Etsy's fees, international shipping and returns, and write titles, tags and photos for how foreign buyers search. Arrange an IEC and a reliable export shipping route before orders grow, and consider your own Shopify store once you have repeat buyers."
 faqs:
   - q: "Can an Etsy seller in India receive payments directly in an Indian bank account?"

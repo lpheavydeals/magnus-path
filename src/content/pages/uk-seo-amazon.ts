@@ -9,14 +9,14 @@ export const ukSeoAmazonPages: ServicePageData[] = [
     kind: 'global',
     market: 'UK',
     twin: 'ecommerce-seo',
-    title: 'Ecommerce SEO Agency UK for Online Retailers | Magnus Path',
+    title: 'Ecommerce SEO Agency UK for Online Retailers',
     description: 'Ecommerce SEO agency for UK online retailers: category pages, product schema, faceted navigation, free listings and UK links. London office, Chennai team.',
     primaryKeyword: 'ecommerce SEO agency',
     navLabel: 'Ecommerce SEO Agency UK',
     breadcrumb: ukBreadcrumb,
     eyebrow: 'Google UK · Collections · Product schema · Free listings',
     h1: 'Ecommerce SEO Agency for UK Retailers Who Want *Category Pages That Rank*',
-    intro: 'Magnus Path is an ecommerce SEO agency that helps UK online retailers grow organic sales from Google.co.uk. We fix crawling and faceted navigation, rewrite collection pages in British English, add product schema and earn links from UK publications. We have a London office and a Chennai delivery team working in your morning, and we quote in GBP after a free audit.',
+    intro: 'Billion Ecommerce Agency is an ecommerce SEO agency that helps UK online retailers grow organic sales from Google.co.uk. We fix crawling and faceted navigation, rewrite collection pages in British English, add product schema and earn links from UK publications. We have a London office and a Chennai delivery team working in your morning, and we quote in GBP after a free audit.',
     icon: 'seo',
     facts: ['British English keyword research', 'Shopify, WooCommerce and custom stores', 'Quoted in GBP after an audit'],
     headings: {
@@ -110,7 +110,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       {
         heading: 'How to choose an ecommerce SEO agency',
         paragraphs: [
-          'Whether you hire a UK firm or an offshore team, the same questions apply. A cheap retainer that only produces blog posts will not move category revenue, and an expensive one is no better if nobody touches the technical problems. Magnus Path has a London office where you can meet us, while most delivery is done by our Chennai team. India is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so our day overlaps your morning and early afternoon. We quote ecommerce SEO services for UK stores in GBP after a free audit. Before you sign with any ecommerce SEO agency UK or overseas, ask:',
+          'Whether you hire a UK firm or an offshore team, the same questions apply. A cheap retainer that only produces blog posts will not move category revenue, and an expensive one is no better if nobody touches the technical problems. Billion Ecommerce Agency has a London office where you can meet us, while most delivery is done by our Chennai team. India is 4.5 hours ahead of UK summer time and 5.5 hours ahead in winter, so our day overlaps your morning and early afternoon. We quote ecommerce SEO services for UK stores in GBP after a free audit. Before you sign with any ecommerce SEO agency UK or overseas, ask:',
         ],
         bullets: [
           'Who will do the work each month, and can I speak to them?',
@@ -146,14 +146,14 @@ export const ukSeoAmazonPages: ServicePageData[] = [
     kind: 'global',
     market: 'UK',
     twin: 'amazon-marketing-agency',
-    title: 'Amazon Agency UK for Amazon.co.uk Sellers | Magnus Path',
+    title: 'Amazon Agency UK for Amazon.co.uk Sellers',
     description: 'Amazon agency for UK sellers: Sponsored ads, listings, A+ content, Brand Store, FBA and account health support on Amazon.co.uk, quoted in GBP after an audit.',
     primaryKeyword: 'Amazon agency',
     navLabel: 'Amazon Agency UK',
     breadcrumb: ukBreadcrumb,
     eyebrow: 'Amazon.co.uk · Sponsored ads · Listings · FBA',
     h1: 'Amazon Agency UK Sellers Use for *Ads and Listings*',
-    intro: 'Magnus Path is an Amazon agency for UK sellers who want one team to run their Amazon.co.uk account: Sponsored ads, listings, A+ content, Brand Store, FBA stock planning and account health support. You can meet us at our London office, and our Chennai team runs the account in your morning and early afternoon. We quote a monthly fee in GBP after a free account audit.',
+    intro: 'Billion Ecommerce Agency is an Amazon agency for UK sellers who want one team to run their Amazon.co.uk account: Sponsored ads, listings, A+ content, Brand Store, FBA stock planning and account health support. You can meet us at our London office, and our Chennai team runs the account in your morning and early afternoon. We quote a monthly fee in GBP after a free account audit.',
     icon: 'amazon',
     facts: ['Amazon.co.uk ads and listings', 'Prime Day and Black Friday planning', 'Quoted in GBP after an audit'],
     headings: {
@@ -244,7 +244,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
         heading: 'Choosing an Amazon agency, UK-based or remote',
         paragraphs: [
           'A UK-based team gives you face-to-face meetings. A remote team can give you more senior attention for the same budget. Neither is automatically better; what matters is who does the daily work and how clearly they explain it.',
-          'Magnus Path has a London office where you can meet us, while our Chennai team does the daily work, and we do not claim any special status with Amazon. India is 4.5 hours ahead of UK summer time and 5.5 hours in winter, so our day overlaps your morning and early afternoon. Whichever Amazon agency you choose, in the UK or abroad, ask who manages the account daily, how it sets ACoS targets, whether you keep full ownership of Seller Central and how it reports total sales, not just ad sales. We quote a monthly fee in GBP after a free audit.',
+          'Billion Ecommerce Agency has a London office where you can meet us, while our Chennai team does the daily work, and we do not claim any special status with Amazon. India is 4.5 hours ahead of UK summer time and 5.5 hours in winter, so our day overlaps your morning and early afternoon. Whichever Amazon agency you choose, in the UK or abroad, ask who manages the account daily, how it sets ACoS targets, whether you keep full ownership of Seller Central and how it reports total sales, not just ad sales. We quote a monthly fee in GBP after a free audit.',
         ],
       },
     ],
@@ -274,14 +274,14 @@ export const ukSeoAmazonPages: ServicePageData[] = [
     kind: 'global',
     market: 'UK',
     twin: 'ai-search-optimization',
-    title: 'AI Search Optimisation Agency (GEO) UK | Magnus Path',
+    title: 'AI Search Optimisation Agency (GEO) UK | Billion Ecommerce Agency',
     description: 'AI search optimisation agency for UK brands: clear brand facts, quotable pages and honest tracking for ChatGPT, Perplexity, Gemini and Google AI Overviews.',
     primaryKeyword: 'AI search optimisation agency',
     navLabel: 'AI Search Optimisation UK',
     breadcrumb: ukBreadcrumb,
     eyebrow: 'GEO · AI Overviews · ChatGPT · Perplexity · Gemini',
     h1: 'AI Search Optimisation Agency With *Honest* Reporting',
-    intro: 'Magnus Path is an AI search optimisation agency helping UK brands appear accurately in ChatGPT, Perplexity, Gemini and Google AI Overviews. Nobody controls what AI tools say, so we work on what you can influence: consistent brand facts, pages worth quoting and trusted UK mentions. We have a London office and a Chennai delivery team, and we quote in GBP after a free audit.',
+    intro: 'Billion Ecommerce Agency is an AI search optimisation agency helping UK brands appear accurately in ChatGPT, Perplexity, Gemini and Google AI Overviews. Nobody controls what AI tools say, so we work on what you can influence: consistent brand facts, pages worth quoting and trusted UK mentions. We have a London office and a Chennai delivery team, and we quote in GBP after a free audit.',
     icon: 'ai',
     facts: ['ChatGPT, Perplexity, Gemini, AI Overviews', 'Clear about what can be measured', 'Quoted in GBP after an audit'],
     headings: {
@@ -372,7 +372,7 @@ export const ukSeoAmazonPages: ServicePageData[] = [
       {
         heading: 'Choosing a GEO agency in the UK or abroad',
         paragraphs: [
-          'Magnus Path has a London office where you can meet us, while most delivery is done by our Chennai team. India is 4.5 hours ahead of UK summer time and 5.5 hours in winter, so our working day overlaps your morning and early afternoon. Whoever you choose as your AI search optimisation agency, ask what exactly they will change, how they will measure it and what they admit they cannot control. Vague answers to those three questions are a warning sign.',
+          'Billion Ecommerce Agency has a London office where you can meet us, while most delivery is done by our Chennai team. India is 4.5 hours ahead of UK summer time and 5.5 hours in winter, so our working day overlaps your morning and early afternoon. Whoever you choose as your AI search optimisation agency, ask what exactly they will change, how they will measure it and what they admit they cannot control. Vague answers to those three questions are a warning sign.',
         ],
       },
     ],

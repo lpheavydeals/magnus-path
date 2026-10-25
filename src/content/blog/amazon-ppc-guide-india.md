@@ -1,12 +1,12 @@
 ---
 title: "Amazon PPC Guide for Beginners in India: Campaigns, ACoS and TACoS"
-metaTitle: "Amazon PPC Guide for Beginners (India) | Magnus Path"
+metaTitle: "Amazon PPC Guide for Beginners (India) | Billion Ecommerce Agency"
 description: "An Amazon PPC guide for Indian sellers: campaign types, auto vs manual, match types, negatives, bids, ACoS vs ROAS, TACoS and a weekly optimisation routine."
 primaryKeyword: "amazon ppc guide"
 category: "Ads"
 publishDate: 2026-10-16
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "Amazon PPC lets sellers pay to show products in search results and on product pages, paying only when shoppers click. Beginners in India should start with Sponsored Products, run an automatic campaign to discover search terms, move converting terms into manual exact and phrase campaigns, add negative keywords, and judge results with ACoS, ROAS and TACoS against a break-even ACoS worked out from product margin."
 faqs:
   - q: "What is ACoS on Amazon?"

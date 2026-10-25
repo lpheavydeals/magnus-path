@@ -1,12 +1,12 @@
 ---
 title: "How to Sell on Noon: A Seller's Guide for the UAE and Saudi Arabia"
-metaTitle: "How to Sell on Noon (UAE & KSA Guide) | Magnus Path"
+metaTitle: "How to Sell on Noon (UAE & KSA Guide) | Billion Ecommerce Agency"
 description: "How to sell on Noon in the UAE and Saudi Arabia: who can register, documents, Arabic and English listings, fees, Fulfilled by Noon, Noon Ads and Yellow Friday."
 primaryKeyword: "how to sell on noon"
 category: "Platforms"
 publishDate: 2026-10-16
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "To sell on Noon, register a seller account with a UAE or Saudi business: a valid trade licence or commercial registration, a local bank account and VAT registration where required. Then list products with complete English and Arabic content, price after Noon's category fees, choose seller-fulfilled or Fulfilled by Noon, and use Noon Ads to build early visibility. Check Noon's seller centre for current requirements and fees."
 faqs:
   - q: "Who can sell on Noon in the UAE?"
@@ -204,6 +204,6 @@ Avoid these and learning how to sell on Noon becomes a matter of steady, repeata
 
 You can run a Noon account in-house, and many small sellers do. Help makes sense when you are adding Amazon.ae and Noon at the same time, managing a large catalogue in two languages, or spending enough on ads that waste starts to hurt.
 
-Magnus Path is a Chennai team that manages Amazon.ae and Noon accounts for UAE brands remotely. UAE time is only 1.5 hours behind India, so our working days almost fully overlap with yours. Our [Amazon and Noon agency service](/uae/amazon-noon-agency/) covers listings, Arabic content coordination, ads and peak planning, and our [UAE ecommerce marketing](/uae/ecommerce-marketing-agency/) team can connect your marketplace sales with your own website and social ads. Pricing is quoted in AED after a free audit.
+Billion Ecommerce Agency is a Chennai team that manages Amazon.ae and Noon accounts for UAE brands remotely. UAE time is only 1.5 hours behind India, so our working days almost fully overlap with yours. Our [Amazon and Noon agency service](/uae/amazon-noon-agency/) covers listings, Arabic content coordination, ads and peak planning, and our [UAE ecommerce marketing](/uae/ecommerce-marketing-agency/) team can connect your marketplace sales with your own website and social ads. Pricing is quoted in AED after a free audit.
 
 Whether or not you work with us, the steps above are how to sell on Noon with fewer surprises: get the documents right, build strong listings in both languages, price after fees, plan fulfilment and treat each peak as a project.

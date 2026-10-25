@@ -1,12 +1,12 @@
 ---
 title: "How to Find Buyers for Export: A Practical Guide for Indian Exporters"
-metaTitle: "How to Find Buyers for Export (2026) | Magnus Path"
+metaTitle: "How to Find Buyers for Export (2026) | Billion Ecommerce Agency"
 description: "How to find buyers for export from India: market research, trade fairs, B2B marketplaces, export SEO, LinkedIn, Google Ads, buyer checks and a 90-day plan."
 primaryKeyword: "how to find buyers for export"
 category: "Export"
 publishDate: 2026-10-16
 readingMinutes: 10
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "To find buyers for export, first pick target markets using trade data, then reach importers through export promotion councils, trade fairs, B2B marketplaces, an export website with a quote form, export SEO, LinkedIn outreach and Google Ads aimed at overseas searches. Verify every buyer and use safe payment terms such as advance payment or letters of credit before shipping."
 faqs:
   - q: "How to find buyers for export as a new exporter?"

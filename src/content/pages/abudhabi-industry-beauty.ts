@@ -27,7 +27,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Skincare brands · Emirati and expat families · Arabic-first creative · Al Ain · Reorders',
     h1: 'Skincare Marketing Agency in Abu Dhabi for *Desert-Dry Skin* and Family Buyers',
-    intro: 'Searching for a skincare marketing agency in Abu Dhabi that writes for Emirati households as well as expats? Magnus Path plans skincare growth from our Chennai head office and serves the capital remotely. We build routines for sun, dust and dry indoor air, write Arabic-first ads checked by a fluent Arabic writer, and grow repeat orders across your store, Noon and Amazon.ae.',
+    intro: 'Searching for a skincare marketing agency in Abu Dhabi that writes for Emirati households as well as expats? Billion Ecommerce Agency plans skincare growth from our Chennai head office and serves the capital remotely. We build routines for sun, dust and dry indoor air, write Arabic-first ads checked by a fluent Arabic writer, and grow repeat orders across your store, Noon and Amazon.ae.',
     icon: 'social',
     facts: ['Arabic-first, English alongside', 'Store, Noon and Amazon.ae', 'Free audit, then AED quote'],
     headings: {
@@ -125,7 +125,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
         heading: 'Seasons, payments and how we work with you remotely',
         paragraphs: [
           'Ramadan moves skincare browsing late into the evening and leads into Eid al-Fitr gift sets. Eid al-Adha, UAE National Day on 2 December and the F1 weekend on Yas Island bring busy social calendars, with White Friday sales close behind. Mother’s Day in March suits gift boxes, while Diwali and Onam matter for brands selling to Abu Dhabi’s Indian and Keralite families.',
-          'At checkout, offer cards, cash on delivery and instalments through Tabby or Tamara, and report COD orders separately because a refused parcel never becomes revenue. Magnus Path has no office in the UAE: we work from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and meet clients on video calls. Ask any skincare marketing agency in Abu Dhabi to show you, product by product, which customers come back for a second bottle.',
+          'At checkout, offer cards, cash on delivery and instalments through Tabby or Tamara, and report COD orders separately because a refused parcel never becomes revenue. Billion Ecommerce Agency has no office in the UAE: we work from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and meet clients on video calls. Ask any skincare marketing agency in Abu Dhabi to show you, product by product, which customers come back for a second bottle.',
         ],
       },
     ],
@@ -146,7 +146,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
       { q: 'Should we treat Al Ain as a separate market?', a: 'In most cases, yes. Al Ain is inland, drier and more traditional, and families there often respond to different creative and delivery promises than shoppers on the islands. We give it its own audience, location targeting and reporting so its results are not hidden inside the capital’s numbers.' },
       { q: 'Can creators promote our skincare in Abu Dhabi?', a: 'Yes, provided each paid creator holds an advertiser permit from the UAE Media Council. We confirm the permit before payment, brief creators on unfiltered footage and clear ad labels, and keep their claims within the wording your adviser has approved. Local creators often suit family audiences well.' },
       { q: 'Which channels matter most for skincare in Abu Dhabi?', a: 'Instagram and Snapchat for discovery, TikTok for younger buyers, Noon and Amazon.ae for repeat purchases, and WhatsApp for questions and reorders. Your own store remains the base for margins and customer data. The right mix depends on your price point and audience, which the free audit helps decide.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE. We serve Abu Dhabi brands remotely from our Chennai head office, and because the UAE is 1.5 hours behind India our working days overlap closely. Every meeting takes place over video; we do not hold in-person meetings in Abu Dhabi.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office in the UAE. We serve Abu Dhabi brands remotely from our Chennai head office, and because the UAE is 1.5 hours behind India our working days overlap closely. Every meeting takes place over video; we do not hold in-person meetings in Abu Dhabi.' },
     ],
   },
 
@@ -162,7 +162,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Shampoo, oils and scalp care · Covered hair · Arabic-first creative · Refills · Al Ain',
     h1: 'Haircare Marketing Agency in Abu Dhabi for *Covered, Coloured and Curly* Hair',
-    intro: 'Need a haircare marketing agency in Abu Dhabi that understands hair kept covered all day, desert dryness and family buying? Magnus Path runs haircare marketing from our Chennai head office for brands selling across the capital and Al Ain. We plan Arabic-first creative, honest scalp and hair-fall wording, marketplace listings and refill reminders that keep customers using a product long enough to judge it.',
+    intro: 'Need a haircare marketing agency in Abu Dhabi that understands hair kept covered all day, desert dryness and family buying? Billion Ecommerce Agency runs haircare marketing from our Chennai head office for brands selling across the capital and Al Ain. We plan Arabic-first creative, honest scalp and hair-fall wording, marketplace listings and refill reminders that keep customers using a product long enough to judge it.',
     icon: 'social',
     facts: ['Covered-hair routines', 'Claims checked before ads', 'Free audit, then AED quote'],
     headings: {
@@ -195,7 +195,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
     local: {
       city: 'Abu Dhabi',
       areas: ['Khalifa City', 'Mohammed Bin Zayed City', 'Al Reem Island', 'Al Raha', 'Yas Island', 'Saadiyat Island', 'Al Bateen', 'Shakhbout City', 'Al Ain'],
-      note: 'Magnus Path has no office in the UAE. Haircare brands selling in Abu Dhabi and Al Ain are served remotely from our Chennai head office, and with the UAE 1.5 hours behind India our days overlap closely. Planning, reviews and reports all take place on video calls; there are no in-person meetings in Abu Dhabi.',
+      note: 'Billion Ecommerce Agency has no office in the UAE. Haircare brands selling in Abu Dhabi and Al Ain are served remotely from our Chennai head office, and with the UAE 1.5 hours behind India our days overlap closely. Planning, reviews and reports all take place on video calls; there are no in-person meetings in Abu Dhabi.',
     },
     figures: [
       { type: 'venn', caption: 'Haircare content works when your formula meets the way hair is actually lived with in Abu Dhabi.', after: 1,
@@ -256,7 +256,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
         heading: 'Seasons, payments and working with us remotely',
         paragraphs: [
           'Ramadan and Eid al-Fitr bring gift sets and late-night shopping, and Eid al-Adha brings another wave of family buying. Summer travel suits minis and travel kits, while UAE National Day, the F1 weekend on Yas Island and White Friday fill the cooler months. Diwali and Onam matter for brands selling hair oils to Indian and Keralite households, and Mother’s Day in March suits gift boxes.',
-          'Keep checkout flexible with cards, cash on delivery and Tabby or Tamara, and track COD refusals on their own. Magnus Path has no office in the UAE; your account is run from our Chennai head office, 1.5 hours ahead of Abu Dhabi, with reviews over video. Ask any haircare marketing agency in Abu Dhabi to report second-order rates by product, not just first sales.',
+          'Keep checkout flexible with cards, cash on delivery and Tabby or Tamara, and track COD refusals on their own. Billion Ecommerce Agency has no office in the UAE; your account is run from our Chennai head office, 1.5 hours ahead of Abu Dhabi, with reviews over video. Ask any haircare marketing agency in Abu Dhabi to report second-order rates by product, not just first sales.',
         ],
       },
     ],
@@ -293,7 +293,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Makeup brands · Shade guides · Occasion looks · Arabic-first creative · Permitted creators',
     h1: 'Cosmetics Marketing Agency in Abu Dhabi for *Shades, Occasions and Heat*',
-    intro: 'Looking for a cosmetics marketing agency in Abu Dhabi that plans for weddings, Eid gatherings and long days in dry heat? Magnus Path grows makeup brands from our Chennai head office, serving the capital and Al Ain remotely. We build shade guides for a very mixed population, test long-wear claims honestly, write Arabic-first creative and plan launches around the city’s social calendar.',
+    intro: 'Looking for a cosmetics marketing agency in Abu Dhabi that plans for weddings, Eid gatherings and long days in dry heat? Billion Ecommerce Agency grows makeup brands from our Chennai head office, serving the capital and Al Ain remotely. We build shade guides for a very mixed population, test long-wear claims honestly, write Arabic-first creative and plan launches around the city’s social calendar.',
     icon: 'social',
     facts: ['Shade guides in two languages', 'Wear claims tested honestly', 'Free audit, then AED quote'],
     headings: {
@@ -325,7 +325,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
     local: {
       city: 'Abu Dhabi',
       areas: ['Al Reem Island', 'Saadiyat Island', 'Yas Island', 'Al Raha', 'Khalifa City', 'Al Maryah Island', 'Al Khalidiyah', 'Mohammed Bin Zayed City', 'Al Ain'],
-      note: 'There is no Magnus Path office in the UAE. Makeup brands selling in Abu Dhabi and Al Ain are served remotely from our Chennai head office; UAE time is 1.5 hours behind India, so our days share most hours. Shade reviews, launch planning and reports happen over video, with no in-person meetings in Abu Dhabi.',
+      note: 'There is no Billion Ecommerce Agency office in the UAE. Makeup brands selling in Abu Dhabi and Al Ain are served remotely from our Chennai head office; UAE time is 1.5 hours behind India, so our days share most hours. Shade reviews, launch planning and reports happen over video, with no in-person meetings in Abu Dhabi.',
     },
     figures: [
       { type: 'matrix', caption: 'How to sell each makeup product online, by how exact the shade match must be.', after: 1, cols: ['Shade must match', 'Shade is flexible'], rows: ['Everyday products', 'Occasion products'], cells: [
@@ -390,7 +390,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Plan the year around Ramadan and Eid al-Fitr, Eid al-Adha, Mother’s Day in March, UAE National Day on 2 December and White Friday. Diwali and Onam add festive demand among Indian and Keralite buyers. Gift sets, creators and stock should be ready weeks before each date, not on the day.',
           'Al Ain deserves its own plan. Buyers there are more traditional, often shop with family and may prefer fuller occasion looks, so separate audiences, creative and delivery messages give clearer results than folding the city into the capital’s campaigns.',
-          'Offer cards, cash on delivery and Tabby or Tamara instalments, and measure COD refusals separately. Magnus Path has no office in the UAE; we run your account from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and review progress over video. Ask any cosmetics marketing agency in Abu Dhabi how it will cut shade-related returns, not just how it will raise traffic.',
+          'Offer cards, cash on delivery and Tabby or Tamara instalments, and measure COD refusals separately. Billion Ecommerce Agency has no office in the UAE; we run your account from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and review progress over video. Ask any cosmetics marketing agency in Abu Dhabi how it will cut shade-related returns, not just how it will raise traffic.',
         ],
       },
     ],
@@ -411,7 +411,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
       { q: 'Can we claim long-wear or sweat-proof results?', a: 'Only if your test results support them, and it helps to show the product lasting in real heat and air conditioning. Overstated wear claims lead to poor reviews quickly. We match every claim to your evidence and flag anything borderline for your regulatory adviser before it appears in ads or listings.' },
       { q: 'Do makeup creators in the UAE need a permit?', a: 'Yes. Anyone paid to promote products in the UAE needs an advertiser permit from the UAE Media Council. We check each creator’s permit before payment, then brief them on unfiltered footage, clear ad labels and approved claims. Local make-up artists often suit occasion and bridal content well.' },
       { q: 'When should we launch new makeup in Abu Dhabi?', a: 'Ahead of social peaks: before Ramadan and the two Eids, ahead of the cooler wedding and events months, and before Mother’s Day in March or UAE National Day. Build a waitlist and seed creators a few weeks early so launch week has content and stock ready.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE. We serve Abu Dhabi makeup brands remotely from our Chennai head office, and the UAE is 1.5 hours behind India, so our working days overlap almost fully. All meetings are video calls; we do not meet in person in Abu Dhabi.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office in the UAE. We serve Abu Dhabi makeup brands remotely from our Chennai head office, and the UAE is 1.5 hours behind India, so our working days overlap almost fully. All meetings are video calls; we do not meet in person in Abu Dhabi.' },
     ],
   },
 
@@ -427,7 +427,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Ayurvedic and herbal brands · Keralite and Indian families · Wellness buyers · Careful claims',
     h1: 'Ayurveda Marketing Agency in Abu Dhabi for *Indian Families and Wellness Buyers*',
-    intro: 'Searching for an Ayurveda marketing agency in Abu Dhabi that keeps herbal claims careful? Magnus Path helps Ayurvedic oils, skincare, teas and wellness brands reach the capital’s large Indian and Keralite community and curious Emirati and expat buyers. We work remotely from our Chennai head office, plan Arabic and English creative, prepare questions for your regulatory adviser and time campaigns to Onam, Diwali and Ramadan.',
+    intro: 'Searching for an Ayurveda marketing agency in Abu Dhabi that keeps herbal claims careful? Billion Ecommerce Agency helps Ayurvedic oils, skincare, teas and wellness brands reach the capital’s large Indian and Keralite community and curious Emirati and expat buyers. We work remotely from our Chennai head office, plan Arabic and English creative, prepare questions for your regulatory adviser and time campaigns to Onam, Diwali and Ramadan.',
     icon: 'marketplace',
     facts: ['Claims checked before ads', 'Indian and wellness audiences', 'Free audit, then AED quote'],
     headings: {
@@ -522,7 +522,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Instagram, Facebook and WhatsApp reach the Indian community well, while Snapchat and TikTok help with younger and Emirati audiences. Noon and Amazon.ae handle many repeat orders, and your own store keeps margin and customer data. Beyond Onam and Diwali, Ramadan and the two Eids bring gifting and self-care routines, and Mother’s Day in March suits gift boxes. Offer cash on delivery and Tabby or Tamara where your store supports them.',
           'Reorders matter more than first sales. Oils, powders and teas are used daily, so refill reminders, family packs and simple WhatsApp ordering keep loyal buyers with you. Reporting should show repeat rate by product and by audience, so you know whether community buyers and newer wellness buyers are worth the same spend.',
-          'Magnus Path has no office in the UAE. We work from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and meet over video, so a whole-day overlap is normal. Any Ayurveda marketing agency in Abu Dhabi you speak to should be able to explain how it handles claims before it talks about growth.',
+          'Billion Ecommerce Agency has no office in the UAE. We work from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and meet over video, so a whole-day overlap is normal. Any Ayurveda marketing agency in Abu Dhabi you speak to should be able to explain how it handles claims before it talks about growth.',
         ],
       },
     ],
@@ -543,7 +543,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
       { q: 'How do you reach the Keralite community in Abu Dhabi?', a: 'Through English creative on Facebook, Instagram and WhatsApp, plus any Malayalam content your brand already has, with campaigns timed to Onam, Vishu and Diwali. Community pages and family recommendations matter, so we also build referral offers and simple WhatsApp ordering for repeat buyers.' },
       { q: 'Will Emirati buyers be interested in Ayurveda?', a: 'Some are, especially those interested in natural wellness, hair oiling and body care. They need plain explanations in Arabic, written or checked by a fluent Arabic writer, with styling that feels local. We test this audience after community sales are steady and report its results separately.' },
       { q: 'Which channels work for Ayurvedic brands in Abu Dhabi?', a: 'Facebook, Instagram and WhatsApp for the Indian community; Snapchat and TikTok for younger and Emirati audiences; Noon and Amazon.ae for repeat orders; and Google search for people looking up herbs and routines. Your own store keeps margins and customer data.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE. Ayurvedic brands in Abu Dhabi are served remotely from our Chennai head office, and the UAE runs 1.5 hours behind India, so working hours overlap almost fully. Every meeting is held over video; there are no in-person meetings in Abu Dhabi.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office in the UAE. Ayurvedic brands in Abu Dhabi are served remotely from our Chennai head office, and the UAE runs 1.5 hours behind India, so working hours overlap almost fully. Every meeting is held over video; there are no in-person meetings in Abu Dhabi.' },
     ],
   },
 
@@ -559,7 +559,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Oud oils · Bakhoor · Mukhallat and sprays · Arabic-first scent stories · Gifting seasons',
     h1: 'Perfume Marketing Agency in Abu Dhabi for *Oud, Bakhoor and the Majlis*',
-    intro: 'Looking for a perfume marketing agency in Abu Dhabi that respects how Emiratis wear and give scent? Magnus Path markets oud oils, bakhoor, mukhallat and modern fragrances from our Chennai head office, serving the capital and Al Ain remotely. We write Arabic-first scent stories, build sampling offers for buyers who will not blind-buy, and plan gifting for Ramadan, both Eids, weddings and National Day.',
+    intro: 'Looking for a perfume marketing agency in Abu Dhabi that respects how Emiratis wear and give scent? Billion Ecommerce Agency markets oud oils, bakhoor, mukhallat and modern fragrances from our Chennai head office, serving the capital and Al Ain remotely. We write Arabic-first scent stories, build sampling offers for buyers who will not blind-buy, and plan gifting for Ramadan, both Eids, weddings and National Day.',
     icon: 'social',
     facts: ['Arabic-first scent stories', 'Sampling before full bottles', 'Free audit, then AED quote'],
     headings: {
@@ -592,7 +592,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
     local: {
       city: 'Abu Dhabi',
       areas: ['Al Bateen', 'Al Mushrif', 'Khalifa City', 'Mohammed Bin Zayed City', 'Saadiyat Island', 'Yas Island', 'Al Reem Island', 'Al Shamkha', 'Al Ain'],
-      note: 'Magnus Path does not have an office in the UAE. Fragrance brands selling across Abu Dhabi and Al Ain are served remotely from our Chennai head office; with the UAE 1.5 hours behind India, our hours line up closely. Scent briefs, creative reviews and reports are handled over video, with no in-person meetings in Abu Dhabi.',
+      note: 'Billion Ecommerce Agency does not have an office in the UAE. Fragrance brands selling across Abu Dhabi and Al Ain are served remotely from our Chennai head office; with the UAE 1.5 hours behind India, our hours line up closely. Scent briefs, creative reviews and reports are handled over video, with no in-person meetings in Abu Dhabi.',
     },
     figures: [
       { type: 'mindmap', caption: 'The formats, moments, buyers and channels behind fragrance sales in Abu Dhabi.', center: 'Scent in Abu Dhabi', after: 0, branches: [
@@ -656,7 +656,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Ramadan brings late-night browsing and gifts for hosts; Eid al-Fitr and Eid al-Adha bring family gifting and new scents for visits. The cooler months add weddings, UAE National Day on 2 December, the F1 weekend on Yas Island and White Friday sales. Mother’s Day in March suits gift boxes, and Diwali brings orders from Indian households. Prepare sets, cut-off dates and creative weeks ahead, and keep cash on delivery and Tabby or Tamara at checkout.',
           'Between peaks, keep repeat buyers close. Refill reminders for favourite oils, early access to new blends and small bakhoor top-ups sent over WhatsApp keep your brand in the home rather than only in the gift cupboard. Al Ain buyers may need their own delivery promises and creative, since loyalty to known perfumers runs deep there.',
-          'Magnus Path has no office in the UAE. We run your account from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and meet over video. Ask any perfume marketing agency in Abu Dhabi to show results by scent and by sampler, not only total sales.',
+          'Billion Ecommerce Agency has no office in the UAE. We run your account from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and meet over video. Ask any perfume marketing agency in Abu Dhabi to show results by scent and by sampler, not only total sales.',
         ],
       },
     ],
@@ -677,7 +677,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
       { q: 'Can we sell bakhoor and oud oils on Noon and Amazon.ae?', a: 'Many brands do. Listings need clear format, weight or volume, notes and authenticity details in Arabic and English, and prices that match your own store. Category rules and registration requirements vary, so confirm with your regulatory adviser before listing new products.' },
       { q: 'Do fragrance creators in the UAE need a permit?', a: 'Yes. Anyone paid to promote products in the UAE needs an advertiser permit from the UAE Media Council. We check each creator’s permit before payment and brief them to describe notes honestly, label ads clearly and stay within your approved wording.' },
       { q: 'When should perfume brands plan gifting campaigns?', a: 'Several weeks before Ramadan, both Eids, the cooler-month wedding season, UAE National Day and Mother’s Day in March. Gift boxes, Arabic gift notes, delivery cut-offs and creative should be ready early, so budgets can rise gradually rather than in a last-minute rush.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE. Fragrance brands in Abu Dhabi are served remotely from our Chennai head office, and the UAE is 1.5 hours behind India, so our days overlap closely. All meetings are held over video; we do not meet in person in Abu Dhabi.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office in the UAE. Fragrance brands in Abu Dhabi are served remotely from our Chennai head office, and the UAE is 1.5 hours behind India, so our days overlap closely. All meetings are held over video; we do not meet in person in Abu Dhabi.' },
     ],
   },
 
@@ -693,7 +693,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'Gold, diamond and bridal jewellery · Karat and weight clarity · Arabic-first video · Al Ain',
     h1: 'Jewellery Marketing Agency in Abu Dhabi for *Weddings, Eid and Everyday Gold*',
-    intro: 'Need a jewellery marketing agency in Abu Dhabi that makes karat, weight and hallmark details easy to trust online? Magnus Path markets gold, diamond and bridal jewellery from our Chennai head office, serving the capital and Al Ain remotely. We plan Arabic-first video, price pages that follow the daily gold rate, WhatsApp enquiries and campaigns for weddings, Eid, Diwali and Akshaya Tritiya.',
+    intro: 'Need a jewellery marketing agency in Abu Dhabi that makes karat, weight and hallmark details easy to trust online? Billion Ecommerce Agency markets gold, diamond and bridal jewellery from our Chennai head office, serving the capital and Al Ain remotely. We plan Arabic-first video, price pages that follow the daily gold rate, WhatsApp enquiries and campaigns for weddings, Eid, Diwali and Akshaya Tritiya.',
     icon: 'website',
     facts: ['Karat and weight on every page', 'Online orders and showroom visits', 'Free audit, then AED quote'],
     headings: {
@@ -789,7 +789,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
         paragraphs: [
           'Gold prices move daily, so ads should lead with design, karat and weight rather than a fixed price that may be wrong tomorrow. Plan the year around Ramadan, both Eids, the cooler-month wedding season, UAE National Day, the F1 weekend on Yas Island, White Friday, Mother’s Day in March and the Indian festive calendar.',
           'Stock and creative should be ready well before each peak. Bridal lookbooks need to run months ahead of the wedding season, Eid gifting ranges a few weeks before Ramadan ends, and Diwali and Dhanteras campaigns early enough for families to visit or order in time. Budgets then rise gradually, so campaigns have learned before demand arrives.',
-          'Magnus Path has no office in the UAE. We manage your account from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and every review takes place over video. When you compare any jewellery marketing agency in Abu Dhabi, ask how it will report WhatsApp enquiries and showroom visits, not only online orders, because that is where many gold sales close.',
+          'Billion Ecommerce Agency has no office in the UAE. We manage your account from our Chennai head office, 1.5 hours ahead of Abu Dhabi, and every review takes place over video. When you compare any jewellery marketing agency in Abu Dhabi, ask how it will report WhatsApp enquiries and showroom visits, not only online orders, because that is where many gold sales close.',
         ],
       },
     ],
@@ -810,7 +810,7 @@ export const abuDhabiIndustryBeautyPages: ServicePageData[] = [
       { q: 'How should we describe hallmarks and purity?', a: 'Show the karat, the hallmark and any grading report with close-up photos, and explain them in plain words. UAE hallmarking has long been associated with the Dubai Central Laboratory, but requirements vary, so check with your regulatory adviser which marks apply to your pieces.' },
       { q: 'Can online ads bring people to our showroom?', a: 'Yes. Click-to-WhatsApp ads, appointment booking, Google Business Profile and location targeting can all drive visits for high-value pieces. We track appointments and visits alongside online orders, so you can see the full effect of each campaign, not just website sales.' },
       { q: 'Do you plan campaigns for Diwali and Akshaya Tritiya?', a: 'Yes. Abu Dhabi’s Indian and Keralite families are a major jewellery market, and Diwali, Dhanteras, Akshaya Tritiya and Onam are important buying moments. These campaigns get their own creative, audiences and timing, separate from Eid and wedding-season work for Emirati buyers.' },
-      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Magnus Path has no office in the UAE. Jewellery brands in Abu Dhabi are served remotely from our Chennai head office, and with the UAE 1.5 hours behind India our working days overlap closely. All meetings take place on video; we do not hold in-person meetings in Abu Dhabi.' },
+      { q: 'Do you have an office in Abu Dhabi?', a: 'No. Billion Ecommerce Agency has no office in the UAE. Jewellery brands in Abu Dhabi are served remotely from our Chennai head office, and with the UAE 1.5 hours behind India our working days overlap closely. All meetings take place on video; we do not hold in-person meetings in Abu Dhabi.' },
     ],
   },
 ];

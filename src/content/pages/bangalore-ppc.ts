@@ -5,14 +5,14 @@ export const bangalorePpcPages: ServicePageData[] = [
   {
     slug: 'bangalore/ppc-company',
     kind: 'location',
-    title: 'PPC Company in Bangalore | Google Ads for D2C | Magnus Path',
+    title: 'PPC Company in Bangalore | Google Ads for D2C',
     description: 'PPC company in Bangalore for D2C brands and startups: Google Shopping, Performance Max, Search and Microsoft Ads, measured on orders and leads. Free audit first.',
     primaryKeyword: 'PPC company in Bangalore',
     navLabel: 'PPC Company Bangalore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Google Ads and PPC in Bangalore',
     h1: 'PPC Company in Bangalore for *Shopping and Search* Ads',
-    intro: 'Magnus Path is a PPC company in Bangalore that manages Google Ads and Microsoft Ads for D2C brands, online stores and B2B startups. We run Shopping, Performance Max and Search from a clean Merchant Center feed, set ROAS targets after COD and RTO costs, and review results with you at our Bengaluru office or on a call.',
+    intro: 'Billion Ecommerce Agency is a PPC company in Bangalore that manages Google Ads and Microsoft Ads for D2C brands, online stores and B2B startups. We run Shopping, Performance Max and Search from a clean Merchant Center feed, set ROAS targets after COD and RTO costs, and review results with you at our Bengaluru office or on a call.',
     icon: 'social',
     facts: ['Free Google Ads audit first', 'Accounts and billing in your name', 'Bengaluru office, by appointment'],
     headings: {

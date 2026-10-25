@@ -5,14 +5,14 @@ export const seoPages: ServicePageData[] = [
   {
     slug: 'ecommerce-seo',
     kind: 'hub',
-    title: 'Ecommerce SEO Services in India | Magnus Path',
+    title: 'Ecommerce SEO Services in India | Billion Ecommerce Agency',
     description: 'Ecommerce SEO services from Chennai for Shopify, WooCommerce, Amazon and AI search. Technical fixes, category content and links that grow organic sales.',
     primaryKeyword: 'ecommerce seo services',
     navLabel: 'E-commerce SEO',
     breadcrumb: [],
     eyebrow: 'E-commerce SEO · Store, marketplace and AI search',
     h1: 'Ecommerce SEO Services That Turn Search Into *Sales*',
-    intro: 'Magnus Path provides ecommerce SEO services for Shopify, WooCommerce and custom stores, plus Amazon, Flipkart and AI search. We fix the technical problems that stop Google from indexing your catalogue, then grow the category and product pages that actually take orders. Every report shows organic revenue, not just rankings.',
+    intro: 'Billion Ecommerce Agency provides ecommerce SEO services for Shopify, WooCommerce and custom stores, plus Amazon, Flipkart and AI search. We fix the technical problems that stop Google from indexing your catalogue, then grow the category and product pages that actually take orders. Every report shows organic revenue, not just rankings.',
     icon: 'seo',
     facts: ['Store, marketplace and AI search', 'Reports on revenue, not just rankings', 'Free audit first'],
     headings: {
@@ -136,7 +136,7 @@ export const seoPages: ServicePageData[] = [
     ],
     faqs: [
       { q: 'What are ecommerce SEO services?', a: 'Ecommerce SEO services improve how an online store ranks in search engines. They cover technical fixes for crawling and duplicate URLs, optimisation of category and product pages, structured data, buying-guide content and link building, all aimed at growing organic orders rather than traffic alone.' },
-      { q: 'How much do ecommerce SEO services cost in India?', a: 'It depends on catalogue size, technical problems, how much content and link work is needed and how competitive your categories are. Magnus Path quotes ecommerce SEO after a free audit, in a fixed written quote that lists the monthly scope, timeline and exclusions across technical work, page optimisation, content and links.' },
+      { q: 'How much do ecommerce SEO services cost in India?', a: 'It depends on catalogue size, technical problems, how much content and link work is needed and how competitive your categories are. Billion Ecommerce Agency quotes ecommerce SEO after a free audit, in a fixed written quote that lists the monthly scope, timeline and exclusions across technical work, page optimisation, content and links.' },
       { q: 'How long does ecommerce SEO take to show results?', a: 'Technical fixes can lift indexed pages and impressions within a few weeks. Growth in organic orders usually shows within three to six months for an established store. New domains and highly competitive categories, such as fashion or electronics, can take longer.' },
       { q: 'How do I find the best ecommerce SEO services in India?', a: 'Look for a team that reports organic revenue, not just rankings, and can explain how it handles filters, variants and out-of-stock products. Ask who will do the work, how links are built, and for a sample monthly report before you sign.' },
       { q: 'Should I hire an ecommerce SEO consultant or an agency?', a: 'A consultant suits brands with an in-house team that needs strategy and direction. An agency suits brands that need the work done as well: technical fixes, copywriting, schema and link building. We can work either way, including advising your own developers and writers.' },
@@ -149,7 +149,7 @@ export const seoPages: ServicePageData[] = [
   {
     slug: 'shopify-seo',
     kind: 'service',
-    title: 'Shopify SEO Services for Indian Brands | Magnus Path',
+    title: 'Shopify SEO Services for Indian Brands | Billion Ecommerce Agency',
     description: 'Shopify SEO services that fix duplicate URLs, canonical tags, app bloat and slow themes, then grow collection and product rankings. Free audit first.',
     primaryKeyword: 'shopify seo services',
     navLabel: 'Shopify SEO',
@@ -275,7 +275,7 @@ export const seoPages: ServicePageData[] = [
       { q: 'What do Shopify SEO services include?', a: 'Shopify SEO services usually cover a technical audit, theme fixes for duplicate URLs and canonical tags, app and speed clean-up, structured data, collection and product page optimisation, blog content and link building. Good providers also report on organic orders and revenue, not just rankings.' },
       { q: 'Is Shopify good for SEO?', a: 'Yes, Shopify is a solid base for SEO. It handles hosting, sitemaps, canonical tags and editable meta fields. Its weak points are fixed URL prefixes, duplicate collection-based product URLs, tag pages and speed issues from apps, which all need deliberate fixes. Good Shopify SEO services handle these at theme level.' },
       { q: 'Why does my Shopify product have two URLs?', a: 'Shopify serves products at /products/name and, when reached from a collection, often at /collections/collection/products/name. A canonical tag points to the first, but internal links still go to the duplicate. A small theme edit makes collection grids link to the canonical URL.' },
-      { q: 'How much does Shopify SEO cost in India?', a: 'Magnus Path quotes Shopify SEO after a free audit of your store. The cost depends on catalogue size, how many theme and app problems need fixing, speed work and how much content and link building you need. Multiple Shopify Markets, languages or very large catalogues add scope. The written quote lists scope, timeline and exclusions.' },
+      { q: 'How much does Shopify SEO cost in India?', a: 'Billion Ecommerce Agency quotes Shopify SEO after a free audit of your store. The cost depends on catalogue size, how many theme and app problems need fixing, speed work and how much content and link building you need. Multiple Shopify Markets, languages or very large catalogues add scope. The written quote lists scope, timeline and exclusions.' },
       { q: 'Do too many Shopify apps hurt SEO?', a: 'They can. Each app may load scripts and styles on every page, slowing the store on mobile, and some leave code behind after uninstalling. Slow pages hurt both rankings and conversions, so we audit every app and remove what is not needed.' },
       { q: 'Can I change Shopify URL structure for SEO?', a: 'Not fully. Shopify keeps fixed prefixes such as /products/, /collections/ and /pages/. You can change the handle after the prefix, and Shopify can create a redirect when you do. The prefixes themselves do not stop a store from ranking well.' },
       { q: 'Do you work on Shopify Plus stores?', a: 'Yes. We work on Shopify and Shopify Plus, including stores using Shopify Markets for several countries. Multi-market stores need careful hreflang, currency and subfolder setup, which we review as part of the technical audit before any content work begins.' },
@@ -286,7 +286,7 @@ export const seoPages: ServicePageData[] = [
   {
     slug: 'amazon-seo',
     kind: 'service',
-    title: 'Amazon SEO Services & Listing Optimisation | Magnus Path',
+    title: 'Amazon SEO Services & Listing Optimisation',
     description: 'Amazon SEO services for Indian sellers: listing optimisation, backend search terms, images and A+ content that improve rankings and sales. Flipkart too.',
     primaryKeyword: 'amazon seo services',
     navLabel: 'Amazon SEO',
@@ -401,7 +401,7 @@ export const seoPages: ServicePageData[] = [
     faqs: [
       { q: 'What are Amazon SEO services?', a: 'Amazon SEO services improve how your products rank in Amazon search and how well listings convert. The work covers keyword research, title and bullet rewrites, backend search terms, image planning, A+ content and review strategy, followed by monthly tracking of rankings, sessions and conversion rate.' },
       { q: 'How does the Amazon A9 or A10 algorithm work?', a: 'Amazon does not publish its ranking rules. In general terms, it ranks products on relevance, meaning how well the listing matches the search, and performance, meaning how often shoppers click and buy. Listings that sell well tend to climb, which is why conversion matters as much as keywords for any listing.' },
-      { q: 'How much does Amazon listing optimisation cost?', a: 'Magnus Path quotes Amazon SEO and listing optimisation after a free listing audit. How many listings we cover each month depends on catalogue size and how much image and A+ content work is needed, and the written quote sets out that scope. Flipkart listings can be added to the same plan.' },
+      { q: 'How much does Amazon listing optimisation cost?', a: 'Billion Ecommerce Agency quotes Amazon SEO and listing optimisation after a free listing audit. How many listings we cover each month depends on catalogue size and how much image and A+ content work is needed, and the written quote sets out that scope. Flipkart listings can be added to the same plan.' },
       { q: 'What is A+ content on Amazon?', a: 'A+ content is an enhanced product description available to brand-registered sellers. It replaces plain text with images, comparison charts and brand story modules. It is not indexed as heavily as titles and bullets, but it usually improves conversion, which supports rankings.' },
       { q: 'What should go in Amazon backend search terms?', a: 'Use synonyms, alternative spellings, regional terms written in English letters and use cases that do not fit naturally on the page. Avoid repeating words already in the title, competitor brand names and anything misleading. Stay within Amazon’s length limit and style rules.' },
       { q: 'Do you optimise Flipkart listings too?', a: 'Yes. Flipkart ranks products on similar signals: relevant titles, complete attributes, good images, sales and ratings. Because Flipkart relies heavily on structured attributes, we fill every specification field accurately alongside rewriting titles and descriptions for each product.' },
@@ -413,7 +413,7 @@ export const seoPages: ServicePageData[] = [
   {
     slug: 'ai-search-optimization',
     kind: 'service',
-    title: 'AI Search Optimization (GEO) for Brands | Magnus Path',
+    title: 'AI Search Optimization (GEO) for Brands',
     description: 'AI search optimization (GEO) to help ChatGPT, Gemini, Perplexity and Google AI Overviews find, trust and cite your brand. Honest, measurable, from Chennai.',
     primaryKeyword: 'ai search optimization',
     navLabel: 'AI Search Optimisation',
@@ -538,7 +538,7 @@ export const seoPages: ServicePageData[] = [
       { q: 'What is ChatGPT SEO?', a: 'ChatGPT SEO, sometimes called LLM SEO, means improving the chance that ChatGPT mentions or links to your brand. When ChatGPT searches the web, it reads pages that rank and are easy to quote. Its general knowledge also reflects how consistently your brand appears across reputable sites.' },
       { q: 'Does llms.txt help with AI search?', a: 'llms.txt is a proposed file that gives AI tools a short guide to your key pages. It is still an emerging idea, not an agreed standard, and there is little public evidence that major AI tools rely on it. It is low-cost to add, but it should not be the centre of a strategy.' },
       { q: 'How do you measure traffic from AI tools?', a: 'We set up a GA4 channel that groups referrals from chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com and similar sources, with their conversions. We also run a fixed set of prompts each month to track how often your brand is cited and what is said.' },
-      { q: 'How much does AI search optimisation cost?', a: 'Magnus Path quotes AI search optimisation after a free visibility check. The cost depends on how many pages need rewriting, the state of your entity and schema data, the reviews and mentions work required and AI referral tracking. Sites with major technical SEO problems may need those fixed first, which the written quote includes.' },
+      { q: 'How much does AI search optimisation cost?', a: 'Billion Ecommerce Agency quotes AI search optimisation after a free visibility check. The cost depends on how many pages need rewriting, the state of your entity and schema data, the reviews and mentions work required and AI referral tracking. Sites with major technical SEO problems may need those fixed first, which the written quote includes.' },
     ],
   },
 
@@ -546,14 +546,14 @@ export const seoPages: ServicePageData[] = [
   {
     slug: 'seo-services',
     kind: 'service',
-    title: 'SEO Agency in India for Local & Small Business | Magnus Path',
+    title: 'SEO Agency in India for Local & Small Business',
     description: 'SEO agency in India for local SEO, Google Business Profile, technical SEO and content that brings enquiries. Free audit, then a fixed quote.',
     primaryKeyword: 'seo agency in India',
     navLabel: 'SEO Services',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
     eyebrow: 'SEO services · Local SEO · Small business SEO',
     h1: 'SEO Agency in India That Helps You Win *Local Customers*',
-    intro: 'Magnus Path is a Chennai-based SEO agency in India that businesses of every kind use for local SEO, Google Business Profile management, technical SEO and content. Clinics, schools, manufacturers, consultants and retailers come to us for the same reason: more calls, enquiries and visits from people already searching for what they offer.',
+    intro: 'Billion Ecommerce Agency is a Chennai-based SEO agency in India that businesses of every kind use for local SEO, Google Business Profile management, technical SEO and content. Clinics, schools, manufacturers, consultants and retailers come to us for the same reason: more calls, enquiries and visits from people already searching for what they offer.',
     icon: 'seo',
     facts: ['Local, technical and content SEO', 'Google Business Profile included', 'Fixed written quote'],
     headings: {
@@ -669,7 +669,7 @@ export const seoPages: ServicePageData[] = [
     faqs: [
       { q: 'What does an SEO agency in India do?', a: 'An SEO agency improves how your business appears in Google and other search tools. For most businesses that means optimising the Google Business Profile, fixing technical website issues, writing clear service and location pages, publishing helpful content and reporting on calls, enquiries and traffic each month.' },
       { q: 'What are local SEO services?', a: 'Local SEO services help a business appear in map results and “near me” searches in its area. The work includes Google Business Profile optimisation, consistent business details across directories, location pages, reviews and local content. It suits clinics, shops, schools, service firms and showrooms.' },
-      { q: 'How much do SEO services cost in India?', a: 'Cost depends on the number of locations and pages, the state of your technical SEO, how much content is needed and how competitive your market is. Magnus Path quotes SEO services and local SEO after a free audit, in a fixed written quote listing scope, timeline and exclusions. Our SEO packages page lists fixed monthly deliverables.' },
+      { q: 'How much do SEO services cost in India?', a: 'Cost depends on the number of locations and pages, the state of your technical SEO, how much content is needed and how competitive your market is. Billion Ecommerce Agency quotes SEO services and local SEO after a free audit, in a fixed written quote listing scope, timeline and exclusions. Our SEO packages page lists fixed monthly deliverables.' },
       { q: 'Are affordable local SEO services worth it?', a: 'Yes, if the budget goes to the right things. For a small business, a complete Google Business Profile, steady reviews and a few strong service pages usually matter more than a large volume of blog posts or backlinks. Avoid packages that promise fast rankings through bulk links.' },
       { q: 'Should I hire an SEO consultant or an agency?', a: 'A consultant suits businesses with in-house staff who can make website changes and write content. An agency suits businesses that want everything handled, from technical fixes to writing and Google Business Profile management. Either way, ask who does the work and how results are reported.' },
       { q: 'How long does SEO take to show results?', a: 'Google Business Profile improvements often show within a few weeks. Website rankings for competitive services typically take three to six months to move meaningfully. Progress depends on your starting point, competition in your area and how quickly website changes can be made.' },
@@ -681,14 +681,14 @@ export const seoPages: ServicePageData[] = [
   {
     slug: 'chennai/seo-company',
     kind: 'location',
-    title: 'SEO Company in Chennai for Local & E-commerce | Magnus Path',
+    title: 'SEO Company in Chennai for Local & E-commerce',
     description: 'SEO company in Chennai for local businesses, manufacturers and online stores. Google Business Profile, Tamil-language SEO and technical fixes. Free audit first.',
     primaryKeyword: 'seo company in chennai',
     navLabel: 'SEO Company in Chennai',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
     eyebrow: 'SEO in Chennai · Local, Tamil and e-commerce SEO',
     h1: 'SEO Company in Chennai That Talks *Results, Not Jargon*',
-    intro: 'Magnus Path is an SEO company in Chennai working with local businesses, manufacturers and online stores across the city. We handle Google Business Profile, technical SEO, Tamil and English content and link building from our Chennai office, and we are happy to meet you in person to plan the work and review progress.',
+    intro: 'Billion Ecommerce Agency is an SEO company in Chennai working with local businesses, manufacturers and online stores across the city. We handle Google Business Profile, technical SEO, Tamil and English content and link building from our Chennai office, and we are happy to meet you in person to plan the work and review progress.',
     icon: 'seo',
     facts: ['Based in Chennai, meet in person', 'Tamil and English SEO', 'Free audit first'],
     headings: {
@@ -807,7 +807,7 @@ export const seoPages: ServicePageData[] = [
       { label: 'Monthly SEO packages', href: '/seo-packages/' },
     ],
     faqs: [
-      { q: 'How much does an SEO company in Chennai charge?', a: 'It depends on the number of locations and pages, the state of your website, how much content and link work is needed and how competitive your market is. Magnus Path quotes SEO services and e-commerce SEO after a free audit or a short scoping call, with a fixed written quote listing scope, timeline and exclusions.' },
+      { q: 'How much does an SEO company in Chennai charge?', a: 'It depends on the number of locations and pages, the state of your website, how much content and link work is needed and how competitive your market is. Billion Ecommerce Agency quotes SEO services and e-commerce SEO after a free audit or a short scoping call, with a fixed written quote listing scope, timeline and exclusions.' },
       { q: 'Can I meet your SEO team in person in Chennai?', a: 'Yes. Our head office is in Chennai, and we are happy to meet at your office or ours for the kick-off, planning sessions and regular progress reviews. Day-to-day work and updates happen over calls, WhatsApp and shared monthly reports.' },
       { q: 'Do you offer Tamil-language SEO?', a: 'Yes. We research Tamil and Tanglish keywords, write Tamil pages with people who speak the language, and set up correct language tags. Tamil content works especially well for local service businesses whose customers search on mobile or by voice.' },
       { q: 'How do I get my Chennai business on Google Maps?', a: 'Create and verify a Google Business Profile, choose the right category, add your services, hours, photos and service areas, and keep your address and phone number identical across directories. Regular reviews and posts help you appear in the local map results more often.' },
@@ -821,14 +821,14 @@ export const seoPages: ServicePageData[] = [
   {
     slug: 'coimbatore/seo-services',
     kind: 'location',
-    title: 'SEO Services in Coimbatore for Manufacturers | Magnus Path',
+    title: 'SEO Services in Coimbatore for Manufacturers',
     description: 'SEO services in Coimbatore for manufacturers, textile firms and local businesses. Served from our Chennai office with remote work and visits. Free audit first.',
     primaryKeyword: 'seo services in coimbatore',
     navLabel: 'SEO Services in Coimbatore',
     breadcrumb: [{ label: 'SEO', href: '/ecommerce-seo/' }],
     eyebrow: 'SEO in Coimbatore · Served from Chennai',
     h1: 'SEO Services in Coimbatore for *Makers and Exporters*',
-    intro: 'Magnus Path offers SEO services in Coimbatore for manufacturers, textile and knitwear firms, and local businesses. We work from our Chennai office, remotely day to day and with visits when they help. The focus is simple: product and capability pages that reach buyers in India and abroad, plus local visibility on Google.',
+    intro: 'Billion Ecommerce Agency offers SEO services in Coimbatore for manufacturers, textile and knitwear firms, and local businesses. We work from our Chennai office, remotely day to day and with visits when they help. The focus is simple: product and capability pages that reach buyers in India and abroad, plus local visibility on Google.',
     icon: 'seo',
     facts: ['Served from our Chennai office', 'B2B, export and local SEO', 'Fixed written quote'],
     headings: {

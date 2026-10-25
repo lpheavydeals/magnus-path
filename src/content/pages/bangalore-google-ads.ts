@@ -5,14 +5,14 @@ export const bangaloreGoogleAdsPages: ServicePageData[] = [
   {
     slug: 'bangalore/google-ads-agency',
     kind: 'location',
-    title: 'Google Ads Agency in Bangalore | Lead-Gen Search | Magnus Path',
+    title: 'Google Ads Agency in Bangalore | Lead-Gen Search',
     description: 'Google Ads agency in Bangalore for startups, clinics, colleges, B2B and local firms: Search, call and WhatsApp lead tracking, Kannada ads. Free audit first.',
     primaryKeyword: 'Google Ads agency in Bangalore',
     navLabel: 'Google Ads Agency Bangalore',
     breadcrumb: [{ label: 'E-commerce Ads', href: '/performance-marketing/' }],
     eyebrow: 'Google Ads for Bengaluru businesses',
     h1: 'Google Ads Agency in Bangalore for *Leads Your Team Can Close*',
-    intro: 'Magnus Path is a Google Ads agency in Bangalore for businesses that need enquiries, not just clicks. We run Search, local and YouTube campaigns for startups, B2B firms, clinics, colleges, builders and home-service companies, track every call, form and WhatsApp chat, and feed sales outcomes back to Google. Meet us at our Bengaluru office by appointment.',
+    intro: 'Billion Ecommerce Agency is a Google Ads agency in Bangalore for businesses that need enquiries, not just clicks. We run Search, local and YouTube campaigns for startups, B2B firms, clinics, colleges, builders and home-service companies, track every call, form and WhatsApp chat, and feed sales outcomes back to Google. Meet us at our Bengaluru office by appointment.',
     icon: 'social',
     facts: ['Free account audit first', 'Ad account stays in your name', 'Meet us in Bengaluru'],
     headings: {

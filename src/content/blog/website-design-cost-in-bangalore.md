@@ -1,12 +1,12 @@
 ---
 title: "Website Design Cost in Bangalore: What It Costs and Why (2026)"
-metaTitle: "Website Design Cost in Bangalore (2026 Guide) | Magnus Path"
+metaTitle: "Website Design Cost in Bangalore (2026 Guide) | Billion Ecommerce Agency"
 description: "What drives website design cost in Bangalore in 2026: WordPress, corporate and e-commerce sites, recurring and hidden costs, and how to compare quotes fairly."
 primaryKeyword: "website design cost in bangalore"
 category: "Websites"
 publishDate: 2026-10-18
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "Website design cost in Bangalore depends on the type of site (WordPress, business or corporate, online store), how many pages and layouts it needs, custom design versus a styled template, content and photos, integrations and languages. Budget for the one-time build plus recurring costs for domain, hosting, licences and maintenance, and compare quotes against the same written brief."
 faqs:
   - q: "What is the website design cost in Bangalore for a small business?"

@@ -4,14 +4,14 @@ export const indiaPpcPages: ServicePageData[] = [
   {
     slug: 'ecommerce-ppc-agency',
     kind: 'service',
-    title: 'Ecommerce PPC Agency in India | Google Shopping | Magnus Path',
+    title: 'Ecommerce PPC Agency in India | Google Shopping',
     description: 'Ecommerce PPC agency in India for Shopify and WooCommerce brands: Google Shopping, Performance Max and Search, run to target ROAS after COD and RTO costs.',
     primaryKeyword: 'ecommerce PPC agency in India',
     navLabel: 'Ecommerce PPC',
     breadcrumb: [{ label: 'Ads', href: '/performance-marketing/' }],
     eyebrow: 'Google Shopping · Performance Max · Search',
     h1: 'Ecommerce PPC Agency in India for *Profitable* Google Ads',
-    intro: 'Magnus Path is an ecommerce PPC agency in India that runs Google Shopping, Performance Max and Search campaigns for D2C brands on Shopify and WooCommerce. We fix your Merchant Center feed, set target ROAS after COD and RTO costs, and keep every account in your name, so you can see what each rupee of ad spend really returns.',
+    intro: 'Billion Ecommerce Agency is an ecommerce PPC agency in India that runs Google Shopping, Performance Max and Search campaigns for D2C brands on Shopify and WooCommerce. We fix your Merchant Center feed, set target ROAS after COD and RTO costs, and keep every account in your name, so you can see what each rupee of ad spend really returns.',
     icon: 'shopify',
     facts: ['Free audit first', 'Accounts stay in your name', 'ROAS judged after RTO'],
     headings: {

@@ -1,12 +1,12 @@
 ---
 title: "How to Reduce RTO in Ecommerce: Cut COD Returns and Protect Margin"
-metaTitle: "How to Reduce RTO in Ecommerce (2026) | Magnus Path"
+metaTitle: "How to Reduce RTO in Ecommerce (2026) | Billion Ecommerce Agency"
 description: "How to reduce RTO in ecommerce: what return to origin means, COD verification, prepaid incentives, address checks, pin-code rules, courier choice and tracking."
 primaryKeyword: "how to reduce rto in ecommerce"
 category: "Websites"
 publishDate: 2026-10-16
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "To reduce RTO in ecommerce, confirm cash on delivery orders before dispatch by OTP or WhatsApp, nudge buyers to prepaid with a small incentive, verify addresses at checkout, apply pin-code and customer risk rules, make product pages accurate, choose couriers by delivery performance, and target ads at genuine buyers. Measure RTO rate by channel, pin code and product every week so you fix the real causes."
 faqs:
   - q: "What is RTO meaning in ecommerce?"

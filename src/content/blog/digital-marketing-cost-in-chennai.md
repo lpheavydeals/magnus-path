@@ -1,12 +1,12 @@
 ---
 title: "Digital Marketing Cost in Chennai: What It Costs and Why (2026)"
-metaTitle: "Digital Marketing Cost in Chennai (2026 Guide) | Magnus Path"
+metaTitle: "Digital Marketing Cost in Chennai (2026 Guide) | Billion Ecommerce Agency"
 description: "What drives digital marketing cost in Chennai in 2026: agency fees vs ad spend, how to set an ad budget, hidden costs, red flags and how to compare quotes."
 primaryKeyword: "digital marketing cost in chennai"
 category: "Ads"
 publishDate: 2026-10-18
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "Digital marketing cost in Chennai is two separate numbers: the agency's management fee, which depends on channels, scope, content and your starting point, and the ad spend you pay directly to Google or Meta. Set the ad budget from what a customer is worth, run one channel properly for two to three months, and compare quotes on a written scope."
 faqs:
   - q: "What is the digital marketing cost in Chennai for a small business?"
@@ -19,7 +19,7 @@ faqs:
     a: "A freelancer often costs less and suits a single, clearly defined task such as running one ad account. An agency usually costs more but gives you several skills in one team: ads, SEO, creative and tracking, plus cover when someone is on leave. Compare what each option delivers each month, not just the headline fee."
   - q: "How long before digital marketing shows results?"
     a: "Paid ads can bring enquiries or sales within the first few weeks, though the first month is mostly testing. SEO and local SEO take longer, often several months, because rankings build gradually. Social media sits in between: it builds trust and reach over time. Plan your budget around these different timelines rather than judging every channel in month one."
-  - q: "How does Magnus Path quote for digital marketing?"
+  - q: "How does Billion Ecommerce Agency quote for digital marketing?"
     a: "We start with a free audit or a short scoping call about your goals, channels and current accounts. Then we send a fixed written quote listing the monthly scope, timeline and exclusions. Ad spend is never part of our fee: it is paid directly to Google or Meta from your own account, and the management fee is quoted separately."
 related:
   - label: "Digital marketing agency in Chennai"
@@ -174,4 +174,4 @@ Different channels pay back on different clocks, and your budget should allow fo
 
 We do not publish a price list, because no two businesses need the same channels or volume of work. We start with a free audit or a short scoping call about your goals, current accounts and customers. Then we send a fixed written quote that lists the monthly scope, the timeline and what is not included. For ads, the ad spend is paid directly to Google or Meta from your own account, and our management fee is quoted separately.
 
-Magnus Path's head office is in Chennai, where our main delivery team works. You can meet the team there by appointment to walk through your goals and a realistic monthly budget, or we can do it over a video call. Bring access to your ad accounts, your website analytics, your average order or deal value and a rough idea of the budget you are comfortable testing. Book a time through our [contact page](/contact/), see our [digital marketing agency in Chennai](/chennai/digital-marketing-agency/) page for what each service includes, or start with a [free e-commerce audit](/free-ecommerce-audit/) if you run an online store.
+Billion Ecommerce Agency's head office is in Chennai, where our main delivery team works. You can meet the team there by appointment to walk through your goals and a realistic monthly budget, or we can do it over a video call. Bring access to your ad accounts, your website analytics, your average order or deal value and a rough idea of the budget you are comfortable testing. Book a time through our [contact page](/contact/), see our [digital marketing agency in Chennai](/chennai/digital-marketing-agency/) page for what each service includes, or start with a [free e-commerce audit](/free-ecommerce-audit/) if you run an online store.

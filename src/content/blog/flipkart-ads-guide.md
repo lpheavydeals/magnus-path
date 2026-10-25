@@ -1,12 +1,12 @@
 ---
 title: "Flipkart Ads Guide: How to Run Profitable Ads as a Seller"
-metaTitle: "Flipkart Ads Guide for Sellers (2026) | Magnus Path"
+metaTitle: "Flipkart Ads Guide for Sellers (2026) | Billion Ecommerce Agency"
 description: "A practical Flipkart ads guide for sellers: ad formats, campaign setup, budgets, bidding, sale-event planning, ROI tracking and the mistakes that waste spend."
 primaryKeyword: "flipkart ads guide"
 category: "Ads"
 publishDate: 2026-10-16
 readingMinutes: 9
-author: "Magnus Path Team"
+author: "Billion Ecommerce Agency Team"
 summary: "Flipkart ads help sellers show products higher in search results and on product pages. The basics are simple: fix your listings first, start with product listing ads on your best sellers, give automatic campaigns a short learning period, then move proven search terms into manual campaigns. Plan sale events weeks in advance and judge every campaign on profit after all costs, not on ROAS alone."
 faqs:
   - q: "How do I run ads on Flipkart as a seller?"

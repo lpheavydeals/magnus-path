@@ -4,7 +4,7 @@ import { nav } from '../data/site';
 ---
 <header class="hdr">
   <div class="hdr__pill">
-    <a href="/" class="hdr__brand" aria-label="Magnus Path — home"><Logo /></a>
+    <a href="/" class="hdr__brand" aria-label="Billion Ecommerce Agency — home"><Logo /></a>
     <nav class="hdr__nav" aria-label="Main">
       <ul>
         {nav.map((item) => (
@@ -39,7 +39,8 @@ import { nav } from '../data/site';
   .hdr__pill { pointer-events: auto; position: relative; max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: 18px; height: 64px; padding: 0 10px 0 22px; background: rgba(255,255,255,.88); backdrop-filter: saturate(170%) blur(16px); -webkit-backdrop-filter: saturate(170%) blur(16px); border: 1px solid rgba(18,19,22,.06); border-radius: 999px; box-shadow: 0 12px 40px -18px rgba(18,19,22,.25); }
   .hdr__brand { display: inline-flex; text-decoration: none; }
   .hdr__brand :global(.logo__mark) { width: 38px; }
-  .hdr__brand :global(.logo__word) { width: 118px; }
+  .hdr__brand :global(.logo__word) { font-size: 17px; }
+  @media (max-width: 380px) { .hdr__brand :global(.logo__word) { font-size: 14px; } .hdr__brand :global(.logo__mark) { width: 30px; } }
   .hdr__nav { margin: 0 auto; display: none; }
   .hdr__nav > ul { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
   .hdr__nav > ul > li { position: relative; }

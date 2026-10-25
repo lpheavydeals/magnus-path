@@ -16,7 +16,7 @@ export const uaePpcPages: ServicePageData[] = [
     breadcrumb: [UAE_HUB],
     eyebrow: 'For UAE online stores · Google Shopping · Performance Max · Search · Merchant Center',
     h1: 'Ecommerce PPC Agency for Dubai and UAE Stores, *Built on Your Margins*',
-    intro: 'Looking for an ecommerce PPC agency in Dubai that runs Google Ads around profit, not clicks? Magnus Path is a Chennai team serving Dubai and the wider UAE remotely. We fix your Merchant Center feed, run Shopping, Performance Max and Search in English and Arabic, and set target ROAS from each product’s margin.',
+    intro: 'Looking for an ecommerce PPC agency in Dubai that runs Google Ads around profit, not clicks? Billion Ecommerce Agency is a Chennai team serving Dubai and the wider UAE remotely. We fix your Merchant Center feed, run Shopping, Performance Max and Search in English and Arabic, and set target ROAS from each product’s margin.',
     icon: 'social',
     facts: ['Accounts stay in your name', 'English and Arabic campaigns', 'Free audit, quote in AED'],
     headings: {
@@ -134,7 +134,7 @@ export const uaePpcPages: ServicePageData[] = [
       { label: 'ROAS calculator for break-even targets', href: '/tools/roas-calculator/' },
     ],
     faqs: [
-      { q: 'Do you have an office in Dubai?', a: 'No. Magnus Path has no office, address or trade licence in Dubai, and we do not offer in-person meetings there. We are a Chennai team serving Dubai and the wider UAE remotely, through video calls, WhatsApp and shared reports. UAE time is 1.5 hours behind India, so our working days almost fully overlap.' },
+      { q: 'Do you have an office in Dubai?', a: 'No. Billion Ecommerce Agency has no office, address or trade licence in Dubai, and we do not offer in-person meetings there. We are a Chennai team serving Dubai and the wider UAE remotely, through video calls, WhatsApp and shared reports. UAE time is 1.5 hours behind India, so our working days almost fully overlap.' },
       { q: 'How much does an ecommerce PPC agency in Dubai cost?', a: 'It depends on catalogue size, how many campaigns and languages you need, the state of your feed and tracking, and how competitive your category is. We do not publish fixed prices. After a free audit we send a written scope with a monthly management fee in AED. Ad spend is paid directly to Google from your own account.' },
       { q: 'Who owns the Google Ads and Merchant Center accounts?', a: 'You do. Your Google Ads account, Merchant Center and GA4 property stay in your company’s name, and Google bills ad spend to you directly. We work through user access that you can remove at any time, so the account history, data and audiences remain yours if we stop working together.' },
       { q: 'Should I use Performance Max or standard Shopping campaigns?', a: 'Often both. Performance Max reaches more placements and can work well once tracking and the feed are clean, but it hides detail and can drift to brand searches and cheap products. Standard Shopping gives tighter control. We usually split products by margin with custom labels and test the two side by side.' },
