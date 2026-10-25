@@ -16,6 +16,9 @@ const blog = defineCollection({
     faqs: z.array(z.object({ q: z.string(), a: z.string() })),
     related: z.array(z.object({ label: z.string(), href: z.string() })),
     figures: z.array(z.any()).optional(), // same shape as Figure in src/data/types.ts
+    // Country version of an India guide: `twin` is the India guide's id; hreflang links the versions.
+    market: z.enum(['UK', 'US']).optional(),
+    twin: z.string().optional(),
   }),
 });
 export const collections = { blog };
