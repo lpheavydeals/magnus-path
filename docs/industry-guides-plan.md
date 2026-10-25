@@ -83,3 +83,32 @@ Same rules as the UK/US versions: `market: "AU"|"UAE"`, `twin: "<india id>"`, sl
 | footwear | footwear-marketing-ideas | footwear-marketing-ideas-australia / footwear marketing ideas australia | footwear-marketing-ideas-uae / footwear marketing ideas uae |
 | electronics | how-to-sell-electronics-online-in-india | how-to-sell-electronics-online-australia / how to sell electronics online australia | how-to-sell-electronics-online-uae / how to sell electronics online uae |
 | electronics | consumer-electronics-marketing-strategy | consumer-electronics-marketing-strategy-australia / consumer electronics marketing strategy australia | consumer-electronics-marketing-strategy-uae / consumer electronics marketing strategy uae |
+
+## Chennai and Bangalore local-topic guides
+
+Not city copies of the India guides (same country/language would cannibalise them). Instead, guides on genuinely
+local topics with their own searches. India market (no `market`/`twin`), category "Industries", same format and rules
+as the India guides. Each links the matching city industry/service pages and the India industry page; add them to
+`src/data/guide-map.ts` for those city pages. Must not repeat existing guides (check `src/content/blog/`), e.g. the
+Blinkit/Zepto guide, digital-marketing-cost-in-chennai, website-design-cost-in-bangalore.
+
+| City | Slug | Primary keyword | Link to (city pages first) |
+|---|---|---|---|
+| Chennai | how-to-start-a-cosmetics-brand-in-tamil-nadu | how to start a cosmetics brand in tamil nadu | chennai/cosmetics, chennai/skincare, chennai/haircare, industries/cosmetics |
+| Chennai | how-to-sell-siddha-and-ayurvedic-products-online | how to sell siddha products online | chennai/ayurveda, coimbatore/ayurveda, industries/ayurveda |
+| Chennai | how-to-start-a-d2c-brand-in-chennai | how to start a d2c brand in chennai | chennai/digital-marketing-agency, chennai/ecommerce-website-development, chennai/ecommerce-meta-ads-agency |
+| Chennai | how-to-sell-temple-jewellery-online | how to sell temple jewellery online | chennai/jewellery, coimbatore/jewellery, industries/jewellery |
+| Chennai | how-to-sell-kanchipuram-silk-sarees-online | how to sell sarees online | industries/fashion-apparel, chennai/digital-marketing-agency, chennai/social-media-marketing-agency |
+| Chennai | instagram-marketing-in-tamil | instagram marketing in tamil | chennai/social-media-marketing-agency, chennai/meta-ads-agency, chennai/facebook-ads-agency |
+| Chennai | how-tiruppur-garment-exporters-can-sell-online | tiruppur garment exporters sell online | coimbatore/baby-products, industries/fashion-apparel, b2b-digital-marketing, coimbatore/ecommerce-meta-ads-agency |
+| Chennai | pongal-and-aadi-sale-marketing-guide | aadi sale marketing | chennai/digital-marketing-agency, chennai/ecommerce-meta-ads-agency, resources/sale-calendar |
+| Bangalore | how-to-launch-a-d2c-brand-in-bangalore | how to launch a d2c brand in bangalore | bangalore/digital-marketing-agency, bangalore/performance-marketing-agency, bangalore/ecommerce-website-development |
+| Bangalore | d2c-unit-economics-guide | d2c unit economics | bangalore/performance-marketing-agency, tools/ltv-cac-calculator, tools/profit-margin-calculator |
+| Bangalore | how-to-start-a-skincare-brand-in-karnataka | how to start a skincare brand in karnataka | bangalore/skincare, bangalore/cosmetics, industries/skincare |
+| Bangalore | kannada-marketing-for-brands | kannada marketing | bangalore/meta-ads-agency, bangalore/digital-marketing-agency, bangalore/facebook-ads-agency |
+| Bangalore | how-to-start-a-coffee-brand-in-india | how to start a coffee brand in india | industries/food-fmcg, bangalore/digital-marketing-agency, quick-commerce-marketing |
+| Bangalore | how-to-sell-agarbatti-and-sandalwood-products-online | how to sell agarbatti online | bangalore/perfume, industries/perfume, chennai/perfume |
+| Bangalore | how-to-start-a-millet-brand-in-india | how to start a millet brand | industries/food-fmcg, bangalore/supplement, coimbatore/supplement |
+| Bangalore | ugadi-and-dasara-sale-marketing-guide | ugadi sale marketing | bangalore/digital-marketing-agency, bangalore/ecommerce-meta-ads-agency, resources/sale-calendar |
+
+(Industry page slugs are `<city>/<industry>-marketing-agency`, e.g. `chennai/cosmetics-marketing-agency`.)
