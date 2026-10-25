@@ -14,9 +14,9 @@ faqs:
   - q: "How do I market a new makeup brand in Australia?"
     a: "Start by making shade choice easy on your own store: real swatches, undertone notes and a short quiz. Then build a small, steady creator roster that matches your buyers, open a waitlist before each launch and test short video ads on Meta and TikTok. Add Amazon AU and TikTok Shop for lip, cheek and nail products."
   - q: "Do Australian creators have to disclose gifted makeup?"
-    a: "Yes, if the post is advertising, which usually includes paid, gifted and affiliate content. The AANA code expects advertising to be clearly distinguishable, and Ad Standards hears complaints. The ACCC has also focused on undisclosed influencer posts. Ask creators to label content clearly at the start and keep written agreements."
+    a: "Yes, if the post is advertising, which usually includes paid, gifted and affiliate content. Under the AANA code, people should be able to recognise advertising for what it is, and complaints go to Ad Standards. The ACCC has also focused on undisclosed influencer posts. Ask creators to label content clearly at the start and keep written agreements."
   - q: "Can we use beauty filters in makeup ads?"
-    a: "Avoid filters that change how the product looks on skin. Under the Australian Consumer Law, images must not mislead, and a filtered swatch or smoothed face can suggest coverage or colour the product does not deliver. Show the makeup on unedited skin in natural light, and make sure creators follow the same rule."
+    a: "Keep filters away from anything that alters how the product appears on skin. Under the Australian Consumer Law, images must not mislead, and a filtered swatch or smoothed face can suggest coverage or colour the product does not deliver. Film on unretouched skin in daylight, and write the same rule into creator briefs."
   - q: "Which makeup products sell well on TikTok Shop?"
     a: "Products whose result is obvious on camera and needs no shade match tend to do well, such as lip colour, blush, highlighter, mascara and nail polish, where TikTok Shop is available to your business. Base products are harder because buyers worry about shade. Keep prices consistent with your store and check stock before any creator push."
   - q: "When are the busiest seasons for makeup in Australia?"
@@ -52,13 +52,13 @@ figures:
       - { title: "Restock nudge", body: "Timed to typical use, with new shades" }
 ---
 
-Searching for makeup brand marketing ideas? Australia gives you a buyer who is used to swatching at a Mecca or Sephora counter, scrolling TikTok for new launches and comparing prices at Priceline before deciding. An online-first label has to give the same confidence through a screen. The 15 ideas below are grouped by the job they do: helping buyers choose a shade, building creator content, running launches and ads, and making the most of Australian seasons and repeat orders.
+Searching for makeup brand marketing ideas? Australia gives you a buyer who is used to swatching at a Mecca or Sephora counter, scrolling TikTok for new launches and comparing prices at Priceline before deciding. If you sell mainly online, your pages and videos have to replace that counter. The 15 ideas that follow are sorted into four groups: helping buyers choose a shade, building creator content, running launches and ads, and making the most of Australian seasons and repeat orders.
 
 ## Ideas that help buyers pick the right shade
 
 ### 1. Swatch every shade on many skin tones
 
-Australia's population covers a very wide range of skin tones and undertones. Show each shade on several of them, in daylight and indoor light, on the face and the inner arm. A single model leaves most buyers guessing, which leads to abandoned carts and exchanges. Film short clips as well as stills, because movement shows finish better than a flat photo.
+Australian buyers span an enormous mix of skin tones and undertones. Show each shade on several of them, in daylight and indoor light, on the face and the inner arm. A single model leaves most buyers guessing, which leads to abandoned carts and exchanges. Film short clips as well as stills, because movement shows finish better than a flat photo.
 
 ### 2. Explain undertones in plain words
 
@@ -66,7 +66,7 @@ Many buyers are unsure whether they are warm, cool or neutral. A simple self-che
 
 ### 3. Add a shade quiz beside the swatches
 
-A short quiz asking about current shades from well-known brands, undertone and coverage can narrow choices fast. Virtual try-on can help for lip and eye colour. Always keep real swatches next to any tool, because buyers trust skin more than software.
+A short quiz asking about current shades from well-known brands, undertone and coverage can narrow choices fast. For lips and eyes, a virtual try-on adds a useful extra view. Always keep real swatches next to any tool, because buyers trust skin more than software.
 
 ### 4. Sell sample cards and minis for base products
 
@@ -80,7 +80,7 @@ A few gifted posts produce a spike and then nothing. A roster of creators across
 
 ### 6. Keep content unfiltered and clearly disclosed
 
-Ask creators to film on bare skin without beauty filters on the product, and to label paid, gifted and affiliate posts clearly at the start. The AANA code expects advertising to be distinguishable as advertising, and Ad Standards hears complaints. Under the Australian Consumer Law, a filtered swatch can mislead.
+Brief creators to apply the product to bare skin with no beauty filter, and to flag paid, gifted or affiliate content in the opening line or first seconds. The AANA code expects advertising to be distinguishable as advertising, and Ad Standards hears complaints. Under the Australian Consumer Law, a filtered swatch can mislead.
 
 ### 7. Run wear tests in Australian conditions
 
@@ -94,9 +94,9 @@ Work with creators from the many cultural communities that make up Australia, in
 
 ### 9. Treat launches as drops
 
-Share close-up swatches before shade names, open a waitlist, give past buyers early access and have creators film a few weeks ahead. Ads, email, SMS and listings should all go live on the same day. Back-in-stock alerts turn a sell-out into a waiting list rather than a lost sale.
+Tease the colours with close-ups before revealing names, collect sign-ups, let previous customers order first and get product to creators early enough to film. Ads, email, SMS and listings should all go live on the same day. When a shade sells out, a restock alert keeps those buyers waiting for you instead of shopping elsewhere.
 
-Watch stock closely during a drop. Selling out a limited shade can build interest, but running out of a core shade halfway through a paid campaign wastes budget and annoys buyers who clicked an ad for it. Agree a stock level at which ads pause automatically, and plan restock lead times before launch day, not after.
+Watch stock closely during a drop. A limited shade selling out is good news; a core shade running dry mid-campaign is not, because you keep paying for clicks that cannot convert. Agree a stock level at which ads pause automatically, and plan restock lead times before launch day, not after.
 
 ### 10. Put spend behind creator posts that already work
 
@@ -110,7 +110,7 @@ Google Shopping and search reach buyers looking for "long wear concealer for oil
 
 ### 12. Give each marketplace a job
 
-Amazon AU suits repeat staples such as mascara, brow gel and setting spray. TikTok Shop, where available to your business, suits lip, blush and nail products that look good on camera. eBay AU and Kogan can clear older shades and sets. Keep pricing aligned with your own store so loyal buyers have no reason to go elsewhere.
+Amazon AU suits repeat staples such as mascara, brow gel and setting spray. If TikTok Shop is available to your business, use it for lip, blush and nail colour, which show up well on video. eBay AU and Kogan can clear older shades and sets. Keep pricing aligned with your own store so loyal buyers have no reason to go elsewhere.
 
 Marketplace listings need the same shade detail as your own pages. Use images that show the shade on skin, name the undertone in the title or bullets, and answer common questions in the description so buyers do not have to guess. Reviews on Amazon AU often mention shade accuracy, so read them weekly and fix the listing when the same complaint comes up twice.
 
@@ -118,7 +118,7 @@ Marketplace listings need the same shade detail as your own pages. Use images th
 
 ### 13. Build kits for the Australian calendar
 
-Plan gift sets for Valentine's Day, Mother's Day in May, Click Frenzy, Black Friday, Christmas and Boxing Day. Kits built on lip, cheek, nail and palettes are easier to give than foundation. For communities that celebrate them, Lunar New Year, Eid and Diwali can matter too. Show Afterpay on larger sets and publish Australia Post and courier cut-off dates clearly. Use our [discount calculator](/tools/discount-calculator/) to check that a gift-set offer still leaves a margin.
+Map out gift sets for the year: Valentine's Day, Mother's Day in May, Click Frenzy, Black Friday, Christmas and Boxing Day. Kits built on lip, cheek, nail and palettes are easier to give than foundation. For communities that celebrate them, Lunar New Year, Eid and Diwali can matter too. Display Afterpay on the bigger sets, and put Australia Post and courier cut-off dates where gift buyers will see them. Use our [discount calculator](/tools/discount-calculator/) to check that a gift-set offer still leaves a margin.
 
 ### 14. Plan for formal, wedding and racing season
 
@@ -164,7 +164,7 @@ Look past return on ad spend. A creator who brings fewer first orders but more r
 
 ## Claims and compliance
 
-This is general guidance, not legal advice. Long-wear, waterproof, transfer-proof and non-comedogenic claims need testing behind them. Vegan, cruelty-free and clean claims need supplier records and a clear explanation, because the ACCC treats ethical and environmental claims seriously. Makeup with SPF can bring TGA sunscreen rules into play, so check how each product is classed before you advertise sun protection. Most cosmetics must list their ingredients, and importers of cosmetic ingredients may need AICIS registration. Never write or buy reviews, and do not hide negative ones.
+This is general guidance, not legal advice. Long-wear, waterproof, transfer-proof and non-comedogenic claims need testing behind them. Vegan, cruelty-free and clean claims need supplier records and a clear explanation, because the ACCC treats ethical and environmental claims seriously. Adding SPF to a base or lip product can pull it towards TGA sunscreen rules, so confirm the product's status before any ad mentions sun protection. Most cosmetics must list their ingredients, and importers of cosmetic ingredients may need AICIS registration. Never write or buy reviews, and do not hide negative ones.
 
 ## Mistakes that hold makeup brands back
 

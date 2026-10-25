@@ -14,13 +14,13 @@ faqs:
   - q: "How do I market a new haircare brand in Australia?"
     a: "Start narrow. Pick one hair type or concern, build a clear product page and a few guides for it, and test short wash-day videos on Meta and TikTok. Add creators who share that hair type, list one or two hero products on Amazon AU, and set up follow-up emails so first buyers keep using the product."
   - q: "Can we use before-and-after photos in Australian hair ads?"
-    a: "It is risky. Under the Australian Consumer Law, images must not mislead, and poorly matched or edited photos can. Meta and TikTok also restrict before-and-after imagery for appearance products. Texture close-ups, wash-day routines and honest customer clips are safer and often more convincing, because viewers can see exactly what the product does."
+    a: "It is risky. Under the Australian Consumer Law, images must not mislead, and poorly matched or edited photos can. On top of that, Meta and TikTok place their own limits on side-by-side comparison images for appearance products. Texture close-ups, wash-day routines and honest customer clips are safer and often more convincing, because viewers can see exactly what the product does."
   - q: "Are anti-dandruff and hair-loss products treated differently in Australia?"
-    a: "Often. Some anti-dandruff products can be cosmetics if they meet set conditions, while others are therapeutic goods because of their ingredients or claims. Products claiming to regrow hair are usually medicines. The category changes what you can say and whether testimonials are allowed, so check each product with your adviser before planning campaigns."
+    a: "Often. An anti-dandruff shampoo might qualify as a cosmetic under defined conditions, or it might be a therapeutic good because of what it contains or what it claims. Products claiming to regrow hair are usually medicines. The category changes what you can say and whether testimonials are allowed, so check each product with your adviser before planning campaigns."
   - q: "Do salons still matter for online haircare brands?"
     a: "They can. Stylists are trusted voices on hair, and a small partner programme with education, samples and an affiliate code can bring credible referrals. Treat stylist posts as advertising if they are paid or rewarded, and make sure they are disclosed. Salon sizes and professional lines are often worth keeping separate from retail."
   - q: "Which haircare products suit TikTok Shop?"
-    a: "Products that show a visible change on camera tend to do well, such as styling creams, heat tools, finishing oils and curl definers, where TikTok Shop is available to your business. Treatment products judged over weeks are harder to sell in a short video. Keep pricing aligned with your store and check stock before a creator push."
+    a: "Where TikTok Shop is available to your business, anything whose effect is obvious within a few seconds of video, such as styling creams, heat tools, finishing oils and curl definers, has the easiest time. Treatment products judged over weeks are harder to sell in a short video. Keep pricing aligned with your store and check stock before a creator push."
   - q: "How do we measure haircare marketing in Australia?"
     a: "Track cost per first order by product, repeat rate at 60 and 90 days, subscription retention, refund reasons and which creators or stylists drive orders that reorder. Judge treatment products over a longer window than shampoos and styling products, because their buyers need more time before they decide."
 related:
@@ -104,9 +104,9 @@ Men's shampoo, styling and beard products usually sell through short, plain demo
 
 ## Ideas for paid ads
 
-### 9. Swap before-and-after for texture and ritual
+### 9. Show texture and ritual instead of before-and-after
 
-Close-ups of lather, slip, curl definition and shine are safer and often more convincing than side-by-side photos. They also avoid platform rules on personal attributes. Make sure the landing page matches the ad, since reviewers check both.
+Close-ups of lather, slip, curl definition and shine are safer and often more convincing than side-by-side photos. They also avoid platform rules on personal attributes. Platform reviewers look at the page behind the ad too, so keep the two consistent.
 
 Good hooks for this kind of creative are practical rather than emotional: "how much to use on thick hair", "a five-minute curl refresh", "what salt water does to your ends". They draw in the right buyer without pointing at anyone's hair problems.
 
@@ -116,17 +116,17 @@ Shampoos and styling products can be judged in days, so test them on cost per or
 
 ### 11. Capture concern-led searches
 
-Bid on searches that pair a concern with a hair type, such as "shampoo for frizzy curly hair" or "conditioner for chlorine damaged hair". A tidy Google Shopping feed with GST-inclusive AUD prices matters as much as the bid. Use our [ROAS calculator](/tools/roas-calculator/) to set targets each product can actually afford.
+Bid on searches that pair a concern with a hair type, such as "shampoo for frizzy curly hair" or "conditioner for chlorine damaged hair". Clear product titles and GST-inclusive AUD prices in your Shopping feed do as much work as the bid itself. Use our [ROAS calculator](/tools/roas-calculator/) to set targets each product can actually afford.
 
 ### 12. Plan budgets by season
 
-Frizz products lift as humidity rises, leave-in and repair products as the air dries in winter, and gift sets around Click Frenzy, Black Friday, Christmas, Valentine's Day, Mother's Day in May and Father's Day in September. EOFY sales in June suit clearing older stock.
+Frizz products lift as humidity rises, leave-in and repair products as the air dries in winter, and gift sets around Click Frenzy, Black Friday, Christmas, Valentine's Day, Mother's Day in May and Father's Day in September. June's EOFY sales are a sensible moment to move older lines.
 
 ## Ideas for distribution and retention
 
 ### 13. Give each marketplace a job
 
-Amazon AU suits core shampoos and conditioners that people reorder. TikTok Shop, where available to your business, suits styling products and tools that change visibly on camera. eBay AU and Kogan can move multi-packs and older lines. Pharmacies and supermarkets set price expectations, so make your value clear.
+Put the everyday shampoos and conditioners people rebuy on Amazon AU. TikTok Shop, where available to your business, suits styling products and tools that change visibly on camera. eBay AU and Kogan can move multi-packs and older lines. Pharmacies and supermarkets set price expectations, so make your value clear.
 
 ### 14. Sell travel and trial sizes
 
@@ -136,7 +136,7 @@ Charge a small amount for trial kits rather than giving them away, so they reach
 
 ### 15. Make the reorder effortless
 
-Refill pouches, larger sizes, subscriptions with an easy pause and reminders timed to bottle life keep buyers from switching to whatever is on special. If you make refill or recyclability claims, be ready to explain exactly what they mean, because the ACCC looks closely at environmental claims.
+A refill pouch, a bigger bottle, a subscription that is easy to pause and a reminder sent just before the bottle empties all make it less likely a buyer grabs whatever the supermarket has discounted. If you make refill or recyclability claims, be ready to explain exactly what they mean, because the ACCC looks closely at environmental claims.
 
 Work out the usual time a bottle lasts from your own reorder data rather than guessing, and set reminders a week or so before that point. Someone washing daily with long hair runs out much sooner than someone washing twice a week with short hair, so a simple question at checkout about wash frequency can make the timing far more accurate.
 
@@ -167,7 +167,7 @@ This is general guidance, not legal advice.
 - **Therapeutic or cosmetic.** Shampoos and conditioners sold for cleansing and appearance are generally cosmetics. Some anti-dandruff products can be cosmetics under set conditions, while others are therapeutic goods. Products claiming to regrow hair are usually medicines.
 - **TGA advertising code.** If a product is a therapeutic good, its ads follow the TGA advertising code, which limits testimonials, including from paid creators.
 - **Consumer law.** Under the Australian Consumer Law, claims and images must not mislead. Evidence should match the exact wording.
-- **AANA codes and Ad Standards.** Advertising must be clearly distinguishable as advertising, which covers paid, gifted and affiliate posts. Ad Standards hears complaints.
+- **AANA codes and Ad Standards.** Viewers must be able to tell that an ad is an ad, and that includes creator posts that were paid for, gifted or linked to an affiliate code. Ad Standards hears complaints.
 - **Labels and ingredients.** Most cosmetics must list ingredients, and importers or manufacturers of cosmetic ingredients may need AICIS registration.
 
 Never write cure or regrowth claims into briefs, and ask creators not to improvise them.

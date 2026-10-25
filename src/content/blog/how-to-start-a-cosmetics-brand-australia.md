@@ -9,12 +9,12 @@ readingMinutes: 10
 author: "Billion Ecommerce Agency Team"
 market: "AU"
 twin: "how-to-start-a-cosmetics-brand-in-india"
-summary: "To start a cosmetics brand in Australia, pick a narrow niche and a small first range, set up your ABN or company and check your trademark with IP Australia. Work with a manufacturer that can supply stability and safety data, confirm AICIS duties if you import or make ingredients, list ingredients on every pack, and keep SPF and treatment claims out unless you follow TGA rules. Launch on Shopify with Afterpay, add Amazon AU and TikTok Shop, and keep cash for restocks."
+summary: "Starting a cosmetics brand in Australia means choosing a narrow niche and a short first range, getting an ABN or company in place and clearing your trademark with IP Australia. Work with a manufacturer that can supply stability and safety data, confirm AICIS duties if you import or make ingredients, list ingredients on every pack, and keep SPF and treatment claims out unless you follow TGA rules. Launch on Shopify with Afterpay, add Amazon AU and TikTok Shop, and keep cash for restocks."
 faqs:
   - q: "Do I need a licence to start a cosmetics brand in Australia?"
-    a: "There is no general cosmetics licence. You do need the usual business setup, such as an ABN, and you may need to register with AICIS if you import or manufacture cosmetic ingredients or finished products. Labels must list ingredients, and claims must not mislead under the Australian Consumer Law. Products with SPF or treatment claims may be therapeutic goods instead."
+    a: "There is no general cosmetics licence. You will need ordinary business registrations such as an ABN, and AICIS registration may apply if your business imports or makes cosmetic ingredients or brings in finished products. Labels must list ingredients, and claims must not mislead under the Australian Consumer Law. Products with SPF or treatment claims may be therapeutic goods instead."
   - q: "Can I make cosmetics at home and sell them in Australia?"
-    a: "Many small brands do, but home-made products face the same rules as factory-made ones: ingredient labelling, AICIS duties where they apply, product safety and honest claims. Stability and preservative testing are wise before you sell. Check local council rules for running a business from home, and arrange product liability insurance early."
+    a: "Plenty of small labels begin in a home kitchen, yet the rules do not change with the setting: ingredient labelling, AICIS duties where they apply, product safety and honest claims. Stability and preservative testing are wise before you sell. Check local council rules for running a business from home, and arrange product liability insurance early."
   - q: "Should I use private label or a custom formula?"
     a: "Private label is quicker and cheaper to start and lets you test demand, but competitors may sell something very similar. A custom formula takes longer and costs more upfront, yet gives you something distinctive to market. Many founders start with private label for one or two products and move to custom formulas as sales grow."
   - q: "Do I need to register for GST before I launch?"
@@ -56,7 +56,7 @@ figures:
       - { title: "Yours to market", body: "A formula and story competitors cannot easily copy" }
 ---
 
-If you are researching how to start a cosmetics brand, Australia is a good place to do it, with a few conditions. Buyers here read labels, know the big beauty retailers well and are quick to try an independent label that offers something specific. The rules are lighter than in some markets for ordinary makeup and skincare, but there are traps around sunscreen, treatment claims and imported ingredients. This guide takes a first-time founder through the steps in a sensible order, from the idea to the first restock.
+For founders working out how to start a cosmetics brand, Australia is a good place to begin, with a few conditions. Buyers here read labels, know the big beauty retailers well and are quick to try an independent label that offers something specific. The rules are lighter than in some markets for ordinary makeup and skincare, but there are traps around sunscreen, treatment claims and imported ingredients. This guide takes a first-time founder through the steps in a sensible order, from the idea to the first restock.
 
 It is general information, not legal or financial advice. Check details with an accountant, a lawyer and a regulatory adviser.
 
@@ -115,18 +115,18 @@ The Australian Industrial Chemicals Introduction Scheme covers businesses that i
 
 ### Labels and product safety
 
-Most cosmetics must list their ingredients under a mandatory information standard. Show net quantity correctly, and make sure "Australian made" or "Australian owned" claims are accurate. If a product is linked to a serious injury, suppliers may have mandatory reporting duties to the ACCC.
+A mandatory information standard on ingredient labelling covers most cosmetics, so plan the back label around a full ingredient list. Show net quantity correctly, and make sure "Australian made" or "Australian owned" claims are accurate. If a product is linked to a serious injury, suppliers may have mandatory reporting duties to the ACCC.
 
 ### Claims
 
-Under the Australian Consumer Law, claims must not mislead. "Long-wear", "waterproof", "non-comedogenic" and "dermatologist tested" all need evidence. Vegan, cruelty-free and clean claims need supplier records and a clear explanation.
+Any claim you print or post has to be accurate under the Australian Consumer Law. "Long-wear", "waterproof", "non-comedogenic" and "dermatologist tested" all need evidence. Vegan, cruelty-free and clean claims need supplier records and a clear explanation.
 
 ## Step 5: Design packaging that sells and survives
 
 - Choose sizes and shapes that work in a photo and fit a standard satchel or small box.
 - Test compacts and palettes for breakage in transit.
 - Check that lipsticks and balms cope with summer heat in delivery vans.
-- Make shade names and numbers easy to read on screen.
+- Print shade names and numbers large enough to read in a product photo.
 - Keep sustainability claims specific, such as "refillable case" or "recyclable glass jar", rather than vague.
 
 ### Give the brand a voice, not just a logo
@@ -144,7 +144,7 @@ Brand photography should match what buyers receive. If a lipstick looks warmer i
 
 ## Step 6: Work out unit economics before you order
 
-List the full cost of each product: formula, packaging, labels, freight, storage, picking and packing, postage, payment fees, marketplace fees, returns and the ad cost of winning each order. Then set a GST-inclusive price that leaves room for promotions. Our [profit margin calculator](/tools/profit-margin-calculator/) helps you test different prices and costs quickly.
+Add up everything a single unit costs you to make and deliver: the formula and its packaging, inbound freight, warehousing and packing, postage, payment and marketplace fees, an allowance for returns and the advertising it takes to win the order. Then set a GST-inclusive price that leaves room for promotions. Our [profit margin calculator](/tools/profit-margin-calculator/) helps you test different prices and costs quickly.
 
 Hold back cash for restocks. A successful launch that sells out with no money to reorder can stall a young brand for months.
 
@@ -177,7 +177,7 @@ Time launches away from the busiest sale weeks unless you have the budget to com
 
 ## Step 9: Run operations and look after customers
 
-Set a clear change-of-mind policy for opened cosmetics on hygiene grounds, explained before purchase. It cannot override consumer rights under the Australian Consumer Law, which apply when products are faulty, unsafe or not as described. Track stock by shade, answer questions quickly and handle personal data in line with the Privacy Act where it applies.
+Set a clear change-of-mind policy for opened cosmetics on hygiene grounds, explained before purchase. Buyers still hold consumer rights under the Australian Consumer Law whenever a product is faulty, unsafe or unlike its description, and no policy wording changes that. Track stock by shade, answer questions quickly and handle personal data in line with the Privacy Act where it applies.
 
 Review sales by shade and product every month. Restock the shades that sell steadily, consider dropping those that sit untouched for a whole season, and note the reasons customers give for returns or exchanges. Those notes often point to a photo that misleads, a shade description that needs work or a packaging problem you can fix before the next order.
 
@@ -203,8 +203,8 @@ Review sales by shade and product every month. Restock the shades that sell stea
 - [ ] Launch plan with waitlist, creators and disclosed content
 - [ ] Cash set aside for the first restock
 
-When you are ready to grow, our [cosmetics marketing agency for Australian brands](/australia/cosmetics-marketing-agency/) can help with shade pages, creators, ads and marketplaces.
+Once the brand is trading, our [cosmetics marketing agency for Australian brands](/australia/cosmetics-marketing-agency/) can help you scale it.
 
 ## Next step
 
-Planning a launch or already selling? Ask for a [free store audit](/free-ecommerce-audit/). Our remote team in India, a few hours behind the east coast, will review your store, product pages and launch plan and walk you through what to fix first on a video call in your afternoon.
+Planning a launch or already selling? Ask for a [free store audit](/free-ecommerce-audit/). As a remote team in India, a few hours behind the east coast, we will look at your store, product pages and launch plan and agree the first fixes with you on a video call in your afternoon.
