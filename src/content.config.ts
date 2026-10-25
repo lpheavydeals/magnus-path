@@ -17,7 +17,7 @@ const blog = defineCollection({
     related: z.array(z.object({ label: z.string(), href: z.string() })),
     figures: z.array(z.any()).optional(), // same shape as Figure in src/data/types.ts
     // Country version of an India guide: `twin` is the India guide's id; hreflang links the versions.
-    market: z.enum(['UK', 'US']).optional(),
+    market: z.enum(['UK', 'US', 'AU', 'UAE']).optional(),
     twin: z.string().optional(),
   }),
 });

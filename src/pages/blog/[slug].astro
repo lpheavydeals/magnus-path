@@ -25,7 +25,7 @@ const schema = [
 ];
 const toc = headings.filter((h) => h.depth === 2);
 // hreflang: an India guide and its UK/US versions (posts whose `twin` is the India guide) point at each other.
-const langs = { UK: 'en-GB', US: 'en-US' } as const;
+const langs = { UK: 'en-GB', US: 'en-US', AU: 'en-AU', UAE: 'en-AE' } as const;
 const lang = d.market ? langs[d.market] : 'en-IN';
 const all = await getCollection('blog');
 const rootId = d.twin ?? post.id;
@@ -33,7 +33,7 @@ const versions = all.filter((p) => p.data.twin === rootId && p.data.market);
 const alternates = versions.length
   ? [{ hreflang: 'en-IN', href: `/blog/${rootId}/` }, ...versions.map((v) => ({ hreflang: langs[v.data.market!], href: `/blog/${v.id}/` })), { hreflang: 'x-default', href: `/blog/${rootId}/` }]
   : [];
-const dateLocale = d.market === 'US' ? 'en-US' : d.market === 'UK' ? 'en-GB' : 'en-IN';
+const dateLocale = d.market ? langs[d.market] : 'en-IN';
 ---
 <Base title={d.metaTitle} description={d.description} schema={schema} lang={lang} alternates={alternates}>
   <section class="ah">

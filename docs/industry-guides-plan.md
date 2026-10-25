@@ -52,3 +52,34 @@ Each India guide gets a UK and a US version: frontmatter adds `market: "UK"|"US"
 | footwear | footwear-marketing-ideas | footwear-marketing-ideas-uk / footwear marketing ideas uk | footwear-marketing-ideas-us / footwear marketing ideas usa |
 | electronics | how-to-sell-electronics-online-in-india | how-to-sell-electronics-online-uk / how to sell electronics online uk | how-to-sell-electronics-online-us / how to sell electronics online usa |
 | electronics | consumer-electronics-marketing-strategy | consumer-electronics-marketing-strategy-uk / consumer electronics marketing strategy uk | consumer-electronics-marketing-strategy-us / consumer electronics marketing strategy usa |
+
+## Australia and UAE versions of the guides
+
+Same rules as the UK/US versions: `market: "AU"|"UAE"`, `twin: "<india id>"`, slugs end `-australia` / `-uae`, keywords add "australia" / "uae". Australia: Australian spelling, links `/australia/<ind>-marketing-agency/`. UAE: UK-style spelling, links `/uae/<ind>-marketing-agency-dubai/` and `/uae/<ind>-marketing-agency-abu-dhabi/`. Remote delivery for both (no office there).
+
+| Industry | India id | Australia slug / keyword | UAE slug / keyword |
+|---|---|---|---|
+| skincare | how-to-sell-skincare-products-online | how-to-sell-skincare-products-online-australia / how to sell skincare products online australia | how-to-sell-skincare-products-online-uae / how to sell skincare products online uae |
+| skincare | skincare-brand-marketing-strategy | skincare-brand-marketing-strategy-australia / skincare brand marketing strategy australia | skincare-brand-marketing-strategy-uae / skincare brand marketing strategy uae |
+| haircare | how-to-sell-hair-oil-online | how-to-sell-hair-oil-online-australia / how to sell hair oil online australia | how-to-sell-hair-oil-online-uae / how to sell hair oil online uae |
+| haircare | haircare-brand-marketing-ideas | haircare-brand-marketing-ideas-australia / haircare brand marketing ideas australia | haircare-brand-marketing-ideas-uae / haircare brand marketing ideas uae |
+| cosmetics | how-to-start-a-cosmetics-brand-in-india | how-to-start-a-cosmetics-brand-australia / how to start a cosmetics brand australia | how-to-start-a-cosmetics-brand-uae / how to start a cosmetics brand uae |
+| cosmetics | makeup-brand-marketing-ideas | makeup-brand-marketing-ideas-australia / makeup brand marketing ideas australia | makeup-brand-marketing-ideas-uae / makeup brand marketing ideas uae |
+| ayurveda | how-to-sell-ayurvedic-products-online | how-to-sell-ayurvedic-products-online-australia / how to sell ayurvedic products online australia | how-to-sell-ayurvedic-products-online-uae / how to sell ayurvedic products online uae |
+| ayurveda | how-to-export-ayurvedic-products | how-to-sell-ayurvedic-products-in-australia / how to sell ayurvedic products in australia | how-to-sell-ayurvedic-products-in-the-uae / how to sell ayurvedic products in uae |
+| perfume | how-to-sell-perfume-online | how-to-sell-perfume-online-australia / how to sell perfume online australia | how-to-sell-perfume-online-uae / how to sell perfume online uae |
+| perfume | perfume-marketing-ideas | perfume-marketing-ideas-australia / perfume marketing ideas australia | perfume-marketing-ideas-uae / perfume marketing ideas uae |
+| jewellery | how-to-sell-jewellery-online | how-to-sell-jewellery-online-australia / how to sell jewellery online australia | how-to-sell-jewellery-online-uae / how to sell jewellery online uae |
+| jewellery | jewellery-marketing-ideas | jewellery-marketing-ideas-australia / jewellery marketing ideas australia | jewellery-marketing-ideas-uae / jewellery marketing ideas uae |
+| supplement | how-to-sell-supplements-online-in-india | how-to-sell-supplements-online-australia / how to sell supplements online australia | how-to-sell-supplements-online-uae / how to sell supplements online uae |
+| supplement | supplement-marketing-strategy | supplement-marketing-strategy-australia / supplement marketing strategy australia | supplement-marketing-strategy-uae / supplement marketing strategy uae |
+| home-decor | how-to-sell-home-decor-online | how-to-sell-home-decor-online-australia / how to sell home decor online australia | how-to-sell-home-decor-online-uae / how to sell home decor online uae |
+| home-decor | furniture-marketing-ideas | furniture-marketing-ideas-australia / furniture marketing ideas australia | furniture-marketing-ideas-uae / furniture marketing ideas uae |
+| baby-products | how-to-sell-baby-products-online | how-to-sell-baby-products-online-australia / how to sell baby products online australia | how-to-sell-baby-products-online-uae / how to sell baby products online uae |
+| baby-products | baby-brand-marketing-ideas | baby-brand-marketing-ideas-australia / baby brand marketing ideas australia | baby-brand-marketing-ideas-uae / baby brand marketing ideas uae |
+| pet-brand | how-to-start-a-pet-food-brand-in-india | how-to-start-a-pet-food-brand-australia / how to start a pet food brand australia | how-to-start-a-pet-food-brand-uae / how to start a pet food brand uae |
+| pet-brand | pet-brand-marketing-ideas | pet-brand-marketing-ideas-australia / pet brand marketing ideas australia | pet-brand-marketing-ideas-uae / pet brand marketing ideas uae |
+| footwear | how-to-sell-shoes-online | how-to-sell-shoes-online-australia / how to sell shoes online australia | how-to-sell-shoes-online-uae / how to sell shoes online uae |
+| footwear | footwear-marketing-ideas | footwear-marketing-ideas-australia / footwear marketing ideas australia | footwear-marketing-ideas-uae / footwear marketing ideas uae |
+| electronics | how-to-sell-electronics-online-in-india | how-to-sell-electronics-online-australia / how to sell electronics online australia | how-to-sell-electronics-online-uae / how to sell electronics online uae |
+| electronics | consumer-electronics-marketing-strategy | consumer-electronics-marketing-strategy-australia / consumer electronics marketing strategy australia | consumer-electronics-marketing-strategy-uae / consumer electronics marketing strategy uae |
