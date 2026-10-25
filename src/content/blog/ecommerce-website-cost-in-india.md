@@ -1,6 +1,6 @@
 ---
 title: "Ecommerce Website Cost in India: What It Costs and Why (2026)"
-metaTitle: "Ecommerce Website Cost in India (2026 Guide) | Billion Ecommerce Agency"
+metaTitle: "Ecommerce Website Cost in India (2026 Guide)"
 description: "What drives ecommerce website cost in India in 2026: Shopify, WooCommerce and custom builds, recurring and hidden costs, and how to compare quotes fairly."
 primaryKeyword: "ecommerce website cost in india"
 category: "Websites"

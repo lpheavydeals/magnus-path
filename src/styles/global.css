@@ -1,3 +1,5 @@
+/* Metric-matched fallback so the swap to Plus Jakarta Sans does not move the layout (CLS). */
+@font-face { font-family: 'Jakarta Fallback'; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('Helvetica Neue'), local('Helvetica'); size-adjust: 104%; ascent-override: 98%; descent-override: 21%; line-gap-override: 0%; }
 /* Billion Ecommerce Agency design tokens — Roveia-inspired light system in brand orange. See docs/design-direction.md */
 :root {
   --accent: #f16436;
@@ -15,8 +17,8 @@
   --line: #ece7e2;
   --line-dark: #33373d;
 
-  --font-display: 'Plus Jakarta Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-body: 'Plus Jakarta Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Plus Jakarta Sans Variable', 'Jakarta Fallback', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Plus Jakarta Sans Variable', 'Jakarta Fallback', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --radius: 26px;
   --radius-sm: 14px;
@@ -88,8 +90,9 @@ html.js [data-reveal] { opacity: 0; transform: translateY(28px); transition: opa
 html.js [data-reveal].is-in { opacity: 1; transform: none; }
 
 /* Word blur reveal (hero) — pure CSS */
-.words .w { display: inline-block; opacity: 0; filter: blur(14px); transform: translateY(.25em); animation: wordIn 1s var(--ease) forwards; animation-delay: calc(var(--i) * 70ms + 150ms); }
-@keyframes wordIn { to { opacity: 1; filter: blur(0); transform: none; } }
+/* Short, start-visible animation so the heading paints immediately (good for LCP). */
+.words .w { display: inline-block; animation: wordIn .55s var(--ease) both; animation-delay: calc(var(--i) * 25ms); }
+@keyframes wordIn { from { opacity: .35; filter: blur(4px); transform: translateY(.18em); } to { opacity: 1; filter: blur(0); transform: none; } }
 
 /* Custom plus cursor (desktop only, enabled by JS) */
 .cursor { position: fixed; left: 0; top: 0; z-index: 200; pointer-events: none; color: var(--accent); font: 300 26px/1 var(--font-body); transform: translate(-50%, -50%); opacity: 0; transition: opacity .3s ease; }

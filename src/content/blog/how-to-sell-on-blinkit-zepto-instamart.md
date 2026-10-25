@@ -1,6 +1,6 @@
 ---
 title: "How to Sell on Blinkit, Zepto and Instamart: A Brand's Guide"
-metaTitle: "How to Sell on Blinkit, Zepto & Instamart | Billion Ecommerce Agency"
+metaTitle: "How to Sell on Blinkit, Zepto & Instamart"
 description: "Learn how to sell on Blinkit, Zepto and Swiggy Instamart: requirements, getting listed, pricing, margins, ads, city-level stock planning and metrics to track."
 primaryKeyword: "how to sell on blinkit"
 category: "Ads"

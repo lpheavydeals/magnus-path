@@ -1,6 +1,6 @@
 ---
 title: "Best Ecommerce Platform in India: Shopify vs WooCommerce and More"
-metaTitle: "Best Ecommerce Platform in India (2026) | Billion Ecommerce Agency"
+metaTitle: "Best Ecommerce Platform in India (2026)"
 description: "Compare the best ecommerce platforms in India: Shopify, WooCommerce, Magento, custom builds and Indian store builders, with picks for each type of business."
 primaryKeyword: "best ecommerce platform in india"
 category: "Platforms"

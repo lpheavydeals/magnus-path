@@ -1,6 +1,6 @@
 ---
 title: "Digital Marketing Cost in Chennai: What It Costs and Why (2026)"
-metaTitle: "Digital Marketing Cost in Chennai (2026 Guide) | Billion Ecommerce Agency"
+metaTitle: "Digital Marketing Cost in Chennai (2026 Guide)"
 description: "What drives digital marketing cost in Chennai in 2026: agency fees vs ad spend, how to set an ad budget, hidden costs, red flags and how to compare quotes."
 primaryKeyword: "digital marketing cost in chennai"
 category: "Ads"

@@ -1,6 +1,6 @@
 ---
 title: "How to Advertise on ChatGPT: OpenAI Ads Manager Guide (2026)"
-metaTitle: "How to Advertise on ChatGPT (2026 Guide) | Billion Ecommerce Agency"
+metaTitle: "How to Advertise on ChatGPT (2026 Guide)"
 description: "How to advertise on ChatGPT in 2026: who is eligible, setting up OpenAI Ads Manager, objectives, contextual targeting, pixel tracking, policies and costs."
 primaryKeyword: "how to advertise on chatgpt"
 category: "Ads"

@@ -8,7 +8,7 @@ const blog = defineCollection({
     metaTitle: z.string(),
     description: z.string(),
     primaryKeyword: z.string(),
-    category: z.enum(['Websites', 'Platforms', 'Export', 'Ads', 'SEO']),
+    category: z.enum(['Websites', 'Platforms', 'Export', 'Ads', 'SEO', 'Industries']),
     publishDate: z.coerce.date(),
     readingMinutes: z.number(),
     author: z.string(),
