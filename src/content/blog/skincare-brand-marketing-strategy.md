@@ -160,7 +160,7 @@ Estimate how long each product lasts and send reminders by email and WhatsApp ju
 
 ### Bundles and routines
 
-Offer cleanse, treat and protect sets, and suggest the next step in the routine after each purchase. Bundles raise order value and teach buyers how products work together.
+Offer cleanse, target and protect sets, and suggest the next step in the routine after each purchase. Bundles raise order value and teach buyers how products work together.
 
 ### Loyalty and subscriptions
 

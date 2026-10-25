@@ -88,7 +88,7 @@ Most new brands use third-party manufacturers who already have a licensed facili
 - **Samples:** test several rounds on different skin tones, in heat and humidity, over a full day.
 - **Testing:** agree on stability testing, packaging compatibility and any claim-supporting tests.
 - **Formula ownership:** clarify in writing who owns the formula and whether it can be sold to others.
-- **Quality and records:** batch records, certificates of analysis and a complaint process.
+- **Quality and records:** batch records, batch test reports and a complaint process.
 
 Visit the facility if you can. Speak to two or three manufacturers before choosing, compare their samples side by side, and ask for references from other small brands they work with.
 

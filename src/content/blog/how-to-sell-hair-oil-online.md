@@ -77,7 +77,7 @@ Most new brands use a contract manufacturer rather than building a factory.
 - Ask for minimum order quantities; small first batches reduce risk.
 - Agree on stability testing, so the oil does not separate, smell off or change colour on the shelf.
 - Clarify who owns the formula and whether they can sell it to other brands.
-- Ask for batch records and certificates of analysis for each batch.
+- Ask for batch records and a test report for each batch.
 
 Choose a clear point of difference. Buyers already have a family favourite, so "another coconut oil" will struggle. It might be a specific herb blend, a cold-pressed base oil, a non-sticky texture, a fragrance-free option, a regional recipe or an oil for a particular hair type.
 
