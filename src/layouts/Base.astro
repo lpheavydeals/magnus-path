@@ -6,6 +6,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MobileBar from '../components/MobileBar.astro';
 import { site } from '../data/site';
+import { existsSync } from 'node:fs';
 
 interface Props {
   title: string;
@@ -16,7 +17,10 @@ interface Props {
   noindex?: boolean;
   alternates?: { hreflang: string; href: string }[];
 }
-const { title, description, schema = [], ogImage = '/og-default.png', lang = 'en-IN', noindex = false, alternates = [] } = Astro.props;
+const { title, description, schema = [], ogImage: ogProp, lang = 'en-IN', noindex = false, alternates = [] } = Astro.props;
+// Per-page share image from scripts/make-og-images.mjs (public/og/<path>.jpg), else the default.
+const ogKey = Astro.url.pathname.replace(/^\/|\/$/g, '').replace(/\//g, '--') || 'home';
+const ogImage = ogProp ?? (existsSync(`public/og/${ogKey}.jpg`) ? `/og/${ogKey}.jpg` : '/og-default.png');
 const canonical = new URL(Astro.url.pathname, Astro.site ?? site.url).href;
 
 const orgSchema = {
