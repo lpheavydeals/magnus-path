@@ -170,7 +170,7 @@ This is general guidance, not legal advice.
 - **AANA codes and Ad Standards.** Viewers must be able to tell that an ad is an ad, and that includes creator posts that were paid for, gifted or linked to an affiliate code. Ad Standards hears complaints.
 - **Labels and ingredients.** Most cosmetics must list ingredients, and importers or manufacturers of cosmetic ingredients may need AICIS registration.
 
-Never write cure or regrowth claims into briefs, and ask creators not to improvise them.
+Never write treatment or regrowth claims into briefs, and ask creators not to improvise them.
 
 ## Mistakes that waste haircare marketing budgets
 

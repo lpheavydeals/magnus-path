@@ -20,9 +20,9 @@ faqs:
   - q: "Should furniture brands offer cash on delivery in the UAE?"
     a: "For small pieces, cash on delivery often helps conversion. For large or made-to-order furniture, a refused delivery is expensive, so many brands ask for a deposit or prepayment and promote Tabby or Tamara instalments instead. Whatever you choose, show the payment options on the product page and confirm each order and delivery slot by WhatsApp."
   - q: "Can interior designers help market a furniture brand in the UAE?"
-    a: "They can. A good share of villa and apartment fit-outs pass through a designer, so a straightforward trade scheme, with sample loans, firm lead times and a named contact for projects, can turn one designer into a steady stream of orders. Creators who share real room makeovers also help. If anyone posts paid content for you, check they hold the advertising permit UAE media rules require and that posts are clearly marked."
+    a: "They can. A good share of villa and apartment fit-outs pass through a designer, so a straightforward trade scheme, with sample loans, firm lead times and a named contact for projects, can turn one designer into a steady stream of orders. Creators who share real room makeovers also help. Anyone paid to post about your pieces should have a valid UAE advertiser permit and label the content as an advertisement."
   - q: "When is the peak season for furniture sales in the UAE?"
-    a: "The year has more than one peak. Moves cluster around summer lease renewals, households refresh before Ramadan to host guests, and from October the cooler weather and new villa handovers lift demand for outdoor and whole-room furniture. White Friday, UAE National Day and the Dubai Shopping Festival add a strong November to January run. Ramadan moves earlier each year, so update your calendar annually."
+    a: "The year has more than one peak. Moves cluster around summer lease renewals, households refresh before Ramadan to host guests, and from October the cooler weather and new villa handovers lift demand for outdoor and whole-room furniture. On top of that, the winter sales season from White Friday through National Day to the Dubai Shopping Festival is busy across the market. Ramadan moves earlier each year, so update your calendar annually."
 related:
   - label: "Home decor marketing agency in Dubai"
     href: "/uae/home-decor-marketing-agency-dubai/"
@@ -218,4 +218,4 @@ Test the full journey yourself in both languages, from an Instagram ad to a book
 
 ## Next step
 
-Plenty of browsers but few sofas sold? Ask us for a [free store audit](/free-ecommerce-audit/). From Chennai, we look at your listings, delivery wording, campaigns and WhatsApp replies, then go through the results with you over video. Since the UAE is only 1.5 hours behind India, a time that suits your team is easy to find.
+Plenty of browsers but few sofas sold? Ask us for a [free store audit](/free-ecommerce-audit/). From Chennai, we look at your listings, delivery wording, campaigns and WhatsApp replies, then go through the results with you over video. With Dubai and Abu Dhabi 1.5 hours behind Chennai, a time that suits your team is easy to find.

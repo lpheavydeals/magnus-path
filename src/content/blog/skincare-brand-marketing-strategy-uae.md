@@ -18,9 +18,9 @@ faqs:
   - q: "Do I need separate Arabic and English campaigns?"
     a: "Usually, yes. Arabic and English speakers often respond to different references, tone and creators, not just different words. Write Arabic copy with a fluent Arabic writer rather than translating, send each language to matching landing pages and report on the two separately so you can see where each one earns its budget."
   - q: "How do creators fit into a UAE skincare strategy?"
-    a: "Creators drive much of the discovery, so treat them as a steady programme rather than one-off posts. The UAE Media Council requires people who advertise on social media to hold an advertiser permit. Check permits before paying, brief creators on honest cosmetic claims and unfiltered footage, and reuse strong content in paid ads with their agreement."
+    a: "Much of skincare discovery here starts with a creator, so run them as an ongoing programme, not scattered single posts. Each paid creator should hold a UAE Media Council advertiser permit. Check permits before paying, brief creators on honest cosmetic claims and unfiltered footage, and reuse strong content in paid ads with their agreement."
   - q: "How should a UAE skincare brand measure marketing?"
-    a: "Measure delivered, paid orders rather than placed orders, because cash on delivery refusals can flatter ad results. Then track cost to win a customer, second-order rate, time between orders and revenue per customer over six months, product by product. A sunscreen that brings people back every few weeks can justify more spend than a mask bought once."
+    a: "Count orders that were delivered and paid for, since cash on delivery refusals make placed-order figures look better than they are. Then follow acquisition cost, the share of buyers who order again, the gap between orders and six-month revenue per customer for each product. A sunscreen that brings people back every few weeks can justify more spend than a mask bought once."
   - q: "When should we expand the strategy to Saudi Arabia?"
     a: "When the UAE is profitable on reorders and your operations are steady. Saudi Arabia has its own SFDA registration and labelling rules, different delivery patterns and a larger Arabic-first audience, so plan compliance and creative separately. Much of your UAE learning about climate, creators and payment habits will transfer, but treat it as a new launch."
 related:
@@ -68,13 +68,13 @@ Generic promises such as "glowing skin" or "clean beauty" disappear among hundre
 
 Pick one angle and build everything around it for the first year. A brand known for "sunscreen people actually wear in August" is easier to remember than one with twelve products and no story.
 
-### Check what you can prove
+### Back the position with evidence
 
 Every position needs evidence behind it. A cosmetic improves how skin looks and feels; claims about treating acne, melasma or eczema push a product towards a medical category and get ads rejected. Confirm that each product is registered for sale, generally with Dubai Municipality through Montaji, and that Arabic label details match your pages. List each claim with its supporting document before any campaign starts.
 
-## Know exactly who you are selling to
+## Define one buyer in detail
 
-The UAE population is a mix of Emirati families, Arab expatriates, South Asian, Filipino, African and European residents, and the buyers within each group differ again by age and income. A strategy that speaks to "UAE women aged 25 to 45" speaks to no one.
+Emiratis, Arab expatriates and residents from South Asia, the Philippines, Africa and Europe all shop here, and each group splits further by age, income and habits. A strategy that speaks to "UAE women aged 25 to 45" speaks to no one.
 
 Write down one primary buyer in detail: her language, where she works, what she uses now, what worries her about her skin and where she hears about new products. A young Emirati professional who follows Arabic creators on Snapchat needs different content from a Filipino nurse working night shifts or a European family new to the heat. You can serve several groups later; launch with one.
 
@@ -84,7 +84,7 @@ Skincare buyers here research carefully, often in two languages. Education is wh
 
 ### Product pages
 
-Each hero page should explain the active and its strength, how the texture behaves in heat, how it layers with SPF, who should patch test, and what someone might notice over a few weeks. Arabic pages should be written or checked by a fluent Arabic writer, laid out right to left and as complete as the English version.
+A hero page earns its place when it covers the active and its percentage, how the texture copes with heat, where it sits relative to SPF, who ought to patch test and what changes are realistic over a few weeks. The Arabic version deserves the same depth as the English one, set right to left and drafted or reviewed by a fluent Arabic writer.
 
 ### Routine guides and search
 
@@ -94,11 +94,11 @@ Publish guides on questions people actually ask: how to build a summer routine, 
 
 Many UAE shoppers message before they buy. A WhatsApp Business line answered quickly, with saved replies that stay within cosmetic wording, turns questions into orders and gives you a record of what buyers need explained.
 
-## Choose channels by what the buyer is doing
+## Match channels to buyer intent
 
 ### Discovery: Snapchat, TikTok and Instagram
 
-Snapchat and TikTok are strong in the Gulf, and Instagram remains central for beauty. Use short videos that show texture, application and real routines, in Arabic and English. Avoid filtered faces and dramatic before-and-after images, which mislead buyers and are often rejected.
+Snapchat and TikTok carry a lot of weight with Gulf audiences, and Instagram is still the home of beauty routines and reviews. Use short videos that show texture, application and real routines, in Arabic and English. Avoid filtered faces and dramatic before-and-after images, which mislead buyers and are often rejected.
 
 ### Intent: Google, Amazon.ae and Noon
 
@@ -120,33 +120,33 @@ Amazon.ae and Noon bring volume, but a marketplace order usually arrives without
 
 ## Work with creators as a programme
 
-Creators shape much of skincare discovery in the region. The UAE Media Council requires people who advertise on social media to hold an advertiser permit, and the rules have been updated in recent years. Check permit details before any paid or gifted collaboration, and make sure posts are labelled as advertising.
+Creators shape much of skincare discovery in the region. Paid promotion on social media in the UAE calls for an advertiser permit from the UAE Media Council, a scheme that has been revised more than once. Check permit details before any paid or gifted collaboration, and make sure posts are labelled as advertising.
 
 Choose a small group of creators whose skin type and audience match your buyer, and work with them over months. Brief them on approved claims, ask for unfiltered footage in natural light, and agree in writing whether you can reuse their videos in paid ads. During Ramadan, ask for calmer, family-centred content that respects UAE media standards on good taste.
 
-## Use paid minis to lower the risk of trying
+## Lower the risk of a first try with paid minis
 
-First orders are cautious in skincare. Travel sizes and discovery kits sold at a fair price attract people curious about the formula, while free samples tend to attract people who wanted something free. Follow every mini with usage tips and a clear route to the full size, and track what share of trial buyers go on to buy it.
+First orders are cautious in skincare. A travel size or discovery kit with a modest price draws people genuinely curious about the formula; giveaways mostly draw people collecting freebies. Follow every mini with usage tips and a clear route to the full size, and track what share of trial buyers go on to buy it.
 
-## Plan for the second order
+## Design for the second order
 
-### Refill timing
+### Timed refill nudges
 
-Work out roughly how long each product lasts with daily use, and send a WhatsApp or email reminder shortly before it runs out.
+Estimate how many days each product lasts with normal use and time a WhatsApp or email nudge for a few days before the end.
 
-### Routine sets
+### Routine bundles
 
 Sell the cleanser, serum and SPF together as a routine, with a small saving and a clear reason to use them as a set.
 
-### Subscriptions and loyalty
+### Subscriptions with easy pauses
 
 Offer subscriptions on products used every day, and give loyalty points that reward reorders and reviews. Make pausing easy; people travel for weeks in summer.
 
 ## Split budget by job
 
-Divide spend into three jobs instead of one pot: creating demand (social and creators), capturing demand (search and marketplaces) and keeping customers (retention tools and offers). A common early mistake is to put almost everything into discovery ads and nothing into the journey that brings buyers back. Our [LTV to CAC calculator](/tools/ltv-cac-calculator/) shows how much you can afford to spend winning a customer once reorders are counted.
+Divide spend into three jobs instead of one pot: creating demand (social and creators), capturing demand (search and marketplaces) and keeping customers (retention tools and offers). A common early mistake is to put almost everything into discovery ads and nothing into the journey that brings buyers back. Plug your reorder figures into our [LTV to CAC calculator](/tools/ltv-cac-calculator/) to find a sensible ceiling for acquisition spend.
 
-## Measure what shows real growth
+## Track the numbers that matter
 
 - Delivered, paid orders by channel, with cash on delivery refusals removed.
 - Cost to win a new customer, by language and platform.
@@ -168,7 +168,7 @@ Plan offers, stock and creative weeks ahead of each moment:
 6. **UAE National Day and the Dubai Shopping Festival:** offers and gifting from December into January.
 7. **Diwali:** gifting for the Indian community.
 
-## Common mistakes to avoid
+## Pitfalls UAE skincare brands hit
 
 - Copying a European or Indian campaign without changing it for the climate.
 - Running Arabic ads that land on English-only pages.
@@ -183,4 +183,4 @@ Write your skincare brand marketing strategy on a single page: the position and 
 
 ## Next step
 
-Curious where your current marketing is leaking money? Ask for a [free store audit](/free-ecommerce-audit/). Our team works remotely from Chennai and UAE time is only 1.5 hours behind India, so we will review your store, ads, listings and reorder journey and talk you through what to change first on a video call.
+Curious where your current marketing is leaking money? Ask for a [free store audit](/free-ecommerce-audit/). Working remotely from Chennai, with our day starting just 1.5 hours ahead of yours, we will look through your store, ads, listings and reorder journey, then explain what to fix first on a video call.
