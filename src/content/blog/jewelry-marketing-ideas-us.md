@@ -114,7 +114,7 @@ For engagement rings and fine pieces, offer a booked video call to see stones un
 
 ### 12. Gift guides by recipient
 
-"For your sister", "for a new mom", "for the friend who has everything" are easier for gift buyers than browsing a full catalog.
+"For your sister", "for a new mom", "for the friend who has everything" are easier for gift buyers than browsing a full catalog. Add guides by style too, such as minimal, bold or vintage, and keep each one short enough to scan on a phone.
 
 ### 13. Holiday and proposal season
 
@@ -144,7 +144,7 @@ For South Asian American buyers, gold, bridal sets and festive pieces sell aroun
 
 ### 19. Collection pages built around searches
 
-People search for exact things: "14k gold huggie earrings", "lab-grown oval engagement ring". Build collection pages around those phrases with useful text and accurate filters.
+People search for exact things: "14k gold huggie earrings", "lab-grown oval engagement ring". Build collection pages around those phrases with useful text and accurate filters. These pages also feed AI shopping answers, which tend to quote stores that state metal, stone and size plainly.
 
 ### 20. A feed that matches the product
 
@@ -152,7 +152,7 @@ Google Shopping depends on feed quality. Fill metal, stone, color, size and gend
 
 ### 21. Etsy listings for personalized pieces
 
-Name necklaces, birthstone rings and engraved pieces suit Etsy. Use every tag, show personalization options clearly and state made-to-order times.
+Name necklaces, birthstone rings and engraved pieces suit Etsy. Use every tag, show personalization options clearly and state made-to-order times. Reply to messages quickly, since Etsy buyers often ask about personalization before ordering, and slow answers lose the sale.
 
 ### 22. Amazon A+ content and Brand Registry
 
@@ -162,7 +162,7 @@ For gifting and fashion pieces, A+ content can show scale and care, and Brand Re
 
 ### 23. Creators who match your price point
 
-A creator whose audience buys fashion jewelry will not sell solid gold. Choose for audience fit, and brief creators on accurate wording, including lab-grown disclosure.
+A creator whose audience buys fashion jewelry will not sell solid gold. Choose for audience fit, and brief creators on accurate wording, including lab-grown disclosure. Smaller creators with engaged followers often send more buyers than large accounts, and their videos make more believable ads.
 
 ### 24. A stacking challenge
 
@@ -180,11 +180,11 @@ Give stylists and creators a commission code, and require FTC-compliant disclosu
 
 ### 27. Anniversary and birthday reminders
 
-Ask for dates at checkout or in a post-purchase survey, then send gift ideas two to three weeks ahead.
+Ask for dates at checkout or in a post-purchase survey, then send gift ideas two to three weeks ahead. Include a piece that pairs with what they already own, such as matching earrings for a necklace bought last year.
 
 ### 28. Cleaning and care reminders
 
-Offer free cleaning or a plating check after six months. It brings buyers back to the store and to new pieces.
+Offer free cleaning or a plating check after six months. It brings buyers back to the store and to new pieces. For plated pieces, a care reminder also sets honest expectations about wear and reduces complaints.
 
 ### 29. Upgrade and trade-in offers
 
@@ -230,6 +230,10 @@ Rotate creative every few weeks during peaks. Jewelry ads tire quickly when the 
 | 1 to 4 | Foundations | Check every description against the FTC Jewelry Guides, reshoot scale photos, write the metal guide, clean the feed |
 | 5 to 8 | Traffic | Google Shopping and search on specific terms, five to ten creators, the next occasion's gift guide |
 | 9 to 12 | Scale and keep | Turn winning creator videos into ads, set up anniversary reminders, plan the next peak |
+
+## Following up on high-value pieces
+
+Engagement rings and fine pieces are rarely bought on the first visit. A shopper may return five or six times over several weeks. Retarget with close-up video, the grading report, your return terms and an invitation to book a consultation, rather than a discount that cheapens the piece. Save-for-later and wishlist emails help too, and they tell you which designs are drawing serious interest.
 
 ## Measuring what works
 
